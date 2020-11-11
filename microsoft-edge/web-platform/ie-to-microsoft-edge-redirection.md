@@ -2,16 +2,16 @@
 description: Перемещение пользователей в Microsoft Edge из Internet Explorer
 title: Перемещение пользователей в Microsoft Edge из Internet Explorer
 author: MSEdgeTeam
-ms.date: 11/04/2020
+ms.date: 11/06/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, совместимость, веб-платформа, Internet Explorer
-ms.openlocfilehash: 48f0f4121fb444d80603dcbb408397679c64753d
-ms.sourcegitcommit: 7b4441b7656c8317139650f904b70cc87797d37e
+ms.openlocfilehash: 2e1488359e405247e290ad8f6300c480a7e20af6
+ms.sourcegitcommit: 6ef48c8cda392c6bf8217cff5f696ac620d10739
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154336"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163209"
 ---
 # Перемещение пользователей в Microsoft Edge из Internet Explorer 
 
@@ -20,8 +20,7 @@ ms.locfileid: "11154336"
 В этой статье описаны указанные ниже принципы.  
 
 *   Взаимодействие с пользователем для перенаправления  
-*   Добавление веб-сайта в список совместимости с IE  
-*   Удаление веб-сайта из списка совместимости с IE  
+*   Запрос обновления списка  
     
 ## Почему веб-сайт добавлен в список совместимости IE?  
 
@@ -32,7 +31,7 @@ ms.locfileid: "11154336"
     
 ## Обновление списка совместимости с IE  
 
-Список совместимости IE — это XML-файл на [Microsoft.com][MicrosoftOfficialHome].  Этот список регулярно обновляется в ответ на запросы разработчиков веб-сайтов и пользователей, которым требуется добавить или удалить веб-сайт.  Обновления списка автоматически загружаются на компьютеры пользователей.  
+Список совместимости IE — это XML-файл на [Microsoft.com][MicrosoftOfficialHome].  Список регулярно обновляется в ответ на запросы разработчиков для пользователей и веб-сайтов, на которых добавляются или удаляются веб-сайты.  Обновления списка автоматически загружаются на компьютеры пользователей.  
 
 Напишите на веб-сайте [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] , который нужно добавить или удалить из списка СОВМЕСТИМОСТИ с IE, и попросите на него следующую информацию.    
 
@@ -42,9 +41,10 @@ ms.locfileid: "11154336"
 *   Название организации  
 *   Улица  
 *   Адрес веб-сайта  
-<!--  *   Telephone number  -->  
-<!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
+> [!NOTE]
+> Список совместимости с IE предназначен для работы только с общедоступными сайтами.  
+
 <!-- links -->  
 
 [MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Отправка сообщения электронной почты в ietoedge@microsoft.com"  

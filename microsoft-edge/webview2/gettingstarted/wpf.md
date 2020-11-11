@@ -3,17 +3,17 @@ description: Руководство по началу работы с WebView2 �
 title: Начало работы с WebView2 для приложений WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WPF, WPF, EDGE, CoreWebView2, управление браузером, пограничный HTML, Приступая к работе, начало работы, .NET
-ms.openlocfilehash: 8a18d12f30872ce3dd373e40ce8c7a4f0c4edad9
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 9977fad5f0462372eaa863fd740cbba6c92f6354
+ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119117"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162633"
 ---
 # Начало работы с WebView2 в WPF (Предварительная версия)
 
@@ -23,7 +23,7 @@ ms.locfileid: "11119117"
 
 Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:  
 
-* [Канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download) , установленный в Windows 10, Windows 8,1 или Windows 7.  
+* [Среда выполнения WebView2][Webview2Installer] или любой [нестабильный канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download) , установленный в windows 10, Windows 8,1 или Windows 7.  
 * [Visual Studio](https://visualstudio.microsoft.com) 2017 или более поздней версии.  
 
 ## Шаг 1: создание одного оконного приложения  
@@ -39,7 +39,7 @@ ms.locfileid: "11119117"
              Ядро WPF :::image-end:::
        :::column-end:::
        :::column span="1":::
-          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="Ядро WPF":::
+          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="Платформа WPF":::
              Платформа WPF :::image-end:::
        :::column-end:::
     :::row-end:::
@@ -48,11 +48,11 @@ ms.locfileid: "11119117"
     
     :::row:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Ядро WPF":::
+              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Создание основы":::
                  Создание основы :::image-end:::
            :::column-end:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Ядро WPF":::
+              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Создание платформы":::
                  Создание платформы :::image-end:::
            :::column-end:::
         :::row-end:::
@@ -65,7 +65,7 @@ ms.locfileid: "11119117"
 
 1.  Откройте контекстное меню проекта \ (щелкните правой кнопкой мыши \) и выберите пункт **Управление пакетами NuGet..**..  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Ядро WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
        NuGet
     :::image-end:::
     
@@ -78,7 +78,7 @@ ms.locfileid: "11119117"
     
     Все готово для начала разработки приложений с помощью API WebView2.  Выберите `F5` для сборки и запуска проекта.  Запущенный проект отобразит пустое окно.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Ядро WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Пустое приложение":::
        Пустое приложение
     :::image-end:::  
     
@@ -125,7 +125,7 @@ ms.locfileid: "11119117"
     
 1.  Нажмите `F5` , чтобы создать и запустить проект.  Убедитесь, что ваш элемент управления WebView2 отображается [https://www.microsoft.com](https://www.microsoft.com) .  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Ядро WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
        Microsoft.com
     :::image-end:::  
     
@@ -183,7 +183,7 @@ ms.locfileid: "11119117"
     > [!NOTE]
     > Убедитесь в том, что в адресной строке введен полный URL-адрес.  `ArgumentException`Если URL-адрес не начинается с "или", создается исключение "a" `http://` `https://` .  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Ядро WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
        Bing
     :::image-end:::
     
@@ -199,7 +199,7 @@ ms.locfileid: "11119117"
 
 Дополнительные сведения можно найти в разделе [события навигации](../concepts/navigation-events.md).  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Ядро WPF":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="События навигации":::
    События навигации
 :::image-end:::  
 
@@ -256,7 +256,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 Нажмите `F5` , чтобы создать и запустить проект.  Убедитесь, что приложение отображает оповещение при переходе на сайт, который не использует HTTPS.  
 
-:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="Ядро WPF":::
+:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
    HTTPS
 :::image-end:::  
 
@@ -324,7 +324,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     
     Нажмите `F5` для сборки и запуска приложения.  Теперь в адресной строке отображается URI-адрес в WebView и при успешном переходе на новый URI WebView предупреждает пользователя о URI, показанном в WebView.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="Ядро WPF":::
+    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
        addressBar
     :::image-end:::
 
@@ -339,3 +339,8 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 ## Знакомство с командой Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+
+<!-- links -->  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Установщик WebView2" 

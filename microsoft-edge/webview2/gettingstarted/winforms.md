@@ -3,17 +3,17 @@ description: Руководство по началу работы с WebView2 �
 title: Начало работы с WebView2 для приложений WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, приложения WinForms, WinForms, EDGE, CoreWebView2, браузер, край HTML, Приступая к работе, Приступая к работе, .NET, Windows Forms
-ms.openlocfilehash: 90d25816b862d6096856faf439436706c98f7dbe
-ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
+ms.openlocfilehash: c4092c545c24bf09667a5090251b51b96259efc2
+ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120090"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162641"
 ---
 # Начало работы с WebView2 в Windows Forms (Предварительная версия)  
 
@@ -23,11 +23,11 @@ ms.locfileid: "11120090"
 
 Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:  
 
-* [Канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download) , установленный в Windows 10, Windows 8,1 или Windows 7. 
+* [Среда выполнения WebView2][Webview2Installer] или любой [нестабильный канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download) , установленный в windows 10, Windows 8,1 или Windows 7. 
 * [Visual Studio](https://visualstudio.microsoft.com) 2017 или более поздней версии.
 
 > [!NOTE]
-> WebView2 в настоящее время не поддерживает конструктор .NET Core 3.0 [(Предварительная версия)](https://visualstudio.microsoft.com/vs/preview).
+> WebView2 в настоящее время не поддерживает базовые конструкторы .NET 5 и .NET.
 
 ## Шаг 1: создание одного оконного приложения
 
@@ -72,17 +72,17 @@ ms.locfileid: "11120090"
 1. Откройте **конструктор Windows Forms**.  
 1. Найдите **WebView2** на **панели элементов**. Перетащите элемент управления **WebView2** в приложение Windows Forms.
     
-    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Управление пакетами NuGet":::
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Панель элементов, в которой отображается WebView2":::
        Панель элементов, в которой отображается WebView2 :::image-end:::  
 
 1. Измените `Name` свойство на `webView` .
     
-    :::image type="complex" source="./media/winforms-properties.png" alt-text="Управление пакетами NuGet":::
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="Свойства элемента управления WebView2":::
        Свойства элемента управления WebView2 :::image-end:::
 
 1. `Source`Свойство задает начальный URI, отображаемый в элементе управления WebView2. Установите для свойства Source значение <https://www.microsoft.com>
     
-    :::image type="complex" source="./media/winforms-source.png" alt-text="Управление пакетами NuGet":::
+    :::image type="complex" source="./media/winforms-source.png" alt-text="Свойство Source элемента управления WebView2":::
        Свойство Source элемента управления WebView2 :::image-end:::
 
 Выберите `F5` , чтобы выполнить сборку и запустить проект.  Убедитесь, что ваш элемент управления WebView2 отображается [https://www.microsoft.com](https://www.microsoft.com) .
@@ -166,7 +166,7 @@ private void Form_Resize(object sender, EventArgs e)
 
 Дополнительные сведения можно найти в разделе [события навигации](../concepts/navigation-events.md).  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Управление пакетами NuGet":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="События навигации":::
    События навигации
 :::image-end:::
 
@@ -306,3 +306,8 @@ async void InitializeAsync()
 ## Знакомство с командой Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+
+<!-- links -->  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Установщик WebView2" 
