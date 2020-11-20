@@ -7,12 +7,12 @@ ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, код VS, код Visual Studio, отладчик
-ms.openlocfilehash: 58bcbc927505f4c5a1f493349c3e9475cb75e1be
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+ms.openlocfilehash: d9f33a17db7083a6a7cbb013dbf9886755f92c5e
+ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695868"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182303"
 ---
 # Отладчик для расширения кода Microsoft Edge VS  
 
@@ -47,7 +47,7 @@ ms.locfileid: "10695868"
 
 ### Microsoft Edge (на основе Chromium)  
 
-Если вы хотите запустить Microsoft Edge \ (Chromium \), следующую версию Microsoft EDGE, вместо Microsoft Edge \ (EdgeHTML \), просто добавьте `version` атрибут к существующей конфигурации с помощью версии Microsoft Edge \ (Chromium \), которую вы хотите запустить \ ( `dev` , `beta` или `canary` \). В приведенной ниже конфигурации ниже показано, как запустить Канарские версию Microsoft Edge \ (Chromium \).  
+Если вы хотите запустить Microsoft Edge \ (Chromium \), следующую версию Microsoft EDGE, вместо Microsoft Edge \ (EdgeHTML \), просто добавьте `version` атрибут к существующей конфигурации с помощью версии Microsoft Edge \ (Chromium \), которую вы хотите запустить \ ( `stable` ,, `dev` `beta` или `canary` \). В приведенной ниже конфигурации ниже показано, как запустить Канарские версию Microsoft Edge \ (Chromium \).  
 
 ```json
 {
@@ -91,7 +91,7 @@ start msedge --remote-debugging-port=9222
 <!-- image links -->  
 
 <!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  
-[ImagePngDebuggerEdge]:./Media/Debugger-for-Edge.png "отладчик для расширения кода" Edge VS "в действии"  
+[ImagePngDebuggerEdge]:./Media/debugger-for-edge.png "отладчик для расширения кода Edge VS в действии"  
 
 <!--links -->  
 

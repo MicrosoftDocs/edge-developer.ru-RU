@@ -3,17 +3,17 @@ description: Размещение веб-содержимого на платф�
 title: Элемент управления Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, CoreWebView2, ICoreWebView2Host, HTML, Windows Forms,, WPF, .NET, WinUI, Project
-ms.openlocfilehash: 412ff112ab0eed69b63316b2916f849a32196363
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 9e5cc3a26f07a11c9fd5c21d62ecafc3ed5103f4
+ms.sourcegitcommit: c619168deea44cdec8ebc80ef9ddf1d91d5f726d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120377"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182185"
 ---
 # Введение в Microsoft Edge WebView2  
 
@@ -27,15 +27,15 @@ ms.locfileid: "11120377"
 
 Разработчикам часто приходится определять создание веб-приложения или собственного приложения.  Решение на основе компромиссов между абонентами и возможностями.  Веб-приложения допускают широкий доступ к ним.  Как и веб-разработчик, вы можете использовать больше всего, если не все ваши коды на разных платформах.  Однако в собственных приложениях используются возможности всей платформы машинного кода.  
 
-:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Что такое WebView" lightbox="./media/WebView2/webnative.png":::
+:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Исходный веб-сайт" lightbox="./media/WebView2/webnative.png":::
    Исходный веб-сайт  
 :::image-end:::  
 
 Гибридные приложения позволяют разработчикам использовать преимущества обоих миров.  Разработчики гибридных приложений выигрывают от широкого и мощного веб-платформы, а также мощь и полную функциональность собственной платформы.  
 
-## Преимущества WebView2   
+## Преимущества WebView2  
 
-:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Что такое WebView" lightbox="./media/WebView2/webviewreasons.png":::
+:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Причины WebView" lightbox="./media/WebView2/webviewreasons.png":::
    Причины WebView  
 :::image-end:::  
 
@@ -97,22 +97,24 @@ ms.locfileid: "11120377"
 
 Общие сведения о доступности, а также о предварительной версии, можно найти в следующих средах программирования.  
 
-*   Win32 C/C++ \ (GA \)
-*   Платформа .NET Framework 4.6.2 или более поздней версии (Предварительная версия) 
-*   .NET Core 3,0 или более поздняя версия (Предварительная версия)
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (Предварительная версия)
+*   Win32 C/C++ \ (GA \)  
+*   Платформа .NET Framework 4.6.2 или более поздней версии (Предварительная версия)  
+*   .NET Core 3,0 или более поздняя версия (Предварительная версия)  
+*   [WinUI 3,0][UwpToolkitsWinui3] \ (Предварительная версия)  
 
 Вы можете запускать приложения WebView2 в следующих версиях Windows.  
 
-*   Windows 10;  
+*   Windows 10  
 *   Windows 8.1  
-*   Windows 8  
-*   Windows7  
+*   Windows 7 \ * \ *  
 *   WindowsServer2019  
 *   WindowsServer2016  
 *   Windows Server 2012  
-*   Windows Server 2012R2  
-*   Windows Server2008R2  
+*   Windows Server 2012 R2  
+*   Windows Server 2008 R2 \ * \ *  
+
+> [!IMPORTANT]
+> \ * \ * WebView2 поддержка для Windows 7 и Windows Server 2008 R2 обеспечивает один и тот же цикл поддержки в Microsoft Edge.  Дополнительные сведения можно найти в разделе [Поддерживаемые операционные системы Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].  
 
 ## Дальнейшие действия  
 
@@ -140,7 +142,7 @@ ms.locfileid: "11120377"
 [Webview2ConceptsSecurity]: ./concepts/security.md "Рекомендации по разработке безопасных приложений WebView2 | Документы Microsoft"  
 [Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "Управление папкой "данные пользователя" | Документы Microsoft"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Общие сведения о версиях SDK для WebView2 | Документы Microsoft"  
-[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Начало работы с WebView2 | Документы Microsoft"   
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Начало работы с WebView2 | Документы Microsoft"  
 [Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Начало работы с WebView2 в приложениях для Windows Forms (Предварительная версия) | Документы Microsoft"  
 [Webview2GettingstartedWinui]: ./gettingstarted/winui.md "Начало работы с WebView2 в WinUI3 (Предварительная версия) | Документы Microsoft"  
 [Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "Начало работы с WebView2 в WPF (Предварительная версия) | Документы Microsoft"  
@@ -148,7 +150,9 @@ ms.locfileid: "11120377"
 [Webview2HowtoWebdriver]: ./howto/webdriver.md "Автоматизация и тестирование WebView2 с помощью драйвера Microsoft Edge | Документы Microsoft"  
 [Webview2Releasenotes]: ./releasenotes.md "Заметки о выпуске для WebView2 SDK | Документы Microsoft"  
 
-[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Библиотека пользовательского интерфейса Windows 3 Preview (2020 июля) | Документы Microsoft"  
+[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Библиотека пользовательского интерфейса Windows 3 Preview (2020 июля) | Документы Microsoft"  
+
+[DeployedgeMicrosoftEdgeSupportedOS]: /deployedge/microsoft-edge-supported-operating-systems "Microsoft Edge поддерживал операционные системы | Документы Microsoft"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples-MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback-MicrosoftEdge/WebViewFeedback | GitHub" 
