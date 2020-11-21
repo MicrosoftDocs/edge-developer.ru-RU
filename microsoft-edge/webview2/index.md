@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, CoreWebView2, ICoreWebView2Host, HTML, Windows Forms,, WPF, .NET, WinUI, Project
-ms.openlocfilehash: 9e5cc3a26f07a11c9fd5c21d62ecafc3ed5103f4
-ms.sourcegitcommit: c619168deea44cdec8ebc80ef9ddf1d91d5f726d
+ms.openlocfilehash: 02d17b05364f02f26a4917b65ac497156be02b2e
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182185"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182369"
 ---
 # Введение в Microsoft Edge WebView2  
 
@@ -97,10 +97,11 @@ ms.locfileid: "11182185"
 
 Общие сведения о доступности, а также о предварительной версии, можно найти в следующих средах программирования.  
 
-*   Win32 C/C++ \ (GA \)  
-*   Платформа .NET Framework 4.6.2 или более поздней версии (Предварительная версия)  
-*   .NET Core 3,0 или более поздняя версия (Предварительная версия)  
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (Предварительная версия)  
+*   Win32 C/C++ \ (GA \)
+*   .NET Framework 4.6.2 или более поздняя версия
+*   .NET Core 3,1 или более поздняя версия
+*   .NET 5
+*   [WinUI 3,0][UwpToolkitsWinui3] \ (Предварительная версия)
 
 Вы можете запускать приложения WebView2 в следующих версиях Windows.  
 
@@ -130,7 +131,8 @@ ms.locfileid: "11182185"
 #### How-To направляющие  
 
 *   [Отладка с помощью WebView2][Webview2HowtoDebug]  
-*   [Автоматизация и тестирование WebView2 с помощью драйвера Microsoft Edge][Webview2HowtoWebdriver]  
+*   [Автоматизация и тестирование WebView2 с помощью драйвера Microsoft Edge][Webview2HowtoWebdriver]
+
 
 ## Знакомство с командой Microsoft Edge WebView  
 

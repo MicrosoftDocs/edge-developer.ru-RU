@@ -1,32 +1,32 @@
 ---
-description: Отладка Microsoft EDGE (Chromium) и Microsoft EDGE (EdgeHTML) из кода VS
-title: Отладка Microsoft EDGE (Chromium) из кода VS
+description: Отладка Microsoft EDGE (Chromium) и Microsoft EDGE (EdgeHTML) из кода Visual Studio
+title: Отладка Microsoft EDGE (Chromium) из кода Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, код VS, код Visual Studio, отладчик
-ms.openlocfilehash: d9f33a17db7083a6a7cbb013dbf9886755f92c5e
-ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
+ms.openlocfilehash: df15b76cc26ad01d3b8508362aa4b86998f8b41b
+ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182303"
+ms.locfileid: "11182507"
 ---
-# Отладчик для расширения кода Microsoft Edge VS  
+# Отладчик для расширения кода Microsoft Edge Visual Studio  
 
-С помощью [отладчика для расширения кода Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS выполните отладку клиентского кода JavaScript по строкам и просмотрите `console.log()` Операторы прямо из [кода Visual Studio][VisualstudioCode]!  
+С помощью [отладчика для расширения кода Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio выполните отладку клиентского кода JavaScript по строкам и просмотрите `console.log()` Операторы прямо из [кода Visual Studio][VisualstudioCode]!  
 
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Отладчик для расширения кода EDGE на работе":::
-   Отладчик для расширения кода EDGE на работе  
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Отладчик для расширения кода пограничного сервера Visual Studio на работе" lightbox="./media/debugger-for-edge.gif":::
+   Отладчик для расширения кода пограничного сервера Visual Studio на работе  
 :::image-end:::
 
-<!--![Debugger for Edge VS Code extension at work][ImageGifDebuggerEdge]  -->  
+<!--![Debugger for Edge Visual Studio Code extension at work][ImageGifDebuggerEdge]  -->  
 
 ## Запуск Microsoft Edge  
 
-Перейдите в представление Отладка \ ( `Ctrl` + `Shift` + `D` в Windows или `Command` + `Shift` + `D` на macOS \) на **панели действий**.  Если у вас нет каких бы то ни было конфигураций в коде VS, нажмите клавишу `F5` Windows или macOS или нажмите зеленую кнопку **воспроизведения** .  Выберите **ребро** в раскрывающемся списке.  Вы увидите `launch.json` файл со следующей конфигурацией.  
+Перейдите в представление Отладка \ ( `Ctrl` + `Shift` + `D` в Windows или `Command` + `Shift` + `D` на macOS \) на **панели действий**.  Если у вас нет каких бы то ни было конфигураций в коде Visual Studio, нажмите клавишу `F5` Windows или macOS или нажмите зеленую кнопку **воспроизведения** .  Выберите **ребро** в раскрывающемся списке.  Вы увидите `launch.json` файл со следующей конфигурацией.  
 
 ```json
 {
@@ -43,11 +43,11 @@ ms.locfileid: "11182303"
 }
 ```  
 
-Если вы нажмете клавишу `F5` Windows или macOS или выбираете зеленую кнопку **воспроизведения** , код VS запускает Microsoft Edge \ (EdgeHTML \), и вы сможете выполнять отладку любого веб-проекта, который вы используете на порту `8080` прямо из кода VS!  
+При нажатии `F5` на Windows или macOS или нажатии зеленой кнопки **воспроизведения** код Visual Studio запускает Microsoft Edge \ (EdgeHTML \), и вы можете выполнять отладку любого веб-проекта, который вы используете для порта, `8080` прямо из кода Visual Studio!  
 
 ### Microsoft Edge (на основе Chromium)  
 
-Если вы хотите запустить Microsoft Edge \ (Chromium \), следующую версию Microsoft EDGE, вместо Microsoft Edge \ (EdgeHTML \), просто добавьте `version` атрибут к существующей конфигурации с помощью версии Microsoft Edge \ (Chromium \), которую вы хотите запустить \ ( `stable` ,, `dev` `beta` или `canary` \). В приведенной ниже конфигурации ниже показано, как запустить Канарские версию Microsoft Edge \ (Chromium \).  
+Если вы хотите запустить Microsoft Edge \ (Chromium \), новый Microsoft EDGE вместо Microsoft Edge \ (EdgeHTML \), просто добавьте `version` атрибут в существующую конфигурацию с помощью версии Microsoft Edge \ (Chromium \), которую вы хотите запустить \ ( `dev` , `beta` или `canary` \).  В приведенной ниже конфигурации ниже показано, как запустить Канарские версию Microsoft Edge \ (Chromium \).  
 
 ```json
 {
@@ -62,9 +62,9 @@ ms.locfileid: "11182303"
 
 ## Присоединение к Microsoft Edge  
 
-Прикрепление кода к Microsoft Edge \ (Chromium \).  На своем терминале выполните следующую команду:  
+Прикрепите код Visual Studio к Microsoft Edge \ (Chromium \).  На своем терминале выполните следующую команду:  
 
-```console
+```shell
 start msedge --remote-debugging-port=9222
 ```  
 
@@ -79,19 +79,19 @@ start msedge --remote-debugging-port=9222
 }
 ```  
 
-Если сейчас выполнить эту настройку, код VS прикрепляется к Microsoft Edge \ (Chromium \) и начнет отладку.  
+Если теперь выполнить эту настройку, код Visual Studio прикрепляется к Microsoft Edge \ (Chromium \) и запускает отладку.  
 
-## Связь с элементами для группы расширения кода Microsoft Edge VS    
+## Связь с элементами для группы расширения кода Microsoft Edge Visual Studio    
 
 Отправьте отзыв, выполнив в [репозитории][GithubMicrosoftVscodeEdgeDebug2] сообщение о том, что у вас [есть вопрос][GithubMicrosoftVscodeEdgeDebug2NewIssue] в расширении.  Укажите файл журнала адаптера отладки, который создается для каждого запуска в `%temp%` каталоге с именем `vscode-edge-debug2.txt` .  Перетащите этот файл в комментарий вопроса, чтобы отправить его в GitHub.  
 
-Чтобы лучше сделать элементы для расширения кода Microsoft EDGE более качественными, вы можете воспользоваться вашими публикациями!  Найдите все, что вам нужно, чтобы начать работу в [репозитории GitHub][GithubMicrosoftVscodeEdgeDebug2] на расширение.  
+Чтобы лучше сделать элементы для расширения кода Microsoft Edge Visual Studio более привлекательными, ваши публикации будут рады!  Найдите все, что вам нужно, чтобы начать работу в [репозитории GitHub][GithubMicrosoftVscodeEdgeDebug2] на расширение.  
 
 
 <!-- image links -->  
 
-<!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  
-[ImagePngDebuggerEdge]:./Media/debugger-for-edge.png "отладчик для расширения кода Edge VS в действии"  
+<!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge Visual Studio Code extension in action"  -->  
+[ImagePngDebuggerEdge]:./Media/debugger-for-edge.png "отладчик для расширения кода Visual Studio EDGE в действии"  
 
 <!--links -->  
 

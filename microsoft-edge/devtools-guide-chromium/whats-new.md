@@ -3,20 +3,20 @@ description: Функции, добавленные в Microsoft EDGE (Chromium)
 title: Новые возможности Microsoft EDGE (Chromium) DevTools 2019 марта
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: bf1919b0ab46df378880d664dd4e59aee96605e5
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 0b592eddbd68b3bbd8ff0a9edf9a1253bd79677e
+ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645324"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182514"
 ---
 # Новые возможности Microsoft EDGE (Chromium) DevTools
 
-Благодарим вас за пробную версию следующей версии Microsoft Edge! В этом выпуске мы решили крупную смену на базовой веб-платформе Microsoft EDGE, принимая проект Chromium Open Source. Благодаря этому изменению вы сможете легко создавать и тестировать веб-сайты в Microsoft EDGE и гарантировать, что они будут работать должным образом даже в том случае, если пользователи просматривают другие браузеры на базе Chromium, например Google Chrome, Vivaldi, Opera или Brave.
+Благодарим вас за попытку предварительной версии новой версии Microsoft Edge! В этом выпуске мы решили крупную смену на базовой веб-платформе Microsoft EDGE, принимая проект Chromium Open Source. Благодаря этому изменению вы сможете легко создавать и тестировать веб-сайты в Microsoft EDGE и гарантировать, что они будут работать должным образом даже в том случае, если пользователи просматривают другие браузеры на базе Chromium, например Google Chrome, Vivaldi, Opera или Brave.
 
 ## Новый Microsoft EDGE (Chromium) DevTools
 
@@ -24,7 +24,7 @@ ms.locfileid: "10645324"
 
 ![Microsoft EDGE (Chromium) DevTools](./media/devtools.png)
 
-Если вы выйдете к следующей версии Microsoft EDGE, и вы в основном разрабатывались в Microsoft EDGE (EdgeHTML), у нас есть несколько новых инструментов, которые мы надеемся, чтобы облегчить и быстро создавать и тестировать веб-сайты в Microsoft Edge. Чтобы узнать больше об этих новых средствах, ознакомьтесь [со статьей руководство по DevTools Microsoft EDGE (Chromium)](../devtools-guide-chromium.md).
+Если вы извлечете новый Microsoft EDGE, и вы в основном разрабатывали в Microsoft EDGE (EdgeHTML), мы получили новые средства, которые мы надеемся, чтобы упростить и быстрее создавать и тестировать веб-сайты в Microsoft Edge. Чтобы узнать больше об этих новых средствах, ознакомьтесь [со статьей руководство по DevTools Microsoft EDGE (Chromium)](../devtools-guide-chromium.md).
 
 ## Новые темные и легкие темы для DevTools
 
@@ -40,7 +40,7 @@ ms.locfileid: "10645324"
 
 ![Отладчик для расширения кода пограничных и других кодов](./media/vscode-debugger.png)
 
-Чтобы запустить Microsoft EDGE (Chromium) вместо Microsoft EDGE (EdgeHTML) из кода VS, необходимо добавить `version` атрибут к существующей конфигурации **Launch. JSON** с версией Microsoft EDGE (Chromium), которую вы хотите запустить ( `dev` `beta` или `canary` ). Ниже приведен пример конфигурации **Launch. JSON** , с помощью которой Канарские версия Microsoft EDGE (Chromium) будет запущена в [Bing.com](https://www.bing.com/):
+Чтобы запустить Microsoft EDGE (Chromium) вместо Microsoft EDGE (EdgeHTML) из кода VS, необходимо добавить `version` атрибут к существующему **launch.js** конфигурации с версией Microsoft EDGE (Chromium), которую вы хотите запустить ( `dev` `beta` или `canary` ). Ниже приведен пример **launch.js** конфигурации, которая запускает Канарские версию Microsoft EDGE (Chromium) до [Bing.com](https://www.bing.com/):
 
 ```json
 {
@@ -58,7 +58,7 @@ ms.locfileid: "10645324"
 
 При смене базовой веб-платформы Microsoft Edge протокол пограничного DevTools не получит никаких обновлений. DevTools Microsoft EDGE (Chromium) будет использовать протокол DevTools или CDP для Chrome. Для получения справочной документации по доменам и методам в CDP ознакомьтесь со [средством просмотра CDP](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility).
 
-В следующей версии Microsoft Edge все методы с префиксом `ms` не поддерживаются. Чтобы узнать больше о том, как использовать CDP в Microsoft EDGE (Chromium), обратитесь к разделу [протокол DevTools (Chromium)](../devtools-protocol-chromium.md).
+В новой Microsoft Edge все методы с префиксами, которые `ms` не поддерживаются. Чтобы узнать больше о том, как использовать CDP в Microsoft EDGE (Chromium), обратитесь к разделу [протокол DevTools (Chromium)](../devtools-protocol-chromium.md).
 
 ## Известные проблемы
 

@@ -3,21 +3,21 @@ description: Узнайте о том, что дальше в WebView2
 title: План для Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 52a2f6d9ef3447955554a5507c3eaab39e6b6a9e
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120370"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182362"
 ---
 # WebView2ная схема Microsoft Edge  
 
-##### Последнее обновление: Oct 2020  
+##### Последнее обновление: Ноябрь 2020 г.  
 
 Элемент управления WebView2 позволяет разработчикам внедрять веб-технологии в собственные приложения.  На следующей странице приведена схема перспективной схемы для WebView2.  
 
@@ -61,7 +61,7 @@ ms.locfileid: "11120370"
 
 ## Фиксированная версия  
 
-С помощью [фиксированной модели распространения версий][ConceptsDistributionFixedVersionModel] можно упаковать двоичные файлы Microsoft EDGE в собственное приложение.  В настоящее время она находится в режиме предварительного просмотра и ориентирована на ДЖй квартал 2020.  
+С помощью [фиксированной модели распространения версий][ConceptsDistributionFixedVersionModel] можно упаковать двоичные файлы Microsoft EDGE в собственное приложение.  Фиксированная версия достигла общей доступности \ (GA \).  
 
 ## Общая доступность  
 
@@ -71,7 +71,7 @@ ms.locfileid: "11120370"
 
 ### .NET  
 
-.NET SDK упаковывает пакет SDK C/C++ для Win32.  Предполагается, что пакет .NET SDK вскоре скоро будет после того, как Win32 C/C++ GA в 4 квартале 2020.  
+.NET SDK достиг себя в течение "GA". 
 
 ### WinUI3.0  
 
