@@ -3,17 +3,17 @@ description: Варианты распространения при выпуск
 title: Распространение приложений Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения WPF, WPF, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "браузер", HTML Edge
-ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+ms.openlocfilehash: 0cbaaeade03feac766647c55bb5edabfe8e8456e
+ms.sourcegitcommit: 7b16c3e6eb458e0b2458279c2498597fb227bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182411"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182911"
 ---
 # Распространение приложений с помощью WebView2  
 
@@ -58,7 +58,7 @@ ms.locfileid: "11182411"
     
 В настоящее время загрузчик и автономный установщик поддерживают только установки для компьютера, для которого требуется повышение прав.  Если установщик запускается без повышения прав, пользователю будет предложено поднять разрешения.  
 
-Используйте следующие рабочие процессы, чтобы убедиться, что среда выполнения уже установлена перед запуском приложения.  Вы можете настроить рабочий процесс в зависимости от вашего сценария.  Пример кода можно найти в [репозиторий примеров] [GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
+Используйте следующие рабочие процессы, чтобы убедиться, что среда выполнения уже установлена перед запуском приложения.  Вы можете настроить рабочий процесс в зависимости от вашего сценария.  Образец кода доступен в [репозитории примеров][GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
 
 #### Развертывание только в сети  
 
@@ -195,6 +195,6 @@ ms.locfileid: "11182411"
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView отзыв | GitHub"  
 
-[GitHubMicrosoftMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 развертывание — MicrosoftEdge/WebView2Samples | GitHub"  
+[GitHubMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 развертывание — MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftPlayReady]: https://www.microsoft.com/playready "Microsoft PlayReady"  
