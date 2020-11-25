@@ -82,6 +82,8 @@
           href: devtools-guide-chromium/ie-mode.md
         - name: Трехмерное представление
           href: devtools-guide-chromium/3d-view/index.md
+        - name: Служебные сценарии
+          href: devtools-guide-chromium/service-workers/index.md
         - name: Средства разработчика для начинающих
           items:
             - name: HTML и DOM
