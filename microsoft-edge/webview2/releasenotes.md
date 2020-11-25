@@ -3,17 +3,17 @@ description: Заметки о выпуске Microsoft Edge WebView2 SDK
 title: Заметки о выпуске Microsoft Edge WebView2 для Win32, WPF и WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 11/24/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: f0be7602bd5fe5cf8ede5158b12cb0b957247c20
-ms.sourcegitcommit: 2d2cef9046f85ae731f8aa80b565546fcfe72e90
+ms.openlocfilehash: f0ddcbfe2d72c1285e6d4a42c3cb796b93495c55
+ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "11182844"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191445"
 ---
 # Заметки о выпуске SDK для WebView2  
 
@@ -26,7 +26,7 @@ ms.locfileid: "11182844"
 
 Дата выпуска: 23 ноября 2020 г.  
 
-[Пакет NuGet][NuGetGallery1.0.707-prerelease] \ | Минимальная версия Microsoft Edge 89.0.707.0.  
+[Пакет NuGet][NuGetGallery1.0.707-prerelease] \ | Минимальная версия Microsoft Edge 86.0.616.0.  
 
 #### Общие  
 
@@ -51,8 +51,9 @@ ms.locfileid: "11182844"
 
 ###### Возможности  
 
-* Включенный конструктор WinForms в .NET Core 3.1 + и .NET 5.  
-* Улучшенное управление файлами в среде .NET.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+*   Включенный конструктор WinForms в .NET Core 3.1 + и .NET 5.  
+*   Улучшенное управление файлами в среде .NET.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+*   Переименован `CoreWebView2Ready` в [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].
 
 ###### Исправления ошибок
 
@@ -64,7 +65,7 @@ ms.locfileid: "11182844"
 
 Дата выпуска: 20 ноября 2020 г.  
 
-[Пакет NuGet][NuGetGallery1.0.664.37] \ | Минимальная версия среды выполнения WebView2 версии 86.0.664.37.  
+[Пакет NuGet][NuGetGallery1.0.664.37] \ | Минимальная версия среды выполнения WebView2 версии 86.0.616.0.  
 
 #### Общие  
 
@@ -467,6 +468,8 @@ WebView2 SDK — это официальная бета-версия C++ для 
 [DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.destroywindowcore "Метод WebView2. DestroyWindowCore (HandleRef) (Microsoft. Web. WebView2. WPF) | Документы Microsoft"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed]: /dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed "Microsoft. Web. webview2. WPF. webview2. acceleratorkeypressed | Документы Microsoft"  
+
+[DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]: /dotnet/api/microsoft.web.webview2.core.corewebview2initializationcompletedeventargs "Класс CoreWebView2InitializationCompletedEventArgs | Документы Microsoft"  
 
 [ReferenceWin32Icorewebview2Addhostobjecttoscript09538]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript?view=webview2-0.9.538&preserve-view=true "AddHostObjectToScript-Interface ICoreWebView2 | Документы Microsoft"  
 [ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived-интерфейс ICoreWebView2Experimental | Документы Microsoft"  

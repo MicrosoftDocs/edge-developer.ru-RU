@@ -7,12 +7,12 @@ ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 0e4b1972918797d69e2068236f6d1336c54cc858
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: b972468ad21f3a64985a00aecbe29836032b3334
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134150"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190007"
 ---
 # Новые возможности DevTools (Microsoft Edge 87)  
 
@@ -41,14 +41,14 @@ DevTools теперь поддерживает перемещение инстр
    :::column span="":::
       Чтобы переместить верхний инструмент в нижнюю часть экрана, наведите на него указатель мыши, откройте контекстное меню, а затем выберите пункт **Переместить вниз**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Переместить вниз" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Переместить вниз  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Чтобы переместить нижние инструменты в верхнюю часть экрана, наведите указатель мыши на вкладку, откройте контекстное меню (щелкните правой кнопкой мыши \) и выберите пункт **Перейти к началу**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/move-to-top.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Перейти к началу страницы" lightbox="../../media/2020/10/move-to-top.msft.png":::
          Перейти к началу страницы  
       :::image-end:::  
    :::column-end:::
@@ -56,7 +56,7 @@ DevTools теперь поддерживает перемещение инстр
 
 ## Сохранение и экспорт с помощью сетевой консоли  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
    Экспериментальная функция  
 :::image-end:::  
 
@@ -69,12 +69,12 @@ DevTools теперь поддерживает перемещение инстр
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Введите имя новой среды" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
          Введите имя новой среды  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Выберите формат для новой среды" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
          Выберите формат для новой среды  
       :::image-end:::  
    :::column-end:::
@@ -82,17 +82,26 @@ DevTools теперь поддерживает перемещение инстр
 
 ## Улучшенные инструменты сетки CSS  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" можно легко переключать наложения сетки и настраивать внешний вид и содержимое каждого из них.  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
+   Экспериментальная функция  
+:::image-end:::  
+
+Microsoft Edge DevTools теперь поддерживает следующие функции для проверки, просмотра и отладки сетки каскадных стилей.  
+
+*   Отображение упрощенного раскрытия сетки с помощью средства **проверки** или получение более подробных сведений с постоянными наложениями.  
+*   Чтобы включить постоянную наложение сетки, щелкните значок сетки рядом с элементом контейнера сетки в инструменте **элементы** или выберите сетку в инструменте **Макет** .  
+*   Вы можете включить постоянную наложение для нескольких сеток.  
+*   С помощью нового инструмента " **Макет** " можно легко переключать наложения сетки и настраивать внешний вид и содержимое каждого из них.  
     
 Эти функции включены по умолчанию.  Дополнительные сведения о функциях можно найти в [таблице каскадных таблиц стилей][DevtoolsCssGrid].  Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1047356][CR1047356].  Кроме того, группа Microsoft Edge DevTools работает совместно с коллегами по DevTools и Chromiumом для добавления новых функций управления подложкой в DevTools.  Чтобы получить обновления для средств управления подпадающими ящиками в проекте Open-Source Chromium, перейдите к вопросу [#1136394][CR1136394].  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Инструмент "макет" с сетками" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    Инструмент " **Макет** " с сетками  
 :::image-end:::  
 
 ## Настройка сочетаний клавиш в параметрах  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
    Экспериментальная функция  
 :::image-end:::  
 
@@ -100,7 +109,7 @@ DevTools теперь поддерживает перемещение инстр
 
 Чтобы включить функцию эксперимента, перейдите к разделу [Включение экспериментальных функций][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] и установите флажок **включить редактор сочетаний клавиш**.  Дополнительные сведения о настройке и редактировании сочетаний клавиш можно найти в статье [включить режим экспериментального редактора сочетаних][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]клавиш.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#174309][CR174309].  
 
-:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Настраиваемое сочетание клавиш для приостановки сценария" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Настраиваемое сочетание клавиш для приостановки сценария  
 :::image-end:::  
 
@@ -116,12 +125,12 @@ DevTools теперь поддерживает перемещение инстр
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Снимок экрана: использование расширения в полноэкранном режиме браузера" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
          Снимок экрана: использование расширения в полноэкранном режиме браузера  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Снимок экрана: использование расширения в режиме без монитора" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
          Снимок экрана: использование расширения в режиме без монитора  
       :::image-end:::  
    :::column-end:::
@@ -145,12 +154,12 @@ DevTools теперь поддерживает перемещение инстр
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Открытие средства WebAuthn" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
          Открытие средства **WebAuthn**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Средство WebAuthn" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
          Средство **WebAuthn**  
       :::image-end:::  
    :::column-end:::
@@ -164,12 +173,12 @@ DevTools теперь поддерживает перемещение инстр
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Открытие области "вычисляемая боковая панель"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Открытие области " **Вычисляемая боковая** панель"  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Вычисляемая область боковой панели" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
          **Вычисляемая область боковой** панели  
       :::image-end:::  
    :::column-end:::
@@ -179,7 +188,7 @@ DevTools теперь поддерживает перемещение инстр
 
 Чтобы просмотреть примененную CSS с меньшим прокруткой, сгруппируйте свойства CSS по категориям в **вычисляемой** области.  Вы также можете выбрать набор связанных свойств при проверке CSS.  В инструменте **элементы** выберите элемент.  Чтобы выполнить группировку \ (или разгрупповую) свойства CSS, установите или снимите флажок **Группа** .  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к разделу проблемы [#1096230][CR1096230], [#1084673][CR1084673]и [#1106251][CR1106251].  
 
-:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
+:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Группировка свойств CSS" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Группировка свойств CSS  
 :::image-end:::  
 
@@ -201,7 +210,7 @@ performance.mark('end');
 
 Затем откройте средство " [производительность][DevtoolsGuideChromiumEvaluatePerformanceReference] " и перейдите к **разделу временные показатели** для записи кода JavaScript.  `performance.mark()`Добавленные события будут отображены в записи.  
 
-:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/perf-mark.msft.png":::
+:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Событие Performance. Mark" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` событиях  
 :::image-end:::  
 
@@ -209,7 +218,7 @@ performance.mark('end');
 
 Используйте новые `resource-type` `url` Ключевые слова в инструменте " **сеть** " для фильтрации сетевых запросов.  Например, вы можете `resource-type:image` сосредоточиться на сетевых запросах, которые являются изображениями.  
 
-:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Фильтр по типу ресурсов" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    Фильтр по типу ресурсов  
 :::image-end:::  
 
@@ -221,7 +230,7 @@ performance.mark('end');
 
 `reporting to`В разделе " **изоляция &** " перейдите на вкладку "политика встроенного внедрения" \ (COEP \) и межисточниковая политика OPENER \ (Coop \).  [API отчетов][MdnReportingApi] определяет `Report-To` новый заголовок HTTP, который позволяет указать конечные точки сервера для браузера, чтобы отправлять предупреждения и ошибки.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1051466][CR1051466].  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Отправка сообщения конечной точке" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    `reporting to`Конечная точка  
 :::image-end:::  
 
@@ -229,19 +238,23 @@ performance.mark('end');
 
 DevTools теперь отобразите `report-only` метку для COEP и Coop, которые установлены в `report-only` режим.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1051466][CR1051466].  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Метка режима «только отчет»" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    `report-only`Метка "режим"  
 :::image-end:::  
 
 ### Просмотр и устранение проблем с контрастностью цвета в инструменте "Общие сведения о CSS"  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" теперь отображается список элементов на странице с проблемами цветовой контрастности.  На приведенной ниже демонстрационной странице показан пример ошибки цветовой контрастности.  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
+   Экспериментальная функция  
+:::image-end:::  
+
+В инструменте " **Обзор CSS** " теперь отображается список элементов на странице с проблемами цветовой контрастности.  На приведенной ниже демонстрационной странице показан пример ошибки цветовой контрастности.  
 
 [Обзор CSS: демонстрация доступных цветов][GlitchCssOverviewAccessibleColorsDemo]  
 
 Чтобы включить этот эксперимент, в **Settings**разделе  >  **эксперименты**с параметрами установите флажок **CSS Overview (обзор** ).  Чтобы просмотреть список элементов с проблемой цветовой контрастности, в **вопросах контрастности**выберите **текст**.  Чтобы открыть элемент в инструменте **элементы** , выберите элемент в списке.  Для устранения проблем с контрастностью Microsoft Edge DevTools [автоматически предлагают варианты цветов][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1120316][CR1120316].  
 
-:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/css-overview.msft.png":::
+:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Проблемы с низким контрастом цвета" lightbox="../../media/2020/10/css-overview.msft.png":::
    Проблемы с низким контрастом цвета  
 :::image-end:::  
 

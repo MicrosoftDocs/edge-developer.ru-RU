@@ -7,12 +7,12 @@ ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: a4c8d5ed7f3cf84f20b4b73531f871e17921b186
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 707841901046db6a7e957771164ffb868900bdd8
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125225"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190014"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,7 +65,7 @@ ms.locfileid: "11125225"
 
 <!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
-:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Просмотр таблицы стилей, в которой определено правило" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
   Просмотр таблицы стилей, в которой определено правило  
 :::image-end:::  
 
@@ -84,7 +84,7 @@ ms.locfileid: "11125225"
 > [!NOTE]
 > На приведенном ниже рисунке показана **Вычисляемая** вкладка, на которой ПОКАЗАНЫ свойства CSS, применяемые к текущему `h1` элементу.  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-computed-h1.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Вычисляемая вкладка" lightbox="../media/css-elements-computed-h1.msft.png":::
    **Вычисляемая** вкладка  
 :::image-end:::  
 
@@ -105,7 +105,7 @@ ms.locfileid: "11125225"
 > [!NOTE]
 > На рисунке ниже показана модель Box на вкладке " **стили** " в **поле** "модель" для элемента, выбранного в данный момент `h1` .  
 
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Схема модели Box" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    Схема **модели Box**  
 :::image-end:::  
 
@@ -118,14 +118,14 @@ ms.locfileid: "11125225"
 > [!NOTE]
 > На приведенном ниже рисунке для вкладки **стили** отображаются только правила, включающие поисковый запрос `color` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Фильтрация вкладки "стили"" lightbox="../media/css-elements-styles-filter-color.msft.png":::
    Фильтрация вкладки " **стили** "  
 :::image-end:::  
 
 > [!NOTE]
 > На приведенном ниже рисунке отфильтрованная **вкладка** фильтруется так, чтобы отображались только объявления, включающие поисковый запрос `100%` .  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Фильтрация вычисляемой вкладки" lightbox="../media/css-elements-computed-filter-100.msft.png":::
    Фильтрация **вычисляемой** вкладки  
 :::image-end:::  
 
@@ -141,7 +141,7 @@ ms.locfileid: "11125225"
 > [!NOTE]
 > На рисунке ниже показано, как переключается `:hover` псевдо-класс.  В окне просмотра убедитесь в том, что `background-color: cornflowerblue` объявление применяется к элементу, несмотря на то что элемент фактически не наведен на указатель.  
 
-:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Переключение: псевдо-класс для наведения" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
    Переключение `:hover` псевдо-класса  
 :::image-end:::  
 
@@ -164,12 +164,12 @@ ms.locfileid: "11125225"
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Открытие вкладки "покрытие" в меню команд" lightbox="../media/css-console-command-menu-coverage.msft.png":::
              Открытие вкладки " **покрытие** " в **меню команд**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Вкладка "покрытие"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              Вкладка " **покрытие** "  
           :::image-end:::  
        :::column-end:::
@@ -177,7 +177,7 @@ ms.locfileid: "11125225"
     
 1.  Нажмите кнопку **начать покрытие инструментирования и обновите страницу** \ ( ![ Запуск инструментированного покрытия и обновление страницы ][ImageRefreshIcon] \).  Обновленная страница и вкладка Coverage предоставляют общие сведения о том, сколько стилей CSS и JavaScript используется для каждого файла, загружаемого браузером.  Зеленый представляет используемые CSS.  Красный — неиспользуемый CSS.  
     
-    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-console-qs-coverage-run.msft.png":::
+    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Общие сведения о том, какая таблица CSS (и JavaScript) используется и неиспользуемая" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        Общие сведения о том, сколько каскадных таблиц (и JavaScript \) использует и не используется  
     :::image-end:::  
 
@@ -186,7 +186,7 @@ ms.locfileid: "11125225"
     > [!NOTE]
     > На приведенном ниже рисунке строки 145 в 147 и 149 в 151 из `b66bc881.site-ltr.css` не используются, в то время как используются строки 163 — 166.  
     
-    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-sources-css-coverage.msft.png":::
+    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Разбиение по строкам для используемых и неиспользуемых CSS" lightbox="../media/css-sources-css-coverage.msft.png":::
        Разбиение по строкам для используемых и неиспользуемых CSS  
     :::image-end:::  
     
@@ -221,7 +221,7 @@ ms.locfileid: "11125225"
 > [!NOTE]
 > На приведенном ниже рисунке к `margin-top` `background-color` выбранному элементу применены свойства и.  В **дереве DOM** убедитесь, что объявления отражены в `style` атрибуте для элемента.  
 
-:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Добавление встроенных объявлений" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
    Добавление встроенных объявлений  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ ms.locfileid: "11125225"
 1.  Введите имя свойства и нажмите кнопку `Enter` .  
 1.  Введите допустимое значение для этого свойства и нажмите кнопку `Enter` .  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Добавление объявления в правило стиля" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
    Добавление `border-bottom-style:groove` объявления в правило стиля  
 :::image-end:::  
 
@@ -242,7 +242,7 @@ ms.locfileid: "11125225"
 
 Выберите и измените имя или значение объявления, чтобы изменить его.  Сочетания клавиш для быстрого увеличения или уменьшения значения (, или единиц) можно найти [в статье изменение значений объявлений](#change-declaration-values-with-keyboard-shortcuts) `0.1` `1` `10` `100` .  
 
-:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Изменение значения объявления" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
    Изменение значения `border-bottom-style` объявления  
 :::image-end:::  
 
@@ -266,7 +266,7 @@ ms.locfileid: "11125225"
 1.  Введите имя класса в текстовом поле **Добавить новый класс** .  
 1.  Выберите `Enter` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Область «классы элементов»" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
    Область « **классы элементов** »  
 :::image-end:::  
 
@@ -288,7 +288,7 @@ ms.locfileid: "11125225"
 > [!NOTE]
 > На приведенном ниже рисунке DevTools добавляет `h1.devsite-page-title` правило стиля после выбора **нового правила стиля**.  
 
-:::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-style-new.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Добавление нового правила стиля" lightbox="../media/css-elements-styles-style-new.msft.png":::
    Добавление нового правила стиля  
 :::image-end:::  
 
@@ -296,7 +296,7 @@ ms.locfileid: "11125225"
 
 При [добавлении нового правила стиля](#add-a-style-rule)нажмите и удерживайте **новое правило** стиля \ ( ![ новое правило стиля), ][ImageNewStyleRuleIcon] чтобы выбрать таблицу стилей, к которой нужно добавить правило.  
 
-:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Выбор таблицы стилей" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Выбор таблицы стилей  
 :::image-end:::  
 
@@ -308,7 +308,7 @@ ms.locfileid: "11125225"
 1.  [Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).  
 1.  Нажмите кнопку **Вставить правило стиля ниже** \ ( ![ Вставьте правило стиля ниже значка ][ImageNewStyleRuleIcon] \).  
 
-:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Вставить правило стиля ниже" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Вставить правило стиля ниже**  
 :::image-end:::  
 
@@ -326,7 +326,7 @@ ms.locfileid: "11125225"
     > [!NOTE]
     > На приведенном ниже рисунке наведите указатель мыши на `.header-holder.has-default-focus` правило стиля и **другие действия** будут отображены в правом нижнем углу раздела "правило стиля".  
     
-    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Показать дополнительные действия" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
        Показать **Дополнительные действия** \ ( `...` \)  
     :::image-end:::  
     
@@ -335,7 +335,7 @@ ms.locfileid: "11125225"
     > [!NOTE]
     > **Правило стиля вставки, показанное ниже** , выводится при наведении указателя мыши на **другие действия**.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Панель инструментов «другие действия»" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
        Панель инструментов « **другие действия** »  
     :::image-end:::  
     
@@ -350,7 +350,7 @@ ms.locfileid: "11125225"
 > [!NOTE]
 > На приведенном ниже рисунке `margin-top` свойство для выбранного в данный момент элемента было отключено.  
 
-:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Переключить объявление" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
    Переключить объявление  
 :::image-end:::  
 
@@ -362,7 +362,7 @@ ms.locfileid: "11125225"
 1.  [Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).  
 1.  Нажмите кнопку **добавить цвет фона** \ ( ![ Добавить значок цвет фона ][ImageAddBackgroundColorIcon] ).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Добавление цвета фона" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Добавление цвета фона**  
 :::image-end:::  
 
@@ -374,7 +374,7 @@ ms.locfileid: "11125225"
 1.  [Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).  
 1.  Нажмите кнопку **добавить цвет** \ ( ![ добавить цвет значок ][ImageAddColorIcon] ).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Добавить цвет" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Добавить цвет**  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ ms.locfileid: "11125225"
 1.  [Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).  
 1.  Нажмите кнопку **"добавить тень"** , а затем — ![ значок "добавить тень" ][ImageAddBoxShadowIcon] .  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Добавление тени для поля" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Добавление тени для поля**  
 :::image-end:::  
 
@@ -398,7 +398,7 @@ ms.locfileid: "11125225"
 1.  [Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).  
 1.  Нажмите кнопку **Добавить тень текста** \ ( ![ Добавить значок тени текста ][ImageAddTextShadowIcon] ).  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Добавление тени текста" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Добавление тени текста**  
 :::image-end:::  
 
@@ -414,19 +414,19 @@ ms.locfileid: "11125225"
     > [!NOTE]
     > На приведенном ниже рисунке небольшой квадрат слева от него `rgba(0, 0, 0, 0.7)` является предварительным просмотром этого цвета.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Цвет предварительного просмотра" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
        Цвет предварительного просмотра  
     :::image-end:::  
     
 1.  Нажмите кнопку Предварительный просмотр, чтобы открыть окно **выбора цвета**.  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="Выбор цвета" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
        **Выбор цвета**  
     :::image-end:::  
     
 На приведенном ниже рисунке и списке описывает каждого элемента пользовательского интерфейса в **палитре цветов**.  
 
-:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="Палитра цветов с заметками" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
    **Палитра цветов**с заметками  
 :::image-end:::  
 
@@ -540,7 +540,7 @@ ms.locfileid: "11125225"
     > [!NOTE]
     > На приведенном ниже рисунке в **средстве выбора цвета** отображается текущее цветное значение `rgba(0,0,0,0.7)` , которое близко к черному.  Определенный цвет должен измениться на черную версию, которая выделена в окне просмотра, после того как вы выберете его.  
     
-    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Использование пипетки" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
        Использование пипетки  
     :::image-end:::  
     

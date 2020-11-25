@@ -3,16 +3,16 @@ description: Список способов настройки Microsoft Edge Dev
 title: Настройка Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 91f353c6b6c4dea2bc6764a972acf2ad52b1f151
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 682ff78b6a5272c1f6462648d64241448838edac
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125085"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11189992"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,8 +30,6 @@ ms.locfileid: "11125085"
 
 # Настройка Microsoft Edge DevTools  
 
-  
-
 На этой странице перечислены способы настройки Microsoft Edge DevTools.  
 
 ## Параметры  
@@ -43,42 +41,57 @@ ms.locfileid: "11125085"
 *   Выберите `F1` , когда DevTools в фокусе.  
 *   Откройте **главное меню** и выберите пункт **Параметры**.  
     
-    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Параметры" lightbox="../media/customize-settings-preferences.msft.png":::
-       **Параметры**  
-    :::image-end:::  
-    
+:::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Параметры" lightbox="../media/customize-settings-preferences.msft.png":::
+   **Параметры**  
+:::image-end:::  
+
 ## Зазор  
 
-Этот **ящик** включает множество скрытых функций.  
+**Ящик** — это вторая панель, в которой отображаются инструменты выбора.  
 
-Щелкните `Escape` , чтобы открыть или закрыть **денежный ящик**.  
+Чтобы открыть (или закрыть) **денежный ящик**, выберите `Escape` .  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Параметры" lightbox="../media/customize-drawer-open.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Ящик" lightbox="../media/customize-drawer-open.msft.png":::
    **Ящик**  
 :::image-end:::  
 
-Нажмите кнопку **Дополнительно** ![ ][ImageMoreIcon] , чтобы открыть другие вкладки **денежных ящиков** .  
+По умолчанию некоторые инструменты открываются в главной панели, а другие — в **ящике**.  Нажмите кнопку **Дополнительно** \ ( `...` ), чтобы открыть инструмент в **денежном ящике**.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Параметры" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   Кнопка для открытия вкладок **ящиков**  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Кнопка для открытия ящика" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Кнопка для открытия **ящика**  
 :::image-end:::  
+
+Вы можете перемещать инструменты между главной панелью и денежным ящиком.  
+
+*   Чтобы переместить инструмент из почтового ящика на главную панель, наведите на него указатель мыши, откройте контекстное меню, а затем выберите пункт **Перейти к началу**.  
+    
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Перемещение инструмента из ящика на главную панель" lightbox="../media/move-from-drawer.msft.png":::
+       Перемещение инструмента из **ящика** на главную панель  
+    :::image-end:::  
+    
+*   Чтобы переместить инструмент из главной панели в денежный, наведите указатель мыши на инструмент, откройте контекстное меню (щелкните правой кнопкой мыши и выберите пункт **переместить в конец**).  
+    
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Инструмент «Перемещение» из главной панели в денежный ящик" lightbox="../media/move-to-drawer.msft.png":::
+       Инструмент «Перемещение» из главной панели в **денежный ящик**
+    :::image-end:::  
+    
 
 ## Изменение порядка панелей  
 
-Щелкните и перетащите вкладку панели, чтобы изменить ее порядок.  Настраиваемый порядок табуляции сохраняется в сеансах DevTools.  
+Для изменения порядка выберите и перетащите инструмент.  Ваш заказ на пользовательские инструменты сохраняется в течение сеансов DevTools.  
 
 > [!NOTE]
-> По умолчанию вкладка **Сетевая** панель обычно является четвертой слева.  На приведенном ниже рисунке панель **Network (сеть** ) — это первый из левых.  
+> По умолчанию средство " **сеть** " обычно является четвертым в левой части экрана.  На приведенном ниже рисунке панель **Network (сеть** ) — это первый из левых.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Параметры" lightbox="../media/customize-network-first-position.msft.png":::
-   Окно DevTools с настраиваемым заказом вкладки панели  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Настраиваемый порядок Devtools на панели" lightbox="../media/customize-network-first-position.msft.png":::
+   Настраиваемый порядок Devtools на панели  
 :::image-end:::  
 
 ## Изменение положения DevTools  
 
 Ознакомьтесь с [DevTools размещения Microsoft Edge][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Параметры" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Незакрепленные DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    Незакрепленные DevTools  
 :::image-end:::  
 
@@ -86,7 +99,7 @@ ms.locfileid: "11125085"
 
 См. [: включить темную тему][DarkTheme].  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Параметры" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Темная тема" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    Темная тема  
 :::image-end:::  
 
