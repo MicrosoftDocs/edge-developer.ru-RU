@@ -3,17 +3,17 @@ description: Автоматизация и тестирование в Microsoft
 title: Playwright
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft EDGE, веб-разработка, разработчик, инструменты, Автоматизация, проверка, playwright, узел, сценарий JavaScript, NPM
-ms.openlocfilehash: 419d534b3757609528f05bac50ce55bad9dafec4
-ms.sourcegitcommit: 5af0ba56a93871eb4890d1aa7c56c3524c2261de
+ms.openlocfilehash: ac03923fb25da00f07cb70e81ac06b106a6e1452
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160177"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11192214"
 ---
 # Playwright  
 
@@ -100,7 +100,7 @@ Playwright запускает Microsoft EDGE, переходит на `https://w
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium.md "[Chromium) | Документы Microsoft"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "[Chromium) | Документы Microsoft"  
 [PuppeteerMain]: ../puppeteer.md "Puppeteer | Документы Microsoft"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: улучшение веб-сайта в более чем больше возможностей для совместной работы с открытым кодом | Блог Microsoft Experience"  
@@ -109,11 +109,11 @@ Playwright запускает Microsoft EDGE, переходит на `https://w
 
 [ChromiumHome]: https://www.chromium.org/Home "Chromium | Проекты Chromium"  
 
-[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"
+[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "Краевые пути | NPM"
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "Краевые пути | NPM"  
 
 [PlaywrightMain]: https://playwright.dev "Playwright"  
 [PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Справочник по API playwright"  
@@ -123,6 +123,6 @@ Playwright запускает Microsoft EDGE, переходит на `https://w
 [PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright | GitHub"  
 [PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Новая ошибка в репозитории playwright | GitHub"  
 
-[WebKitMain]: https://webkit.org "WebKit"
+[WebKitMain]: https://webkit.org "WebKit"  
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Автономный браузер | Википедии"  

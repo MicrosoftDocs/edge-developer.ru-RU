@@ -3,17 +3,17 @@ description: Автоматизация и тестирование элемен
 title: Автоматизация и тестирование WebView2 с помощью драйвера Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, EDGE, ICoreWebView2, ICoreWebView2Controller, Selenium, драйвер Microsoft Edge
-ms.openlocfilehash: 6f7f84fa88a57e54d7b5143a489d1138c7426d88
-ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
+ms.openlocfilehash: 2af1ce222abb1dc7a279afc05e87e7e42a45fe9e
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11191452"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11191619"
 ---
 # Автоматизация и тестирование WebView2 с помощью драйвера Microsoft Edge  
 
@@ -23,7 +23,7 @@ ms.locfileid: "11191452"
 
 ## Шаг 1: Загрузка образца WebView2API  
 
-Если у вас нет проекта WebView2, скачайте [пример приложения WebView2API][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample], полный пример НОВЕЙШЕГО пакета SDK для WebView2.  Убедитесь, что вы удовлетворены [требованиями для примера приложения WebView2API][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]. 
+Если у вас нет проекта WebView2, скачайте [пример приложения WebView2API][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample], полный пример НОВЕЙШЕГО пакета SDK для WebView2.  Убедитесь, что вы удовлетворены [требованиями для примера приложения WebView2API][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites].  
 
 Создав точную копию репозитория, создайте проект в Visual Studio.  Оно должно выглядеть так, как показано на рисунке ниже.  
 
@@ -70,7 +70,7 @@ ms.locfileid: "11191452"
        Скачать пакет NuGet  
     :::image-end:::  
     
-1.  Введите **Selenium.** Selenium на панели поиска, выберите **. стример** из результатов, а затем установите флажок **включить предварительную версию**. В правой части окна убедитесь, что для версии установлено значение **4.0.0-alpha04** или более поздняя **версия** , и нажмите кнопку **установить**.  NuGet загружает Selenium на ваш компьютер.  
+1.  Введите `Selenium.WebDriver` значение в строке поиска, выберите **Selenium. стример** из результатов и убедитесь в том, что флажок **включить предварительный выпуск установлен**флажком.  В правой части окна убедитесь, что для версии установлено значение **4.0.0-alpha04** или более поздняя **версия** , и нажмите кнопку **установить**.  NuGet загружает Selenium на ваш компьютер.  
     
     Чтобы узнать больше о пакете NuGet для Selenium. [Selenium. 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].  
     
@@ -158,8 +158,8 @@ ms.locfileid: "11191452"
 
 <!-- links -->  
 
-[WebdriverChromium]: ../../webdriver-chromium.md "Использование Chromium для проверки автоматизации тестов Документы Microsoft"  
-[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium.md#download-microsoft-edge-driver "Скачать драйвер Microsoft Edge — использование веб-накопителя (Chromium) для автоматизации тестов | Документы Microsoft"  
+[WebdriverChromium]: ../../webdriver-chromium/index.md "Использование Chromium для проверки автоматизации тестов Документы Microsoft"  
+[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Скачать драйвер Microsoft Edge — использование веб-накопителя (Chromium) для автоматизации тестов | Документы Microsoft"  
 [WebViewIndex]: ../index.md "Введение в Microsoft Edge WebView2-документы Майкрософт"  
 [Webview2Releasenotes]: ../releasenotes.md "Заметки о выпуске для WebView2 SDK | Документы Microsoft"  
 
