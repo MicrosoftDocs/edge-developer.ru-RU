@@ -18,7 +18,7 @@ ms.locfileid: "10992890"
 *   <span data-ttu-id="54891-104">Отправьте предложение в [Интернет][TheWebWeWant].</span><span class="sxs-lookup"><span data-stu-id="54891-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
 *   <span data-ttu-id="54891-105">В этой статье описаны ошибки в разделе [Отзывы и предложения](#feedback) .</span><span class="sxs-lookup"><span data-stu-id="54891-105">File bugs on this article using the [Feedback](#feedback) section.</span></span>  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Значок &quot;Отправить отзыв&quot; в Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    <span data-ttu-id="54891-107">Значок " **Отправить отзыв** " в Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="54891-107">The **Send Feedback** icon in Microsoft Edge DevTools</span></span>  
 :::image-end:::  
 
