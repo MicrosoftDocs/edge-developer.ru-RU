@@ -18,7 +18,7 @@ ms.locfileid: "10992890"
 *   Отправьте предложение в [Интернет][TheWebWeWant].  
 *   В этой статье описаны ошибки в разделе [Отзывы и предложения](#feedback) .  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Значок &quot;Отправить отзыв&quot; в Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    Значок " **Отправить отзыв** " в Microsoft Edge DevTools  
 :::image-end:::  
 
