@@ -118,7 +118,7 @@ ms.locfileid: "11204014"
 > [!NOTE]
 > На приведенном ниже рисунке для вкладки **стили** отображаются только правила, включающие поисковый запрос `color` .  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Фильтрация вкладки "стили"" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Фильтрация вкладки стили"::: lightbox="../media/css-elements-styles-filter-color.msft.png":::
    Фильтрация вкладки " **стили** "  
 :::image-end:::  
 
@@ -164,12 +164,12 @@ ms.locfileid: "11204014"
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Открытие вкладки "покрытие" в меню команд" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Открытие вкладки покрытие в меню команд"::: lightbox="../media/css-console-command-menu-coverage.msft.png":::
              Открытие вкладки " **покрытие** " в **меню команд**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Вкладка "покрытие"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Вкладка покрытие"::: lightbox="../media/css-console-qs-coverage-empty.msft.png":::
              Вкладка " **покрытие** "  
           :::image-end:::  
        :::column-end:::
