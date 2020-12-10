@@ -95,7 +95,7 @@ Microsoft Edge DevTools теперь поддерживает следующие
     
 Эти функции включены по умолчанию.  Дополнительные сведения о функциях можно найти в [таблице каскадных таблиц стилей][DevtoolsCssGrid].  Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1047356][CR1047356].  Кроме того, группа Microsoft Edge DevTools работает совместно с коллегами по DevTools и Chromiumом для добавления новых функций управления подложкой в DevTools.  Чтобы получить обновления для средств управления подпадающими ящиками в проекте Open-Source Chromium, перейдите к вопросу [#1136394][CR1136394].  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Инструмент "макет" с сетками" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Инструмент макет с сетками"::: lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    Инструмент " **Макет** " с сетками  
 :::image-end:::  
 
@@ -173,7 +173,7 @@ Microsoft Edge DevTools теперь поддерживает следующие
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Открытие области "вычисляемая боковая панель"" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Открытие области вычисляемая боковая панель" ::: lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Открытие области " **Вычисляемая боковая** панель"  
       :::image-end:::  
    :::column-end:::  
