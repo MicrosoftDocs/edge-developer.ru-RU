@@ -53,7 +53,7 @@ ms.locfileid: "11205245"
 *   Ссылки на другие подходящие панели.  
 *   Ссылки на документы, которые помогут вам устранить проблемы на веб-сайте.  
     
-:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Инструмент "проблемы"" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Инструмент проблемы"::: lightbox="../../media/2020/11/issues-webhints.msft.png":::
    Инструмент " **проблемы** "  
 :::image-end:::  
 
@@ -112,13 +112,13 @@ ms.locfileid: "11205245"
 1.  Перейдите к ****  >  **сотрудникам службы**приложений.  
 1.  Выберите **сетевые запросы**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Инструмент "открыть сеть" из области "работники службы"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Инструмент открыть сеть из области работники службы"::: lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Инструмент "открыть **сеть** " из области " **работники службы** "
     :::image-end:::  
     
 1.  В **ящике** откроется средство " **сеть** ", в котором выводятся все сетевые запросы, связанные с сотрудниками служб.  Сетевые запросы фильтруются с использованием `is:service-worker-intercepted` .  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Инструмент "сеть" в ящике" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Инструмент сеть в ящике"::: lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
        Инструмент " **сеть** " в **ящике**  
     :::image-end:::
     
