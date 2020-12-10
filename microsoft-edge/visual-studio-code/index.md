@@ -44,7 +44,7 @@ ms.locfileid: "11182750"
       [Инструменты Microsoft Edge для кода Visual Studio](#microsoft-edge-tools-for-visual-studio-code)  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="расширение кода Visual Studio "Подсказка"" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
+      :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="расширение кода Visual Studio Подсказка"::: lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
          **Подсказка** Расширение кода Visual Studio  
       :::image-end:::  
       [webhint](#webhint)  
@@ -88,7 +88,7 @@ ms.locfileid: "11182750"
 
 В коде проверяется, как проверяются правила кодирования и распространенные ошибки. Проект с открытым исходным кодом, изначально разработанный группой Microsoft EDGE, теперь является частью [OpenJS Foundation][OpenjsFoundation].  Группа Microsoft Edge продолжает вносить вклад в веб-подсказку в сообществе в сообщество.  <!--  Choose the following image to see the extension in action.  -->  
       
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Снимок экрана: расширение кода Visual Studio "Подсказка"" lightbox="./media/webhint-extension.png":::
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Снимок экрана: расширение кода Visual Studio Подсказка"::: lightbox="./media/webhint-extension.png":::
    Снимок экрана: расширение кода Visual Studio " **Подсказка** "  
 :::image-end:::  
       
