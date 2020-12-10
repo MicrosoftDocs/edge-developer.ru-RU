@@ -34,7 +34,7 @@ ms.locfileid: "11190044"
 
 ## Network  
 
-:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="Временная шкала рабочего процесса в инструменте "сеть"" lightbox="../media/sw-network-timeline.msft.png":::
+:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="Временная шкала рабочего процесса в инструменте сеть"::: lightbox="../media/sw-network-timeline.msft.png":::
    Представление сети  
 :::image-end:::  
 
