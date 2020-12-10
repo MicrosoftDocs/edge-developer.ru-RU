@@ -62,7 +62,7 @@ ms.locfileid: "11203972"
 
 ## Z-индекс  
 
-:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Представление "Z-индекс"" lightbox="../media/3d-view-z-index-view-box.msft.png":::
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Представление Z-индекс"::: lightbox="../media/3d-view-z-index-view-box.msft.png":::
    Представление "Z-индекс"  
 :::image-end:::  
 
