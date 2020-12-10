@@ -3,23 +3,23 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/01/2020
-ms.openlocfilehash: 5be994b091d0e4720fb091800f4fbdf2051c7a00
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.date: 12/09/2020
+ms.openlocfilehash: f39e04428daab687c7391be25b5389d658ef4e6e
+ms.sourcegitcommit: ae1e6a7db70b97dc0f7f12feafd3ea88bfdca7ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992890"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205406"
 ---
-<span data-ttu-id="54891-101">Следующие параметры позволяют обсуждать новые возможности и изменения в записи, а также любые другие связанные с DevTools.</span><span class="sxs-lookup"><span data-stu-id="54891-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
+<span data-ttu-id="c260a-101">Следующие параметры позволяют обсуждать новые возможности и изменения в записи, а также любые другие связанные с DevTools.</span><span class="sxs-lookup"><span data-stu-id="c260a-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
 
-*   <span data-ttu-id="54891-102">Отправьте свой отзыв с помощью значка " **Отправить отзыв** " в DevTools.</span><span class="sxs-lookup"><span data-stu-id="54891-102">Send your feedback using the **Send Feedback** icon in DevTools.</span></span>  
-*   <span data-ttu-id="54891-103">Твит на [@EdgeDevTools][PostTweetEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="54891-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span></span>  
-*   <span data-ttu-id="54891-104">Отправьте предложение в [Интернет][TheWebWeWant].</span><span class="sxs-lookup"><span data-stu-id="54891-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
-*   <span data-ttu-id="54891-105">В этой статье описаны ошибки в разделе [Отзывы и предложения](#feedback) .</span><span class="sxs-lookup"><span data-stu-id="54891-105">File bugs on this article using the [Feedback](#feedback) section.</span></span>  
+*   <span data-ttu-id="c260a-102">Отправьте свой отзыв с помощью значка " **Отправить отзыв** " в DevTools.</span><span class="sxs-lookup"><span data-stu-id="c260a-102">Send your feedback using the **Send Feedback** icon in DevTools.</span></span>  
+*   <span data-ttu-id="c260a-103">Твит на [@EdgeDevTools][PostTweetEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="c260a-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span></span>  
+*   <span data-ttu-id="c260a-104">Отправьте предложение в [Интернет][TheWebWeWant].</span><span class="sxs-lookup"><span data-stu-id="c260a-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
+*   <span data-ttu-id="c260a-105">Чтобы просмотреть ошибки, связанные с этой статьей, воспользуйтесь приведенным ниже разделом **отзыва** .</span><span class="sxs-lookup"><span data-stu-id="c260a-105">To file bugs about this article, use the following **Feedback** section.</span></span>  
 
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   <span data-ttu-id="54891-107">Значок " **Отправить отзыв** " в Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="54891-107">The **Send Feedback** icon in Microsoft Edge DevTools</span></span>  
+   <span data-ttu-id="c260a-107">Значок " **Отправить отзыв** " в Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="c260a-107">The **Send Feedback** icon in Microsoft Edge DevTools</span></span>  
 :::image-end:::  
 
 <!-- links -->  
