@@ -3,20 +3,20 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/01/2020
-ms.openlocfilehash: 5be994b091d0e4720fb091800f4fbdf2051c7a00
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.date: 12/09/2020
+ms.openlocfilehash: f39e04428daab687c7391be25b5389d658ef4e6e
+ms.sourcegitcommit: ae1e6a7db70b97dc0f7f12feafd3ea88bfdca7ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992890"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205406"
 ---
 Следующие параметры позволяют обсуждать новые возможности и изменения в записи, а также любые другие связанные с DevTools.  
 
 *   Отправьте свой отзыв с помощью значка " **Отправить отзыв** " в DevTools.  
 *   Твит на [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   Отправьте предложение в [Интернет][TheWebWeWant].  
-*   В этой статье описаны ошибки в разделе [Отзывы и предложения](#feedback) .  
+*   Чтобы просмотреть ошибки, связанные с этой статьей, воспользуйтесь приведенным ниже разделом **отзыва** .  
 
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    Значок " **Отправить отзыв** " в Microsoft Edge DevTools  

@@ -7,12 +7,12 @@ ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 707841901046db6a7e957771164ffb868900bdd8
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: 83edc15549b4f8e668af99a4d95966736aaa0992
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11190014"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204014"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -544,6 +544,8 @@ ms.locfileid: "11190014"
        Использование пипетки  
     :::image-end:::  
     
+<!--todo:  add the section on the Angle clock section for What's New 88.  -->  
+
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  

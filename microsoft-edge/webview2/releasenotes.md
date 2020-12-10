@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 34063aee7bec324464cf592e6aab8ca499e9c944
-ms.sourcegitcommit: 1a35a0d52c412c503d742e66f25c4e97286a3919
+ms.openlocfilehash: 2859f931aea8963e8a50835110914a216811c191
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203625"
+ms.locfileid: "11204021"
 ---
 # Заметки о выпуске SDK для WebView2  
 
@@ -53,7 +53,7 @@ ms.locfileid: "11203625"
 
 *   Включенный конструктор WinForms в .NET Core 3.1 + и .NET 5.  
 *   Улучшенное управление файлами в среде .NET.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
-*   Переименован `CoreWebView2Ready` в [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].  
+*   Заменяется `CoreWebView2Ready` на [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].  
 
 ###### Исправления ошибок
 

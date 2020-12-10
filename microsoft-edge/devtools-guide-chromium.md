@@ -3,17 +3,17 @@ description: Знакомство со средствами разработчи
 title: Инструменты разработчика Microsoft EDGE (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/23/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: ffc31dad9e641adfb9f1ae0b5b88b29192ea4152
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+ms.openlocfilehash: 8f773db3d175f8b5128e1558809334c8f2de4bd7
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182500"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204007"
 ---
 # Инструменты разработчика Microsoft EDGE (Chromium)  
 
@@ -112,7 +112,7 @@ Microsoft Edge использует проект Chromium Open Source для б�
 | Переключение **режима проверки элемента** , который позволяет выбрать элемент на сайте и просмотреть HTML и CSS на панели " **элементы** " | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Показать меню команд | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Показать или скрыть денежный ящик | `Esc` | `Esc` |  
-| Обновлен.  Страница будет обновлена с помощью кэша.  | `F5` / `Ctrl`+`R` | `Command`+`R` |  
+| Обновление.  Страница будет обновлена с помощью кэша.  | `F5` / `Ctrl`+`R` | `Command`+`R` |  
 | Жесткое обновление.  Это заставляет Microsoft Edge загрузить ресурсы еще раз и перезагрузить.  Возможно, используемые ресурсы могут поступать из кэшированной версии. | `Ctrl`+`F5` / `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Поиск текста на текущей панели.  Не поддерживается в панелях аудит, приложения и безопасность | `Ctrl`+`F` | `Command`+`F` |  
 | Отображение панели поиска в ящике, позволяющей искать текст во всех загруженных ресурсах | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
@@ -140,7 +140,7 @@ Microsoft Edge использует проект Chromium Open Source для б�
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools для начинающих: Приступая к работе с HTML и моделью DOM | Документы Microsoft"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools "Новые возможности Microsoft EDGE (Chromium) DevTools | Документы Microsoft"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Новые возможности Microsoft EDGE (Chromium) DevTools | Документы Microsoft"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Протокол Microsoft EDGE (Chromium) DevTools Protocol | Документы Microsoft"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Надстройки Microsoft Edge"  

@@ -3,15 +3,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/08/2020
-ms.openlocfilehash: e6d1cf188792c6ee6594685943e51c9a5761844e
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.date: 12/08/2020
+ms.openlocfilehash: 4dbb6c0c07b6294c647f49929f12739447b43e8a
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004226"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11205237"
 ---
-В следующих разделах представлен список извещений, которые могут быть пропущены командой Microsoft Edge DevTools.  Просмотрите объявления, чтобы ознакомиться с новыми возможностями в DevTools, расширениях кода Visual Studio и многое другое.  Чтобы всегда оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Microsoft Edge DevTools Team для Twitter][EdgeDevToolsTwitterAccount].  
+В следующих разделах перечислены объявления, предоставленные командой Microsoft Edge DevTools.  Чтобы попробовать новые функции в DevTools, расширениях кода Visual Studio и многое другое, просмотрите объявления.  Чтобы оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Microsoft Edge DevTools Teams в Twitter][EdgeDevToolsTwitterAccount].
 
 <!-- links -->  
 
