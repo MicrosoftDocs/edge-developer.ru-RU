@@ -125,7 +125,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 С помощью средства **проверки** можно быстро определить и визуализировать макеты сетки CSS на веб-сайте, наведя на них указатель мыши.  Щелкните значок **проверить** \ ( ![ проверить ](./media/inspect-icon.msft.png) \) в левом верхнем углу DevTools.  Затем наведите указатель мыши на элемент Grid на веб-сайте, который вы отлаживается.  Контуры отображаются вокруг сетки, а Заливка обозначает расположение зазоров сетки, если они есть.  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Просмотр сеток с помощью средства "Проверка"" lightbox="./media/grid-inspect.msft.png":::
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Просмотр сеток с помощью средства Проверка"::: lightbox="./media/grid-inspect.msft.png":::
    Просмотр сеток с помощью средства "Проверка"  
 :::image-end:::  
 
@@ -141,7 +141,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 *   Щелкните значок овала **сетки** рядом с элементом Grid, отображаемым в дереве DOM инструмента **элементы** .  
     
-    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Значок "овальный Grid" в инструменте "элементы"" lightbox="./media/grid-adorner.msft.png":::
+    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Значок овальный Grid в инструменте элементы"::: lightbox="./media/grid-adorner.msft.png":::
        Значок "овальный Grid" в инструменте " **элементы** "  
     :::image-end:::  
     
@@ -182,7 +182,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
     
 Эксперименты с этой [подсказкой][WebhintMain] отображаются на панели " [вопросы][DevtoolsIssues] " в виде обратной связи.  Выберите вопрос для отображения документации решения и списка уязвимых ресурсов на вашем веб-сайте.  Выберите ссылку на ресурс, чтобы открыть область " **сеть**, **источники**или **элементы** " в DevTools.  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Обратная связь по этой подсказке на панели "вопросы"" lightbox="./media/experiments-webhint.msft.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Обратная связь по этой подсказке на панели вопросы"::: lightbox="./media/experiments-webhint.msft.png":::
    Обратная связь по этой подсказке на панели " **вопросы** "  
 :::image-end:::  
 
@@ -217,7 +217,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  В разделе **средство просмотра исходного заказа** установите флажок **Показать порядок источников** .  
 1.  Выделит любой HTML-элемент, чтобы отобразить наложение, порядок расположения которых указан в источнике страницы.  
     
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Средство просмотра исходного порядка на панели "Специальные возможности"" lightbox="./media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Средство просмотра исходного порядка на панели Специальные возможности" ::: lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Средство просмотра исходного порядка** на панели " **Специальные возможности** "  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  Выберите действие, которое вы хотите настроить.  
 1.  Щелкните значок **изменить** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \).  
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Выберите действие, которое нужно настроить, на странице "ярлыки" в разделе "Параметры"" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Выберите действие, которое нужно настроить, на странице ярлыки в разделе Параметры"::: lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Выберите действие, которое нужно настроить, на странице " **ярлыки** " в разделе " [Параметры][DevToolsCustomizeSettings] "
     :::image-end:::  
     
@@ -287,7 +287,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 *   Отправка отзыва с помощью значка " **Отправить отзыв** " в DevTools  
 *   Твит на [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Значок Отправить отзыв в Microsoft Edge DevTools"::: lightbox="./media/bing-devtools-send-feedback.msft.png":::
    Значок " **Отправить отзыв** " в Microsoft Edge DevTools  
 :::image-end:::  
 
