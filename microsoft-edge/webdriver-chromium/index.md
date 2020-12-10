@@ -42,7 +42,7 @@ ms.locfileid: "11192259"
     
 1.  Перейдите на страницу [загрузки драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] и скачайте драйвер, соответствующий номеру версии Microsoft Edge.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел "загружаемые файлы" на странице драйвера Microsoft Edge" lightbox="../media/webdriver-chromium/edge-driver-install.png":::
+    :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="Раздел загружаемые файлы на странице драйвера Microsoft Edge"::: lightbox="../media/webdriver-chromium/edge-driver-install.png":::
        Раздел "загружаемые файлы" на странице [драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]  
     :::image-end:::  
     
@@ -326,7 +326,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 Группа Microsoft Edge – это информация о том, как использовать веб – диски, Selenium и Microsoft Edge.  Чтобы сообщить команде о том, что вы думаете, щелкните значок **Отправить отзыв** в Microsoft Edge DevTools или отправьте твит [@EdgeDevTools][TwitterTweetEdgeDevTools].  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Значок "Отправить отзыв" в Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Значок Отправить отзыв в Microsoft Edge DevTools":::  lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Значок " **Отправить отзыв** " в Microsoft Edge DevTools  
 :::image-end:::  
 
