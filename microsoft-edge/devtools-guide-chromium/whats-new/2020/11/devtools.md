@@ -1,89 +1,89 @@
 ---
-description: Microsoft Edge для Linux, улучшенные советы по веб – подсказкам в инструменте "проблемы", новые функции отладки рабочих процессов и многое другое.
-title: Новые возможности DevTools (Microsoft Edge 88)
+description: Microsoft Edge в Linux, улучшенные советы webhint в средстве "Проблемы", новые функции отладки служебного сценария и т. д.
+title: Что нового в средствах разработчика (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 500b64e7b51e0f02c9fcbcb7a83e8273b3a5a0d7
-ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
-ms.translationtype: MT
+ms.openlocfilehash: a9c262075f3d541861ed825a8da96b3a86956c0e
+ms.sourcegitcommit: c06a4ece7bcbfeae4677d15fca677ca42a0373b9
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11205245"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "11229480"
 ---
-# Новые возможности DevTools (Microsoft Edge 88)  
+# Что нового в средствах разработчика (Microsoft Edge 88)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## Драйвер Microsoft EDGE и Microsoft EDGE, теперь доступные в Linux  
+## Microsoft Edge и Microsoft Edge Driver теперь доступны в Linux  
 
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->  
 <!-- Subtitle: Get Microsoft Edge Dev on Ubuntu, Debian, Fedora, and openSUSE distributions and start automating in CI/CD environments with Microsoft Edge Driver. -->  
 
-Теперь приложение Microsoft Edge dev поддерживается для Debian, Fedora и openSUSE.  Скачайте и установите Microsoft Edge dev `.deb` или `.rpm` пакет прямо из [сайта предварительной оценки Microsoft Edge][MicrosoftinsiderDownloadPlatformLinux] или воспользуйтесь стандартными средствами управления пакетами для дистрибутива Linux.  
+Microsoft Edge Dev теперь поддерживается в дистрибутивах Ubuntu, Debian, Fedora и openSUSE.  Скачайте и установите пакет Microsoft Edge Dev `.deb` или `.rpm` непосредственно с сайта [программы предварительной оценки Microsoft Edge][MicrosoftinsiderDownloadPlatformLinux] или используйте стандартные средства управления пакетами своего дистрибутива Linux.  
 
-Если вы используете среду Linux в решениях непрерывной интеграции и поставки \ (CI/CD \), драйвер Microsoft EDGE также доступен в ОС Linux.  Чтобы приступить к автоматизации разработки Microsoft Edge с помощью драйвера Microsoft EDGE, перейдите на [страницу загрузки драйверов Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  Чтобы получить помощь по автоматизации разработки Microsoft Edge вместе с драйвером Microsoft EDGE, перейдите в раздел [Использование веб-накопителя (Chromium) для автоматизации тестов][WebDriverChromiumMain].  
+Если вы используете среду Linux в решениях непрерывной интеграции и доставки \(CI/CD\), Microsoft Edge Driver также доступен в Linux.  Чтобы начать автоматизацию Microsoft Edge Dev с использованием Microsoft Edge Driver, перейдите на страницу [загрузок Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  Справку по автоматизации Microsoft Edge Dev вместе с Microsoft Edge Driver см. в статье [Использование WebDriver (Chromium) для автоматизации тестов][WebDriverChromiumMain].  
 
-:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools в Microsoft Edge для Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
-   DevTools в Microsoft Edge для Linux  
+:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Средства разработчика в Microsoft Edge в Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
+   Средства разработчика в Microsoft Edge в Linux  
 :::image-end:::  
 
-## Улучшенная подсказка и советы по платформе в инструменте "проблемы"  
+## Улучшенные советы webhint и платформы в средстве "Проблемы"  
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
 
-Средство веб- [подсказки][WebhintMain]с открытым кодом обеспечивает отзыв в реальном времени для веб-сайтов и локальных веб-страниц.  Начиная с [Microsoft Edge версии 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel], изучите Отзывы по веб – подсказкам в инструменте " [вопросы][DevtoolsIssuesIndex] ".  Проблемы, возникающие в инструменте " **проблемы** ", теперь проще проанализировать с добавлением следующих категорий.  
+Средство с открытым кодом [webhint][WebhintMain]предоставляет отзывы в режиме реального времени для веб-сайтов и локальных веб-страниц.  С [Microsoft Edge версии 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel] отзывы webhint доступны в средстве [Проблемы][DevtoolsIssuesIndex].  Проблемы, отображаемые в средстве **Проблемы**, теперь проще просматривать благодаря добавлению следующих категорий.  
 
 *   [Специальные возможности][WebhintUserGuideHintsAccessibility]  
 *   [Совместимость][WebhintUserGuideHintsCompatibility]  
 *   [Производительность][WebhintUserGuideHintsPerformance]  
-*   [Ошибок][WebhintUserGuideHintsPitfalls]  
+*   [Ошибки][WebhintUserGuideHintsPitfalls]  
 *   [PWA][WebhintUserGuideHintsPwa]  
 *   [Безопасность][WebhintUserGuideHintsSecurity]  
     
-Теперь вы можете отфильтровать сторонние проблемы с помощью нового флажка.  Функция фильтрации помогает скрыть проблемы, связанные с кодом из сторонних библиотек или из других источников.  
+Теперь вы можете отфильтровать сторонние проблемы с помощью новой галочки.  Функция фильтрации помогает скрыть проблемы, связанные с кодом сторонних библиотек или других источников.  
 
-Для ознакомления с вопросами, обнаруженными с помощью этой [подсказки][WebhintMain], в инструменте " **проблемы** " отображаются следующие сведения.  
+Чтобы помочь с просмотром проблем, выявленных инструментом [webhint][WebhintMain], средство **Проблемы** теперь отображает следующую информацию.  
 
 *   Улучшенные фрагменты кода.  
-*   Ссылки на другие подходящие панели.  
-*   Ссылки на документы, которые помогут вам устранить проблемы на веб-сайте.  
+*   Ссылки на другие связанные панели.  
+*   Ссылки на документацию по устранению проблем на вашем веб-сайте.  
     
-:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Инструмент проблемы"::: lightbox="../../media/2020/11/issues-webhints.msft.png":::
-   Инструмент " **проблемы** "  
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Средство "Проблемы"" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+   Средство **Проблемы**  
 :::image-end:::  
 
-## Составные слои теперь отображаются в трехмерном представлении  
+## Составные слои теперь находятся в трехмерном представлении  
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-Теперь вы можете визуализировать содержимое **слоев** вместе со значениями z-индекса и объектной модели документов \ (DOM \).  Эта функция позволяет выполнять отладку, не переключаясь между инструментами [3D View][Devtools3dViewIndex] и **слоев** как можно чаще.  Для всесторонней визуальной отладки [теперь можно объединять трехмерное представление и составные слои][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
+Теперь вы можете визуализировать содержимое **Слои** вместе со значениями z-index и объектной моделью документов \(DOM\).  Эта функция помогает выполнять отладку без частого переключения между средствами [Трехмерное представление][Devtools3dViewIndex] и **Слои**.  Для обеспечения комплексного визуального интерфейса отладки [трехмерное представление и составные слои теперь объединены][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Область «составные слои»" lightbox="../../media/2020/11/experiments-layers.msft.png":::
-   Область « **Составные слои** »  
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Панель "Составные слои"" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+   Панель **Составные слои**  
 :::image-end:::  
 
-## Определение переменных CSS на панели «Стили»  
+## Определения переменных CSS в панели "Стили"  
 
 <!-- Title: Jump to CSS variable definitions  -->  
 <!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->  
 
-В области **стили** [CSS переменные][MdnUsingCssCustomProperties] теперь прямо связываются с каждым определением.  Выберите переменную, чтобы легко просмотреть или изменить определение переменной CSS.  В примере DevTools отображает атрибуты CSS для `body` элемента.  Чтобы отобразить определение переменной `--theme-body-background` CSS, выполните указанные ниже действия.  
+В панели **Стили** [переменные CSS][MdnUsingCssCustomProperties] теперь связаны непосредственно с каждым определением.  Выберите переменную, чтобы легко просмотреть или изменить определение переменной CSS.  В этом примере средства разработчика отображают атрибуты CSS для элемента `body`.  Чтобы отобразить определение переменной CSS `--theme-body-background`, выполните следующие действия.  
 
-1.  В области **стили** выберите `var(--theme-body-background)` .  
-1.  В области " **стили** " теперь отображается определение `--theme-body-background` переменной CSS.  
+1.  В области **Стили** выберите `var(--theme-body-background)`.  
+1.  В области **Стили** отобразится определение переменной CSS `--theme-body-background`.  
     
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="Переменная CSS, связанная с этим стилем" lightbox="../../media/2020/11/css-variable-support.msft.png":::
-         Переменная CSS, связанная с этим стилем  
+      :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="Переменная CSS, связанная со стилем" lightbox="../../media/2020/11/css-variable-support.msft.png":::
+         Переменная CSS, связанная со стилем  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -93,69 +93,69 @@ ms.locfileid: "11205245"
    :::column-end:::
 :::row-end:::  
 
-## Улучшения в отладке рабочих процессов служб  
+## Улучшения отладки служебного сценария  
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
 
-Ниже перечислены новые возможности средств " [сеть](#network-tool)", " [приложение](#application-tool)" и " [источники](#sources-tool) ", которые помогут вам создать [PWA][ProgressiveWebAppsChromiumIndex].  Если у вас возникли проблемы при отладке вашего сотрудника службы, используйте следующие функции.  
+Следующие новые функции средств [Сеть](#network-tool), [Приложение](#application-tool) и [Источники](#sources-tool) помогают создавать [PWA][ProgressiveWebAppsChromiumIndex].  Используйте следующие функции, если у вас возникли трудности при отладке служебного сценария.  
 
-В маршруте запроса отображаются `startup` события и данные, `fetch` основанные на запросах в сети, которые выполняются сотрудниками службы.  Доступ к временной шкале осуществляется с помощью средства " **приложение** " или " **сеть** ".  Временные шкалы помогают вам при возникновении проблем с сотрудниками служб, которые хотят проверить, не возникло ли что-то с `startup` `fetch` событием.  
+Маршрутизация запросов отображает события `startup` и `fetch`, основанные на сетевых запросах, выполняемых в служебных сценариях.  Временные шкалы доступны в средстве **Приложение** или **Сеть**.  Временные шкалы удобно использовать, если у вас возникли проблемы со служебными сценариями и вы хотите проверить наличие ошибок в событиях `startup` или `fetch`.  
 
-### Инструмент "приложение"  
+### Средство "Приложение"  
 
 <!-- Title: Open Network tool from the Service Workers pane  -->  
 <!-- Subtitle: Display additional context when debugging a service worker.  -->  
 
-Просмотреть все сведения о маршруте запроса на обслуживание с помощью новой ссылки " **сетевые запросы** ".  Чтобы отобразить дополнительный контекст при отладке рабочего процесса службы, выполните указанные ниже действия.  
+Просматривайте все сведения о маршрутизации запросов служебных сценариев с помощью новой ссылки **Сетевые запросы**.  Чтобы отобразить дополнительный контекст при отладке служебного сценария, выполните следующие действия.  
 
-1.  Перейдите к ****  >  **сотрудникам службы**приложений.  
-1.  Выберите **сетевые запросы**.  
+1.  Выберите **Приложение** > **Служебные сценарии**.  
+1.  Нажмите **Сетевые запросы**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Инструмент открыть сеть из области работники службы"::: lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
-       Инструмент "открыть **сеть** " из области " **работники службы** "
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Открытие средства "Сеть" из панели "Служебные сценарии"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+       Открытие средства **Сеть** из панели **Служебные сценарии**
     :::image-end:::  
     
-1.  В **ящике** откроется средство " **сеть** ", в котором выводятся все сетевые запросы, связанные с сотрудниками служб.  Сетевые запросы фильтруются с использованием `is:service-worker-intercepted` .  
+1.  Средство **Сеть** открывается в **консоли** и отображает все сетевые запросы, связанные со служебными сценариями.  Сетевые запросы фильтруются с помощью `is:service-worker-intercepted`.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Инструмент сеть в ящике"::: lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
-       Инструмент " **сеть** " в **ящике**  
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Средство "Сеть" в консоли" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+       Средство **Сеть** в **консоли**  
     :::image-end:::
     
-1. Чтобы вернуть инструмент **Network (сеть** ) на верхнюю панель, закройте **денежный ящик**.  
+1. Чтобы вернуть средство **Сеть** на верхнюю панель, закройте **консоль**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закройте денежный ящик, чтобы вернуть сетевое средство" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
-       Закройте **денежный ящик** , чтобы вернуть **Сетевое** средство  
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закрытие консоли для возврата средства "Сеть"" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+       Закрытие **консоли** для возврата средства **Сеть**  
     :::image-end:::  
     
-### Инструмент "сеть"  
+### Средство "Сеть"  
 
-Сетевые запросы на отладку, которые выполняются сотрудниками службы;  Кроме того, вы можете открывать сетевые запросы из средства **приложения** .  Для каждого запроса DevTools отобразить следующие сведения в области [временных интервалов][DevtoolsNetworkReferenceViewTimingBreakdownRequest] .  
+Выполняйте отладку сетевых запросов, выполняемых в служебных сценариях.  Вы также можете открывать сетевые запросы в средстве **Приложение**.  Для каждого запроса средства разработчика отображают следующие сведения в панели [Время][DevtoolsNetworkReferenceViewTimingBreakdownRequest].  
 
-*   Начало запроса и продолжительность начальной загрузки.  
-*   Изменения регистрации рабочих процессов служб.  
-*   Среда выполнения `fetch` обработчика событий.  
-*   Среда выполнения всех событий, возникающих `fetch` при загрузке клиента.  
+*   Начало запроса и длительность начальной загрузки.  
+*   Изменения регистрации служебных сценариев.  
+*   Время выполнения обработчика события `fetch`.  
+*   Время выполнения всех событий `fetch` для загрузки клиента.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Область временных интервалов" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
-   Область **временных интервалов**  
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Панель "Время"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+   Панель **Время**  
 :::image-end:::  
 
-### Инструмент «источники»  
+### Средство "Источники"  
 
-В предыдущих версиях Microsoft Edge уровень глубины в стеке вызовов ограничен кодом JavaScript в сервисном рабочем процессе.  В Microsoft Edge 88 в стеке вызовов теперь отображаются инициаторы запросов, которые выполняются в рамках вашего сотрудника службы.  
+В предыдущих версиях Microsoft Edge глубина в стеке вызовов была ограничена кодом JavaScript в вашем служебном сценарии.  Теперь в Microsoft Edge 88 стек вызовов отображает инициатора запросов, выполняемых в служебном сценарии.  
 
-Чтобы найти инициатора запроса, используйте стек вызовов вашего кода JavaScript в сервисном рабочем процессе.  Стек вызовов на приведенных ниже рисунках начинается с кода JavaScript в рабочем процессе и отображает ссылку на первоначальное приглашение на веб-страницу `(index):157` .  На втором рисунке показано, как выбрать ссылку и открыть инициатор, который сделал запрос.  Инициатор на втором рисунке — это веб-страница.  
+Чтобы найти инициатора запроса, используйте стек вызовов своего кода JavaScript в служебном сценарии.  Стек вызовов на следующих рисунках начинается с кода JavaScript в вашем служебном сценарии и отображает ссылку на исходный запрос веб-страницы как `(index):157`.  На втором рисунке выбрана ссылка и открыт инициатор, выполнивший запрос.  Инициатором на втором рисунке является веб-страница.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="Создатель запроса, который выделит service-worker.js файл и стек вызовов" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
-         `service-worker.js`Инициатор запроса, выделяя файл и стек вызовов  
+      :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="Файл service-worker.js и стек вызовов с выделением инициатора запроса" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+         Файл `service-worker.js` и стек вызовов с выделением инициатора запроса  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="Веб-страница указателя является инициатором запроса" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
-         `(index)`Веб-страница является инициатором запроса  
+      :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="Веб-страница (индекс) является инициатором запроса" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
+         Веб-страница `(index)` является инициатором запроса  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -165,52 +165,60 @@ ms.locfileid: "11205245"
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->  
 <!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the contextual menu.  -->  
 
-В средстве **Network (сеть** ) скопируйте значение свойства сетевого запроса с помощью нового параметра **Копировать значение** .  Значение свойства копируется как декодированное значение JSON.  В предыдущих версиях Microsoft Edge пришло время скопировать значение с помощью одного из указанных ниже действий.  
+В средстве **Сеть** скопируйте значение свойства сетевого запроса с помощью нового параметра **Копировать значение**.  Значение свойства копируется в виде декодированного значения JSON.  В предыдущих версиях Microsoft Edge вам приходилось копировать значение с помощью одного из следующих действий.  
 
-*   Выделит весь текст и скопируйте его.  
-*   Сохраните значение как глобальную переменную, если это применимо, и скопируйте ее из [консоли][DevtoolsConsoleIndex]DevTools.  
+*   Выделение всего текста и его копирование.  
+*   Сохранение значения в качестве глобальной переменной (если применимо) и копирование его из вкладки [Консоль][DevtoolsConsoleIndex] средств разработчика.  
     
-Чтобы скопировать значение свойства в буфер обмена, перейдите в [буфер обмена, чтобы скопировать отформатированный JSON ответа][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard].  Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [1132084][CR1132084].  
+Сведения о копирования значения свойства в буфер обмена см. в разделе[Копирование форматированного отклика JSON в буфер обмена][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard].  Чтобы просмотреть историю этой функции в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1132084][CR1132084].  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Копирование значения свойства в DevTools" lightbox="../../media/2020/11/copy-property-value.msft.png":::
-         Копирование значения свойства в DevTools  
+      :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Копирование значения свойства в средствах разработчика" lightbox="../../media/2020/11/copy-property-value.msft.png":::
+         Копирование значения свойства в средствах разработчика  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Вставка значения свойства в код Visual Studio" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Вставка значения свойства в код Visual Studio  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Вставка значения свойства в Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Вставка значения свойства в Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Настройка сочетаний клавиш с несколькими нажатиями клавиш  
+## Настройка сочетания клавиш с несколькими нажатиями  
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->  
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-[Поскольку Microsoft Edge версии 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], вы можете настроить сочетания клавиш для любых действий в DevTools.  В Microsoft Edge версии 88 вы можете создать несколько сочетаний клавиш.  Чтобы задать сочетание клавиш для действия в DevTools, перейдите в раздел [][DevtoolsCustomizeIndexSettings]  >  **эксперименты** с параметрами и установите флажок **включить редактор сочетаний клавиш**.  Дополнительные сведения о настройке и редактировании сочетаний клавиш можно найти в статье [включить режим экспериментального редактора сочетаних][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]клавиш.  
+[С Microsoft Edge версии 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings] вы можете настраивать сочетания клавиш для любого действия в средствах разработчика.  В Microsoft Edge версии 88 теперь можно создавать сочетания клавиш с несколькими нажатиями.  Чтобы настроить сочетание клавиш для действия в средствах разработчика, перейдите в раздел [Параметры][DevtoolsCustomizeIndexSettings] > **Эксперименты** и установите флажок **Enable keyboard shortcut editor** (Включить редактор сочетания клавиш).  Дополнительные сведения о настройке и изменении сочетаний клавиш см. в разделе о [включении экспериментальной функции редактора сочетания клавиш][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
 
-Например, красная подсветка отображает сочетание клавиш для нескольких нажатий, настроенное для действия " **начать запись событий** ".  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к [вопросу #174309][CR174309].  
+Например, красное выделение отображает сочетание клавиш с несколькими нажатиями, настроенное для действия **Начать запись событий**.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблеме [174309][CR174309].  
 
-:::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Сочетания клавиш для аккордов" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
-   Сочетания клавиш для нескольких клавиш  
+:::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Аккордные сочетания клавиш" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
+   Сочетания клавиш с несколькими нажатиями  
+:::image-end:::  
+
+## Средства разработчика теперь соответствуют языку браузера  
+
+В Microsoft Edge версии 87, если вы включали параметр **Согласовать язык браузера** в [параметрах средств разработчика][DevtoolsCustomizeIndexSettings], язык средств разработчика не совпадал с языком браузера.  В Microsoft Edge версии 88 средства разработчика соответствуют языку браузера, если вы включите параметр **Согласовать язык браузера**.  Дополнительные сведения о параметре средств разработчика **Согласовать язык браузера** см. в статье [Изменение языковых параметров средств разработчика][DevtoolsCustomizeLocalization].  
+
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Параметр средств разработчика "Согласовать язык браузера" на японском языке" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+   Параметр средств разработчика **Согласовать язык браузера** на японском языке  
 :::image-end:::  
 
 ## Объявления из проекта Chromium  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### Новые инструменты визуализации для угла CSS  
+### Новые средства визуализации угла CSS  
 
-DevTools теперь имеет улучшенную поддержку отладки для углов CSS.  Если к элементу HTML на странице применен угол CSS, рядом с углом в инструменте " **стили** " отображается значок "Часы".  Чтобы включить или выключить наложение часов, щелкните значок часы.  Чтобы изменить угол, выберите любое место в часах или перетащите поле стрелки.  Для изменения значения угла вы также можете использовать клавиши мыши и сочетания клавиш.  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите в раздел проблемы [1126178][CR1126178] и [1138633][CR1138633].  
+В средствах разработчика улучшена поддержка отладки угла CSS.  Если к элементу HTML на вашей странице применен угол CSS, рядом с углом в средстве **Стили** отображается значок часов.  Чтобы переключить наложение часов, щелкните значок часов.  Чтобы изменить угол, выберите любое место на часах или перетащите стрелку.  Чтобы изменить значение угла, вы также можете использовать мышь и сочетания клавиш.  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблемам [1126178][CR1126178] и [1138633][CR1138633].  
 
 <!--todo:  add link when css angle clock section exists.  -->  
 
-Для этого примера используется следующий угол CSS.  
+Следующий угол CSS используется в качестве примера.  
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
@@ -220,181 +228,182 @@ background: linear-gradient(100deg, lightblue, pink);
    Угол CSS  
 :::image-end:::  
 
-### Имитация размера квоты хранилища в области "хранилище"  
+### Эмуляция размера квоты хранилища в области "Хранилище"  
 
-Теперь вы можете переопределить размер квоты хранилища в области **хранения** .  Эта функция позволяет моделировать различные устройства и тестировать работу вашего веб-сайта или приложения в сценариях недостаточной доступности диска.  Чтобы смоделировать квоту хранилища, выполните указанные ниже действия.  
+Теперь вы можете переопределить размер квоты хранилища области **Хранилище**.  Эта функция позволяет эмулировать различные устройства и тестировать поведение веб-сайта или приложения в сценариях низкой доступности диска.  Чтобы эмулировать квоту хранилища, выполните следующие действия.  
 
-1.  Перейдите в **** раздел  >  **хранилище**приложений.  
-1.  Включите флажок **Эмуляция настраиваемой квоты хранилища** .  
+1.  Выберите **Приложение** > **Хранилище**.  
+1.  Установите флажок **Эмулировать настраиваемую квоту хранилища**.  
 1.  Введите допустимое число.  
     
-Дополнительные сведения о том, как эмулировать мобильные устройства и другие функции в DevTools, можно найти в [разделе Эмуляция мобильных устройств в Microsoft Edge DevTools ][DevtoolsDeviceModeIndex].  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите в раздел проблемы [945786][CR945786] и [1146985][CR1146985].  
+Дополнительные сведения о том, как эмулировать мобильные устройства и другие функции в средствах разработчика, см. в статье [Эмуляция мобильных устройств в средствах разработчика Microsoft Edge][DevtoolsDeviceModeIndex].  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблемам [945786][CR945786] и [1146985][CR1146985].  
 
-:::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="Имитация размера квоты хранилища" lightbox="../../media/2020/11/storage-quota.msft.png":::
-   Имитация размера квоты хранилища  
+:::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="Эмуляция размера квоты хранилища" lightbox="../../media/2020/11/storage-quota.msft.png":::
+   Эмуляция размера квоты хранилища  
 :::image-end:::  
 
-### Ошибки при составлении отчета CORS в инструменте "сеть"  
+### Отчет об ошибках CORS в средстве "Сеть"  
 
-Ознакомьтесь с этой функцией, перейдя в [демонстрацию ошибки CORS][GlitchCorsErrors].  Откройте средство **Network (сеть** ), обновите страницу и просмотрите ошибочный запрос CORS Network.  В столбце status отображается **Ошибка CORS**.  При наведении указателя мыши на ошибку появляется подсказка с кодом ошибки.  В Microsoft Edge версии 87 и более ранних версий DevTools только что выводит общее состояние ошибки CORS **(сбой)** .  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [1141824][CR1141824].  
+Попробуйте эту функцию, перейдя к [демонстрации ошибки CORS][GlitchCorsErrors].  Откройте средство **Сеть**, обновите страницу и наблюдайте за сбоем сетевого запроса CORS.  В столбце состояния отображается **ошибка CORS**.  При наведении курсора на ошибку теперь отображается код ошибки.  В Microsoft Edge версии 87 и более ранних версиях средства разработчика отображали только общее состояние **(сбой)** для ошибок CORS.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1141824][CR1141824].  
 
 :::image type="complex" source="../../media/2020/11/cors-err.msft.png" alt-text="Ошибки CORS" lightbox="../../media/2020/11/cors-err.msft.png":::
    Ошибки CORS  
 :::image-end:::  
 
-### Обновления представления "сведения о кадрах"  
+### Обновления представления сведений о фрейме  
 
-#### Сведения о межисточниковой изоляции в представлении сведений о кадре  
+#### Сведения об изоляции между источниками в представлении сведений о фрейме  
 
-Изолированное состояние "перекрестный источник" теперь отображается в разделе **изоляция & безопасности** .  В разделе новый **доступ к API** отображаются сведения о доступности `SharedArrayBuffer` s \ (SAB \) и о том, можно ли совместно использовать буферы `postMessage()` .  Предупреждение об устаревании отображается, если свойство SAB и в `postMessage()` настоящее время доступно, но контекст не является зависимым от других источников.  Чтобы получить дополнительные сведения о межисточниковой изоляции и о том, что необходимо для таких функций `SharedArrayBuffers` , перейдите на сайт [WindowOrWorkerGlobalScope. crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Чтобы просмотреть обновления в режиме реального времени в проекте Open-Source Chromium, перейдите к вопросу [1139899][CR1139899].  
+Теперь состояние изоляции между источниками отображается в разделе **Безопасность и изоляция**.  В новом разделе **Доступность API** отображается доступность `SharedArrayBuffer`s \(SAB\) и возможность совместного использования буферов с помощью `postMessage()`.  Если в настоящее время SAB и `postMessage()` доступны, но контекст не изолирован между источниками, отображается предупреждение о прекращении поддержки.  Дополнительные сведения об изоляции между источниками и о причине ее необходимости для таких функций, как `SharedArrayBuffers`, см. в разделе [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1139899][CR1139899].  
 
-:::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Сведения о разных источниках" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
-   Сведения о разных источниках  
+:::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Информация о взаимодействии источников" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
+   Информация о взаимодействии источников  
 :::image-end:::  
 
-#### Новые сведения о веб-сотрудниках в представлении "сведения о кадре"  
+#### Сведения о новых рабочих веб-процессах в представлении сведений о фрейме  
 
-Теперь DevTools организует веб-рабочие процессы в соответствующем родительском фрейме.  Например, если `someName` рамка создана `worker.js` , в `worker.js` `someName` списке **кадры** появится надпись.  Чтобы просмотреть сведения о веб-сотруднике, выполните указанные ниже действия.  
+Средства разработчика теперь упорядочивают рабочие веб-процессы в соответствующем родительском фрейме.  Например, если фрейм `someName` создает `worker.js`, `worker.js` отображается в разделе `someName` в списке **Кадры**.  Чтобы просмотреть сведения о рабочем веб-процессе, выполните следующие действия.  
 
-1.  Откройте средство " **приложение** ".  
-1.  Разверните рамку, содержащую веб-сотрудников.  
-1.  Разверните дерево " **сотрудники** ".  
-1.  Выберите работника.  
+1.  Откройте средство **Приложение**.  
+1.  Разверните фрейм, содержащий рабочие веб-процессы.  
+1.  Разверните дерево **Рабочие процессы**.  
+1.  Выберите рабочий процесс.  
     
-Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите в раздел проблемы [1122507][CR1122507] и [1051466][CR1051466].  
+Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблемам [1122507][CR1122507] и [1051466][CR1051466].  
 
-:::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Сведения о веб-работниках" lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
-   Сведения о веб-работниках  
+:::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Сведения о рабочих веб-процессах" lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
+   Сведения о рабочих веб-процессах  
 :::image-end:::  
 
-#### Отображение сведений о кадре opener для открытых окон  
+#### Отображение сведений об открывающем фрейме для открытых окон  
 
-DevTools теперь упорядочивает открытые [окна][MdnWindowConstructors] под соответствующим родительским [кадром][MdnWindowFrames].  Например, если при `top` открытии кадра в поле `Window` "Кому" появится надпись `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium` `Window` `top` в списке **рамок** .  
+Средства разработчика теперь упорядочивают открытые [окна][MdnWindowConstructors] в соответствующем родительском [фрейме][MdnWindowFrames].  Например, если фрейм `top` открывает `Window` для `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, `Window`отображается в разделе `top` в списке **Кадры**.  
 
-Чтобы отобразить кадр, ответственный за открытие другого окна в инструменте " **элементы** ", выполните указанные ниже действия.  
+Чтобы открыть в средстве **Элементы** фрейм, отвечающий за открытие другого окна, выполните следующие действия.  
 
-1.  Откройте дерево **рамок** .  
-1.  Разверните **открытые окна** и выберите `Window` родительский фрейм, который вы хотите узнать.  
-1.  Щелкните ссылку **рамка opener** .  
+1.  Откройте дерево **Кадры**.  
+1.  Разверните узел **Открытые окна** и выберите `Window` для родительского фрейма, сведения о котором вам нужны.  
+1.  Щелкните ссылку **Открывающий фрейм**.  
 
-Отображаются сведения о том, какой кадр вызвал открытие другого `Window` .  Чтобы открыть opener в инструменте **элементы** , выполните указанные ниже действия.  
+Отобразятся сведения о том, какой фрейм вызвал открытие другого объекта `Window`.  Чтобы отобразить открывающий элемент с средстве **Элементы**, выполните следующие действия.  
 
-1.  Откройте дерево **рамок** .  
-1.  Выберите открытое окно, чтобы открыть `Window` подробные сведения.  
-1.  Щелкните ссылку **рамка opener** .  
+1.  Откройте дерево **Кадры**.  
+1.  Выберите открытое окно, чтобы открыть сведения об элементе `Window`.  
+1.  Щелкните ссылку **Открывающий фрейм**.  
     
-Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [1107766][CR1107766].  
+Чтобы просмотреть историю этой функции в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1107766][CR1107766].  
 
-:::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="Сведения об открытых кадрах" lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
-   Сведения об открытых кадрах  
+:::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="Сведения об открытом фрейме" lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
+   Сведения об открытом фрейме  
 :::image-end:::  
 
-### Копирование StackTrace для инициатора сети  
+### Копирование трассировки стека для инициатора сети  
 
-Чтобы скопировать StackTrace в буфер обмена, выполните указанные ниже действия.  
+Чтобы скопировать трассировку стека в буфер обмена, выполните следующие действия.  
 
-1.  Откройте контекстное меню, щелкнув правой кнопкой мыши.  
-1.  Нажмите кнопку **Копировать**/скопировать  >  **StackTrace**.  
+1.  Откройте контекстное меню \(щелкните правой кнопкой мыши\).  
+1.  Выберите **Копировать** > **Копировать трассировку стека**.  
     
-Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [1139615][CR1139615].
+Чтобы просмотреть историю этой функции в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1139615][CR1139615].
 
-:::image type="complex" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="Копирование StackTrace" lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
-   Копирование StackTrace  
+:::image type="complex" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="Копирование трассировки стека" lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
+   Копирование трассировки стека  
 :::image-end:::  
 
-### Предварительный просмотр значения переменной Wasm на onmouseover  
+### Просмотр значения переменной Wasm при наведении указателя мыши  
 
-Используйте эту функцию для проверки значения переменной Assembly \ (Wasm \) при приостановке кода.  Для отображения текущего значения переменной наведите указатель мыши на переменную.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите в раздел проблемы [1058836][CR1058836] и [1071432][CR1071432].  
+Используйте эту функцию для просмотра значения переменной WebAssembly \(Wasm\) при приостановке кода.  Чтобы отобразить текущее значение переменной, наведите курсор на нее.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблемам [1058836][CR1058836] и [1071432][CR1071432].  
 
-:::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Предварительный просмотр переменной Wasm на onmouseover" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
-   Предварительный просмотр переменной Wasm на onmouseover  
+:::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Просмотр переменной Wasm при наведении указателя мыши" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
+   Просмотр переменной Wasm при наведении указателя мыши  
 :::image-end:::  
 
-### Единые единицы измерения для размеров файлов и памяти  
+### Согласованные единицы измерения для размеров файлов и памяти  
 
-DevTools теперь постоянно используется `kB` для отображения размеров файлов и памяти.  Ранее DevTools смешанный `kB` и `KiB` .
+Средства разработчика теперь согласованно используют `kB` для отображения размеров файлов и памяти.  Предыдущие средства смешивали использование `kB` и `KiB`.
 
-*   `kB` или КБ \ (10 ^ 3 или 1000 байт \)  
-*   `KiB` или kibibyte \ (2 ^ 10 или 1024 байт \)  
+*   `kB` или килобайт \(10^3 или 1000 байт\)  
+*   `KiB` или кибибайт \(2^10 или 1024 байт\)  
     
-Например, **Сетевое** средство, ранее использованное `kB` в этикетках, которое использовалось для `KiB` вычислений.  Ваше мнение показало, что эта несогласованность привела к путанице.  Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [1035309][CR1035309].  
+Например, средство **Сеть** ранее использовало `kB` в метках, но `KiB` — в вычислениях.  Ваши отзывы показали, что это несоответствие приводило к путанице.  Чтобы просмотреть историю этой функции в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1035309][CR1035309].  
 
-## Загрузка каналов предварительной версии Microsoft Edge  
+## Скачивание Microsoft Edge предварительных каналов  
 
-Если вы используете операционную систему Windows, Linux или macOS, в качестве браузера разработки по умолчанию рекомендуется использовать [каналы предварительного просмотра Microsoft Edge] [MicrosoftEdgePreviewChannels].  Каналы предварительного просмотра предоставляют доступ к последним функциям DevTools.  
+Если вы используете Windows, Linux или macOS, рассмотрите возможность использования [Microsoft Edge предварительных каналов][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
-## Знакомство с Microsoft Edge DevTools Team  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: /microsoft-edge/devtools-guide-chromium/3d-view/index "Трехмерный вид | Документы Microsoft"  
-[DevtoolsConsoleIndex]: /microsoft-edge/devtools-guide-chromium/console/index "Обзор консоли | Документы Microsoft"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры: Настройка Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Эмуляция мобильных устройств в Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Включить редактор сочетаний клавиш — экспериментальные функции | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "Включение составных слоев в режиме трехмерной графики — экспериментальные функции | Документы Microsoft"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы" | Документы Microsoft"  
-[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: /microsoft-edge/devtools-guide-chromium/network/reference#copy-formatted-response-json-to-the-clipboard "Копирование отформатированного ответа JSON в буфер обмена — Справка по анализу сети | Документы Microsoft"  
-[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: /microsoft-edge/devtools-guide-chromium/network/reference#view-the-timing-breakdown-of-a-request "Просмотр разбиения по времени для запроса на анализ сети | Документы Microsoft"  
-[WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "Использование Chromium для проверки автоматизации тестов Документы Microsoft"  
+[Devtools3dViewIndex]: /microsoft-edge/devtools-guide-chromium/3d-view/index "Трехмерное представление | Документация Майкрософт"  
+[DevtoolsConsoleIndex]: /microsoft-edge/devtools-guide-chromium/console/index "Обзор консоли | Документация Майкрософт"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры — настройка средств разработчика Microsoft Edge | Документация Майкрософт"  
+[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "Изменение языковых параметров средств разработчика | Документация Майкрософт"  
+[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Эмуляция мобильных устройств в средствах разработчика Microsoft Edge | Документация Майкрософт"  
+[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Включение редактора сочетаний клавиш — экспериментальные функции | Документация Майкрософт"  
+[DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "Включение составных слоев в трехмерном представлении — экспериментальные функции | Документация Майкрософт"  
+[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Поиск и устранение проблем со средством "Проблемы" средств разработчика Microsoft Edge | Документация Майкрософт"  
+[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: /microsoft-edge/devtools-guide-chromium/network/reference#copy-formatted-response-json-to-the-clipboard "Копирование форматированного отклика JSON в буфер обмена — справочник по анализу сети | Документация Майкрософт"  
+[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: /microsoft-edge/devtools-guide-chromium/network/reference#view-the-timing-breakdown-of-a-request "Просмотр разбивки времени запроса — справочник по анализу сети | Документация Майкрософт"  
+[WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "Использование WebDriver (Chromium) для автоматизации тестирования | Документация Майкрософт"  
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивные веб-приложения в Windows | Документы Microsoft"  
+[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивное веб-приложение в Windows | Документация Майкрософт"  
 
-[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "Настройка сочетаний клавиш в окне "Параметры" — новые возможности DevTools (Microsoft Edge 87) | Документы Microsoft"  
-[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#webhint-feedback-in-the-issues-panel "отзыв о веб-подсказках на панели "вопросы" — новые возможности DevTools (Microsoft Edge 85) | Документы Microsoft"  
+[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "Настройка сочетания клавиш в параметрах — что нового в средствах разработчика (Microsoft Edge 87) | Документация Майкрософт"  
+[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#webhint-feedback-in-the-issues-panel "Отзывы webhint в панели "Проблемы" — что нового в средствах разработчика (Microsoft Edge 85) | Документация Майкрософт"  
 
-[MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Скачать "|" Разработчик Майкрософт"  
+[MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Скачивание WebDriver | Программа Майкрософт для разработчиков"  
 
-[MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Скачайте каналы предварительной оценки Microsoft Edge"  
+[MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Скачивание Microsoft Edge Insider Channels"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Код Visual Studio"  
+[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Ошибки Chromium"  
 
-[CR174309]: https://crbug.com/174309 "Ошибка 174309: DevTools: разрешить настройку сочетаний клавиш и привязок клавиш | Ошибки Chromium"  
-[CR945786]: https://crbug.com/945786 "Ошибка 945786: DevTools: разрешить переопределение навигатора. Storage. Оценка () | Ошибки Chromium"  
-[CR1029427]: https://crbug.com/1029427 "Ошибка 1029427: сократите нагрузку на передачу сообщений протокола в интерфейсе | Ошибки Chromium"  
-[CR1035309]: https://crbug.com/1035309 "Дата_выпуска 1035309: DevTools должен постоянно использовать для обозначения мегабайта (МБ), а не mebibyte | Ошибки Chromium"  
-[CR1051466]: https://crbug.com/1051466 "Ошибка 1051466: поддержка отладки COOP/COEP в DevTools | Ошибки Chromium"  
-[CR1058836]: https://crbug.com/1058836 "Проблема 1058836: проблемы с UX при отладке Wasm | Ошибки Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Вопрос 1071432: ☂️ Wasm Basic Developer | Ошибки Chromium"  
-[CR1107766]: https://crbug.com/1107766 "Ошибка 1107766: отображает сведения о кадрах, созданных с помощью "Window. Open ()" в дереве кадров | Ошибки Chromium"  
-[CR1122507]: https://crbug.com/1122507 "Ошибка 1122507: сведения о сотруднике Surface в представлении дерева кадров | Ошибки Chromium"  
-[CR1126178]: https://crbug.com/1126178 "Ошибка 1126178: ☂ DevTools: CSS <Type> Components | Ошибки Chromium"  
-[CR1130556]: https://crbug.com/1130556 "Ошибка 1130556: DevTools: Проверка резервных изображений (эмуляция) | Ошибки Chromium"  
-[CR1132084]: https://crbug.com/1132084 "Ошибка 1132084: простой способ скопировать полезные данные запроса JSON | Ошибки Chromium"  
-[CR1136394]: https://crbug.com/1136394 "Ошибка 1136394: средство управления подсказкой | Ошибки Chromium"  
-[CR1138633]: https://crbug.com/1138633 "Ошибка 1138633: DevTools: CSS <Angle> компонент должен отражать его внешний вид свойства в фоновом режиме "Часы" | Ошибки Chromium"  
-[CR1139615]: https://crbug.com/1139615 "Ошибка 1139615: инициатору сети следует предоставить возможность копировать трассировку стека | Ошибки Chromium"  
-[CR1139899]: https://crbug.com/1139899 "Ошибка 1139899: создание отчета о доступности с ИНТЕРФЕЙСом в режиме "сведения о кадре" | Ошибки Chromium"  
-[CR1139945]: https://crbug.com/1139945 "Вопрос 1139945: значки свойств CSS для подэлементного бокса на панели «Стили» | Ошибки Chromium"  
-[CR1141824]: https://crbug.com/1141824 "Ошибка 1141824: ускорение работы с отчетами об ошибках CORS в DevTools | Ошибки Chromium"  
-[CR1144090]: https://crbug.com/1144090 "Ошибка 1144090: Добавление графических элементов стиля Flex в дерево Elements | Ошибки Chromium"  
-[CR1146985]: https://crbug.com/1146985 "Проблема 1146985: очищенный текст по-прежнему отображается в текстовом поле в разделе "хранилище" окна "средства разработки" | Ошибки Chromium"  
+[CR174309]: https://crbug.com/174309 "Проблема 174309: средства разработчика: разрешение настройки сочетания клавиш | Ошибки Chromium"  
+[CR945786]: https://crbug.com/945786 "Проблема 945786: средства разработчика: разрешение переопределения navigator.storage.estimate() | Ошибки Chromium"  
+[CR1029427]: https://crbug.com/1029427 "Проблема 1029427: снижение нагрузки при отправке сообщений протоколом во внешнем интерфейсе | Ошибки Chromium"  
+[CR1035309]: https://crbug.com/1035309 "Проблема 1035309: средства разработчика должны согласованно использовать МБ для обозначения мегабайт, а не мебибайт | Ошибки Chromium"  
+[CR1051466]: https://crbug.com/1051466 "Проблема 1051466: поддержка отладки COOP/COEP в средствах разработчика | Ошибки Chromium"  
+[CR1058836]: https://crbug.com/1058836 "Проблема 1058836: проблемы пользовательского интерфейса при отладке Wasm | Ошибки Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Проблема 1071432: ☂️ базовый интерфейс разработчика Wasm | Ошибки Chromium"  
+[CR1107766]: https://crbug.com/1107766 "Проблема 1107766: отображение сведений о фреймах, созданных командой "window.open()", в дереве фреймов | Ошибки Chromium"  
+[CR1122507]: https://crbug.com/1122507 "Проблема 1122507: получение сведений о рабочем процессе в представлении дерева фреймов | Ошибки Chromium"  
+[CR1126178]: https://crbug.com/1126178 "Проблема 1126178: ☂ средства разработчика: компоненты CSS <type> | Ошибки Chromium"  
+[CR1130556]: https://crbug.com/1130556 "Проблема 1130556: средства разработчика: откаты тестовых образов (эмуляция) | Ошибки Chromium"  
+[CR1132084]: https://crbug.com/1132084 "Проблема 1132084: нет простого способа скопировать полезные данные запроса JSON | Ошибки Chromium"  
+[CR1136394]: https://crbug.com/1136394 "Проблема 1136394: инструменты Flexbox | Ошибки Chromium"  
+[CR1138633]: https://crbug.com/1138633 "Проблема 1138633: средства разработчика: компонент CSS <angle> должен отражать внешний вид своего свойства на фоне часов | Ошибки Chromium"  
+[CR1139615]: https://crbug.com/1139615 "Проблема 1139615: инициатор сети должен предоставить возможность копирования трассировки стека | Ошибки Chromium"  
+[CR1139899]: https://crbug.com/1139899 "Проблема 1139899: уведомление о доступности ограниченного API в представлении сведений о фрейме | Ошибки Chromium"  
+[CR1139945]: https://crbug.com/1139945 "Проблема 1139945: значки для свойств CSS flexbox на панели "Стили" | Ошибки Chromium"  
+[CR1141824]: https://crbug.com/1141824 "Проблема 1141824: улучшение отчетов об ошибках CORS в средствах разработчика | Ошибки Chromium"  
+[CR1144090]: https://crbug.com/1144090 "Проблема 1144090: добавление графических объектов стиля flex в дерево "Элементы" | Ошибки Chromium"  
+[CR1146985]: https://crbug.com/1146985 "Проблема 1146985: очищенный текст по-прежнему виден в текстовом поле раздела "Хранилище" окна "Средства разработчика" | Ошибки Chromium"  
 
-[GlitchCorsErrors]: https://cors-errors.glitch.me "Ошибки CORS | Цепь"  
+[GlitchCorsErrors]: https://cors-errors.glitch.me "Ошибки CORS | Сбой"  
 
-[MdnCors]: https://developer.mozilla.org/docs/Web/HTTP/CORS "Общий доступ к ресурсам через источник (CORS) | MDN"  
-[MdnUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "Использование настраиваемых свойств CSS (переменных) | MDN"  
+[MdnCors]: https://developer.mozilla.org/docs/Web/HTTP/CORS "Общий доступ к ресурсам независимо от источника (CORS) | MDN"  
+[MdnUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "Использование настраиваемых свойств CSS (переменные) | MDN"  
 [MdnWindowConstructors]: https://developer.mozilla.org/docs/Web/API/Window#Constructors "Конструкторы — окно | MDN"  
-[MdnWindowFrames]: https://developer.mozilla.org/docs/Web/API/Window/frames "Window. frames | MDN"  
-[MdnWindoworworkerglobalscopeCrossoriginisolated]: https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated "WindowOrWorkerGlobalScope. crossOriginIsolated | MDN"  
+[MdnWindowFrames]: https://developer.mozilla.org/docs/Web/API/Window/frames "Window.frames | MDN"  
+[MdnWindoworworkerglobalscopeCrossoriginisolated]: https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated "WindowOrWorkerGlobalScope.crossOriginIsolated | MDN"  
 
-[WebhintMain]: https://webhint.io "Подсказка"  
-[WebhintUserGuideHintsAccessibility]: https://webhint.io/docs/user-guide/hints/accessibility "Специальные возможности | Подсказка"  
-[WebhintUserGuideHintsCompatibility]: https://webhint.io/docs/user-guide/hints/compatibility "Совместимость | Подсказка"  
-[WebhintUserGuideHintsPerformance]: https://webhint.io/docs/user-guide/hints/performance "Производительность | Подсказка"  
-[WebhintUserGuideHintsPitfalls]: https://webhint.io/docs/user-guide/hints/pitfalls "Ловушки | Подсказка"  
-[WebhintUserGuideHintsPwa]: https://webhint.io/docs/user-guide/hints/pwa "PWA | Подсказка"  
-[WebhintUserGuideHintsSecurity]: https://webhint.io/docs/user-guide/hints/security "Безопасность | Подсказка"  
+[WebhintMain]: https://webhint.io "webhint"  
+[WebhintUserGuideHintsAccessibility]: https://webhint.io/docs/user-guide/hints/accessibility "Специальные возможности | webhint"  
+[WebhintUserGuideHintsCompatibility]: https://webhint.io/docs/user-guide/hints/compatibility "Совместимость | webhint"  
+[WebhintUserGuideHintsPerformance]: https://webhint.io/docs/user-guide/hints/performance "Производительность | webhint"  
+[WebhintUserGuideHintsPitfalls]: https://webhint.io/docs/user-guide/hints/pitfalls "Ошибки | webhint"  
+[WebhintUserGuideHintsPwa]: https://webhint.io/docs/user-guide/hints/pwa "PWA | webhint"  
+[WebhintUserGuideHintsSecurity]: https://webhint.io/docs/user-guide/hints/security "Безопасность | webhint"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница [будет найдена, и](https://developers.google.com/web/updates/2020/11/devtools/index) ее можно создать с помощью [Jecelyn Yeen][JecelynYeen] \ (разработчик отвечает, Chrome DevTools \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница находится [здесь](https://developers.google.com/web/updates/2020/11/devtools/index). Ее автор — [Jecelyn Yeen][JecelynYeen] (Джеслин Йен) \(советник по разработке, Chrome DevTools\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
