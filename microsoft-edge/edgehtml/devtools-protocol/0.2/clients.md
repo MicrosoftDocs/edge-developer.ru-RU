@@ -1,0 +1,113 @@
+---
+description: Протокол Microsoft Edge DevTools версии 0.2 поддерживает следующие клиенты инструментов.
+title: Клиенты Microsoft Edge DevTools версии 0.2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: reference
+ms.prod: microsoft-edge
+ms.custom: seodec18
+ms.date: 12/02/2020
+ROBOTS: NOINDEX,NOFOLLOW
+ms.openlocfilehash: b471ff5a4051411fc205a269d811524c38acac72
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11235191"
+---
+# <span data-ttu-id="89dae-103">Клиенты Microsoft Edge DevTools версии 0.2 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="89dae-103">Microsoft Edge DevTools Protocol Version 0.2 Clients (EdgeHTML)</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="89dae-104">Версия 0.2 протокола Microsoft Edge DevTools работает только в сборках Windows 10 с обновлением за октябрь [2018](/windows/uwp/whats-new/windows-10-build-17763) г. и более поздних версий [Windows Insider Preview.](https://insider.windows.com/en-us/getting-started/)</span><span class="sxs-lookup"><span data-stu-id="89dae-104">Version 0.2 of the Microsoft Edge DevTools Protocol works only on the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.</span></span>  
+
+<span data-ttu-id="89dae-105">**Протокол DevTools 0.2** поддерживает следующие клиенты инструментов.</span><span class="sxs-lookup"><span data-stu-id="89dae-105">**DevTools Protocol 0.2** supports the following tooling clients.</span></span>
+
+<span data-ttu-id="89dae-106">[ ![ Microsoft Edge DevTools Preview Visual Studio](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) Microsoft [ ![ Visual Studio](../media/visual-studio-code.png)](#visual-studio-code) [ ![ 15.8](../media/visual-studio-2017.png)](#microsoft-visual-studio)</span><span class="sxs-lookup"><span data-stu-id="89dae-106">[![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Visual Studio Code](../media/visual-studio-code.png)](#visual-studio-code) [![Microsoft Visual Studio 15.8](../media/visual-studio-2017.png)](#microsoft-visual-studio)</span></span>
+
+## <span data-ttu-id="89dae-107">Предварительный просмотр средств разработчика в Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="89dae-107">Microsoft Edge DevTools Preview</span></span>
+
+<span data-ttu-id="89dae-108">Вы можете использовать приложение [**Microsoft Edge DevTools Preview**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) для Windows 10 из Microsoft Store для удаленной отладки хост-устройства под управлением Microsoft Edge[(EdgeHTML 17](../../dev-guide/index.md) или более поздней версии).</span><span class="sxs-lookup"><span data-stu-id="89dae-108">You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) Windows 10 app from the Microsoft Store to remotely debug a host device running Microsoft Edge ([EdgeHTML 17](../../dev-guide/index.md) or later).</span></span>
+
+<span data-ttu-id="89dae-109">Версия 0.2 протокола DevTools предоставляет новые домены для отладки стилей и макета и консольных API, а также основные функции отладки сценариев, введенные в версии 0.1.</span><span class="sxs-lookup"><span data-stu-id="89dae-109">Version 0.2 of the DevTools Protocol provides new domains for style and layout debugging and console APIs, in addition to the core script debugging functionality introduced in Version 0.1.</span></span> <span data-ttu-id="89dae-110">В пользовательском интерфейсе Edge DevTools это преобразуется в [\*\*\*\*](../../devtools-guide/console.md) функциональные возможности, доступные на панелях [**"Элементы",**](../../devtools-guide/elements.md)"Консоль" и [**"Отладка".**](../../devtools-guide/debugger.md)</span><span class="sxs-lookup"><span data-stu-id="89dae-110">In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md), [**Console**](../../devtools-guide/console.md) and [**Debugger**](../../devtools-guide/debugger.md) panels.</span></span> <span data-ttu-id="89dae-111">В настоящее время удаленная отладка Microsoft Edge ограничена настольными компьютерами, а поддержка других устройств с Windows 10 будет поддерживаться в будущих выпусках.</span><span class="sxs-lookup"><span data-stu-id="89dae-111">Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.</span></span>
+
+<span data-ttu-id="89dae-112">Вот как настроить удаленную отладку с помощью приложения Microsoft Edge DevTools Preview.</span><span class="sxs-lookup"><span data-stu-id="89dae-112">Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app.</span></span> <span data-ttu-id="89dae-113">Протокол DevTools версии 0.2 требует обновления Windows 10 за октябрь [2018](/windows/uwp/whats-new/windows-10-build-17763) г. или более поздней сборки Windows Insider Preview на хост-компьютере (отладке).</span><span class="sxs-lookup"><span data-stu-id="89dae-113">The DevTools Protocol version 0.2 requires [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) or a later Windows Insider Preview build on the host (debugee) machine.</span></span> <span data-ttu-id="89dae-114">Приложение Edge DevTools Preview (используется на компьютере отладчика) будет работать в Windows 10 версии 16299 (Windows 10 Fall Creators Update, 10/2017) или более новой версии.</span><span class="sxs-lookup"><span data-stu-id="89dae-114">The Edge DevTools Preview app (used on the debugger machine) will run on Windows 10 version 16299 (Windows 10 Fall Creators Update, 10/2017) or higher.</span></span>
+
+**<span data-ttu-id="89dae-115">На хост-компьютере (отладке) ...</span><span class="sxs-lookup"><span data-stu-id="89dae-115">On the host (debugee) machine...</span></span>**
+
+1. <span data-ttu-id="89dae-116">Если вы в сети Wi-Fi, убедитесь, что сеть помечена как **"Домен"** или **"Частная".**</span><span class="sxs-lookup"><span data-stu-id="89dae-116">If you're on a WiFi network, ensure the network is marked as either **Domain** or **Private**.</span></span> <span data-ttu-id="89dae-117">Это можно проверить, открыв приложение Защитник Windows Security [**Center,**](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) \*\*\*\* щелкнув брандмауэр & защиты сети и \*\* проверив, указана ли ваша сеть как сеть домена или частная *сеть.*</span><span class="sxs-lookup"><span data-stu-id="89dae-117">You can verify this by opening the [**Windows Defender Security Center**](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) app, clicking on **Firewall & network protection** and checking if your network is listed as a *Domain network* or *Private network*.</span></span> 
+
+    <span data-ttu-id="89dae-118">Если он указан *как* \*\*\*\* общедоступный, перейдите в & Сети параметров Wi-Fi в Интернете, щелкните сеть и перейдите к кнопке "Сетевой профиль" в  >  \*\*\*\*  >  \*\*\*\* \*\* **"Частное".**</span><span class="sxs-lookup"><span data-stu-id="89dae-118">If its listed as *Public*, go to **Settings** > **Network & Internet** > **Wi-Fi**, click on your network and toggle the *Network profile* button to **Private**.</span></span>
+
+2. <span data-ttu-id="89dae-119">Откройте панель **управления "Для разработчиков"** в \*\* *параметрах* Windows (найдите разработчика и щелкните *"Использовать функции разработчика")* и:</span><span class="sxs-lookup"><span data-stu-id="89dae-119">Open the **For developers** control panel in Windows *Settings* (search for *developer* and click on *Use developer features*), and:</span></span> 
+
+    <span data-ttu-id="89dae-120">а.</span><span class="sxs-lookup"><span data-stu-id="89dae-120">a.</span></span> <span data-ttu-id="89dae-121">Перегуют в **режиме разработчика.**</span><span class="sxs-lookup"><span data-stu-id="89dae-121">Toggle on **Developer Mode**.</span></span> <span data-ttu-id="89dae-122">При этом будет *устанавливаться* пакет режима разработчика, включающий удаленные инструменты для настольных компьютеров.</span><span class="sxs-lookup"><span data-stu-id="89dae-122">This will install the *Developer Mode* package, enabling remote tooling for desktop.</span></span>
+
+    <span data-ttu-id="89dae-123">б.</span><span class="sxs-lookup"><span data-stu-id="89dae-123">b.</span></span> <span data-ttu-id="89dae-124">[**Включите**](/windows/uwp/debug-test-perf/device-portal) портал устройств\**(включите удаленную диагностику по подключениям к локальной сети) и обнаружение устройств **(** сделайте устройство видимым для USB-подключений и*локальной сети).\*</span><span class="sxs-lookup"><span data-stu-id="89dae-124">Enable [**Device Portal**](/windows/uwp/debug-test-perf/device-portal) (*Turn on remote diagnostics over local area network connections*) and **Device discovery** (*Make your device visible to USB connections and your local network*).</span></span>
+
+    <span data-ttu-id="89dae-125">в.</span><span class="sxs-lookup"><span data-stu-id="89dae-125">c.</span></span> <span data-ttu-id="89dae-126">**Включит проверку подлинности** и включит имя пользователя или пароль.</span><span class="sxs-lookup"><span data-stu-id="89dae-126">Turn on **Authentication** and supply a username / password.</span></span>
+
+    <span data-ttu-id="89dae-127">г.</span><span class="sxs-lookup"><span data-stu-id="89dae-127">d.</span></span> <span data-ttu-id="89dae-128">Обратите внимание на IP-адрес компьютера и порт подключения (50443).</span><span class="sxs-lookup"><span data-stu-id="89dae-128">Note the machine IP address and connection port (50443) displayed.</span></span>
+
+3. <span data-ttu-id="89dae-129">Откройте в Microsoft Edge вкладки, которые нужно отлалать с клиентского компьютера.</span><span class="sxs-lookup"><span data-stu-id="89dae-129">Open tabs in Microsoft Edge that you wish to debug from the client machine.</span></span>
+
+**<span data-ttu-id="89dae-130">На компьютере клиента (отладчике) ...</span><span class="sxs-lookup"><span data-stu-id="89dae-130">On the client (debugger) machine...</span></span>**
+
+1.  <span data-ttu-id="89dae-131">Установка и запуск автономных приложений [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) из Microsoft Store.</span><span class="sxs-lookup"><span data-stu-id="89dae-131">Install and launch the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app from the Microsoft Store.</span></span>
+
+2. <span data-ttu-id="89dae-132">Откройте **удаленную панель** и введите сетевое расположение (URL-адрес и порт) хост-компьютера и нажмите кнопку **"Подключиться".**</span><span class="sxs-lookup"><span data-stu-id="89dae-132">Open the **Remote** panel and enter the network location (URL and port) of the host machine and click **Connect**.</span></span>
+
+3. <span data-ttu-id="89dae-133">**Установите** сертификат хост-компьютера из диалогового окно "Неверная сертификация". \*\*</span><span class="sxs-lookup"><span data-stu-id="89dae-133">**Install** the host machine's certificate from the *Untrusted Certificate* dialog that appears.</span></span>
+
+4. <span data-ttu-id="89dae-134">Укавите имя пользователя или пароль, назначенные для проверки подлинности на портале устройств.</span><span class="sxs-lookup"><span data-stu-id="89dae-134">Supply the username/password you designated for Device Portal authentication.</span></span>
+
+5. <span data-ttu-id="89dae-135">*Удаленная* панель загрузит список целевых объектов страницы для отладки на хост-компьютере.</span><span class="sxs-lookup"><span data-stu-id="89dae-135">The *Remote* panel will load a list of debuggable page targets on the host machine.</span></span> <span data-ttu-id="89dae-136">Выберите один из них, чтобы начать отладку.</span><span class="sxs-lookup"><span data-stu-id="89dae-136">Select one to start debugging.</span></span>
+
+6. <span data-ttu-id="89dae-137">Используйте **кнопку** "Обновить", чтобы обновить и перезагрузить список целевых объектов удаленных страниц на хост-компьютере.</span><span class="sxs-lookup"><span data-stu-id="89dae-137">Use the **Refresh** button to update and reload the list of remote page targets on the host machine.</span></span> <span data-ttu-id="89dae-138">Нажмите **кнопку** "Отключить", чтобы вернуться к экрану подключения к удаленному устройству и подключиться к другому хосту. \*\*</span><span class="sxs-lookup"><span data-stu-id="89dae-138">Click the **Disconnect** button to return to the *Connect to a remote device* screen and attach to a different host.</span></span>
+
+## <span data-ttu-id="89dae-139">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="89dae-139">Visual Studio Code</span></span>
+
+<span data-ttu-id="89dae-140">С помощью [расширения Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code можно отладить сценарий, работающий в Microsoft Edge непосредственно в Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="89dae-140">With the [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can debug script running in Microsoft Edge directly in Visual Studio Code.</span></span> <span data-ttu-id="89dae-141">Расширение требует обслуживания веб-приложения с localhost, которое можно начать с командной строки или [задачи.](https://code.visualstudio.com/docs/editor/tasks)</span><span class="sxs-lookup"><span data-stu-id="89dae-141">The extension requires you to be serving your web application from localhost, which you can start from either command-line or a [Task](https://code.visualstudio.com/docs/editor/tasks).</span></span>
+
+<span data-ttu-id="89dae-142">Для начала сделайте следующее:</span><span class="sxs-lookup"><span data-stu-id="89dae-142">To get started:</span></span>
+
+1. <span data-ttu-id="89dae-143">Установите расширение [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code.</span><span class="sxs-lookup"><span data-stu-id="89dae-143">Install the [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension.</span></span>
+
+2. <span data-ttu-id="89dae-144">Перезапустите VS Code, откройте папку, содержащую проект, который вы хотите отлажать, и установите точки останова в коде.</span><span class="sxs-lookup"><span data-stu-id="89dae-144">Restart VS Code, open the folder containing the project you wish to debug and set breakpoints in your code.</span></span>
+
+3. <span data-ttu-id="89dae-145">Настройте задачу [запуска](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) localhost, чтобы открыть нужную страницу проекта: **отлаживка добавления**  >  **конфигурации...** Например:</span><span class="sxs-lookup"><span data-stu-id="89dae-145">Configure a localhost [launch task](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) to open the desired page of your project: **Debug** > **Add Configuration...**. For example:</span></span>
+
+    ```json
+    {
+        "version": "0.2.0",
+        "configurations": [
+
+            {
+                "name": "Launch localhost",
+                "type": "edge",
+                "request": "launch",
+                "url": "http://localhost/mypage.html",
+                "webRoot": "${workspaceFolder}/wwwroot"
+            }
+        ]
+    }
+    ```
+
+    <span data-ttu-id="89dae-146">[*Использование отлада имеет*](https://github.com/Microsoft/vscode-edge-debug2#using-the-debugger) большее количество параметров конфигурации запуска.</span><span class="sxs-lookup"><span data-stu-id="89dae-146">[*Using the debugger*](https://github.com/Microsoft/vscode-edge-debug2#using-the-debugger) has more on launch configuration settings.</span></span> 
+
+4. <span data-ttu-id="89dae-147">Запустите сервер на localhost и нажмите кнопку **"Начать** отладку "Play" или `F5` запустите Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="89dae-147">Start your server on localhost and press the **Start Debugging** (play) button or `F5` to launch Microsoft Edge.</span></span> <span data-ttu-id="89dae-148">При попадании точки останова вы разберется в VS Code и сможете дополнительно проверить и пошагово проверить код.</span><span class="sxs-lookup"><span data-stu-id="89dae-148">When a breakpoint is hit, you'll break into VS Code and can further inspect and step through code from there.</span></span>
+
+<span data-ttu-id="89dae-149">Подробнее: документация по [VS Code - Debugger for Microsoft Edge.](https://github.com/Microsoft/vscode-edge-debug2#----vs-code---debugger-for-microsoft-edge--)</span><span class="sxs-lookup"><span data-stu-id="89dae-149">For more, check out the [VS Code - Debugger for Microsoft Edge](https://github.com/Microsoft/vscode-edge-debug2#----vs-code---debugger-for-microsoft-edge--) documentation.</span></span>
+
+## <span data-ttu-id="89dae-150">Microsoft Visual Studio</span><span class="sxs-lookup"><span data-stu-id="89dae-150">Microsoft Visual Studio</span></span>
+
+<span data-ttu-id="89dae-151">С помощью [**последней**](https://www.visualstudio.com) версии Visual Studio (Visual Studio 15.8 или более поздней), запущенной в Центре обновления Windows 10 за октябрь [2018](/windows/uwp/whats-new/windows-10-build-17763)г., вы можете запустить и отлалать Microsoft Edge из IDE в любом проекте ASP.NET или .NET Core.</span><span class="sxs-lookup"><span data-stu-id="89dae-151">Using the latest [**Visual Studio**](https://www.visualstudio.com) version (Visual Studio 15.8 or later) running on [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763), you can launch and debug Microsoft Edge from the IDE on any ASP.NET or .NET Core project.</span></span>
+
+<span data-ttu-id="89dae-152">Вот как настроить отладку Microsoft Edge с помощью Visual Studio:</span><span class="sxs-lookup"><span data-stu-id="89dae-152">Here's how to set up Microsoft Edge debugging with Visual Studio:</span></span>
+
+1.  <span data-ttu-id="89dae-153">Установите и запустите последнюю [**версию Visual Studio**](https://www.visualstudio.com/) (Visual Studio 15.8 или более поздней версии).</span><span class="sxs-lookup"><span data-stu-id="89dae-153">Install and launch the latest [**Visual Studio**](https://www.visualstudio.com/) (Visual Studio 15.8 or later).</span></span>
+
+2. <span data-ttu-id="89dae-154">Откройте существующий проект ASP.NET или .NET Core или создайте **новый проект...** с помощью одного из шаблонов **Visual C#** .NET.</span><span class="sxs-lookup"><span data-stu-id="89dae-154">Open an existing ASP.NET or .NET Core project or **Create new project...** using one of the **Visual C#** .NET templates.</span></span>
+
+3. <span data-ttu-id="89dae-155">В **обозревателе**решений проекта откройте файлы JavaScript, которые нужно отлалать, и установите точки останова в IDE так же, как с серверным кодом.</span><span class="sxs-lookup"><span data-stu-id="89dae-155">In the project **Solution Explorer**, open the JavaScript files you wish to debug and set breakpoints within the IDE just as you would with server-side code.</span></span>
+
+4. <span data-ttu-id="89dae-156">Нажмите, `F5` чтобы запустить Microsoft Edge, на сервере DevTools Server.</span><span class="sxs-lookup"><span data-stu-id="89dae-156">Press `F5` to launch Microsoft Edge running the DevTools Server.</span></span> <span data-ttu-id="89dae-157">При наступии точки останова вы разберется в Visual Studio сможете дополнительно проверить код и пошаговую проверку кода.</span><span class="sxs-lookup"><span data-stu-id="89dae-157">When a breakpoint is hit, you'll break into Visual Studio and can further inspect and step through the code from there.</span></span>
