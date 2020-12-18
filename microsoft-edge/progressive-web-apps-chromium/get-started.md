@@ -1,38 +1,38 @@
 ---
-description: В этом руководстве вы найдете общие сведения о базовых данных и средствах для создания последовательного веб-приложения (Chromium) в Windows.
-title: Приступая к работе с прогрессивными веб-приложениями (Chromium)
+description: В этом руководстве представлен обзор основ и средств PWA для создания прогрессивного веб-приложения (Chromium) в Windows.
+title: Начало работы с progressive Web Apps (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: прогрессивные веб-приложения, PWA, EDGE, Windows, PWABuilder, веб-манифест, специалист по обслуживанию, отправка
-ms.openlocfilehash: 065ced3afa8ecd4165325fd4f10a673d86c72fa7
-ms.sourcegitcommit: be76feed0d616a96c77ea2748a9f0d6c0c06284b
+keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
+ms.openlocfilehash: 7ad13f98f54c52891681d7591b21503c9d5825ff
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103926"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231225"
 ---
-# Приступая к работе с прогрессивными веб-приложениями (Chromium)  
+# Начало работы с progressive Web Apps (Chromium)  
 
-Прогрессивные веб-приложения \ (PWAs \) — это веб-приложения, которые являются [последовательно улучшенными][WikiProgressiveEnhancement].  Улучшенные возможности, такие как установка, Автономная поддержка и Push-уведомления, включают в себя подобные функции приложения.  Кроме того, вы можете упаковать веб – приложение PWA для магазинов приложений.  Возможно, в магазинах приложений есть магазин Microsoft Store, Google Play, Mac App Store и многое другое.  Microsoft Store — это коммерческое приложение, встроенное в Windows 10.  
+Прогрессивное веб-приложения \(PWAs\) — это веб-приложения, [которые постепенно улучшаются.][WikiProgressiveEnhancement]  К последовательным усовершенствованиям относятся такие функции, как установка, поддержка в автономном режиме и push-уведомления.  Вы также можете упаковать PWA для магазинов приложений.  Возможные магазины приложений включают Microsoft Store, Google Play, Магазин приложений Mac и другие.  Microsoft Store — это коммерческий магазин приложений, встроенный в Windows 10.  
 
-В приведенном ниже руководстве представлен обзор основ PWA, создание простого веб-приложения и расширение его как PWA.  Готовый проект работает в современных браузерах.  
+В следующем руководстве приводится обзор основ PWA путем создания простого веб-приложения и расширения его в качестве PWA.  Готовый проект работает в современных браузерах.  
 
 > [!TIP]
-> Вы можете использовать [PWABuilder][PwaBuilder] для создания нового PWA, улучшения существующего веб-приложения PWA или упаковки для магазина приложений PWA.  
+> Вы можете использовать [PWABuilder][PwaBuilder] для создания нового PWA, улучшения существующей PWA или упаковки PWA для магазинов приложений.  
 
 ## Предварительные условия  
 
-*   Используйте [код Visual Studio][VisualstudioCodeMain] для редактирования ИСХОДНОГО кода PWA.  
+*   Используйте [Visual Studio code для][VisualstudioCodeMain] редактирования кода PWA.  
 *   Используйте [Node.js][NodejsMain] в качестве локального веб-сервера.  
+    
+## Создание базового веб-приложения  
 
-## Создание простого веб-приложения  
+Чтобы создать пустое веб-приложение, следуйте шагам в [node Express App Generator][ExpressjsApplicationGenerator]и придайте приложению `MySamplePwa` имя.  
 
-Чтобы создать пустое веб-приложение, выполните действия, описанные в статье [генератор приложений для приложения Express][ExpressjsApplicationGenerator], и назовите свое приложение `MySamplePwa` .  
-
-В командной строке выполните указанные ниже команды.  
+В командной подсказке запустите следующие команды.  
 
 ```shell
 npx express-generator --no-view
@@ -42,42 +42,42 @@ npx express-generator --no-view
 npm install
 ```  
 
-Команды создают пустое веб-приложение и устанавливают все зависимости.  
+Команды создают пустое веб-приложение и устанавливают зависимости.  
 
-Теперь у вас есть простое функциональное веб-приложение.  Чтобы запустить веб-приложение, выполните следующую команду:  
+Теперь у вас есть простое функциональное веб-приложение.  Чтобы запустить веб-приложение, запустите следующую команду.  
 
 ```shell
 npm start
 ```  
 
-Теперь можно перейти к `http://localhost:3000` просмотру нового веб-приложения.  
+Теперь `http://localhost:3000` перейдите, чтобы просмотреть новое веб-приложение.  
 
-:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/vs-nodejs-express-index.png":::
-   Выполнение нового PWA на localhost
+:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Запуск нового PWA на localhost" lightbox="./media/vs-nodejs-express-index.png":::
+   Запуск нового PWA на localhost
 :::image-end:::
 
 ## Начало создания PWA  
 
-Теперь, когда у вас есть простое веб-приложение, расширьте его как PWA, добавив три требования для PWAs<!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]-->: [HTTPS](#step-1---use-https), [Манифест веб-приложения](#step-2---create-a-web-app-manifest)и [сотрудник службы](#step-3---add-a-service-worker).  
+Теперь, когда у вас есть простое веб-приложение, расширьте его как PWA, добавив три требования для PWAS<!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]-->: [HTTPS,](#step-1---use-https)манифест [веб-приложения](#step-2---create-a-web-app-manifest)и [рабочий работник службы.](#step-3---add-a-service-worker)  
 
-### Этап 1: использование HTTPS  
+### Шаг 1. Использование ПРОТОКОЛА HTTPS  
 
-Ключевые части платформы PWA, например [работники служб][MDNServiceWorkerApi], требуют использования HTTPS.  Когда PWA разйдет в реальном времени, необходимо опубликовать его в URL-адресе HTTPS.  
+Ключевые части платформы PWA, такие как [сотрудники][MDNServiceWorkerApi]служб, требуют использования ПРОТОКОЛА HTTPS.  Когда веб-сайт PWA будет работать, его необходимо опубликовать на URL-адресе HTTPS.  
 
-В целях отладки Microsoft EDGE также допускает `http://localhost` Использование API PWA.  
+В целях отладки Microsoft Edge также разрешает использовать `http://localhost` API PWA.  
 
-[Опубликуйте веб-приложение как активный сайт][VisualStudioNodejsTutorialPublishAzureAppService], но убедитесь, что сервер НАСТРОЕН для HTTPS.  Например, вы можете создать [бесплатную учетную запись Azure][AzureCreateFreeAccount].  Разработайте сайт в [службе приложений Microsoft Azure][AzureWebApps] , и он по умолчанию обрабатывается по протоколу HTTPS.  
+[Опубликуйте веб-приложение в качестве][VisualStudioNodejsTutorialPublishAzureAppService]веб-сайта, но убедитесь, что сервер настроен для HTTPS.  Например, вы можете создать бесплатную учетную [запись Azure.][AzureCreateFreeAccount]  Разойдите сайт в [службу приложений Microsoft Azure,][AzureWebApps] и он по умолчанию обслуживается по протоколу HTTPS.  
 
-В следующем руководстве описано, `http://localhost` как выполнить СБОРКУ PWA.  
+В следующем руководстве используется `http://localhost` для создания PWA.  
 
-### Шаг 2: создание манифеста веб-приложения  
+### Шаг 2. Создание манифеста веб-приложения  
 
-[Манифест веб-приложения][MDNWebAppManifest] — это файл в формате JSON, содержащий метаданные вашего приложения, такие как имя, описание, значки и т. д.  
+Манифест [Веб-приложения][MDNWebAppManifest] — это JSON-файл, содержащий метаданные о вашем приложении, такие как имя, описание, значки и другие.  
 
-Чтобы добавить в веб-приложение манифест приложения, выполните указанные ниже действия.  
+Добавление манифеста приложения в веб-приложение:  
 
-1.  В коде Visual Studio выберите **File**  >  **Открыть папку** файл и выберите каталог, `MySamplePwa` созданный ранее.  
-1.  Выберите, `Ctrl` + `N` чтобы создать новый файл, и вставьте следующий фрагмент кода.  
+1.  В Visual Studio code выберите **папку "Открыть**файл" и выберите созданный  >  **** `MySamplePwa` ранее каталог.  
+1.  Выберите, `Ctrl` + `N` чтобы создать новый файл, и в paste в следующем фрагменте кода.  
     
     ```json
     {
@@ -100,102 +100,101 @@ npm start
     ```  
     
 1.  Сохраните файл как `/MySamplePwa/public/manifest.json` .  
-1.  Добавление изображения значка приложения 512x512 с именем " `icon512.png` Кому" `/MySamplePwa/public/images` .  [Образец изображения][ImagePwa] можно использовать в целях тестирования.  
-1.  В коде Visual Studio откройте `/public/index.html` и добавьте следующий фрагмент кода в `<head>` тег.  
+1.  Добавьте изображение значка приложения 512x512 с именем `icon512.png` `/MySamplePwa/public/images` .  Пример изображения можно [использовать в][ImagePwa] целях тестирования.  
+1.  В Visual Studio Code откройте и добавьте в тег следующий фрагмент `/public/index.html` `<head>` кода.  
     
     ```html
     <link rel="manifest" href="/manifest.json">
     ```   
     
-### Шаг 3: Добавление сотрудника службы  
+### Шаг 3. Добавление сотрудника службы  
 
-ИТ – это ключевая технология для PWAs, позволяющая выполнять сценарии, такие как поддержка в автономном режиме, дополнительное кэширование и выполнение фоновых задач, которые ранее были ограничены собственными приложениями.  
+Сотрудники службы — это ключевая технология, обеспечивающая такие сценарии, как поддержка в автономном режиме, расширенный кэш и выполнение фоновых задач, которые ранее были ограничены основными приложениями.  
 
-Служебные работники — это фоновые задачи, которые перехватывают сетевые запросы из вашего веб-приложения.  Работники служб пытаются выполнить задачи, даже если PWA не запущен.  Задачи включают указанные ниже действия.  
+Сотрудники службы — это фоновые задачи, которые перехватывают сетевые запросы из веб-приложения.  Сотрудники служб пытаются выполнить задачи, даже если PWA не запущен.  К задачам относятся следующие действия.  
 
-*   Обслуживание запрошенных ресурсов из кэша  
+*   Обслуживание запрашиваемых ресурсов из кэша  
 *   Отправка push-уведомлений  
-*   Выполнение задач фоновой выборки  
-*   Значки индикаторах событий  
-*   и многое другое  
+*   Выполнение фоновых задач получения  
+*   Плохое значки  
+*   и другие  
+    
+Сотрудники служб определяются в специальном файле JavaScript.  Для получения дополнительных сведений перейдите к использованию API ["Сотрудники службы"][MDNUsingServiceWorkers] [и "Рабочие службы".][MDNServiceWorkerApi]  
 
-Служебные сотрудники определяются в специальном файле JavaScript.  Для получения дополнительных сведений перейдите к разделу [Использование рабочих процессов служб][MDNUsingServiceWorkers] и [API служб][MDNServiceWorkerApi].  
+Чтобы создать в проекте рабочий **** работник службы, используйте рабочий рецепт сетевой службы из кэша из [построщика PWA.][PwaBuilderServiceWorker]  
 
-Чтобы создать сотрудника службы в проекте, используйте рецепт роли " **первый из кэша** " в [построителе PWA][PwaBuilderServiceWorker].  
-
-1.  Перейдите к [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], выберите сотрудника, который является **первым из кэша** , и нажмите кнопку **скачать** .  Загруженный файл включает следующие файлы:
+1.  Перейдите [pwabuilder.com/serviceworker,][PwaBuilderServiceWorker] **выберите** рабочий процесс сетевой службы с первым кэшом и кнопку **"Скачать".**  Загруженный файл содержит следующие файлы:
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
-    
-1.  Скопируйте Скачанные файлы в `public` папку в проекте веб-приложения.  
-    
-1.  В коде Visual Studio откройте `/public/index.html` и добавьте следующий фрагмент кода в `<head>` тег.  
+        
+1.  Скопируйте загруженные файлы в `public` папку проекта веб-приложения.  
+1.  В Visual Studio Code откройте и добавьте в тег следующий фрагмент `/public/index.html` `<head>` кода.  
     
     ```html
     <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
-У вашего веб-приложения теперь есть сотрудник службы, использующий стратегию кэширования.  Новый сотрудник службы сначала извлекает ресурсы из кэша, а не из сети, по мере необходимости.  Кэшированные ресурсы включают изображения, JavaScript, CSS и HTML.
+Теперь в вашем веб-приложении есть сотрудник службы, использующий стратегию с первого кэша.  Новый рабочий процесс службы сначала получает ресурсы из кэша и только из сети при необходимости.  К кэшным ресурсам относятся изображения, JavaScript, CSS и HTML.
 
-Выполните указанные ниже действия, чтобы подтвердить выполнение рабочего процесса службы.  
+Чтобы подтвердить, что ваш рабочий работник работает, с помощью следующих действий.  
 
-1.  Перейдите к веб-приложению с помощью `http://localhost:3000` .  Если веб-приложение недоступно, выполните следующую команду:   
+1.  Перейдите к веб-приложению с помощью `http://localhost:3000` .  Если веб-приложение не доступно, запустите следующую команду.   
     
     ```shell
     npm start
     ```
     
-1.  В Microsoft Edge щелкните, `F12` чтобы открыть Microsoft Edge DevTools.  Выберите **приложение**, а затем — **сотрудники службы** , чтобы просмотреть сотрудников службы.  Если сотрудник службы не отображается, обновите страницу.  
-     
-    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/devtools-sw-overview.png":::
-       Общие сведения о рабочем процессе службы Microsoft Edge DevTools
+1.  В Microsoft Edge `F12` выберите, чтобы открыть Microsoft Edge DevTools.  Выберите **"Приложение",** затем **"Сотрудники служб",** чтобы просмотреть сотрудников службы.  Если рабочий работник службы не отображается, обновите страницу.  
+    
+    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Обзор рабочих сотрудников службы Microsoft Edge DevTools" lightbox="./media/devtools-sw-overview.png":::
+       Обзор рабочих сотрудников службы Microsoft Edge DevTools
     :::image-end:::
     
-1.  Просмотрите кэш рабочих процессов службы, развернув **хранилище кэша** , и выберите **pwabuilder — предварительный кэш**.  Должны отобразиться все ресурсы, кэшируемые сотрудником службы.  Ресурсы, кэшируемые сотрудником службы, включают значок приложения, манифест приложения, CSS и файлы JavaScript.  
+1.  Просмотреть кэш рабочих **** служб, расширив хранилище кэша и выбрав **pwabuilder-precache.**  Должны отображаться все ресурсы, кэшные рабочим работником службы.  Ресурсы, кэшментные сотрудником службы, включают значок приложения, манифест приложения, CSS-файлы и файлы JavaScript.  
     
-    :::image type="complex" source="./media/devtools-cache.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/devtools-cache.png":::
-       Кэш рабочих процессов службы в Microsoft Edge DevTools (F12)
+    :::image type="complex" source="./media/devtools-cache.png" alt-text="Кэш рабочих служб в Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
+       Кэш рабочих служб в Microsoft Edge DevTools (F12)
     :::image-end:::
     
-1.  Попробуйте использование PWA в качестве автономного приложения.  В Microsoft Edge DevTools \ ( `F12` \) выберите **Network (сеть** ) и измените сетевой статус **Offline**на "не в сети". **Online**  
+1.  Попробуйте PWA в качестве автономного приложения.  В Microsoft Edge DevTools \( \) выберите "Сеть", а затем измените состояние `F12` **"Online"** на **"Автономный".** ****  
     
-    :::image type="complex" source="./media/devtools-offline.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/devtools-offline.png":::
-       Установка автономного режима приложения в Microsoft Edge DevTools
+    :::image type="complex" source="./media/devtools-offline.png" alt-text="Настройка автономного режима приложения в Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
+       Настройка автономного режима приложения в Microsoft Edge DevTools
     :::image-end:::
     
-1.  Обновите приложение, и оно должно отобразить механизм автономного режима для обслуживания ресурсов вашего приложения из кэша.  
+1.  Обновите приложение, и оно должно отобразить автономный механизм обслуживания ресурсов приложения из кэша.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/vs-nodejs-express-index.png":::
-       PWA работает в автономном режиме
+    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Запуск PWA в автономном режиме" lightbox="./media/vs-nodejs-express-index.png":::
+       Запуск PWA в автономном режиме
     :::image-end:::
     
-## Добавление push-уведомлений к PWA  
+## Добавление push-уведомлений в PWA  
 
-Вы можете создать PWAs, поддерживающий push-уведомления, выполнив указанные ниже действия.  
+Вы можете создать PWAS, которые поддерживают push-уведомления, выполв следующие задачи.  
 
-1.  Подписка на службу сообщений с помощью [API push-уведомлений][MDNPushApi]  
-1.  Показывать всплывающее сообщение при получении сообщения от службы с помощью [API уведомлений][MDNNotificationsApi]  
+1.  Подписка на службу обмена сообщениями с помощью [API Push][MDNPushApi]  
+1.  Отображение всплывающее сообщение при получении сообщения от службы с помощью [API уведомлений][MDNNotificationsApi]  
     
-Как и в случае с сотрудниками служб, API push-уведомлений являются API на основе стандартов.  API push-уведомлений работают в разных браузерах, поэтому ваш код должен работать везде, где поддерживаются PWAs.  Чтобы получить дополнительные сведения о том, как отправлять push-сообщения в другие браузеры на сервере, перейдите на [страницу веб-принудительно][NPMWebPush].  
+Как и в службах, API push-уведомлений являются основанными на стандартах API.  API push-уведомлений работают в браузерах, поэтому ваш код должен работать везде, где поддерживаются PWAs.  Дополнительные сведения о доставке push-сообщений в различные браузеры на сервере можно найти в [Web-Push.][NPMWebPush]  
 
-Описанные ниже действия были адаптированы с помощью демона "Push-Cookbook" в [службе обслуживания сотрудников][ServiceWorkerCookbookPushRichDemo] , предоставляемой Mozilla, которая имеет ряд других полезных рецептов для отправки по Интернету и обслуживания рабочих процессов.  
+Следующие действия были адаптированы из книги "Push Rich Demo in [Service WorkerBook",][ServiceWorkerCookbookPushRichDemo] предоставленной Mozilla, которая имеет ряд других полезных рецептов для рабочих рабочих служб и веб-push-служб.  
 
-### Шаг 1. Создание VAPIDных ключей  
+### Шаг 1. Создание ключей VAPID  
 
-Для отправки push-сообщений в клиент PWA требуется VAPID \ (код добровольного сервера приложений) с помощью извещающих уведомлений.  Доступно несколько VAPIDных генераторов ключей в Интернете (например, [vapidkeys.com][VapidkeysMain]\).  После создания необходимо получить объект JSON, содержащий открытый и закрытый ключи.  Сохраните клавиши для последующих шагов в следующем учебнике.  Сведения о VAPID и браузере VAPID можно найти, [отправив сообщение о том, что уведомления о событиях в службе push-уведомлений][MozillaServicesSendingVapidWebPushNotificationsPush]передаются по протоколу Mozilla.  
+Для push-уведомлений требуются ключи VAPID \(Voluntary Application Server Identification\) для отправки push-сообщений клиенту PWA.  В Сети доступно несколько генераторов ключей VAPID (например, [vapidkeys.com][VapidkeysMain]\).  После генерации вы должны получить объект JSON, содержащий открытый и закрытый ключ.  Сохраните ключи для последующих действий в следующем руководстве.  For information about VAPID and WebPush, navigate to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].  
 
-### Шаг 2: подписаться на push-уведомления  
+### Шаг 2. Подписка на push-уведомления  
 
-Работники обслуживания обрабатывают события push-уведомлений и взаимодействие с всплывающими уведомлениями в PWA.  Чтобы оформить подписку на push-уведомления сервера PWA, убедитесь, что выполнены указанные ниже условия.  
+Сотрудники служб обрабатывают события push-уведомлений и взаимодействия всплывающих уведомлений в PWA.  Чтобы подписать PWA на push-уведомления сервера, убедитесь, что выполнены следующие условия.  
 
-*   Установленный, активный и регистрируемый PWA  
-*   Код для завершения задачи подписки — в основном потоке пользовательского интерфейса PWA  
-*   Вы подключены к сети  
+*   Веб-приложение PWA установлено, активно и зарегистрировано  
+*   Код для выполнения задачи подписки находится в основном потоке пользовательского интерфейса PWA  
+*   У вас есть сетевое подключение  
     
-Перед созданием новой принудительной подписки Microsoft Edge проверяет, предоставил ли пользователь разрешение на получение уведомлений в PWA.  В противном случае пользователю будет предложено разрешить браузеру.  Если разрешение закрыто, запрос `registration.pushManager.subscribe` генерирует исключение `DOMException` , которое должно быть обработано.  Дополнительные сведения об управлении разрешениями можно найти в [разделе push-уведомления в Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
+Перед тем как создать новую push-подписку, Microsoft Edge проверяет, предоставил ли пользователь разрешение PWA на получение уведомлений.  В этом случае браузер запросит разрешение у пользователя.  Если разрешение отказано, запрос на отклонение запроса `registration.pushManager.subscribe` , который должен быть `DOMException` обработан.  Для получения дополнительных информации об управлении разрешениями перейдите к [push-уведомлениям в Microsoft Edge.][WindowsBlogsWebNotificationsEdge]  
 
-Добавьте в `pwabuilder-sw-register.js` файл следующий фрагмент кода.  
+В `pwabuilder-sw-register.js` файле примените следующий фрагмент кода.  
 
 ```javascript
 // Ask the user for permission to send push notifications.
@@ -233,17 +232,17 @@ function urlBase64ToUint8Array(base64String) {
 }
 ```  
 
-Дополнительные сведения можно найти в разделе [PushManager][MDNPushManager] и [отправить по Интернету][NPMWebPushUsage].  
+Дополнительные сведения можно найти в [PushManager][MDNPushManager] и [Web-Push.][NPMWebPushUsage]  
 
-### Шаг 3: прослушивание push-уведомлений  
+### Шаг 3. Прослушивание push-уведомлений  
 
-После того как вы создадите подписку в PWA, добавьте обработчики для сотрудника службы, чтобы реагировать на события push-уведомлений.  Push-уведомления отправляются с сервера для отображения всплывающих уведомлений.  Всплывающие уведомления отображают данные полученного сообщения.  Для выполнения следующих задач необходимо добавить обработчик нажатия.  
+После создания подписки в PWA добавьте обработчики в рабочий процесс службы для реагирования на события push-рассылки.  Событие Push отправляется с сервера для отображения всплывающих уведомлений.  Всплывающие уведомления отображают данные о полученном сообщении.  Для выполнения следующих задач необходимо добавить обработок щелчка.  
 
-*   Закрыть всплывающее уведомление  
-*   Открыть, сфокусировать или открыть и сфокусировать любые открытые окна  
-*   Открытие нового окна и фокусирование для отображения страницы клиента PWA  
+*   Отклонение всплывающее уведомление  
+*   Открывать, фокусировать или открывать и фокусировать любые открытые окна  
+*   Открытие и фокус в новом окне для отображения клиентской страницы PWA  
     
-В `pwabuilder-sw.js` файле добавьте следующие обработчики.  
+Добавьте `pwabuilder-sw.js` в файл следующие обработчики.  
 
 ```javascript
 // Respond to a server push with a user notification.
@@ -279,58 +278,59 @@ self.addEventListener('notificationclick', function (event) {
 });
 ```  
 
-### Шаг 4: попробуйте.  
+### Шаг 4. Попробуйте  
 
-Чтобы проверить push-уведомления для PWA, выполните указанные ниже действия.  
+Чтобы протестировать push-уведомления для PWA, выполните следующие действия.  
 
-1.  Перейдите на веб – PWA по адресу `http://localhost:3000` .  Когда сотрудник службы активируется и пытается оформить подписку на PWA для push-уведомлений, Microsoft Edge предлагает вам разрешить просмотр уведомлений на PWA.  Нажмите кнопку **Разрешить**.  
+1.  Перейдите к PWA `http://localhost:3000` по  Когда ваш сотрудник службы активируется и пытается подписать PWA на push-уведомления, Microsoft Edge вы запросит разрешение PWA показывать уведомления.  Выберите **"Разрешить".**  
     
-    :::image type="complex" source="./media/notification-permission.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/notification-permission.png":::
+    :::image type="complex" source="./media/notification-permission.png" alt-text="Диалоговое окно разрешений для включения уведомлений" lightbox="./media/notification-permission.png":::
        Диалоговое окно разрешений для включения уведомлений
     :::image-end:::
     
-1.  Имитировать push-уведомление на стороне сервера.  Откройте веб – приложение Project Web App `http://localhost:3000` в браузере и нажмите кнопку, `F12` чтобы открыть DevTools.  Нажмите **кнопку**отправить,  >  **Service Worker**  >  **Push** чтобы отправить тестовое push-уведомление на PWA.  
+1.  Имитация push-уведомлений на стороне сервера.  Открыв PWA в браузере, выберите открытие `http://localhost:3000` `F12` DevTools.  Выберите **push-уведомления**для сотрудников службы приложений, чтобы  >  ****  >  **** отправить тестовую push-уведомления в PWA.  
+    
     :::row:::
        :::column span="":::
-          На панели задач должно отобразиться push-уведомление.  
+          Push-уведомление должно отображаться рядом с панелью задач.  
           
-          :::image type="complex" source="./media/devtools-push.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/devtools-push.png":::
-             Отправка уведомления из DevTools  
+          :::image type="complex" source="./media/devtools-push.png" alt-text="Push-уведомление от DevTools" lightbox="./media/devtools-push.png":::
+             Push-уведомление от DevTools  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Если вы не выберете параметр \ (или активировать) всплывающее уведомление, система автоматически закрывает ее через несколько секунд и помещает ее в свой центр уведомлений Windows.  
+          Если не выбрать всплывающее уведомление (или активировать\), система автоматически отключит его через несколько секунд и включит его в очередь в центре уведомлений Windows.  
           
-          :::image type="complex" source="./media/windows-action-center.png" alt-text="Выполнение нового PWA на localhost" lightbox="./media/windows-action-center.png":::
-             Уведомления в центре уведомлений Windows :::image-end:::
+          :::image type="complex" source="./media/windows-action-center.png" alt-text="Уведомления в Центре уведомлений Windows" lightbox="./media/windows-action-center.png":::
+             Уведомления в Центре уведомлений Windows :::image-end:::
        :::column-end:::
     :::row-end:::  
     
 ## Дальнейшие действия  
 
-Следующие действия включают дополнительные задачи, которые помогут вам разобраться в создании реальных PWAs.  
+Следующие действия включают дополнительные задачи, которые помогут вам понять создание реальных pwAs.  
 
-*   Управление принудительными подписками и их хранение  
-*   [Шифрование][NPMWebPushEncrypt] полезных данных  
+*   Управление push-подписками и их хранение  
+*   [Шифрование][NPMWebPushEncrypt] данных полезной нагрузки  
 *   Адаптивный дизайн  
-*   Глубокая связь  
-*   [Тестирование в нескольких браузерах][BrowserStackTestEdgeBrowser]  
-*   Реализация методов проверки и тестирования, таких как " [Подсказка][Webhint] "  
-   
+*   Глубокое связывание  
+*   [Тестирование в разных браузерах][BrowserStackTestEdgeBrowser]  
+*   Реализация методик проверки и тестирования, таких как [webhint][Webhint]  
+    
 ## См. также  
 
-*   [Прогрессивные веб-приложения на MDN веб-документах][MDNProgressiveWebApps]  
-*   [Прогрессивные веб-приложения на веб-сайте. dev][WebDevProgressiveWebApps]  
-*   [Средства чтения новостей, такие как прогрессивные веб-приложения,][HackerNewsProgressiveWebApps] сравнивают различные платформы и шаблоны производительности для реализации примера \ (средство чтения новостей с помощью хакеров \) PWA.  
-*   [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition]  
-*   [Прогрессивный план для последовательного веб-приложения][CloudfourThinksProgressiveRoadmapYourWebApp]  
-*   [Автономные публикации с прогрессивными веб-приложениями][MediumWebEdgeOfflinePostsProgressiveWebApps]  
-*   [PWA Q&A][AaronGustafsonNotebookPwaQa]  
-*   [Ставкам в Интернете][JoretegBlogBettingWeb]  
-*   [Именование последовательного веб-приложения][Fberriman20170626NamingProgressiveWebApps]  
-*   [Проектирование и создание последовательного веб-приложения без структуры (часть 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
-*   [Проектирование и создание последовательного веб-приложения без структуры (часть 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
-*   [Проектирование и создание последовательного веб-приложения без структуры (часть 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
+*   [Прогрессивное веб-приложение в веб-документы MDN][MDNProgressiveWebApps]  
+*   [Прогрессивное веб-приложение на веб-сайте web.dev][WebDevProgressiveWebApps]  
+*   [Читатели новостей Хакера как прогрессивное веб-приложение][HackerNewsProgressiveWebApps] — сравнивают различные структуры и шаблоны производительности для реализации примера \(Читателя новостей хакера\) PWA.  
+*   [Захиминг (PwAs)][Davrous20191018MythBustingPwasNewEdgeEdition]  
+*   [Прогрессивное движение для прогрессивного веб-приложения][CloudfourThinksProgressiveRoadmapYourWebApp]  
+*   [Автономные POS-карты с прогрессивной веб-приложениями][MediumWebEdgeOfflinePostsProgressiveWebApps]  
+*   [Вопросы и&PWA][AaronGustafsonNotebookPwaQa]  
+*   [Подавка в Интернете][JoretegBlogBettingWeb]  
+*   [Именовка прогрессивного веб-приложения][Fberriman20170626NamingProgressiveWebApps]  
+*   [Проектирование и создание прогрессивного веб-приложения без структуры (часть 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
+*   [Проектирование и создание прогрессивного веб-приложения без структуры (часть 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
+*   [Проектирование и создание прогрессивного веб-приложения без структуры (часть 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
     
 <!-- image links -->  
 
@@ -338,69 +338,69 @@ self.addEventListener('notificationclick', function (event) {
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Развертывание приложения Node.js в Azure с помощью Visual Studio Code | Документы Microsoft"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Развертывание Node.js в Azure с помощью Visual Studio кода | Документы Майкрософт"  
 
-[AzureCreateFreeAccount]: https://azure.microsoft.com/free "Создать бесплатную учетную запись Azure | Microsoft Azure"  
+[AzureCreateFreeAccount]: https://azure.microsoft.com/free "Создание бесплатной учетной записи Azure | Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Веб-приложения | Microsoft Azure"  
 
 [WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Веб-уведомления в Microsoft Edge | Блоги Windows"  
 
-[VisualstudioCodeMain]: https://code.visualstudio.com "Код Visual Studio"  
+[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 
-[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA Q&A"  
+[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "Вопросы и&PWA"  
 
-[BrowserStackTestEdgeBrowser]: https://www.browserstack.com/test-on-microsoft-edge-browser "Бесплатное тестирование браузера Microsoft EDGE в Windows 10 | BrowserStack"  
+[BrowserStackTestEdgeBrowser]: https://www.browserstack.com/test-on-microsoft-edge-browser "Бесплатное тестирование браузера Microsoft Edge в Windows 10 | BrowserStack"  
 
-[CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "Прогрессивный план для последовательного веб-приложения"  
+[CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "Прогрессивное движение для прогрессивного веб-приложения"  
 
-[Davrous20191018MythBustingPwasNewEdgeEdition]: https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition "Myth busting PWAs — новый выпуск Edge"  
+[Davrous20191018MythBustingPwasNewEdgeEdition]: https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition "Захиминг PWAs — новый выпуск Edge Edition"  
 
-[ExpressjsApplicationGenerator]: https://expressjs.com/starter/generator.html "Генератор приложений для Экспресс | Предоставлен" 
+[ExpressjsApplicationGenerator]: https://expressjs.com/starter/generator.html "Генератор экспресс-приложений | Express" 
 
-[Fberriman20170626NamingProgressiveWebApps]: https://fberriman.com/2017/06/26/naming-progressive-web-apps "Именование последовательного веб-приложения"  
+[Fberriman20170626NamingProgressiveWebApps]: https://fberriman.com/2017/06/26/naming-progressive-web-apps "Именовка прогрессивного веб-приложения"  
 
-[HackerNewsProgressiveWebApps]: https://hnpwa.com "Средства чтения новостей от хакеров в виде последовательного веб-приложения"  
+[HackerNewsProgressiveWebApps]: https://hnpwa.com "Читатели новостей хакеров в качестве прогрессивного веб-приложения"  
 
-[JoretegBlogBettingWeb]: https://joreteg.com/blog/betting-on-the-web "Ставкам в Интернете"  
+[JoretegBlogBettingWeb]: https://joreteg.com/blog/betting-on-the-web "Подавка в Интернете"  
 
 [MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "API уведомлений | MDN"  
-[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "Прогрессивные веб-приложения \ (PWAs) | MDN"  
-[MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "API push-уведомлений | MDN"  
+[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "Прогрессивное веб-приложение \(PWAs) | MDN"  
+[MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "API Push | MDN"  
 [MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager | MDN"  
-[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API рабочего процесса службы | MDN"  
-[MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Работа с сотрудниками службы | MDN"  
+[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API рабочих служб | MDN"  
+[MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Использование сотрудников служб | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Манифест веб-приложения | MDN"  
 
-[MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "Автономные публикации с прогрессивными веб-приложениями"  
+[MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "Автономные POS-карты с прогрессивной веб-приложениями"  
 
-[MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Отправка VAPID идентифицированных уведомлений о событиях через службу Push-сообщений для Mozilla | Службы Mozilla"  
+[MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Отправка уведомлений WebPush с помощью службы push-уведомлений Mozilla | Службы Mozilla"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[NPMWebPush]: https://www.npmjs.com/package/web-push "веб-отправка | NPM"  
-[NPMWebPushEncrypt]: https://www.npmjs.com/package/web-push#encryptuserpublickey-userauth-payload-contentencoding "Encrypt (userPublicKey, userAuth, полезные данные, contentEncoding) — веб-отправка | NPM"  
-[NPMWebPushUsage]: https://www.npmjs.com/package/web-push#usage "Использование-веб-Push | NPM"  
+[NPMWebPush]: https://www.npmjs.com/package/web-push "web-push | npm"  
+[NPMWebPushEncrypt]: https://www.npmjs.com/package/web-push#encryptuserpublickey-userauth-payload-contentencoding "encrypt(userPublicKey, userAuth, payload, contentEncoding) — web-push | NPM"  
+[NPMWebPushUsage]: https://www.npmjs.com/package/web-push#usage "Использование — web-push | NPM"  
 
-[ProgressiveWebApps]: https://pwa.rocks "Прогрессивные веб-приложения"  
+[ProgressiveWebApps]: https://pwa.rocks "Прогрессивное веб-приложение"  
 
-[PwaBuilder]: https://www.pwabuilder.com "Конструктор PWA"  
-[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "Сервисный сотрудник | Конструктор PWA"  
+[PwaBuilder]: https://www.pwabuilder.com "Построитель PWA"  
+[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "Service Worker | Построитель PWA"  
 
-[ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Push-ролик с богатыми возможностями | ServiceWorker Cookbook"  
+[ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Push Rich Demo | ServiceWorkerBook"  
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "Проектирование и создание последовательного веб-приложения без структуры (часть 1)"  
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "Проектирование и создание прогрессивного веб-приложения без структуры (часть 1)"  
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "Проектирование и создание последовательного веб-приложения без структуры (часть 2)"  
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "Проектирование и создание прогрессивного веб-приложения без структуры (часть 2)"  
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "Проектирование и создание последовательного веб-приложения без структуры (часть 3)"  
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "Проектирование и создание прогрессивного веб-приложения без структуры (часть 3)"  
 
-[VapidkeysMain]: https://vapidkeys.com "VAPID Secure Key | VapidKeys" 
+[VapidkeysMain]: https://vapidkeys.com "Безопасный генератор ключей VAPID | VapidKeys" 
 
-[Webhint]: https://webhint.io "Подсказка"  
+[Webhint]: https://webhint.io "webhint"  
 
-[WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Прогрессивные веб-приложения | Web. dev"  
+[WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Прогрессивное веб-приложение | web.dev"  
 
-[WikiProgressiveEnhancement]: https://en.wikipedia.org/wiki/Progressive_enhancement "Улучшенное последовательное расширение | Википедии"  
+[WikiProgressiveEnhancement]: https://en.wikipedia.org/wiki/Progressive_enhancement "Прогрессивное улучшение | Википедия"  

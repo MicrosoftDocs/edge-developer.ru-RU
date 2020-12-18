@@ -1,5 +1,5 @@
 ---
-description: Автоматизация и тестирование в Microsoft Edge с помощью playwright
+description: Использование Playwright для автоматизации и тестирования в Microsoft Edge
 title: Playwright
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,38 +7,38 @@ ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft EDGE, веб-разработка, разработчик, инструменты, Автоматизация, проверка, playwright, узел, сценарий JavaScript, NPM
-ms.openlocfilehash: ac03923fb25da00f07cb70e81ac06b106a6e1452
-ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
+keywords: Microsoft edge, веб-разработка, разработчик, средства, автоматизация, тест, playwright, node, javascript, npm
+ms.openlocfilehash: 5ce51864177731dd1bafb845466abb00cce1e0aa
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "11192214"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231085"
 ---
 # Playwright  
 
-[Playwright][|::ref1::|Main] — это библиотека [Node.js][NodejsMain] для автоматизации [Chromium][ChromiumHome], [Firefox][FirefoxMain]и [WebKit][|::ref2::|Main] с помощью единого API.  Playwright разработан для поддержки веб-автоматизации, которая всегда является зеленым, поддерживающим, надежной и быстрой.  Поскольку [Microsoft Edge разработан на веб-платформах Open-Source Chromium][MicrosoftBlogsWindowsExperience20181206], playwright также может автоматизировать Microsoft Edge.  
+[Playwright][|::ref1::|Main] — это [Node.js][NodejsMain] для автоматизации [Chromium,][ChromiumHome] [Firefox][FirefoxMain]и [WebKit][|::ref2::|Main] с помощью одного API.  Playwright создан для обеспечения кросс-браузерной веб-автоматизации, которая всегда зелена, способна, надежна и быстра.  Так [как Microsoft Edge создан на веб-платформе Chromium][MicrosoftBlogsWindowsExperience20181206]с открытым исходным кодом, Playwright также может автоматизировать Microsoft Edge.  
 
-По умолчанию playwright запускает [автономные браузеры][WikiHeadlessBrowser] .  В бездисплейных браузерах пользовательский интерфейс не отображается, поэтому для этого нужно использовать командную строку.  Кроме того, вы можете настроить playwright на выполнение полных и некачественных \ (без монитора) Microsoft Edge.  
+По умолчанию Playwright запускает браузеры без [headless.][WikiHeadlessBrowser]  Браузеры без монитора не отображают пользовательский интерфейс, поэтому необходимо использовать командную строку.  Вы также можете настроить Playwright для полного запуска \(без headless\) Microsoft Edge.  
 
-По умолчанию при установке playwright установщик загружает [Chromium][ChromiumHome], [Firefox][FirefoxMain]и [WebKit][|::ref3::|Main].  Если у вас есть Microsoft Edge \ (Chromium \), playwright просто нужно изменить однострочный код, чтобы протестировать ваш веб-сайт или приложение в Microsoft Edge.  Чтобы скачать Microsoft Edge \ (Chromium \), перейдите в раздел [Загрузка Microsoft Edge][MicrosoftEdgeDownload].  
+По умолчанию при установке Playwright установщик скачивает [Chromium,][ChromiumHome] [Firefox][FirefoxMain]и [WebKit.][|::ref3::|Main]  Если у вас также установлен Microsoft Edge \(Chromium\), для тестирования веб-сайта или приложения в Microsoft Edge playwright необходимо просто изменить код из одной строки.  Чтобы скачать Microsoft Edge \(Chromium\), перейдите к [загрузке Microsoft Edge.][MicrosoftEdgeDownload]  
 
-## Установка playwright  
+## Установка Playwright  
 
-Установите [playwright][|::ref4::|Main] для проверки веб-сайта или приложения с помощью следующей команды.  
+Установите [Playwright,][|::ref4::|Main] чтобы протестировать веб-сайт или приложение с помощью следующей команды.  
 
 ```shell
 npm i playwright
 ```  
 
-## Запуск Microsoft Edge с помощью playwright  
+## Запуск Microsoft Edge с помощью Playwright  
 
 > [!NOTE]
-> Для [playwright][|::ref5::|Main] требуется Node.js версии 10,17 или более поздней. Запустите `node -v` из командной строки, чтобы убедиться, что у вас есть совместимая версия Node.js.  Двоичные файлы браузера для Chromium, Firefox и WebKit работают в Windows, macOS и Linux. Дополнительные сведения можно найти в разделе [требования к системе playwright][PlaywrightSystemRequirements].  
+> [Для воспроизведения требуется][|::ref5::|Main] Node.js версии 10.17 или выше. Запустите командную строку, чтобы убедиться, что у вас совместимая `node -v` версия Node.js.  Binaries браузера для Chromium, Firefox и WebKit работают в Windows, macOS и Linux. Дополнительные сведения можно найти в [playwright System Requirements.][PlaywrightSystemRequirements]  
 
-Playwright должны быть знакомы с пользователями других платформ тестирования браузера, таких как веб- [накопитель][WebDriverChromiumMain] или [Puppeteer][PuppeteerMain].  Вы создаете экземпляр браузера, открываете страницу, а затем управляете ею с помощью [API playwright][PlaywrightAPIReference].  В следующем фрагменте кода playwright запускает Microsoft Edge \ (Chromium \), переходит на `https://www.microsoft.com/edge` него и сохраняет снимок экрана как `example.png` .  
+Playwright должен быть знаком пользователям других механизмов проверки браузера, таких как [WebDriver][WebDriverChromiumMain] или [Вестер.][PuppeteerMain]  Вы создаете экземпляр браузера, открываете страницу, а затем управляете им с [помощью API Playwright.][PlaywrightAPIReference]  В следующем фрагменте кода Playwright запускает Microsoft Edge \(Chromium\), переходит к и сохраняет `https://www.microsoft.com/edge` снимок экрана как `example.png` .  
 
-Скопируйте приведенный ниже фрагмент кода и сохраните его как `example.js` .  
+Скопируйте следующий фрагмент кода и сохраните его как `example.js` .  
 
 ```javascript
 const { chromium } = require('playwright');
@@ -55,13 +55,13 @@ const { chromium } = require('playwright');
 })();
 ```  
 
-Измените `executablePath` этот элемент, чтобы он указывал на установленный Microsoft Edge \ (Chromium \).  Например, в macOS `executablePath` для Microsoft Edge Канарские должно быть установлено значение `/Applications/Microsoft\ Edge\ Canary.app/` .  Чтобы найти `executablePath` `edge://version` путь к **исполняемому** файлу на этой странице, найдите и скопируйте его, а затем установите пакет [Edge-paths][npmEdgePaths] с помощью следующей команды.  
+`executablePath`Измените, чтобы указать на установку Microsoft Edge \(Chromium\).  Например, в macOS для `executablePath` Microsoft Edge Canary должно быть установлено . `/Applications/Microsoft\ Edge\ Canary.app/`  Чтобы найти , перейдите к исполняемого пути на этой странице и скопируйте его или установите пакет `executablePath` `edge://version` [edge-paths][npmEdgePaths] с помощью следующей команды. ****  
 
 ```shell
 npm i edge-paths
 ```  
 
-В следующем фрагменте кода используется пакет [Edge-paths][npmEdgePaths] , чтобы программным образом найти путь к установке Microsoft Edge \ (Chromium \) в операционной системе.  
+В следующем фрагменте кода пакет [edge-paths][npmEdgePaths] используется для программного поиска пути к установке Microsoft Edge \(Chromium\) в операционной системы.  
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -69,30 +69,30 @@ const edgePaths = require("edge-paths");
 const EDGE_PATH = edgePaths.getEdgePath();
 ```  
 
-И, наконец, Set `executablePath: EDGE_PATH` in `example.js` .  В конце необходимо сохранить изменения.  
+Наконец, установите `executablePath: EDGE_PATH` в `example.js` .  В конце необходимо сохранить изменения.  
 
 > [!NOTE]
-> Microsoft Edge \ (EdgeHTML \) не работает с playwright.  Для продолжения работы в этом примере необходимо установить [Microsoft Edge \ (Chromium \)][MicrosoftEdgeDownload] .  
+> Microsoft Edge \(EdgeHTML\) не работает с Playwright.  Необходимо установить [Microsoft Edge \(Chromium\),][MicrosoftEdgeDownload] чтобы продолжить следовать этому примеру.  
 
-Теперь запустите `example.js` из командной строки.  
+Теперь `example.js` запустите из командной строки.  
 
 ```shell
 node example.js
 ```  
 
-Playwright запускает Microsoft EDGE, переходит на `https://www.microsoft.com/edge` снимок страницы и сохраняет его.  Вы можете настроить размер страницы с помощью [Page. setViewportSize ()][PlaywrightAPIPageSetViewport].  
+Playwright запускает Microsoft Edge, переходит к странице и сохраняет `https://www.microsoft.com/edge` снимок экрана.  Вы можете настроить размер страницы с помощью [page.setViewportSize()][PlaywrightAPIPageSetViewport].  
 
-:::image type="complex" source="../media/playwright-example.png" alt-text="Файл example.png, созданный example.js" lightbox="../media/playwright-example.png":::
-    `example.png`Файл, созданный с помощью `example.js`  
+:::image type="complex" source="../media/playwright-example.png" alt-text="Файл example.png, который example.js" lightbox="../media/playwright-example.png":::
+    Файл, `example.png` который был произведен `example.js`  
 :::image-end:::  
 
-`example.js` — Это простая демонстрация сценариев автоматизации и тестирования, включенных playwright.  Чтобы сделать снимки экрана в нескольких веб-браузерах, измените приведенный ниже код.  
+`example.js` это простое демонстрация сценариев автоматизации и тестирования, включенных Playwright.  Чтобы сделать снимки экрана в нескольких веб-браузерах, измените следующий код.  
 
 *   Chromium  `await chromium.launch()`  
 *   Firefox  `await firefox.launch()`  
 *   WebKit  `await webkit.launch()`  
 
-Чтобы получить дополнительные сведения о playwright, перейдите на [веб-сайт playwright][|::ref6::|Main].  Изучите  [репозиторий playwright][PlaywrightRepo] на GitHub.  Чтобы поделиться отзывом об автоматизации и тестировании веб-сайта или приложения с помощью playwright, закажите [вопрос][PlaywrightRepoNewIssue].  
+Дополнительные сведения о Playwright можно найти на [веб-сайте Playwright.][|::ref6::|Main]  Ознакомьтесь  [с репозитарием Playwright на][PlaywrightRepo] GitHub.  Чтобы поделиться своим мнением об автоматизации и тестировании веб-сайта или приложения с помощью Playwright, [задайте проблему.][PlaywrightRepoNewIssue]  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
 
@@ -100,12 +100,12 @@ Playwright запускает Microsoft EDGE, переходит на `https://w
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium/index.md "[Chromium) | Документы Microsoft"  
-[PuppeteerMain]: ../puppeteer.md "Puppeteer | Документы Microsoft"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Документы Майкрософт"  
+[PuppeteerMain]: ../puppeteer/index.md "Заметь | Документы Майкрософт"  
 
-[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: улучшение веб-сайта в более чем больше возможностей для совместной работы с открытым кодом | Блог Microsoft Experience"  
+[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: улучшение веб-сайта благодаря большей совместной работе с открытым кодом | Блог о microsoft Experience"  
 
-[MicrosoftEdgeDownload]: https://microsoft.com/edge "Загрузить Microsoft Edge"  
+[MicrosoftEdgeDownload]: https://microsoft.com/edge "Скачать Microsoft Edge"  
 
 [ChromiumHome]: https://www.chromium.org/Home "Chromium | Проекты Chromium"  
 
@@ -113,16 +113,16 @@ Playwright запускает Microsoft EDGE, переходит на `https://w
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "Краевые пути | NPM"  
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "edge-paths | npm"  
 
 [PlaywrightMain]: https://playwright.dev "Playwright"  
-[PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Справочник по API playwright"  
-[PlaywrightAPIPageSetViewport]: https://playwright.dev#?path=docs%2Fapi.md&q=pagesetviewportsizeviewportsize "Page. setViewportSize (viewportSize) | Справочник по API playwright"    
-[PlaywrightSystemRequirements]: https://playwright.dev#?path=docs/intro.md&q=system-requirements "Требования к системе playwright"  
+[PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Справочник по API Playwright"  
+[PlaywrightAPIPageSetViewport]: https://playwright.dev#?path=docs%2Fapi.md&q=pagesetviewportsizeviewportsize "page.setViewportSize(viewportSize) | Справочник по API Playwright"    
+[PlaywrightSystemRequirements]: https://playwright.dev#?path=docs/intro.md&q=system-requirements "Требования к системе для playwright"  
 
 [PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright | GitHub"  
-[PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Новая ошибка в репозитории playwright | GitHub"  
+[PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Новая проблема в repo Playwright | GitHub"  
 
 [WebKitMain]: https://webkit.org "WebKit"  
 
-[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Автономный браузер | Википедии"  
+[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Браузер без headless | Википедия"  

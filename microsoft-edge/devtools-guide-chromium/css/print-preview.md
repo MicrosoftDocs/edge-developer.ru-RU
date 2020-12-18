@@ -1,18 +1,18 @@
 ---
-description: Откройте вкладку "рендеринг" и выберите "Эмуляция CSS Media" > "Печать".
-title: Принудительная установка Microsoft Edge DevTools в режиме предварительного просмотра (тип носителя для печати CSS)
+description: Откройте вкладку "Отрисовка" и выберите "Эмуляция CSS-носителю" > "печать".
+title: Принудительное переведите Microsoft Edge DevTools в режим предварительного просмотра печати (тип мультимедиа CSS Print)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: d4e8e06d60461ac4cdcab8686a18a0698d52f6e3
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: a036e710de998f03e876126581956929d8652f1e
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125120"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230924"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,24 +28,24 @@ ms.locfileid: "11125120"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Принудительная установка Microsoft Edge DevTools в режиме предварительного просмотра (тип носителя для печати CSS)  
+# Принудительное переведите Microsoft Edge DevTools в режим предварительного просмотра печати (тип мультимедиа CSS Print)  
 
-[Запрос на печать][MDNUsingMediaQueries] позволяет управлять тем, как выглядит страница после печати.  Чтобы перевести страницу в режим предварительного просмотра, выполните указанные ниже действия.  
+Запрос [на печать мультимедиа][MDNUsingMediaQueries] управляет тем, как выглядит страница при печати.  Чтобы принудительно перенадействовать страницу в режим предварительного просмотра:  
 
-1.  Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть **меню команд**.  
+1.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) или `Command` + `Shift` + `P` \(macOS\), чтобы открыть меню **команд.**  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Меню команд" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       **Меню команд**  
+       Меню **команд**  
     :::image-end:::  
     
-1.  Введите `rendering` команду **Показать рендеринг**и нажмите кнопку `Enter` .  
-1.  В разделе **Эмуляция мультимедиа в CSS** нажмите кнопку **Печать**.  
+1.  `rendering`Введите, **выберите "Показать отрисовку"** и выберите `Enter` .  
+1.  В **эмуляции CSS-носите**выберите **"Печать".**  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Меню команд" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Режим предварительного просмотра" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        Режим предварительного просмотра  
     :::image-end:::  
     
-Отсюда вы можете просматривать и изменять CSS, как и любую другую веб-страницу.  Ознакомьтесь [со статьей начало работы с помощью просмотра и изменения CSS][DevToolsCSSGetStarted].  
+Здесь вы можете просматривать и изменять CSS, как и любую другую веб-страницу.  Перейдите [к началу работы с просмотром и изменением CSS.][DevToolsCSSGetStarted]  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
 
@@ -53,14 +53,14 @@ ms.locfileid: "11125120"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
-[DevToolsCSSGetStarted]: ./index.md "Начало просмотра и изменения CSS | Документы Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Средства разработчика Microsoft Edge (Chromium) | Документы Майкрософт"  
+[DevToolsCSSGetStarted]: ./index.md "Начало просмотра и изменения CSS | Документы Майкрософт"  
 
-[MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Использование мультимедийных запросов | MDN"  
+[MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Использование запросов мультимедиа | MDN"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

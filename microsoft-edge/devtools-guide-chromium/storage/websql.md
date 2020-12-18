@@ -1,18 +1,18 @@
 ---
-description: Инструкции по просмотру данных из веб-SQL на панели приложения Microsoft Edge DevTools.
-title: Просмотр данных из веб-SQL с помощью Microsoft Edge DevTools
+description: Просмотр данных веб-SQL с панели приложений Microsoft Edge DevTools.
+title: Просмотр данных веб-SQL с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 0396a00ec354fdd707bc4d484242d4cf844db5f9
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 802f21cb4cadfa3ee08ddd8feeea8b8132551740
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125470"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231176"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,75 +28,75 @@ ms.locfileid: "11125470"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Просмотр данных из веб-SQL с помощью Microsoft Edge DevTools  
+# Просмотр данных веб-SQL с помощью Microsoft Edge DevTools  
 
 > [!WARNING]
-> Спецификация веб-SQL [не поддерживается][W3CWebSQLStatus].  
+> Спецификация веб-SQL не [поддерживается.][W3CWebSQLStatus]  
 
-В этом руководстве описано, как использовать [Microsoft Edge DevTools][MicrosoftEdgeDevTools] для проверки данных в веб-приложении SQL.  
+В этом руководстве показано, как использовать [Microsoft Edge DevTools][MicrosoftEdgeDevTools] для проверки данных веб-SQL.  
 
-## Просмотр данных в веб-SQL  
+## Просмотр данных веб-SQL  
 
-1.  Перейдите на вкладку **источники** , чтобы открыть панель " **источники** ".  Обычно область **манифеста** открывается по умолчанию.  
+1.  Выберите **вкладку "Источники",** чтобы открыть **средство "Источники".**  Обычно **по** умолчанию открывается окно манифеста.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-manifest.msft.png":::
-       Область « **Манифест** »  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
+       The **Manifest** pane  
     :::image-end:::  
     
-1.  Разверните раздел **веб-SQL** , чтобы просмотреть базы данных и таблицы.  На приведенном ниже рисунке под **html5meetup** является база данных, а **комнаты** — таблица.  
+1.  **Разоберись с SQL** веб-страниц, чтобы просмотреть базы данных и таблицы.  На следующем рисунке под **html5meetup** находится база данных, а **комнаты** — таблица.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-web-sql.msft.png":::
-       Область " **веб-SQL** "  
+    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Веб-SQL" lightbox="../media/storage-application-storage-web-sql.msft.png":::
+       **Веб-SQL**  
     :::image-end:::  
     
 1.  Выберите таблицу, чтобы просмотреть данные для этой таблицы.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Просмотр данных таблицы веб-SQL" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
        Просмотр данных таблицы веб-SQL  
     :::image-end:::  
     
-## Изменение данных в веб-SQL  
+## Изменение данных веб-SQL  
 
-Вы не можете редактировать данные веб-SQL при просмотре таблицы веб-SQL (например, на **рис. 3** выше).  Но вы можете запускать на веб-сайте SQL инструкции для редактирования и удаления таблиц.  Дополнительные сведения: [запуск запросов Web SQL](#run-web-sql-queries).  
+При просмотре таблицы веб-SQL нельзя редактировать данные веб-SQL, как по сравнению с предыдущими.  Но вы можете запускать в консоли web SQL утверждения, которые редактирует или удаляет таблицы.  См. [запросы SQL веб-сайтов.](#run-web-sql-queries)  
 
-## Выполнение запросов на веб-SQL  
+## Выполнение запросов SQL веб-сайтов  
 
-1.  Выберите базу данных, чтобы открыть для нее консоль.  
-1.  Введите инструкцию веб-SQL и выберите `Enter` для ее запуска.  
+1.  Выберите базу данных, чтобы открыть консоль для этой базы данных.  
+1.  Введите SQL Web SQL и выберите `Enter` его запуск.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       Удаление строки из таблицы с помощью веб-консоли SQL  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Использование консоли web SQL для удаления строки из таблицы" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Использование консоли web SQL для удаления строки из таблицы  
     :::image-end:::  
     
 ## Обновление таблицы веб-SQL  
 
-DevTools не обновляет таблицы в режиме реального времени.  Чтобы обновить данные в таблице, выполните указанные ниже действия.  
+DevTools не обновляет таблицы в режиме реального времени.  Чтобы обновить данные в таблице, выполните следующие действия.  
 
-1.  [Просмотр данных в таблице веб-SQL](#view-web-sql-data).  
-1.  Нажмите кнопку **Обновить** \ ( ![ обновить ][ImageRefreshIcon] \).  
+1.  [Просмотр данных в таблице веб-SQL.](#view-web-sql-data)  
+1.  Choose **Refresh** \( ![ Refresh ][ImageRefreshIcon] \).  
     
 ## Фильтрация столбцов в таблице веб-SQL  
 
-1.  [Просмотр данных в таблице веб-SQL](#view-web-sql-data).  
-1.  С помощью текстового поля **видимые столбцы** можно указать, какие столбцы вы хотите отобразить.  Укажите имена столбцов в виде CSV-списка.  
+1.  [Просмотр данных в таблице веб-SQL.](#view-web-sql-data)  
+1.  Используйте **текстовое поле "Видимые столбцы",** чтобы указать, какие столбцы нужно отметить.  Предо в качестве CSV-списка имена столбцов.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
-       Использование текстового поля " **видимые столбцы** " для уменьшения количества отображаемых столбцов  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Использование текстового окна "Видимые столбцы" для уменьшения числа столбцов" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+       Использование **текстового окна "Видимые столбцы"** для уменьшения числа столбцов  
     :::image-end:::  
     
-## Удаление всех данных из веб-SQL  
+## Удаление всех данных SQL веб-сайтов  
 
-1.  Открытие области **очистки хранилища** .  
-1.  Убедитесь, что установлен флажок **веб-SQL** .  
+1.  Откройте области **"Очистить** хранилище".  
+1.  Убедитесь, **что** SQL веб-страницы включен.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       Флажок " **веб-SQL** "  
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="The Web SQL checkbox" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       The **Web SQL** checkbox  
     :::image-end:::  
     
-1.  Выберите команду **Очистить данные сайта**.  
+1.  Выберите **"Очистить данные сайта".**  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
-       Кнопка " **Очистить данные сайта** "  
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Кнопка очистки данных сайта" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+       Кнопка **очистки данных** сайта  
     :::image-end:::  
     
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
@@ -109,13 +109,13 @@ DevTools не обновляет таблицы в режиме реальног
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Средства разработчика Microsoft Edge (Chromium) | Документы Майкрософт"  
 
-[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "База данных веб-SQL | PNG"  
+[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "База данных веб SQL | W3C"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/storage/websql) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/storage/websql) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

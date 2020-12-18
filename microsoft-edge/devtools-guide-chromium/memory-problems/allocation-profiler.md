@@ -1,18 +1,18 @@
 ---
-description: Используйте инструментирование выделения на временной шкале, чтобы найти объекты, которые не будут собираться сборщиком мусора, и продолжайте удерживать память.
-title: Использование инструментирования выделения на временной шкале
+description: Используйте инструментарий выделения на временной шкале, чтобы найти объекты, которые не собираются должным образом и продолжают хранить память.
+title: Как использовать инструментарий выделения на временной шкале
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125449"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230917"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,62 +28,62 @@ ms.locfileid: "11125449"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Использование инструментирования выделения на временной шкале  
+# Как использовать инструментарий выделения на временной шкале  
 
-Используйте **Инструментирование выделения на временной шкале** , чтобы найти объекты, которые не будут собираться сборщиком мусора, и продолжайте удерживать память.  
+Используйте **инструментарий выделения на временной** шкале, чтобы найти объекты, которые не собираются должным образом и продолжают хранить память.  
 
-## Как работает Инструментарий выделения на временной шкале  
+## Как работает инструментарий выделения на временной шкале  
 
-**Инструмент выделения на временной шкале** объединяет подробные сведения о снимке **профилировщика кучи** с помощью добавочного обновления и отслеживания на панели **производительности** .  Аналогичным образом отслеживание выделения кучи для объектов включает в себя запуск записи, выполнение последовательности действий и остановку записи для анализа.  
+**Инструментарий выделения на** временной шкале **** объединяет подробные моментальные снимки профиля кучи с добавальным обновлением и отслеживанием панели **производительности.**  Аналогичным образом, отслеживание выделения кучи для объектов включает запуск записи, выполнение последовательности действий и остановку записи для анализа.  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-**Инструментарий выделения на временной шкале** периодически берет моментальные снимки кучи во время записи \ (как обычно каждые 50 MS \) и один конечный снимок в конце записи.  
+**Инструментарий выделения** на временной шкале периодически делает моментальные снимки кучи на протяжении записи \(так часто, как каждые 50 мс\) и один окончательный снимок в конце записи.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Инструментирование выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **Инструментирование выделения на временной шкале**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Инструментарий выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Инструментарий выделения на временной шкале**  
 :::image-end:::  
 
 > [!NOTE]
-> Число после a `@` — это идентификатор объекта, который сохраняется во многих снимках, сделанных в ходе сеанса записи.  Постоянный идентификатор объекта обеспечивает точное сравнение состояний кучи.  Объекты перемещаются во время сборки мусора, поэтому отображение адреса объекта не имеет смысла.  
+> Число после этого — это ИД объекта, который сохраняется в нескольких снимках, сделанных `@` во время сеанса записи.  Постоянный ИД объекта обеспечивает точное сравнение между состояниями кучи.  Объекты перемещаются во время сборки мусора, поэтому отображать адрес объекта не имеет смысла.  
 
-## Включение инструментирования выделения на временной шкале  
+## Включить инструментарий выделения на временной шкале  
 
-Выполните указанные ниже действия, чтобы приступить к работе с **инструментированием выделения на временной шкале**.  
+Выполните следующие действия, чтобы начать использовать **инструментарий выделения на временной шкале.**  
 
-1.  [Откройте DevTools][DevtoolsOpenIndex].  
-1.  Откройте панель **память** и выберите переключатель **Инструментирование выделения на временной шкале** .  
+1.  [Откройте DevTools.][DevtoolsOpenIndex]  
+1.  Откройте панель **"Память"** и выберите **инструментарий выделения на временной шкале.**  
 1.  Start recording.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Инструментирование выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Профилировщик записи для выделения кучи  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Запись профиля выделения кучи" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Запись профиля выделения кучи  
     :::image-end:::  
     
 ## Чтение временной шкалы выделения кучи  
 
-Временная шкала выделения кучи показывает, где создаются объекты и определяет путь сохранения.  На приведенном ниже рисунке в верхней части экрана указываются новые объекты, найденные в куче.  
+Временная шкала выделения кучи показывает, где создаются объекты, и определяет путь сохранения.  На следующем рисунке полосы в верхней части указывают, когда новые объекты находятся в куче.  
 
-Высота каждой линии соответствует размеру недавно выделенных объектов, а цвет отрезков показывает, будут ли эти объекты по-прежнему находиться в последнем снимке кучи.  Синие отрезки указывают на объекты, которые по-прежнему находятся в конце временной шкалы, а серые — на объекты, которые были выделены на временной шкале, но с момента сбора мусора.  
+Высота каждой панели соответствует размеру недавно выделенных объектов, а цвет полос указывает, находятся ли эти объекты в окончательном снимке кучи.  Синие полосы указывают объекты, которые по-прежнему находятся в конце временной шкалы, серые — объекты, выделенные на временной шкале, но с тех пор собранные мусора.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Инструментирование выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **Инструментирование выделения для снимка временной шкалы**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Инструментарий выделения на моментальный снимок временной шкалы" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **Инструментарий выделения на моментальный снимок временной шкалы**  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
-Вы можете использовать ползунки на временной шкале выше, чтобы увеличить этот конкретный снимок и просмотреть объекты, которые были недавно выделены в данный момент.  
+Ползунки на временной шкале выше можно использовать для масштабирования определенного снимка и просмотра объектов, которые были недавно выделены на этом этапе:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Инструментирование выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   Изменение размера снимка  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Масштабирование моментального снимка" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Масштабирование моментального снимка  
 :::image-end:::  
 
-Если щелкнуть конкретный объект в куче, появится дерево сохранения в нижней части снимка кучи.  Проверка пути сохранения для объекта позволяет понять, почему объект не был собран, и необходимо внести необходимые изменения в код, чтобы удалить ненужную ссылку.  
+Щелчок определенного объекта в куче показывает дерево сохранения в нижней части снимка кучи.  При проверке пути сохранения к объекту должно быть достаточно сведений, чтобы понять, почему объект не был собран, и необходимо внести необходимые изменения в код, чтобы удалить ненужные ссылки.  
 
-## Просмотр выделения памяти по функциям  
+## Просмотр выделения памяти по функции  
 
-Вы можете просматривать выделение памяти функцией JavaScript.  Для получения дополнительных сведений перейдите к [разделу изучение выделения памяти по функциям][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+Вы можете просматривать выделение памяти с помощью функции JavaScript.  Для получения дополнительных сведений перейдите к [изучить выделение памяти по функции.][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
 
@@ -91,17 +91,17 @@ ms.locfileid: "11125449"
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "Открыть Microsoft EDGE (Chromium) DevTools | Документы Microsoft"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Исследование выделения памяти функцией — устранение проблем с памятью | Документы Microsoft"  
+[DevToolsOpenIndex]: ../open/index.md "Откройте Microsoft Edge (Chromium) DevTools | Документы Майкрософт"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Исследование выделения памяти по функции — устранение проблем с памятью | Документы Майкрософт"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Скачайте канал Microsoft Edge"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Скачивание канала Microsoft Edge"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) и была написана с помощью [Meggin Kearney][MegginKearney] \ (технический редактор \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) и автором [meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -1,18 +1,18 @@
 ---
-description: Используйте средство "проблемы" для поиска и устранения проблем с веб-сайтом.
-title: Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы"
+description: Используйте средство "Проблемы" для поиска и устранения проблем с веб-сайтом.
+title: Поиск и устранение проблем с средством Microsoft Edge DevTools Issues
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 4691db9542ecff93d1b59e243844109e0c730d23
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 8bd3e5950572a9d3fdce71ec6cd935f6b6d6a0b7
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124728"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230665"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -28,86 +28,86 @@ ms.locfileid: "11124728"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы"  
+# Поиск и устранение проблем с средством Microsoft Edge DevTools Issues  
 
-Инструмент " **вопросы** " в Microsoft Edge DevTools сокращает усталость уведомлений и бессрочные элементы **консоли**.  Используйте его для поиска решений проблем, обнаруженных браузером, например проблем с файлами cookie и смешанного содержимого.  
+Средство **"Проблемы"** в Microsoft Edge DevTools позволяет уменьшить помехи в уведомлении **консоли.**  Используйте его для поиска решений проблем, обнаруженных браузером, таких как проблемы с файлами cookie и смешанное содержимое.  
 
 > [!NOTE]
-> В Microsoft Edge 84 средство " **проблемы** " поддерживает три типа проблемы:  
-> *   [Проблемы с cookie-файлами][MDNSameSiteCookies]  
+> В Microsoft Edge 84 средство **"Проблемы"** поддерживает три типа проблем:  
+> *   [Проблемы с файлами cookie][MDNSameSiteCookies]  
 > *   [Смешанное содержимое][MDNMixedContent]  
-> *   [Проблемы с COEP][W3CCOEPSpec]
+> *   [Проблемы COEP][W3CCOEPSpec]
 > 
-> Планы Microsoft Edge DevTools Teams, чтобы поддерживать дополнительные типы проблем в будущих версиях Microsoft Edge.  
+> Группа разработчиков Microsoft Edge DevTools планирует поддерживать дополнительные типы проблем в будущих версиях Microsoft Edge.  
 
-## Открытие инструмента "проблемы" в ящике DevTools  
+## Открытие средства "Проблемы" в средстве DevTools  
 
-1.  Посетите страницу, например [SameSite-Sandbox.glitch.Me][GlitchSamesiteSandbox], которая включает проблемы, которые необходимо устранить.  
-1.  [Откройте DevTools][DevtoolsOpen].  
+1.  Посетите страницу, например [samesite-sandbox.glitch.me,][GlitchSamesiteSandbox]которая содержит проблемы, которые необходимо исправить.  
+1.  [Откройте DevTools.][DevtoolsOpen]  
 1.  :::row:::
        :::column span="":::
-          Нажмите кнопку **Перейти к разделу "проблемы** " на желтой панели предупреждения.  
+          Choose the **Go to Issues** button in the yellow warning bar.  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
-             Кнопка **Перейти к проблемам** на желтой полосе предупреждения при обнаружении проблем.  
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Перейдите к кнопке "Проблемы" в желтой панели предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
+             Кнопка **"Перейти к вопросам"** в желтой панели предупреждения при обнаружении проблем.  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Кроме того, можно выбрать пункт " **проблемы** " в меню " **другие инструменты** ".  
+          Кроме того, выберите **пункт "Проблемы"** в меню **"Дополнительные средства".**  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media//issues-more-tools-menu.msft.png":::
-             Средство " **вопросы** " в меню " **другие инструменты** "  
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство "Проблемы" в меню "Дополнительные средства"" lightbox="../media//issues-more-tools-menu.msft.png":::
+             **Средство "Проблемы"** в **меню "Дополнительные средства"**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-1.  При необходимости нажмите кнопку **перезагрузить страницу** .  
+1.  При необходимости **выберите кнопку "Перезагрузить** страницу".  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       Инструмент " **проблемы** " в DevTools ящике с кнопкой " **перезагрузить страницу** "  
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Средство "Проблемы" в средстве "DevTools Drawer" с кнопкой "Перезагрузить страницу"" lightbox="../media/issues-tab-before-refresh.msft.png":::
+       **Средство "Проблемы"** в средстве "DevTools Drawer" с **кнопкой "Перезагрузить страницу"**  
     :::image-end:::  
 
-    Проблемы, обнаруженные в **консоли** , довольно сложно понять, например предупреждения о cookie-файлах на рисунке ниже.  На основе обнаруженных проблем может быть не ясно, что необходимо сделать.  
+    Проблемы, о которые **сообщается** в консоли, довольно сложно понять, например предупреждения cookie на следующем изображении.  В зависимости от сообщений о проблемах может быть не ясно, что необходимо сделать.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       Инструмент " **проблемы** " в денежном ящике DevTools с тремя неполадками с файлами cookie  
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Средство "Проблемы" в средстве DevTools Drawer с тремя вопросами cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
+       **Средство "Проблемы"** в средстве DevTools Drawer с тремя вопросами cookie  
     :::image-end:::  
     
-## Просмотр элементов в инструменте "проблемы"  
+## Просмотр элементов в средстве "Проблемы"  
 
-Инструмент " **проблемы** " в ящике DevTools представляет предупреждения в структурированных, агрегатных и возможных действиях.  
+Средство **"Проблемы"** в средстве "DevTools Drawer" представляет предупреждения структурированным, агрегируемым и в действии способом.  
 
-1.  Выберите элемент в инструменте " **вопросы** ", чтобы получить инструкции по устранению проблемы и поиску затронутых ресурсов.  
+1.  Выберите элемент в средстве **"Проблемы",** чтобы получить инструкции по устранению проблемы и поиску затронутых ресурсов.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-tab-issue-open.msft.png":::
-       **Пометка cookie-файлов другого сайта как безопасной проблемы при** открытии в инструменте " **вопросы** "  
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Пометить межсемейные файлы cookie как безопасные, открытые в средстве "Проблемы"" lightbox="../media/issues-tab-issue-open.msft.png":::
+       **Пометить межсемейные файлы cookie как безопасные,** открытые в **средстве "Проблемы"**  
     :::image-end:::  
     
-    Каждый элемент состоит из четырех компонентов:  
+    Каждый элемент имеет четыре компонента:  
     
-    *   Заголовок, описывающий эту ошибку.  
-    *   Описание, предоставляющее контекст и решение.  
-    *   Раздел " **уязвимые ресурсы** ", который содержит ссылки на ресурсы в соответствующем DevTools контексте, например на панели "сеть".  
-    *   Ссылки на другие инструкции.  
+    *   Заголовок, описывающий проблему.  
+    *   Описание, предоставляющая контекст и решение.  
+    *   Раздел **"ЗАТРОНУТЫЕ** РЕСУРСЫ", который ссылается на ресурсы в соответствующем контексте DevTools, например на панели "Сеть".  
+    *   Ссылки на дополнительные рекомендации.  
     
-1.  Чтобы просмотреть подробные сведения, выберите элементы в **затронутых ресурсах** .  В следующем примере **cookie-файлы межсайтового сайта как безопасные** вопросы влияют на один файл cookie и два запроса.  
+1.  Выберите элементы в **AFFECTED RESOURCES,** чтобы просмотреть сведения.  В следующем примере пометка меж сайта **cookie как** проблема "Безопасная" влияет на один файл cookie и два запроса.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       Затронутые ресурсы, открытые в инструменте " **вопросы** " в ящике DevTools  
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Затронутые ресурсы открываются на вкладке "Ящик проблем"" lightbox="../media/issues-tab-affected-resources.msft.png":::
+       Затронутые ресурсы открываются в средстве **"Проблемы"** в средстве "DevTools Drawer"  
     :::image-end:::  
     
 ## Просмотр проблем в контексте  
 
-1.  Выберите ссылку на ресурс, чтобы просмотреть элемент в соответствующем контексте в DevTools.  В следующем примере выберите `samesite-sandbox.glitch.me` в разделе **запросы** для отображения файлов cookie, вложенных в запрос.  
+1.  Выберите ссылку на ресурс, чтобы просмотреть элемент в соответствующем контексте в DevTools.  В следующем примере выберите в области `samesite-sandbox.glitch.me` **"Запросы",** чтобы показать файлы cookie, прикрепленные к этому запросу.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-tab-view-request.msft.png":::
-       Просмотр затрагиваемого cookie-файла на панели DevTools **Network**  
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Просмотр затронутой области "Cookie" на панели "Сеть DevTools"" lightbox="../media/issues-tab-view-request.msft.png":::
+       Просмотр затронутой области "Cookie" **** на панели "Сеть DevTools"  
     :::image-end:::  
 
-1.  Прокрутите экран, чтобы просмотреть элемент с проблемой: в следующем примере показан `ck02` объект cookie.  Наведите указатель мыши на столбец **SameSite** , чтобы увидеть `None` значение, которое обнаружено проблемой.  
+1.  Прокрутите страницу, чтобы просмотреть элемент с проблемой: в следующем примере файл `ck02` cookie.  Наведите курсор на **столбец SameSite,** чтобы увидеть `None` значение, обнаруженного проблемой.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Нажатие кнопки &quot;проблемы&quot; на желтой полосе предупреждения при обнаружении проблем" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` значение в столбце " **SameSite** " для `ck02` файла cookie на панели DevTools **Network (сеть** )  
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Отсутствует значение в столбце SameSite для файла cookie ck02 на панели DevTools Network" lightbox="../media/issues-tab-view-issue.msft.png":::
+       `None` значение в **столбце SameSite** для файла cookie на панели `ck02` Сети DevTools ****  
     :::image-end:::  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
@@ -116,18 +116,18 @@ ms.locfileid: "11124728"
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open.md "Открыть Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsOpen]: ../open/index.md "Откройте Microsoft Edge DevTools | Документы Майкрософт"  
 
-[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Проверка файлов cookie SameSite | Цепь"  
+[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Тесты файлов cookie SameSite | Временный сбой"  
 
-[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite cookie-файлы | MDN"  
+[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "Файлы cookie SameSite | MDN"  
 [MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Смешанное содержимое | MDN"  
 
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Политика внедрения для разных источников | Группа сообщества веб-Incubator"  
+[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Политика встраивляемого перекрестного источника | Группа сообщества веб-инкуаторов"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница [будет найдена, и](https://developers.google.com/web/tools/chrome-devtools/issues/index) ее можно создать с помощью [SAM Dutton][SamDutton] \ (разработчик отвечает \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/issues/index) и автором [Sam Dutton][SamDutton] \(Developer Advocate\).  
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
 

@@ -1,18 +1,18 @@
 ---
-description: Сведения о том, как запускать JavaScript на консоли.
-title: Начало работы с JavaScript на консоли
+description: Узнайте, как запустить JavaScript в консоли.
+title: Начало работы с запуском JavaScript в консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 6537cb07b52ef6b8be4b1ea7d9420bf2307d3fd5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: ecd1a2fffb311990b6e743e99d038f1f2a519ee4
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125246"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231092"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,59 +28,59 @@ ms.locfileid: "11125246"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Начало работы с JavaScript на консоли  
+# Начало работы с запуском JavaScript в консоли  
 
-В этом интерактивном учебнике показано, как запустить JavaScript на **консоли**Microsoft Edge DevTools.  Дополнительные сведения о том, как записывать сообщения на **консоль**, можно найти в разделе Начало [работы с сообщениями журнала][DevToolsConsoleLoggingMessages].  Дополнительные сведения о том, как приостановить код JavaScript и прокручивать по одной строке за один раз, можно найти в статье [Начало работы с отладкой JavaScript][DevToolsJavascriptIndex].  
+В этом интерактивном руководстве показано, как запустить **** JavaScript в консоли Microsoft Edge DevTools.  Дополнительные сведения о регистрации сообщений в консоли **можно**найти в окне "Начало работы [с сообщениями журналов".][DevToolsConsoleLoggingMessages]  Дополнительные сведения о приостановки кода JavaScript и пошаговом его пошаговом переходе к началу работы с [отладки JavaScript.][DevToolsJavascriptIndex]  
 
-:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="На консоли" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-   На **консоли**  
+:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="Консоль" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+   Консоль ****  
 :::image-end:::  
 
 ## Обзор  
 
-**Консоль** — это [REPL][WikiReadEvalPrintLoop], который означает чтение, оценку, печать и зацикливание.  Она считывает JavaScript, который вы вводите в него, оценивает код, выводит результат [выражения][2alityExpressionsVersusStatements]и осуществляет переход к первому шагу.  
+Консоль **—** это [REPL,][WikiReadEvalPrintLoop]который обозначает чтение, оценку, печать и цикл.  Он считывает в него код JavaScript, оценивает код, выпечатает результат [выражения,][2alityExpressionsVersusStatements]а затем возвращается к первому шагу.  
 
 ## Настройка DevTools  
 
-Этот учебник предназначен для того, чтобы открыть демонстрацию и попробовать все рабочие процессы самостоятельно.  После того как вы будете физически подписаться на нее, вы, наверное, захотите запомнить рабочие процессы позже.
+Это руководство предназначено для вас, чтобы открыть демонстрацию и попробовать все процессы самостоятельно.  Когда вы будете физически следовать этому пути, скорее всего, позже запомните эти процессы.
 
-1.  `Control` + `Shift` + `J` Чтобы открыть консоль, выберите \ (Windows, Linux \) или `Command` + `Option` + `J` \ (macOS \ **Console**).  
-1.  Удерживайте клавишу `Control` \ (Windows, Linux \) или `Command` \ (macOS \) и выберите **пример кода JavaScript на консоли** , чтобы открыть его в новом окне.  
+1.  Выберите `Control` + `Shift` + `J` \(Windows, Linux\) или `Command` + `Option` + `J` \(macOS\) для открытия **консоли.**  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **Console Javascript Example** to open in a new window.  
     
-    *   [Пример сценария на консоли][GlitchConsoleJavascriptExample]  
+    *   [Пример кода Javascript консоли][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="На консоли" lightbox="../media/console-javascript-example-console-empty.msft.png":::
-       Страница примера JavaScript на консоли в левой части экрана и DevTools справа  
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Страница "Пример кода javaScript консоли" слева и DevTools справа" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       Страница "Пример кода javaScript консоли" слева и DevTools справа  
     :::image-end:::  
     
 ## Просмотр и изменение JavaScript или DOM страницы  
 
-При сборке или отладке страницы часто бывает полезно запускать инструкции на **консоли** , чтобы изменить внешний вид или выполнение страницы.  
+При создании или отладке страницы часто полезно запускать в **** консоли утверждения, чтобы изменить внешний вид или запуск страницы.  
     
 1.  Обратите внимание на текст на кнопке.  
-1.  Введите текст `document.getElementById('hello').textContent = 'Hello, Console!'` на **консоли** и выберите `Enter` , чтобы вычислить выражение.  Обратите внимание на то, как изменится текст внутри кнопки.  
+1.  Введите `document.getElementById('hello').textContent = 'Hello, Console!'` в **консоли** и выберите `Enter` для оценки выражения.  Обратите внимание, как изменяется текст внутри кнопки.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="На консоли" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
-       Внешний вид **консоли** после вычисления выражения  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Внешний вид консоли после оценки выражения" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       Внешний вид **консоли** после оценки выражения  
     :::image-end:::  
     
-    Под кодом, который вы проверили `"Hello, Console!"` .  Отзывайте 4 шага REPL: чтение, оценка, печать, цикл.  После оценки кода программа REPL выводит результат выражения.  Это `"Hello, Console!"` должно быть результатом вычисления `document.getElementById('hello').textContent = 'Hello, Console!'` .  
+    Под кодом, который вы вычисляли, вы видите `"Hello, Console!"` .  Напомню 4 шага REPL: чтение, оценка, печать, цикл.  После оценки кода rePL печатает результат выражения.  Это `"Hello, Console!"` должен быть результат оценки. `document.getElementById('hello').textContent = 'Hello, Console!'`  
     
-## Запуск произвольного кода JavaScript, не связанного со страницей  
+## Запуск произвольного Кода JavaScript, не связанного со страницей  
 
-Иногда требуется, чтобы код Песочница в том месте, где вы можете протестировать какой-либо код, или опробуйте новые возможности JavaScript, с которыми вы не знакомы.  Консоль — это идеальное место для экспериментов такого рода.  
+Иногда вам просто нужна функциональная возможность кода, в которой можно протестировать код или попробовать новые функции JavaScript, которые вам незнакомы.  Консоль **идеально** подходит для экспериментов такого рода.  
 
-1.  Введите текст `5 + 15` в окне консоли и выберите `Enter` этот вариант, чтобы вычислить выражение. Консоль печатает результат выражения под кодом.  На приведенном ниже рисунке на **консоли** должны отобразиться результаты после вычисления выражения.  
+1.  Введите `5 + 15` в консоли и выберите для `Enter` оценки выражения. Консоль выпечатает результат выражения под кодом.  На следующем рисунке **после** оценки выражения в консоли должен отображаться результат.  
 
-1.  На **консоли**введите следующий код.  Попробуйте ввести его, а затем построчно, а не скопировав.  
+1.  Введите следующий код в **консоль.**  Попробуйте ввести его по символам, а не копировать.  
     
     ```javascript
     function add(a, b=20)
     ```  
     
-    Если вы не знакомы с `b=20` синтаксисом, перейдите в раздел [Определение значений по умолчанию для аргументов функций][Esma6DefaultParameterValues].  
+    Если вы не знакомы с синтаксисом, перейдите к определению значений по умолчанию `b=20` [для аргументов функции.][Esma6DefaultParameterValues]  
     
-1.  Теперь запустите определенную функцию.  
+1.  Теперь запустите функцию, которую вы только что определили.  
     
     :::row:::
        :::column span="":::
@@ -89,13 +89,13 @@ ms.locfileid: "11125246"
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="На консоли" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-             **Консоль** отображается после оценки выражений в фрагменте кода.  
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="Консоль отображается после оценки выражений в фрагменте кода" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+             Консоль **отображается** после оценки выражений в фрагменте кода  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-    `add(25)` вычисляется `45` , так как при `add` вызове функции без второго аргумента `b` равным ему присваивается значение по умолчанию `20` .  
+    `add(25)` `45`оценивается, так как когда функция вызвана без второго `add` аргумента, значение по умолчанию — `b` `20` .  
 
 ## Дальнейшие действия  
 
@@ -103,15 +103,15 @@ ms.locfileid: "11125246"
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools позволяет приостановить выполнение сценария в центре выполнения.  Во время приостановки вы можете использовать **консоль** для просмотра и изменения `window` `DOM` страницы в данный момент времени.  Рабочий процесс обеспечивает мощный процесс отладки.  Для интерактивного учебника перейдите к разделу [Начало работы с отладкой JavaScript][DevToolsJavascriptIndex].  
+DevTools позволяет приостановить сценарий в середине работы.  Пока вы приостановлены, вы **** можете использовать консоль для просмотра и изменения страницы или страницы в `window` этот момент `DOM` времени.  Рабочий процесс создает мощный рабочий процесс отладки.  Интерактивное руководство по началу работы [с отладой JavaScript.][DevToolsJavascriptIndex]  
 
-Кроме того, **консоль** имеет набор удобных функций, которые облегчают взаимодействие с страницей.  Например:  
+Консоль **также** имеет набор удобных функций, упрощающих взаимодействие со страницей.  Например:  
 
-*   Вместо того `document.querySelector()` чтобы выделять элемент, введите `$()` .  Этот синтаксис имеет тот факт, что jQuery, но он не является jQuery.  Это просто псевдоним `document.querySelector()` .  
-*   `debug(function)` фактически задает точку останова в первой строке этой функции.  
-*   `keys(object)` Возвращает массив с ключами указанного объекта.  
+*   Вместо ввода `document.querySelector()` текста для выбора элемента введите `$()` .  Этот синтаксис навеян jQuery, но на самом деле он не является jQuery.  Это просто псевдоним для `document.querySelector()` .  
+*   `debug(function)` эффективно задает точку останова в первой строке этой функции.  
+*   `keys(object)` возвращает массив, содержащий ключи указанного объекта.  
 
-Дополнительные сведения о специальных возможностях можно найти в [справочнике по API служебных программ для консоли][DevToolsConsoleUtilities].  
+Дополнительные сведения об удобных функциях можно найти в справочнике [по API консоли.][DevToolsConsoleUtilities]  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
 
@@ -119,22 +119,22 @@ DevTools позволяет приостановить выполнение сц
 
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: ./log.md "Начало работы с сообщениями в журнале на консоли | Документы Microsoft"  
-[DevToolsConsoleReference]: ./reference.md#run-javascript "Справочник по консоли | Документы Microsoft"  
-[DevToolsConsoleUtilities]: ./utilities.md "Справочник по API служебных программ для консоли | Документы Microsoft"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "Начало работы с отладкой JavaScript в Microsoft Edge DevTools"  
+[DevToolsConsoleLoggingMessages]: ./log.md "Начало работы с ведением журнала сообщений в консоли | Документы Майкрософт"  
+[DevToolsConsoleReference]: ./reference.md#run-javascript "Справочник по консоли | Документы Майкрософт"  
+[DevToolsConsoleUtilities]: ./utilities.md "Справочник по API консольных utilities | Документы Майкрософт"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Начало отладки JavaScript в Microsoft Edge DevTools | Документы Майкрософт"  
 
-[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Выражения и операторы в JavaScript"  
+[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Выражения и выражения в JavaScript"  
 
-[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Значения параметров по умолчанию — обработка расширенных параметров-ECMAScript 6 — новые возможности: Общие сведения о сравнении &"  
+[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Значения параметров по умолчанию — расширенная обработка параметров — ECMAScript 6 — новые функции: обзор & сравнения"  
 
-[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Пример кода JavaScript на консоли | Цепь"  
+[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Пример кода Javascript консоли | Временный сбой"  
 
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read – eval — цикл печати — Википедии"  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Цикл read-eval-print — Википдия"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/console/javascript) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/console/javascript) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

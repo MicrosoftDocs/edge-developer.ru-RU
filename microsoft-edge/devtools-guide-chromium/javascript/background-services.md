@@ -1,18 +1,18 @@
 ---
-description: Отладка фоновой выборки, фоновой синхронизации, уведомлений и Push-сообщений с помощью Microsoft Edge DevTools.
+description: Отладка фонового получения, фоновой синхронизации, уведомлений и push-уведомлений с помощью Microsoft Edge DevTools.
 title: Отладка фоновых служб с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: fb5e408eb261ae3b2145780a1d7d5566c4501936
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: df832ed2f56faf6412fd42bc080d8af7705d26d3
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124819"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230679"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,124 +29,124 @@ ms.locfileid: "11124819"
 
 # Отладка фоновых служб с помощью Microsoft Edge DevTools  
 
-Раздел " **фоновые службы** " Microsoft Edge DevTools — это набор средств для API JavaScript, который позволяет веб-сайту отправлять и получать обновления даже в том случае, если ваш веб-сайт не открыт.  
-Фоновая служба функционально напоминает [фоновый процесс] [WikiBackgroundProcess].  
-Microsoft Edge DevTools считает каждый из указанных ниже API фоновой службой.  
+Раздел **фоновых** служб Microsoft Edge DevTools — это набор средств для API JavaScript, позволяющих веб-сайту отправлять и получать обновления, даже если у пользователя нет открытого веб-сайта.  
+Фоновая служба функционально похожа на [фоновый процесс][WikiBackgroundProcess].  
+Microsoft Edge DevTools считает каждый из следующих API фоновой службой:  
 
-*   [Фоновая выборка](#background-fetch)  
+*   [Фоновое извлечение](#background-fetch)  
 *   [Фоновая синхронизация](#background-sync)  
 *   [Уведомления](#notifications)  
-*   [Push-сообщения](#push-messages)  
+*   [Push Messages](#push-messages)  
     
-Microsoft Edge DevTools может записывать события фоновой службы в течение 3 дней, даже если DevTools не открыт.  
-Это поможет вам убедиться в том, что события отправляются и принимаются должным образом.  Кроме того, вы можете просмотреть сведения о каждом событии.  
+Microsoft Edge DevTools может занося в журнал события фоновой службы в течение 3 дней, даже если DevTools не открыт.  
+Это поможет убедиться, что события отправляются и получаются ожидаемым образом.  Вы также можете проверить сведения о каждом событии.  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-   Область **Push-сообщений**  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="The Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   The **Push Messaging** pane  
 :::image-end:::  
 
-## Фоновая выборка  
+## Фоновое извлечение  
 
-**API фоновой выборки** позволяют **сотрудникам службы** надежно загружать большие ресурсы, например фильмы и подкасты, в качестве фоновой службы.  Для записи события фоновой выборки в течение 3 дней, даже если DevTools не открыт:  
+API **фонового получения** **** позволяет сотруднику службы надежно загружать большие ресурсы, такие как фильмы или подкасты, в качестве фоновой службы.  Запись события Background Fetch в течение 3 дней, даже если DevTools не открыт:  
 
 <!--Todo: add background fetch api section when available -->  
 
-1.  [Откройте DevTools][OpenDevTools].  
-1.  Откройте панель **приложения** .  
-1.  Открытие области " **Фоновая выборка** ".  
+1.  [Откройте DevTools.][OpenDevTools]  
+1.  Откройте средство **"Приложение".**  
+1.  Откройте **фоновую области получения.**  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
-       Область " **Фоновая выборка** "  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Фоновая области получения" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+       **Фоновая области получения**  
     :::image-end:::  
     
-1.  Выберите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
-   После запуска некоторых операций фоновой выборки DevTools регистрирует события в таблице.  
+1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+   После запуска фонового получения событий DevTools записывает события в таблицу.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
-       Журнал событий в области " **Фоновая выборка** "  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Журнал событий в области "Фоновое извлечение"" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+       Журнал событий в области **"Фоновое извлечение"**  
     :::image-end:::  
     
-1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
+1.  Щелкните событие, чтобы просмотреть его сведения в пространстве под таблицей.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
-       Просмотр сведений о событии в области " **Фоновая выборка** "  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Просмотр сведений о событии в области "Фоновое извлечение"" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+       Просмотр сведений о событии в области **"Фоновое извлечение"**  
     :::image-end:::  
     
 ## Фоновая синхронизация  
 
-**API фоновой синхронизации** позволяет автономному **рабочему специалисту** отправлять данные на сервер после повторного установления надежного Интернет-соединения.  Чтобы записать события фоновой синхронизации в течение 3 дней, даже если DevTools не открыт, выполните указанные ниже действия.  
+API **фоновой** синхронизации позволяет **** автономному сотруднику службы отправлять данные на сервер после повторного подключения к Интернету.  Запись событий фоновой синхронизации в течение 3 дней, даже если DevTools не открыт:  
 
 <!--Todo: add background sync api section when available -->  
 
-1.  [Откройте DevTools][OpenDevTools].  
-1.  Откройте панель **приложения** .  
-1.  Откройте область **фоновая синхронизация** .  
+1.  [Откройте DevTools.][OpenDevTools]  
+1.  Откройте средство **"Приложение".**  
+1.  Откройте **фоновую области** синхронизации.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
-       Область " **фоновая синхронизация** "  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Фоновая синхронизация" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+       **Фоновая синхронизация**  
     :::image-end:::  
     
-1.  Выберите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
-   После запуска некоторых операций синхронизации в фоновом режиме DevTools регистрирует события в таблице.  
+1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+   После запуска некоторых действий фоновой синхронизации DevTools записывает события в таблицу.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
-       Журнал событий в области " **фоновая синхронизация** "  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Журнал событий в области фоновой синхронизации" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+       Журнал событий в области **фоновой синхронизации**  
     :::image-end:::  
     
-1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
+1.  Щелкните событие, чтобы просмотреть его сведения в пространстве под таблицей.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Просмотр сведений о событии в области фоновой синхронизации" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
        Просмотр сведений о событии в области **фоновой синхронизации**  
     :::image-end:::  
     
 ## Уведомления  
 
-После того как **сотрудник службы** получил [Push-сообщение][MDNPush] с сервера, сотрудник службы использует [API уведомлений][MDNNotifications] для отображения данных для пользователя.  Для ведения журнала уведомлений в течение 3 дней, даже если DevTools не открыт:  
+После того как сотрудник [][MDNPush] **службы** получит push-сообщение с сервера, он использует [API][MDNNotifications] уведомлений для отображения данных пользователю.  Для регистрации уведомлений в течение 3 дней, даже если DevTools не открыт:  
 
-1.  [Откройте DevTools][OpenDevTools].  
-1.  Откройте панель **приложения** .  
-1.  Открытие области **уведомлений** .  
+1.  [Откройте DevTools.][OpenDevTools]  
+1.  Откройте средство **"Приложение".**  
+1.  Откройте области **уведомлений.**  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
-       Область **уведомлений**  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="The Notifications pane" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+       The **Notifications** pane  
     :::image-end:::  
     
-1.  Выберите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
-   После запуска некоторых действий с уведомлениями DevTools регистрирует события в таблице.  
+1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+   После запуска некоторых действий notifications DevTools записывает события в таблицу.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
-       Журнал событий в области **уведомлений**  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Журнал событий в области уведомлений" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+       Журнал событий в **области** уведомлений  
     :::image-end:::  
     
-1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
+1.  Щелкните событие, чтобы просмотреть его сведения в пространстве под таблицей.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Просмотр сведений о событии в области уведомлений" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
        Просмотр сведений о событии в области **уведомлений**  
     :::image-end:::  
     
-## Push-сообщения  
+## Push Messages  
 
-Чтобы отобразить push-уведомление для пользователя, **сотрудник службы** должен сначала использовать [API Push-сообщений][MDNPush] для получения данных с сервера.  Когда сотрудник службы готов отобразить уведомление, он использует [API уведомлений][MDNNotifications].  Чтобы регистрировать push-сообщения в течение 3 дней, даже если DevTools не открыт, выполните указанные ниже действия.  
+Чтобы отобразить push-уведомление **** для пользователя, сотрудник службы должен сначала использовать [API push-сообщений][MDNPush] для получения данных с сервера.  Когда рабочий работник службы готов отобразить уведомление, он использует [API уведомлений.][MDNNotifications]  Запись push-сообщений в журнал в течение 3 дней, даже если DevTools не открыт:  
 
-1.  [Откройте DevTools][OpenDevTools].  
-1.  Откройте панель **приложения** .  
-1.  Открыть область **Push-сообщений** .  
+1.  [Откройте DevTools.][OpenDevTools]  
+1.  Откройте средство **"Приложение".**  
+1.  Откройте области **push-сообщений.**  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
-       Открытие области **Push-сообщений**  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Открытие области push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       Открытие области **push-сообщений**  
     :::image-end:::  
     
-1.  Выберите **запись** \ ( ![ запись ][ImageRecordIcon] \).  
-    После запуска некоторых действий Push-сообщений DevTools регистрирует события в таблице.  
+1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+    После запуска некоторых действий Push Message DevTools записывает события в таблицу.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-       Журнал событий в области Push- **сообщений**  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Журнал событий в области push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+       Журнал событий в области **push-сообщений**  
     :::image-end:::  
     
-1.  Щелкните событие, чтобы просмотреть сведения о нем в пространстве под таблицей.  
+1.  Щелкните событие, чтобы просмотреть сведения в пространстве под таблицей.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Область Push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
-       Просмотр сведений о событии в области **Push-сообщений**  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Просмотр сведений о событии в области push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+       Просмотр сведений о событии в области **push-сообщений**  
     :::image-end:::  
     
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
@@ -162,16 +162,16 @@ Microsoft Edge DevTools может записывать события фоно�
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open.md "Открытие средств разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
+[OpenDevTools]: ../open/index.md "Откройте инструменты разработчика Microsoft Edge (Chromium) | Документы Майкрософт"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "API уведомлений | MDN"  
-[MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "API push-уведомлений | MDN"  
+[MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "API Push | MDN"  
 <!--[ServiceWorkerCacheStorage]: https://alphabet.dev/service-workers-cache-storage "Service workers and the Cache Storage API | alphabet.dev"  -->
-[WikiBackgroundProcess]: https://en.wikipedia.org/wiki/Background_process "фоновый процесс — Википедии"  
+[WikiBackgroundProcess]: https://en.wikipedia.org/wiki/Background_process "Фоновый процесс — Викимедиа"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
 

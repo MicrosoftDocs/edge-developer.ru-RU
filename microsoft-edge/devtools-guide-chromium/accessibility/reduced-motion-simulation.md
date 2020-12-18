@@ -1,21 +1,22 @@
 ---
-title: Имитация уменьшенного движения с помощью средств разработчика (CSS понижает движение)
+description: Имитация пониженного движения с помощью средств разработчика.
+title: Имитация пониженного движения с помощью средств разработчика (CSS предпочитает пониженное движение)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/18/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: f1bf90de4ac1832fff07e9ac963c26f92adeea2c
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
+ms.openlocfilehash: 0e5243e01ca6c9344dceffb0bf004dadccc3d4d7
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843986"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230791"
 ---
-# Понижение моделирования движения  
+# Имитация пониженного движения  
 
-Анимация в веб-продуктах может представлять собой проблему с читаемостью.  В операционных системах проблему можно решить, добавив параметр, позволяющий отключить анимацию, чтобы избежать путаницы и потенциальных проблем, связанных с работоспособностью, например инициирования захвата.  На веб-сайте вы можете использовать запрос на доступ к материалам CSS с [сокращенными][MDNPrefersReducedMotion] эффектами перемещения, чтобы определить, предпочитаете ли пользователи видеть анимацию.  В вашем продукте вы можете заключить код анимации в тест, чтобы избежать анимаций для затронутых пользователей.  
+Анимация в веб-продуктах может быть проблемой с доступностью.  Операционные системы работают с этой проблемой, включив возможность отключить анимации, чтобы избежать путаницы пользователей и потенциальных проблем со здоровьем, например припадков.  В Интернете можно использовать запрос мультимедиа CSS с пониженным движением [prefers-reduced,][MDNPrefersReducedMotion] чтобы определить, предпочитают ли пользователи не видеть анимации.  В своем продукте вы можете упаковать код анимации в тест, чтобы избежать показа анимаций для затронутых пользователей.  
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -26,30 +27,25 @@ ms.locfileid: "10843986"
 }
 ```  
 
-С помощью [Microsoft Edge DevTools][DevtoolsGuideChromiumMain]вы можете имитировать этот уменьшенный параметр перемещения, не изменяя операционную систему.  
+С помощью [Microsoft Edge DevTools][DevtoolsIndex]вы можете имитировать этот параметр пониженного движения, не изменяя операционную систему.  
 
-1.  Открытие **меню команд**.  
-    1.  Нажмите клавишу `Control` + `Shift` + `P` Windows или `Command` + `Shift` + `P` macOS.  
+1.  Откройте меню **команд.**  
+    1.  Выберите `Control` + `Shift` + `P` в Windows, Linux или `Command` + `Shift` + `P` macOS.  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Меню команд" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           **Меню команд**  
-        :::image-end:::   
+           Меню **команд**  
+        :::image-end:::  
         
-1.  Тип `reduced` , чтобы включить или отключить эмуляцию.  Выберите параметр и нажмите клавишу `Enter` .  
+1.  Введите `reduced` , чтобы включить и отключить имитацию.  Выберите этот параметр и выберите `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Включение и отключение параметра предпочтительные уменьшенные перемещения в меню команд" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
-       Включение и отключение параметра " **предпочтительные уменьшенные перемещения** " в **меню команд**  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Включите или отключите предпочитаемую настройку пониженного движения в меню команд" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+       Включите или отключите **предпочитаемую настройку пониженного** движения в меню **команд**  
     :::image-end:::  
     
-1.  Обновите текущую страницу, чтобы убедиться, что анимации выключены или отображаются.  
+1.  Обновите текущую страницу, чтобы проверить, отключены ли анимации или они видны.  
     
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Рисунок 1: меню команд"  
-[ImageToggleReducedMotionFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png "Рисунок 2: переключение уменьшенного движения из палитры команд"
-
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft EDGE (Chromium) — Инструменты разработчика Microsoft | Документы Microsoft"  
+[DevtoolsIndex]: ../index.md "Средства разработчика Microsoft Edge (Chromium) | Документы Майкрософт"  
 
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion "предпочитать — понижение уровня | MDN"  
+[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  

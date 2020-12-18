@@ -1,119 +1,119 @@
 ---
-description: Эмуляция средств проверки подлинности и отладки WebAuthn в Microsoft Edge DevTools.
-title: Эмуляция средств проверки подлинности и отладки WebAuthn в Microsoft Edge DevTools
+description: Эмулировать аутентификацию и отладку WebAuthn в Microsoft Edge DevTools.
+title: Эмуляция аутентификаций и отладка WebAuthn в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 6727e9aeea1a51689a80570a2f1c9df880a8c9db
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: 3200f22485bfd642a37a7d34ac727b8da4500d06
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134187"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231183"
 ---
-# Эмуляция средств проверки подлинности и отладки WebAuthn в Microsoft Edge DevTools  
+# Эмуляция аутентификаций и отладка WebAuthn в Microsoft Edge DevTools  
 
-Вместо того чтобы выполнять отладку веб-проверки подлинности на веб-сайте или в приложении с помощью физических средств проверки подлинности, используйте средство **WebAuthn** в Microsoft Edge DevTools, чтобы создавать и взаимодействовать с программными средствами проверки подлинности.  
+Вместо отладки веб-проверки подлинности на веб-сайте или в приложении с помощью физических средств проверки подлинности используйте средство **WebAuthn** в Microsoft Edge DevTools для создания виртуальных средств проверки подлинности на основе программного обеспечения и взаимодействия с ними.  
 
 ## Перед началом работы  
 
-Чтобы приступить к работе с веб-аутентификацией, нужно использовать [спецификацию API для веб-проверки подлинности][GithubW3cWebauthn].  
+Отличное место для начала работы с веб-проверкой подлинности — спецификация [API веб-проверки подлинности.][GithubW3cWebauthn]  
 
 ## Настройка средства WebAuthn  
 
-1.  Перейдите на веб-страницу, использующую WebAuthn (например, на следующий демонстрационный сайт).  
+1.  Перейдите на веб-страницу, использующую WebAuthn, например на следующем демонстрационном веб-сайте.  
     
     [webauthndemo.appspot.com][AppspotWebauthndemo]  
     
-1.  Войдите на веб-сайт.  
-1.  [Откройте DevTools][DevtoolsGuideChromiumOpen].  
-1.  Чтобы открыть средство **WebAuthn** , щелкните значок **Настройка и управление DevTools** \ ( `...` \) > **более средствам**  >  **webauthn**.  
+1.  Во sign into the website.  
+1.  [Откройте DevTools.][DevtoolsGuideChromiumOpen]  
+1.  Чтобы открыть **средство WebAuthn,** выберите значок "Настройка и управление **DevTools** \( \) > Другие средства `...` ****  >  **WebAuthn.**  
     
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-webauthn-tab.msft.png":::
-       Средство **WebAuthn**  
+       **Средство WebAuthn**  
     :::image-end:::  
     
-1.  В средстве **WebAuthn** установите флажок **включить виртуальную среду проверки подлинности**.  
-1.  После включения нового средства **проверки подлинности** появится новый раздел с именем "Новая учетная запись".  
+1.  В **средстве WebAuthn** включите проверку подлинности виртуальной **среды** проверки подлинности.  
+1.  После включения отображается новый раздел с именем **New authenticator.**  
     
-    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
+    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Включить виртуальную среду проверки подлинности" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
         **Включить виртуальную среду проверки подлинности**  
     :::image-end:::  
     
-1.  В разделе **новый элемент проверки подлинности** настройте следующие параметры.  
+1.  В разделе **"Новый аутентификация"** настройте следующие параметры.  
     
     | Параметр | Значение | Сведения |  
     |:--- |:--- |:--- |  
-    | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] или [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | Протокол, используемый виртуальным средством проверки подлинности для кодирования и декодирования. |  
-    | `Transport` |   `usb`, `nfc` , `ble` или `internal` | Виртуальная аутентификация имитирует выбранный транспорт для связи с клиентами, чтобы получить утверждение для определенных учетных данных.  Дополнительные сведения можно найти в разделе " [перечисление транспорта для проверки подлинности][GithubW3cWebauthnEnumTransport] " |  
-    |  `Supports resident keys` | Включить \ (или выключить) с помощью флажка | Включите этот параметр, если веб-приложение основывается на резидентных ключах \ (также называемых учетными данными, обнаруживаемыми на стороне клиента).  Для получения дополнительных сведений перейдите к [перечислению требований к резидентному ключу][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
-    | `Supports user verification` | Включить \ (или выключить) с помощью флажка | Включите этот параметр, если веб-приложение опирается на локальную авторизацию с помощью жестов модальностей, таких как PIN-коды сенсорного ввода, ввод пароля или биометрическое распознавание.  Дополнительные сведения можно найти в разделе [Проверка пользователей][GithubW3cWebauthnEnumUserverification] |  
+    | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] или [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | Протокол, который виртуальный аутентификация использует для кодировки и декодирования |  
+    | `Transport` |   `usb`, `nfc` , `ble` , или `internal` | Виртуальный аутентификация имитирует выбранный транспорт для связи с клиентами, чтобы получить утверждение для определенных учетных данных.  Для получения дополнительных сведений перейдите к [transport Enumeration Authenticator][GithubW3cWebauthnEnumTransport] |  
+    |  `Supports resident keys` | Включите (или выключите\) с помощью этого контрольного списка | Включите, если ваше веб-приложение использует ключи-резиденты \(также известные как клиентские учетные данные для обнаружения\).  Для получения дополнительных сведений перейдите к [resident Key Requirement Enumeration][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
+    | `Supports user verification` | Включите (или выключите\) с помощью этого контрольного списка | Включите, если в веб-приложении используется локальная авторизация с помощью таких модальностей жестов, как сенсорный ввод и код пин-кода, ввод пароля или биометрическое распознавание.  Для получения дополнительных сведений перейдите к [процедуре проверки пользователей][GithubW3cWebauthnEnumUserverification] |  
     
-1.  Нажмите кнопку **Добавить** .  
-1.  Откроется новый раздел созданного средства проверки подлинности.  
+1.  Выберите **кнопку** "Добавить".  
+1.  Отобразит новый раздел созданного аутентификацию.  
     
-    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-authenticator.msft.png":::
+    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Authenticator" lightbox="../media/webauthn-authenticator.msft.png":::
        Authenticator  
     :::image-end:::  
     
-Раздел **Authenticator** содержит таблицу **учетных данных** .  Таблица будет пустой, пока учетные данные не будут зарегистрированы для проверки подлинности.  
+Раздел **Authenticator** содержит таблицу **учетных данных.**  Таблица пуста до тех пор, пока учетные данные не будут зарегистрированы в аутентификацию.  
 
-:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-no-cred.msft.png":::
-   Нет учетных данных  
+:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="Без учетных данных" lightbox="../media/webauthn-no-cred.msft.png":::
+   Без учетных данных  
 :::image-end:::  
 
 ## Регистрация новых учетных данных  
 
-Чтобы зарегистрировать новые учетные данные, выполните указанные ниже действия.  Для получения дополнительных сведений о том, что делает [API для проверки подлинности][GithubW3cWebauthn] при регистрации новых учетных данных, перейдите на страницу [Создание новых учетных данных][GithubW3cWebauthnSctnCreatecredential].  
+Чтобы зарегистрировать новые учетные данные, выполните следующие действия.  Дополнительные сведения о том, что [делает API][GithubW3cWebauthn] веб-проверки подлинности при регистрации новых учетных данных, перейдите к странице ["Создание новых учетных данных".][GithubW3cWebauthnSctnCreatecredential]  
 
-1.  На веб-сайте Demo выберите **зарегистрировать новые учетные данные**.  
-1.  Новые учетные данные теперь добавляются в таблицу **учетных данных** в средстве WebAuthn.  
+1.  На демонстрационных веб-сайтах выберите **"Регистрация новых учетных данных".**  
+1.  Новые учетные данные теперь добавляются в таблицу **Credentials** средства WebAuthn.  
     
-    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-view-cred.msft.png":::
+    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="Просмотр учетных данных" lightbox="../media/webauthn-view-cred.msft.png":::
        Просмотр учетных данных  
     :::image-end:::  
     
-На веб-сайте Demo нажмите кнопку **Проверка подлинности** .  Убедитесь, что [число знаков][GithubW3cWebauthnSctnSignCounter] в таблице **учетных** данных увеличено на 1, что помечает успешно выполненную операцию [authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion] .  
+На демонстрационных веб-сайтах выберите кнопку **"Проверка** подлинности".  Убедитесь, [что][GithubW3cWebauthnSctnSignCounter] число подписей учетных данных в таблице **учетных** данных увеличено на 1, что пометит успешную операцию [authenticatorGetAssertion.][GithubW3cWebauthnAuthenticatorgetassertion]  
 
 ## Экспорт и удаление учетных данных  
 
-Чтобы экспортировать или удалить учетные данные, нажмите кнопку " **Экспорт** " или " **Удалить** ".  
+Чтобы экспортировать или удалить учетные данные, выберите кнопку **"Экспорт"** или **"Удалить".**  
 
-:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-export-remove.msft.png":::
-   Экспорт и удаление учетных данных  
+:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="Экспорт или удаление учетных данных" lightbox="../media/webauthn-export-remove.msft.png":::
+   Экспорт или удаление учетных данных  
 :::image-end:::  
 
-## Переименование средства проверки подлинности  
+## Переименование аутентификации  
 
-Чтобы переименовать средство проверки подлинности, выполните указанные ниже действия.  
+Чтобы переименовать аутентификацию, выполните следующие действия.  
 
-1.  Рядом с именем средства проверки подлинности нажмите кнопку " **изменить** ".  
-1.  Измените имя и нажмите клавишу **Ввод** , чтобы сохранить изменения.  
+1.  Рядом с именем аутентификации выберите кнопку **"Изменить".**  
+1.  Отредактируем имя, а затем выберите **ввод,** чтобы сохранить изменения.  
 
-:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-rename.msft.png":::
-   Переименование средства проверки подлинности  
+:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Переименование аутентификации" lightbox="../media/webauthn-rename.msft.png":::
+   Переименование аутентификации  
 :::image-end:::  
 
-## Установка активного средства проверки подлинности  
+## Настройка активного аутентификации  
 
-Вновь созданный средство проверки подлинности активируется автоматически.  Чтобы использовать другой виртуальный способ проверки подлинности, нажмите кнопку **активного** переключателя рядом с удостоверением средства проверки подлинности.  
+Автоматически активируется только что созданный аутентификация.  Чтобы использовать другой виртуальный аутентификацию, выберите **активную** кнопку радио рядом с аутентификацией.  
 
 > [!NOTE]
-> DevTools поддерживает только один активный виртуальный проверяющий элемент проверки подлинности в любой момент.  При удалении активного средства проверки подлинности не будет автоматически включена другая служба проверки подлинности.  
+> DevTools поддерживает только один активный виртуальный аутентификация в любой момент времени.  Если удалить активный аутентификацию, другой аутентификация не активируется автоматически.  
 
-:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-set-active.msft.png":::
-   Установка активного средства проверки подлинности  
+:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Настройка активного аутентификации" lightbox="../media/webauthn-set-active.msft.png":::
+   Настройка активного аутентификации  
 :::image-end:::  
 
-## Удаление виртуального средства проверки подлинности  
+## Удаление виртуального аутентификации  
 
-Чтобы удалить виртуальную проверку подлинности, рядом с пунктом проверки подлинности нажмите кнопку " **Удалить** ".  
+Чтобы удалить виртуальный аутентификацию, рядом **** с аутентификацией выберите кнопку "Удалить".  
 
-:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="Средство WebAuthn" lightbox="../media/webauthn-remove-authenticator.msft.png":::
-   Удаление средства проверки подлинности  
+:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="Удаление аутентификации" lightbox="../media/webauthn-remove-authenticator.msft.png":::
+   Удаление аутентификации  
 :::image-end:::  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
@@ -122,24 +122,24 @@ ms.locfileid: "11134187"
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Открыть Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Откройте Microsoft Edge DevTools | Документы Майкрософт"  
 
-[AppspotWebauthndemo]: https://webauthndemo.appspot.com "Демонстрация по Webauthn | Appspot"  
+[AppspotWebauthndemo]: https://webauthndemo.appspot.com "Демонстрация веб-сайта | Appspot"  
 
-[FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "Клиент для протокола проверки подлинности (CTAP) | Fido Alliance"  
-[FidoallianceSpecsU2fV12Ps20170411OverviewHtml]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html "Общие сведения о универсальном втором коэффициенте (U2F) | Fido Alliance"  
+[FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "Протокол CTAP | альянс fido"  
+[FidoallianceSpecsU2fV12Ps20170411OverviewHtml]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html "Общие сведения о универсальном 2-м факторе (U2F) | альянс fido"  
 
-[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Веб-проверка подлинности: API для доступа к учетным данным открытого ключа, уровень 2 | GitHub"  
-[GithubW3cWebauthnAuthenticatorgetassertion]: https://w3c.github.io/webauthn#authenticatorgetassertion "Операция authenticatorGetAssertion — веб-проверка подлинности: API для доступа к учетным данным открытого ключа на уровне 2 | GitHub"  
-[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "Перечисление транспорта для проверки подлинности (перечисление AuthenticatorTransport) — веб-проверка подлинности: API для доступа к учетным данным открытых ключей PNG"  
-[GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Перечисление потребностей резидентного ключа (перечисление ResidentKeyRequirement) — веб-проверка подлинности: API для доступа к учетным данным открытого ключа уровня 2 | PNG"  
-[GithubW3cWebauthnEnumUserverification]: https://w3c.github.io/webauthn#user-verification "Проверка пользователей — веб-проверка подлинности: API для доступа к учетным данным открытого ключа на уровне 2 | PNG"  
-[GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "Создание новых учетных данных-PublicKeyCredential [[создание]] (источник, параметры, sameOriginWithAncestors) — веб-проверка подлинности: API для доступа к учетным данным открытого ключа, уровень 2 | GitHub"  
-[GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "Вопросы о счетчиках подписей — веб-аутентификация: API для доступа к учетным данным открытого ключа на уровне 2 | GitHub"  
+[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Веб-проверка подлинности: API для доступа к учетным данным открытого ключа 2 | GitHub"  
+[GithubW3cWebauthnAuthenticatorgetassertion]: https://w3c.github.io/webauthn#authenticatorgetassertion "Операция authenticatorGetAssertion — веб-проверка подлинности: API для доступа к учетным данным открытого ключа 2 | GitHub"  
+[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "Enumeration transport Enumeration (enum AuthenticatorTransport) — веб-проверка подлинности: API для доступа к учетным данным открытого ключа 2 | W3C"  
+[GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Resident Key Requirement Enumeration (enum ResidentKeyRequirement) — веб-проверка подлинности: API для доступа к учетным данным открытого ключа 2 | W3C"  
+[GithubW3cWebauthnEnumUserverification]: https://w3c.github.io/webauthn#user-verification "Проверка пользователя — веб-проверка подлинности: API для доступа к учетным данным открытого ключа 2 | W3C"  
+[GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "Create a New Credential - PublicKeyCredential's [[Create](origin, options, sameOriginWithAncestors) Method - Web Authentication: An API for accessing Public Key Credentials Level 2 | GitHub"  
+[GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "Вопросы счетчика подписей — веб-проверка подлинности: API для доступа к учетным данным открытого ключа 2 | GitHub"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница [будет найдена, и](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) ее можно создать с помощью [Jecelyn Yeen][JecelynYeen] \ (разработчик отвечает, Chrome DevTools \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/webauthn/index). Ее автор — [Jecelyn Yeen][JecelynYeen] (Джеслин Йен) \(советник по разработке, Chrome DevTools\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

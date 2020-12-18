@@ -1,100 +1,100 @@
 ---
-description: С помощью панели мультимедиа вы можете просматривать сведения и отлаживать проигрыватели мультимедиа на вкладке "браузер".
-title: Просмотр и отладка сведений о проигрывателях мультимедиа
+description: Используйте панель мультимедиа для просмотра сведений и отлаки мультимедиа-плеер на вкладке браузера.
+title: Просмотр и отлагивание сведений об игроках мультимедиа
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/08/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: dfcf17861c0296e347007bc3a1a02a2b80661e6f
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: e6259cf573b76df7e281527ad30360b8f473a165
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105213"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230952"
 ---
-# Просмотр и отладка сведений о проигрывателях мультимедиа  
+# Просмотр и отлагивание сведений об игроках мультимедиа  
 
-С помощью панели **медиа** в Microsoft Edge DevTools можно просматривать сведения и отлаживать проигрыватели мультимедиа на вкладке "браузер".  
+Используйте панель **мультимедиа** в Microsoft Edge DevTools для просмотра информации и отладки мультимедиа-плееров на вкладке браузера.  
 
-## Открытие панели мультимедиа  
+## Открытие панели "Мультимедиа"  
 
-Панель " **мультимедиа** " — это основное место в DevTools для проверки проигрывателя мультимедиа на веб-странице.
+Панель **мультимедиа** — это основное место в DevTools для проверки мультимедиа-плеер веб-страницы.
 
-1.  [Откройте DevTools][DevtoolsGuideChromiumOpen].  
-1.  Чтобы открыть панель " **мультимедиа** ", нажмите кнопку **Настройка и управление DevTools** `...`  >  **дополнительных средств**  >  **мультимедиа**.  
+1.  [Откройте DevTools.][DevtoolsGuideChromiumOpen]  
+1.  Чтобы открыть панель **"Мультимедиа",** выберите "Настройка и **управление средствами DevTools** `...`  >  **More".**  >  ****  
     
     :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-empty.msft.png":::
-       Панель **мультимедиа**  
+       **Панель мультимедиа**  
     :::image-end:::  
     
-## Просмотр сведений о проигрывателях мультимедиа  
+## Просмотр сведений об игроках мультимедиа  
 
-1.  Перейдите на веб-страницу с помощью универсального проигрывателя, например следующей веб-страницы.  
+1.  Перейдите на веб-страницу с мультимедиа-плеером, например на следующей веб-странице.  
     
-    [Максимизация производительности с помощью средств разработчика Edge][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
+    [Максимальное повышение производительности с помощью средств разработчика edge][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
-1.  В меню **игрока** отображается проигрыватель мультимедиа.  
-1.  Выберите игрока.  На вкладке **Свойства** отображаются свойства универсального проигрывателя.  
+1.  В меню **"Игроки"** отображается медиаплеер.  
+1.  Выберите игрока.  На **вкладке "Свойства"** отображаются свойства мультимедиа-плеер.  
     
-    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-view.msft.png":::
+    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Свойства мультимедиа" lightbox="../media/media-panel-view.msft.png":::
        Свойства мультимедиа  
     :::image-end:::  
     
-1.  Чтобы просмотреть все события проигрывателя мультимедиа, перейдите на вкладку **события** .  
+1.  Чтобы просмотреть все события мультимедиа-игрока, выберите вкладку **"События".**  
     
-    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-events.msft.png":::
+    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="События мультимедиа" lightbox="../media/media-panel-events.msft.png":::
        События мультимедиа  
     :::image-end:::  
     
-1.  Чтобы просмотреть журналы сообщений проигрывателя мультимедиа, выберите вкладку **сообщения** .  Вы можете отфильтровать сообщения по уровню или строке журнала.  
+1.  Чтобы просмотреть журналы сообщений для мультимедиа-игрока, выберите вкладку **"Сообщения".**  Вы можете фильтровать сообщения по уровню журнала или строке.  
     
-    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-messages.msft.png":::
-       Мультимедийные сообщения  
+    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Сообщения мультимедиа" lightbox="../media/media-panel-messages.msft.png":::
+       Сообщения мультимедиа  
     :::image-end:::  
     
-1.  На вкладке **временная шкала** воспроизведение мультимедиа и состояние буфера отображаются в режиме реального времени.  
+1.  На **вкладке "Временная** шкала" отображается состояние воспроизведения мультимедиа и буфера.  
     
-    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-timeline.msft.png":::
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Временная шкала мультимедиа" lightbox="../media/media-panel-timeline.msft.png":::
        Временная шкала мультимедиа  
     :::image-end:::  
     
 ### Удаленная отладка  
 
-Просмотр сведений о проигрывателях мультимедиа на устройстве с ОС Windows или macOS с компьютера Android.  
+Просмотр сведений об игроках мультимедиа на устройстве с Android с компьютера с Windows или macOS.  
 
-1.  Чтобы настроить удаленную отладку, перейдите в раздел Начало [работы с удаленно удаленной отладкой устройств с Android][DevtoolsGuideChromiumRemoteDebuggingIndex].  
-1.  Удаленное Просмотр сведений о проигрывателях мультимедиа.  
+1.  Чтобы настроить удаленную отладку, перейдите к ссылке "Начало работы с [удаленной отладой устройств с Android".][DevtoolsGuideChromiumRemoteDebuggingIndex]  
+1.  Удаленное просмотр сведений об игроках мультимедиа.  
     
     <!-- TODO: recreate image using an Android device -->  
     <!--  
-    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-remote-debug.msft.png":::
+    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging" lightbox="../media/media-panel-remote-debug.msft.png":::
        Remote debugging  
     :::image-end:::  
     -->  
     
-## Скрытие и отображение проигрывателей мультимедиа  
+## Скрытие и показ мультимедиа-плееров  
 
-Иногда вы запускаете несколько проигрывателей мультимедиа на веб-странице или с помощью одной вкладки браузера для просмотра различных веб-страниц с помощью мультимедийных проигрывателей.
+Иногда на веб-странице можно запустить несколько мультимедиа-плееров или использовать одну вкладку браузера для просмотра разных веб-страниц, каждый из которых имеет мультимедиа-плеер.
 
-Вы можете скрыть \ (или показать) каждый проигрыватель мультимедиа для более удобного процесса отладки.  
+Вы можете скрыть \(или показать\) каждый мультимедиа-плеер для упростить отладку.  
 
-1.  Переход на несколько различных веб-страниц видео с помощью одной вкладки браузера.  
-1.  Чтобы скрыть проигрыватели мультимедиа, выполните одно из указанных ниже действий.  
-    *   Чтобы скрыть один проигрыватель мультимедиа, наведите на него указатель мыши, откройте контекстное меню, а затем выберите команду **Скрыть проигрыватель**.  
-    *   Чтобы скрыть все другие проигрыватели мультимедиа, наведите указатель мыши на проигрыватель мультимедиа, откройте контекстное меню, а затем выберите команду **Скрыть все другие**.  
+1.  Перейдите на несколько разных веб-страниц видео с помощью одной вкладки браузера.  
+1.  Чтобы скрыть мультимедиа-плеер, выполните одно из следующих действий.  
+    *   Чтобы скрыть один мультимедиа-плеер, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Скрыть игрока".**  
+    *   Чтобы скрыть всех других игроков мультимедиа, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Скрыть все остальные".**  
     
-    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-hide-show.msft.png":::
-       Скрытие проигрывателей мультимедиа  
+    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Скрытие мультимедиа-плееров" lightbox="../media/media-panel-hide-show.msft.png":::
+       Скрытие мультимедиа-плееров  
     :::image-end:::  
     
-## Экспорт сведений о проигрывателе мультимедиа  
+## Экспорт сведений о мультимедиа-плеере  
 
-1.  Чтобы загрузить сведения о проигрывателе мультимедиа в формате JSON, наведите указатель мыши на проигрыватель мультимедиа, откройте контекстное меню (щелкните правой кнопкой мыши и выберите команду **сохранить сведения о проигрывателе**).  
+1.  Чтобы скачать сведения о мультимедиа-игроке в качестве JSON-файла, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите "Сохранить **данные игрока".**  
     
-    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-save.msft.png":::
-       Экспорт мультимедийных данных  
+    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Экспорт сведений о мультимедиа" lightbox="../media/media-panel-save.msft.png":::
+       Экспорт сведений о мультимедиа  
     :::image-end:::  
     
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
@@ -103,15 +103,15 @@ ms.locfileid: "11105213"
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Открыть Microsoft Edge DevTools"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Откройте Microsoft Edge (Chromium) DevTools | Документы Майкрософт"  
 
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Начало работы с удаленными отладочными устройствами Android | Документы Microsoft"  
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Начало работы с удаленной отладой устройств с Android | Документы Майкрософт"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Максимально подвысьте производительность с помощью средств разработчика Edge | Видеоролик Bing"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Максимальное увеличение производительности с помощью средств разработчика edge | Видео Bing"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница [будет найдена, и](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) ее можно создать с помощью [Jecelyn Yeen][JecelynYeen] \ (разработчик отвечает, Chrome DevTools \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/media-panel/index). Ее автор — [Jecelyn Yeen][JecelynYeen] (Джеслин Йен) \(советник по разработке, Chrome DevTools\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
