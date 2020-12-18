@@ -1,120 +1,120 @@
 ---
-description: С помощью панели мультимедиа вы можете просматривать сведения и отлаживать проигрыватели мультимедиа на вкладке "браузер".
-title: Просмотр и отладка сведений о проигрывателях мультимедиа
+description: Используйте панель мультимедиа для просмотра сведений и отлаки мультимедиа-плеер на вкладке браузера.
+title: Просмотр и отлагивание сведений об игроках мультимедиа
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/08/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: dfcf17861c0296e347007bc3a1a02a2b80661e6f
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: e6259cf573b76df7e281527ad30360b8f473a165
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105213"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230952"
 ---
-# <span data-ttu-id="b9b71-104">Просмотр и отладка сведений о проигрывателях мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-104">View and debug media players information</span></span>  
+# <span data-ttu-id="1b5a7-104">Просмотр и отлагивание сведений об игроках мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1b5a7-104">View and debug media players information</span></span>  
 
-<span data-ttu-id="b9b71-105">С помощью панели **медиа** в Microsoft Edge DevTools можно просматривать сведения и отлаживать проигрыватели мультимедиа на вкладке "браузер".</span><span class="sxs-lookup"><span data-stu-id="b9b71-105">Use the **Media** panel in Microsoft Edge DevTools to view information and debug the media players per browser tab.</span></span>  
+<span data-ttu-id="1b5a7-105">Используйте панель **мультимедиа** в Microsoft Edge DevTools для просмотра информации и отладки мультимедиа-плееров на вкладке браузера.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-105">Use the **Media** panel in Microsoft Edge DevTools to view information and debug the media players per browser tab.</span></span>  
 
-## <span data-ttu-id="b9b71-106">Открытие панели мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-106">Open the Media panel</span></span>  
+## <span data-ttu-id="1b5a7-106">Открытие панели "Мультимедиа"</span><span class="sxs-lookup"><span data-stu-id="1b5a7-106">Open the Media panel</span></span>  
 
-<span data-ttu-id="b9b71-107">Панель " **мультимедиа** " — это основное место в DevTools для проверки проигрывателя мультимедиа на веб-странице.</span><span class="sxs-lookup"><span data-stu-id="b9b71-107">The **Media** panel is the main place in DevTools for inspecting the media player of a webpage.</span></span>
+<span data-ttu-id="1b5a7-107">Панель **мультимедиа** — это основное место в DevTools для проверки мультимедиа-плеер веб-страницы.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-107">The **Media** panel is the main place in DevTools for inspecting the media player of a webpage.</span></span>
 
-1.  <span data-ttu-id="b9b71-108">[Откройте DevTools][DevtoolsGuideChromiumOpen].</span><span class="sxs-lookup"><span data-stu-id="b9b71-108">[Open DevTools][DevtoolsGuideChromiumOpen].</span></span>  
-1.  <span data-ttu-id="b9b71-109">Чтобы открыть панель " **мультимедиа** ", нажмите кнопку **Настройка и управление DevTools** `...`  >  **дополнительных средств**  >  **мультимедиа**.</span><span class="sxs-lookup"><span data-stu-id="b9b71-109">To open the **Media** panel, choose **Customize and control DevTools** `...` > **More tools** > **Media**.</span></span>  
+1.  <span data-ttu-id="1b5a7-108">[Откройте DevTools.][DevtoolsGuideChromiumOpen]</span><span class="sxs-lookup"><span data-stu-id="1b5a7-108">[Open DevTools][DevtoolsGuideChromiumOpen].</span></span>  
+1.  <span data-ttu-id="1b5a7-109">Чтобы открыть панель **"Мультимедиа",** выберите "Настройка и **управление средствами DevTools** `...`  >  **More".**  >  \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="1b5a7-109">To open the **Media** panel, choose **Customize and control DevTools** `...` > **More tools** > **Media**.</span></span>  
     
     :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-empty.msft.png":::
-       <span data-ttu-id="b9b71-111">Панель **мультимедиа**</span><span class="sxs-lookup"><span data-stu-id="b9b71-111">**Media** panel</span></span>  
+       <span data-ttu-id="1b5a7-111">**Панель мультимедиа**</span><span class="sxs-lookup"><span data-stu-id="1b5a7-111">**Media** panel</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="b9b71-112">Просмотр сведений о проигрывателях мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-112">View media players information</span></span>  
+## <span data-ttu-id="1b5a7-112">Просмотр сведений об игроках мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1b5a7-112">View media players information</span></span>  
 
-1.  <span data-ttu-id="b9b71-113">Перейдите на веб-страницу с помощью универсального проигрывателя, например следующей веб-страницы.</span><span class="sxs-lookup"><span data-stu-id="b9b71-113">Navigate to a webpage with a media player, such as the following webpage.</span></span>  
+1.  <span data-ttu-id="1b5a7-113">Перейдите на веб-страницу с мультимедиа-плеером, например на следующей веб-странице.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-113">Navigate to a webpage with a media player, such as the following webpage.</span></span>  
     
-    [<span data-ttu-id="b9b71-114">Максимизация производительности с помощью средств разработчика Edge</span><span class="sxs-lookup"><span data-stu-id="b9b71-114">Maximizing productivity with the Edge Developer Tools</span></span>][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
+    [<span data-ttu-id="1b5a7-114">Максимальное повышение производительности с помощью средств разработчика edge</span><span class="sxs-lookup"><span data-stu-id="1b5a7-114">Maximizing productivity with the Edge Developer Tools</span></span>][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
-1.  <span data-ttu-id="b9b71-115">В меню **игрока** отображается проигрыватель мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="b9b71-115">Under the **Players** menu, a media player is displayed.</span></span>  
-1.  <span data-ttu-id="b9b71-116">Выберите игрока.</span><span class="sxs-lookup"><span data-stu-id="b9b71-116">Select the player.</span></span>  <span data-ttu-id="b9b71-117">На вкладке **Свойства** отображаются свойства универсального проигрывателя.</span><span class="sxs-lookup"><span data-stu-id="b9b71-117">The **Properties** tab displays the properties of the media player.</span></span>  
+1.  <span data-ttu-id="1b5a7-115">В меню **"Игроки"** отображается медиаплеер.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-115">Under the **Players** menu, a media player is displayed.</span></span>  
+1.  <span data-ttu-id="1b5a7-116">Выберите игрока.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-116">Select the player.</span></span>  <span data-ttu-id="1b5a7-117">На **вкладке "Свойства"** отображаются свойства мультимедиа-плеер.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-117">The **Properties** tab displays the properties of the media player.</span></span>  
     
-    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-view.msft.png":::
-       <span data-ttu-id="b9b71-119">Свойства мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-119">Media properties</span></span>  
+    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Свойства мультимедиа" lightbox="../media/media-panel-view.msft.png":::
+       <span data-ttu-id="1b5a7-119">Свойства мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1b5a7-119">Media properties</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="b9b71-120">Чтобы просмотреть все события проигрывателя мультимедиа, перейдите на вкладку **события** .</span><span class="sxs-lookup"><span data-stu-id="b9b71-120">To view all the media player events, choose the **Events** tab.</span></span>  
+1.  <span data-ttu-id="1b5a7-120">Чтобы просмотреть все события мультимедиа-игрока, выберите вкладку **"События".**</span><span class="sxs-lookup"><span data-stu-id="1b5a7-120">To view all the media player events, choose the **Events** tab.</span></span>  
     
-    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-events.msft.png":::
-       <span data-ttu-id="b9b71-122">События мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-122">Media events</span></span>  
+    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="События мультимедиа" lightbox="../media/media-panel-events.msft.png":::
+       <span data-ttu-id="1b5a7-122">События мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1b5a7-122">Media events</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="b9b71-123">Чтобы просмотреть журналы сообщений проигрывателя мультимедиа, выберите вкладку **сообщения** .  Вы можете отфильтровать сообщения по уровню или строке журнала.</span><span class="sxs-lookup"><span data-stu-id="b9b71-123">To view the media player message logs, choose the **Messages** tab.  You may filter the messages by log level or string.</span></span>  
+1.  <span data-ttu-id="1b5a7-123">Чтобы просмотреть журналы сообщений для мультимедиа-игрока, выберите вкладку **"Сообщения".**  Вы можете фильтровать сообщения по уровню журнала или строке.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-123">To view the media player message logs, choose the **Messages** tab.  You may filter the messages by log level or string.</span></span>  
     
-    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-messages.msft.png":::
-       <span data-ttu-id="b9b71-125">Мультимедийные сообщения</span><span class="sxs-lookup"><span data-stu-id="b9b71-125">Media messages</span></span>  
+    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Сообщения мультимедиа" lightbox="../media/media-panel-messages.msft.png":::
+       <span data-ttu-id="1b5a7-125">Сообщения мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1b5a7-125">Media messages</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="b9b71-126">На вкладке **временная шкала** воспроизведение мультимедиа и состояние буфера отображаются в режиме реального времени.</span><span class="sxs-lookup"><span data-stu-id="b9b71-126">On the **Timeline** tab, the media playback and buffer status is displayed live.</span></span>  
+1.  <span data-ttu-id="1b5a7-126">На **вкладке "Временная** шкала" отображается состояние воспроизведения мультимедиа и буфера.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-126">On the **Timeline** tab, the media playback and buffer status is displayed live.</span></span>  
     
-    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-timeline.msft.png":::
-       <span data-ttu-id="b9b71-128">Временная шкала мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-128">Media timeline</span></span>  
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Временная шкала мультимедиа" lightbox="../media/media-panel-timeline.msft.png":::
+       <span data-ttu-id="1b5a7-128">Временная шкала мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1b5a7-128">Media timeline</span></span>  
     :::image-end:::  
     
-### <span data-ttu-id="b9b71-129">Удаленная отладка</span><span class="sxs-lookup"><span data-stu-id="b9b71-129">Remote debugging</span></span>  
+### <span data-ttu-id="1b5a7-129">Удаленная отладка</span><span class="sxs-lookup"><span data-stu-id="1b5a7-129">Remote debugging</span></span>  
 
-<span data-ttu-id="b9b71-130">Просмотр сведений о проигрывателях мультимедиа на устройстве с ОС Windows или macOS с компьютера Android.</span><span class="sxs-lookup"><span data-stu-id="b9b71-130">View the media players information on an Android device from your Windows or macOS computer.</span></span>  
+<span data-ttu-id="1b5a7-130">Просмотр сведений об игроках мультимедиа на устройстве с Android с компьютера с Windows или macOS.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-130">View the media players information on an Android device from your Windows or macOS computer.</span></span>  
 
-1.  <span data-ttu-id="b9b71-131">Чтобы настроить удаленную отладку, перейдите в раздел Начало [работы с удаленно удаленной отладкой устройств с Android][DevtoolsGuideChromiumRemoteDebuggingIndex].</span><span class="sxs-lookup"><span data-stu-id="b9b71-131">To set up remote debugging, navigate to [Get started with remote debugging Android devices][DevtoolsGuideChromiumRemoteDebuggingIndex].</span></span>  
-1.  <span data-ttu-id="b9b71-132">Удаленное Просмотр сведений о проигрывателях мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="b9b71-132">View the media players information remotely.</span></span>  
+1.  <span data-ttu-id="1b5a7-131">Чтобы настроить удаленную отладку, перейдите к ссылке "Начало работы с [удаленной отладой устройств с Android".][DevtoolsGuideChromiumRemoteDebuggingIndex]</span><span class="sxs-lookup"><span data-stu-id="1b5a7-131">To set up remote debugging, navigate to [Get started with remote debugging Android devices][DevtoolsGuideChromiumRemoteDebuggingIndex].</span></span>  
+1.  <span data-ttu-id="1b5a7-132">Удаленное просмотр сведений об игроках мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-132">View the media players information remotely.</span></span>  
     
     <!-- TODO: recreate image using an Android device -->  
     <!--  
-    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-remote-debug.msft.png":::
+    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging" lightbox="../media/media-panel-remote-debug.msft.png":::
        Remote debugging  
     :::image-end:::  
     -->  
     
-## <span data-ttu-id="b9b71-133">Скрытие и отображение проигрывателей мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-133">Hide and show media players</span></span>  
+## <span data-ttu-id="1b5a7-133">Скрытие и показ мультимедиа-плееров</span><span class="sxs-lookup"><span data-stu-id="1b5a7-133">Hide and show media players</span></span>  
 
-<span data-ttu-id="b9b71-134">Иногда вы запускаете несколько проигрывателей мультимедиа на веб-странице или с помощью одной вкладки браузера для просмотра различных веб-страниц с помощью мультимедийных проигрывателей.</span><span class="sxs-lookup"><span data-stu-id="b9b71-134">Sometimes you run more than one media player on a webpage, or use the same browser tab to browse different webpages, each with media players.</span></span>
+<span data-ttu-id="1b5a7-134">Иногда на веб-странице можно запустить несколько мультимедиа-плееров или использовать одну вкладку браузера для просмотра разных веб-страниц, каждый из которых имеет мультимедиа-плеер.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-134">Sometimes you run more than one media player on a webpage, or use the same browser tab to browse different webpages, each with media players.</span></span>
 
-<span data-ttu-id="b9b71-135">Вы можете скрыть \ (или показать) каждый проигрыватель мультимедиа для более удобного процесса отладки.</span><span class="sxs-lookup"><span data-stu-id="b9b71-135">You may choose to hide \(or show\) each media player for an easier debugging experience.</span></span>  
+<span data-ttu-id="1b5a7-135">Вы можете скрыть \(или показать\) каждый мультимедиа-плеер для упростить отладку.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-135">You may choose to hide \(or show\) each media player for an easier debugging experience.</span></span>  
 
-1.  <span data-ttu-id="b9b71-136">Переход на несколько различных веб-страниц видео с помощью одной вкладки браузера.</span><span class="sxs-lookup"><span data-stu-id="b9b71-136">Browse to several different video webpages using the same browser tab.</span></span>  
-1.  <span data-ttu-id="b9b71-137">Чтобы скрыть проигрыватели мультимедиа, выполните одно из указанных ниже действий.</span><span class="sxs-lookup"><span data-stu-id="b9b71-137">To hide media players, complete one of the following actions.</span></span>  
-    *   <span data-ttu-id="b9b71-138">Чтобы скрыть один проигрыватель мультимедиа, наведите на него указатель мыши, откройте контекстное меню, а затем выберите команду **Скрыть проигрыватель**.</span><span class="sxs-lookup"><span data-stu-id="b9b71-138">To hide one media player, hover on a media player, open the contextual menu \(right-click\), and choose **Hide player**.</span></span>  
-    *   <span data-ttu-id="b9b71-139">Чтобы скрыть все другие проигрыватели мультимедиа, наведите указатель мыши на проигрыватель мультимедиа, откройте контекстное меню, а затем выберите команду **Скрыть все другие**.</span><span class="sxs-lookup"><span data-stu-id="b9b71-139">To hide all of the other media players, hover on a media player, open the contextual menu \(right-click\), and choose **Hide all others**.</span></span>  
+1.  <span data-ttu-id="1b5a7-136">Перейдите на несколько разных веб-страниц видео с помощью одной вкладки браузера.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-136">Browse to several different video webpages using the same browser tab.</span></span>  
+1.  <span data-ttu-id="1b5a7-137">Чтобы скрыть мультимедиа-плеер, выполните одно из следующих действий.</span><span class="sxs-lookup"><span data-stu-id="1b5a7-137">To hide media players, complete one of the following actions.</span></span>  
+    *   <span data-ttu-id="1b5a7-138">Чтобы скрыть один мультимедиа-плеер, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Скрыть игрока".**</span><span class="sxs-lookup"><span data-stu-id="1b5a7-138">To hide one media player, hover on a media player, open the contextual menu \(right-click\), and choose **Hide player**.</span></span>  
+    *   <span data-ttu-id="1b5a7-139">Чтобы скрыть всех других игроков мультимедиа, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Скрыть все остальные".**</span><span class="sxs-lookup"><span data-stu-id="1b5a7-139">To hide all of the other media players, hover on a media player, open the contextual menu \(right-click\), and choose **Hide all others**.</span></span>  
     
-    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-hide-show.msft.png":::
-       <span data-ttu-id="b9b71-141">Скрытие проигрывателей мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-141">Hide media players</span></span>  
+    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Скрытие мультимедиа-плееров" lightbox="../media/media-panel-hide-show.msft.png":::
+       <span data-ttu-id="1b5a7-141">Скрытие мультимедиа-плееров</span><span class="sxs-lookup"><span data-stu-id="1b5a7-141">Hide media players</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="b9b71-142">Экспорт сведений о проигрывателе мультимедиа</span><span class="sxs-lookup"><span data-stu-id="b9b71-142">Export media player information</span></span>  
+## <span data-ttu-id="1b5a7-142">Экспорт сведений о мультимедиа-плеере</span><span class="sxs-lookup"><span data-stu-id="1b5a7-142">Export media player information</span></span>  
 
-1.  <span data-ttu-id="b9b71-143">Чтобы загрузить сведения о проигрывателе мультимедиа в формате JSON, наведите указатель мыши на проигрыватель мультимедиа, откройте контекстное меню (щелкните правой кнопкой мыши и выберите команду **сохранить сведения о проигрывателе**).</span><span class="sxs-lookup"><span data-stu-id="b9b71-143">To download the media player info as a JSON file, hover on a media player, open the contextual menu \(right-click\), and choose **Save player info**.</span></span>  
+1.  <span data-ttu-id="1b5a7-143">Чтобы скачать сведения о мультимедиа-игроке в качестве JSON-файла, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите "Сохранить **данные игрока".**</span><span class="sxs-lookup"><span data-stu-id="1b5a7-143">To download the media player info as a JSON file, hover on a media player, open the contextual menu \(right-click\), and choose **Save player info**.</span></span>  
     
-    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-save.msft.png":::
-       <span data-ttu-id="b9b71-145">Экспорт мультимедийных данных</span><span class="sxs-lookup"><span data-stu-id="b9b71-145">Export media information</span></span>  
+    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Экспорт сведений о мультимедиа" lightbox="../media/media-panel-save.msft.png":::
+       <span data-ttu-id="1b5a7-145">Экспорт сведений о мультимедиа</span><span class="sxs-lookup"><span data-stu-id="1b5a7-145">Export media information</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="b9b71-146">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="b9b71-146">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="1b5a7-146">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="1b5a7-146">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Открыть Microsoft Edge DevTools"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Откройте Microsoft Edge (Chromium) DevTools | Документы Майкрософт"  
 
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Начало работы с удаленными отладочными устройствами Android | Документы Microsoft"  
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Начало работы с удаленной отладой устройств с Android | Документы Майкрософт"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Максимально подвысьте производительность с помощью средств разработчика Edge | Видеоролик Bing"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Максимальное увеличение производительности с помощью средств разработчика edge | Видео Bing"  
 
 > [!NOTE]
-> <span data-ttu-id="b9b71-150">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b9b71-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="b9b71-151">Исходная страница [будет найдена, и](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) ее можно создать с помощью [Jecelyn Yeen][JecelynYeen] \ (разработчик отвечает, Chrome DevTools \).</span><span class="sxs-lookup"><span data-stu-id="b9b71-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
+> <span data-ttu-id="1b5a7-150">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="1b5a7-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="1b5a7-151">Исходная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/media-panel/index). Ее автор — [Jecelyn Yeen][JecelynYeen] (Джеслин Йен) \(советник по разработке, Chrome DevTools\).</span><span class="sxs-lookup"><span data-stu-id="1b5a7-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="b9b71-153">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b9b71-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="1b5a7-153">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="1b5a7-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

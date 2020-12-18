@@ -1,18 +1,18 @@
 ---
-description: Открыть меню команд и выполнить команду "отключить JavaScript".
+description: Откройте меню команд и запустите команду "Отключить JavaScript".
 title: Отключение JavaScript с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 4a200e2faa303a12d46fe2daf7ba89226a985b1f
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: f7aafee4b05f843319a4a744e6cba148d4642667
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124721"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230672"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,52 +28,52 @@ ms.locfileid: "11124721"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="b73f4-104">Отключение JavaScript с помощью Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="b73f4-104">Disable JavaScript With Microsoft Edge DevTools</span></span>  
+# <span data-ttu-id="b789a-104">Отключение JavaScript с помощью Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="b789a-104">Disable JavaScript With Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="b73f4-105">Выполните описанные ниже действия, чтобы увидеть, как выглядит веб-страница и использует ее при отключении JavaScript.</span><span class="sxs-lookup"><span data-stu-id="b73f4-105">Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.</span></span>  
+<span data-ttu-id="b789a-105">Выполните следующие действия, чтобы увидеть, как выглядит и работает веб-страница при отключаемом JavaScript.</span><span class="sxs-lookup"><span data-stu-id="b789a-105">Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.</span></span>  
 
-1.  <span data-ttu-id="b73f4-106">[Откройте Microsoft Edge DevTools][DevToolsOpen].</span><span class="sxs-lookup"><span data-stu-id="b73f4-106">[Open Microsoft Edge DevTools][DevToolsOpen].</span></span>  
-1.  <span data-ttu-id="b73f4-107">Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть **меню команд**.</span><span class="sxs-lookup"><span data-stu-id="b73f4-107">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="b789a-106">[Откройте Microsoft Edge DevTools.][DevToolsOpen]</span><span class="sxs-lookup"><span data-stu-id="b789a-106">[Open Microsoft Edge DevTools][DevToolsOpen].</span></span>  
+1.  <span data-ttu-id="b789a-107">Выберите `Control` + `Shift` + `P` \(Windows, Linux\) или `Command` + `Shift` + `P` \(macOS\), чтобы открыть меню **команд.**</span><span class="sxs-lookup"><span data-stu-id="b789a-107">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Меню команд" lightbox="../media/javascript-console-command.msft.png":::
-       <span data-ttu-id="b73f4-109">**Меню команд**</span><span class="sxs-lookup"><span data-stu-id="b73f4-109">The **Command Menu**</span></span>  
+       <span data-ttu-id="b789a-109">Меню **команд**</span><span class="sxs-lookup"><span data-stu-id="b789a-109">The **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="b73f4-110">Начните вводить текст `javascript` , нажмите кнопку **отключить JavaScript**, а затем выберите `Enter` для запуска команды.</span><span class="sxs-lookup"><span data-stu-id="b73f4-110">Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.</span></span>  <span data-ttu-id="b73f4-111">JavaScript теперь отключен.</span><span class="sxs-lookup"><span data-stu-id="b73f4-111">JavaScript is now disabled.</span></span>  
+1.  <span data-ttu-id="b789a-110">Начните `javascript` вводить текст, **выберите "Отключить JavaScript",** а затем `Enter` выберите команду.</span><span class="sxs-lookup"><span data-stu-id="b789a-110">Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.</span></span>  <span data-ttu-id="b789a-111">JavaScript теперь отключен.</span><span class="sxs-lookup"><span data-stu-id="b789a-111">JavaScript is now disabled.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Меню команд" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       <span data-ttu-id="b73f4-113">Выбор пункта " **отключить JavaScript** " в **меню команд**</span><span class="sxs-lookup"><span data-stu-id="b73f4-113">Choose **Disable JavaScript** in the **Command Menu**</span></span>  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Выберите "Отключить JavaScript" в меню команд" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       <span data-ttu-id="b789a-113">Выберите **"Отключить JavaScript"** в меню **команд**</span><span class="sxs-lookup"><span data-stu-id="b789a-113">Choose **Disable JavaScript** in the **Command Menu**</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="b73f4-114">Значок желтого предупреждения рядом с последующими **источниками** напоминает, что JavaScript отключен.</span><span class="sxs-lookup"><span data-stu-id="b73f4-114">The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.</span></span>  
+    <span data-ttu-id="b789a-114">Желтый значок предупреждения рядом с **"Источники"** напоминает, что JavaScript отключен.</span><span class="sxs-lookup"><span data-stu-id="b789a-114">The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.</span></span>  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Меню команд" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       <span data-ttu-id="b73f4-116">Значок предупреждения рядом с пунктом « **источники** »</span><span class="sxs-lookup"><span data-stu-id="b73f4-116">The warning icon next to **Sources**</span></span>  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Значок предупреждения рядом с источниками" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       <span data-ttu-id="b789a-116">Значок предупреждения рядом с **источниками**</span><span class="sxs-lookup"><span data-stu-id="b789a-116">The warning icon next to **Sources**</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="b73f4-117">JavaScript остается отключенным на вкладке столько, сколько открыто DevTools.</span><span class="sxs-lookup"><span data-stu-id="b73f4-117">JavaScript remains disabled in the tab for as long as you have DevTools open.</span></span>  
+<span data-ttu-id="b789a-117">JavaScript остается отключенным на вкладке до тех пор, пока вы открыли DevTools.</span><span class="sxs-lookup"><span data-stu-id="b789a-117">JavaScript remains disabled in the tab for as long as you have DevTools open.</span></span>  
 
-<span data-ttu-id="b73f4-118">Возможно, потребуется перезагрузить страницу, чтобы проверить, зависит ли страница от JavaScript во время загрузки.</span><span class="sxs-lookup"><span data-stu-id="b73f4-118">You may want to reload the page to see if and how the page depends on JavaScript while loading.</span></span>  
+<span data-ttu-id="b789a-118">Может потребоваться перезагрузить страницу, чтобы узнать, зависит ли страница от JavaScript во время загрузки.</span><span class="sxs-lookup"><span data-stu-id="b789a-118">You may want to reload the page to see if and how the page depends on JavaScript while loading.</span></span>  
 
-<span data-ttu-id="b73f4-119">Чтобы повторно включить JavaScript, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="b73f4-119">To re-enable JavaScript, complete the following actions.</span></span>  
+<span data-ttu-id="b789a-119">Чтобы повторно включить JavaScript, выполните следующие действия.</span><span class="sxs-lookup"><span data-stu-id="b789a-119">To re-enable JavaScript, complete the following actions.</span></span>  
 
-*   <span data-ttu-id="b73f4-120">Снова откройте **меню команд** и выполните `Enable JavaScript` команду.</span><span class="sxs-lookup"><span data-stu-id="b73f4-120">Open the **Command Menu** again and run the `Enable JavaScript` command.</span></span>  
-*   <span data-ttu-id="b73f4-121">Закройте DevTools.</span><span class="sxs-lookup"><span data-stu-id="b73f4-121">Close DevTools.</span></span>  
+*   <span data-ttu-id="b789a-120">Снова откройте **меню команд** и запустите `Enable JavaScript` команду.</span><span class="sxs-lookup"><span data-stu-id="b789a-120">Open the **Command Menu** again and run the `Enable JavaScript` command.</span></span>  
+*   <span data-ttu-id="b789a-121">Закроем DevTools.</span><span class="sxs-lookup"><span data-stu-id="b789a-121">Close DevTools.</span></span>  
 
-## <span data-ttu-id="b73f4-122">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="b73f4-122">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="b789a-122">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="b789a-122">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "Открыть Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsOpen]: ../open/index.md "Откройте Microsoft Edge DevTools | Документы Майкрософт"  
 
 > [!NOTE]
-> <span data-ttu-id="b73f4-124">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b73f4-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="b73f4-125">Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="b73f4-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="b789a-124">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b789a-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="b789a-125">Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="b789a-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="b73f4-127">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b73f4-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="b789a-127">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b789a-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
