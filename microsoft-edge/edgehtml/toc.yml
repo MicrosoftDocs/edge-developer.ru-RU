@@ -1,0 +1,224 @@
+# - name: Legacy Microsoft Edge documentation
+expanded: true
+items:
+  - name: Устаревшее руководство для разработчиков
+    items:
+      - name: Обзор руководства по разработке (EdgeHtml)
+        href: dev-guide/index.md
+      - name: Что нового в EdgeHTML
+        href: dev-guide/whats-new.md
+        items:
+          - name: EdgeHTML17
+            href: dev-guide/whats-new/edgeHTML-17.md
+          - name: EdgeHTML16
+            href: dev-guide/whats-new/edgeHTML-16.md
+          - name: EdgeHTML15
+            href: dev-guide/whats-new/edgeHTML-15.md
+          - name: EdgeHTML 14
+            href: dev-guide/whats-new/edgeHTML-14.md
+          - name: EdgeHTML 13
+            href: dev-guide/whats-new/edgeHTML-13.md
+          - name: EdgeHTML 12
+            href: dev-guide/whats-new/edgeHTML-12.md
+            items:
+              - name: Сведения о версии JavaScript
+                href: dev-guide/whats-new/javascript-version-information.md
+      - name: Функции браузера
+        href: dev-guide/browser-features.md
+        items:
+          - name: Политики автозапуска
+            href: dev-guide/browser-features/autoplay-policies.md
+          - name: Flash
+            href: dev-guide/browser-features/flash.md
+          - name: Режим чтения
+            href: dev-guide/browser-features/reading-view.md
+          - name: Обнаружение службы поиска
+            href: dev-guide/browser-features/search-provider-discovery.md
+      - name: Функции интеграции с Windows
+        href: dev-guide/windows-integration.md
+        items:
+          - name: API запроса оплаты
+            href: dev-guide/windows-integration/Payment-Request-API.md
+          - name: Проверка подлинности в Интернете
+            href: dev-guide/windows-integration/web-authentication.md
+          - name: API веб-уведомлений
+            href: dev-guide/windows-integration/web-Notifications-API.md
+  - name: Устаревшие DevTools
+    items:
+      - name: Обзор DevTools (EdgeHTML)
+        href: devtools-guide/index.md
+      - name: Что нового
+        href: devtools-guide/whats-new.md
+        items:
+          - name: EdgeHTML17
+            href: devtools-guide/whats-new/edgehtml-17.md
+          - name: EdgeHTML16
+            href: devtools-guide/whats-new/edgehtml-16.md
+      - name: Элементы
+        href: devtools-guide/elements.md
+        items:
+          - name: Стили
+            href: devtools-guide/elements/styles.md
+          - name: Вычислено
+            href: devtools-guide/elements/computed.md
+          - name: Мероприятия
+            href: devtools-guide/elements/events.md
+          - name: Точки останова DOM
+            href: devtools-guide/elements/dom-breakpoints.md
+          - name: Шрифты
+            href: devtools-guide/elements/fonts.md
+          - name: Специальные возможности
+            href: devtools-guide/elements/accessibility.md
+          - name: Изменения
+            href: devtools-guide/elements/changes.md
+      - name: Консоль
+        href: devtools-guide/console.md
+        items:
+          - name: API консоли
+            href: devtools-guide/console/console-api.md
+          - name: Командная строка
+            href: devtools-guide/console/command-line.md
+          - name: Коды ошибок и состояний
+            href: devtools-guide/console/error-and-status-codes.md
+      - name: Отладчик
+        href: devtools-guide/debugger.md
+      - name: Network
+        href: devtools-guide/network.md
+      - name: Производительность
+        href: devtools-guide/performance.md
+      - name: Память
+        href: devtools-guide/memory.md
+      - name: Хранилище
+        href: devtools-guide/storage.md
+      - name: Служебные сценарии
+        href: devtools-guide/service-workers.md
+      - name: Эмуляция
+        href: devtools-guide/emulation.md
+  - name: Устаревший протокол DevTools
+    items:
+      - name: Протокол средств разработчика (EdgeHTML)
+        href: devtools-protocol/index.md
+      - name: 0.1
+        href: devtools-protocol/0.1/index.md
+        items:
+          - name: Клиенты
+            href: devtools-protocol/0.1/clients.md
+          - name: Конечные точки HTTP
+            href: devtools-protocol/0.1/http.md
+          - name: Домены
+            href: devtools-protocol/0.1/domains/index.md
+            items:
+              - name: Отладчик
+                href: devtools-protocol/0.1/domains/debugger.md
+              - name: Page
+                href: devtools-protocol/0.1/domains/page.md
+              - name: Время выполнения
+                href: devtools-protocol/0.1/domains/runtime.md
+              - name: Схема
+                href: devtools-protocol/0.1/domains/schema.md
+      - name: 0.2
+        href: devtools-protocol/0.2/index.md
+        items:
+          - name: Клиенты
+            href: devtools-protocol/0.2/clients.md
+          - name: Конечные точки HTTP
+            href: devtools-protocol/0.2/http.md
+          - name: Домены
+            href: devtools-protocol/0.2/domains/index.md
+            items:
+              - name: CSS
+                href: devtools-protocol/0.2/domains/css.md
+              - name: DOM
+                href: devtools-protocol/0.2/domains/dom.md
+              - name: DOMDebugger
+                href: devtools-protocol/0.2/domains/domdebugger.md
+              - name: Отладчик
+                href: devtools-protocol/0.2/domains/debugger.md
+              - name: Наложение
+                href: devtools-protocol/0.2/domains/overlay.md
+              - name: Page
+                href: devtools-protocol/0.2/domains/page.md
+              - name: Время выполнения
+                href: devtools-protocol/0.2/domains/runtime.md
+              - name: Схема
+                href: devtools-protocol/0.2/domains/schema.md
+  - name: Устаревшие расширения
+    items:
+      - name: Расширения (EdgeHTML)
+        href: extensions/index.md
+      - name: Поддержка API
+        href: extensions/API-support.md
+        items:
+          - name: Схема расширения API
+            href: extensions/API-support/extension-API-roadmap.md
+          - name: Поддерживаемые API
+            href: extensions/API-support/supported-APIs.md
+          - name: Поддерживаемые ключи манифеста
+            href: extensions/API-support/supported-manifest-keys.md
+            items:
+              - name: Пример манифеста JSON
+                href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
+      - name: Расширения для предприятий
+        href: extensions/extensions-for-enterprise.md
+      - name: Начало работы
+        href: extensions/getting-started.md
+      - name: Рекомендации
+        href: extensions/guides.md
+        items:
+          - name: Специальные возможности
+            href: extensions/guides/accessibility.md
+          - name: Добавление и удаление расширений
+            href: extensions/guides/adding-and-removing-extensions.md
+          - name: Создание расширения
+            href: extensions/guides/creating-an-extension.md
+          - name: Отладка расширений
+            href: extensions/guides/debugging-extensions.md
+          - name: Оформление
+            href: extensions/guides/design.md
+          - name: Интернационализация
+            href: extensions/guides/internationalization.md
+          - name: Встроенные сообщения
+            href: extensions/guides/native-messaging.md
+          - name: Создание пакетов
+            href: extensions/guides/packaging.md
+            items:
+              - name: Создание и тестирование пакетов расширений
+                href: extensions/guides/packaging/creating-and-testing-extension-packages.md
+              - name: Расширения в Центре разработки для Windows
+                href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
+              - name: Локализация пакетов расширений
+                href: extensions/guides/packaging/localizing-extension-packages.md
+              - name: Использование ManifoldJS для расширений пакетов
+                href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
+              - name: Запуск комплекта сертификации приложений для Windows
+                href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
+          - name: Перенос расширений Chrome
+            href: extensions/guides/porting-Chrome-extensions.md
+      - name: Советы и рекомендации
+        href: extensions/tips-and-tricks.md
+      - name: Поиск и устранение неисправностей
+        href: extensions/troubleshooting.md
+  - name: Устаревшее размещение
+    href: hosting/toc.md
+  - name: Анализ производительности устаревших версий
+    href: performance-analysis/index.md
+  - name: Устаревшие прогрессивные веб-приложения
+    items:
+      - name: Прогрессивные веб-приложения (EdgeHTML)
+        href: progressive-web-apps/index.md
+      - name: Начало работы с приложениями PWA (EdgeHTML)
+        href: progressive-web-apps/get-started.md
+      - name: Создайте свое приложение PWA для Windows
+        href: progressive-web-apps/windows-features.md
+        items:
+          - name: Приложения PWA для Xbox
+            href: progressive-web-apps/xbox-considerations.md
+      - name: Приложения PWA в Microsoft Store
+        href: progressive-web-apps/microsoft-store.md
+  - name: Устаревший WebDriver
+    items:
+      - name: Обзор WebDriver (EdgeHTML)
+        href: webdriver/index.md
+  - name: Среда выполнения Windows (WinRT)
+    href: windows-runtime/toc.yml
+    topicHref: windows-runtime/index.md
