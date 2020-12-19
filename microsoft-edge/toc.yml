@@ -3,63 +3,24 @@
   expanded: true
   items:
     - name: Специальные возможности
-      href: accessibility.md
       items:
+        - name: Обзор специальных возможностей
+          href: accessibility/index.md
         - name: Оформление
           href: accessibility/design.md
         - name: Сборка
-          href: accessibility/build.md
+          href: accessibility/build/index.md
           items:
             - name: ARIA и автоматизация пользовательского интерфейса
               href: accessibility/build/ARIA-and-UI-Automation.md
         - name: Тестирование
           href: accessibility/test.md
-    - name: Руководство разработчика
-      href: dev-guide.md
+    - name: DevTools
       items:
-        - name: Что нового в EdgeHTML
-          href: dev-guide/whats-new.md
-          items:
-            - name: EdgeHTML17
-              href: dev-guide/whats-new/edgeHTML-17.md
-            - name: EdgeHTML16
-              href: dev-guide/whats-new/edgeHTML-16.md
-            - name: EdgeHTML15
-              href: dev-guide/whats-new/edgeHTML-15.md
-            - name: EdgeHTML 14
-              href: dev-guide/whats-new/edgeHTML-14.md
-            - name: EdgeHTML 13
-              href: dev-guide/whats-new/edgeHTML-13.md
-            - name: EdgeHTML 12
-              href: dev-guide/whats-new/edgeHTML-12.md
-              items:
-                - name: Сведения о версии JavaScript
-                  href: dev-guide/whats-new/javascript-version-information.md
-        - name: Функции браузера
-          href: dev-guide/browser-features.md
-          items:
-            - name: Политики автозапуска
-              href: dev-guide/browser-features/autoplay-policies.md
-            - name: Flash
-              href: dev-guide/browser-features/flash.md
-            - name: Режим чтения
-              href: dev-guide/browser-features/reading-view.md
-            - name: Обнаружение службы поиска
-              href: dev-guide/browser-features/search-provider-discovery.md
-        - name: Функции интеграции с Windows
-          href: dev-guide/windows-integration.md
-          items:
-            - name: API запроса оплаты
-              href: dev-guide/windows-integration/Payment-Request-API.md
-            - name: Проверка подлинности в Интернете
-              href: dev-guide/windows-integration/web-authentication.md
-            - name: API веб-уведомлений
-              href: dev-guide/windows-integration/web-Notifications-API.md
-    - name: Средства разработчика (Chromium)
-      href: devtools-guide-chromium.md
-      items:
+        - name: Обзор DevTools
+          href: devtools-guide-chromium/index.md
         - name: Открыть средства разработчика
-          href: devtools-guide-chromium/open.md
+          href: devtools-guide-chromium/open/index.md
         - name: Что нового
           items:
             - name: Microsoft Edge 88
@@ -79,9 +40,9 @@
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
         - name: Экспериментальные функции
-          href: devtools-guide-chromium/experimental-features.md
+          href: devtools-guide-chromium/experimental-features/index.md
         - name: Режим IE
-          href: devtools-guide-chromium/ie-mode.md
+          href: devtools-guide-chromium/ie-mode/index.md
         - name: Трехмерное представление
           href: devtools-guide-chromium/3d-view/index.md
         - name: Служебные сценарии
@@ -108,7 +69,7 @@
               href: devtools-guide-chromium/css/print-preview.md
         - name: Консоль
           items:
-            - name: Обзор
+            - name: Обзор консоли
               href: devtools-guide-chromium/console/index.md
             - name: Регистрация сообщений
               href: devtools-guide-chromium/console/log.md
@@ -152,7 +113,7 @@
           href: devtools-guide-chromium/command-menu/index.md
         - name: Эмуляция
           items:
-            - name: Обзор
+            - name: Обзор эмуляции
               href: devtools-guide-chromium/device-mode/index.md
             - name: Эмуляция и тестирование других браузеров
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -185,7 +146,7 @@
             - name: Переопределения
               href: devtools-guide-chromium/javascript/overrides.md
             - name: Обзор панели источников
-              href: devtools-guide-chromium/sources.md
+              href: devtools-guide-chromium/sources/index.md
             - name: Отладка фоновых служб
               href: devtools-guide-chromium/javascript/background-services.md
             - name: Рекомендации
@@ -236,7 +197,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Память
           items:
-            - name: Обзор
+            - name: Обзор памяти
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Общие сведения о терминологии памяти
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -247,20 +208,20 @@
         - name: Media
           href: devtools-guide-chromium/media-panel/index.md
         - name: WebAuthn
-          href: devtools-guide-chromium/WebAuthn/index.md
+          href: devtools-guide-chromium/webauthn/index.md
         - name: Рабочие пространства
           href: devtools-guide-chromium/workspaces/index.md
         - name: Прогрессивные веб-приложения
-          href: devtools-guide-chromium/progressive-web-apps.md
+          href: devtools-guide-chromium/progressive-web-apps/index.md
         - name: Безопасность
           href: devtools-guide-chromium/security/index.md
         - name: Сочетания клавиш
-          href: devtools-guide-chromium/shortcuts.md
+          href: devtools-guide-chromium/shortcuts/index.md
         - name: Ресурсы
           href: devtools-guide-chromium/resources/index.md
         - name: Настройка
           items:
-            - name: Обзор
+            - name: Обзор настроек
               href: devtools-guide-chromium/customize/index.md
             - name: Темная тема
               href: devtools-guide-chromium/customize/dark-theme.md
@@ -270,108 +231,12 @@
               href: devtools-guide-chromium/customize/localization.md
             - name: Ярлыки
               href: devtools-guide-chromium/customize/shortcuts.md
-    - name: Средства разработчика (EdgeHTML)
-      href: devtools-guide.md
+    - name: Обзор протокола DevTools
+      href: devtools-protocol-chromium/index.md
+    - name: Расширения
       items:
-        - name: Что нового
-          href: devtools-guide/whats-new.md
-          items:
-            - name: EdgeHTML17
-              href: devtools-guide/whats-new/edgehtml-17.md
-            - name: EdgeHTML16
-              href: devtools-guide/whats-new/edgehtml-16.md
-        - name: Элементы
-          href: devtools-guide/elements.md
-          items:
-            - name: Стили
-              href: devtools-guide/elements/styles.md
-            - name: Вычислено
-              href: devtools-guide/elements/computed.md
-            - name: Мероприятия
-              href: devtools-guide/elements/events.md
-            - name: Точки останова DOM
-              href: devtools-guide/elements/dom-breakpoints.md
-            - name: Шрифты
-              href: devtools-guide/elements/fonts.md
-            - name: Специальные возможности
-              href: devtools-guide/elements/accessibility.md
-            - name: Изменения
-              href: devtools-guide/elements/changes.md
-        - name: Консоль
-          href: devtools-guide/console.md
-          items:
-            - name: API консоли
-              href: devtools-guide/console/console-api.md
-            - name: Командная строка
-              href: devtools-guide/console/command-line.md
-            - name: Коды ошибок и состояний
-              href: devtools-guide/console/error-and-status-codes.md
-        - name: Отладчик
-          href: devtools-guide/debugger.md
-        - name: Network
-          href: devtools-guide/network.md
-        - name: Производительность
-          href: devtools-guide/performance.md
-        - name: Память
-          href: devtools-guide/memory.md
-        - name: Хранилище
-          href: devtools-guide/storage.md
-        - name: Служебные сценарии
-          href: devtools-guide/service-workers.md
-        - name: Эмуляция
-          href: devtools-guide/emulation.md
-    - name: Протокол средств разработчика (Chromium)
-      href: devtools-protocol-chromium.md
-    - name: Протокол средств разработчика (EdgeHTML)
-      href: devtools-protocol/index.md
-      items:
-        - name: 0.1
-          href: devtools-protocol/0.1/index.md
-          items:
-            - name: Клиенты
-              href: devtools-protocol/0.1/clients.md
-            - name: Конечные точки HTTP
-              href: devtools-protocol/0.1/http.md
-            - name: Домены
-              href: devtools-protocol/0.1/domains/index.md
-              items:
-                - name: Отладчик
-                  href: devtools-protocol/0.1/domains/debugger.md
-                - name: Page
-                  href: devtools-protocol/0.1/domains/page.md
-                - name: Время выполнения
-                  href: devtools-protocol/0.1/domains/runtime.md
-                - name: Схема
-                  href: devtools-protocol/0.1/domains/schema.md
-        - name: 0.2
-          href: devtools-protocol/0.2/index.md
-          items:
-            - name: Клиенты
-              href: devtools-protocol/0.2/clients.md
-            - name: Конечные точки HTTP
-              href: devtools-protocol/0.2/http.md
-            - name: Домены
-              href: devtools-protocol/0.2/domains/index.md
-              items:
-                - name: CSS
-                  href: devtools-protocol/0.2/domains/css.md
-                - name: DOM
-                  href: devtools-protocol/0.2/domains/dom.md
-                - name: DOMDebugger
-                  href: devtools-protocol/0.2/domains/domdebugger.md
-                - name: Отладчик
-                  href: devtools-protocol/0.2/domains/debugger.md
-                - name: Наложение
-                  href: devtools-protocol/0.2/domains/overlay.md
-                - name: Page
-                  href: devtools-protocol/0.2/domains/page.md
-                - name: Время выполнения
-                  href: devtools-protocol/0.2/domains/runtime.md
-                - name: Схема
-                  href: devtools-protocol/0.2/domains/schema.md
-    - name: Расширения (Chromium)
-      href: extensions-chromium/index.md
-      items:
+        - name: Обзор расширений
+          href: extensions-chromium/index.md
         - name: Начало работы
           items:
             - name: Архитектура расширения
@@ -420,75 +285,15 @@
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Хранение и обновление
               href: extensions-chromium/enterprise/hosting-and-updating.md
-    - name: Расширения (EdgeHTML)
-      href: extensions/index.md
-      items:
-        - name: Поддержка API
-          href: extensions/API-support.md
-          items:
-            - name: Схема расширения API
-              href: extensions/API-support/extension-API-roadmap.md
-            - name: Поддерживаемые API
-              href: extensions/API-support/supported-APIs.md
-            - name: Поддерживаемые ключи манифеста
-              href: extensions/API-support/supported-manifest-keys.md
-              items:
-                - name: Пример манифеста JSON
-                  href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
-        - name: Расширения для предприятий
-          href: extensions/extensions-for-enterprise.md
-        - name: Начало работы
-          href: extensions/getting-started.md
-        - name: Рекомендации
-          href: extensions/guides.md
-          items:
-            - name: Специальные возможности
-              href: extensions/guides/accessibility.md
-            - name: Добавление и удаление расширений
-              href: extensions/guides/adding-and-removing-extensions.md
-            - name: Создание расширения
-              href: extensions/guides/creating-an-extension.md
-            - name: Отладка расширений
-              href: extensions/guides/debugging-extensions.md
-            - name: Оформление
-              href: extensions/guides/design.md
-            - name: Интернационализация
-              href: extensions/guides/internationalization.md
-            - name: Встроенные сообщения
-              href: extensions/guides/native-messaging.md
-            - name: Создание пакетов
-              href: extensions/guides/packaging.md
-              items:
-                - name: Создание и тестирование пакетов расширений
-                  href: extensions/guides/packaging/creating-and-testing-extension-packages.md
-                - name: Расширения в Центре разработки для Windows
-                  href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
-                - name: Локализация пакетов расширений
-                  href: extensions/guides/packaging/localizing-extension-packages.md
-                - name: Использование ManifoldJS для расширений пакетов
-                  href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
-                - name: Запуск комплекта сертификации приложений для Windows
-                  href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
-            - name: Перенос расширений Chrome
-              href: extensions/guides/porting-Chrome-extensions.md
-        - name: Политика расширения браузера Майкрософт
-          href: extensions/microsoft-browser-extension-policy.md
-        - name: Советы и рекомендации
-          href: extensions/tips-and-tricks.md
-        - name: Поиск и устранение неисправностей
-          href: extensions/troubleshooting.md
-    - name: Размещения
-      href: hosting/toc.md
-    - name: Пробные версии
+    - name: Обзор пробных версий
       href: origin-trials/index.md
-    - name: Анализ производительности
-      href: performance-analysis.md
     - name: Техническая документация по конфиденциальности
-      href: privacy-whitepaper.md
-    - name: Прогрессивные веб-приложения (Chromium)
-      href: progressive-web-apps-chromium/index.md
+      href: privacy-whitepaper/index.md
+    - name: Прогрессивные веб-приложения
       items:
-        - name: Начало работы с приложениями PWA (Chromium)
+        - name: Обзор прогрессивных веб-приложений
+          href: progressive-web-apps-chromium/index.md
+        - name: Начало работы с приложениями PWA
           href: progressive-web-apps-chromium/get-started.md
         - name: Сценарии автономной работы
           href: progressive-web-apps-chromium/offline.md
@@ -496,42 +301,29 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Манифесты веб-приложения
           href: progressive-web-apps-chromium/webappmanifests.md
-    - name: Прогрессивные веб-приложения (EdgeHTML)
-      href: progressive-web-apps-edgehtml/index.md
-      items:
-        - name: Начало работы с приложениями PWA (EdgeHTML)
-          href: progressive-web-apps-edgehtml/get-started.md
-        - name: Создайте свое приложение PWA для Windows
-          href: progressive-web-apps-edgehtml/windows-features.md
-          items:
-            - name: Приложения PWA для Xbox
-              href: progressive-web-apps-edgehtml/xbox-considerations.md
-        - name: Приложения PWA в Microsoft Store
-          href: progressive-web-apps-edgehtml/microsoft-store.md
-    - name: Playwright
+    - name: Обзор Playwright
       href: playwright/index.md
-    - name: Puppeteer
-      href: puppeteer.md
-    - name: VisualStudio
+    - name: Обзор Puppeteer
+      href: puppeteer/index.md
+    - name: Обзор Visual Studio
       href: visual-studio/index.md
     - name: Visual Studio Code
-      href: visual-studio-code/index.md
       items:
-        - name: Отладчик для Edge
+        - name: Обзор Visual Studio Code
+          href: visual-studio-code/index.md
+        - name: Отладка для расширения Microsoft Edge
           href: visual-studio-code/debugger-for-edge.md
         - name: Расширение средств разработчика Microsoft Edge
           href: visual-studio-code/microsoft-edge-devtools-extension.md
-        - name: webhint
+        - name: расширение webhint
           href: visual-studio-code/webhint.md
-    - name: WebDriver (Chromium)
+    - name: WebDriver
       items:
-        - name: Начало работы
+        - name: Обзор WebDriver
           href: webdriver-chromium/index.md
         - name: Возможности и EdgeOptions
           href: webdriver-chromium/capabilities-edge-options.md
-    - name: WebDriver (EdgeHTML)
-      href: webdriver.md
-    - name: Веб-платформа (Chromium)
+    - name: Веб-платформа
       items:
         - name: 'Совместимость сайта: влияние на изменения, которые поступают в Microsoft Edge'
           href: web-platform/site-impacting-changes.md
@@ -541,10 +333,7 @@
           href: web-platform/tracking-prevention.md
         - name: Строка агента пользователя Microsoft Edge
           href: web-platform/user-agent-string.md
-    - name: WebView2 (Chromium)
+    - name: WebView2
       href: webview2/toc.yml
-    - name: Руководство разработчика WebVR
-      href: /microsoft-edge/webvr/index
-    - name: Среда выполнения Windows (WinRT)
-      href: windows-runtime/toc.yml
-      topicHref: windows-runtime/index.md
+    - name: Устаревшая документация по Microsoft Edge
+      href: edgehtml/index.md
