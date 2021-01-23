@@ -10,12 +10,12 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 815394fd9d3f548f511c1c015e8a7ce5e8c2ba89
-  ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
+  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "11231169"
+  ms.lasthandoff: 01/23/2021
+  ms.locfileid: "11297725"
 highlightedContent:
   items:
   - title: Microsoft Edge (официальный канал Stable)
@@ -73,7 +73,7 @@ conceptualContent:
     links:
     - itemType: reference
       text: Безопасность
-      url: /deployedge/security-overview
+      url: /deployedge/ms-edge-security-for-business
     - itemType: reference
       text: Конфиденциальность
       url: /deployedge/microsoft-edge-enterprise-privacy-settings
@@ -198,7 +198,7 @@ additionalContent:
     - summary: Корпорация Майкрософт стремится обеспечить работу ваших приложений в Microsoft Edge.  Если у вас могут быть проблемы с бизнес-приложениями или веб-сайтами в последней версии Edge, Майкрософт поможет вам исправлять приложения и веб-сайты без дополнительной стоить.  См. сведения о предложении для требований к приемлемости.
       title: Получить бесплатное справку с помощью App Assure
       url: https://fasttrack.microsoft.com/portal
-    - summary: Если вашей компании требуется немедленная техническая поддержка Microsoft Edge, поддержка "1:1" от Корпорации Майкрософт доступна с помощью различных планов, которые помогут вам получить требуемую поддержку.
+    - summary: Если вашей компании требуется немедленная техническая поддержка Microsoft Edge, поддержка 1:1 от Корпорации Майкрософт доступна с помощью различных планов, которые помогут вам получить необходимый уровень поддержки.
       title: Поддержка Майкрософт для бизнеса
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
     - summary: Доступны полезные ресурсы поддержки для пользователей.
