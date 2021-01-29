@@ -128,7 +128,7 @@ ms.locfileid: "11230980"
 
 1.  Наведите курсор на загон таблицы "Журнал сети", откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите пункт **"Домен".**  Теперь отображается домен каждого ресурса.  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Включить столбец "Домен"" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Включить столбец Домен" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        Включить столбец "Домен"  
     :::image-end:::  
     
@@ -189,13 +189,13 @@ Screenshots let you see how a page looked over time while it was loading.
 
 1.  Выберите `getstarted.html` .  Отображается **вкладка** "Заглавные".  Эта вкладка используется для проверки http-headers.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Вкладка "Заглавные"" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Вкладка Заглавные" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        Вкладка **"Заглавные"**  
     :::image-end:::  
     
 1.  Выберите вкладку **"Предварительный** просмотр".  Показана базовая отрисовка HTML.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Вкладка "Предварительный просмотр"" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Вкладка Предварительный просмотр" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
        Вкладка **"Предварительный** просмотр"  
     :::image-end:::  
     
@@ -203,7 +203,7 @@ Screenshots let you see how a page looked over time while it was loading.
 
 1.  Выберите **вкладку "Ответ".**  Показан исходный код HTML.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Вкладка "Ответ"" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Вкладка Ответ" lightbox="../media/network-glitch-network-resources-response.msft.png":::
        Вкладка **"Ответ"**  
     :::image-end:::  
     
@@ -212,13 +212,13 @@ Screenshots let you see how a page looked over time while it was loading.
     
 1.  Выберите вкладку **"Время".**  Отображается разбивка сетевой активности ресурса.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Вкладка "Время"" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Вкладка Время" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
        Вкладка **"Время"**  
     :::image-end:::  
     
 1.  Choose **Close** \( ![ Close ][ImageCloseIcon] \) to view the Network Log again.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Кнопка "Закрыть"" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Кнопка Закрыть" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        Кнопка **"Закрыть"**  
     :::image-end:::  
     
@@ -244,7 +244,7 @@ Screenshots let you see how a page looked over time while it was loading.
     
 1.  Выберите результат, чтобы просмотреть ресурс, в котором был найден результат.  Если вы ищете сведения о ресурсе, выберите результат, чтобы перейти непосредственно к ресурсу.  Например, если запрос был найден в заголке, откроется вкладка "Headers".   Если запрос найден в содержимом, откроется вкладка **"Ответ".**  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Результат поиска, выделенный на вкладке "Headers"" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Результат поиска, выделенный на вкладке Headers" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
        Результат поиска, выделенный на **вкладке "Headers"**  
     :::image-end:::  
     
@@ -258,7 +258,7 @@ Screenshots let you see how a page looked over time while it was loading.
 
 DevTools предоставляет множество процессов для фильтрации ресурсов, не имеющих отношения к задаче.  
 
-:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Панель инструментов "Фильтры"" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Панель инструментов Фильтры" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
    Панель **инструментов "Фильтры"**  
 :::image-end:::  
 
