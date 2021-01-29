@@ -41,7 +41,7 @@ ms.locfileid: "11230672"
     
 1.  Начните `javascript` вводить текст, **выберите "Отключить JavaScript",** а затем `Enter` выберите команду.  JavaScript теперь отключен.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Выберите "Отключить JavaScript" в меню команд" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Выберите Отключить JavaScript в меню команд" lightbox="../media/javascript-console-command-javascript.msft.png":::
        Выберите **"Отключить JavaScript"** в меню **команд**  
     :::image-end:::  
     
