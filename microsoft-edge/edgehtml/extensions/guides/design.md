@@ -75,7 +75,7 @@ ms.locfileid: "11235733"
 
 Если действие страницы указано вmanifest.js[в][ExtensionsApisupportManifestkeys] файле, оно отображается в адресной панели каждый раз, когда используется метод [pageAction.show.][MDNApiPageactionShow]  
 
-:::image type="complex" source="../media/pageaction.png" alt-text="Действие "Страница"":::
+:::image type="complex" source="../media/pageaction.png" alt-text="Действие Страница":::
    Действие "Страница"
 :::image-end:::
 
