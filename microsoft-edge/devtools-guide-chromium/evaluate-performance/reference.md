@@ -91,7 +91,7 @@ DevTools автоматически масштабируется в части �
 
 Choose **Capture settings** \( ![ Capture settings ][ImageCaptureSettingsIcon] \) to expose more settings related to how DevTools captures performance recordings.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Раздел "Параметры захвата"" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Раздел Параметры захвата" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    Раздел **"Параметры захвата"**  
 :::image-end:::  
 
@@ -221,7 +221,7 @@ Choose **Capture settings** \( ![ Capture settings ][ImageCaptureSettingsIcon] \
 
 Выберите событие, чтобы просмотреть дополнительные сведения о нем на **вкладке "Сводка".**  DevTools описывает выбранное событие.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Дополнительные сведения об анонимной функции на вкладке "Сводка"" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Дополнительные сведения об анонимной функции на вкладке Сводка" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
    Дополнительные сведения о `anonymous` функции на **вкладке "Сводка"**  
 :::image-end:::  
 
@@ -264,7 +264,7 @@ DevTools назначает скриптам случайные цвета.  Н�
 
 Вкладка **"Дерево** вызовов" отображает действия только во время выбранной части записи.  Перейдите [к "Выбор части записи",](#select-a-portion-of-a-recording) чтобы узнать, как выбрать ее.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Вкладка "Дерево вызовов"" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Вкладка Дерево вызовов" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
    Вкладка **"Дерево вызовов"**  
 :::image-end:::  
 
@@ -302,7 +302,7 @@ Choose **Show Heaviest Stack** \( Show ![ Heaviest Stack ][ImageShowHeaviestStac
 
 Вкладка **"Журнал** событий" отображает действия только во время выбранной части записи.  Перейдите [к "Выбор части записи",](#select-a-portion-of-a-recording) чтобы узнать, как выбрать ее.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Вкладка "Журнал событий"" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Вкладка Журнал событий" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
    Вкладка **"Журнал событий"**  
 :::image-end:::  
 
@@ -332,7 +332,7 @@ Choose **Show Heaviest Stack** \( Show ![ Heaviest Stack ][ImageShowHeaviestStac
 
 Просмотр растерных действий в **разделе Растера.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text="Раздел "Растер"" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text="Раздел Растер" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
    Раздел **"Растер"**  
 :::image-end:::  
 
@@ -340,7 +340,7 @@ Choose **Show Heaviest Stack** \( Show ![ Heaviest Stack ][ImageShowHeaviestStac
 
 Раздел **"Взаимодействия"** используется для поиска и анализа взаимодействий с пользователем, которые произошли во время записи.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="Раздел "Взаимодействия"" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="Раздел Взаимодействия" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
    Раздел **"Взаимодействия"**  
 :::image-end:::  
 
@@ -378,7 +378,7 @@ DevTools предоставляет множество способов анал
 
 Выберите кадр, чтобы просмотреть дополнительные сведения о кадре на вкладке **"Сводка".**  DevTools описывает выбранный кадр синим цветом.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Просмотр кадра на вкладке "Сводка"" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Просмотр кадра на вкладке Сводка" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
    Просмотр кадра на вкладке **"Сводка"**  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ DevTools предоставляет множество способов анал
 
 Раз развернуть **раздел "Сеть",** чтобы просмотреть каскад сетевых запросов, которые произошли во время записи.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Раздел "Сеть"" lightbox="../media/evaluate-performance-performance-network.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Раздел Сеть" lightbox="../media/evaluate-performance-performance-network.msft.png":::
    Раздел **"Сеть"**  
 :::image-end:::  
 
@@ -415,7 +415,7 @@ DevTools предоставляет множество способов анал
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="Средство "Сеть"" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
+      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="Средство Сеть" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
          Средство **"Сеть"**  
 : ::image-end:::  
    :::column-end:::
@@ -460,13 +460,13 @@ DevTools отображает новую диаграмму **"Память"** �
 
 Снимки экрана также можно просмотреть, выбрав кадр в разделе **"Кадры".**  DevTools отображает небольшую версию снимка экрана на вкладке **"Сводка".**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Просмотр снимка экрана на вкладке "Сводка"" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Просмотр снимка экрана на вкладке Сводка" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
    Просмотр снимка экрана на **вкладке "Сводка"**  
 :::image-end:::  
 
 Выберите эскиз на вкладке **"Сводка",** чтобы увеличить масштаб на снимке экрана.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Масштабирование снимка экрана на вкладке "Сводка"" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Масштабирование снимка экрана на вкладке Сводка" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
    Масштабирование снимка экрана на **вкладке "Сводка"**  
 :::image-end:::  
 
@@ -500,7 +500,7 @@ DevTools отображает новую диаграмму **"Память"** �
 1.  [Включит](#turn-on-advanced-paint-instrumentation).  
 1.  Выберите событие **Paint** в основном **разделе.**  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Вкладка "Профиль paint"" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Вкладка Профиль paint" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
        Вкладка **"Профиль paint"**  
     :::image-end:::  
     
@@ -513,7 +513,7 @@ DevTools отображает новую диаграмму **"Память"** �
 1.  [Откройте меню команд.][DevToolsCommandMenu]  
 1.  Начните ввод `Rendering` текста и выберите `Show Rendering` .  DevTools отображает вкладку **"Отрисовка"** в нижней части окна DevTools.  
     
-    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="Вкладка "Отрисовка"" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="Вкладка Отрисовка" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
        Вкладка **"Отрисовка"**  
     :::image-end:::  
     
