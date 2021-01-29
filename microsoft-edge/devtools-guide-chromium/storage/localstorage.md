@@ -42,13 +42,13 @@ ms.locfileid: "11231190"
     
 1.  Разорите **меню "Локальное** хранилище".  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Меню "Локальное хранилище"" lightbox="../media/storage-application-local-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Меню Локальное хранилище" lightbox="../media/storage-application-local-storage.msft.png":::
        Меню **"Локальное хранилище"**  
     :::image-end:::  
     
 1.  Выберите домен для просмотра пар "ключ-значение".  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Пары "ключ-значение" localStorage для https://www.bing.com домена" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Пары ключ-значение localStorage для https://www.bing.com домена" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
        Пары `localStorage` "ключ-значение" для `https://www.bing.com` домена  
     :::image-end:::  
     
@@ -63,7 +63,7 @@ ms.locfileid: "11231190"
 1.  [Просмотр пар "ключ-значение localStorage" домена.](#view-localstorage-keys-and-values)  
 1.  Дважды щелкните пустую часть таблицы.  DevTools создает новую строку и фокусирует курсор в **столбце "Ключ".**  
     
-    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="Пустая часть таблицы, которая дважды щелкает, чтобы создать новую пару "ключ-значение"." lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="Пустая часть таблицы, которая дважды щелкает, чтобы создать новую пару ключ-значение." lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
        Пустая часть таблицы, которая дважды щелкает, чтобы создать новую пару "ключ-значение".  
     :::image-end:::  
     
