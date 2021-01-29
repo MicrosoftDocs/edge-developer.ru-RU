@@ -48,14 +48,14 @@ ms.locfileid: "11230665"
        :::column span="":::
           Choose the **Go to Issues** button in the yellow warning bar.  
           
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Перейдите к кнопке "Проблемы" в желтой панели предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
+          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Перейдите к кнопке Проблемы в желтой панели предупреждения при обнаружении проблем" lightbox="../media/issues-open-issues-tab.msft.png":::
              Кнопка **"Перейти к вопросам"** в желтой панели предупреждения при обнаружении проблем.  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Кроме того, выберите **пункт "Проблемы"** в меню **"Дополнительные средства".**  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство "Проблемы" в меню "Дополнительные средства"" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство Проблемы в меню "Дополнительные средства"" lightbox="../media//issues-more-tools-menu.msft.png":::
              **Средство "Проблемы"** в **меню "Дополнительные средства"**  
           :::image-end:::  
        :::column-end:::
@@ -63,13 +63,13 @@ ms.locfileid: "11230665"
     
 1.  При необходимости **выберите кнопку "Перезагрузить** страницу".  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Средство "Проблемы" в средстве "DevTools Drawer" с кнопкой "Перезагрузить страницу"" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Средство Проблемы в средстве DevTools Drawer с кнопкой Перезагрузить страницу" lightbox="../media/issues-tab-before-refresh.msft.png":::
        **Средство "Проблемы"** в средстве "DevTools Drawer" с **кнопкой "Перезагрузить страницу"**  
     :::image-end:::  
 
     Проблемы, о которые **сообщается** в консоли, довольно сложно понять, например предупреждения cookie на следующем изображении.  В зависимости от сообщений о проблемах может быть не ясно, что необходимо сделать.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Средство "Проблемы" в средстве DevTools Drawer с тремя вопросами cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Средство Проблемы в средстве DevTools Drawer с тремя вопросами cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
        **Средство "Проблемы"** в средстве DevTools Drawer с тремя вопросами cookie  
     :::image-end:::  
     
@@ -79,7 +79,7 @@ ms.locfileid: "11230665"
 
 1.  Выберите элемент в средстве **"Проблемы",** чтобы получить инструкции по устранению проблемы и поиску затронутых ресурсов.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Пометить межсемейные файлы cookie как безопасные, открытые в средстве "Проблемы"" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Пометить межсемейные файлы cookie как безопасные, открытые в средстве Проблемы" lightbox="../media/issues-tab-issue-open.msft.png":::
        **Пометить межсемейные файлы cookie как безопасные,** открытые в **средстве "Проблемы"**  
     :::image-end:::  
     
@@ -92,7 +92,7 @@ ms.locfileid: "11230665"
     
 1.  Выберите элементы в **AFFECTED RESOURCES,** чтобы просмотреть сведения.  В следующем примере пометка меж сайта **cookie как** проблема "Безопасная" влияет на один файл cookie и два запроса.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Затронутые ресурсы открываются на вкладке "Ящик проблем"" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Затронутые ресурсы открываются на вкладке Ящик проблем" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Затронутые ресурсы открываются в средстве **"Проблемы"** в средстве "DevTools Drawer"  
     :::image-end:::  
     
@@ -100,7 +100,7 @@ ms.locfileid: "11230665"
 
 1.  Выберите ссылку на ресурс, чтобы просмотреть элемент в соответствующем контексте в DevTools.  В следующем примере выберите в области `samesite-sandbox.glitch.me` **"Запросы",** чтобы показать файлы cookie, прикрепленные к этому запросу.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Просмотр затронутой области "Cookie" на панели "Сеть DevTools"" lightbox="../media/issues-tab-view-request.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Просмотр затронутой области Cookie на панели Сеть DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
        Просмотр затронутой области "Cookie" **** на панели "Сеть DevTools"  
     :::image-end:::  
 
