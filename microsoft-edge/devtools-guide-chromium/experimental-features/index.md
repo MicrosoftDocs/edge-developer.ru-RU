@@ -141,7 +141,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 *   Выберите **значок** овала Grid рядом с любым элементом Grid, показанным в дереве DOM **средства "Элементы".**  
     
-    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Значок овала сетки в средстве "Элементы"" lightbox="../media/grid-adorner.msft.png":::
+    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Значок овала сетки в средстве Элементы" lightbox="../media/grid-adorner.msft.png":::
        Значок овала сетки в **средстве "Элементы"**  
     :::image-end:::  
     
@@ -182,7 +182,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
     
 В [эксперименте webhint][WebhintMain] на панели "Проблемы" отображается обратная связь [веб-хинта.][DevtoolsIssues]  Выберите проблему, чтобы отобразить документацию по решению и список затронутых ресурсов на вашем веб-сайте.  Выберите ссылку на ресурс, чтобы открыть **** соответствующую **области** **"Сеть",**"Источники" или "Элементы" в DevTools.  
 
-:::image type="complex" source="../media/experiments-webhint.msft.png" alt-text="обратная связь веб-панелей на панели "Проблемы"" lightbox="../media/experiments-webhint.msft.png":::
+:::image type="complex" source="../media/experiments-webhint.msft.png" alt-text="обратная связь веб-панелей на панели Проблемы" lightbox="../media/experiments-webhint.msft.png":::
    обратная связь веб-панелей на **панели "Проблемы"**  
 :::image-end:::  
 
@@ -234,7 +234,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  Выберите действие, настраиваемую.  
 1.  Choose the **Edit** \( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \) icon.  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Выбор действия для настройки на странице "Ярлыки" в параметрах" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Выбор действия для настройки на странице Ярлыки в параметрах" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Выбор действия для настройки на странице **"Ярлыки"** в [параметрах][DevToolsCustomizeSettings]
     :::image-end:::  
     
@@ -269,7 +269,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 1.  Откройте области **составных** слоев.  
 1.  Отображаются все закрашенные слои приложения.  Попробуйте эту функцию с собственными веб-приложениями.  
     
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Панель "Составные слои"" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Панель Составные слои" lightbox="../media/experiments-layers.msft.png":::
    Панель **Составные слои**  
 :::image-end:::  
 
