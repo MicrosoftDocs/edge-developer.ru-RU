@@ -62,13 +62,13 @@ API **фонового получения** **** позволяет сотруд
 1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
    После запуска фонового получения событий DevTools записывает события в таблицу.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Журнал событий в области "Фоновое извлечение"" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Журнал событий в области Фоновое извлечение" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
        Журнал событий в области **"Фоновое извлечение"**  
     :::image-end:::  
     
 1.  Щелкните событие, чтобы просмотреть его сведения в пространстве под таблицей.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Просмотр сведений о событии в области "Фоновое извлечение"" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Просмотр сведений о событии в области Фоновое извлечение" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
        Просмотр сведений о событии в области **"Фоновое извлечение"**  
     :::image-end:::  
     
