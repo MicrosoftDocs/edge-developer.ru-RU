@@ -80,7 +80,7 @@ DevTools не обновляет таблицы в режиме реальног
 1.  [Просмотр данных в таблице веб-SQL.](#view-web-sql-data)  
 1.  Используйте **текстовое поле "Видимые столбцы",** чтобы указать, какие столбцы нужно отметить.  Предо в качестве CSV-списка имена столбцов.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Использование текстового окна "Видимые столбцы" для уменьшения числа столбцов" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Использование текстового окна Видимые столбцы для уменьшения числа столбцов" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
        Использование **текстового окна "Видимые столбцы"** для уменьшения числа столбцов  
     :::image-end:::  
     
