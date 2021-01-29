@@ -36,7 +36,7 @@ ms.locfileid: "11230756"
 
 По умолчанию DevTools записи все **** сетевые запросы в области сети, если DevTools открыт.  
 
-:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Панель "Сеть"" lightbox="../media/network-network-panel.msft.png":::
+:::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Панель Сеть" lightbox="../media/network-network-panel.msft.png":::
    Панель **"Сеть"**  
 :::image-end:::  
 
@@ -51,7 +51,7 @@ ms.locfileid: "11230756"
 
 Choose **Clear** \( ![ Clear ][ImageClearIcon] \) on the **Network** panel to clear all requests from the Requests table.  
 
-:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Кнопка "Очистить"" lightbox="../media/network-network-clear-button.msft.png":::
+:::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Кнопка Очистить" lightbox="../media/network-network-clear-button.msft.png":::
    Кнопка **"Очистить"**  
 :::image-end:::  
 
@@ -114,7 +114,7 @@ Choose **Clear** \( ![ Clear ][ImageClearIcon] \) on the **Network** panel to cl
 
 Чтобы вручную очистить кэш браузера в любое время, откройте контекстное меню \(щелкните правой кнопкой мыши\) в любом месте таблицы "Запросы" и выберите "Очистить **кэш браузера".**  
 
-:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Выбор "Очистить кэш браузера"" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Выбор Очистить кэш браузера" lightbox="../media/network-network-clear-browser-cache.msft.png":::
    Выбор **"Очистить кэш браузера"**  
 :::image-end:::  
 
@@ -155,7 +155,7 @@ DevTools отображает значок предупреждения **** р�
 
 Чтобы вручную очистить файлы cookie браузера в любое время, наведите курсор в любом месте таблицы "Запросы", откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите "Очистить файлы **cookie браузера".**  
 
-:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Выбор "Очистить файлы cookie" в браузере" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Выбор Очистить файлы cookie в браузере" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
    Выбор **"Очистить файлы cookie" в браузере**  
 :::image-end:::  
 
@@ -453,7 +453,7 @@ Choose and drag left or right on the **Overview** pane to only display requests 
 
 Наведите курсор на загон таблицы "Запросы", откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите параметр, чтобы скрыть или показать его.  В настоящее время отображаются параметры с контрольными знаками рядом с каждым элементом.  
 
-:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Добавление столбца в таблицу "Запросы"" lightbox="../media/network-network-requests-add-column.msft.png":::
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Добавление столбца в таблицу Запросы" lightbox="../media/network-network-requests-add-column.msft.png":::
    Добавление столбца в таблицу "Запросы"  
 :::image-end:::  
 
@@ -461,7 +461,7 @@ Choose and drag left or right on the **Overview** pane to only display requests 
 
 Чтобы добавить настраиваемый столбец в таблицу "Запросы", наведите курсор на загон таблицы ****"Запросы", откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите "Заглавные столбцы".  >  ****  
 
-:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Добавление настраиваемного столбца в таблицу "Запросы"" lightbox="../media/network-network-requests-add-custom.msft.png":::
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Добавление настраиваемного столбца в таблицу Запросы" lightbox="../media/network-network-requests-add-custom.msft.png":::
    Добавление настраиваемного столбца в таблицу "Запросы"  
 :::image-end:::  
 
@@ -473,7 +473,7 @@ Choose and drag left or right on the **Overview** pane to only display requests 
 
 Чтобы просмотреть различные способы сортировки каскада, перейдите к этапу [сортировки по активности.](#sort-by-activity-phase)  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Столбец "Каскад" в области "Запросы"" lightbox="../media/network-network-requests-waterfall.msft.png":::
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Столбец Каскад в области Запросы" lightbox="../media/network-network-requests-waterfall.msft.png":::
    Столбец "Каскад" в **области "Запросы"**  
 :::image-end:::  
 
@@ -514,7 +514,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 Вкладка "Предварительный просмотр" в основном полезна для отображения изображений.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Вкладка "Предварительный просмотр"" lightbox="../media/network-network-resources-preview.msft.png":::
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Вкладка Предварительный просмотр" lightbox="../media/network-network-resources-preview.msft.png":::
    Вкладка **"Предварительный** просмотр"  
 :::image-end:::  
 
@@ -525,7 +525,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 1.  Выберите URL-адрес запроса в столбце **"Имя"** таблицы "Запросы".  
 1.  Выберите **вкладку "Ответ".**  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Вкладка "Ответ"" lightbox="../media/network-network-resources-response.msft.png":::
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Вкладка Ответ" lightbox="../media/network-network-resources-response.msft.png":::
    Вкладка **"Ответ"**  
 :::image-end:::  
 
@@ -536,7 +536,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 1.  Выберите URL-адрес запроса в столбце **"Имя"** таблицы "Запросы".  
 1.  Выберите **вкладку "Headers".**  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Вкладка "Заглавные"" lightbox="../media/network-resources-headers.msft.png":::
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Вкладка Заглавные" lightbox="../media/network-resources-headers.msft.png":::
    Вкладка **"Заглавные"**  
 :::image-end:::  
 
@@ -554,7 +554,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 1.  Откройте **вкладку "Заглавные"** для интересующих вас запросов.  Для получения дополнительных сведений перейдите к [отображаемой http-загона.](#display-http-headers)  
 1.  Перейдите в **раздел "Параметры строки запроса".**  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Раздел "Параметры строки запроса"" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Раздел Параметры строки запроса" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
    Раздел **"Параметры строки запроса"**  
 :::image-end:::  
 
@@ -584,7 +584,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Вкладка "Файлы cookie"" lightbox="../media/network-network-resources-cookies.msft.png":::
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Вкладка Файлы cookie" lightbox="../media/network-network-resources-cookies.msft.png":::
    Вкладка "Файлы cookie"  
 :::image-end:::  
 
@@ -599,7 +599,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 Дополнительные сведения о каждом из этапов, которые могут отображаться на вкладке "Синхронизация", можно найти в разных этапах разбивки по [времени.](#timing-breakdown-phases-explained) ****  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Вкладка "Время"" lightbox="../media/network-network-resources-timing.msft.png":::
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Вкладка Время" lightbox="../media/network-network-resources-timing.msft.png":::
    Вкладка **"Время"**  
 :::image-end:::  
 
@@ -736,7 +736,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 DevTools отображает время событий и событий в нескольких `DOMContentLoaded` `load` местах на панели **"Сеть".**  Событие `DOMContentLoaded` имеет синий цвет, а событие — `load` красный.  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Расположения doMContentLoaded и события загрузки на панели "Сеть"" lightbox="../media/network-network-requests-load-events.msft.png":::
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Расположения doMContentLoaded и события загрузки на панели Сеть" lightbox="../media/network-network-requests-load-events.msft.png":::
    Расположение событий и `DOMContentLoaded` событий `load` на панели **"Сеть"**  
 :::image-end:::  
 
@@ -888,7 +888,7 @@ init();
 :::row-end:::  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Выбор ответа "Копировать"" lightbox="../media/network-network-requests-copy-response.msft.png":::
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Выбор ответа Копировать" lightbox="../media/network-network-requests-copy-response.msft.png":::
    Выбор **ответа "Копировать"**  
 :::image-end:::  
 
@@ -931,7 +931,7 @@ init();
 По умолчанию DevTools показывает области **фильтров.**  
 Выберите **filter** \( ![ Filter ][ImageFilterIcon] \), чтобы скрыть его.  
 
-:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Кнопка "Скрыть фильтры"" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+:::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Кнопка Скрыть фильтры" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Кнопка "Скрыть фильтры"  
 :::image-end:::  
 
@@ -939,7 +939,7 @@ init();
 
 Используйте большие строки, если вам нужно большее пространство в таблице сетевых запросов.  Некоторые столбцы также предоставляют дополнительные сведения при использовании больших строк.  Например, нижним значением столбца **Size** является несмещается размер запроса.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Пример больших строк запросов в области "Запросы"" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Пример больших строк запросов в области Запросы" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
    Пример больших строк запросов в **** области "Запросы"  
 :::image-end:::  
 
