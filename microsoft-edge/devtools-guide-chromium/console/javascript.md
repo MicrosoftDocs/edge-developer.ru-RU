@@ -49,7 +49,7 @@ ms.locfileid: "11231092"
     
     *   [Пример кода Javascript консоли][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Страница "Пример кода javaScript консоли" слева и DevTools справа" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Страница Пример кода javaScript консоли слева и DevTools справа" lightbox="../media/console-javascript-example-console-empty.msft.png":::
        Страница "Пример кода javaScript консоли" слева и DevTools справа  
     :::image-end:::  
     
