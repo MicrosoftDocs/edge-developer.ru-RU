@@ -55,7 +55,7 @@ ms.locfileid: "11230665"
        :::column span="":::
           Кроме того, выберите **пункт "Проблемы"** в меню **"Дополнительные средства".**  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство Проблемы в меню "Дополнительные средства"" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Средство Проблемы в меню Дополнительные средства" lightbox="../media//issues-more-tools-menu.msft.png":::
              **Средство "Проблемы"** в **меню "Дополнительные средства"**  
           :::image-end:::  
        :::column-end:::
