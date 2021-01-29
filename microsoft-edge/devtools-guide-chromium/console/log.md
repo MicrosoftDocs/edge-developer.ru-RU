@@ -267,7 +267,7 @@ ms.locfileid: "11231113"
 1.  Выберите **вкладку "Элементы".**  
 1.  Выберите `Escape` .  Откроется вкладка "Консоль" **в drawer.** ****  Он содержит все функции панели консоли, которые вы использовали в этом руководстве.  
     
-    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="Вкладка "Консоль" в "Ящике"" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
+    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="Вкладка Консоль в Ящике" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
          Вкладка **"Консоль"** в **"Ящике"**  
     :::image-end:::  
     
