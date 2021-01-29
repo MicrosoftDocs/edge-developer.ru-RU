@@ -75,7 +75,7 @@ ms.locfileid: "11230959"
 
 1.  Откройте средство **"Источники"** на вкладке **"Источники".**  Обычно **по** умолчанию открывается страница.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Средство "Источники" с открытой в левой области страницы" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Средство Источники с открытой в левой области страницы" lightbox="../media/javascript-sources-page-pane.msft.png":::
        Средство **"Источники"** с **открытой** в левой области страницы  
     :::image-end:::  
     
@@ -87,7 +87,7 @@ ms.locfileid: "11230959"
 1.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) или `Command` + `Shift` + `P` \(macOS\), чтобы открыть меню команд.  
 1.  `Snippets`Введите, **выберите "Показать фрагменты кода"** и выберите `Enter` команду.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Команда "Показать фрагменты кода"" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Команда Показать фрагменты кода" lightbox="../media/javascript-search-show-snippets.msft.png":::
        Команда **"Показать фрагменты кода"**  
     :::image-end:::  
     
