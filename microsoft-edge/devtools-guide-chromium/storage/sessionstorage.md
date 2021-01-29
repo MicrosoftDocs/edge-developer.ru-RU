@@ -48,7 +48,7 @@ ms.locfileid: "11231197"
     
 1.  Выберите домен для просмотра пар "ключ-значение".  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Пары "ключ-значение" sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Пары ключ-значение sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
        Пары `sessionStorage` "ключ-значение"  
     :::image-end:::  
     
@@ -63,7 +63,7 @@ ms.locfileid: "11231197"
 1.  [Просмотр пар "ключ-значение" sessionStorage домена.](#view-sessionstorage-keys-and-values)  
 1.  Дважды щелкните пустую часть таблицы.  DevTools создает новую строку и фокусирует курсор в **столбце "Ключ".**  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Пустая часть таблицы, которая дважды щелкает, чтобы создать новую пару "ключ-значение"." lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Пустая часть таблицы, которая дважды щелкает, чтобы создать новую пару ключ-значение." lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
        Пустая часть таблицы, которая дважды щелкает, чтобы создать новую пару "ключ-значение".  
     :::image-end:::  
     
