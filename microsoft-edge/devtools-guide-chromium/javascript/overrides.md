@@ -71,7 +71,7 @@ ms.locfileid: "11230966"
    В **редакторе источников** добавьте имя файла для переопределения  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="В контекстное меню выберите "Сохранить для переопределеения"" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="В контекстное меню выберите Сохранить для переопределеения" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    В контекстное меню выберите **"Сохранить для переопределеения"**  
 :::image-end:::  
 
@@ -102,14 +102,14 @@ ms.locfileid: "11230966"
    :::column span="":::
       В **средстве "Источники"** в разделе "Страница" наведите курсор на любой файл, откройте контекстное меню \(щелкните правой кнопкой мыши\) и добавьте его в переопределения. ****  Опять же, файлы, которые уже находятся в папке переопределения, имеют сиреневую точку на значке.  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Выбор файла в средстве "Источники" для переопределения" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Выбор файла в средстве Источники для переопределения" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Выбор файла в средстве **"Источники"** для переопределения  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Кроме того, в средстве **"Сеть"** наведите курсор на любой файл, откройте контекстное меню \(щелкните правой кнопкой мыши\) и добавьте его в переопределения.  Если переопределения имеются, файлы, расположенные на компьютере, а не с веб-страницы.  Когда переопределения вступили в силу, в средстве **"Сеть"** найдите значок предупреждения рядом с именем файла.  
       
-      :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Выбор файла в средстве "Сеть" для переопределения" lightbox="../media/javascript-overrides-network.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Выбор файла в средстве Сеть для переопределения" lightbox="../media/javascript-overrides-network.msft.png":::
          Выбор файла в средстве **"Сеть"** для переопределения  
       :::image-end:::  
    :::column-end:::
