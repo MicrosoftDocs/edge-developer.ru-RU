@@ -57,13 +57,13 @@ ms.locfileid: "11231106"
     
     1.  Откроется **панель элементов** DevTools.  `<li>Michelangelo</li>` выделен в дереве **DOM.**  
         
-        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Выделение узла "Майкланголо"" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Выделение узла Майкланголо" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
            Выделение `Michelangelo` узла  
         :::image-end:::  
         
         1.  Щелкните **значок "Проверить"** в левом верхнем углу ![ ][ImageInspectIcon] DevTools.  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Значок "Проверка"" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Значок Проверка" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Значок **"Проверка"**  
             :::image-end:::  
             
@@ -265,7 +265,7 @@ DevTools предоставляет несколько ярлыков для д�
     1.  Выберите `Control` + `V` \(Windows, Linux\) или `Command` + `V` \(macOS\) для вставки выражения в консоль.  
     1.  Выберите, `Enter` чтобы оценить выражение.
         
-        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Результат выражения "Путь копирования JS"" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Результат выражения Путь копирования JS" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
            Результат выражения **"Путь копирования JS"**  
         :::image-end:::  
         
