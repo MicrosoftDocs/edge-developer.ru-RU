@@ -110,13 +110,13 @@ ms.locfileid: "11231204"
 1.  [Просмотреть хранилище объектов IndexedDB.](#view-indexeddb-data)  
 1.  Выберите пару "ключ-значение", которую нужно удалить.  DevTools выделяет его, чтобы указать, что он выбран.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Выберите пару "ключ-значение", чтобы удалить ее" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Выберите пару ключ-значение, чтобы удалить ее" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
        Выберите пару "ключ-значение", чтобы удалить ее  
     :::image-end:::  
     
 1.  Нажмите `Delete` клавишу или выберите **delete Selected** \( ![ Delete Selected ][ImageDeleteIcon] \).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Как выглядит хранилище объектов после удаления пары "ключ-значение"" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Как выглядит хранилище объектов после удаления пары ключ-значение" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Как выглядит хранилище объектов после удаления пары "ключ-значение"  
     :::image-end:::  
     
@@ -135,7 +135,7 @@ ms.locfileid: "11231204"
 1.  [Просмотр базы данных IndexedDB,](#view-indexeddb-data) которую необходимо удалить.  
 1.  Choose **Delete database**.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Кнопка "Удалить базу данных"" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Кнопка Удалить базу данных" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
        Кнопка **"Удалить базу данных"**  
     :::image-end:::  
     
