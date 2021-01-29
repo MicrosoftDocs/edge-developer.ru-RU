@@ -39,7 +39,7 @@ ms.locfileid: "11238229"
 *   Наведите курсор на элемент, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Проверить".**  
 *   Выберите `Control` + `Shift` + `C` \(Windows, Linux\) или `Command` + `Option` + `C` \(macOS\).  Для получения дополнительных сведений перейдите в [Microsoft Edge DevTools сочетания клавиш][DevtoolsShortcutsIndex].  
 
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="Параметр "Проверить"" lightbox="../media/bing-right-click-inspect.msft.png":::
+:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="Параметр Проверить" lightbox="../media/bing-right-click-inspect.msft.png":::
    Параметр **"Проверить"**  
 :::image-end:::  
 
@@ -126,13 +126,13 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 1.  Выберите значок **"Параметры" и другие** параметры `...` \( \) > **"Параметры".**  
 1.  В **параметрах поиска введите** `Developer Tools` .  
     
-    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="Параметр "Открыть DevTools" при нажатии клавиши F12" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
+    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="Параметр Открыть DevTools при нажатии клавиши F12" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
        Параметр **"Открыть DevTools"** при нажатии клавиши F12  
     :::image-end:::  
     
 1.  Нажмите **кнопку "Открыть DevTools"** при нажатии клавиши F12, чтобы отключить параметр \(или on\).  Отключите параметр, чтобы не открывать DevTools с помощью сочетания `F12` клавиш.  
     
-    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="Параметр "Открыть DevTools" при нажатии клавиши F12 отключен" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
+    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="Параметр Открыть DevTools при нажатии клавиши F12 отключен" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
        Параметр **"Открыть DevTools"** при нажатии клавиши F12 отключен  
     :::image-end:::  
     
