@@ -210,7 +210,7 @@ In `popup.js` , the [tabs][MDNApiTabs] API allows you to interact with the tabs 
       <!--![Docs.microsoft.com header changed to Aliceblue][ImageColorChangerHeaderAliceblue]  -->
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.microsoft.com заголовка изменена на "lk"":::
+      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.microsoft.com заголовка изменена на lk":::
          Docs.microsoft.com заголовка изменена на "lk" :::image-end:::
       
       <!--![Docs.microsoft.com header changed to Cornsilk][ImageColorChangerHeaderCornsilk]  -->
