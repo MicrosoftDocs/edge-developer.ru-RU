@@ -42,13 +42,13 @@ ms.locfileid: "11230777"
 
 1.  Выберите `Control` + `P` \(Windows, Linux\) или `Command` + `P` \(macOS\).  Откроется **диалоговое окно** "Открыть файл".  
     
-    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Диалоговое окно "Открыть файл"" lightbox="../media/resources-command-menu-empty.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Диалоговое окно Открыть файл" lightbox="../media/resources-command-menu-empty.msft.png":::
        Диалоговое **окно "Открыть** файл"  
     :::image-end:::  
     
 1.  Выберите файл в выпадаемом окне или начните вводить имя файла и выберите его после выделения нужного файла в поле `Enter` автозаполнеия.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Введите имя файла в диалоговом окке "Открыть файл"" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Введите имя файла в диалоговом окке Открыть файл" lightbox="../media/resources-command-menu-file-search.msft.png":::
        Введите имя файла в диалоговом окке **"Открыть** файл"  
     :::image-end:::  
     
@@ -56,7 +56,7 @@ ms.locfileid: "11230777"
 
 Перейдите [к просмотру сведений о ресурсе.][DevtoolsNetworkInspectDetailsResource]  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Проверка ресурса на панели "Сеть"" lightbox="../media/resources-network-response.msft.png":::
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Проверка ресурса на панели Сеть" lightbox="../media/resources-network-response.msft.png":::
    Проверка ресурса на панели **"Сеть"**  
 :::image-end:::  
 
@@ -64,7 +64,7 @@ ms.locfileid: "11230777"
 
 В [разделе "Обзор](#browse-resources) ресурсов" ниже показано, как просматривать ресурсы из различных частей пользовательского интерфейса DevTools.  Если вы когда-либо хотите **** проверить ресурс на панели "Сеть", щелкните правой кнопкой мыши ресурс и выберите "Показать" **на панели "Сеть".**  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Показать на панели "Сеть"" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Показать на панели Сеть" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Показать на панели "Сеть"**  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ ms.locfileid: "11230777"
 1.  Откройте **страницу.**  Перейдите в ["Обзор по каталогу".](#browse-by-directory)  
 1.  Choose **More Options** and `...` disable Group By **Folder**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Параметр "Группировка по папке"" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Параметр Группировка по папке" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        Параметр **"Группировка по папке"**  
     :::image-end:::  
     
@@ -128,7 +128,7 @@ ms.locfileid: "11230777"
 
 1.  Перейдите на **вкладку "Приложение".**  Откроется **панель** "Приложение".  По умолчанию **сначала открывается** окно манифеста.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Панель "Приложение"" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Панель Приложение" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        Панель **"Приложение"**  
     :::image-end:::  
     
