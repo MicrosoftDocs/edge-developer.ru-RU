@@ -3,93 +3,94 @@ description: Руководство по началу работы с WebView2 �
 title: Начало работы с WebView2 для приложений WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, WebView2, WebView, WebView, приложения WPF, WPF, EDGE, CoreWebView2, управление браузером, пограничный HTML, Приступая к работе, начало работы, .NET
-ms.openlocfilehash: e928dae0aa63f15ca5fa21860c83fa5529e905df
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, элемент управления браузером, html edge, начало работы, начало работы, .NET
+ms.openlocfilehash: de67b8a2da8cda0339b5e8d0b96cf4c3df260ec6
+ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182376"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "11306147"
 ---
-# <span data-ttu-id="f1a71-104">Начало работы с WebView2 в WPF</span><span class="sxs-lookup"><span data-stu-id="f1a71-104">Getting started with WebView2 in WPF</span></span>
+# <span data-ttu-id="6eee3-104">Начало работы с WebView2 в WPF</span><span class="sxs-lookup"><span data-stu-id="6eee3-104">Getting started with WebView2 in WPF</span></span>
 
-<span data-ttu-id="f1a71-105">В этой статье приступите к созданию первого приложения WebView2 и Узнайте о основных возможностях [WebView2](../index.md).</span><span class="sxs-lookup"><span data-stu-id="f1a71-105">In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](../index.md).</span></span>  <span data-ttu-id="f1a71-106">Дополнительные сведения об отдельных API можно найти в [справочнике API](/dotnet/api/microsoft.web.webview2.wpf).</span><span class="sxs-lookup"><span data-stu-id="f1a71-106">For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf).</span></span>  
+<span data-ttu-id="6eee3-105">В этой статье вы узнаете, как создать свое первое приложение WebView2, а также основные функции [WebView2.][MicrosoftDeveloperMicrosoftEdgeWebview2]</span><span class="sxs-lookup"><span data-stu-id="6eee3-105">In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].</span></span>  <span data-ttu-id="6eee3-106">Дополнительные сведения об отдельных API можно найти в [справочнике по API.][DotnetApiMicrosoftWebWebview2Wpf]</span><span class="sxs-lookup"><span data-stu-id="6eee3-106">For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Wpf].</span></span>  
 
-## <span data-ttu-id="f1a71-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="f1a71-107">Prerequisites</span></span>  
+## <span data-ttu-id="6eee3-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="6eee3-107">Prerequisites</span></span>  
 
-<span data-ttu-id="f1a71-108">Прежде чем продолжить, убедитесь в том, что вы установили следующий список предварительных требований:</span><span class="sxs-lookup"><span data-stu-id="f1a71-108">Ensure you installed the following list of pre-requisites before proceeding:</span></span>  
+<span data-ttu-id="6eee3-108">Перед тем как при этом добиться этого, убедитесь, что вы установили следующий список необходимых условий.</span><span class="sxs-lookup"><span data-stu-id="6eee3-108">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
 
-* <span data-ttu-id="f1a71-109">[Среда выполнения WebView2][Webview2Installer] или любой [нестабильный канал Канарские Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com/download) , установленный в windows 10, Windows 8,1 или Windows 7.</span><span class="sxs-lookup"><span data-stu-id="f1a71-109">[WebView2 Runtime][Webview2Installer] or any [non-stable Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7.</span></span>  
-* <span data-ttu-id="f1a71-110">[Visual Studio](https://visualstudio.microsoft.com) 2017 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="f1a71-110">[Visual Studio](https://visualstudio.microsoft.com) 2017 or later.</span></span>  
+*   <span data-ttu-id="6eee3-109">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span><span class="sxs-lookup"><span data-stu-id="6eee3-109">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
+*   <span data-ttu-id="6eee3-110">[Visual Studio][MicrosoftVisualstudioMain] 2017 или более поздней.</span><span class="sxs-lookup"><span data-stu-id="6eee3-110">[Visual Studio][MicrosoftVisualstudioMain] 2017 or later.</span></span>  
+    
+## <span data-ttu-id="6eee3-111">Шаг 1. Создание одноокнего приложения</span><span class="sxs-lookup"><span data-stu-id="6eee3-111">Step 1 - Create a single-window app</span></span>  
 
-## <span data-ttu-id="f1a71-111">Шаг 1: создание одного оконного приложения</span><span class="sxs-lookup"><span data-stu-id="f1a71-111">Step 1 - Create a single window application</span></span>  
+<span data-ttu-id="6eee3-112">Начните с базового проекта настольного компьютера, который содержит одно главное окно.</span><span class="sxs-lookup"><span data-stu-id="6eee3-112">Start with a basic desktop project that contains a single main window.</span></span>  
 
-<span data-ttu-id="f1a71-112">Начните с базового классического проекта, содержащего одно главное окно.</span><span class="sxs-lookup"><span data-stu-id="f1a71-112">Start with a basic desktop project containing a single main window.</span></span>  
-
-1.  <span data-ttu-id="f1a71-113">Откройте **Visual Studio**.</span><span class="sxs-lookup"><span data-stu-id="f1a71-113">Open **Visual Studio**.</span></span>  
-1.  <span data-ttu-id="f1a71-114">Выберите приложение **WPF .NET Core App** или **WPF .NET Framework**и нажмите кнопку **Далее**.</span><span class="sxs-lookup"><span data-stu-id="f1a71-114">Select **WPF .NET Core App** or **WPF .NET Framework App**, and then select **Next**.</span></span>  
+1.  <span data-ttu-id="6eee3-113">В Visual Studio выберите **WPF .NET Core App** \(или **WPF .NET Framework App**\) > **Далее.**</span><span class="sxs-lookup"><span data-stu-id="6eee3-113">In Visual Studio, choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.</span></span>  
     
     :::row:::
        :::column span="1":::
-          :::image type="complex" source="./media/wpf-gettingstarted-wpfcore.png" alt-text="Ядро WPF":::
-             <span data-ttu-id="f1a71-116">Ядро WPF</span><span class="sxs-lookup"><span data-stu-id="f1a71-116">WPF core</span></span> :::image-end:::
+          :::image type="complex" source="./media/wpf-gettingstarted-wpfcore.png" alt-text="WPF core":::
+             <span data-ttu-id="6eee3-115">WPF core</span><span class="sxs-lookup"><span data-stu-id="6eee3-115">WPF core</span></span> :::image-end:::
        :::column-end:::
        :::column span="1":::
-          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="Платформа WPF":::
-             <span data-ttu-id="f1a71-118">Платформа WPF</span><span class="sxs-lookup"><span data-stu-id="f1a71-118">WPF Framework</span></span> :::image-end:::
+          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="WPF Framework":::
+             <span data-ttu-id="6eee3-117">WPF Framework</span><span class="sxs-lookup"><span data-stu-id="6eee3-117">WPF Framework</span></span> :::image-end:::
        :::column-end:::
     :::row-end:::
     
-1.  <span data-ttu-id="f1a71-119">Введите значения для **имени проекта** и его **местоположения**.</span><span class="sxs-lookup"><span data-stu-id="f1a71-119">Enter values for **Project name** and **Location**.</span></span>  <span data-ttu-id="f1a71-120">Выберите .NET Framework 4.6.2 или более поздней версии или .NET Core 3,0 или более поздней версии.</span><span class="sxs-lookup"><span data-stu-id="f1a71-120">Select .NET Framework 4.6.2 or later, or .NET Core 3.0 or later.</span></span>  
+1.  <span data-ttu-id="6eee3-118">Введите значения для **имени и расположения** **проекта.**</span><span class="sxs-lookup"><span data-stu-id="6eee3-118">Enter values for **Project name** and **Location**.</span></span>  <span data-ttu-id="6eee3-119">Выберите **.NET Framework 4.6.2 или более** поздней \(или **.NET Core 3.0 или** более поздней\).</span><span class="sxs-lookup"><span data-stu-id="6eee3-119">Choose **.NET Framework 4.6.2** or later \(or **.NET Core 3.0** or later\).</span></span>  
     
     :::row:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Создание основы":::
-                 <span data-ttu-id="f1a71-122">Создание основы</span><span class="sxs-lookup"><span data-stu-id="f1a71-122">Create core</span></span> :::image-end:::
+              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Создание ядра":::
+                 <span data-ttu-id="6eee3-121">Создание ядра</span><span class="sxs-lookup"><span data-stu-id="6eee3-121">Create core</span></span> :::image-end:::
            :::column-end:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Создание платформы":::
-                 <span data-ttu-id="f1a71-124">Создание платформы</span><span class="sxs-lookup"><span data-stu-id="f1a71-124">Create Framework</span></span> :::image-end:::
+              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Create Framework":::
+                 <span data-ttu-id="6eee3-123">Create Framework</span><span class="sxs-lookup"><span data-stu-id="6eee3-123">Create Framework</span></span> :::image-end:::
            :::column-end:::
         :::row-end:::
     
-1.  <span data-ttu-id="f1a71-125">Нажмите кнопку **создать** , чтобы создать проект.</span><span class="sxs-lookup"><span data-stu-id="f1a71-125">Select **Create** to create your project.</span></span>  
+1.  <span data-ttu-id="6eee3-124">Чтобы создать проект, выберите **"Создать".**</span><span class="sxs-lookup"><span data-stu-id="6eee3-124">To create your project, choose **Create**.</span></span>  
     
-## <span data-ttu-id="f1a71-126">Шаг 2. Установка WebView2 SDK</span><span class="sxs-lookup"><span data-stu-id="f1a71-126">Step 2 - Install WebView2 SDK</span></span>  
+## <span data-ttu-id="6eee3-125">Шаг 2. Установка SDK WebView2</span><span class="sxs-lookup"><span data-stu-id="6eee3-125">Step 2 - Install WebView2 SDK</span></span>  
 
-<span data-ttu-id="f1a71-127">Затем добавьте пакет SDK WebView2 в проект с помощью NuGet.</span><span class="sxs-lookup"><span data-stu-id="f1a71-127">Next add the WebView2 SDK to the project using NuGet.</span></span>  
+<span data-ttu-id="6eee3-126">Добавьте в проект SDK WebView2 с помощью NuGet.</span><span class="sxs-lookup"><span data-stu-id="6eee3-126">Use NuGet to add the WebView2 SDK to the project.</span></span>  
 
-1.  <span data-ttu-id="f1a71-128">Откройте контекстное меню проекта \ (щелкните правой кнопкой мыши \) и выберите пункт **Управление пакетами NuGet..**..</span><span class="sxs-lookup"><span data-stu-id="f1a71-128">Open the context menu on the project \(right-click\), and select **Manage NuGet Packages...**.</span></span>  
+1.  <span data-ttu-id="6eee3-127">Наведите курсор на проектив, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите пункт "Управление пакетами **NuGet"...**</span><span class="sxs-lookup"><span data-stu-id="6eee3-127">Hover on the projecty, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.</span></span>  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
-       <span data-ttu-id="f1a71-130">NuGet</span><span class="sxs-lookup"><span data-stu-id="f1a71-130">NuGet</span></span>
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Управление пакетами NuGet":::
+       <span data-ttu-id="6eee3-129">Управление пакетами NuGet</span><span class="sxs-lookup"><span data-stu-id="6eee3-129">Manage NuGet packages</span></span>
     :::image-end:::
     
-1.  <span data-ttu-id="f1a71-131">Введите `Microsoft.Web.WebView2` строку поиска.</span><span class="sxs-lookup"><span data-stu-id="f1a71-131">Enter `Microsoft.Web.WebView2` in the search bar.</span></span>  <span data-ttu-id="f1a71-132">Выберите **Microsoft. Web. WebView2** из результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="f1a71-132">Select **Microsoft.Web.WebView2** from the search results.</span></span>  
+1.  <span data-ttu-id="6eee3-130">В панели поиска введите > `Microsoft.Web.WebView2` **Microsoft.Web.WebView2.**</span><span class="sxs-lookup"><span data-stu-id="6eee3-130">In the search bar, type `Microsoft.Web.WebView2` > choose **Microsoft.Web.WebView2**.</span></span>  
    
-     ![NuGet](./media/installnuget.PNG)
+    :::image type="complex" source="./media/installnuget.png" alt-text="NuGet" lightbox="./media/installnuget.png":::
+       <span data-ttu-id="6eee3-132">NuGet</span><span class="sxs-lookup"><span data-stu-id="6eee3-132">NuGet</span></span>  
+    :::image-end:::
     
-    <span data-ttu-id="f1a71-134">Все готово для начала разработки приложений с помощью API WebView2.</span><span class="sxs-lookup"><span data-stu-id="f1a71-134">You're all set to start developing applications using the WebView2 API.</span></span>  <span data-ttu-id="f1a71-135">Выберите `F5` для сборки и запуска проекта.</span><span class="sxs-lookup"><span data-stu-id="f1a71-135">Select `F5` to build and run the project.</span></span>  <span data-ttu-id="f1a71-136">Запущенный проект отобразит пустое окно.</span><span class="sxs-lookup"><span data-stu-id="f1a71-136">The running project displays an empty window.</span></span>  
+    <span data-ttu-id="6eee3-133">Вы готовы приступить к разработке приложений с помощью API WebView2.</span><span class="sxs-lookup"><span data-stu-id="6eee3-133">Ready to start developing apps using the WebView2 API.</span></span>  <span data-ttu-id="6eee3-134">Чтобы построить и запустить проект, выберите `F5` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-134">To build and run the project, select `F5`.</span></span>  <span data-ttu-id="6eee3-135">Запущенный проект отображает пустое окно.</span><span class="sxs-lookup"><span data-stu-id="6eee3-135">The running project displays an empty window.</span></span>  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Пустое приложение":::
-       <span data-ttu-id="f1a71-138">Пустое приложение</span><span class="sxs-lookup"><span data-stu-id="f1a71-138">Empty app</span></span>
+       <span data-ttu-id="6eee3-137">Пустое приложение</span><span class="sxs-lookup"><span data-stu-id="6eee3-137">Empty app</span></span>
     :::image-end:::  
     
-## <span data-ttu-id="f1a71-139">Шаг 3: создание отдельного WebView в файле MainWindow. XAML</span><span class="sxs-lookup"><span data-stu-id="f1a71-139">Step 3 - Create a single WebView in MainWindow.xaml</span></span>  
+## <span data-ttu-id="6eee3-138">Шаг 3. Создание одного веб-view в MainWindow.xaml</span><span class="sxs-lookup"><span data-stu-id="6eee3-138">Step 3 - Create a single WebView in MainWindow.xaml</span></span>  
 
-<span data-ttu-id="f1a71-140">Далее добавьте WebView в приложение.</span><span class="sxs-lookup"><span data-stu-id="f1a71-140">Next add a WebView to your application.</span></span>  
+<span data-ttu-id="6eee3-139">Затем добавьте WebView в приложение.</span><span class="sxs-lookup"><span data-stu-id="6eee3-139">Next add a WebView to your app.</span></span>  
 
-1.  <span data-ttu-id="f1a71-141">Open (открыть) `MainWindow.xaml` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-141">Open `MainWindow.xaml`.</span></span>  <span data-ttu-id="f1a71-142">Добавьте пространство имен XAML WebView2 с помощью вставки в тег следующей строки `<Window/>` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-142">Add the WebView2 XAML namespace by inserting the following line inside the `<Window/>` tag.</span></span>  
+1.  <span data-ttu-id="6eee3-140">Чтобы добавить `MainWindow.xaml` пространство имен XAML WebView2 в файл, вставьте следующую строку в `<Window/>` тег.</span><span class="sxs-lookup"><span data-stu-id="6eee3-140">In the `MainWindow.xaml` file, to add the WebView2 XAML namespace, insert the following line inside the `<Window/>` tag.</span></span>  
     
     ```xml
     xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
     ```  
     
-    <span data-ttu-id="f1a71-143">Убедитесь, что код `MainWindow.xaml` выглядит так, как показано в следующем фрагменте кода.</span><span class="sxs-lookup"><span data-stu-id="f1a71-143">Confirm that the code in `MainWindow.xaml` looks like the following code snippet.</span></span>  
+    <span data-ttu-id="6eee3-141">Убедитесь, что код `MainWindow.xaml` в коде выглядит следующим фрагментом кода.</span><span class="sxs-lookup"><span data-stu-id="6eee3-141">Ensure the code in `MainWindow.xaml` looks like the following code snippet.</span></span>  
     
     ```xml
     <Window x:Class="WPF_Getting_Started.MainWindow"
@@ -110,7 +111,7 @@ ms.locfileid: "11182376"
     </Window>
     ```  
     
-1.  <span data-ttu-id="f1a71-144">Добавьте элемент управления WebView2, заменив `<Grid>` теги, с помощью следующего фрагмента кода.</span><span class="sxs-lookup"><span data-stu-id="f1a71-144">Add the WebView2 control by replacing the `<Grid>` tags, with the following code snippet.</span></span>  <span data-ttu-id="f1a71-145">`Source`Свойство задает начальный URI, отображаемый в элементе управления WebView2.</span><span class="sxs-lookup"><span data-stu-id="f1a71-145">The `Source` property sets the initial URI displayed in the WebView2 control.</span></span>  
+1.  <span data-ttu-id="6eee3-142">Чтобы добавить управление WebView2, замените теги на `<Grid>` следующий фрагмент кода.</span><span class="sxs-lookup"><span data-stu-id="6eee3-142">To add the WebView2 control, replace the `<Grid>` tags with the following code snippet.</span></span>  <span data-ttu-id="6eee3-143">Свойство `Source` задает исходный URI, отображаемой в веб-2-объекте управления.</span><span class="sxs-lookup"><span data-stu-id="6eee3-143">The `Source` property sets the initial URI displayed in the WebView2 control.</span></span>  
     
     ```xml  
     <DockPanel>
@@ -120,17 +121,17 @@ ms.locfileid: "11182376"
     </DockPanel>
     ```  
     
-1.  <span data-ttu-id="f1a71-146">Нажмите `F5` , чтобы создать и запустить проект.</span><span class="sxs-lookup"><span data-stu-id="f1a71-146">Press `F5` to build and run your project.</span></span>  <span data-ttu-id="f1a71-147">Убедитесь, что ваш элемент управления WebView2 отображается [https://www.microsoft.com](https://www.microsoft.com) .</span><span class="sxs-lookup"><span data-stu-id="f1a71-147">Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).</span></span>  
+1.  <span data-ttu-id="6eee3-144">Чтобы выполнить сборку и запустить проект, выберите "Убедитесь, что ваш control `F5`  WebView2 [https://www.microsoft.com][|::ref1::|Main] отображается".</span><span class="sxs-lookup"><span data-stu-id="6eee3-144">To build and run the project, select `F5`  Ensure your WebView2 control displays [https://www.microsoft.com][|::ref1::|Main].</span></span>  
     
     :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
-       <span data-ttu-id="f1a71-149">Microsoft.com</span><span class="sxs-lookup"><span data-stu-id="f1a71-149">Microsoft.com</span></span>
+       <span data-ttu-id="6eee3-146">Microsoft.com</span><span class="sxs-lookup"><span data-stu-id="6eee3-146">Microsoft.com</span></span>
     :::image-end:::  
     
-## <span data-ttu-id="f1a71-150">Шаг 4 — Навигация</span><span class="sxs-lookup"><span data-stu-id="f1a71-150">Step 4 - Navigation</span></span>  
+## <span data-ttu-id="6eee3-147">Шаг 4. Навигация</span><span class="sxs-lookup"><span data-stu-id="6eee3-147">Step 4 - Navigation</span></span>  
 
-<span data-ttu-id="f1a71-151">Добавьте в приложение адресную строку, чтобы пользователи могли изменить URL-адрес, который отображается в элементе управления WebView2.</span><span class="sxs-lookup"><span data-stu-id="f1a71-151">Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.</span></span>
+<span data-ttu-id="6eee3-148">Добавьте возможность разрешить пользователям изменять URL-адрес, отображаемый в веб-функции Управления WebView2, добавив адресную стойку в приложение.</span><span class="sxs-lookup"><span data-stu-id="6eee3-148">Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.</span></span>
 
-1.  <span data-ttu-id="f1a71-152">В файле **MainWindow. XAML**Добавьте адресную строку, скопировав и вставив следующий фрагмент кода в DockPanel, который включает WebView.</span><span class="sxs-lookup"><span data-stu-id="f1a71-152">In **MainWindow.xaml**, add an address bar by copying and pasting the following code snippet inside the DockPanel that contains the WebView.</span></span>  
+1.  <span data-ttu-id="6eee3-149">В файле добавьте адресную планку, скопируя и впавив в него следующий фрагмент `MainWindow.xaml` `<DockPanel>` кода.</span><span class="sxs-lookup"><span data-stu-id="6eee3-149">In the `MainWindow.xaml` file, add an address bar by copying and pasting the following code snippet inside the `<DockPanel>` that contains the WebView.</span></span>  
     
     ```xml
     <DockPanel DockPanel.Dock="Top">
@@ -143,7 +144,7 @@ ms.locfileid: "11182376"
     </DockPanel>
     ```  
     
-    <span data-ttu-id="f1a71-153">Убедитесь, что `DockPanel` раздел `MainWindow.xaml` выглядит так, как показано в следующем фрагменте кода.</span><span class="sxs-lookup"><span data-stu-id="f1a71-153">Confirm that the `DockPanel` section of `MainWindow.xaml` looks like the following code snippet.</span></span>  
+    <span data-ttu-id="6eee3-150">`<DockPanel>`Убедитесь, что раздел файла соответствует `MainWindow.xaml` следующему фрагменту кода.</span><span class="sxs-lookup"><span data-stu-id="6eee3-150">Ensure the `<DockPanel>` section of the `MainWindow.xaml` file matches the following code snippet.</span></span>  
     
     ```xml
     <DockPanel>
@@ -157,13 +158,13 @@ ms.locfileid: "11182376"
     </DockPanel>
     ```  
     
-1.  <span data-ttu-id="f1a71-154">Откройте `MainWindow.xaml.cs` в Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="f1a71-154">Open `MainWindow.xaml.cs` in Visual Studio.</span></span>  <span data-ttu-id="f1a71-155">Добавьте `CoreWebView2` пространство имен, вставив следующий фрагмент кода вверху `MainWindow.xaml.cs` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-155">Add the `CoreWebView2` namespace by inserting the following code snippet at the top of `MainWindow.xaml.cs`.</span></span>  
+1.  <span data-ttu-id="6eee3-151">В Visual Studio файле, чтобы добавить пространство имен, вставьте следующий фрагмент кода `MainWindow.xaml.cs` `CoreWebView2` вверху.</span><span class="sxs-lookup"><span data-stu-id="6eee3-151">In Visual Studio, in the `MainWindow.xaml.cs` file, to add the `CoreWebView2` namespace, insert the following code snippet at the top.</span></span>  
     
     ```csharp
     using Microsoft.Web.WebView2.Core;
     ```
     
-1.  <span data-ttu-id="f1a71-156">В **MainWindow.XAML.CS**Скопируйте приведенный ниже фрагмент кода, чтобы создать `ButtonGo_Click` метод, который будет перемещаться по WebView на URL-адрес, введенный в адресной строке.</span><span class="sxs-lookup"><span data-stu-id="f1a71-156">In **MainWindow.xaml.cs**, copy the following code snippet to create the `ButtonGo_Click` method, which navigates the WebView to the URL entered in the address bar.</span></span>  
+1.  <span data-ttu-id="6eee3-152">Скопируйте в файл следующий фрагмент кода, чтобы создать метод, который переходит в WebView по URL-адресу, `MainWindow.xaml.cs` `ButtonGo_Click` введенного в адресной панели.</span><span class="sxs-lookup"><span data-stu-id="6eee3-152">In the `MainWindow.xaml.cs`file, copy the following code snippet to create the `ButtonGo_Click` method, which navigates the WebView to the URL entered in the address bar.</span></span>  
     
     ```csharp
     private void ButtonGo_Click(object sender, RoutedEventArgs e)
@@ -175,18 +176,18 @@ ms.locfileid: "11182376"
     }
     ```  
     
-    <span data-ttu-id="f1a71-157">Нажмите `F5` , чтобы создать и запустить проект.</span><span class="sxs-lookup"><span data-stu-id="f1a71-157">Press `F5` to build and run your project.</span></span>  <span data-ttu-id="f1a71-158">Введите новый URL-адрес в адресной строке и нажмите кнопку **Перейти**.</span><span class="sxs-lookup"><span data-stu-id="f1a71-158">Enter a new URL in the address bar, and select **Go**.</span></span>  <span data-ttu-id="f1a71-159">Например, введите `https://www.bing.com` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-159">For example, enter `https://www.bing.com`.</span></span>  <span data-ttu-id="f1a71-160">Убедитесь, что элемент управления WebView2 переходит по URL-адресу.</span><span class="sxs-lookup"><span data-stu-id="f1a71-160">Confirm that the WebView2 control navigates to the URL.</span></span>  
+    <span data-ttu-id="6eee3-153">Чтобы построить и запустить проект, выберите `F5` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-153">To build and run the project, select `F5`.</span></span>  <span data-ttu-id="6eee3-154">Введите новый URL-адрес в адресной панели и выберите **"Перейти".**</span><span class="sxs-lookup"><span data-stu-id="6eee3-154">Type a new URL in the address bar and choose **Go**.</span></span>  <span data-ttu-id="6eee3-155">Например, введите `https://www.bing.com`.</span><span class="sxs-lookup"><span data-stu-id="6eee3-155">For example, type `https://www.bing.com`.</span></span>  <span data-ttu-id="6eee3-156">Убедитесь, что с помощью управления WebView2 можно перейти по URL-адресу.</span><span class="sxs-lookup"><span data-stu-id="6eee3-156">Ensure the WebView2 control navigates to the URL.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="f1a71-161">Убедитесь в том, что в адресной строке введен полный URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="f1a71-161">Make sure a complete URL is entered in the address bar.</span></span>  <span data-ttu-id="f1a71-162">`ArgumentException`Если URL-адрес не начинается с "или", создается исключение "a" `http://` `https://` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-162">An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`.</span></span>  
+    > <span data-ttu-id="6eee3-157">Убедитесь, что в адресной панели введен полный URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="6eee3-157">Make sure a complete URL is entered in the address bar.</span></span>  <span data-ttu-id="6eee3-158">Если URL-адрес не начинается с или . `ArgumentException` `http://` `https://`</span><span class="sxs-lookup"><span data-stu-id="6eee3-158">An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`.</span></span>  
     
     :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
-       <span data-ttu-id="f1a71-164">Bing</span><span class="sxs-lookup"><span data-stu-id="f1a71-164">Bing</span></span>
+       <span data-ttu-id="6eee3-160">bing.com</span><span class="sxs-lookup"><span data-stu-id="6eee3-160">bing.com</span></span>
     :::image-end:::
     
-## <span data-ttu-id="f1a71-165">Шаг 5 — события навигации</span><span class="sxs-lookup"><span data-stu-id="f1a71-165">Step 5 - Navigation events</span></span>  
+## <span data-ttu-id="6eee3-161">Шаг 5. События навигации</span><span class="sxs-lookup"><span data-stu-id="6eee3-161">Step 5 - Navigation events</span></span>  
 
-<span data-ttu-id="f1a71-166">Во время навигации по веб-странице элемент управления WebView2 создает события.</span><span class="sxs-lookup"><span data-stu-id="f1a71-166">During webpage navigation, the WebView2 control raises events.</span></span> <span data-ttu-id="f1a71-167">Приложение, содержащее элементы управления WebView2, прослушивает следующие события.</span><span class="sxs-lookup"><span data-stu-id="f1a71-167">The application that hosts WebView2 controls listens for the following events.</span></span>  
+<span data-ttu-id="6eee3-162">Во время навигации на веб-странице с помощью управления WebView2 вызываются события.</span><span class="sxs-lookup"><span data-stu-id="6eee3-162">During webpage navigation, the WebView2 control raises events.</span></span>  <span data-ttu-id="6eee3-163">Приложение, в котором размещены элементы управления WebView2, прослушивает следующие события.</span><span class="sxs-lookup"><span data-stu-id="6eee3-163">The app that hosts WebView2 controls listens for the following events.</span></span>  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -194,23 +195,24 @@ ms.locfileid: "11182376"
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-<span data-ttu-id="f1a71-168">Дополнительные сведения можно найти в разделе [события навигации](../concepts/navigation-events.md).</span><span class="sxs-lookup"><span data-stu-id="f1a71-168">For more information, see [Navigation Events](../concepts/navigation-events.md).</span></span>  
+<span data-ttu-id="6eee3-164">Дополнительные сведения можно найти в [меню "События навигации".][Webview2ConceptsNavigationEvents]</span><span class="sxs-lookup"><span data-stu-id="6eee3-164">For more information, navigate to [Navigation Events][Webview2ConceptsNavigationEvents].</span></span>  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="События навигации":::
-   <span data-ttu-id="f1a71-170">События навигации</span><span class="sxs-lookup"><span data-stu-id="f1a71-170">Navigation events</span></span>
+   <span data-ttu-id="6eee3-166">События навигации</span><span class="sxs-lookup"><span data-stu-id="6eee3-166">Navigation events</span></span>
 :::image-end:::  
 
-<span data-ttu-id="f1a71-171">При возникновении ошибки возникают следующие события, которые могут зависеть от навигации на страницу ошибки.</span><span class="sxs-lookup"><span data-stu-id="f1a71-171">When an error occurs, the following events are raised and may depend on navigation to an error page.</span></span>  
+<span data-ttu-id="6eee3-167">При ошибке возникают следующие события, которые могут зависеть от навигации на веб-страницу ошибки.</span><span class="sxs-lookup"><span data-stu-id="6eee3-167">When an error occurs, the following events are raised and may depend on navigation to an error webpage.</span></span>  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
 
-<span data-ttu-id="f1a71-172">При перенаправлении HTTP есть несколько `NavigationStarting` событий.</span><span class="sxs-lookup"><span data-stu-id="f1a71-172">When there's an HTTP redirect, there are multiple `NavigationStarting` events.</span></span>  
+> [!NOTE]
+> <span data-ttu-id="6eee3-168">Если происходит перенаправление HTTP, строка имеет `NavigationStarting` несколько событий.</span><span class="sxs-lookup"><span data-stu-id="6eee3-168">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.</span></span>  
 
-<span data-ttu-id="f1a71-173">Чтобы продемонстрировать использование этих событий, начните с регистрации обработчика для `NavigationStarting` этого отменяет все запросы, не ИСПОЛЬЗУЮЩИЕ HTTPS.</span><span class="sxs-lookup"><span data-stu-id="f1a71-173">To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that don't use HTTPS.</span></span>  
+<span data-ttu-id="6eee3-169">Чтобы продемонстрировать, как использовать события, зарегистрируйте обработок, который отменяет все запросы, не `NavigationStarting` относя такие как HTTPS.</span><span class="sxs-lookup"><span data-stu-id="6eee3-169">To demonstrate how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests.</span></span>  
 
-<span data-ttu-id="f1a71-174">`MainWindow.xaml.cs`Измените конструктор, как показано ниже, и добавьте `EnsureHttps` функцию.</span><span class="sxs-lookup"><span data-stu-id="f1a71-174">In `MainWindow.xaml.cs`, modify the constructor as shown below and add the `EnsureHttps` function.</span></span>  
+<span data-ttu-id="6eee3-170">В файле измените конструктор в соответствии со следующим фрагментом кода и `MainWindow.xaml.cs` добавьте `EnsureHttps` функцию.</span><span class="sxs-lookup"><span data-stu-id="6eee3-170">In the `MainWindow.xaml.cs` file, modify the constructor to match the following code snippet and add the `EnsureHttps` function.</span></span>  
 
 ```csharp
 public MainWindow()
@@ -229,15 +231,18 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-<span data-ttu-id="f1a71-175">В конструкторе EnsureHttps регистрируется в качестве обработчика событий для `NavigationStarting` события в элементе управления WebView2.</span><span class="sxs-lookup"><span data-stu-id="f1a71-175">In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.</span></span>  
+<span data-ttu-id="6eee3-171">В конструкторе EnsureHttps регистрируется как обработчик событий в событии `NavigationStarting` в control WebView2.</span><span class="sxs-lookup"><span data-stu-id="6eee3-171">In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.</span></span>  
 
-<span data-ttu-id="f1a71-176">Нажмите `F5` , чтобы создать и запустить проект.</span><span class="sxs-lookup"><span data-stu-id="f1a71-176">Press `F5` to build and run your project.</span></span>  <span data-ttu-id="f1a71-177">Убедитесь, что при переходе на веб-сайт HTTP WebView не **меняется**.</span><span class="sxs-lookup"><span data-stu-id="f1a71-177">Confirm that when navigating to an HTTP site, the WebView **remains unchanged**.</span></span>  <span data-ttu-id="f1a71-178">Однако WebView переходит на сайты HTTPS.</span><span class="sxs-lookup"><span data-stu-id="f1a71-178">However, the WebView navigates to HTTPS sites.</span></span>  
+<span data-ttu-id="6eee3-172">Чтобы построить и запустить проект, выберите `F5` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-172">To build and run the project, select `F5`.</span></span>  <span data-ttu-id="6eee3-173">Убедитесь, что при переходе к http-сайту Веб-просмотр остается без изменений.</span><span class="sxs-lookup"><span data-stu-id="6eee3-173">Ensure when navigating to an HTTP site, the WebView remains unchanged.</span></span>  <span data-ttu-id="6eee3-174">Однако WebView переходит на сайты HTTPS.</span><span class="sxs-lookup"><span data-stu-id="6eee3-174">However, the WebView navigates to HTTPS sites.</span></span>  
 
-## <span data-ttu-id="f1a71-179">Шаг 6-Создание сценариев</span><span class="sxs-lookup"><span data-stu-id="f1a71-179">Step 6 - Scripting</span></span>  
+## <span data-ttu-id="6eee3-175">Шаг 6. Сценарии</span><span class="sxs-lookup"><span data-stu-id="6eee3-175">Step 6 - Scripting</span></span>  
 
-<span data-ttu-id="f1a71-180">Вы можете использовать ведущие приложения для вставки кода JavaScript в элементы управления WebView2 во время выполнения.</span><span class="sxs-lookup"><span data-stu-id="f1a71-180">You may use host applications to inject JavaScript code into WebView2 controls at runtime.</span></span>  <span data-ttu-id="f1a71-181">Вставленный JavaScript применяется ко всем новым документам верхнего уровня и дочерним кадрам до тех пор, пока не будет удален сценарий JavaScript.</span><span class="sxs-lookup"><span data-stu-id="f1a71-181">The injected JavaScript applies to all new top-level documents and any child frames, until the JavaScript is removed.</span></span>  <span data-ttu-id="f1a71-182">Вставленный JavaScript запускается после создания глобального объекта и перед всеми сценариями, включенными в документ HTML.</span><span class="sxs-lookup"><span data-stu-id="f1a71-182">The injected JavaScript is run after creation of the global object, and before any scripts included in the HTML document.</span></span>  
+<span data-ttu-id="6eee3-176">Вы можете использовать хост-приложения, чтобы ввести код JavaScript в элементы управления WebView2 во время работы.</span><span class="sxs-lookup"><span data-stu-id="6eee3-176">You may use host apps to inject JavaScript code into WebView2 controls at runtime.</span></span>  <span data-ttu-id="6eee3-177">Вы можете на задачу WebView запустить произвольный JavaScript или добавить сценарии инициализации.</span><span class="sxs-lookup"><span data-stu-id="6eee3-177">You may task WebView to run arbitrary JavaScript or add initialization scripts.</span></span>  <span data-ttu-id="6eee3-178">Введенный JavaScript применяется ко всем новым документам верхнего уровня и всем потомков, пока JavaScript не будет удален.</span><span class="sxs-lookup"><span data-stu-id="6eee3-178">The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.</span></span>  <span data-ttu-id="6eee3-179">Введенный JavaScript работает с определенными сроками.</span><span class="sxs-lookup"><span data-stu-id="6eee3-179">The injected JavaScript is run with specific timing.</span></span>  
 
-<span data-ttu-id="f1a71-183">Вы можете использовать сценарии для оповещения пользователя о переходе на сайт, не поддерживающий HTTPS.</span><span class="sxs-lookup"><span data-stu-id="f1a71-183">You can use scripting to alert the user when navigating to a non-HTTPS site.</span></span>  <span data-ttu-id="f1a71-184">Измените `EnsureHttps` функцию таким образом, чтобы она была вставлена в веб-содержимое в виде сценария с помощью метода [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) .</span><span class="sxs-lookup"><span data-stu-id="f1a71-184">Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) method.</span></span>  
+*   <span data-ttu-id="6eee3-180">Запустите его после создания глобального объекта.</span><span class="sxs-lookup"><span data-stu-id="6eee3-180">Run it after the creation of the global object.</span></span>  
+*   <span data-ttu-id="6eee3-181">Запустите его перед запуском любого другого сценария, включенного в HTML-документ.</span><span class="sxs-lookup"><span data-stu-id="6eee3-181">Run it before any other script included in the HTML document is run.</span></span>  
+
+<span data-ttu-id="6eee3-182">В качестве примера добавьте сценарии, которые отправляют оповещение при переходе пользователя на сайты, не относящаться к HTTPS.</span><span class="sxs-lookup"><span data-stu-id="6eee3-182">As an example, add scripts that send an alert when a user navigates to non-HTTPS sites.</span></span>  <span data-ttu-id="6eee3-183">Измените `EnsureHttps` функцию, чтобы внедрить сценарий в веб-содержимое, [использующее метод ExecuteScriptAsync.](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)</span><span class="sxs-lookup"><span data-stu-id="6eee3-183">Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) method.</span></span>  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -251,24 +256,24 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-<span data-ttu-id="f1a71-185">Нажмите `F5` , чтобы создать и запустить проект.</span><span class="sxs-lookup"><span data-stu-id="f1a71-185">Press `F5` to build and run your project.</span></span>  <span data-ttu-id="f1a71-186">Убедитесь, что приложение отображает оповещение при переходе на сайт, который не использует HTTPS.</span><span class="sxs-lookup"><span data-stu-id="f1a71-186">Confirm that the application displays an alert when you navigate to a site that doesn't use HTTPS.</span></span>  
+<span data-ttu-id="6eee3-184">Чтобы построить и запустить проект, выберите `F5` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-184">To build and run the project, select `F5`.</span></span>  <span data-ttu-id="6eee3-185">Убедитесь, что приложение отображает оповещение при переходе на веб-сайт, который не использует ПРОТОКОЛ HTTPS.</span><span class="sxs-lookup"><span data-stu-id="6eee3-185">Ensure the app displays an alert when you navigate to a website that doesn't use HTTPS.</span></span>  
 
 :::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
-   <span data-ttu-id="f1a71-188">HTTPS</span><span class="sxs-lookup"><span data-stu-id="f1a71-188">HTTPS</span></span>
+   <span data-ttu-id="6eee3-187">HTTPS</span><span class="sxs-lookup"><span data-stu-id="6eee3-187">HTTPS</span></span>
 :::image-end:::  
 
-## <span data-ttu-id="f1a71-189">Шаг 7: связь между узлом и веб-контентом</span><span class="sxs-lookup"><span data-stu-id="f1a71-189">Step 7 - Communication between host and web content</span></span>  
+## <span data-ttu-id="6eee3-188">Шаг 7. Взаимодействие между хост-контентом и веб-контентом</span><span class="sxs-lookup"><span data-stu-id="6eee3-188">Step 7 - Communication between host and web content</span></span>  
 
-<span data-ttu-id="f1a71-190">Основное приложение и веб-содержимое могут взаимодействовать друг с другом с помощью `postMessage` следующих параметров:</span><span class="sxs-lookup"><span data-stu-id="f1a71-190">The host and web content may communicate with each other using `postMessage` as follows:</span></span>  
+<span data-ttu-id="6eee3-189">Содержимое хоста и веб-сайта может взаимодействовать друг с другом следующим `postMessage` образом:</span><span class="sxs-lookup"><span data-stu-id="6eee3-189">The host and web content may communicate with each other using `postMessage` as follows:</span></span>  
 
-*   <span data-ttu-id="f1a71-191">Веб-содержимое в элементе управления WebView2 может публиковать сообщение на узле с помощью `window.chrome.webview.postMessage` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-191">Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.</span></span>  <span data-ttu-id="f1a71-192">Узел обрабатывает сообщение, используя все, что зарегистрировано `WebMessageReceived` на узле.</span><span class="sxs-lookup"><span data-stu-id="f1a71-192">The host handles the message using any registered `WebMessageReceived` on the host.</span></span>  
-*   <span data-ttu-id="f1a71-193">Размещает сообщения на веб-сайте элемента управления WebView2 с помощью `CoreWebView2.PostWebMessageAsString` или `CoreWebView2.PostWebMessageAsJSON` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-193">Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.</span></span>  <span data-ttu-id="f1a71-194">Эти сообщения перехватываются обработчиками, добавленными в `window.chrome.webview.addEventListener` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-194">These messages are caught by handlers added to `window.chrome.webview.addEventListener`.</span></span>  
+*   <span data-ttu-id="6eee3-190">Веб-содержимое в веб-окте управления WebView2 может отправлять сообщение на хост с помощью `window.chrome.webview.postMessage` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-190">Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.</span></span>  <span data-ttu-id="6eee3-191">The host handles the message using any registered `WebMessageReceived` on the host.</span><span class="sxs-lookup"><span data-stu-id="6eee3-191">The host handles the message using any registered `WebMessageReceived` on the host.</span></span>  
+*   <span data-ttu-id="6eee3-192">Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-192">Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.</span></span>  <span data-ttu-id="6eee3-193">Эти сообщения перехвачены обработчиками, добавленными в `window.chrome.webview.addEventListener` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-193">These messages are caught by handlers added to `window.chrome.webview.addEventListener`.</span></span>  
 
-<span data-ttu-id="f1a71-195">Этот механизм связи позволяет веб-контенту передавать сообщения ведущему узлу с помощью собственных возможностей.</span><span class="sxs-lookup"><span data-stu-id="f1a71-195">This communication mechanism allows web content to pass messages to the host using native capabilities.</span></span>  
+<span data-ttu-id="6eee3-194">Механизм связи передает сообщения из веб-содержимого на хост с использованием своих возможностей.</span><span class="sxs-lookup"><span data-stu-id="6eee3-194">The communication mechanism passes messages from web content to the host using native capabilities.</span></span>  
 
-<span data-ttu-id="f1a71-196">Когда элемент управления WebView2 переходит по URL-адресу, в проекте отображается URL-адрес в адресной строке и оповещает пользователя об URL-адресе, который отображается в элементе управления WebView2.</span><span class="sxs-lookup"><span data-stu-id="f1a71-196">In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.</span></span>  
+<span data-ttu-id="6eee3-195">В проекте при переходе по URL-адресу с помощью управления WebView2 он отображает URL-адрес в адресной панели и оповещает пользователя об URL-адресе, отображаемом в веб-интерфейсе2.</span><span class="sxs-lookup"><span data-stu-id="6eee3-195">In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.</span></span>  
 
-1.  <span data-ttu-id="f1a71-197">В **MainWindow.XAML.CS**обновите конструктор и создайте `InitializeAsync` функцию, как показано в следующем фрагменте кода.</span><span class="sxs-lookup"><span data-stu-id="f1a71-197">In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.</span></span>  <span data-ttu-id="f1a71-198">`InitializeAsync`Функция ожидает [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) , так как инициализация `CoreWebView2` является асинхронной.</span><span class="sxs-lookup"><span data-stu-id="f1a71-198">The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.</span></span>  
+1.  <span data-ttu-id="6eee3-196">В файле обновите конструктор и создайте функцию, которая `MainWindow.xaml.cs` `InitializeAsync` будет соответствовать следующему фрагменту кода.</span><span class="sxs-lookup"><span data-stu-id="6eee3-196">In the `MainWindow.xaml.cs` file, update your constructor and create an `InitializeAsync` function to match the following code snippet.</span></span>  <span data-ttu-id="6eee3-197">Функция `InitializeAsync` ожидает [EnsureCoreWebView2Async,](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) так как инициализация `CoreWebView2` является асинхронной.</span><span class="sxs-lookup"><span data-stu-id="6eee3-197">The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.</span></span>  
     
     ```csharp
     public MainWindow()
@@ -284,7 +289,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
     
-1.  <span data-ttu-id="f1a71-199">После инициализации **CoreWebView2** Зарегистрируйте обработчик событий, на который нужно ответить `WebMessageReceived` .</span><span class="sxs-lookup"><span data-stu-id="f1a71-199">After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.</span></span>  <span data-ttu-id="f1a71-200">В **MainWindow.XAML.CS**обновите `InitializeAsync` и добавьте `UpdateAddressBar` с помощью следующего фрагмента кода.</span><span class="sxs-lookup"><span data-stu-id="f1a71-200">In **MainWindow.xaml.cs**, update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.</span></span>  
+1.  <span data-ttu-id="6eee3-198">После **инициализации CoreWebView2** зарегистрируйте обработец событий для `WebMessageReceived` ответа.</span><span class="sxs-lookup"><span data-stu-id="6eee3-198">After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.</span></span>  <span data-ttu-id="6eee3-199">В `MainWindow.xaml.cs` , обновить и добавить с помощью следующего `InitializeAsync` `UpdateAddressBar` фрагмента кода.</span><span class="sxs-lookup"><span data-stu-id="6eee3-199">In `MainWindow.xaml.cs`, update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.</span></span>  
     
     ```csharp
     async void InitializeAsync()
@@ -301,12 +306,11 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
     
-1.  <span data-ttu-id="f1a71-201">Чтобы WebView отсылать и отвечать на веб-сообщение, после `CoreWebView2` инициализации, узел:</span><span class="sxs-lookup"><span data-stu-id="f1a71-201">In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host:</span></span>  
-    
-    1.  <span data-ttu-id="f1a71-202">Встраивает в веб-содержимое сценарий, регистрирующий обработчик для печати сообщения с узла.</span><span class="sxs-lookup"><span data-stu-id="f1a71-202">Injects a script to the web content that registers a handler to print message from the host.</span></span>  
-    1.  <span data-ttu-id="f1a71-203">Вставляет сценарий в веб-содержимое, которое отправляет URL-адрес узлу.</span><span class="sxs-lookup"><span data-stu-id="f1a71-203">Injects a script to the web content that posts the URL to the host.</span></span>  
-    
-    <span data-ttu-id="f1a71-204">В `MainWindow.xaml.cs` . Обновите `InitializeAsync` следующим образом:</span><span class="sxs-lookup"><span data-stu-id="f1a71-204">In `MainWindow.xaml.cs`, update `InitializeAsync` as follows:</span></span>  
+1.  <span data-ttu-id="6eee3-200">Чтобы webView отправил веб-сообщение после инициализации и реагировал на `CoreWebView2` него, хост:</span><span class="sxs-lookup"><span data-stu-id="6eee3-200">In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host:</span></span>  
+    1.  <span data-ttu-id="6eee3-201">Внедряет сценарий в веб-содержимое, которое регистрирует обработок для печати сообщения с ведущего приложения.</span><span class="sxs-lookup"><span data-stu-id="6eee3-201">Injects a script to the web content that registers a handler to print message from the host.</span></span>  
+    1.  <span data-ttu-id="6eee3-202">Внедряет сценарий в веб-содержимое, которое публикует URL-адрес на хост-сайте.</span><span class="sxs-lookup"><span data-stu-id="6eee3-202">Injects a script to the web content that posts the URL to the host.</span></span>  
+        
+    <span data-ttu-id="6eee3-203">В `MainWindow.xaml.cs` файле `InitializeAsync` обновим, чтобы он совпадал со следующим фрагментом кода.</span><span class="sxs-lookup"><span data-stu-id="6eee3-203">In the `MainWindow.xaml.cs` file, update `InitializeAsync` to match the following code snippet.</span></span>  
     
     ```csharp
     async void InitializeAsync()
@@ -319,25 +323,45 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     }
     ```  
     
-    <span data-ttu-id="f1a71-205">Нажмите `F5` для сборки и запуска приложения.</span><span class="sxs-lookup"><span data-stu-id="f1a71-205">Press `F5` to build and run the app.</span></span>  <span data-ttu-id="f1a71-206">Теперь в адресной строке отображается URI в элементе управления WebView2.</span><span class="sxs-lookup"><span data-stu-id="f1a71-206">Now, the address bar displays the URI in the WebView2 control.</span></span> <span data-ttu-id="f1a71-207">При успешном переходе на новый URI элемент управления WebView2 предупреждает пользователя об универсальном коде ресурса (URI), который отображается в элементе управления WebView2.</span><span class="sxs-lookup"><span data-stu-id="f1a71-207">When you successfully navigate to a new URI, the WebView2 control alerts the user of the URI that's displayed in the WebView2 control.</span></span>  
+    <span data-ttu-id="6eee3-204">Чтобы выполнить сборку и запустить приложение, выберите `F5` .</span><span class="sxs-lookup"><span data-stu-id="6eee3-204">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="6eee3-205">Теперь в адресной панели отображается URI в control WebView2.</span><span class="sxs-lookup"><span data-stu-id="6eee3-205">Now, the address bar displays the URI in the WebView2 control.</span></span>  <span data-ttu-id="6eee3-206">При успешном переходе к новому URI веб-часть управления WebView2 оповещает пользователя об URI, отображаемом в этом ОКБ WebView2.</span><span class="sxs-lookup"><span data-stu-id="6eee3-206">When you successfully navigate to a new URI, the WebView2 control alerts the user of the URI that's displayed in the WebView2 control.</span></span>  
     
     :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
-       <span data-ttu-id="f1a71-209">addressBar</span><span class="sxs-lookup"><span data-stu-id="f1a71-209">addressBar</span></span>
+       <span data-ttu-id="6eee3-208">addressBar</span><span class="sxs-lookup"><span data-stu-id="6eee3-208">addressBar</span></span>
     :::image-end:::
 
-<span data-ttu-id="f1a71-210">Поздравляем! вы создали первое приложение WebView2!</span><span class="sxs-lookup"><span data-stu-id="f1a71-210">Congratulations, you built your first WebView2 app!</span></span>  
+<span data-ttu-id="6eee3-209">Поздравляем, вы создали свое первое приложение WebView2.</span><span class="sxs-lookup"><span data-stu-id="6eee3-209">Congratulations, you built your first WebView2 app.</span></span>  
 
-## <span data-ttu-id="f1a71-211">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="f1a71-211">Next steps</span></span>  
+## <span data-ttu-id="6eee3-210">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="6eee3-210">Next steps</span></span>  
 
-*   <span data-ttu-id="f1a71-212">Полный пример возможностей WebView2 можно найти в разделе [WebView2Samplesный репозиторий](https://github.com/MicrosoftEdge/WebView2Samples) в GitHub.</span><span class="sxs-lookup"><span data-stu-id="f1a71-212">For a comprehensive example of WebView2 capabilities, see [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) on GitHub.</span></span>  
-*   <span data-ttu-id="f1a71-213">Более подробную информацию об API WebView2 можно найти в [справочнике API](/dotnet/api/microsoft.web.webview2.wpf.webview2).</span><span class="sxs-lookup"><span data-stu-id="f1a71-213">For more detailed information about WebView2 APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).</span></span>  
-*   <span data-ttu-id="f1a71-214">Дополнительные сведения о WebView2ах можно найти в статьях [ресурсы WebView2](../index.md#next-steps).</span><span class="sxs-lookup"><span data-stu-id="f1a71-214">For more information about  WebView2, see [WebView2 Resources](../index.md#next-steps).</span></span>  
+<span data-ttu-id="6eee3-211">Чтобы продолжить изучение WebView2, перейдите к следующим ресурсам.</span><span class="sxs-lookup"><span data-stu-id="6eee3-211">To continue learning more about WebView2, navigate to the following resources.</span></span>  
 
-## <span data-ttu-id="f1a71-215">Знакомство с командой Microsoft Edge WebView</span><span class="sxs-lookup"><span data-stu-id="f1a71-215">Getting in touch with the Microsoft Edge WebView team</span></span>  
+### <span data-ttu-id="6eee3-212">См. также</span><span class="sxs-lookup"><span data-stu-id="6eee3-212">See also</span></span>  
+
+*   <span data-ttu-id="6eee3-213">Полный пример возможностей WebView2 можно найти в репозитарии [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] на GitHub.</span><span class="sxs-lookup"><span data-stu-id="6eee3-213">For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] on GitHub.</span></span>  
+*   <span data-ttu-id="6eee3-214">Дополнительные сведения об API WebView2 можно найти в справочнике [по API.](/dotnet/api/microsoft.web.webview2.wpf.webview2)</span><span class="sxs-lookup"><span data-stu-id="6eee3-214">For more detailed information about WebView2 API, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).</span></span>  
+*   <span data-ttu-id="6eee3-215">Для получения дополнительных сведений о WebView2 перейдите к [ресурсам WebView2.](../index.md#next-steps)</span><span class="sxs-lookup"><span data-stu-id="6eee3-215">For more information about  WebView2, navigate to [WebView2 Resources](../index.md#next-steps).</span></span>  
+
+## <span data-ttu-id="6eee3-216">Знакомство с командой Microsoft Edge WebView</span><span class="sxs-lookup"><span data-stu-id="6eee3-216">Getting in touch with the Microsoft Edge WebView team</span></span>  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-
 <!-- links -->  
+ 
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "События навигации | Документы Майкрософт"  
+
+[DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Пространство имен Microsoft.Web.WebView2.Wpf | Документы Майкрософт"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Класс WebView2 | Документы Майкрософт"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "Метод WebView2.EnsureCoreWebView2Async(CoreWebView2Environment) | Документы Майкрософт"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method | Документы Майкрософт"  
+
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples — MicrosoftEdge/WebView2Samples | GitHub"  
+
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Разработчик Microsoft Edge"  
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Скачивание Microsoft Edge Insider Channels"  
+
+[MicrosoftMain]: https://www.microsoft.com "Майкрософт"  
+
+[MicrosoftVisualStudioMain]: https://visualstudio.microsoft.com "Microsoft Visual Studio"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Установщик WebView2" 
