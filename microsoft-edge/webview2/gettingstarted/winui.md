@@ -65,7 +65,7 @@ ms.locfileid: "11306154"
     *   **Целевая версия:**  **Windows 10 версии 1903 (сборка 18362)** или более поздней  
     *   **Минимальная**версия:  **Windows 10 версии 1803 (сборка 17134)**  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Диалоговое окно "Проект новой универсальной платформы Windows" с выбранными значениями для целевой версии и минимальной версии." lightbox="./media/winui-gettingstarted-projecttype.png":::
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Диалоговое окно Проект новой универсальной платформы Windows с выбранными значениями для целевой версии и минимальной версии." lightbox="./media/winui-gettingstarted-projecttype.png":::
        Диалоговое окно "Проект новой универсальной платформы Windows" с выбранными значениями для целевой версии и минимальной версии.
     :::image-end:::  
     
