@@ -42,7 +42,7 @@ WebDriver позволяет разработчикам создавать ав�
     
 1.  Перейдите на [страницу загрузки драйвера Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] и скачайте драйвер, который соответствует номеру версии Microsoft Edge.  
     
-    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Раздел "Загрузки" страницы "Драйвер Microsoft Edge"":::
+    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Раздел Загрузки страницы Драйвер Microsoft Edge":::
        Раздел "Загрузки" страницы ["Драйвер Microsoft Edge"][MicrosoftDeveloperEdgeToolsWebdriver]
     :::image-end:::  
     
