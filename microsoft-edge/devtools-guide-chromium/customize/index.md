@@ -3,16 +3,16 @@ description: Список способов настройки Microsoft Edge Dev
 title: Настройка Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 682ff78b6a5272c1f6462648d64241448838edac
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: 5822fa087244fdfafdefe040709058411040ea45
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11189992"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313025"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,70 +34,70 @@ ms.locfileid: "11189992"
 
 ## Параметры  
 
-**Параметры**  >  **Настройки** . доступно множество вариантов настройки DevTools.  
+**Параметры**  >  **Параметры** содержат множество параметров для настройки DevTools.  
 
-Чтобы открыть параметры, выполните одно из указанных ниже действий.  
+Чтобы открыть "Параметры", выполните одно из следующих действий.  
 
-*   Выберите `F1` , когда DevTools в фокусе.  
-*   Откройте **главное меню** и выберите пункт **Параметры**.  
+*   Выберите, `F1` пока DevTools находится в фокусе.  
+*   Откройте главное **меню и** выберите пункт **"Параметры".**  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Параметры" lightbox="../media/customize-settings-preferences.msft.png":::
    **Параметры**  
 :::image-end:::  
 
-## Зазор  
+## Drawer  
 
-**Ящик** — это вторая панель, в которой отображаются инструменты выбора.  
+Drawer **—** это вторая панель, на которой отображаются инструменты по вашему выбору.  
 
-Чтобы открыть (или закрыть) **денежный ящик**, выберите `Escape` .  
+Чтобы открыть \(или закрыть\) **drawer**, выберите `Escape` .  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Ящик" lightbox="../media/customize-drawer-open.msft.png":::
-   **Ящик**  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
+   **Drawer**  
 :::image-end:::  
 
-По умолчанию некоторые инструменты открываются в главной панели, а другие — в **ящике**.  Нажмите кнопку **Дополнительно** \ ( `...` ), чтобы открыть инструмент в **денежном ящике**.  
+По умолчанию некоторые средства открываются на главной панели, а другие отображаются в **средстве "Drawer".**  Choose **More** \( `...` \) to open a tool in the **Drawer**.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Кнопка для открытия ящика" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   Кнопка для открытия **ящика**  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Кнопка для открытия drawer" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Кнопка для открытия **drawer**  
 :::image-end:::  
 
-Вы можете перемещать инструменты между главной панелью и денежным ящиком.  
+Можно перемещать инструменты между главной панелью и ящиком.  
 
-*   Чтобы переместить инструмент из почтового ящика на главную панель, наведите на него указатель мыши, откройте контекстное меню, а затем выберите пункт **Перейти к началу**.  
+*   Чтобы переместить средство из ящика на главную панель, наведите курсор на средство, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите пункт "Переместить в **верхнюю"**.  
     
-    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Перемещение инструмента из ящика на главную панель" lightbox="../media/move-from-drawer.msft.png":::
-       Перемещение инструмента из **ящика** на главную панель  
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Перемещение средства из обоймы в основную панель" lightbox="../media/move-from-drawer.msft.png":::
+       Перемещение средства из **обоймы в** основную панель  
     :::image-end:::  
     
-*   Чтобы переместить инструмент из главной панели в денежный, наведите указатель мыши на инструмент, откройте контекстное меню (щелкните правой кнопкой мыши и выберите пункт **переместить в конец**).  
+*   Чтобы переместить средство с главной панели в ящик, наведите курсор на средство, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите пункт "Переместить в **нижнюю часть".**  
     
-    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Инструмент «Перемещение» из главной панели в денежный ящик" lightbox="../media/move-to-drawer.msft.png":::
-       Инструмент «Перемещение» из главной панели в **денежный ящик**
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Перемещение средства с главной панели на ящик" lightbox="../media/move-to-drawer.msft.png":::
+       Перемещение средства с главной панели на **ящик**
     :::image-end:::  
     
 
-## Изменение порядка панелей  
+## Переусортовка панелей  
 
-Для изменения порядка выберите и перетащите инструмент.  Ваш заказ на пользовательские инструменты сохраняется в течение сеансов DevTools.  
+Выберите и перетащите средство, чтобы изменить порядок.  Пользовательский порядок инструментов сохраняется в сеансах DevTools.  
 
 > [!NOTE]
-> По умолчанию средство " **сеть** " обычно является четвертым в левой части экрана.  На приведенном ниже рисунке панель **Network (сеть** ) — это первый из левых.  
+> По умолчанию средство **"Сеть"** обычно является четвертым слева.  На следующем рисунке панель **"Сеть"** является первой слева.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Настраиваемый порядок Devtools на панели" lightbox="../media/customize-network-first-position.msft.png":::
-   Настраиваемый порядок Devtools на панели  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Настраиваемый порядок разработки на панели" lightbox="../media/customize-network-first-position.msft.png":::
+   Настраиваемый порядок разработки на панели  
 :::image-end:::  
 
-## Изменение положения DevTools  
+## Изменение размещения DevTools  
 
-Ознакомьтесь с [DevTools размещения Microsoft Edge][DevToolsPlacement].  
+См. ["Размещение Microsoft Edge DevTools".][DevToolsPlacement]  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Незакрепленные DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
-   Незакрепленные DevTools  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   Undocked DevTools  
 :::image-end:::  
 
 ## Темная тема  
 
-См. [: включить темную тему][DarkTheme].  
+См. ["Включить темную тему".][DarkTheme]  
 
 :::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Темная тема" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    Темная тема  
@@ -105,13 +105,13 @@ ms.locfileid: "11189992"
 
 ## Эксперименты  
 
-Чтобы включить эксперименты DevTools, выполните указанные ниже действия.  
+Чтобы включить эксперименты DevTools, выполните следующие действия.  
 
 1.  Перейдите к `edge://flags/#enable-devtools-experiments` .  
-1.  Нажмите кнопку **включить**.  
-1.  В нижней части страницы нажмите кнопку " **Перезапустить сейчас**".  
+1.  Choose **Enable**.  
+1.  Choose **Relaunch Now**, at the bottom of the page.  
 
-В следующий раз, когда вы открываете DevTools, в разделе " [Параметры](#settings)" отображается новая страница " **эксперименты** ".  
+В следующий раз, когда вы откроете DevTools, в параметрах отобразится новая страница с именем ["Эксперименты".](#settings) ****  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
 
@@ -123,12 +123,12 @@ ms.locfileid: "11189992"
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Изменение положения Microsoft Edge DevTools | Документы Microsoft"  
-[DarkTheme]: ./dark-theme.md "Включить темную тему в Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsPlacement]: ./placement.md "Изменение размещения Microsoft Edge DevTools | Документы Майкрософт"  
+[DarkTheme]: ./dark-theme.md "Включить темную тему в Microsoft Edge DevTools | Документы Майкрософт"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/customize/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/customize/index) находится здесь и автором является [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

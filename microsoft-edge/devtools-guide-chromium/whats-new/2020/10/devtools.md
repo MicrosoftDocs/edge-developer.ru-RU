@@ -1,5 +1,5 @@
 ---
-description: Новые инструменты для отладки в КАСКАДных таблицах, средства Webauthn, средства для перемещаемых и вычисляемых панелей.
+description: Новые средства отладки сетки CSS, средство webauthn, перемещаемые средства и вычисляемая панель боковой панели.
 title: Новые возможности DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: b972468ad21f3a64985a00aecbe29836032b3334
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: cf3a685a1a4e9a3f13d2401a6294058a71dd5104
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11190007"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313032"
 ---
 # Новые возможности DevTools (Microsoft Edge 87)  
 
@@ -20,36 +20,36 @@ ms.locfileid: "11190007"
 
 ## Улучшение локализации DevTools  
 
-В соответствии с потребностями перевода группа Microsoft Edge DevTools фокусируется на улучшении качества перевода.  Начиная с Microsoft Edge версии 87, некоторые строки и условия заблокированы и не изменяются даже в том случае, если остальные DevTools отображаются на других языках.  Ниже перечислены затронутые строки и термины.  
+Для удовлетворения ваших потребностей в переводе команда Разработчиков Microsoft Edge нацелена на улучшение качества перевода.  Начиная с Microsoft Edge версии 87, несколько строк и терминов заблокированы и не изменяются, даже если остальные языки DevTools отображаются на других языках.  Список затронутых строк и терминов включает следующие строки и термины.  
 
-*   Строки в инструменте **Lighthouse** .  
+*   Строки в **средстве Lighthouse.**  
 *   Термин `service worker` .  
-*   Некоторые фильтры **сетевых** средств, такие как `URL` ,, `XHR` `JS` и `CSS` .  
-*   API-интерфейс служебных программ для консоли [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] .  
+*   Некоторые **фильтры сетевого** инструмента, такие как `URL` , , , и `XHR` `JS` `CSS` .  
+*   API консольных жков [$0.][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]  
     
-[$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] теперь доступен на [консоли](/microsoft-edge/devtools-guide-chromium/console/index.md) для пользователей локализованных версий DevTools.   Благодарим вас за участие в глобальном сообществе разработчиков, которые помогут вам улучшить локализацию Microsoft Edge DevTools.  Продолжите [отправку обратной связи по качеству локализации](#getting-in-touch-with-microsoft-edge-devtools-team) для улучшения поддержки DevTools на всех языках.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1136655][CR1136655].  
+[$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] теперь доступно [](/microsoft-edge/devtools-guide-chromium/console/index.md) в консоли для пользователей локализованных версий DevTools.   Благодарим глобальное сообщество разработчиков за помощь в локализации Microsoft Edge DevTools.  Продолжайте отправлять [отзывы о качестве локализации,](#getting-in-touch-with-microsoft-edge-devtools-team) чтобы улучшить поддержку DevTools во всех региональных стандартах.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1136655.][CR1136655]  
 
-:::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Сетевое средство с нелокализованными фильтрами" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
-   Область **сети** с нелокализованными фильтрами  
+:::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Сетевое средство с не локализованными фильтрами" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
+   **Сетовая** области с не локализованными фильтрами  
 :::image-end:::  
 
 ## Перемещение инструментов между верхней и нижней панелями  
 
-DevTools теперь поддерживает перемещение инструментов между верхней и нижней панелями.  Настройка DevTools и повышение продуктивности благодаря одновременному просмотру любой комбинации двух инструментов.  Например, вы можете одновременно просматривать **элементы** и инструменты **исходного** кода (путем перемещения инструмента **источники** вниз).  Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1075732][CR1075732].  
+DevTools теперь поддерживает перемещение инструментов между верхней и нижней панелями.  Настройте DevTools и улучшите производительность, одновременно просматривая любое сочетание двух средств.  Например, просмотр **** элементов и инструментов **Sources** одновременно \(путем перемещения инструмента **Sources** в нижнюю часть\).  Чтобы просмотреть историю этой функции в проекте с открытым исходным кодом Chromium, перейдите к [#1075732.][CR1075732]  
 
 :::row:::
    :::column span="":::
-      Чтобы переместить верхний инструмент в нижнюю часть экрана, наведите на него указатель мыши, откройте контекстное меню, а затем выберите пункт **Переместить вниз**.  
+      Чтобы переместить любое верхнее средство в нижнюю часть, наведите курсор на вкладку, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите пункт **"Переместить в нижнюю часть".**  
       
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Переместить вниз" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
-         Переместить вниз  
+      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Перейти к нижнему" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+         Перейти к нижнему  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Чтобы переместить нижние инструменты в верхнюю часть экрана, наведите указатель мыши на вкладку, откройте контекстное меню (щелкните правой кнопкой мыши \) и выберите пункт **Перейти к началу**.  
+      Чтобы переместить любое средство снизу вверх, наведите курсор на вкладку, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите пункт **"Переместить вверх".**  
       
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Перейти к началу страницы" lightbox="../../media/2020/10/move-to-top.msft.png":::
-         Перейти к началу страницы  
+      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Перейти к началу" lightbox="../../media/2020/10/move-to-top.msft.png":::
+         Перейти к началу  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
@@ -60,12 +60,12 @@ DevTools теперь поддерживает перемещение инстр
    Экспериментальная функция  
 :::image-end:::  
 
-Средство **Network Console** теперь повысило совместимость с схемами [posts v 2.1][PostmanSchemaJsonCollectionv210Index] и [OpenAPI v2][SwaggerSpecificationV2] .  Чтобы включить функцию эксперимента, перейдите к разделу [Включение экспериментальных функций][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] и установите флажок **включить сетевую консоль**.  Дополнительные сведения о **сетевой консоли**можно найти в разделе [Включение экспериментальной сетевой консоли][DevtoolsExperimentalFeaturesEnableNetworkConsole].  Этот эксперимент теперь поддерживает описанные ниже действия.  
+Теперь **в средстве** "Сетовая консоль" улучшена совместимость со схемами [Postman 2.1][PostmanSchemaJsonCollectionv210Index] и [OpenAPI 2.][SwaggerSpecificationV2]  Чтобы включить эксперимент, перейдите к функции ["Включить][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] экспериментальную" и выберите "Включить сетевую консоль" рядом с **ней.**  Для получения дополнительных сведений о **сетевой консоли**перейдите к экспериментальной функции "Включить экспериментальную сетевую [консоль".][DevtoolsExperimentalFeaturesEnableNetworkConsole]  Этот эксперимент теперь поддерживает следующие действия.  
 
 *   Сохранение и экспорт коллекций и сред.  
-*   Изменяйте и экспортируйте наборы переменных среды в инструменте **Network Console** .  
+*   Изменение и экспорт наборов переменных среды в **средстве сетевой консоли.**  
     
-Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1093687][CR1093687].  
+Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1093687.][CR1093687]  
 
 :::row:::
    :::column span="":::
@@ -74,8 +74,8 @@ DevTools теперь поддерживает перемещение инстр
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Выберите формат для новой среды" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
-         Выберите формат для новой среды  
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Выбор формата для новой среды" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+         Выбор формата для новой среды  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -86,52 +86,52 @@ DevTools теперь поддерживает перемещение инстр
    Экспериментальная функция  
 :::image-end:::  
 
-Microsoft Edge DevTools теперь поддерживает следующие функции для проверки, просмотра и отладки сетки каскадных стилей.  
+Теперь Microsoft Edge DevTools поддерживает следующие функции для проверки, просмотра и отладки сетки CSS.  
 
-*   Отображение упрощенного раскрытия сетки с помощью средства **проверки** или получение более подробных сведений с постоянными наложениями.  
-*   Чтобы включить постоянную наложение сетки, щелкните значок сетки рядом с элементом контейнера сетки в инструменте **элементы** или выберите сетку в инструменте **Макет** .  
-*   Вы можете включить постоянную наложение для нескольких сеток.  
-*   С помощью нового инструмента " **Макет** " можно легко переключать наложения сетки и настраивать внешний вид и содержимое каждого из них.  
+*   Отображение упрощенного наложения сетки с помощью средства **inspect** или получения более подробных сведений с постоянными наложениями.  
+*   Чтобы включить наложения сохраняемой сетки, выберите значок сетки рядом с элементом контейнера сетки в средстве **"Элементы"** или выберите сетку в средстве **макета.**  
+*   Можно включить постоянные наложения для нескольких сеток.  
+*   Новое средство **макета** позволяет легко перегрешить наложения сетки и настроить внешний вид и содержимое для каждого из них.  
     
-Эти функции включены по умолчанию.  Дополнительные сведения о функциях можно найти в [таблице каскадных таблиц стилей][DevtoolsCssGrid].  Чтобы просмотреть историю этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1047356][CR1047356].  Кроме того, группа Microsoft Edge DevTools работает совместно с коллегами по DevTools и Chromiumом для добавления новых функций управления подложкой в DevTools.  Чтобы получить обновления для средств управления подпадающими ящиками в проекте Open-Source Chromium, перейдите к вопросу [#1136394][CR1136394].  
+Функции по умолчанию отключены.  Для получения дополнительных сведений о функции перейдите к [сеткам CSS.][DevtoolsCssGrid]  Чтобы просмотреть историю этой функции в проекте с открытым исходным кодом Chromium, перейдите к [#1047356.][CR1047356]  Кроме того, группа Разработчиков Microsoft Edge совместно с командой Chrome DevTools и сообществом Chromium добавляет новые инструменты flexbox в DevTools.  Для обновления инструментов flexbox в проекте с открытым исходным кодом Chromium перейдите к [#1136394.][CR1136394]  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Инструмент макет с сетками"::: lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
-   Инструмент " **Макет** " с сетками  
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Средство макета с сетками" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+   **Средство макета** с сетками  
 :::image-end:::  
 
-## Настройка сочетаний клавиш в параметрах  
+## Настройка сочетания клавиш в параметрах  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
    Экспериментальная функция  
 :::image-end:::  
 
-Теперь вы можете настроить сочетание клавиш для любого действия в DevTools.  Поскольку Microsoft Edge версии 84, вы можете выбирать из **кода Visual Studio** и **DevTools (по умолчанию)** стандартные наборы сочетаний [клавиш][DevtoolsCustomizeShortcuts].  Начиная с Microsoft Edge версии 87, вы можете включить **Редактор сочетаний клавиш включения** экспериментов для дальнейшей [настройки сочетаний клавиш][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
+Теперь вы можете настроить ярлык клавиатуры для любого действия в DevTools.  Начиная с Microsoft Edge версии 84, вы можете выбрать между Visual Studio **Code** и **DevTools (по умолчанию)** для сочетания [клавиш.][DevtoolsCustomizeShortcuts]  Начиная с Microsoft Edge версии 87, **** вы можете включить эксперимент "Включить редактор сочетания клавиш" для дальнейшей настройки сочетания [клавиш.][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]  
 
-Чтобы включить функцию эксперимента, перейдите к разделу [Включение экспериментальных функций][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] и установите флажок **включить редактор сочетаний клавиш**.  Дополнительные сведения о настройке и редактировании сочетаний клавиш можно найти в статье [включить режим экспериментального редактора сочетаних][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]клавиш.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#174309][CR174309].  
+Чтобы включить эксперимент, перейдите к функции ["Включить][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] экспериментальную" и выберите "Включить редактор сочетания **клавиш".**  Дополнительные сведения о настройке и изменении сочетаний клавиш см. в разделе о [включении экспериментальной функции редактора сочетания клавиш][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#174309.][CR174309]  
 
-:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Настраиваемое сочетание клавиш для приостановки сценария" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
-   Настраиваемое сочетание клавиш для приостановки сценария  
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Настраиваемый ярлык для прио паузы в сценарии" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+   Настраиваемый ярлык для прио паузы в сценарии  
 :::image-end:::  
 
-## Знакомство с расширением кода Microsoft Edge Tools для Visual Studio  
+## Знакомство с расширением Microsoft Edge tools for Visual Studio Code  
 
-**Элементы для расширений кода Visual Studio** и **Network для Visual Studio** теперь объединяются в новое расширение [кода средств разработчика Microsoft Edge для Visual Studio][VisualStudioCodeMarketplaceMsEdgedevtools] .  Используйте Microsoft Edge DevTools для следующих действий, не выходя из кода Visual Studio.  
+Элементы **для расширений Visual Studio Code** and Network for Visual Studio **Code** теперь объединены в новое расширение Microsoft Edge Developer Tools для [Visual Studio Code.][VisualStudioCodeMarketplaceMsEdgedevtools]  Используйте Microsoft Edge DevTools для следующих действий, не Visual Studio кода.  
 
-*   Отладка модели DOM  
-*   Изменение CSS  
+*   Отлаговка DOM  
+*   Редактирование CSS  
 *   Проверка сетевого трафика  
 
-С помощью расширения запустите Microsoft EDGE, подключитесь к существующему экземпляру браузера или используйте браузер без монитора прямо из редактора.  Чтобы приступить к откликам и разрешению проблем с отзывом об этом расширении, перейдите к разделу [Инструменты разработчика Microsoft Edge для Visual Studio][GithubMicrosoftVscodeEdgeDevtools] в GitHub.  
+С помощью расширения запустите Microsoft Edge, подключите существующий экземпляр браузера или используйте браузер без headless непосредственно из редактора.  Чтобы начать вносить в отзывы о расширении свои отзывы и вносить в них документы, перейдите к репозиту "Инструменты разработчика Microsoft [Edge для Visual Studio][GithubMicrosoftVscodeEdgeDevtools] кода" на сайте GitHub.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Снимок экрана: использование расширения в полноэкранном режиме браузера" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
-         Снимок экрана: использование расширения в полноэкранном режиме браузера  
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Снимок экрана с использованием расширения в полно браузерном режиме" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+         Снимок экрана с использованием расширения в полно браузерном режиме  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Снимок экрана: использование расширения в режиме без монитора" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
-         Снимок экрана: использование расширения в режиме без монитора  
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Снимок экрана с использованием расширения в режиме без headless" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+         Снимок экрана с использованием расширения в режиме без headless  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -142,15 +142,15 @@ Microsoft Edge DevTools теперь поддерживает следующие
 
 ### Новое средство WebAuthn  
 
-В более ранних версиях Microsoft EDGE не поддерживалась Отладка с родным WebAuthn.  Необходимы физические средства проверки подлинности для проверки веб-приложения с помощью [API проверки подлинности веб-сайта][GithubW3cWebauthn].  С помощью нового средства **WebAuthn** вы можете выполнять следующие действия без использования каких – либо физических средств проверки подлинности.
+В более ранних версиях Microsoft Edge не существовало поддержки отладки WebAuthn.  Для тестирования веб-приложения с помощью API веб-проверки подлинности необходимы [физические аутентификация.][GithubW3cWebauthn]  С помощью нового **средства WebAuthn** можно делать следующие действия без использования физических средств проверки подлинности.
 
-*   Эмуляция средств проверки подлинности
-*   Настройка атрибутов средств проверки подлинности
-*   Проверка состояний средств проверки подлинности
+*   Эмуляция аутентификаций
+*   Настройка атрибутов аутентификаций
+*   Проверка состояния аутентификаций
     
-Дополнительные сведения о функции **WebAuthn** можно найти в [разделе Эмуляция проверки подлинности и отладка Webauthn в Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
+Дополнительные сведения о функции **WebAuthn** см. в эмуляторе аутентификаций и отладке [WebAuthn в Microsoft Edge DevTools.][DevtoolsWebauthnIndex]  
 
-Вы можете эмулировать средства проверки подлинности и отлаживать [API проверки подлинности веб-сайта][GithubW3cWebauthn] с помощью нового инструмента [WebAuthn][DevtoolsWebauthnIndex] .  Чтобы открыть средство **WebAuthn** , щелкните значок **Настройка и управление DevTools** \ ( `...` \) > **более средствам**  >  **webauthn**.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1034663][CR1034663].  
+Вы можете эмулировать средства проверки подлинности и отлагонять [API][GithubW3cWebauthn] веб-проверки подлинности с помощью нового средства [WebAuthn.][DevtoolsWebauthnIndex]  Чтобы открыть **средство WebAuthn,** выберите значок "Настройка и управление **DevTools** \( \) > Другие средства `...` ****  >  **WebAuthn.**  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1034663.][CR1034663]  
 
 :::row:::
    :::column span="":::
@@ -160,45 +160,45 @@ Microsoft Edge DevTools теперь поддерживает следующие
    :::column-end:::  
    :::column span="":::
       :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Средство WebAuthn" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
-         Средство **WebAuthn**  
+         **Средство WebAuthn**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### Обновление инструмента "элементы"  
+### Обновления средства "Элементы"  
 
-#### Просмотр области "вычисляемая боковая панель" в области "стили"  
+#### Просмотр вычисляемой боковой панели в области стилей  
 
-Переключить **вычисляемую** область на панели **стили** .  **Вычисляемая** область в области **стили** свернута по умолчанию.  Чтобы переключить его, нажмите кнопку.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1073899][CR1073899].  
+Перегоняем **вычисляемую области** в **области** стилей.  **Вычисляемая** области в **области** стилей по умолчанию свернута.  Чтобы его пережать, выберите кнопку.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1073899.][CR1073899]  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Открытие области вычисляемая боковая панель" ::: lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
-         Открытие области " **Вычисляемая боковая** панель"  
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Открытие вычисляемой боковой панели" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+         Открытие **вычисляемой боковой** панели  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Вычисляемая область боковой панели" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
-         **Вычисляемая область боковой** панели  
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Вычисляемая панель боковой панели" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+         **Вычисляемая панель боковой** панели  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
 #### Группировка свойств CSS в вычисляемой панели  
 
-Чтобы просмотреть примененную CSS с меньшим прокруткой, сгруппируйте свойства CSS по категориям в **вычисляемой** области.  Вы также можете выбрать набор связанных свойств при проверке CSS.  В инструменте **элементы** выберите элемент.  Чтобы выполнить группировку \ (или разгрупповую) свойства CSS, установите или снимите флажок **Группа** .  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к разделу проблемы [#1096230][CR1096230], [#1084673][CR1084673]и [#1106251][CR1106251].  
+Чтобы просмотреть примененную CSS-страницу с меньшими возможностями прокрутки, сгруппировать свойства CSS по категориям в **вычисляемой** области.  При проверке CSS можно также выборочно сосредоточиться на наборе связанных свойств.  В **средстве "Элементы"** выберите элемент.  Чтобы сгруппировать \(или разгруппировать\) свойства CSS, перебейте **этот контрольный** ящик группы.  Чтобы просмотреть обновления этой функции в режиме реального времени в [][CR1096230]проекте с открытым исходным кодом Chromium, перейдите к #1096230, [#1084673][CR1084673]и [#1106251.][CR1106251]  
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Группировка свойств CSS" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Группировка свойств CSS  
 :::image-end:::  
 
-### Lighthouse 6,4 в инструменте Lighthouse  
+### Lighthouse 6.4 в средстве Lighthouse  
 
-Средство **Lighthouse** теперь запущено Lighthouse 6,4.  Чтобы просмотреть полный список изменений, перейдите к [заметкам о выпуске Lighthouse][GithubGoogleChromeLighthouseReleasesV641].  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#772558][CR772558].  
+Средство **Lighthouse** теперь работает под управлением Lighthouse 6.4.  Полный список изменений можно найти в заметках о [выпуске Lighthouse.][GithubGoogleChromeLighthouseReleasesV641]  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#772558.][CR772558]  
 
-### события Performance. Mark () в разделе "время показа слайдов"  
+### События performance.mark() в разделе "Синхронизация"  
 
-**Раздел "временные интервалы** " записи в инструменте " [производительность][DevtoolsGuideChromiumEvaluatePerformanceReference] " теперь отмечает `performance.mark()` события.  Чтобы попробовать эту функцию и оценить производительность кода JavaScript, добавьте `performance.mark()` события в код.  Например, в приведенном ниже фрагменте кода добавляются маркеры до и после `for` цикла, который выполняет итерацию от 0 до 1000 с шагом 7.  
+Раздел **"Синхронизация" записи** в средстве ["Производительность"][DevtoolsGuideChromiumEvaluatePerformanceReference] теперь пометит `performance.mark()` события.  Чтобы попробовать эту функцию и оценить производительность кода JavaScript, добавьте `performance.mark()` события в код.  Например, следующий фрагмент кода добавляет маркеры до и после цикла, который итерирует от 0 до 1000 с помощью добавок `for` 7.  
 
 ```javascript
 performance.mark('start');
@@ -208,137 +208,137 @@ for (var i = 0; i < 1000; i+=7;){
 performance.mark('end');
 ```  
 
-Затем откройте средство " [производительность][DevtoolsGuideChromiumEvaluatePerformanceReference] " и перейдите к **разделу временные показатели** для записи кода JavaScript.  `performance.mark()`Добавленные события будут отображены в записи.  
+Затем откройте средство ["Производительность"][DevtoolsGuideChromiumEvaluatePerformanceReference] и перейдите к разделу **"Синхронизация",** чтобы записать код JavaScript.  Добавленные `performance.mark()` события теперь отображаются в записи.  
 
-:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Событие Performance. Mark" lightbox="../../media/2020/10/perf-mark.msft.png":::
-   `performance.mark` событиях  
+:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="События Performance.mark" lightbox="../../media/2020/10/perf-mark.msft.png":::
+   `performance.mark` events  
 :::image-end:::  
 
-### Новые фильтры типа ресурсов и URL-адреса в инструменте "сеть"  
+### Новые фильтры типа ресурса и URL-адресов в средстве "Сеть"  
 
-Используйте новые `resource-type` `url` Ключевые слова в инструменте " **сеть** " для фильтрации сетевых запросов.  Например, вы можете `resource-type:image` сосредоточиться на сетевых запросах, которые являются изображениями.  
+Используйте новые и `resource-type` `url` ключевые слова в средстве **"Сеть"** для фильтрации сетевых запросов.  Например, используйте, `resource-type:image` чтобы сосредоточиться на сетевых запросах, которые являются изображениями.  
 
-:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Фильтр по типу ресурсов" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
-   Фильтр по типу ресурсов  
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="фильтр типа ресурса" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
+   фильтр типа ресурса  
 :::image-end:::  
 
-Чтобы найти другие специальные ключевые слова, такие как `resource-type` и `url` , перейдите в [раздел запросы фильтра по свойствам][DevtoolsNetworkReferenceFilterRequestsProperties].  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к разделу проблемы [#1121141][CR1121141] и [#1104188][CR1104188].  
+Чтобы найти более специальные ключевые слова, такие как `resource-type` и `url` , перейдите к [фильтрации запросов по свойствам][DevtoolsNetworkReferenceFilterRequestsProperties].  Чтобы просмотреть обновления этой функции в режиме реального времени в [][CR1121141] проекте с открытым исходным кодом Chromium, перейдите к #1121141 и [#1104188.][CR1104188]  
 
-### Обновления представления "сведения о кадрах"  
+### Обновления представления сведений о фрейме  
 
-#### Отображение отчетов COEP и COOP в конечную точку  
+#### Отображение отчетов COEP и COOP в конечной точке  
 
-`reporting to`В разделе " **изоляция &** " перейдите на вкладку "политика встроенного внедрения" \ (COEP \) и межисточниковая политика OPENER \ (Coop \).  [API отчетов][MdnReportingApi] определяет `Report-To` новый заголовок HTTP, который позволяет указать конечные точки сервера для браузера, чтобы отправлять предупреждения и ошибки.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1051466][CR1051466].  
+В разделе "Изоляция & безопасности" см. конечную точку "Политика межпромещенного встраивщика \(COEP\) и политику межпроигонного открытия `reporting to` \(COOP\)". ****  API [отчетов][MdnReportingApi] определяет новый http-заголовок, который позволяет указать конечные точки сервера для браузера для отправки предупреждений и `Report-To` ошибок.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1051466.][CR1051466]  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Отправка сообщения конечной точке" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Отчеты в конечную точку" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    `reporting to`Конечная точка  
 :::image-end:::  
 
-#### Отображение COEP и COOP режима "только отчет"  
+#### Отображение режима только отчетов COEP и COOP  
 
-DevTools теперь отобразите `report-only` метку для COEP и Coop, которые установлены в `report-only` режим.  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1051466][CR1051466].  
+Теперь в DevTools отображается `report-only` метка для COEP и COOP, которые настроены в `report-only` режиме.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1051466.][CR1051466]  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Метка режима «только отчет»" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
-   `report-only`Метка "режим"  
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Метка режима "Только отчет"" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+   Метка `report-only` режима  
 :::image-end:::  
 
-### Просмотр и устранение проблем с контрастностью цвета в инструменте "Общие сведения о CSS"  
+### Просмотр и устранение проблем цветовой контрастности в средстве "Обзор CSS"  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
    Экспериментальная функция  
 :::image-end:::  
 
-В инструменте " **Обзор CSS** " теперь отображается список элементов на странице с проблемами цветовой контрастности.  На приведенной ниже демонстрационной странице показан пример ошибки цветовой контрастности.  
+Средство **CSS Overview** теперь отображает список элементов на странице, которые имеют проблемы с цветовой контрастности.  На следующей демонстрации имеется пример проблемы с цветовой контрастностью.  
 
-[Обзор CSS: демонстрация доступных цветов][GlitchCssOverviewAccessibleColorsDemo]  
+[Демонстрация доступных цветов CSS][GlitchCssOverviewAccessibleColorsDemo]  
 
-Чтобы включить этот эксперимент, в **Settings**разделе  >  **эксперименты**с параметрами установите флажок **CSS Overview (обзор** ).  Чтобы просмотреть список элементов с проблемой цветовой контрастности, в **вопросах контрастности**выберите **текст**.  Чтобы открыть элемент в инструменте **элементы** , выберите элемент в списке.  Для устранения проблем с контрастностью Microsoft Edge DevTools [автоматически предлагают варианты цветов][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  Чтобы просмотреть обновления в реальном времени для этой функции в проекте Open-Source Chromium, перейдите к вопросу [#1120316][CR1120316].  
+Чтобы включить этот эксперимент, в **области "Эксперименты**параметров" выберите контрольный ящик "Обзор  >  **** **CSS".**  Чтобы просмотреть список элементов с проблемой **** цветовой контрастности, в области "Проблемы с контрастом" выберите **"Текст".**  Чтобы открыть элемент в средстве **"Элементы",** выберите элемент в списке.  Чтобы устранить проблемы контрастности, Microsoft Edge DevTools автоматически [предоставляет варианты цвета.][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1120316.][CR1120316]  
 
-:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Проблемы с низким контрастом цвета" lightbox="../../media/2020/10/css-overview.msft.png":::
-   Проблемы с низким контрастом цвета  
+:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Проблемы с низкой цветовой контрастностью" lightbox="../../media/2020/10/css-overview.msft.png":::
+   Проблемы с низкой цветовой контрастностью  
 :::image-end:::  
 
-## Загрузка каналов предварительной версии Microsoft Edge  
+## Скачивание Microsoft Edge предварительных каналов  
 
-Если вы используете Windows или macOS, рассматривайте в качестве браузера по умолчанию использование [каналов предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] .  Каналы предварительного просмотра предоставляют доступ к последним функциям DevTools.  
+Если вы используете Windows или macOS, рассмотрите возможность использования каналов предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
-## Знакомство с Microsoft Edge DevTools Team  
+## Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Устаревшая область свойств в инструменте "элементы" — новые возможности DevTools (Microsoft Edge 84) | Документы Microsoft"  
-[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Функции отладки сетки CSS: новые возможности DevTools (Microsoft Edge 85) | Документы Microsoft"  
-[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "Специальные возможности цвета в области "стили" — новые возможности DevTools (Microsoft Edge 86) | Документы Microsoft"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Deprecation of the Properties pane in the Elements tool - What's new in DevTools (Microsoft Edge 84) | Документы Майкрософт"  
+[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Функции отладки сетки CSS — новые возможности в DevTools (Microsoft Edge 85) | Документы Майкрософт"  
+[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "Предложение доступных цветов в области стилей — новые возможности в DevTools (Microsoft Edge 86) | Документы Майкрософт"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Эмуляция мобильных устройств в Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Недавно выбранный элемент или объект JavaScript: Справочник по API служебных программ для консоли | Документы Microsoft"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Настройка сочетаний клавиш в Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Справка по анализу производительности | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Эмуляция: поддержка двух режимов экрана — экспериментальные функции | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Включите экспериментальные API — экспериментальные функции | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Включить редактор сочетаний клавиш — экспериментальные функции | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Эмуляция: поддержка двух режимов экрана — экспериментальные функции | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesEnableNetworkConsole]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-network-console "Включить сетевую консоль — экспериментальные функции | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Включение средства просмотра заказов на исходный номер — экспериментальные функции | Документы Microsoft"
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Тестирование на складная и устройствах с двумя экранами — экспериментальные функции | Документы Microsoft"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Включите экспериментальные функции — экспериментальные функции | Документы Microsoft"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "Справочник по API для консоли "Таблица" | Документы Microsoft"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Поиск неиспользуемых кодов JavaScript и CSS с помощью вкладки "покрытие" в Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Проверка сетки CSS | Документы Microsoft"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Ящик — настройка Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры: Настройка Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Анализ производительности отрисовки с помощью вкладки "рендеринг" — Справка по анализу производительности | Документы Microsoft"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Просмотр и отладка сведений о проигрывателях мультимедиа | Документы Microsoft"  
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Фильтрация запросов по свойствам-Справка по анализу сети | Документы Microsoft"  
-[DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Эмуляция средств проверки подлинности и отладки WebAuthn в Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Эмуляция мобильных устройств в средствах разработчика Microsoft Edge | Документация Майкрософт"  
+[DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Недавно выбранный элемент или объект JavaScript — справочник по API консольных utilities | Документы Майкрософт"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Настройка сочетания клавиш в Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Справочник по анализу производительности | Документы Майкрософт"  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Эмуляция: поддержка режима двойного экрана — экспериментальные | Документы Майкрософт"  
+[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Включить экспериментальные API - экспериментальные | Документы Майкрософт"  
+[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Включить редактор сочетания клавиш — экспериментальные функции | Документы Майкрософт"  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Эмуляция: поддержка режима двойного экрана — экспериментальные | Документы Майкрософт"  
+[DevtoolsExperimentalFeaturesEnableNetworkConsole]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-network-console "Enable Network Console - Experimental features | Документы Майкрософт"  
+[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Документы Майкрософт"
+[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Тестирование на устройствах с двумя и двумя экранами — экспериментальные | Документы Майкрософт"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Включить экспериментальные функции — экспериментальные | Документы Майкрософт"  
+[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "таблица. Справочные данные по API консоли | Документы Майкрософт"  
+[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Найдите неиспользванный код JavaScript и CSS на вкладке "Охват" в Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Проверка сетки CSS | Документы Майкрософт"  
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer — настройка Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры — настройка средств разработчика Microsoft Edge | Документация Майкрософт"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Анализ производительности отрисовки с помощью вкладки "Отрисовка " Справочник по анализу производительности" | Документы Майкрософт"  
+[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Просмотр и отлагивание сведений об игроках мультимедиа | Документы Майкрософт"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Фильтрация запросов по свойствам : справочник по анализу сети | Документы Майкрософт"  
+[DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Эмуляция аутентификаций и отладка WebAuthn в Microsoft Edge DevTools | Документы Майкрософт"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Каналы предварительной версии Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Каналы предварительного просмотра Microsoft Edge"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Код Visual Studio"  
+[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
-[VisualStudioCodeMarketplaceMsEdgedevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Инструменты Microsoft Edge для Visual Studio, код | Код Visual Studio"  
+[VisualStudioCodeMarketplaceMsEdgedevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Средства Microsoft Edge для Visual Studio кода | Visual Studio кода"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Ошибки Chromium"  
 
-[CR174309]: https://crbug.com/174309 "DevTools: разрешение на настройку сочетаний клавиш и привязок клавиш | Ошибки Chromium"
-[CR772558]: https://crbug.com/772558 "DevTools: обновление до последней версии Lighthouse | Ошибки Chromium"  
-[CR1034663]: https://crbug.com/1034663 "Создание передней части API тестирования WebAuthn | Ошибки Chromium"  
-[CR1047356]: https://crbug.com/1047356 "Сетка CSS/гибкая таблица/подсказка для таблиц | Ошибки Chromium"  
+[CR174309]: https://crbug.com/174309 "DevTools: позволяет настраивать сочетания клавиш и привязки клавиш | Ошибки Chromium"
+[CR772558]: https://crbug.com/772558 "DevTools: обновление до последней версии lighthouse | Ошибки Chromium"  
+[CR1034663]: https://crbug.com/1034663 "Создание серверного приложения для API тестирования WebAuthn | Ошибки Chromium"  
+[CR1047356]: https://crbug.com/1047356 "Таблица CSS/ Flexbox/Таблица | Ошибки Chromium"  
 [CR1051466]: https://crbug.com/1051466 "Поддержка отладки COOP/COEP в DevTools | Ошибки Chromium"  
-[CR1073899]: https://crbug.com/1073899 "Вкладка "вычисляемый стиль" исчезает в режиме отклика | Ошибки Chromium"  
-[CR1075732]: https://crbug.com/1075732 "Персонализация DevTools — незакрепленные вкладки | Ошибки Chromium"  
-[CR1084673]: https://crbug.com/1084673 "DevTools: Улучшите способ представления настраиваемых свойств CSS ((то есть). Переменные CSS) и их значения | Ошибки Chromium"  
-[CR1093687]: https://crbug.com/1093687 "Инструмент "создать" для создания и воспроизведения запросов виртуальных сетей | Ошибки Chromium"  
-[CR1096230]: https://crbug.com/1096230 "Группировка свойств CSS по категориям в области «Вычисляемые стили» | Ошибки Chromium"  
-[CR1104188]: https://crbug.com/1104188 "При поиске полного URL-адреса в средстве поиска в сети не удается найти результаты. Ошибки Chromium"  
-[CR1106251]: https://crbug.com/1106251 "☂ DevTools: улучшение вкладки "вычисляемые стили" | Ошибки Chromium"  
-[CR1120316]: https://crbug.com/1120316 "Выделение неправильной контрастности в разделе Общие сведения о CSS > цвета | Ошибки Chromium"  
-[CR1121141]: https://crbug.com/1121141 "Разрешать фильтрацию по типу ресурсов в сетевом журнале | Ошибки Chromium"  
-[CR1121312]: https://crbug.com/1121312 "Параметры должны быть удалены из меню "другие инструменты" | Ошибки Chromium"  
-[CR1136394]: https://crbug.com/1136394 "Инструмент "Подсказка" | Ошибки Chromium"  
-[CR1136655]: https://crbug.com/1136655 "Devtools: локализация v2 | Ошибки Chromium"  
+[CR1073899]: https://crbug.com/1073899 "Вкладка "Вычисленный стиль" исчезает в режиме отклика | Ошибки Chromium"  
+[CR1075732]: https://crbug.com/1075732 "Персонализация DevTools — вкладки Movable | Ошибки Chromium"  
+[CR1084673]: https://crbug.com/1084673 "DevTools: улучшение способа, который мы представляем настраиваемые свойства CSS ((aka). Переменные CSS) и их значения | Ошибки Chromium"  
+[CR1093687]: https://crbug.com/1093687 "Создание средства для создания и воспроизведения искусственных сетевых запросов | Ошибки Chromium"  
+[CR1096230]: https://crbug.com/1096230 "Группировать свойства CSS по категориям в области вычисляемой | Ошибки Chromium"  
+[CR1104188]: https://crbug.com/1104188 "Поиск с помощью сетевого инструмента не находит результатов при поиске полного URL-адреса | Ошибки Chromium"  
+[CR1106251]: https://crbug.com/1106251 "☂ DevTools: улучшение вкладки "Вычисляемая стили| Ошибки Chromium"  
+[CR1120316]: https://crbug.com/1120316 "Выделение плохой контрастности в обзоре CSS > цветов | Ошибки Chromium"  
+[CR1121141]: https://crbug.com/1121141 "Разрешить фильтрацию по типу ресурса в журнале | Ошибки Chromium"  
+[CR1121312]: https://crbug.com/1121312 "Параметры следует удалить из меню "Дополнительные инструменты" | Ошибки Chromium"  
+[CR1136394]: https://crbug.com/1136394 "Набор инструментов Flexbox | Ошибки Chromium"  
+[CR1136655]: https://crbug.com/1136655 "Devtools: локализация 2 | Ошибки Chromium"  
 
-[MdnReportingApi]: https://developer.mozilla.org/docs/Web/API/Reporting_API "API отчетов | MDN"  
+[MdnReportingApi]: https://developer.mozilla.org/docs/Web/API/Reporting_API "Отчеты API | MDN"  
 
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "Microsoft/vscode-Edge-Devtools | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 
-[GithubGoogleChromeLighthouseReleasesV641]: https://github.com/GoogleChrome/lighthouse/releases/v6.4.1 "v 6.4.1-GoogleChrome/Lighthouse | GitHub"  
+[GithubGoogleChromeLighthouseReleasesV641]: https://github.com/GoogleChrome/lighthouse/releases/v6.4.1 "v6.4.1 — GoogleChrome/lighthouse | GitHub"  
 
 [GithubW3cWebauthn]: https://w3c.github.io/webauthn "Веб-проверка подлинности | GitHub"  
 
-[GlitchCssOverviewAccessibleColorsDemo]: https://css-overview-accessible-colors-demo.glitch.me "Здравствуйте! | Цепь"  
+[GlitchCssOverviewAccessibleColorsDemo]: https://css-overview-accessible-colors-demo.glitch.me "Hello! | Временный сбой"  
 
-[PostmanSchemaJsonCollectionv210Index]: https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html "Опубликовать формат коллекции v 2.1.0 | Опубликовать"  
+[PostmanSchemaJsonCollectionv210Index]: https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html "Формат коллекции Postman 2.1.0 | Postman"  
 
-[SwaggerSpecificationV2]: https://swagger.io/specification/v2 "Спецификация OpenAPI | Машин"  
+[SwaggerSpecificationV2]: https://swagger.io/specification/v2 "Спецификация OpenAPI | Swagger"  
 
 <!--[JecFyiDemoPerfMark]: https://jec.fyi/demo/perf-mark "" -->  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница [будет найдена, и](https://developers.google.com/web/updates/2020/10/devtools/index) ее можно создать с помощью [Jecelyn Yeen][JecelynYeen] \ (разработчик отвечает, Chrome DevTools \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница находится [здесь](https://developers.google.com/web/updates/2020/10/devtools/index). Ее автор — [Jecelyn Yeen][JecelynYeen] (Джеслин Йен) \(советник по разработке, Chrome DevTools\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
@@ -346,4 +346,4 @@ DevTools теперь отобразите `report-only` метку для COEP 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen

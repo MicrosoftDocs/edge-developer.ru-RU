@@ -3,16 +3,16 @@ description: Microsoft Edge в Linux, улучшенные советы webhint 
 title: Что нового в средствах разработчика (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: a9c262075f3d541861ed825a8da96b3a86956c0e
-ms.sourcegitcommit: c06a4ece7bcbfeae4677d15fca677ca42a0373b9
-ms.translationtype: HT
+ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "11229480"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313088"
 ---
 # Что нового в средствах разработчика (Microsoft Edge 88)  
 
@@ -53,7 +53,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 *   Ссылки на другие связанные панели.  
 *   Ссылки на документацию по устранению проблем на вашем веб-сайте.  
     
-:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Средство Проблемы" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Средство "Проблемы"" lightbox="../../media/2020/11/issues-webhints.msft.png":::
    Средство **Проблемы**  
 :::image-end:::  
 
@@ -62,11 +62,11 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 Теперь вы можете визуализировать содержимое **Слои** вместе со значениями z-index и объектной моделью документов \(DOM\).  Эта функция помогает выполнять отладку без частого переключения между средствами [Трехмерное представление][Devtools3dViewIndex] и **Слои**.  Для обеспечения комплексного визуального интерфейса отладки [трехмерное представление и составные слои теперь объединены][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Панель Составные слои" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Панель "Составные слои"" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    Панель **Составные слои**  
 :::image-end:::  
 
@@ -112,19 +112,19 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 1.  Выберите **Приложение** > **Служебные сценарии**.  
 1.  Нажмите **Сетевые запросы**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Открытие средства Сеть из панели Служебные сценарии" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Открытие средства "Сеть" из панели "Служебные сценарии"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Открытие средства **Сеть** из панели **Служебные сценарии**
     :::image-end:::  
     
 1.  Средство **Сеть** открывается в **консоли** и отображает все сетевые запросы, связанные со служебными сценариями.  Сетевые запросы фильтруются с помощью `is:service-worker-intercepted`.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Средство Сеть в консоли" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Средство "Сеть" в консоли" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
        Средство **Сеть** в **консоли**  
     :::image-end:::
     
 1. Чтобы вернуть средство **Сеть** на верхнюю панель, закройте **консоль**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закрытие консоли для возврата средства Сеть" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закрытие консоли для возврата средства "Сеть"" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
        Закрытие **консоли** для возврата средства **Сеть**  
     :::image-end:::  
     
@@ -137,7 +137,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 *   Время выполнения обработчика события `fetch`.  
 *   Время выполнения всех событий `fetch` для загрузки клиента.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Панель Время" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Панель "Время"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    Панель **Время**  
 :::image-end:::  
 
@@ -204,7 +204,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 В Microsoft Edge версии 87, если вы включали параметр **Согласовать язык браузера** в [параметрах средств разработчика][DevtoolsCustomizeIndexSettings], язык средств разработчика не совпадал с языком браузера.  В Microsoft Edge версии 88 средства разработчика соответствуют языку браузера, если вы включите параметр **Согласовать язык браузера**.  Дополнительные сведения о параметре средств разработчика **Согласовать язык браузера** см. в статье [Изменение языковых параметров средств разработчика][DevtoolsCustomizeLocalization].  
 
-:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Параметр средств разработчика Согласовать язык браузера на японском языке" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Параметр средств разработчика "Согласовать язык браузера" на японском языке" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
    Параметр средств разработчика **Согласовать язык браузера** на японском языке  
 :::image-end:::  
 
@@ -222,7 +222,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```  
+```
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="Угол CSS" lightbox="../../media/2020/11/css-angle.msft.png":::
    Угол CSS  
@@ -329,7 +329,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ## Скачивание Microsoft Edge предварительных каналов  
 
-Если вы используете Windows, Linux или macOS, рассмотрите возможность использования [Microsoft Edge предварительных каналов][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
+Если вы используете Windows, Linux или macOS, рассмотрите возможность использования каналов предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
 ## Взаимодействие с командой средств разработчика Microsoft Edge  
 
@@ -360,6 +360,8 @@ background: linear-gradient(100deg, lightblue, pink);
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Скачивание Microsoft Edge Insider Channels"  
 
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Каналы предварительного просмотра Microsoft Edge"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Ошибки Chromium"  
@@ -370,7 +372,7 @@ background: linear-gradient(100deg, lightblue, pink);
 [CR1035309]: https://crbug.com/1035309 "Проблема 1035309: средства разработчика должны согласованно использовать МБ для обозначения мегабайт, а не мебибайт | Ошибки Chromium"  
 [CR1051466]: https://crbug.com/1051466 "Проблема 1051466: поддержка отладки COOP/COEP в средствах разработчика | Ошибки Chromium"  
 [CR1058836]: https://crbug.com/1058836 "Проблема 1058836: проблемы пользовательского интерфейса при отладке Wasm | Ошибки Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Проблема 1071432: ☂️ базовый интерфейс разработчика Wasm | Ошибки Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Проблема 1071432: ☂︝ wasm Basic Developer Experience | Ошибки Chromium"  
 [CR1107766]: https://crbug.com/1107766 "Проблема 1107766: отображение сведений о фреймах, созданных командой "window.open()", в дереве фреймов | Ошибки Chromium"  
 [CR1122507]: https://crbug.com/1122507 "Проблема 1122507: получение сведений о рабочем процессе в представлении дерева фреймов | Ошибки Chromium"  
 [CR1126178]: https://crbug.com/1126178 "Проблема 1126178: ☂ средства разработчика: компоненты CSS <type> | Ошибки Chromium"  
