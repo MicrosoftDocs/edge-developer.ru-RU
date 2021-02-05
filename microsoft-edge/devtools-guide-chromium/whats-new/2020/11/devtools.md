@@ -53,7 +53,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 *   Ссылки на другие связанные панели.  
 *   Ссылки на документацию по устранению проблем на вашем веб-сайте.  
     
-:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Средство "Проблемы"" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Средство Проблемы" lightbox="../../media/2020/11/issues-webhints.msft.png":::
    Средство **Проблемы**  
 :::image-end:::  
 
@@ -66,7 +66,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 Теперь вы можете визуализировать содержимое **Слои** вместе со значениями z-index и объектной моделью документов \(DOM\).  Эта функция помогает выполнять отладку без частого переключения между средствами [Трехмерное представление][Devtools3dViewIndex] и **Слои**.  Для обеспечения комплексного визуального интерфейса отладки [трехмерное представление и составные слои теперь объединены][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Панель "Составные слои"" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Панель Составные слои" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    Панель **Составные слои**  
 :::image-end:::  
 
@@ -112,19 +112,19 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 1.  Выберите **Приложение** > **Служебные сценарии**.  
 1.  Нажмите **Сетевые запросы**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Открытие средства "Сеть" из панели "Служебные сценарии"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Открытие средства Сеть из панели Служебные сценарии" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Открытие средства **Сеть** из панели **Служебные сценарии**
     :::image-end:::  
     
 1.  Средство **Сеть** открывается в **консоли** и отображает все сетевые запросы, связанные со служебными сценариями.  Сетевые запросы фильтруются с помощью `is:service-worker-intercepted`.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Средство "Сеть" в консоли" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Средство Сеть в консоли" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
        Средство **Сеть** в **консоли**  
     :::image-end:::
     
 1. Чтобы вернуть средство **Сеть** на верхнюю панель, закройте **консоль**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закрытие консоли для возврата средства "Сеть"" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закрытие консоли для возврата средства Сеть" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
        Закрытие **консоли** для возврата средства **Сеть**  
     :::image-end:::  
     
@@ -137,7 +137,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 *   Время выполнения обработчика события `fetch`.  
 *   Время выполнения всех событий `fetch` для загрузки клиента.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Панель "Время"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Панель Время" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    Панель **Время**  
 :::image-end:::  
 
@@ -204,7 +204,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 В Microsoft Edge версии 87, если вы включали параметр **Согласовать язык браузера** в [параметрах средств разработчика][DevtoolsCustomizeIndexSettings], язык средств разработчика не совпадал с языком браузера.  В Microsoft Edge версии 88 средства разработчика соответствуют языку браузера, если вы включите параметр **Согласовать язык браузера**.  Дополнительные сведения о параметре средств разработчика **Согласовать язык браузера** см. в статье [Изменение языковых параметров средств разработчика][DevtoolsCustomizeLocalization].  
 
-:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Параметр средств разработчика "Согласовать язык браузера" на японском языке" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Параметр средств разработчика Согласовать язык браузера на японском языке" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
    Параметр средств разработчика **Согласовать язык браузера** на японском языке  
 :::image-end:::  
 
