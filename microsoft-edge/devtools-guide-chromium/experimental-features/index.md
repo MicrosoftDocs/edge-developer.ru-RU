@@ -3,16 +3,16 @@ description: Последние экспериментальные функци�
 title: Экспериментальные функции
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft edge, веб-разработка, средства f12, devtools, эксперимент
-ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 32eaa3e8d41efefa669142297891e7c62cf4eb5b
+ms.sourcegitcommit: d53421b7219ad87fa9d58f601d9c61ee44c2e43a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313069"
+ms.locfileid: "11313467"
 ---
 # Экспериментальные функции  
 
@@ -30,7 +30,7 @@ Microsoft Edge DevTools предоставляет доступ к экспер�
     *   Выберите `Shift` + `?` .  Для получения дополнительных сведений перейдите к [Microsoft Edge DevTools сочетания клавиш][DevToolsShortcuts].  
 1.  В левой части **области** "Параметры" выберите раздел **"Эксперименты".**  
     
-    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="Страница Эксперименты в параметрах" lightbox="../media/experiments-devtools.msft.png":::
+    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="Страница "Эксперименты" в параметрах" lightbox="../media/experiments-devtools.msft.png":::
        Страница **"Эксперименты"** в **параметрах**  
     :::image-end:::  
     
@@ -51,7 +51,7 @@ Microsoft Edge DevTools предоставляет доступ к экспер�
 | [Просмотр исходных заказов](#source-order-viewer) | 86 или более поздней |  
 | [Включить редактор сочетания клавиш](#enable-keyboard-shortcut-editor) | 87 или более поздней |  
 | [Включить составные слои в 3D-представлении](#enable-composited-layers-in-3d-view) | 87 или более поздней |  
-| [Включить новое средство редактора шрифтов в области стилей](#) | 89 или более поздней |  
+| [Включить новое средство редактора шрифтов в области стилей](#enable-new-font-editor-tool-within-the-styles-pane) | 89 или более поздней |  
 | [Включить новые функции отладки CSS Flexbox](#enable-new-css-flexbox-debugging-features) | 89 или более поздней |  
 | [Включить меню вкладок "+кнопка", чтобы открыть дополнительные инструменты](#enable--button-tab-menus-to-open-more-tools) | 89 или более поздней |  
 | [Вкладка "Включить приветствие"](#enable-welcome-tool) | 89 или более поздней |  
@@ -80,7 +80,7 @@ Microsoft Edge DevTools предоставляет доступ к экспер�
 
 *   Выберите **значок** овала Grid рядом с любым элементом Grid, показанным в дереве DOM **средства "Элементы".**  
     
-    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Значок овала сетки в средстве Элементы" lightbox="../media/grid-adorner.msft.png":::
+    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Значок овала сетки в средстве "Элементы"" lightbox="../media/grid-adorner.msft.png":::
        Значок овала сетки в **средстве "Элементы"**  
     :::image-end:::  
     
@@ -121,7 +121,7 @@ Microsoft Edge DevTools предоставляет доступ к экспер�
     
 В [эксперименте webhint][WebhintMain] на панели вопросов отображается обратная связь веб-вехи. [][DevtoolsIssues]  Выберите проблему, чтобы отобразить документацию по решению и список затронутых ресурсов на вашем веб-сайте.  Выберите ссылку на ресурс, чтобы открыть **** соответствующую **области** **"Сеть",**"Источники" или "Элементы" в DevTools.  
 
-:::image type="complex" source="../media/experiments-webhint.msft.png" alt-text="обратная связь веб-панелей на панели Проблемы" lightbox="../media/experiments-webhint.msft.png":::
+:::image type="complex" source="../media/experiments-webhint.msft.png" alt-text="обратная связь веб-панелей на панели "Проблемы"" lightbox="../media/experiments-webhint.msft.png":::
    обратная связь веб-панелей на **панели "Проблемы"**  
 :::image-end:::  
 
@@ -173,7 +173,7 @@ Microsoft Edge DevTools предоставляет доступ к экспер�
 1.  Выберите действие, настраиваемую.  
 1.  Choose the **Edit** \( ![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \) icon.  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Выбор действия для настройки на странице Ярлыки в параметрах" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Выбор действия для настройки на странице "Ярлыки" в параметрах" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Выбор действия для настройки на странице **"Ярлыки"** в [параметрах][DevToolsCustomizeIndexSettings]  
     :::image-end:::  
     
@@ -210,7 +210,7 @@ Microsoft Edge DevTools предоставляет доступ к экспер�
 1.  Откройте области **составных** слоев.  
 1.  Отображаются все закрашенные слои приложения.  Попробуйте эту функцию с собственными веб-приложениями.  
     
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Панель Составные слои" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Панель "Составные слои"" lightbox="../media/experiments-layers.msft.png":::
    Панель **Составные слои**  
 :::image-end:::  
 
