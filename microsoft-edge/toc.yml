@@ -23,6 +23,8 @@
           href: devtools-guide-chromium/open/index.md
         - name: Что нового
           items:
+            - name: Microsoft Edge 89
+              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
             - name: Microsoft Edge 87
@@ -63,6 +65,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Проверка эффектов анимации
               href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Изменение стилей и параметров шрифтов CSS
+              href: devtools-guide-chromium/inspect-styles/edit-fonts.md
             - name: Проверка сетки CSS
               href: devtools-guide-chromium/css/grid.md
             - name: Принудительный перевод средств разработчика в режим предварительного просмотра
@@ -115,6 +119,8 @@
           items:
             - name: Обзор эмуляции
               href: devtools-guide-chromium/device-mode/index.md
+            - name: Эмуляция двухэкранных и складных устройств
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
             - name: Эмуляция и тестирование других браузеров
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
             - name: Рекомендации
