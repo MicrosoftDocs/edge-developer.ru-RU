@@ -238,7 +238,7 @@ performance.mark('end');
 
 Теперь в DevTools отображается `report-only` метка для COEP и COOP, которые настроены в `report-only` режиме.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к [#1051466.][CR1051466]  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Метка режима "Только отчет"" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Метка режима Только отчет" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    Метка `report-only` режима  
 :::image-end:::  
 
