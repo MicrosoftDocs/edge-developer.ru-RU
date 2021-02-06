@@ -277,6 +277,8 @@
               href: extensions-chromium/publish/submission-states.md
             - name: Управление параметрами учетной записи
               href: extensions-chromium/publish/manage-settings.md
+            - name: Свяжитесь с нами
+              href: extensions-chromium/publish/contact-us.md
         - name: Политики надстроек Microsoft Edge
           items:
             - name: Политика безопасности содержимого
