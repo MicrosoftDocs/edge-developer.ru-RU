@@ -1,51 +1,46 @@
 ---
-description: Расширениям корпоративной документации для пограничного решения (Chromium).
-title: Хранение и обновление
+description: Раздать и публиковать расширения на предприятии для Microsoft Edge (Chromium).
+title: Публикация и обновление расширений в магазине надстройки Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Разработка расширений, расширения браузера, надстройки, центр партнера, разработчик
-ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, разработка расширений, расширения браузера, надстройки, Центр партнеров, разработчик
+ms.openlocfilehash: 91fdd5c2f625890653085e8999da3e513b072348
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015704"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327689"
 ---
-# <span data-ttu-id="db701-104">Размещение и обновление веб-магазина</span><span class="sxs-lookup"><span data-stu-id="db701-104">Web Store Hosting and Updating</span></span>  
+# <span data-ttu-id="22f94-104">Публикация и обновление расширений в магазине надстройки Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="22f94-104">Publish and update extensions in the Microsoft Edge Add-ons store</span></span>  
 
-<span data-ttu-id="db701-105">Большинство расширений размещаются в [каталоге надстроек Microsoft Edge предварительной оценки \ (надстройки Microsoft Edge предварительной оценки \)][MicrosoftStoreExtensions] , чтобы лучше защитить пользователей от вредоносных расширений.</span><span class="sxs-lookup"><span data-stu-id="db701-105">Most Extensions are hosted in the [Microsoft Edge Insider Addons catalog \(Microsoft Edge Insider Addons\)][MicrosoftStoreExtensions] to best protect users from malicious Extensions.</span></span>  
+<span data-ttu-id="22f94-105">Большинство расширений публикуются в хранилище надстройки [Microsoft Edge][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] для защиты пользователей от вредоносных расширений.</span><span class="sxs-lookup"><span data-stu-id="22f94-105">Most extensions are published to the [Microsoft Edge Add-ons store][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] to protect users from malicious extensions.</span></span>  
 
-## <span data-ttu-id="db701-106">Размещения</span><span class="sxs-lookup"><span data-stu-id="db701-106">Hosting</span></span>  
+## <span data-ttu-id="22f94-106">Параметры публикации расширений</span><span class="sxs-lookup"><span data-stu-id="22f94-106">Publish options for extensions</span></span>  
 
-<span data-ttu-id="db701-107">Все расширения распространяются на пользователей в виде специального ZIP-файла с суффиксом. CRX.</span><span class="sxs-lookup"><span data-stu-id="db701-107">All Extensions are distributed to users as a special ZIP file with a .crx suffix.</span></span>  <span data-ttu-id="db701-108">Расширения, размещенные в надстройках Microsoft EDGE, загружаются в виде ZIP-файлов.</span><span class="sxs-lookup"><span data-stu-id="db701-108">Extensions hosted in the Microsoft Edge Addons are uploaded as .zip files.</span></span> <span data-ttu-id="db701-109">Процесс публикации автоматически преобразует ZIP-файл в CRX.</span><span class="sxs-lookup"><span data-stu-id="db701-109">The publishing process automatically converts the .zip into a .crx file.</span></span>  
+<span data-ttu-id="22f94-107">Все расширения распространяются пользователям в качестве специального архивного `.zip` файла \( \) с суффиксом. `.crx`</span><span class="sxs-lookup"><span data-stu-id="22f94-107">All extensions are distributed to users as a special archive \(`.zip`\) file with a `.crx` suffix.</span></span>  <span data-ttu-id="22f94-108">Расширения, опубликованные в microsoft Edge Add-ons Store, загружаются как `.zip` файлы.</span><span class="sxs-lookup"><span data-stu-id="22f94-108">Extensions published to the Microsoft Edge Add-ons store are uploaded as `.zip` files.</span></span>  <span data-ttu-id="22f94-109">Процесс публикации автоматически преобразует файл `.zip` в `.crx` файл.</span><span class="sxs-lookup"><span data-stu-id="22f94-109">The publishing process automatically converts the `.zip` file into a `.crx` file.</span></span>  
 
-<span data-ttu-id="db701-110">Существует два исключения для правила размещения надстроек Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="db701-110">There are two exceptions to the Microsoft Edge Addons hosting rule:</span></span>  
+<span data-ttu-id="22f94-110">В следующих двух сценариях не требуется публиковать расширение в магазине надстройки Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="22f94-110">The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons store.</span></span>  
 
-1.  <span data-ttu-id="db701-111">Расширения, распространяемые с помощью корпоративной политики.</span><span class="sxs-lookup"><span data-stu-id="db701-111">Extensions that are distributed through the Enterprise policy.</span></span>  
-1.  <span data-ttu-id="db701-112">В режиме разработчика распакованные каталоги расширений на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="db701-112">Unpacked Extension directories from a local machine while in developer mode.</span></span>  
+*   <span data-ttu-id="22f94-111">Расширения, распространяемых с помощью корпоративной политики.</span><span class="sxs-lookup"><span data-stu-id="22f94-111">Extensions distributed using Enterprise policy.</span></span>  
+*   <span data-ttu-id="22f94-112">Использование распакованных каталогов расширений на локальном компьютере, когда Microsoft Edge находится в режиме разработчика.</span><span class="sxs-lookup"><span data-stu-id="22f94-112">Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.</span></span>  
 
-## <span data-ttu-id="db701-113">Обновление</span><span class="sxs-lookup"><span data-stu-id="db701-113">Updating</span></span>  
+## <span data-ttu-id="22f94-113">Обновления расширений</span><span class="sxs-lookup"><span data-stu-id="22f94-113">Updates to extensions</span></span>
 
-<span data-ttu-id="db701-114">Браузер Microsoft Edge периодически проверяет наличие новых версий установленных расширений и обновляет каждый из них без вмешательства пользователя.</span><span class="sxs-lookup"><span data-stu-id="db701-114">The Microsoft Edge browser periodically checks for new versions of installed Extensions and updates each without user intervention.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="db701-115">Пошаговые инструкции по обновлению расширения в надстройках Microsoft Edge будут добавлены в план.</span><span class="sxs-lookup"><span data-stu-id="db701-115">Steps to update an Extension on Microsoft Edge Addons are planned be added.</span></span>  
-
-<!-- image links -->
+<span data-ttu-id="22f94-114">Браузер Microsoft Edge периодически проверяет наличие новых версий установленных расширений и обновляет каждую из них без вмешательства пользователя.</span><span class="sxs-lookup"><span data-stu-id="22f94-114">The Microsoft Edge browser periodically checks for new versions of installed extensions and updates each without user intervention.</span></span>  
 
 <!-- links -->  
 
-[MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Расширения — надстройки для участников программы предварительной оценки Microsoft Edge"  
+[MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Расширения — надстройки программы | Майкрософт"  
 
 > [!NOTE]
-> <span data-ttu-id="db701-117">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="db701-117">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="db701-118">[Здесь](https://developer.chrome.com/extensions/hosting)будет найдена исходная страница.</span><span class="sxs-lookup"><span data-stu-id="db701-118">The original page is found [here](https://developer.chrome.com/extensions/hosting).</span></span>  
+> <span data-ttu-id="22f94-116">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="22f94-116">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="22f94-117">Здесь находится исходная [страница.](https://developer.chrome.com/extensions/hosting)</span><span class="sxs-lookup"><span data-stu-id="22f94-117">The original page is found [here](https://developer.chrome.com/extensions/hosting).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="db701-120">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="db701-120">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="22f94-119">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="22f94-119">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
