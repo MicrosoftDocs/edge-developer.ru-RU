@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/10/2020
+  ms.date: 02/04/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
-  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+  ms.openlocfilehash: 150dcdf1a5d4f5ac06a4d0b105f89a05907d7ddb
+  ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/23/2021
-  ms.locfileid: "11297725"
+  ms.lasthandoff: 02/13/2021
+  ms.locfileid: "11327632"
 highlightedContent:
   items:
   - title: Microsoft Edge (официальный канал Stable)
@@ -27,7 +27,7 @@ highlightedContent:
   - title: Узнайте, что нового
     itemType: learn
     url: https://www.microsoftedgeinsider.com/whats-new
-  - title: Получить поддержку
+  - title: Получение поддержки
     itemType: reference
     url: /microsoft-edge/index#help-and-support
   - title: Использование Microsoft Edge
@@ -162,7 +162,7 @@ additionalContent:
       links:
       - text: Политика в отношении безопасности содержимого
         url: /microsoft-edge/extensions-chromium/store-policies/csp
-      - text: Политики в отношении разработчиков каталога надстроек Microsoft Edge
+      - text: Политики разработчика каталога надстройок Microsoft Edge
         url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
     - title: Прогрессивные веб-приложения
       links:

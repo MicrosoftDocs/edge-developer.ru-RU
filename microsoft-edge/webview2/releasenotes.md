@@ -3,17 +3,17 @@ description: Заметки о выпуске microsoft Edge WebView2 SDK
 title: Заметки о выпуске Для Microsoft Edge WebView2 для Win32, WPF и WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/01/2021
+ms.date: 02/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, приложения win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, элемент управления браузером, edge html
-ms.openlocfilehash: 199077b1922fd7249bd67133d55d85bc0f144926
-ms.sourcegitcommit: ab4b555d30f3be05d8620e8deb3c74350b6696be
+ms.openlocfilehash: 43df4c6155350881059fc6ca7f6fe3a047ba0f12
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306618"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327640"
 ---
 # Заметки о выпуске webView2 SDK  
 
@@ -22,25 +22,28 @@ ms.locfileid: "11306618"
 > [!NOTE]
 > Убедитесь, что приложение повторно скомпилировать после обновления пакета NuGet.  Команда рекомендует использовать канал Canary при разработке с использованием пакетов предварительного выпуска, а также невторяемую времени работы при использовании выпущенных пакетов.  Для получения дополнительных сведений перейдите к [versioning][VersioningDoc].  
  
-## 1.0.781-prerelease  
+## 1.0.790-предварительнаяrelease  
 
-Дата выпуска: 29 января 2021 г.  
+Дата выпуска: 10 февраля 2021 г.  
 
-[Пакет NuGet][NuGetGallery1.0.781-prerelease] \| Microsoft Edge версии 86.0.616.0 или более новой  
+[Пакет NuGet][NuGetGallery1.0.790-prerelease] \| Microsoft Edge версии 86.0.616.0 или более новой  
 
 ### Общие  
+
+> [!IMPORTANT]
+> **Breaking Change**: WebView2 pre-release package 1.0.781 is deprecated.  Прекратите разработку с помощью этого пакета.  
 
 > [!IMPORTANT]
 > Предварительный пакет WebView2 0.9.430 является неподготовленным и удаляется из предстоящего выпуска.  Если ваше приложение WebView использует пакет, рекомендуется обновить его до более нового.  
 
 ##### Функции  
 
-*   Добавлены [методы TrySuspend и Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume] для приостановки и возобновления WebViews.  
-*   Добавлен [метод SetVirtualHostNameToFolderMapping,][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping] который соповедет имя виртуального хоста с путем каталога.  \([\#37,][GithubMicrosoftedgeWebviewfeedbackIssue37] [\#161][GithubMicrosoftedgeWebviewfeedbackIssue161]и [\#212][GithubMicrosoftedgeWebviewfeedbackIssue212]\).  
-*   Добавлено [свойство DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor] для настройки цвета и альфа-канала фона.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\).  
-*   Добавлено [свойство UserAgent,][ReferenceWin32Icorewebview2experimentalsettings10781PreReleaseGetUserAgent] чтобы получить или установить агент пользователя.  \([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\).
+*   Добавлены [методы TrySuspend и Resume][ReferenceWin32Icorewebview210790PreReleaseTrySuspendResume] для приостановки и возобновления WebViews.  
+*   Добавлен [метод SetVirtualHostNameToFolderMapping,][ReferenceWin32Icorewebview210790PreReleaseSetVirtualHostNameToFolderMapping] который соповедет имя виртуального хоста с путем каталога.  \([\#37,][GithubMicrosoftedgeWebviewfeedbackIssue37] [\#161][GithubMicrosoftedgeWebviewfeedbackIssue161]и [\#212][GithubMicrosoftedgeWebviewfeedbackIssue212]\).  
+*   Добавлено [свойство DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210790PreReleaseDefaultBackgroundColor] для настройки цвета и альфа-канала фона.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\).  
+*   Добавлено [свойство UserAgent,][ReferenceWin32Icorewebview2experimentalsettings10790PreReleaseGetUserAgent] чтобы получить или установить агент пользователя.  \([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\).
 *   Метод заменен `CreateCookieWithCookie` `CopyCookie` методом.  
-*   Добавлена поддержка визуального размещения с помощью интерфейса [ICoreWebView2CompositionController,][ReferenceWin32Icorewebview2controllerViewWebview210781CompositionController] который создается с помощью нового `CreateCoreWebView2CompositionController` `ICoreWebView2Environment3` метода.  
+*   Добавлена поддержка визуального размещения с помощью интерфейса [ICoreWebView2CompositionController,][ReferenceWin32Icorewebview2controllerViewWebview210790CompositionController] который создается с помощью нового `CreateCoreWebView2CompositionController` `ICoreWebView2Environment3` метода.  
 
     
 ##### Исправления ошибок  
@@ -51,15 +54,20 @@ ms.locfileid: "11306618"
 *   Исправлена ошибка, разрешив навигацию с неправильно отформатированной ЮРИС, `CoreWebView2NavigationStartingEventArgs.Cancel` когда было установлено его. `false`  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
 *   Исправлена ошибка, заблокированная во всплывающих окнах с подключенными к событиям `window.print()` обработчиками `NewWindowRequested` событий.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
 *   Исправлена проблема динамического DPI при перемещении приложений между разными мониторами.  \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
-*   Улучшены значения, переданные `HRESULT` [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke.][ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10781]  
+*   Улучшены значения, переданные `HRESULT` [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke.][ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10790]  
+*   Отключена кнопка управления автозаполненными возможностями.  \([\#585][GithubMicrosoftedgeWebviewfeedbackIssue585]\). 
+*   Исправлена Visual Studio при сбоях при `WebView2.Dispose` вызове в нескольких окнах.  \([\#816][GithubMicrosoftedgeWebviewfeedbackIssue816]\ и [\#442][GithubMicrosoftedgeWebviewfeedbackIssue442]\).  
+*   Исправлена ошибка, из-за Visual Studio webView2.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\). 
+*   Снижение высокой нагрузки на ЦП.  \([\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
+*   Исправлены проблемы с нерекометентным пакетом предварительного выпуска 1.0.781. [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] [и \#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
     
 ##### Рекламные акции  
 
 *   Следующие экспериментальные API теперь повышены до Stable.  
     *   API визуального размещения.  
-    *   [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping]  
-    *   [TrySuspend и Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume]  
-    *   [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor]  
+    *   [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210790PreReleaseSetVirtualHostNameToFolderMapping]  
+    *   [TrySuspend и Resume][ReferenceWin32Icorewebview210790PreReleaseTrySuspendResume]  
+    *   [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210790PreReleaseDefaultBackgroundColor]  
     
 #### .NET  
 
@@ -108,7 +116,7 @@ ms.locfileid: "11306618"
 *   Добавлены API для обработки поддержки DPI.  
     *   Добавлено [свойство RasterizationScale][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] для изменения масштаба DPI для содержимого WebView и всплывающих папок пользовательского интерфейса, а также связанного события [RasterizationScaleChanged.][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged]  
     *   Добавлено [свойство ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShouldDetectMonitorScaleChanges] для автоматического обновления `RasterizationScale` свойства при необходимости.  
-    *   Добавлено свойство [BoundsMode,][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsMode] чтобы указать, что границы являются пикселями логики и что WebView можно использовать для отображения пикселей WebView2, а WebView использует его для получения `RasterizationScale` `RasterizationScale` `Bounds` физического размера.  
+    *   Добавлено свойство [BoundsMode,][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsMode] указывав, что границы являются пикселями логики и позволяют WebView использовать для отображения пикселей WebView2, а WebView использует его для получения `RasterizationScale` `RasterizationScale` `Bounds` физического размера.  
 *   Обновлено `NewWindowRequested` событие для обработки и `Ctrl` + `click` `Shift` + `click` .  \([\#168][GithubMicrosoftedgeWebviewfeedbackIssue168] и [\#371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
 *   Следующие экспериментальные API теперь повышены до Stable.  
     *   [WebResourceResponseReceived API][WebResourceResponseReceivedAPI]  
@@ -153,7 +161,7 @@ ms.locfileid: "11306618"
 
 *   `CoreWebView2NewWindowRequestedEventArgs.Handled` предотвращает открытие нового окна.  \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549] и [\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
     
-## 1.0.674-предварительнаяrelease  
+## 1.0.674-prerelease  
 
 Дата выпуска: 19 октября 2020 г.  
 
@@ -177,7 +185,7 @@ ms.locfileid: "11306618"
 *   Изменены реализации пользовательских классов EventArgs в пространстве имен на подклассы `Microsoft.Web.WebView2.Core` [System.EventArgs][DotnetApiSystemEventargs] [или System.ComponentModel.CancelEventArgs.][DotnetApiSystemComponentmodelCancelEventargs]  \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)  
 *   Добавлена поддержка [CoreWebView2CreationProperties][DotnetApiMicrosoftWebWebview2Winforms] в WinForms.  \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\)
 *   Добавлены [API WebResourceRequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested] .NET.  \([\#219][GithubMicrosoftedgeWebviewfeedbackIssue219]\).  
-*   Обновлено свойство "Источник [конструктора][DotnetApiMicrosoftWebWebview2WinformsWebview2Source] winForms" по умолчанию или значение null.  \([\#177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
+*   Обновлено свойство "Источник [конструктора][DotnetApiMicrosoftWebWebview2WinformsWebview2Source] WinForms" по умолчанию или значение null.  \([\#177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
 *   Обновлены границы WebView2 в WebView2.Init() для поддержки режимов DPI, которые меньше 100 %.  \([\#432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
 *   Обновлены [BuildWindowCore и][DotnetApiMicrosoftWebWebview2WpfWebview2Buildwindowcore] [DestroyWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore] для повышения надежности.  \([\#382][GithubMicrosoftedgeWebviewfeedbackIssue382]\).  
 *   Обновлена база загрузщика .NET для загрузки на бит процесса, а не на архитектуру операционной системы.  \([\#431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
@@ -210,7 +218,7 @@ ms.locfileid: "11306618"
     
 *   Отключенные [политики браузера.][DeployedgeMicrosoftEdgePolicies]  
 *   Добавлено [свойство AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount09622] в параметрах среды WebView2, чтобы включить условный доступ для WebView.  
-*   Обновлено, чтобы включить свойство `ICoreWebView2NewWindowRequestedEventArgs` [WindowFeatures][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetWindowfeatures09622] и связанное [с ним ICoreWebView2WindowFeatures.][ReferenceWin32Icorewebview2windowfeatures09622]  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
+*   Включено `ICoreWebView2NewWindowRequestedEventArgs` свойство [WindowFeatures][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetWindowfeatures09622] и связанное [с ним свойство ICoreWebView2WindowFeatures.][ReferenceWin32Icorewebview2windowfeatures09622]  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   Обновлено `System.Windows.Rect`  для использования вместо `System.Drawing.Rectangle` `System.Windows.Rect` \([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\).  
 *   Обновлено событие NewWindowRequested для обработки `window.open()` запроса без параметров.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   [Указанные параметры AdditionalBrowserArguments][ReferenceWin32Icorewebview2environmentoptionsPutAdditionalbrowserarguments09622] не переопределяются переменными среды `ICoreWebView2EnvironmentOptions` или значениями реестра.  Дополнительные сведения можно найти в [createCoreWebView2EnvironmentWithOptions.][ReferenceWin32IdlCreatecorewebview2environmentwithoptions09622]  
@@ -239,7 +247,7 @@ ms.locfileid: "11306618"
     
 *   Добавлены улучшения рабочих потоков WebView.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).  
 *   Отключено блокатор всплывающих блоков в WebView.  Для получения дополнительных сведений перейдите к [свойству IsUserInitiated][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetIsuserinitiated09538] `NewWindowRequested` в событии.  
-*   Убедитесь, что событие запуска навигации WebView запускается для `about:blank` .  Теперь события запускаются для всех переходов, но отмены для `NavigationStarting` `about:blank` или iframe `srcdoc` не поддерживаются и игнорируются.  
+*   Убедитесь, что событие запуска навигации WebView запускается для `about:blank` .  Теперь события запускаются для всей навигации, но отмены для `NavigationStarting` `about:blank` или iframe `srcdoc` не поддерживаются и игнорируются.  
 *   Блокировал некоторые `edge://` схемы URI в WebView.  
 *   Добавлено экспериментальное свойство [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin32Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled09538] в параметрах среды WebView2, чтобы включить условный доступ для WebView.  
 *   Добавлено экспериментальное событие [WebResourceResponseReceived,][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538] которое запускается после получения и обработки WebView ответа от запроса WebResource.  В объект отклика включаются заглавные и при их настоятели проверки подлинности.  
@@ -269,7 +277,7 @@ ms.locfileid: "11306618"
     > 
     > *   [AreRemoteObjectsAllowed теперь][ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09488] [— AreHostObjectsAllowed.][ReferenceWin32Icorewebview2settingsGetArehostobjectsallowed09538]  
     
-*   Обновлено [addHostObjectToScript.][ReferenceWin32Icorewebview2Addhostobjecttoscript09538]  Теперь маркеры сериализатора объектов исходного хост-объекта настроены на прокси-объекты.  Затем маркеры сериализации объектов хост-объекта сериализируются обратно в качестве хост-объекта, когда передаются в качестве параметра в обратном вызове JavaScript \([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\).  
+*   Обновлено [addHostObjectToScript][ReferenceWin32Icorewebview2Addhostobjecttoscript09538].  Исходные маркеры сериализатора объектов хост-сервера теперь устанавливаются на прокси-объекты.  Затем маркеры сериализации объектов хост-объекта сериализируются обратно в качестве хост-объекта, когда передаются в качестве параметра в обратном вызове JavaScript \([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\).  
     
 #### .NET (предварительная версия 0.9.538)  
 
@@ -285,7 +293,7 @@ ms.locfileid: "11306618"
 [Пакет NuGet][NuGetGallery0.9.515-prerelease] \| Microsoft Edge версии 84.0.515.0.  
 
 *   > [!IMPORTANT]
-    > **Объявление:** WebView2 теперь поддерживает Windows Forms и WPF на .NET Framework 4.6.2 или более **** поздней версии и .NET Core 3.0 или более поздней версии в предварительном пакете.  
+    > **Announcement**: WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**.  
     
 *   Дополнительные сведения о создании приложений WPF можно найти в руководстве по началу работы [с WPF][GettingstartedWpf] и справочнике [по WPF WebView2][DotnetApiMicrosoftWebWebview2Wpf] для API, характерных для WPF.  
 *   Дополнительные сведения о создании приложений Windows Forms можно найти в руководстве по началу работы с [Windows Forms][GettingstartedWinforms] и справочнике по формам [Windows][DotnetApiMicrosoftWebWebview2Winforms] WebView2 для API Windows Forms.  
@@ -301,7 +309,7 @@ ms.locfileid: "11306618"
 [Пакет NuGet][NuGetGallery0.9.488] \| Microsoft Edge версии 84.0.488.0.  
 
 *   > [!IMPORTANT]
-    > **Объявление:** начиная с предстоящей версии 83 Microsoft Edge, Веб-просмотр Evergreen больше не будет ориентирован на канал браузера Stable.  Вместо этого он ориентирован на другой набор binaries, с фирменным названием [Evergreen WebView2 Runtime,][ConceptsDistributionEvergreenMode]которые можно установить цепочкой с помощью установщика, разрабатываемого командой WebView.  Для получения дополнительных сведений перейдите в [app-Distribution][ConceptsDistribution].  
+    > **Announcement**: Starting with thecoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Вместо этого он ориентирован на другой набор binaries, с фирменным названием [Evergreen WebView2 Runtime,][ConceptsDistributionEvergreenMode]которые можно установить цепочкой с помощью установщика, разрабатываемого командой WebView.  Дополнительные сведения можно найти в [app-Distribution.][ConceptsDistribution]  
     
 *   > [!IMPORTANT]
     > **Announcement**: Moving forward, the WebView team releases two packages: a pre-release package with experimental API \(for you to try out\) and a stable release package with stable APIs \(for your confidence\).  Чтобы узнать о различиях, перейдите к [данным о версиях браузера и WebView2.][ConceptsVersioning]  
@@ -330,14 +338,14 @@ ms.locfileid: "11306618"
     
 *   Добавлено [событие FrameNavigationCompleted.][ReferenceWin32Icorewebview2AddFramenavigationcompleted09488]  Теперь, когда iframe завершает навигацию, происходит событие, которое возвращает успешность навигации и ее ИД.  
 *   Добавлен [интерфейс ICoreWebView2EnvironmentOptions,][ReferenceWin32Icorewebview2environmentoptions09488] который можно использовать для определения версии времени выполнения WebView2, нацеленной на ваше приложение.  
-*   Добавлен [параметр IsBuiltInErrorPageEnabled.][ReferenceWin32Icorewebview2settingsGetIsbuiltinerrorpageenabled09488]  Теперь вы можете включить или отключить встроенную веб-страницу ошибки для сбоя навигации и сбоя процесса отрисовки.  
+*   Добавлен [параметр IsBuiltInErrorPageEnabled.][ReferenceWin32Icorewebview2settingsGetIsbuiltinerrorpageenabled09488]  Теперь можно включить или отключить встроенную веб-страницу ошибки для сбоя навигации и сбоя процесса отрисовки.  
 *   Обновлено внедрение удаленных объектов для поддержки реализаций .NET `IDispatch` \([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\).  
 *   Обновлено [событие NewWindowRequested][ReferenceWin32Icorewebview2AddNewwindowrequested09488] для обработки запросов из контекстных меню \([#108][GithubMicrosoftedgeWebviewfeedbackIssue108]\).  
 *   Выпущен первый отдельный предварительный пакет WebView2, в котором можно получить доступ к API визуального размещения.  Команда WebView обновила [APISample,][GithubMicrosoftedgeWebview2samplesMain] включив новые экспериментальные API.  
     
     *   Добавлен [интерфейс ICoreWebView2ExperimentalCompositionController][ReferenceWin32Icorewebview2experimentalcompositioncontroller09488] для подключения к дереву композиции и предоставления входных данных для WebView.  
     *   Добавлен [iCoreWebView2ExperimentalPointerInfo,][ReferenceWin32Icorewebview2experimentalpointerinfo09488]который содержит все сведения из `POINTER_INFO` .  Этот объект передается в SendPointerInput для ввода ввода указателя в WebView.  
-    *   Добавлен [iCoreWebView2ExperimentalCursorChangedEventHandler,][ReferenceWin32Icorewebview2experimentalcursorchangedeventhandler09488]который сообщает приложению, когда следует изменить курсор мыши над WebView.  При нацелии мыши на текстовое поле в WebView курсор изменяется со стрелки на селектор.  Свойство в приложении сообщает приложению, что в настоящее время должен быть курсор мыши `cursor` `CompositionController` для WebView.  
+    *   Добавлен [iCoreWebView2ExperimentalCursorChangedEventHandler,][ReferenceWin32Icorewebview2experimentalcursorchangedeventhandler09488]который сообщает приложению, когда следует изменить курсор мыши над WebView.  При нацелии мыши на текстовое поле в WebView курсор изменяется со стрелки на селектор.  Свойство в приложении сообщает приложению, каким должен быть курсор мыши в настоящее время `cursor` `CompositionController` для WebView.  
     
 ## 0.9.430  
 
@@ -360,14 +368,14 @@ WebView2 SDK является официальной бета-версией Win
 *   Изменен ZoomFactor, чтобы применить его только к текущему webView.  Изменение масштаба текущего webView не влияет на другие веб-просмотры, которые вы переходили на тот же сайт источника.  Дополнительные сведения можно найти в [get_ZoomFactor.][ReferenceWin32Icorewebview2hostGetZoomfactor09430]  
 *   Hid ZoomView UI for WebView \([#95][GithubMicrosoftedgeWebviewfeedbackIssue95]\).  
 *   Добавлена [настройка SetBoundsAndZoomFactor.][ReferenceWin32Icorewebview2hostSetboundsandzoomfactor09430]  Теперь вы можете одновременно установить коэффициент масштабирования и границы WebView.  
-*   Добавлено [событие WindowCloseRequested.][ReferenceWin32Icorewebview2AddWindowcloserequested09430]  Дополнительные сведения см. [в add_WindowCloseRequested][ReferenceWin32Icorewebview2AddWindowcloserequested09430] \([#119][GithubMicrosoftedgeWebviewfeedbackIssue119]\).  
+*   Добавлено [событие WindowCloseRequested.][ReferenceWin32Icorewebview2AddWindowcloserequested09430]  Дополнительные сведения см. в [add_WindowCloseRequested][ReferenceWin32Icorewebview2AddWindowcloserequested09430] \([#119][GithubMicrosoftedgeWebviewfeedbackIssue119]\).  
 *   Добавлена поддержка типа диалоговых окно для событий диалоговых окно JavaScript и `beforeunload` добавлена [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin32Icorewebview2CoreWebview2ScriptDialogKind09430] записи.  
 *   Добавлены [getHeaders][ReferenceWin32Icorewebview2httprequestheadersGetheaders09430] для HttpRequestHeaders, [GetHeader][ReferenceWin32Icorewebview2httpresponseheadersGetheader09430] для HttpResponseHeaders и [get_HasCurrentHeader][ReferenceWin32Icorewebview2httpheaderscollectioniteratorGetHascurrentheader09430] в HttpHeadersCollectionIterator.  
 *   > [!IMPORTANT]
-    > **Breaking Change**: Modified `DevToolsProtocolEventReceived` behavior.  Теперь вы можете создать [DevToolsProtocolEventReceiver][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430] для определенного события протокола DevTools и подписаться на такое событие или отписаться от него с помощью [add_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430] / [remove_DevToolsProtocolEventReceived.][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430]  
+    > **Breaking Change**: Modified `DevToolsProtocolEventReceived` behavior.  Теперь вы можете создать [DevToolsProtocolEventReceiver][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiver09430] для определенного события Протокола DevTools и подписаться на такое событие или отписаться от него с помощью [add_DevToolsProtocolEventReceived][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived09430] / [remove_DevToolsProtocolEventReceived.][ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived09430]  
     
 *   > [!IMPORTANT]
-    > **Breaking Change**: `WebMessageReceivedEventArgs` [changed get_WebMessageAsString][ReferenceWin32Iwebview2webmessagereceivedeventargsGetWebmessageasstring08190] property to a [TryGetWebMessageAsString][ReferenceWin32Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring09430] method.  
+    > **Breaking Change** `WebMessageReceivedEventArgs` [: changed get_WebMessageAsString][ReferenceWin32Iwebview2webmessagereceivedeventargsGetWebmessageasstring08190] property to a [TryGetWebMessageAsString][ReferenceWin32Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring09430] method.  
     
 *   > [!IMPORTANT]
     > **Breaking Change**: Changed `AcceleratorKeyPressedEventArgs` [Handle][ReferenceWin32Iwebview2acceleratorkeypressedeventargsHandle08190] method to a [get_Handled][ReferenceWin32Icorewebview2acceleratorkeypressedeventargsGetHandled09430] property.  
@@ -378,9 +386,9 @@ WebView2 SDK является официальной бета-версией Win
 
 *   Выпущен пример WebView2API, полное руководство по SDK WebView2.  Дополнительные сведения можно найти в [примере API.][GithubMicrosoftedgeWebview2samplesApisample]  
 *   Добавлена поддержка IME для всех языков, кроме английского[(#30][GithubMicrosoftedgeWebviewfeedbackIssue30]\).  
-*   Обновлена поверхность API события `WebResourceRequested` в ответ на отчеты об ошибках.  Одновременное указание фильтра и события при создании теперь является неподготовленным.  Чтобы создать событие, запрашиваемого [][ReferenceWin32Iwebview2webview5AddWebresourcerequested08190] веб-ресурсом, используйте add_WebResourceRequested для добавления события, а [AddWebResourceRequestedFilter][ReferenceWin32Iwebview2webview5Addwebresourcerequestedfilter08190] — для добавления фильтра.  [RemoveWebResourceRequestedFilter][ReferenceWin32Iwebview2webview5Removewebresourcerequestedfilter08190] удаляет фильтр \([#36][GithubMicrosoftedgeWebviewfeedbackIssue36]\) \([#74][GithubMicrosoftedgeWebviewfeedbackIssue74]\).  
+*   Обновлена поверхность API события `WebResourceRequested` в ответ на отчеты об ошибках.  Одновременное указание фильтра и события при создании теперь является неподготовленным.  Чтобы создать запрашиваемого события [][ReferenceWin32Iwebview2webview5AddWebresourcerequested08190] веб-ресурса, используйте add_WebResourceRequested добавить событие и [AddWebResourceRequestedFilter][ReferenceWin32Iwebview2webview5Addwebresourcerequestedfilter08190] для добавления фильтра.  [RemoveWebResourceRequestedFilter][ReferenceWin32Iwebview2webview5Removewebresourcerequestedfilter08190] удаляет фильтр \([#36][GithubMicrosoftedgeWebviewfeedbackIssue36]\) \([#74][GithubMicrosoftedgeWebviewfeedbackIssue74]\).  
 *   > [!IMPORTANT]
-    > **Breaking Change**: Modified fullscreen behavior.  Неподготовленный [IsFullScreenAllowed.][ReferenceWin32Iwebview2settingsGetIsfullscreenallowedDeprecated08190]  Теперь, по умолчанию, если элемент в WebView \(например, видео\) имеет полноэкранный режим, он заполняет границы WebView.  Используйте событие [ContainsFullScreenElementChanged][ReferenceWin32Iwebview2containsfullscreenelementchangedeventhandler08190] и get_ContainsFullScreenElement, чтобы указать, как приложение должно издать webView, если элемент хочет зайти в полноэкранный режим. [][ReferenceWin32Iwebview2webview5GetContainsfullscreenelement08190]  
+    > **Breaking Change**: Modified fullscreen behavior.  Неподготовленный [IsFullScreenAllowed.][ReferenceWin32Iwebview2settingsGetIsfullscreenallowedDeprecated08190]  Теперь, по умолчанию, если элемент в WebView \(например, видео\) имеет полноэкранный режим, он заполняет границы WebView.  Используйте событие [ContainsFullScreenElementChanged][ReferenceWin32Iwebview2containsfullscreenelementchangedeventhandler08190] и get_ContainsFullScreenElement, чтобы указать, как приложение должно менять его в том случае, если элемент хочет зайти в полноэкранный режим. [][ReferenceWin32Iwebview2webview5GetContainsfullscreenelement08190]  
     
 ## 0.8.314  
 
@@ -408,7 +416,7 @@ WebView2 SDK является официальной бета-версией Win
 *   Обновлена `CreateWebView2EnvironmentWithDetails` функция для `releaseChannelPreference` удаления.  Дополнительные сведения о функции можно найти в `CreateWebView2EnvironmentWithDetails` [createWebView2EnvironmentWithDetails.][ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190]  Переопределения переменных реестра и среды по-прежнему поддерживается.  Параметр канала по умолчанию используется без переопределения.  
     Во время поиска канала команда WebView пропускает предыдущую версию канала, несовместимую с SDK WebView2.  
     Команда WebView выбирает более стабильный канал, чтобы обеспечить наиболее согласованное поведение для пользователя.  При проверке с помощью последних сборки Canary необходимо создать сценарий, чтобы настроить переменную среды перед `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` `1` запуском приложения.  
-*   Обновлена функция `CreateWebView2EnvironmentWithDetails` с логикой `userDataFolder` выбора, если она не указана.  Дополнительные сведения о функции можно найти в `CreateWebView2EnvironmentWithDetails` [createWebView2EnvironmentWithDetails.][ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190]  Если ранее вы использовали расположение по умолчанию, при переходе на новый SDK по умолчанию сбрасывается \(задайте новое расположение в каталоге кода хоста\) и состояние также `userDataFolder` `userDataFolder` сбрасывается.  Если у ведущего процесса нет разрешения на записи в указанный каталог, функция `CreateWebView2EnvironmentWithDetails` может не работать.  Вы можете скопировать данные из старого каталога `user data folder` в новый.  
+*   Обновлена функция `CreateWebView2EnvironmentWithDetails` с логикой `userDataFolder` выбора, если она не указана.  Дополнительные сведения о функции можно найти в `CreateWebView2EnvironmentWithDetails` [createWebView2EnvironmentWithDetails.][ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190]  Если ранее вы использовали расположение по умолчанию, при переходе на новый SDK по умолчанию сбрасывается \(устанавливается новое расположение в каталоге кода хост-кода\) и состояние также `userDataFolder` `userDataFolder` сбрасывается.  Если у ведущего процесса нет разрешения на записи в указанный каталог, функция `CreateWebView2EnvironmentWithDetails` может не работать.  Вы можете скопировать данные из старого каталога `user data folder` в новый.  
     
 ## 0.8.230  
 
@@ -467,7 +475,7 @@ WebView2 SDK является официальной бета-версией Win
 [ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190]:  /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.8.355&preserve-view=true#createwebview2environmentwithdetails "CreateWebView2EnvironmentWithDetails — глобальные | Документы Майкрософт"  
 
 [ReferenceWin32Icorewebview209430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true "интерфейс ICoreWebView2 | Документы Майкрософт"  
-[ReferenceWin32Icorewebview2acceleratorkeypressedeventargsGetHandled09430]: /microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs?view=webview2-0.9.430&preserve-view=true#get_handled "get_Handled интерфейс ICoreWebView2AcceleratorKeyPressedEventArgs | Документы Майкрософт"  
+[ReferenceWin32Icorewebview2acceleratorkeypressedeventargsGetHandled09430]: /microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs?view=webview2-0.9.430&preserve-view=true#get_handled "get_Handled — интерфейс ICoreWebView2AcceleratorKeyPressedEventArgs | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2AddContentloading09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_contentloading "add_ContentLoading интерфейс ICoreWebView2 | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2AddHistorychanged09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_historychanged "add_HistoryChanged интерфейс ICoreWebView2 | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2Addremoteobject09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#addremoteobject "AddRemoteObject — интерфейс ICoreWebView2 | Документы Майкрософт"  
@@ -484,7 +492,7 @@ WebView2 SDK является официальной бета-версией Win
 [ReferenceWin32Icorewebview2hostNotifyparentwindowpositionchanged09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#notifyparentwindowpositionchanged "NotifyParentWindowPositionChanged — интерфейс ICoreWebView2Host | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2hostPutZoomfactor09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#put_zoomfactor "put_ZoomFactor интерфейс ICoreWebView2Host | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2hostSetboundsandzoomfactor09430]: /microsoft-edge/webview2/reference/win32/icorewebview2host?view=webview2-0.9.430&preserve-view=true#setboundsandzoomfactor "SetBoundsAndZoomFactor — интерфейс ICoreWebView2Host | Документы Майкрософт"  
-[ReferenceWin32Icorewebview2httpheaderscollectioniteratorGetHascurrentheader09430]: /microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator?view=webview2-0.9.430&preserve-view=true#get_hascurrentheader "get_HasCurrentHeader — интерфейс ICoreWebView2HttpHeadersCollectionIterator | Документы Майкрософт"  
+[ReferenceWin32Icorewebview2httpheaderscollectioniteratorGetHascurrentheader09430]: /microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator?view=webview2-0.9.430&preserve-view=true#get_hascurrentheader "get_HasCurrentHeader интерфейс ICoreWebView2HttpHeadersCollectionIterator | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2httprequestheadersGetheaders09430]: /microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders?view=webview2-0.9.430&preserve-view=true#getheaders "GetHeaders — интерфейс ICoreWebView2HttpRequestHeaders | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2httpresponseheadersGetheader09430]: /microsoft-edge/webview2/reference/win32/icorewebview2httpresponseheaders?view=webview2-0.9.430&preserve-view=true#getheader "GetHeader — интерфейс ICoreWebView2HttpResponseHeaders | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2Removeremoteobject09430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#removeremoteobject "RemoveRemoteObject — интерфейс ICoreWebView2 | Документы Майкрософт"  
@@ -502,7 +510,7 @@ WebView2 SDK является официальной бета-версией Win
 [ReferenceWin32Icorewebview2experimentalcursorchangedeventhandler09488]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcursorchangedeventhandler?view=webview2-0.9.488-prerelease&preserve-view=true "интерфейс ICoreWebView2ExperimentalCursorChangedEventHandler | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2experimentalpointerinfo09488]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalpointerinfo?view=webview2-0.9.488-prerelease&preserve-view=true "интерфейс ICoreWebView2ExperimentalPointerInfo | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2Removehostobjectfromscript09488]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#removehostobjectfromscript "RemoveHostObjectFromScript — интерфейс ICoreWebView2 | Документы Майкрософт"  
-[ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09488]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed интерфейс ICoreWebView2Settings | Документы Майкрософт"  
+[ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09488]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed — интерфейс ICoreWebView2Settings | Документы Майкрософт"  
 [ReferenceWin32Icorewebview2settingsGetIsbuiltinerrorpageenabled09488]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled " | Документы Майкрософт"  
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithdetails09488]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithdetails "CreateCoreWebView2EnvironmentWithDetails — глобальные | Документы Майкрософт"  
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions09488]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions — глобальные | Документы Майкрософт"  
@@ -523,7 +531,7 @@ WebView2 SDK является официальной бета-версией Win
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions "CoreWebView2Environment.CompareBrowserVersions(String, String) Method (Microsoft.Web.WebView2.Core) | Документы Майкрософт"
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.getavailablebrowserversionstring "Метод CoreWebView2Environment.GetAvailableBrowserVersionString(String) (Microsoft.Web.WebView2.Core) | Документы Майкрософт"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2Newwindowrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested "CoreWebView2.NewWindowRequested Event (Microsoft.Web.WebView2.Core) | Документы Майкрософт"  
-[DotnetApiMicrosoftWebWebview2CoreCorewebview2Permissionrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested "Событие CoreWebView2.PermissionRequested (Microsoft.Web.WebView2.Core) | Документы Майкрософт"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2Permissionrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested "CoreWebView2.PermissionRequested Event (Microsoft.Web.WebView2.Core) | Документы Майкрософт"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2Scriptdialogopening]: /dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening "CoreWebView2.ScriptDialogOpening Event (Microsoft.Web.WebView2.Core) | Документы Майкрософт"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested "CoreWebView2.WebResourceRequested Event (Microsoft.Web.WebView2.Core) | Документы Майкрософт"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2httprequestheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders "Класс CoreWebView2HttpRequestHeaders (Microsoft.Web.WebView2.Core) | Документы Майкрософт"  
@@ -568,7 +576,7 @@ WebView2 SDK является официальной бета-версией Win
 [ReferenceWin32Icorewebview2experimentalcompositioncontroller3]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.721-prerelease&preserve-view=true "интерфейс ICoreWebView2ExperimentalCompositionController3 | Документы Майкрософт"  
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge — политика | Документы Майкрософт"  
-[DeployedgeMicrosoftEdgeWebviewPolicies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2 — политики | Документы Майкрософт"  
+[DeployedgeMicrosoftEdgeWebviewPolicies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2 — политика | Документы Майкрософт"  
 
 [WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview "Application Guard в Microsoft Defender (Windows 10) — безопасность Windows | Документы Майкрософт"
 
@@ -624,7 +632,7 @@ WebView2 SDK является официальной бета-версией Win
 [GithubMicrosoftedgeWebviewfeedbackIssue560]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/560 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 560"  
 [GithubMicrosoftedgeWebviewfeedbackIssue611]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/611 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 611"  
 
-[GithubMicrosoftedgeWebview2AnnouncementIssue2]:  https://github.com/MicrosoftEdge/WebView2Announcement/issues/2 "Репо для MicrosoftEdge/WebViewAnnouncement Issue 2"  
+[GithubMicrosoftedgeWebview2AnnouncementIssue2]:  https://github.com/MicrosoftEdge/WebView2Announcement/issues/2 "Repo announcement for MicrosoftEdge/WebViewAnnouncement Issue 2"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples — MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesPr17]: https://github.com/MicrosoftEdge/WebView2Samples/pull/17 "Перемещение проекта на использование последней версии WebView2 SDK 0.9.430 — MicrosoftEdge/WebView2Samples | GitHub"  
@@ -647,7 +655,7 @@ WebView2 SDK является официальной бета-версией Win
 [NuGetGallery0.9.538]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "Коллекции NuGet | Microsoft.Web.WebView2 v0.9.538"  
 [NuGetGallery0.9.579]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "Коллекции NuGet | Microsoft.Web.WebView2 v0.9.579"
 [NuGetGallery0.9.622.11]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "Коллекции NuGet | Microsoft.Web.WebView2 v0.9.622.11"
-[NuGetGallery1.0.622.22]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22 "Коллекции NuGet | Microsoft.Web.WebView2 1.0.622.22"
+[NuGetGallery1.0.622.22]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22 "Коллекции NuGet | Microsoft.Web.WebView2 v1.0.622.22"
 [NuGetGallery1.0.664.34]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.34 "Коллекции NuGet | Microsoft.Web.WebView2 v1.0.664.34"
 [NuGetGallery1.0.664.37]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.37 "Коллекции NuGet | Microsoft.Web.WebView2 1.0.664.37"
 [NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "Коллекции NuGet | Предварительная запись Microsoft.Web.WebView2 0.9.628"  
@@ -661,6 +669,13 @@ WebView2 SDK является официальной бета-версией Win
 [DOMContentLoadedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_domcontentloaded&preserve-view=true "add_DOMContentLoaded интерфейс ICoreWebView2_2 | Документы Майкрософт"
 [WebViewEnvironmentproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment&preserve-view=true "ICoreWebView2CookieManager | Документы Майкрософт"
 
+[GithubMicrosoftedgeWebviewfeedbackIssue585]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/585 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 585" 
+[GithubMicrosoftedgeWebviewfeedbackIssue275]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/275 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 275" 
+[GithubMicrosoftedgeWebviewfeedbackIssue816]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/816 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 816" 
+[GithubMicrosoftedgeWebviewfeedbackIssue210]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/210 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 210" 
+[GithubMicrosoftedgeWebviewfeedbackIssue442]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/442 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 442" 
+[GithubMicrosoftedgeWebviewfeedbackIssue878]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/878 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 878" 
+[GithubMicrosoftedgeWebviewfeedbackIssue875]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/875 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 875" 
 [GithubMicrosoftedgeWebviewfeedbackIssue37]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/37 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 37" 
 [GithubMicrosoftedgeWebviewfeedbackIssue58]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/58 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 58" 
 [GithubMicrosoftedgeWebviewfeedbackIssue122]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/122 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 122" 
@@ -675,10 +690,10 @@ WebView2 SDK является официальной бета-версией Win
 [GithubMicrosoftedgeWebviewfeedbackIssue691]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/691 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 691" 
 [GithubMicrosoftedgeWebviewfeedbackIssue414]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/414 "Repo feedback for MicrosoftEdge/WebViewFeedback Issue 414" 
 [NuGetGallery1.0.705.50]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50 "Коллекции NuGet | Microsoft.Web.WebView2 v1.0.705.50"
-[NuGetGallery1.0.781-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.781-prerelease "Коллекции NuGet | Предварительная запись Microsoft.Web.WebView2 1.0.781"  
-[ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.781-prerelease&preserve-view=true#trysuspend "TrySuspend — интерфейс ICoreWebview2_3 | Документы Майкрософт"  
-[ReferenceWin32Icorewebview2experimentalsettings10781PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings?view=webview2-1.0.781-prerelease#get_useragent "get_UserAgent интерфейс ICoreWebView2ExperimentalSettings | Документы Майкрософт"  
-[ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.781-prerelease&preserve-view=true#setvirtualhostnametofoldermapping "SetVirtualHostNameToFolderMapping — интерфейс ICoreWebView2_3 | Документы Майкрософт"   
-[ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor]: /microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.781-prerelease&preserve-view=true#get_defaultbackgroundcolor "get_DefaultBackgroundColor интерфейс ICoreWebView2Controller2 | Документы Майкрософт"  
-[ReferenceWin32Icorewebview2controllerViewWebview210781CompositionController]:  /microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.781-prerelease&preserve-view=true "интерфейс ICoreWebView2CompositionController | Документы Майкрософт"  
-[ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10781]: /microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler?view=webview2-1.0.781-prerelease&preserve-view=true#invoke "Invoke — интерфейс ICoreWebView2WebResourceResponseViewGetContentCompletedHandler | Документы Майкрософт"  
+[NuGetGallery1.0.790-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "Коллекции NuGet | Предварительная запись Microsoft.Web.WebView2 1.0.790"  
+[ReferenceWin32Icorewebview210790PreReleaseTrySuspendResume]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#trysuspend "TrySuspend — интерфейс ICoreWebview2_3 | Документы Майкрософт"  
+[ReferenceWin32Icorewebview2experimentalsettings10790PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings?view=webview2-1.0.790-prerelease&preserve-view=true#get_useragent "get_UserAgent интерфейс ICoreWebView2ExperimentalSettings | Документы Майкрософт"  
+[ReferenceWin32Icorewebview210790PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#setvirtualhostnametofoldermapping "SetVirtualHostNameToFolderMapping — интерфейс ICoreWebView2_3 | Документы Майкрософт"   
+[ReferenceWin32Icorewebview2controllerViewWebview210790PreReleaseDefaultBackgroundColor]: /microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.790-prerelease&preserve-view=true#get_defaultbackgroundcolor "get_DefaultBackgroundColor интерфейс ICoreWebView2Controller2 | Документы Майкрософт"  
+[ReferenceWin32Icorewebview2controllerViewWebview210790CompositionController]:  /microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.790-prerelease&preserve-view=true "интерфейс ICoreWebView2CompositionController | Документы Майкрософт"  
+[ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10790]: /microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler?view=webview2-1.0.790-prerelease&preserve-view=true#invoke "Invoke — интерфейс ICoreWebView2WebResourceResponseViewGetContentCompletedHandler | Документы Майкрософт"  
