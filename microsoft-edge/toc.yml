@@ -272,20 +272,20 @@
             - name: Публикация расширения
               href: extensions-chromium/publish/publish-extension.md
             - name: Обновление расширения
-              href: extensions-chromium/publish/update.md
+              href: extensions-chromium/publish/update-extension.md
             - name: Состояния отправки
               href: extensions-chromium/publish/submission-states.md
             - name: Управление параметрами учетной записи
               href: extensions-chromium/publish/manage-settings.md
-            - name: Свяжитесь с нами
-              href: extensions-chromium/publish/contact-us.md
+            - name: Поддержка расширений контактов
+              href: extensions-chromium/publish/contact-extensions-team.md
         - name: Политики надстроек Microsoft Edge
           items:
             - name: Политика безопасности содержимого
               href: extensions-chromium/store-policies/csp.md
             - name: Дополнение ADA для разработчиков Microsoft Edge
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Политики разработчиков каталога надстроек Microsoft Edge
+            - name: Политики разработчиков магазина надстроек Microsoft Edge
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Расширения для предприятий
           items:
