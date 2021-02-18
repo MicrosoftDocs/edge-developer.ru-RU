@@ -1,18 +1,18 @@
 ---
-description: Процесс переноса расширения Chrome в Microsoft Edge.
+description: Процесс переноса расширения Chrome в Microsoft Edge
 title: Перенос расширения Chrome в Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, разработка расширений, расширения браузера, надстройки, Центр партнеров, разработчик
-ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6be7d788ac22232475e278ae9a5b04de9b6e17f7
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327696"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343138"
 ---
 # Перенос расширения  
 
@@ -25,7 +25,7 @@ Microsoft Edge позволяет переносить расширение Chro
     > [!NOTE]
     > Если расширение использует API, не поддерживаемые Microsoft Edge, оно может не переносим напрямую.  
     
-1.  В файле манифеста установите `update_URL` для поля `https://edge.microsoft.com/extensionwebstorebase/v1/crx` ".  Значение указывает на файл расширения в магазине надстройки Microsoft Edge и позволяет Microsoft Edge проверять обновления `.crx` расширений.  
+1.  В файле манифеста за установите `update_URL` для поля `https://edge.microsoft.com/extensionwebstorebase/v1/crx` ".  Значение указывает на файл расширения в магазине надстройки Microsoft Edge и позволяет Microsoft Edge проверять обновления `.crx` расширений.  
 1.  Если используется в имени или описании расширения, повторно задайте для расширения `Chrome` `Microsoft Edge` название.  Чтобы пройти процесс сертификации, необходимо внести изменения.  
 1.  Проверьте расширение, чтобы проверить, работает ли оно в Microsoft Edge, [выгрузив расширение нео][ExtensionsGettingStartedExtensionSideloading]том же.  
 1.  Если у вас возникнут проблемы, вы можете отладить расширения в Microsoft Edge с помощью DevTools или связаться [с нами.][mailtoExtensionMicrosoft]  

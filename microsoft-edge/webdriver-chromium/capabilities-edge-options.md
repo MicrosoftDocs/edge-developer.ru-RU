@@ -3,21 +3,21 @@ description: Справочник по возможностям WebDriver и в�
 title: Возможности и EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, веб-разработка, html, css, javascript, разработчик, webdriver, selenium, тестирование, средства, автоматизация, тест
-ms.openlocfilehash: c2842740dfc6d902d1727634e00565f8e556969d
-ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
+ms.openlocfilehash: 5a48ca34e46b56fa60bcacfade2add23026be144
+ms.sourcegitcommit: f95812c4e1b7277f67c6c4891be2779cc1b5bdf1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "11306236"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "11343781"
 ---
 # Возможности и EdgeOptions  
 
-Возможности — это параметры, которые можно использовать для настройки и настройки `EdgeDriver` сеанса.  Чтобы узнать о запуске нового `EdgeDriver` сеанса, перейдите к [функции автоматизации Microsoft Edge.][WebdriverIndexDrivingMicrosoftEdgeChromium]  В этой статье описываются все поддерживаемые возможности [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] и сведения о передаче возможностей в `EdgeDriver` сеансы.  
+Возможности — это параметры, которые можно использовать для настройки и настройки `EdgeDriver` сеанса.  Чтобы узнать о запуске нового `EdgeDriver` сеанса, перейдите к [функции автоматизации Microsoft Edge.][WebdriverIndexAutomateMicrosoftEdgeChromium]  В этой статье описываются все поддерживаемые возможности [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] и сведения о передаче возможностей в `EdgeDriver` сеансы.  
 
 Возможности передаются в сеанс WebDriver в качестве карты JSON.  Привязки языка WebDriver обычно предоставляют безопасные для типа методы удобства, поэтому вам не нужно настраивать карту JSON самостоятельно.  Различные привязки языков WebDriver используют различные механизмы для настройки возможностей.  Перейдите к документации по [предпочитаемой привязке][WebdriverIndexChooseWebdriverLanguageBinding] языка, чтобы узнать больше о настройке возможностей.  [Selenium][SeleniumMain] настраивает возможности с помощью `EdgeOptions` класса.  
 
@@ -89,7 +89,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Начало работы с удаленной отладки устройств с Windows 10 | Документы Майкрософт"  
 [WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Выбор привязки языка WebDriver — WebDriver (Chromium) | Документы Майкрософт"
-[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#automating-microsoft-edge-chromium "Автоматизация Microsoft Edge (Chromium) — webDriver (Chromium) | Документы Майкрософт"    
+[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Автоматизация Microsoft Edge (Chromium) — webDriver (Chromium) | Документы Майкрософт"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Установка Microsoft Edge (Chromium) — webDriver (Chromium) | Документы Майкрософт"  
 
 [SeleniumMain]: https://www.selenium.dev "Автоматизация браузера SeleniumHQ"  
