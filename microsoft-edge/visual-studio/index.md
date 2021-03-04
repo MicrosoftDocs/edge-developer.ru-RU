@@ -3,107 +3,143 @@ description: Microsoft Edge (Chromium) и Visual Studio
 title: VisualStudio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 02/18/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft edge, веб-разработка, средства f12, devtools, vs, visual studio, отладка
-ms.openlocfilehash: f3796a040fe6c658211b4009445b5c179ab9b077
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+keywords: microsoft edge, веб-разработка, средства f12, devtools, vs, visual studio, debugger
+ms.openlocfilehash: 562952ef238c05922e468501706ab75e1976273d
+ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231211"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387276"
 ---
-# VisualStudio
+# <a name="visual-studio"></a>VisualStudio  
 
-Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs/) — это интегрированная среда разработки (IDE), которую можно использовать для редактирования, отлаки, построения и публикации веб-приложений. Это программа с множеством функций, которую можно использовать для многих аспектов веб-разработки. Над стандартным редактором и отладчиком, который предоставляет большинство IDEs, Visual Studio компиляторы, средства завершения кода, графические дизайнеры и многие другие функции для упростить процесс разработки. На этой [странице](https://visualstudio.microsoft.com/downloads/) можно скачать Visual Studio если вы еще не используете его.
+Microsoft [Visual Studio][MicrosoftVisualstudioVs] — это интегрированная среда разработки \(IDE\).   Используйте его для редактирования, отлаговки, сборки и публикации веб-приложений.  Это программа с богатыми функциями, которая может использоваться для многих аспектов веб-разработки.  Помимо стандартного редактора и отладки, которые предоставляют большинство IDEs, Visual Studio включает следующие функции, облегчаю процесс разработки.  
 
-В настоящее время Visual Studio 2019 поддерживает отладку JavaScript в Microsoft Edge для приложений ASP\.NET Framework и ASP\.NET Core. Выполните следующие действия для отлаки Microsoft Edge из Visual Studio.
+*   компиляторы  
+*   Средства завершения кода  
+*   графические дизайнеры  
+*   многие другие  
+    
+Если вы еще не используете Visual Studio, перейдите по ссылке [Скачать Visual Studio,][MicrosoftVisualstudioDownloads] чтобы скачать его.  
 
-## Запуск Microsoft Edge
-Visual Studio создает приложение ASP\.NET и ASP\.NET Core, запускает веб-сервер, запускает Microsoft Edge и подключает отладчий отладок Visual Studio одним нажатием одной кнопки. Это позволяет вам отлаголать JavaScript, запущенный в Microsoft Edge, непосредственно из IDE!
+В настоящее время Visual Studio 2019 г. поддерживает отладку JavaScript в Microsoft Edge для ASP.NET Framework и ASP.NET Core приложений.  Выполните следующие действия, чтобы использовать Visual Studio для отлаговки Microsoft Edge.  
 
-### Создание нового веб-приложения ASP.NET Core
+## <a name="launch-microsoft-edge"></a>Запуск Microsoft Edge  
 
-Откройте Visual Studio 2019 и выберите **"Создать новый проект".** На следующем экране выберите **веб-приложение ASP\.NET Core** и нажмите кнопку **"Далее".**
+Visual Studio завершает следующий рабочий процесс с помощью одной кнопки.  
 
-> ##### Рис. 1  
-> Создание нового ASP.NET core Web Application ![ Create a new ASP.NET Core Web Application](./media/create-new-project.png)  
+1.  Создает приложение ASP.NET ASP.NET Core.  
+1.  Запускает веб-сервер.  
+1.  Запускает Microsoft Edge.  
+1.  Подключает Visual Studio отладка.  
+    
+Упрощенный рабочий процесс позволяет отламывать JavaScript, который работает в Microsoft Edge непосредственно из вашего IDE.  
 
-**Укажайте имя проекта** для нового проекта и нажмите кнопку **"Создать".** В этом примере выберите **** React.jsв качестве шаблона, в котором показано, как интегрировать React.js с приложением ASP.NET Core, и нажмите кнопку **"Создать".**
+### <a name="create-a-new-aspnet-core-web-app"></a>Создание нового ASP.NET основного веб-приложения  
 
-### Запуск Microsoft Edge из Visual Studio
+Откройте Visual Studio 2019 г. и **выберите Создание нового проекта.**  На следующем экране выберите ASP.NET **Веб-приложение**  >  **Далее**.  
 
-После создания проекта откройте **ClientApp/src/components/Counter.js. ** Теперь сообщите Visual Studio javaScript, выбрав в этом выпадающий поток **** рядом с зеленой кнопкой "Play" и **IIS Express.** 
+:::image type="complex" source="./media/create-new-project.png" alt-text="Создание нового ASP.NET основного веб-приложения" lightbox="./media/create-new-project.png":::
+   Создание нового ASP.NET основного веб-приложения  
+:::image-end:::  
 
-> ##### Рисунок 2  
-> В dropdown рядом с зеленой кнопкой **"Play"** и **IIS Express** 
-> ![ the dropdown next to the green Play button and IIS Express](./media/vs-dropdown.png)  
+**Укайте имя проекта** для нового проекта и выберите **Create**.  Для целей примера выберитеReact.js** в ** качестве шаблона и выберите **Create**.  Шаблон **React.js** указывает, как интегрировать React.js с приложением ASP.NET Core.  
 
-Выберите **"Отладка сценариев"** и нажмите кнопку **"Включено".**
+### <a name="launch-microsoft-edge-from-visual-studio"></a>Запуск Microsoft Edge из Visual Studio  
 
-> ##### Рисунок3  
-> Включить отладку сценариев в Visual Studio включить отладку ![ сценариев в Visual Studio](./media/enable-script-debugging.png)  
+После создания проекта откройте `ClientApp/src/components/Counter.js` .  Теперь, чтобы использовать Visual Studio для отламки JavaScript, выберите выпадаемую кнопку рядом с зеленой кнопкой **Play** и **IIS Express.**  
 
-В том же dropdown выберите веб-браузер и щелкните канал предварительного просмотра Microsoft Edge, который вы хотите запустить Visual Studio: Microsoft Edge Canary, Dev или Beta. **** Если вы еще не сделали этого, перенайтесь на эту [страницу,](https://www.microsoftedgeinsider.com/download) чтобы установить каналы предварительного просмотра Microsoft Edge.
+:::image type="complex" source="./media/vs-dropdown.png" alt-text="Выпадаемая часть рядом с зеленой кнопкой Play и IIS Express" lightbox="./media/vs-dropdown.png":::
+   Выпадаемая часть рядом с зеленой кнопкой **Play** и **IIS Express**  
+:::image-end:::  
 
-> ##### Рисунок4  
-> Выберите канал предварительного просмотра Microsoft Edge, который Visual Studio запустить, выберите канал предварительного просмотра Microsoft Edge, который Visual Studio ![ запустить](./media/set-web-browser.png)  
+Выберите **включенную отладку**  >  **скриптов**.  
+
+:::image type="complex" source="./media/enable-script-debugging.png" alt-text="Включаем отладку скриптов в Visual Studio" lightbox="./media/enable-script-debugging.png":::
+   Включаем отладку скриптов в Visual Studio  
+:::image-end:::  
+
+В одном и том **** же отсеве выберите веб-браузер > предварительного просмотра канала Microsoft Edge, который Visual Studio запускать, например Microsoft Edge Canary, Dev или Beta.  Если вы еще не используете один из каналов предварительного просмотра Microsoft Edge, перейдите к Скачать каналы предварительного просмотра Microsoft [Edge,][MicrosoftedgeinsiderDownload] чтобы скачать один из них.  
+
+:::image type="complex" source="./media/set-web-browser.png" alt-text="Выберите канал предварительного просмотра Microsoft Edge, который Visual Studio запустить" lightbox="./media/set-web-browser.png":::
+   Выберите канал предварительного просмотра Microsoft Edge, который Visual Studio запустить  
+:::image-end:::  
 
 > [!NOTE]
-> Если вы выберете Microsoft Edge (EdgeHTML), Visual Studio будет запускать его вместо Microsoft Edge (Chromium). [Установите каналы предварительного](https://www.microsoftedgeinsider.com/download) просмотра Microsoft Edge и выберите их или убедитесь, что на вашем компьютере установлена версия Microsoft Edge (Chromium), а не Microsoft Edge (EdgeHTML).
+> Если вы выбрали Microsoft Edge \(EdgeHTML\), Visual Studio запускает его вместо Microsoft Edge \(Chromium\).  Установите один из каналов предварительного просмотра Microsoft Edge или убедитесь, что версия Microsoft [Edge,][MicrosoftedgeinsiderDownload] установленная на вашем компьютере, является Microsoft Edge \(Chromium\) а не Microsoft Edge \(EdgeHTML\).  
 
-Теперь, Visual Studio настроены правильно, нажмите зеленую кнопку **"Play".** Visual Studio построит приложение, запустит веб-сервер, запустит Microsoft Edge и перейдите к порту, указанному в `https://localhost:44362/` **launchSettings.js.**
+Теперь, Visual Studio правильно настроена, выберите зеленую кнопку **Play.**  Visual Studio создает приложение, запустите веб-сервер, запустите Microsoft Edge и перейдите в порт или любой `https://localhost:44362/` порт, указанный в `launchSettings.json` .  
 
-> ##### Рисунок 5  
-> Microsoft Edge, запущенный из Visual Studio ![ Microsoft Edge, запущенный из Visual Studio](./media/edge-launch.png)  
+:::image type="complex" source="./media/edge-launch.png" alt-text="Microsoft Edge запускается с Visual Studio" lightbox="./media/edge-launch.png":::
+   Microsoft Edge запускается с Visual Studio  
+:::image-end:::  
 
-### Отлажите JavaScript, запущенный в Microsoft Edge
+### <a name="debug-javascript-running-in-microsoft-edge"></a>Отламка JavaScript, запущенная в Microsoft Edge  
 
-Переключиться на Visual Studio. В **Counter.js**установите точку останова в строке 13, щелкнув в переборе рядом с этой строкой.
+Переключение на Visual Studio.  В `Counter.js` , чтобы установить точку разрыва на строке 13, выберите желоб рядом с строкой.  
 
-> ##### Рисунок6
-> Установка точки останова в Visual Studio, щелкнув перебор рядом с строкой 13 в **Counter.js**Установка точки останова в Visual Studio, щелкнув перебор рядом с строкой 13 в Counter.js
-> ![](./media/set-breakpoint.png)  
+:::image type="complex" source="./media/set-breakpoint.png" alt-text="Выберите желоб рядом с строкой 13 в Counter.js, чтобы установить точку разрыва в Visual Studio" lightbox="./media/set-breakpoint.png":::
+   Выберите желоб рядом с строкой 13, чтобы установить точку `Counter.js` разрыва в Visual Studio  
+:::image-end:::  
 
-Теперь снова переключиться на экземпляр Microsoft Edge, Visual Studio запущен. Щелкните **"Счетчик"** в NavMenu слева от страницы. Теперь нажмите **кнопку "Приращение".**
+Теперь переключение на экземпляр Microsoft Edge, который Visual Studio запущен.  Выберите на **счетчике** в NavMenu слева от веб-страницы.  Теперь выберите **Приращение**.  
 
-> ##### Рисунок7
-> Страница счетчика в нашем ASP.NET веб-приложении ![ "Счетчик" в веб-приложении ASP.NET Core](./media/edge-counter.png)  
+:::image type="complex" source="./media/edge-counter.png" alt-text="Страница Счетчик в нашем ASP.NET веб-приложении Core" lightbox="./media/edge-counter.png":::
+   Страница Счетчик в нашем ASP.NET веб-приложении Core  
+:::image-end:::  
 
-Отладник JavaScript в Visual Studio будет нажать точку останова, установленную ** в **Counter.js. Visual Studio приостановил выполнение JavaScript, запущенного в Microsoft Edge, и вы можете пошаговую
+Отладка JavaScript в Visual Studio попадает в точку разлома, в который вы вписались. `Counter.js`  Visual Studio теперь приостанавливается время запуска JavaScript в Microsoft Edge, и вы можете ступить через строку сценария по очереди.  
 
-> ##### Рисунок8
-> Visual Studio JavaScript, запущенный в Microsoft Edge, Visual Studio прио в Microsoft ![ Edge](./media/hit-breakpoint.png)  
+:::image type="complex" source="./media/hit-breakpoint.png" alt-text="Visual Studio JavaScript, запущенный в Microsoft Edge" lightbox="./media/hit-breakpoint.png":::
+   Visual Studio JavaScript, запущенный в Microsoft Edge  
+:::image-end:::  
 
-В этом примере была лишь небольшая демонстрация функциональных возможностей, доступных в Visual Studio. Узнайте больше обо всех том, что можно сделать в Visual Studio 2019 г., прочитав их [документацию.](/visualstudio/windows/?view=vs-2019&preserve-view=true)
+В этом примере была лишь небольшая демонстрация функциональных возможностей, доступных в Visual Studio.  Дополнительные сведения о функциональных возможностях Visual Studio 2019 г. перейдите Visual Studio [документации.][VisualStudioWindowsIndex]  
 
-## Присоединение к Microsoft Edge
-В предыдущем рабочий процесс Visual Studio Microsoft Edge. С помощью этого рабочего процесса вы сможете прикрепить отладку Visual Studio к уже запущенным экземплярам Microsoft Edge. 
+## <a name="attach-to-microsoft-edge"></a>Присоединение к Microsoft Edge  
 
-Во-первых, убедитесь, что нет запущенных экземпляров Microsoft Edge. Теперь в терминале запустите следующую команду:
+Ранее необходимо было запустить Microsoft Edge из Visual Studio.  Теперь вы можете прикрепить отладку Visual Studio к уже запущенной экземпляру Microsoft Edge.  
+
+Во-первых, убедитесь, что нет запущенных экземпляров Microsoft Edge.  Теперь из командной строки запустите следующую команду.  
 
 ```console
 start msedge –remote-debugging-port=9222
-```
+```  
 
-В Visual Studio откройте меню **"Отлажать"** и выберите "Присоединение **к процессу"** или нажмите `Ctrl`  +  `Alt`  +  `P` .
+Из Visual Studio откройте меню **Отлаговка** и выберите **Присоединение к процессу** или выберите `Ctrl` + `Alt` + `P` .  
 
-> ##### Рисунок9
-> Selecting **Attach to Process** in Visual Studio ![ Selecting **Attach to Process** in Visual Studio](./media/attach-to-process.png)  
+:::image type="complex" source="./media/attach-to-process.png" alt-text="Выберите Присоединение к процессу в Visual Studio" lightbox="./media/attach-to-process.png":::
+   Выберите **Присоединение к процессу** в Visual Studio  
+:::image-end:::  
 
-В **диалоговом** окне **** "Присоединение к процессу" установите тип подключения к **websocket протокола разработки Chrome (без проверки подлинности).** В **текстовом ящике цели** подключения введите и `http://localhost:9222/` нажмите `Enter` . Вы увидите список открытых вкладок в Microsoft Edge, указанный в диалоговом окте "Присоединение к **процессу".**
+В **диалоговом** окне "Присоединение к процессу" установите тип **подключения** к веб-сайту протокола **chrome devtools (без проверки подлинности).**  В **целевом текстовом ящике Подключения** введите `http://localhost:9222/` и выберите `Enter` .  Просмотрите список открытых вкладок, указанных в диалоговом окте Microsoft Edge в диалоговом окте **"Присоединение к процессу".**  
 
-> ##### Рисунок 10
-> Настройка диалоговое окно **"Присоединение** к процессу" в Visual Studio настройки диалоговое окно "Присоединение к ![ процессу" в Visual Studio](./media/attach-to-process-dialog.png)  
+:::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="Настройте диалоговое окно Attach to Process в Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
+   Настройте **диалоговое окно Attach to Process** в Visual Studio  
+:::image-end:::  
 
-Нажмите **кнопку "Выбрать"...** и проверьте **JavaScript (Microsoft Edge — Chromium).** Вы можете добавлять вкладки, переходить на новые вкладки, закрывать вкладки и видеть изменения, отраженные в диалоговом окке "Присоединение к процессу", нажав кнопку "Обновить". **** **** Выберите вкладку, отлажаемую, и нажмите кнопку **"Присоединить".**
+Выберите **Выберите...** > рядом с **JavaScript (Microsoft Edge — Chromium).**  Чтобы добавить вкладки, перейдите на новые вкладки и закройте **** вкладки и отобразите изменения, отражающиеся в диалоговом окте "Присоединение к процессу", выберите кнопку **"Обновление".**  Выберите вкладку, которая необходимо отлагывать, и **прикрепить**.  
 
-Отлад Visual Studio теперь подключен к Microsoft Edge! Вы можете приостановить выполнение JavaScript, установить точки останова и увидеть их непосредственно в окне "Отлагивание выходных `console.log()` данных" Visual Studio.
+Теперь Visual Studio отладка присоединена к Microsoft Edge.  Можно приостановить работу JavaScript, установить точки разрыва и просмотреть заявления непосредственно в окне `console.log()` Отлаговка в Visual Studio.  
 
-## Знакомство с командой Microsoft Visual Studio Microsoft  
+## <a name="getting-in-touch-with-the-microsoft-visual-studio-team"></a>Контакт с командой Microsoft Visual Studio  
 
-Мы с нетерпением стремимся узнать больше о том, как вы работаете с JavaScript в Visual Studio!  Отправьте нам отзыв, щелкнув значок "Обратная связь" в Visual Studio или нажав на твит [ **** @VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text= @VisualStudio+@EdgeDevTools).  
+Команды Microsoft Visual Studio Microsoft Edge хотят узнать больше о работе с JavaScript в Visual Studio.  Чтобы отправить отзыв, выберите значок **Отправка** отзывов в Visual Studio или твит @VisualStudio [и @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
 
-> ##### Рисунок11
-> Значок **"Обратная** связь" Visual Studio ![ значок "Обратная связь" в Visual Studio](./media/feedback-icon.png)  
+:::image type="complex" source="./media/feedback-icon.png" alt-text="Значок Отправка отзывов в Visual Studio" lightbox="./media/feedback-icon.png":::
+   Значок **Отправка** отзывов в Visual Studio  
+:::image-end:::  
+
+<!-- links -->  
+
+[VisualStudioWindowsIndex]: /visualstudio/windows/index "Visual Studio документации | Документы Майкрософт"  
+
+[MicrosoftVisualstudioDownloads]: https://visualstudio.microsoft.com/downloads "Загрузка Visual Studio"  
+[MicrosoftVisualstudioVs]: https://visualstudio.microsoft.com/vs "Visual Studio IDE"  
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Скачивание Microsoft Edge Insider Channels"  
+
+[TwitterIntentTweetViualstudioEdgdevtools]: https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools "Чирикать @VisualStudio и @EdgeDevTools | Twitter"  

@@ -7,18 +7,18 @@ ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: f56586fa77e34da7884d9d7c565b8cbcc4106c4a
+ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313088"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387284"
 ---
-# Что нового в средствах разработчика (Microsoft Edge 88)  
+# <a name="whats-new-in-devtools-microsoft-edge-88"></a>Что нового в средствах разработчика (Microsoft Edge 88)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## Microsoft Edge и Microsoft Edge Driver теперь доступны в Linux  
+## <a name="microsoft-edge-and-microsoft-edge-driver-now-available-on-linux"></a>Microsoft Edge и Microsoft Edge Driver теперь доступны в Linux  
 
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->  
 <!-- Subtitle: Get Microsoft Edge Dev on Ubuntu, Debian, Fedora, and openSUSE distributions and start automating in CI/CD environments with Microsoft Edge Driver. -->  
@@ -31,7 +31,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
    Средства разработчика в Microsoft Edge в Linux  
 :::image-end:::  
 
-## Улучшенные советы webhint и платформы в средстве "Проблемы"  
+## <a name="improved-webhint-and-platform-tips-in-the-issues-tool"></a>Улучшенные советы webhint и платформы в средстве "Проблемы"  
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
@@ -53,11 +53,11 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 *   Ссылки на другие связанные панели.  
 *   Ссылки на документацию по устранению проблем на вашем веб-сайте.  
     
-:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Средство Проблемы" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Средство "Проблемы"" lightbox="../../media/2020/11/issues-webhints.msft.png":::
    Средство **Проблемы**  
 :::image-end:::  
 
-## Составные слои теперь находятся в трехмерном представлении  
+## <a name="composited-layers-are-now-in-3d-view"></a>Составные слои теперь находятся в трехмерном представлении  
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
@@ -66,11 +66,11 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 Теперь вы можете визуализировать содержимое **Слои** вместе со значениями z-index и объектной моделью документов \(DOM\).  Эта функция помогает выполнять отладку без частого переключения между средствами [Трехмерное представление][Devtools3dViewIndex] и **Слои**.  Для обеспечения комплексного визуального интерфейса отладки [трехмерное представление и составные слои теперь объединены][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Панель Составные слои" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Панель "Составные слои"" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    Панель **Составные слои**  
 :::image-end:::  
 
-## Определения переменных CSS в панели "Стили"  
+## <a name="css-variable-definitions-in-styles-pane"></a>Определения переменных CSS в панели "Стили"  
 
 <!-- Title: Jump to CSS variable definitions  -->  
 <!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->  
@@ -93,7 +93,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
    :::column-end:::
 :::row-end:::  
 
-## Улучшения отладки служебного сценария  
+## <a name="service-worker-debugging-improvements"></a>Улучшения отладки служебного сценария  
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
@@ -102,7 +102,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 Маршрутизация запросов отображает события `startup` и `fetch`, основанные на сетевых запросах, выполняемых в служебных сценариях.  Временные шкалы доступны в средстве **Приложение** или **Сеть**.  Временные шкалы удобно использовать, если у вас возникли проблемы со служебными сценариями и вы хотите проверить наличие ошибок в событиях `startup` или `fetch`.  
 
-### Средство "Приложение"  
+### <a name="application-tool"></a>Средство "Приложение"  
 
 <!-- Title: Open Network tool from the Service Workers pane  -->  
 <!-- Subtitle: Display additional context when debugging a service worker.  -->  
@@ -112,23 +112,23 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 1.  Выберите **Приложение** > **Служебные сценарии**.  
 1.  Нажмите **Сетевые запросы**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Открытие средства Сеть из панели Служебные сценарии" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Открытие средства "Сеть" из панели "Служебные сценарии"" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Открытие средства **Сеть** из панели **Служебные сценарии**
     :::image-end:::  
     
 1.  Средство **Сеть** открывается в **консоли** и отображает все сетевые запросы, связанные со служебными сценариями.  Сетевые запросы фильтруются с помощью `is:service-worker-intercepted`.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Средство Сеть в консоли" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Средство "Сеть" в консоли" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
        Средство **Сеть** в **консоли**  
     :::image-end:::
     
 1. Чтобы вернуть средство **Сеть** на верхнюю панель, закройте **консоль**.  
     
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закрытие консоли для возврата средства Сеть" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Закрытие консоли для возврата средства "Сеть"" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
        Закрытие **консоли** для возврата средства **Сеть**  
     :::image-end:::  
     
-### Средство "Сеть"  
+### <a name="network-tool"></a>Средство "Сеть"  
 
 Выполняйте отладку сетевых запросов, выполняемых в служебных сценариях.  Вы также можете открывать сетевые запросы в средстве **Приложение**.  Для каждого запроса средства разработчика отображают следующие сведения в панели [Время][DevtoolsNetworkReferenceViewTimingBreakdownRequest].  
 
@@ -137,11 +137,11 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 *   Время выполнения обработчика события `fetch`.  
 *   Время выполнения всех событий `fetch` для загрузки клиента.  
     
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Панель Время" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Панель "Время"" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    Панель **Время**  
 :::image-end:::  
 
-### Средство "Источники"  
+### <a name="sources-tool"></a>Средство "Источники"  
 
 В предыдущих версиях Microsoft Edge глубина в стеке вызовов была ограничена кодом JavaScript в вашем служебном сценарии.  Теперь в Microsoft Edge 88 стек вызовов отображает инициатора запросов, выполняемых в служебном сценарии.  
 
@@ -160,7 +160,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
    :::column-end:::
 :::row-end:::  
 
-## Копирование значения свойства сетевого запроса  
+## <a name="copy-property-value-of-a-network-request"></a>Копирование значения свойства сетевого запроса  
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->  
 <!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the contextual menu.  -->  
@@ -185,7 +185,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
    :::column-end:::
 :::row-end:::  
 
-## Настройка сочетания клавиш с несколькими нажатиями  
+## <a name="customize-multi-press-keyboard-shortcuts"></a>Настройка сочетания клавиш с несколькими нажатиями  
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->  
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->  
@@ -200,19 +200,19 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
    Сочетания клавиш с несколькими нажатиями  
 :::image-end:::  
 
-## Средства разработчика теперь соответствуют языку браузера  
+## <a name="devtools-now-match-browser-language"></a>Средства разработчика теперь соответствуют языку браузера  
 
 В Microsoft Edge версии 87, если вы включали параметр **Согласовать язык браузера** в [параметрах средств разработчика][DevtoolsCustomizeIndexSettings], язык средств разработчика не совпадал с языком браузера.  В Microsoft Edge версии 88 средства разработчика соответствуют языку браузера, если вы включите параметр **Согласовать язык браузера**.  Дополнительные сведения о параметре средств разработчика **Согласовать язык браузера** см. в статье [Изменение языковых параметров средств разработчика][DevtoolsCustomizeLocalization].  
 
-:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Параметр средств разработчика Согласовать язык браузера на японском языке" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Параметр средств разработчика "Согласовать язык браузера" на японском языке" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
    Параметр средств разработчика **Согласовать язык браузера** на японском языке  
 :::image-end:::  
 
-## Объявления из проекта Chromium  
+## <a name="announcements-from-the-chromium-project"></a>Объявления из проекта Chromium  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### Новые средства визуализации угла CSS  
+### <a name="new-css-angle-visualization-tools"></a>Новые средства визуализации угла CSS  
 
 В средствах разработчика улучшена поддержка отладки угла CSS.  Если к элементу HTML на вашей странице применен угол CSS, рядом с углом в средстве **Стили** отображается значок часов.  Чтобы переключить наложение часов, щелкните значок часов.  Чтобы изменить угол, выберите любое место на часах или перетащите стрелку.  Чтобы изменить значение угла, вы также можете использовать мышь и сочетания клавиш.  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблемам [1126178][CR1126178] и [1138633][CR1138633].  
 
@@ -222,13 +222,13 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```
+```  
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="Угол CSS" lightbox="../../media/2020/11/css-angle.msft.png":::
    Угол CSS  
 :::image-end:::  
 
-### Эмуляция размера квоты хранилища в области "Хранилище"  
+### <a name="simulate-storage-quota-size-in-the-storage-pane"></a>Эмуляция размера квоты хранилища в области "Хранилище"  
 
 Теперь вы можете переопределить размер квоты хранилища области **Хранилище**.  Эта функция позволяет эмулировать различные устройства и тестировать поведение веб-сайта или приложения в сценариях низкой доступности диска.  Чтобы эмулировать квоту хранилища, выполните следующие действия.  
 
@@ -242,7 +242,7 @@ background: linear-gradient(100deg, lightblue, pink);
    Эмуляция размера квоты хранилища  
 :::image-end:::  
 
-### Отчет об ошибках CORS в средстве "Сеть"  
+### <a name="report-cors-errors-in-the-network-tool"></a>Отчет об ошибках CORS в средстве "Сеть"  
 
 Попробуйте эту функцию, перейдя к [демонстрации ошибки CORS][GlitchCorsErrors].  Откройте средство **Сеть**, обновите страницу и наблюдайте за сбоем сетевого запроса CORS.  В столбце состояния отображается **ошибка CORS**.  При наведении курсора на ошибку теперь отображается код ошибки.  В Microsoft Edge версии 87 и более ранних версиях средства разработчика отображали только общее состояние **(сбой)** для ошибок CORS.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1141824][CR1141824].  
 
@@ -250,9 +250,9 @@ background: linear-gradient(100deg, lightblue, pink);
    Ошибки CORS  
 :::image-end:::  
 
-### Обновления представления сведений о фрейме  
+### <a name="frame-details-view-updates"></a>Обновления представления сведений о фрейме  
 
-#### Сведения об изоляции между источниками в представлении сведений о фрейме  
+#### <a name="cross-origin-isolation-information-in-the-frame-details-view"></a>Сведения об изоляции между источниками в представлении сведений о фрейме  
 
 Теперь состояние изоляции между источниками отображается в разделе **Безопасность и изоляция**.  В новом разделе **Доступность API** отображается доступность `SharedArrayBuffer`s \(SAB\) и возможность совместного использования буферов с помощью `postMessage()`.  Если в настоящее время SAB и `postMessage()` доступны, но контекст не изолирован между источниками, отображается предупреждение о прекращении поддержки.  Дополнительные сведения об изоляции между источниками и о причине ее необходимости для таких функций, как `SharedArrayBuffers`, см. в разделе [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1139899][CR1139899].  
 
@@ -260,7 +260,7 @@ background: linear-gradient(100deg, lightblue, pink);
    Информация о взаимодействии источников  
 :::image-end:::  
 
-#### Сведения о новых рабочих веб-процессах в представлении сведений о фрейме  
+#### <a name="new-web-workers-information-in-the-frame-details-view"></a>Сведения о новых рабочих веб-процессах в представлении сведений о фрейме  
 
 Средства разработчика теперь упорядочивают рабочие веб-процессы в соответствующем родительском фрейме.  Например, если фрейм `someName` создает `worker.js`, `worker.js` отображается в разделе `someName` в списке **Кадры**.  Чтобы просмотреть сведения о рабочем веб-процессе, выполните следующие действия.  
 
@@ -275,7 +275,7 @@ background: linear-gradient(100deg, lightblue, pink);
    Сведения о рабочих веб-процессах  
 :::image-end:::  
 
-#### Отображение сведений об открывающем фрейме для открытых окон  
+#### <a name="display-opener-frame-details-for-opened-windows"></a>Отображение сведений об открывающем фрейме для открытых окон  
 
 Средства разработчика теперь упорядочивают открытые [окна][MdnWindowConstructors] в соответствующем родительском [фрейме][MdnWindowFrames].  Например, если фрейм `top` открывает `Window` для `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, `Window`отображается в разделе `top` в списке **Кадры**.  
 
@@ -297,7 +297,7 @@ background: linear-gradient(100deg, lightblue, pink);
    Сведения об открытом фрейме  
 :::image-end:::  
 
-### Копирование трассировки стека для инициатора сети  
+### <a name="copy-stacktrace-for-network-initiator"></a>Копирование трассировки стека для инициатора сети  
 
 Чтобы скопировать трассировку стека в буфер обмена, выполните следующие действия.  
 
@@ -310,7 +310,7 @@ background: linear-gradient(100deg, lightblue, pink);
    Копирование трассировки стека  
 :::image-end:::  
 
-### Просмотр значения переменной Wasm при наведении указателя мыши  
+### <a name="preview-wasm-variable-value-on-mouseover"></a>Просмотр значения переменной Wasm при наведении указателя мыши  
 
 Используйте эту функцию для просмотра значения переменной WebAssembly \(Wasm\) при приостановке кода.  Чтобы отобразить текущее значение переменной, наведите курсор на нее.  Чтобы просмотреть обновления этой функции в режиме реального времени в проекте с открытым исходным кодом Chromium, перейдите к проблемам [1058836][CR1058836] и [1071432][CR1071432].  
 
@@ -318,7 +318,7 @@ background: linear-gradient(100deg, lightblue, pink);
    Просмотр переменной Wasm при наведении указателя мыши  
 :::image-end:::  
 
-### Согласованные единицы измерения для размеров файлов и памяти  
+### <a name="consistent-units-of-measurement-for-sizes-of-files-and-memory"></a>Согласованные единицы измерения для размеров файлов и памяти  
 
 Средства разработчика теперь согласованно используют `kB` для отображения размеров файлов и памяти.  Предыдущие средства смешивали использование `kB` и `KiB`.
 
@@ -327,11 +327,11 @@ background: linear-gradient(100deg, lightblue, pink);
     
 Например, средство **Сеть** ранее использовало `kB` в метках, но `KiB` — в вычислениях.  Ваши отзывы показали, что это несоответствие приводило к путанице.  Чтобы просмотреть историю этой функции в проекте с открытым исходным кодом Chromium, перейдите к проблеме [1035309][CR1035309].  
 
-## Скачивание Microsoft Edge предварительных каналов  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Скачивание Microsoft Edge предварительных каналов  
 
-Если вы используете Windows, Linux или macOS, рассмотрите возможность использования каналов предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
+Если вы находитесь на Windows, Linux или macOS, рассмотрите возможность использования каналов предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -372,7 +372,7 @@ background: linear-gradient(100deg, lightblue, pink);
 [CR1035309]: https://crbug.com/1035309 "Проблема 1035309: средства разработчика должны согласованно использовать МБ для обозначения мегабайт, а не мебибайт | Ошибки Chromium"  
 [CR1051466]: https://crbug.com/1051466 "Проблема 1051466: поддержка отладки COOP/COEP в средствах разработчика | Ошибки Chromium"  
 [CR1058836]: https://crbug.com/1058836 "Проблема 1058836: проблемы пользовательского интерфейса при отладке Wasm | Ошибки Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Проблема 1071432: ☂︝ wasm Basic Developer Experience | Ошибки Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Проблема 1071432: ☂️ базовый интерфейс разработчика Wasm | Ошибки Chromium"  
 [CR1107766]: https://crbug.com/1107766 "Проблема 1107766: отображение сведений о фреймах, созданных командой "window.open()", в дереве фреймов | Ошибки Chromium"  
 [CR1122507]: https://crbug.com/1122507 "Проблема 1122507: получение сведений о рабочем процессе в представлении дерева фреймов | Ошибки Chromium"  
 [CR1126178]: https://crbug.com/1126178 "Проблема 1126178: ☂ средства разработчика: компоненты CSS <type> | Ошибки Chromium"  
