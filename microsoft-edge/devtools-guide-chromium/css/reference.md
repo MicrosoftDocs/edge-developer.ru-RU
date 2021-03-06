@@ -1,18 +1,18 @@
 ---
-description: Найдите новые рабочие процессы для просмотра и изменения CSS в Microsoft Edge DevTools.
+description: Откройте для себя новые процессы просмотра и изменения CSS в Microsoft Edge DevTools.
 title: Справочник по CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 83edc15549b4f8e668af99a4d95966736aaa0992
-ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
+ms.openlocfilehash: a99cf46c4c0a6c6f14892268a30f8aab471e919d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11204014"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399143"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,414 +28,414 @@ ms.locfileid: "11204014"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="273b1-104">Справочник по CSS</span><span class="sxs-lookup"><span data-stu-id="273b1-104">CSS reference</span></span>  
+# <a name="css-reference"></a><span data-ttu-id="75186-104">Справочник по CSS</span><span class="sxs-lookup"><span data-stu-id="75186-104">CSS reference</span></span>  
 
-<span data-ttu-id="273b1-105">Ниже приведен полный справочник по функциям, связанным с просмотром и изменением CSS, в Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="273b1-105">Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.</span></span>  
+<span data-ttu-id="75186-105">Откройте для себя новые процессы в следующей комплексной ссылке на функции Microsoft Edge DevTools, связанные с просмотром и изменением CSS.</span><span class="sxs-lookup"><span data-stu-id="75186-105">Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.</span></span>  
 
-<span data-ttu-id="273b1-106">Ознакомьтесь с основными принципами [просмотра и изменения каскадных таблиц стилей][DevToolsCSSGetStarted] .</span><span class="sxs-lookup"><span data-stu-id="273b1-106">See [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted] to learn the basics.</span></span>  
+<span data-ttu-id="75186-106">Чтобы узнать основы, перейдите к [началу работы с просмотром и изменением CSS][DevToolsCSSGetStarted].</span><span class="sxs-lookup"><span data-stu-id="75186-106">To learn the basics, navigate to [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted].</span></span>  
 
-## <span data-ttu-id="273b1-107">Выбор элемента</span><span class="sxs-lookup"><span data-stu-id="273b1-107">Select an element</span></span>  
+## <a name="choose-an-element"></a><span data-ttu-id="75186-107">Выбор элемента</span><span class="sxs-lookup"><span data-stu-id="75186-107">Choose an element</span></span>  
 
-<span data-ttu-id="273b1-108">Панель " **элементы** " в DevTools позволяет просматривать или изменять CSS для одного элемента за один раз.</span><span class="sxs-lookup"><span data-stu-id="273b1-108">The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.</span></span>  <span data-ttu-id="273b1-109">Выбранный элемент выделится в **дереве DOM**.</span><span class="sxs-lookup"><span data-stu-id="273b1-109">The selected element is highlighted in the **DOM Tree**.</span></span>  <span data-ttu-id="273b1-110">Стили элемента отображаются на панели " **стили** ".</span><span class="sxs-lookup"><span data-stu-id="273b1-110">The styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="273b1-111">В разделе [Просмотр CSS для элемента][DevToolsCSSGetStartedTutorial] учебника.</span><span class="sxs-lookup"><span data-stu-id="273b1-111">See [View the CSS for an element][DevToolsCSSGetStartedTutorial] for a tutorial.</span></span>  
+<span data-ttu-id="75186-108">Средство **Elements** devTools позволяет просматривать или изменять CSS одного элемента одновременно.</span><span class="sxs-lookup"><span data-stu-id="75186-108">The **Elements** tool of DevTools lets you view or change the CSS of one element at a time.</span></span>  <span data-ttu-id="75186-109">Выбранный элемент выделен в **дереве DOM.**</span><span class="sxs-lookup"><span data-stu-id="75186-109">The selected element is highlighted in the **DOM Tree**.</span></span>  <span data-ttu-id="75186-110">Стили элемента показаны в области **Стилей.**</span><span class="sxs-lookup"><span data-stu-id="75186-110">The styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="75186-111">Для руководства перейдите к [просмотру CSS для элемента][DevToolsCSSGetStartedTutorial].</span><span class="sxs-lookup"><span data-stu-id="75186-111">For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-112">На приведенном ниже рисунке `h1` элемент, выделенный в **дереве DOM** , является выбранным элементом.</span><span class="sxs-lookup"><span data-stu-id="273b1-112">In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.</span></span>  <span data-ttu-id="273b1-113">Справа в области **стили** отображаются стили элемента.</span><span class="sxs-lookup"><span data-stu-id="273b1-113">On the right, the styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="273b1-114">В левой части экрана выделяется элемент в окне просмотра, но только потому, что в данный момент указатель мыши наведен на него в **дереве DOM**.</span><span class="sxs-lookup"><span data-stu-id="273b1-114">On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.</span></span>  
+> <span data-ttu-id="75186-112">На следующем рисунке выбран элемент, который выделен в `h1` **дереве DOM.**</span><span class="sxs-lookup"><span data-stu-id="75186-112">In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.</span></span>  <span data-ttu-id="75186-113">Справа стили элемента показаны в области **Стилей.**</span><span class="sxs-lookup"><span data-stu-id="75186-113">On the right, the styles of the element are shown in the **Styles** pane.</span></span>  <span data-ttu-id="75186-114">Слева элемент выделяется в представлении, но только потому, что мышь в настоящее время нависает над ней в **dom Tree**.</span><span class="sxs-lookup"><span data-stu-id="75186-114">On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-h1.msft.png" alt-text="Пример выбранного элемента" lightbox="../media/css-elements-styles-h1.msft.png":::
-   <span data-ttu-id="273b1-116">Пример выбранного элемента</span><span class="sxs-lookup"><span data-stu-id="273b1-116">An example of a selected element</span></span>  
+   <span data-ttu-id="75186-116">Пример выбранного элемента</span><span class="sxs-lookup"><span data-stu-id="75186-116">An example of a selected element</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="273b1-117">Для выбора элемента используйте одно из указанных ниже действий.</span><span class="sxs-lookup"><span data-stu-id="273b1-117">Use one the following actions to select an element.</span></span>  
+<span data-ttu-id="75186-117">Для выбора элемента используйте одно из следующих действий.</span><span class="sxs-lookup"><span data-stu-id="75186-117">Use one the following actions to select an element.</span></span>  
 
-*   <span data-ttu-id="273b1-118">В окне просмотра наведите указатель мыши на элемент, откройте контекстное меню (щелкните правой кнопкой мыши \) и выберите команду **проверить**.</span><span class="sxs-lookup"><span data-stu-id="273b1-118">In your viewport, hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
-*   <span data-ttu-id="273b1-119">В DevTools выберите **пункт выбрать** элемент \ ( ![ выбрать элемент ][ImageSelectAnElementIcon] \) или SELECT `Control` + `Shift` + `C` \ (Windows, Linux \) или `Command` + `Shift` + `C` \ (macOS \), а затем выберите элемент в окне просмотра.</span><span class="sxs-lookup"><span data-stu-id="273b1-119">In DevTools, choose **Select an element** \(![Select an element][ImageSelectAnElementIcon]\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.</span></span>  
-*   <span data-ttu-id="273b1-120">В DevTools выберите элемент в **дереве DOM**.</span><span class="sxs-lookup"><span data-stu-id="273b1-120">In DevTools, choose the element in the **DOM Tree**.</span></span>  
-*   <span data-ttu-id="273b1-121">В DevTools выполните запрос, как `document.querySelector('p')` на **консоли**, наведите на него указатель мыши, откройте контекстное меню, а затем выберите команду **Показать на панели элементы**.</span><span class="sxs-lookup"><span data-stu-id="273b1-121">In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.</span></span>  
+*   <span data-ttu-id="75186-118">В представлении наведите курсор на элемент, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.</span><span class="sxs-lookup"><span data-stu-id="75186-118">In your viewport, hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+*   <span data-ttu-id="75186-119">В DevTools выберите элемент **\(** Выберите элемент \) или выберите ![ ][ImageSelectAnElementIcon] `Control` + `Shift` + `C` \(Windows, Linux\) или `Command` + `Shift` + `C` \(macOS\), а затем выберите элемент в представлении.</span><span class="sxs-lookup"><span data-stu-id="75186-119">In DevTools, choose **Select an element** \(![Select an element][ImageSelectAnElementIcon]\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.</span></span>  
+*   <span data-ttu-id="75186-120">В DevTools выберите элемент **dom Tree**.</span><span class="sxs-lookup"><span data-stu-id="75186-120">In DevTools, choose the element in the **DOM Tree**.</span></span>  
+*   <span data-ttu-id="75186-121">В DevTools запустите запрос, как в консоли, наведите курсор на результат, откройте контекстное меню \(правой кнопкой мыши\) и выберите панель `document.querySelector('p')` **Reveal in Elements** \*\*\*\*.</span><span class="sxs-lookup"><span data-stu-id="75186-121">In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.</span></span>  
 
-## <span data-ttu-id="273b1-122">Просмотр CSS</span><span class="sxs-lookup"><span data-stu-id="273b1-122">View CSS</span></span>  
+## <a name="view-css"></a><span data-ttu-id="75186-122">Просмотр CSS</span><span class="sxs-lookup"><span data-stu-id="75186-122">View CSS</span></span>  
 
-### <span data-ttu-id="273b1-123">Просмотр внешней таблицы стилей, в которой определено правило</span><span class="sxs-lookup"><span data-stu-id="273b1-123">View the external stylesheet where a rule is defined</span></span>  
+### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a><span data-ttu-id="75186-123">Просмотр таблицы внешних стилей, где определено правило</span><span class="sxs-lookup"><span data-stu-id="75186-123">View the external stylesheet where a rule is defined</span></span>  
 
-<span data-ttu-id="273b1-124">В области **стили** щелкните ссылку рядом с правилом CSS, чтобы открыть внешнюю таблицу стилей, которая определяет правило.</span><span class="sxs-lookup"><span data-stu-id="273b1-124">In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.</span></span>  
+<span data-ttu-id="75186-124">В области **Стилей** выберите ссылку рядом с правилом CSS, чтобы открыть таблицу внешних стилей, определяемую правилом.</span><span class="sxs-lookup"><span data-stu-id="75186-124">In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.</span></span>  
 
-<span data-ttu-id="273b1-125">Если таблица стилей minified, перейдите в раздел, чтобы [сделать файл minified доступным для чтения][DevToolsJavascriptReferenceFormat].</span><span class="sxs-lookup"><span data-stu-id="273b1-125">If the stylesheet is minified, navigate to [Make a minified file readable][DevToolsJavascriptReferenceFormat].</span></span>  
+<span data-ttu-id="75186-125">Если таблица стилей минирована, перейдите, [чтобы сделать минированную папку читаемой.][DevToolsJavascriptReferenceFormat]</span><span class="sxs-lookup"><span data-stu-id="75186-125">If the stylesheet is minified, navigate to [Make a minified file readable][DevToolsJavascriptReferenceFormat].</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-126">На приведенном ниже рисунке после выбора `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` строки 2 `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` , где `.content h1:first-of-type` определено правило CSS.</span><span class="sxs-lookup"><span data-stu-id="273b1-126">In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.</span></span>  
+> <span data-ttu-id="75186-126">На следующем рисунке после выбора вы перенастроили строку 2 из, где определено правило `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` `.content h1:first-of-type` CSS.</span><span class="sxs-lookup"><span data-stu-id="75186-126">In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.</span></span>  
 
 <!--todo:  replace "Master" phrasing in code snippet, if possible.  -->  
 
 :::image type="complex" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Просмотр таблицы стилей, в которой определено правило" lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
-  <span data-ttu-id="273b1-128">Просмотр таблицы стилей, в которой определено правило</span><span class="sxs-lookup"><span data-stu-id="273b1-128">Viewing the stylesheet where a rule is defined</span></span>  
+  <span data-ttu-id="75186-128">Просмотр таблицы стилей, в которой определено правило</span><span class="sxs-lookup"><span data-stu-id="75186-128">Viewing the stylesheet where a rule is defined</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-129">Просмотр только CSS, которая фактически применяется к элементу</span><span class="sxs-lookup"><span data-stu-id="273b1-129">View only the CSS that is actually applied to an element</span></span>  
+### <a name="view-only-the-css-that-is-actually-applied-to-an-element"></a><span data-ttu-id="75186-129">Просмотр только CSS, который фактически применяется к элементу</span><span class="sxs-lookup"><span data-stu-id="75186-129">View only the CSS that is actually applied to an element</span></span>  
 
-<span data-ttu-id="273b1-130">На вкладке **стили** отображаются все правила, применимые к элементу, включая объявления, которые были переопределены.</span><span class="sxs-lookup"><span data-stu-id="273b1-130">The **Styles** tab shows you all of the rules that apply to an element, including declarations that have been overridden.</span></span>  <span data-ttu-id="273b1-131">Если вы не заинтересованы в переопределенных объявлениях, используйте **вычисляемые** вкладки для просмотра только CSS, которая фактически применяется к элементу.</span><span class="sxs-lookup"><span data-stu-id="273b1-131">When you are not interested in overridden declarations, use the **Computed** tab to view only the CSS that is actually being applied to an element.</span></span>  
+<span data-ttu-id="75186-130">На **панели Стилей** показаны все правила, применимые к элементу, включая переопределяемые объявления.</span><span class="sxs-lookup"><span data-stu-id="75186-130">The **Styles** panel shows you all of the rules that apply to an element, including declarations that have been overridden.</span></span>  <span data-ttu-id="75186-131">Если вы не заинтересованы в переопределяемом объявлении, используйте **панель Computed** для просмотра только CSS, который на самом деле применяется к элементу.</span><span class="sxs-lookup"><span data-stu-id="75186-131">When you are not interested in overridden declarations, use the **Computed** panel to view only the CSS that is actually being applied to an element.</span></span>  
 
-1.  <span data-ttu-id="273b1-132">[Выберите элемент](#select-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-132">[Select an element](#select-an-element).</span></span>  
-1.  <span data-ttu-id="273b1-133">Перейдите на вкладку " **вычисляемые** " на панели " **элементы** ".</span><span class="sxs-lookup"><span data-stu-id="273b1-133">Go to the **Computed** tab in the **Elements** panel.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="273b1-134">В окне с широкой DevTools **Вычисляемая** вкладка не существует.</span><span class="sxs-lookup"><span data-stu-id="273b1-134">On a wide DevTools window, the **Computed** tab does not exist.</span></span>  <span data-ttu-id="273b1-135">Содержимое **вычисляемой** вкладки отображается на вкладке **стили** .</span><span class="sxs-lookup"><span data-stu-id="273b1-135">The contents of the **Computed** tab are shown on the **Styles** tab.</span></span>  
-
-<span data-ttu-id="273b1-136">Унаследованные свойства являются непрозрачными.</span><span class="sxs-lookup"><span data-stu-id="273b1-136">Inherited properties are opaque.</span></span>  <span data-ttu-id="273b1-137">Установите флажок **Показать все** , чтобы увидеть все унаследованные значения.</span><span class="sxs-lookup"><span data-stu-id="273b1-137">Check the **Show All** checkbox to see all inherited values.</span></span>  
+1.  <span data-ttu-id="75186-132">[Выберите элемент](#choose-an-element).</span><span class="sxs-lookup"><span data-stu-id="75186-132">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="75186-133">Перейдите к **панели Computed** в **инструменте Elements.**</span><span class="sxs-lookup"><span data-stu-id="75186-133">Navigate to the **Computed** panel in the **Elements** tool.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-138">На приведенном ниже рисунке показана **Вычисляемая** вкладка, на которой ПОКАЗАНЫ свойства CSS, применяемые к текущему `h1` элементу.</span><span class="sxs-lookup"><span data-stu-id="273b1-138">In the following figure, the **Computed** tab shows the CSS properties being applied to the currently-selected `h1` element.</span></span>  
+> <span data-ttu-id="75186-134">В широком окне DevTools панель **Computed** не существует.</span><span class="sxs-lookup"><span data-stu-id="75186-134">On a wide DevTools window, the **Computed** panel does not exist.</span></span>  <span data-ttu-id="75186-135">Содержимое панели **Computed отображается** на панели **Styles.**</span><span class="sxs-lookup"><span data-stu-id="75186-135">The contents of the **Computed** panel are shown on the **Styles** panel.</span></span>  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Вычисляемая вкладка" lightbox="../media/css-elements-computed-h1.msft.png":::
-   <span data-ttu-id="273b1-140">**Вычисляемая** вкладка</span><span class="sxs-lookup"><span data-stu-id="273b1-140">The **Computed** tab</span></span>  
+<span data-ttu-id="75186-136">Унаследованные свойства непрозрачны.</span><span class="sxs-lookup"><span data-stu-id="75186-136">Inherited properties are opaque.</span></span>  <span data-ttu-id="75186-137">Чтобы отобразить все унаследованные значения, выберите контрольный ящик **Show All.**</span><span class="sxs-lookup"><span data-stu-id="75186-137">To display all inherited values, select the **Show All** checkbox.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="75186-138">На следующем рисунке на панели **Computed** показаны свойства CSS, применяемые к выбранному в настоящее время `h1` элементу.</span><span class="sxs-lookup"><span data-stu-id="75186-138">In the following figure, the **Computed** panel shows the CSS properties being applied to the currently-selected `h1` element.</span></span>  
+
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="Панель Computed" lightbox="../media/css-elements-computed-h1.msft.png":::
+   <span data-ttu-id="75186-140">Панель **Computed**</span><span class="sxs-lookup"><span data-stu-id="75186-140">The **Computed** panel</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-141">Просмотр свойств CSS в алфавитном порядке</span><span class="sxs-lookup"><span data-stu-id="273b1-141">View CSS properties in alphabetical order</span></span>  
+### <a name="view-css-properties-in-alphabetical-order"></a><span data-ttu-id="75186-141">Просмотр свойств CSS в алфавитном порядке</span><span class="sxs-lookup"><span data-stu-id="75186-141">View CSS properties in alphabetical order</span></span>  
 
-<span data-ttu-id="273b1-142">Используйте **вычисляемую** вкладку.  Просмотреть [только CSS, фактически примененный к элементу](#view-only-the-css-that-is-actually-applied-to-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-142">Use the **Computed** tab.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
+<span data-ttu-id="75186-142">Используйте **панель Computed.**</span><span class="sxs-lookup"><span data-stu-id="75186-142">Use the **Computed** panel.</span></span>  <span data-ttu-id="75186-143">Перейдите [к просмотру только CSS, который фактически применяется к элементу.](#view-only-the-css-that-is-actually-applied-to-an-element)</span><span class="sxs-lookup"><span data-stu-id="75186-143">Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
 
-### <span data-ttu-id="273b1-143">Просмотр унаследованных свойств CSS</span><span class="sxs-lookup"><span data-stu-id="273b1-143">View inherited CSS properties</span></span>  
+### <a name="view-inherited-css-properties"></a><span data-ttu-id="75186-144">Просмотр унаследованных свойств CSS</span><span class="sxs-lookup"><span data-stu-id="75186-144">View inherited CSS properties</span></span>  
 
-<span data-ttu-id="273b1-144">Установите флажок **Показать все** на вкладке **вычисляемый** .  Просмотреть [только CSS, фактически примененный к элементу](#view-only-the-css-that-is-actually-applied-to-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-144">Check the **Show All** checkbox in the **Computed** tab.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
+<span data-ttu-id="75186-145">Проверьте **контрольный ящик Show All** в **панели Computed.**</span><span class="sxs-lookup"><span data-stu-id="75186-145">Check the **Show All** checkbox in the **Computed** panel.</span></span>  <span data-ttu-id="75186-146">Перейдите [к просмотру только CSS, который фактически применяется к элементу.](#view-only-the-css-that-is-actually-applied-to-an-element)</span><span class="sxs-lookup"><span data-stu-id="75186-146">Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).</span></span>  
 
-### <span data-ttu-id="273b1-145">Просмотр модели Box для элемента</span><span class="sxs-lookup"><span data-stu-id="273b1-145">View the box model for an element</span></span>  
+### <a name="view-the-box-model-for-an-element"></a><span data-ttu-id="75186-147">Просмотр модели окна для элемента</span><span class="sxs-lookup"><span data-stu-id="75186-147">View the box model for an element</span></span>  
 
-<span data-ttu-id="273b1-146">Чтобы просмотреть [модель Box][MDNBoxModel] элемента, перейдите на вкладку **стили** .  Если окно DevTools узким, схема **модель Box** находится в нижней части вкладки.</span><span class="sxs-lookup"><span data-stu-id="273b1-146">To view [the box model][MDNBoxModel] of an element, go to the **Styles** tab.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the tab.</span></span>  
+<span data-ttu-id="75186-148">Чтобы [просмотреть модель элемента полей,][MDNBoxModel] перейдите на панель **Стилей.**</span><span class="sxs-lookup"><span data-stu-id="75186-148">To view [the box model][MDNBoxModel] of an element, navigate to the **Styles** panel.</span></span>  <span data-ttu-id="75186-149">Если окно DevTools узкое, диаграмма **Box Model** находится в нижней части панели.</span><span class="sxs-lookup"><span data-stu-id="75186-149">If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.</span></span>  
 
-<span data-ttu-id="273b1-147">Выберите и измените значение, чтобы изменить значение.</span><span class="sxs-lookup"><span data-stu-id="273b1-147">Choose and edit on a value to change a value.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="273b1-148">На рисунке ниже показана модель Box на вкладке " **стили** " в **поле** "модель" для элемента, выбранного в данный момент `h1` .</span><span class="sxs-lookup"><span data-stu-id="273b1-148">In the following figure, the **Box Model** diagram in the **Styles** tab shows the box model for the currently selected `h1` element.</span></span>  
-
-:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Схема модели Box" lightbox="../media/css-elements-styles-h1-2.msft.png":::
-   <span data-ttu-id="273b1-150">Схема **модели Box**</span><span class="sxs-lookup"><span data-stu-id="273b1-150">The **Box Model** diagram</span></span>  
-:::image-end:::  
-
-### <span data-ttu-id="273b1-151">Поиск и фильтрация CSS элемента</span><span class="sxs-lookup"><span data-stu-id="273b1-151">Search and filter the CSS of an element</span></span>  
-
-<span data-ttu-id="273b1-152">С помощью текстового поля **Фильтр** на вкладках **стили** и **вычисляемые** вкладки можно искать определенные свойства или значения CSS.</span><span class="sxs-lookup"><span data-stu-id="273b1-152">Use the **Filter** text box on the **Styles** and **Computed** tabs to search for specific CSS properties or values.</span></span>  
-
-<span data-ttu-id="273b1-153">Чтобы также искать унаследованные свойства на вкладке **вычисляемые** , установите флажок **Показать все** .</span><span class="sxs-lookup"><span data-stu-id="273b1-153">To also search inherited properties in the **Computed** tab, check the **Show All** checkbox.</span></span>  
+<span data-ttu-id="75186-150">Выберите и измените значение для изменения значения.</span><span class="sxs-lookup"><span data-stu-id="75186-150">Choose and edit on a value to change a value.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-154">На приведенном ниже рисунке для вкладки **стили** отображаются только правила, включающие поисковый запрос `color` .</span><span class="sxs-lookup"><span data-stu-id="273b1-154">In the following figure, the **Styles** tab is filtered to only show rules that include the search query `color`.</span></span>  
+> <span data-ttu-id="75186-151">На следующем рисунке диаграмма **Box Model** на панели **Стилей** показывает модель окна для выбранного `h1` элемента.</span><span class="sxs-lookup"><span data-stu-id="75186-151">In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Фильтрация вкладки "стили"" lightbox="../media/css-elements-styles-filter-color.msft.png":::
-   <span data-ttu-id="273b1-156">Фильтрация вкладки " **стили** "</span><span class="sxs-lookup"><span data-stu-id="273b1-156">Filter the **Styles** tab</span></span>  
+:::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Схема модели box" lightbox="../media/css-elements-styles-h1-2.msft.png":::
+   <span data-ttu-id="75186-153">Схема **модели box**</span><span class="sxs-lookup"><span data-stu-id="75186-153">The **Box Model** diagram</span></span>  
+:::image-end:::  
+
+### <a name="search-and-filter-the-css-of-an-element"></a><span data-ttu-id="75186-154">Поиск и фильтрация CSS элемента</span><span class="sxs-lookup"><span data-stu-id="75186-154">Search and filter the CSS of an element</span></span>  
+
+<span data-ttu-id="75186-155">Для поиска **определенных** свойств \*\*\*\* или значений CSS используйте текстовое поле Filter на панелях **Стилей** и Вычислительные панели.</span><span class="sxs-lookup"><span data-stu-id="75186-155">Use the **Filter** text box on the **Styles** and **Computed** panels to search for specific CSS properties or values.</span></span>  
+
+<span data-ttu-id="75186-156">Чтобы также найти унаследованные свойства в **панели Computed,** проверьте контрольный ящик **Show All.**</span><span class="sxs-lookup"><span data-stu-id="75186-156">To also search inherited properties in the **Computed** panel, check the **Show All** checkbox.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="75186-157">На следующем рисунке панель **Стилей** фильтруется, чтобы показывать только правила, которые включают запрос `color` поиска.</span><span class="sxs-lookup"><span data-stu-id="75186-157">In the following figure, the **Styles** panel is filtered to only show rules that include the search query `color`.</span></span>  
+
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Фильтр панели Стилей" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+   <span data-ttu-id="75186-159">Фильтр панели **Стилей**</span><span class="sxs-lookup"><span data-stu-id="75186-159">Filter the **Styles** panel</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-157">На приведенном ниже рисунке отфильтрованная **вкладка** фильтруется так, чтобы отображались только объявления, включающие поисковый запрос `100%` .</span><span class="sxs-lookup"><span data-stu-id="273b1-157">In the following figure, the **Computed** tab is filtered to only show declarations that include the search query `100%`.</span></span>  
+> <span data-ttu-id="75186-160">На следующем рисунке панель **Computed** фильтруется, чтобы показывать только объявления, которые включают запрос `100%` поиска.</span><span class="sxs-lookup"><span data-stu-id="75186-160">In the following figure, the **Computed** panel is filtered to only show declarations that include the search query `100%`.</span></span>  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Фильтрация вычисляемой вкладки" lightbox="../media/css-elements-computed-filter-100.msft.png":::
-   <span data-ttu-id="273b1-159">Фильтрация **вычисляемой** вкладки</span><span class="sxs-lookup"><span data-stu-id="273b1-159">Filter the **Computed** tab</span></span>  
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Фильтр вычислительной панели" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+   <span data-ttu-id="75186-162">Фильтр **вычислительной панели**</span><span class="sxs-lookup"><span data-stu-id="75186-162">Filter the **Computed** panel</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-160">Переключение на псевдо-класс</span><span class="sxs-lookup"><span data-stu-id="273b1-160">Toggle a pseudo-class</span></span>  
+### <a name="toggle-a-pseudo-class"></a><span data-ttu-id="75186-163">Toggle a pseudo-class</span><span class="sxs-lookup"><span data-stu-id="75186-163">Toggle a pseudo-class</span></span>  
 
-<span data-ttu-id="273b1-161">Выполните указанные ниже действия, чтобы переключить псевдо-класс, например,, `:active` `:focus` `:hover` или `:visited` .</span><span class="sxs-lookup"><span data-stu-id="273b1-161">Complete the following actions to toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`.</span></span>  
+<span data-ttu-id="75186-164">Выполните следующие действия, чтобы переохитрить псевдокласс, например `:active` `:focus` , или `:hover` `:visited` .</span><span class="sxs-lookup"><span data-stu-id="75186-164">Complete the following actions to toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`.</span></span>  
 
-1.  <span data-ttu-id="273b1-162">[Выберите элемент](#select-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-162">[Select an element](#select-an-element).</span></span>  
-1.  <span data-ttu-id="273b1-163">На панели " **элементы** " перейдите на вкладку " **стили** ".</span><span class="sxs-lookup"><span data-stu-id="273b1-163">On the **Elements** panel, go to the **Styles** tab.</span></span>  
-1.  <span data-ttu-id="273b1-164">Выберите **: Hov**.</span><span class="sxs-lookup"><span data-stu-id="273b1-164">Choose **:hov**.</span></span>  
-1.  <span data-ttu-id="273b1-165">Проверьте псевдо-класс, который вы хотите включить.</span><span class="sxs-lookup"><span data-stu-id="273b1-165">Check the pseudo-class that you want to enable.</span></span>  
+1.  <span data-ttu-id="75186-165">[Выберите элемент](#choose-an-element).</span><span class="sxs-lookup"><span data-stu-id="75186-165">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="75186-166">В **инструменте Elements** перейдите на панель **Стилей.**</span><span class="sxs-lookup"><span data-stu-id="75186-166">On the **Elements** tool, navigate to the **Styles** panel.</span></span>  
+1.  <span data-ttu-id="75186-167">Выберите **:hov**.</span><span class="sxs-lookup"><span data-stu-id="75186-167">Choose **:hov**.</span></span>  
+1.  <span data-ttu-id="75186-168">Проверьте псевдокласс, который необходимо включить.</span><span class="sxs-lookup"><span data-stu-id="75186-168">Check the pseudo-class that you want to enable.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-166">На рисунке ниже показано, как переключается `:hover` псевдо-класс.</span><span class="sxs-lookup"><span data-stu-id="273b1-166">In the following figure, toggle the `:hover` pseudo-class.</span></span>  <span data-ttu-id="273b1-167">В окне просмотра убедитесь в том, что `background-color: cornflowerblue` объявление применяется к элементу, несмотря на то что элемент фактически не наведен на указатель.</span><span class="sxs-lookup"><span data-stu-id="273b1-167">In the viewport verify that the `background-color: cornflowerblue` declaration is being applied to the element, even though the element is not actually being hovered over.</span></span>  
+> <span data-ttu-id="75186-169">На следующем рисунке переохитрить `:hover` псевдокласс.</span><span class="sxs-lookup"><span data-stu-id="75186-169">In the following figure, toggle the `:hover` pseudo-class.</span></span>  <span data-ttu-id="75186-170">В viewport убедитесь, что объявление применяется к элементу, даже если элемент фактически не `background-color: cornflowerblue` зависает.</span><span class="sxs-lookup"><span data-stu-id="75186-170">In the viewport verify that the `background-color: cornflowerblue` declaration is being applied to the element, even though the element is not actually being hovered over.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Переключение: псевдо-класс для наведения" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
-   <span data-ttu-id="273b1-169">Переключение `:hover` псевдо-класса</span><span class="sxs-lookup"><span data-stu-id="273b1-169">Toggle the `:hover` pseudo-class</span></span>  
+:::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Toggle the :hover pseudo-class" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
+   <span data-ttu-id="75186-172">Toggle the `:hover` pseudo-class</span><span class="sxs-lookup"><span data-stu-id="75186-172">Toggle the `:hover` pseudo-class</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="273b1-170">Для интерактивного учебника перейдите к разделу [Добавление PseudoState в класс][DevToolsCSSGetStartedAddPseudoState].</span><span class="sxs-lookup"><span data-stu-id="273b1-170">For an interactive tutorial, navigate to [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState].</span></span>  
+<span data-ttu-id="75186-173">Для интерактивного руководства перейдите к [добавлению псевдостата в класс.][DevToolsCSSGetStartedAddPseudoState]</span><span class="sxs-lookup"><span data-stu-id="75186-173">For an interactive tutorial, navigate to [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState].</span></span>  
 
-### <span data-ttu-id="273b1-171">Просмотр страницы в режиме печати</span><span class="sxs-lookup"><span data-stu-id="273b1-171">View a page in print mode</span></span>  
+### <a name="view-a-page-in-print-mode"></a><span data-ttu-id="75186-174">Просмотр страницы в режиме печати</span><span class="sxs-lookup"><span data-stu-id="75186-174">View a page in print mode</span></span>  
 
-<span data-ttu-id="273b1-172">Выполните указанные ниже действия, чтобы просмотреть страницу в режиме печати.</span><span class="sxs-lookup"><span data-stu-id="273b1-172">Complete the following actions to view a page in print mode.</span></span>  
+<span data-ttu-id="75186-175">Выполните следующие действия, чтобы просмотреть страницу в режиме печати.</span><span class="sxs-lookup"><span data-stu-id="75186-175">Complete the following actions to view a page in print mode.</span></span>  
 
-1.  <span data-ttu-id="273b1-173">[Открытие меню команд][DevToolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="273b1-173">[Open the Command Menu][DevToolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="273b1-174">Начните вводить текст `Rendering` и выберите его `Show Rendering` .</span><span class="sxs-lookup"><span data-stu-id="273b1-174">Start typing `Rendering` and select `Show Rendering`.</span></span>  
-1.  <span data-ttu-id="273b1-175">Для **имитации** раскрывающегося списка выбери мультимедиа в CSS нажмите кнопку **Печать**.</span><span class="sxs-lookup"><span data-stu-id="273b1-175">For the **Emulate CSS Media** dropdown, choose **print**.</span></span>  
+1.  <span data-ttu-id="75186-176">[Откройте командное меню.][DevToolsCommandMenu]</span><span class="sxs-lookup"><span data-stu-id="75186-176">[Open the Command Menu][DevToolsCommandMenu].</span></span>  
+1.  <span data-ttu-id="75186-177">Начните `Rendering` вводить и выберите `Show Rendering` .</span><span class="sxs-lookup"><span data-stu-id="75186-177">Start typing `Rendering` and select `Show Rendering`.</span></span>  
+1.  <span data-ttu-id="75186-178">Для **выпадаемой CSS Media** эмулировать выберите **печать**.</span><span class="sxs-lookup"><span data-stu-id="75186-178">For the **Emulate CSS Media** dropdown, choose **print**.</span></span>  
 
-### <span data-ttu-id="273b1-176">Просмотр использованной и неиспользуемой CSS с помощью вкладки "покрытие"</span><span class="sxs-lookup"><span data-stu-id="273b1-176">View used and unused CSS with the Coverage tab</span></span>  
+### <a name="view-used-and-unused-css-with-the-coverage-tool"></a><span data-ttu-id="75186-179">Просмотр используемой и неиспользоваемой CSS с помощью средства Coverage</span><span class="sxs-lookup"><span data-stu-id="75186-179">View used and unused CSS with the Coverage tool</span></span>  
 
-<span data-ttu-id="273b1-177">На вкладке Coverage показано, какая страница CSS используется в действительности.</span><span class="sxs-lookup"><span data-stu-id="273b1-177">The Coverage tab shows you what CSS a page actually uses.</span></span>  
+<span data-ttu-id="75186-180">Средство **Coverage** показывает, что на самом деле использует CSS страницы.</span><span class="sxs-lookup"><span data-stu-id="75186-180">The **Coverage** tool shows you what CSS a page actually uses.</span></span>  
 
-1.  <span data-ttu-id="273b1-178">Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \), когда DevTools находится в фокусе, чтобы [Открыть меню команд][DevToolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="273b1-178">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="273b1-179">Начните вводить текст `coverage` и выберите **Показать покрытие**.</span><span class="sxs-lookup"><span data-stu-id="273b1-179">Start typing `coverage` and choose **Show Coverage**.</span></span>  <span data-ttu-id="273b1-180">Откроется вкладка покрытие.</span><span class="sxs-lookup"><span data-stu-id="273b1-180">The Coverage tab appears.</span></span>  
+1.  <span data-ttu-id="75186-181">Выберите `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` или \(macOS\) [][DevToolsCommandMenu]в то время как DevTools находится в центре внимания, чтобы открыть командное меню .</span><span class="sxs-lookup"><span data-stu-id="75186-181">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].</span></span>  
+1.  <span data-ttu-id="75186-182">Начните `coverage` вводить текст и **выберите показать охват**.</span><span class="sxs-lookup"><span data-stu-id="75186-182">Start typing `coverage` and choose **Show Coverage**.</span></span>  <span data-ttu-id="75186-183">Появляется **средство Coverage.**</span><span class="sxs-lookup"><span data-stu-id="75186-183">The **Coverage** tool appears.</span></span>  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Открытие вкладки "покрытие" в меню команд" lightbox="../media/css-console-command-menu-coverage.msft.png":::
-             <span data-ttu-id="273b1-182">Открытие вкладки " **покрытие** " в **меню команд**</span><span class="sxs-lookup"><span data-stu-id="273b1-182">Open the **Coverage** tab from the **Command Menu**</span></span>  
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Открытие средства Coverage из командного меню" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+             <span data-ttu-id="75186-185">Откройте средство **Coverage** из **командного меню**</span><span class="sxs-lookup"><span data-stu-id="75186-185">Open the **Coverage** tool from the **Command Menu**</span></span>  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Вкладка "покрытие"" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
-             <span data-ttu-id="273b1-184">Вкладка " **покрытие** "</span><span class="sxs-lookup"><span data-stu-id="273b1-184">The **Coverage** tab</span></span>  
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="Средство Coverage" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+             <span data-ttu-id="75186-187">Средство **Coverage**</span><span class="sxs-lookup"><span data-stu-id="75186-187">The **Coverage** tool</span></span>  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  <span data-ttu-id="273b1-185">Нажмите кнопку **начать покрытие инструментирования и обновите страницу** \ ( ![ Запуск инструментированного покрытия и обновление страницы ][ImageRefreshIcon] \).</span><span class="sxs-lookup"><span data-stu-id="273b1-185">Choose **Start instrumenting coverage and refresh the page** \(![Start instrumenting coverage and refresh the page][ImageRefreshIcon]\).</span></span>  <span data-ttu-id="273b1-186">Обновленная страница и вкладка Coverage предоставляют общие сведения о том, сколько стилей CSS и JavaScript используется для каждого файла, загружаемого браузером.</span><span class="sxs-lookup"><span data-stu-id="273b1-186">The page refreshes and the Coverage tab provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.</span></span>  <span data-ttu-id="273b1-187">Зеленый представляет используемые CSS.</span><span class="sxs-lookup"><span data-stu-id="273b1-187">Green represents used CSS.</span></span>  <span data-ttu-id="273b1-188">Красный — неиспользуемый CSS.</span><span class="sxs-lookup"><span data-stu-id="273b1-188">Red represents unused CSS.</span></span>  
+1.  <span data-ttu-id="75186-188">Выберите **охват Начните инструментарий и обновите** страницу \. Начните использовать инструменты ![ и обновите ][ImageRefreshIcon] страницу \).</span><span class="sxs-lookup"><span data-stu-id="75186-188">Choose **Start instrumenting coverage and refresh the page** \(![Start instrumenting coverage and refresh the page][ImageRefreshIcon]\).</span></span>  <span data-ttu-id="75186-189">Страница обновляется, а средство **coverage** предоставляет обзор того, сколько CSS \(и JavaScript\) используется из каждого файла, загруженного браузером.</span><span class="sxs-lookup"><span data-stu-id="75186-189">The page refreshes and the **Coverage** tool provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.</span></span>  <span data-ttu-id="75186-190">Зеленый представляет используемый CSS.</span><span class="sxs-lookup"><span data-stu-id="75186-190">Green represents used CSS.</span></span>  <span data-ttu-id="75186-191">Красный цвет представляет неиспользована CSS.</span><span class="sxs-lookup"><span data-stu-id="75186-191">Red represents unused CSS.</span></span>  
     
-    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Общие сведения о том, какая таблица CSS (и JavaScript) используется и неиспользуемая" lightbox="../media/css-console-qs-coverage-run.msft.png":::
-       <span data-ttu-id="273b1-190">Общие сведения о том, сколько каскадных таблиц (и JavaScript \) использует и не используется</span><span class="sxs-lookup"><span data-stu-id="273b1-190">An overview of how much CSS \(and JavaScript\) is used and unused</span></span>  
+    :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Обзор того, сколько CSS (и JavaScript) используется и не используется" lightbox="../media/css-console-qs-coverage-run.msft.png":::
+       <span data-ttu-id="75186-193">Обзор того, сколько CSS \(и JavaScript\) используется и не используется</span><span class="sxs-lookup"><span data-stu-id="75186-193">An overview of how much CSS \(and JavaScript\) is used and unused</span></span>  
     :::image-end:::  
 
-1.  <span data-ttu-id="273b1-191">Выберите CSS-файл, чтобы просмотреть разбиение по строкам для используемого CSS.</span><span class="sxs-lookup"><span data-stu-id="273b1-191">Choose a CSS file to see a line-by-line breakdown of what CSS it uses.</span></span>  
+1.  <span data-ttu-id="75186-194">Чтобы отобразить по очереди разбивку того, что используется CSS, выберите CSS-файл.</span><span class="sxs-lookup"><span data-stu-id="75186-194">To display a line-by-line breakdown of what CSS is used, choose a CSS file.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="273b1-192">На приведенном ниже рисунке строки 145 в 147 и 149 в 151 из `b66bc881.site-ltr.css` не используются, в то время как используются строки 163 — 166.</span><span class="sxs-lookup"><span data-stu-id="273b1-192">In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used.</span></span>  
+    > <span data-ttu-id="75186-195">На следующем рисунке не используются строки от 145 до 147 и 149 до 151, в то время как используются строки `b66bc881.site-ltr.css` от 163 до 166.</span><span class="sxs-lookup"><span data-stu-id="75186-195">In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used.</span></span>  
     
-    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Разбиение по строкам для используемых и неиспользуемых CSS" lightbox="../media/css-sources-css-coverage.msft.png":::
-       <span data-ttu-id="273b1-194">Разбиение по строкам для используемых и неиспользуемых CSS</span><span class="sxs-lookup"><span data-stu-id="273b1-194">A line-by-line breakdown of used and unused CSS</span></span>  
+    :::image type="complex" source="../media/css-sources-css-coverage.msft.png" alt-text="Разбивка по очереди используемого и неиспользованого CSS" lightbox="../media/css-sources-css-coverage.msft.png":::
+       <span data-ttu-id="75186-197">Разбивка по очереди используемого и неиспользованого CSS</span><span class="sxs-lookup"><span data-stu-id="75186-197">A line-by-line breakdown of used and unused CSS</span></span>  
     :::image-end:::  
     
-### <span data-ttu-id="273b1-195">Принудительная печать в режиме предварительного просмотра</span><span class="sxs-lookup"><span data-stu-id="273b1-195">Force print preview mode</span></span>  
+### <a name="force-print-preview-mode"></a><span data-ttu-id="75186-198">Режим предварительного просмотра принудительной печати</span><span class="sxs-lookup"><span data-stu-id="75186-198">Force print preview mode</span></span>  
 
-<span data-ttu-id="273b1-196">Просмотрите [DevTools в режиме предварительного просмотра][DevToolsCssPrintPreview].</span><span class="sxs-lookup"><span data-stu-id="273b1-196">See [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].</span></span>  
+<span data-ttu-id="75186-199">Перейдите [к Force DevTools в режиме предварительного просмотра печати.][DevToolsCssPrintPreview]</span><span class="sxs-lookup"><span data-stu-id="75186-199">Navigate to [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].</span></span>  
 
-## <span data-ttu-id="273b1-197">Изменение CSS</span><span class="sxs-lookup"><span data-stu-id="273b1-197">Change CSS</span></span>  
+## <a name="change-css"></a><span data-ttu-id="75186-200">Изменение CSS</span><span class="sxs-lookup"><span data-stu-id="75186-200">Change CSS</span></span>  
 
 <!-- todo s/CSS declaration/declaration/ -->  
 
-### <span data-ttu-id="273b1-198">Добавление объявления CSS в элемент</span><span class="sxs-lookup"><span data-stu-id="273b1-198">Add a CSS declaration to an element</span></span>  
+### <a name="add-a-css-declaration-to-an-element"></a><span data-ttu-id="75186-201">Добавление объявления CSS в элемент</span><span class="sxs-lookup"><span data-stu-id="75186-201">Add a CSS declaration to an element</span></span>  
 
-<span data-ttu-id="273b1-199">Порядок объявлений влияет на стиль элемента с помощью приведенного ниже списка, который поможет вам добавлять объявления различными способами.</span><span class="sxs-lookup"><span data-stu-id="273b1-199">The order of declarations affects how an element is styled, use the following list to help you add declarations in different ways.</span></span>  
+<span data-ttu-id="75186-202">Порядок объявлений влияет на стиль элемента, используйте следующий список, чтобы помочь вам добавлять объявления по-разному.</span><span class="sxs-lookup"><span data-stu-id="75186-202">The order of declarations affects how an element is styled, use the following list to help you add declarations in different ways.</span></span>  
 
-*   <span data-ttu-id="273b1-200">[Добавление встроенного объявления](#add-an-inline-declaration).</span><span class="sxs-lookup"><span data-stu-id="273b1-200">[Add a inline declaration](#add-an-inline-declaration).</span></span>  <span data-ttu-id="273b1-201">Эквивалентно добавлению `style` атрибута в HTML элемента.</span><span class="sxs-lookup"><span data-stu-id="273b1-201">Equivalent to adding a `style` attribute to the HTML of an element.</span></span>  
-*   <span data-ttu-id="273b1-202">[Добавление объявления в правило стиля](#add-a-declaration-to-a-style-rule).</span><span class="sxs-lookup"><span data-stu-id="273b1-202">[Add a declaration to a style rule](#add-a-declaration-to-a-style-rule).</span></span>  
+*   <span data-ttu-id="75186-203">[Добавление встройного объявления.](#add-an-inline-declaration)</span><span class="sxs-lookup"><span data-stu-id="75186-203">[Add a inline declaration](#add-an-inline-declaration).</span></span>  <span data-ttu-id="75186-204">Эквивалентно `style` добавлению атрибута в HTML элемента.</span><span class="sxs-lookup"><span data-stu-id="75186-204">Equivalent to adding a `style` attribute to the HTML of an element.</span></span>  
+*   <span data-ttu-id="75186-205">[Добавьте объявление в правило стиля](#add-a-declaration-to-a-style-rule).</span><span class="sxs-lookup"><span data-stu-id="75186-205">[Add a declaration to a style rule](#add-a-declaration-to-a-style-rule).</span></span>  
 
-**<span data-ttu-id="273b1-203">Какой рабочий процесс следует использовать?</span><span class="sxs-lookup"><span data-stu-id="273b1-203">What workflow should you use?</span></span>** <span data-ttu-id="273b1-204">В большинстве сценариев вы, возможно, захотите использовать рабочий процесс объявления на встроенных элементах.</span><span class="sxs-lookup"><span data-stu-id="273b1-204">For most scenarios, you probably want to use the inline declaration workflow.</span></span>  <span data-ttu-id="273b1-205">Встроенные объявления имеют более высокие особенности, чем внешние, поэтому встроенный рабочий процесс гарантирует, что изменения вступают в силу в ожидаемом элементе.</span><span class="sxs-lookup"><span data-stu-id="273b1-205">Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.</span></span>  <span data-ttu-id="273b1-206">Для получения дополнительных сведений об определенном способе перейдите к разделу [типы Selector][MDNSelectorTypes].</span><span class="sxs-lookup"><span data-stu-id="273b1-206">For more information about specificity, navigate to [Selector Types][MDNSelectorTypes].</span></span>  
+**<span data-ttu-id="75186-206">Какой рабочий процесс следует использовать?</span><span class="sxs-lookup"><span data-stu-id="75186-206">What workflow should you use?</span></span>** <span data-ttu-id="75186-207">В большинстве сценариев, вероятно, необходимо использовать рабочий процесс inline declaration.</span><span class="sxs-lookup"><span data-stu-id="75186-207">For most scenarios, you probably want to use the inline declaration workflow.</span></span>  <span data-ttu-id="75186-208">Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.</span><span class="sxs-lookup"><span data-stu-id="75186-208">Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.</span></span>  <span data-ttu-id="75186-209">Дополнительные сведения о специфике перейдите к [типам Selector.][MDNSelectorTypes]</span><span class="sxs-lookup"><span data-stu-id="75186-209">For more information about specificity, navigate to [Selector Types][MDNSelectorTypes].</span></span>  
 
-<span data-ttu-id="273b1-207">Если при отладке любого стиля элемента требуется специально проверить, что происходит, если объявление определено в разных местах, используйте другой рабочий процесс.</span><span class="sxs-lookup"><span data-stu-id="273b1-207">If you are debugging any styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.</span></span>  
+<span data-ttu-id="75186-210">Если вы отладили все стили элемента и вам необходимо специально проверить, что происходит при определении объявления в разных местах, используйте другой рабочий процесс.</span><span class="sxs-lookup"><span data-stu-id="75186-210">If you are debugging any styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.</span></span>  
 
-#### <span data-ttu-id="273b1-208">Добавление встроенного объявления</span><span class="sxs-lookup"><span data-stu-id="273b1-208">Add an inline declaration</span></span>  
+#### <a name="add-an-inline-declaration"></a><span data-ttu-id="75186-211">Добавление встройного объявления</span><span class="sxs-lookup"><span data-stu-id="75186-211">Add an inline declaration</span></span>  
 
-<span data-ttu-id="273b1-209">Чтобы добавить встроенное объявление, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="273b1-209">Complete the following actions to add an inline declaration.</span></span>  
+<span data-ttu-id="75186-212">Выполните следующие действия, чтобы добавить встройное объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-212">Complete the following actions to add an inline declaration.</span></span>  
 
-1.  <span data-ttu-id="273b1-210">[Выберите элемент](#select-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-210">[Select an element](#select-an-element).</span></span>  
-1.  <span data-ttu-id="273b1-211">В области **стили** выберите между скобками раздела **element. Style** .</span><span class="sxs-lookup"><span data-stu-id="273b1-211">In the **Styles** pane, choose between the brackets of the **element.style** section.</span></span>  <span data-ttu-id="273b1-212">Курсор фокусируется на том, что позволяет вводить текст.</span><span class="sxs-lookup"><span data-stu-id="273b1-212">The cursor focuses, allowing you to enter text.</span></span>  
-1.  <span data-ttu-id="273b1-213">Введите имя свойства и нажмите кнопку `Enter` .</span><span class="sxs-lookup"><span data-stu-id="273b1-213">Enter a property name and select `Enter`.</span></span>  
-1.  <span data-ttu-id="273b1-214">Введите допустимое значение для этого свойства и нажмите кнопку `Enter` .</span><span class="sxs-lookup"><span data-stu-id="273b1-214">Enter a valid value for that property and select `Enter`.</span></span>  <span data-ttu-id="273b1-215">Убедитесь, что в **дереве DOM** `style` к элементу добавлен атрибут.</span><span class="sxs-lookup"><span data-stu-id="273b1-215">In the **DOM Tree**, verify that a `style` attribute has been added to the element.</span></span>  
+1.  <span data-ttu-id="75186-213">[Выберите элемент](#choose-an-element).</span><span class="sxs-lookup"><span data-stu-id="75186-213">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="75186-214">В области **Стилей** выберите между скобками раздела **element.style.**</span><span class="sxs-lookup"><span data-stu-id="75186-214">In the **Styles** pane, choose between the brackets of the **element.style** section.</span></span>  <span data-ttu-id="75186-215">Курсор фокусируется, позволяя вводить текст.</span><span class="sxs-lookup"><span data-stu-id="75186-215">The cursor focuses, allowing you to enter text.</span></span>  
+1.  <span data-ttu-id="75186-216">Введите имя свойства и выберите `Enter` .</span><span class="sxs-lookup"><span data-stu-id="75186-216">Enter a property name and select `Enter`.</span></span>  
+1.  <span data-ttu-id="75186-217">Введите допустимые значения для этого свойства и выберите `Enter` .</span><span class="sxs-lookup"><span data-stu-id="75186-217">Enter a valid value for that property and select `Enter`.</span></span>  <span data-ttu-id="75186-218">В **дереве DOM убедитесь,** что атрибут `style` был добавлен в элемент.</span><span class="sxs-lookup"><span data-stu-id="75186-218">In the **DOM Tree**, verify that a `style` attribute has been added to the element.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-216">На приведенном ниже рисунке к `margin-top` `background-color` выбранному элементу применены свойства и.</span><span class="sxs-lookup"><span data-stu-id="273b1-216">In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.</span></span>  <span data-ttu-id="273b1-217">В **дереве DOM** убедитесь, что объявления отражены в `style` атрибуте для элемента.</span><span class="sxs-lookup"><span data-stu-id="273b1-217">In the **DOM Tree** verify that the declarations are reflected in the `style` attribute for an element.</span></span>  
+> <span data-ttu-id="75186-219">На следующем рисунке свойства и свойства были применены к `margin-top` `background-color` выбранному элементу.</span><span class="sxs-lookup"><span data-stu-id="75186-219">In the following figure, the `margin-top` and `background-color` properties have been applied to the selected element.</span></span>  <span data-ttu-id="75186-220">В **дереве DOM убедитесь,** что объявления отражаются в `style` атрибуте элемента.</span><span class="sxs-lookup"><span data-stu-id="75186-220">In the **DOM Tree** verify that the declarations are reflected in the `style` attribute for an element.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Добавление встроенных объявлений" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
-   <span data-ttu-id="273b1-219">Добавление встроенных объявлений</span><span class="sxs-lookup"><span data-stu-id="273b1-219">Add inline declarations</span></span>  
+:::image type="complex" source="../media/css-elements-styles-margin-top-background-color.msft.png" alt-text="Добавление встройных деклараций" lightbox="../media/css-elements-styles-margin-top-background-color.msft.png":::
+   <span data-ttu-id="75186-222">Добавление встройных деклараций</span><span class="sxs-lookup"><span data-stu-id="75186-222">Add inline declarations</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="273b1-220">Добавление объявления в правило стиля</span><span class="sxs-lookup"><span data-stu-id="273b1-220">Add a declaration to a style rule</span></span>  
+#### <a name="add-a-declaration-to-a-style-rule"></a><span data-ttu-id="75186-223">Добавление объявления в правило стиля</span><span class="sxs-lookup"><span data-stu-id="75186-223">Add a declaration to a style rule</span></span>  
 
-<span data-ttu-id="273b1-221">Чтобы добавить объявление к существующему правилу стиля, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="273b1-221">Complete the following actions to add a declaration to an existing style rule.</span></span>  
+<span data-ttu-id="75186-224">Выполните следующие действия, чтобы добавить объявление в существующее правило стиля.</span><span class="sxs-lookup"><span data-stu-id="75186-224">Complete the following actions to add a declaration to an existing style rule.</span></span>  
 
-1.  <span data-ttu-id="273b1-222">[Выберите элемент](#select-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-222">[Select an element](#select-an-element).</span></span>  
-1.  <span data-ttu-id="273b1-223">В области **стили** выберите один из квадратных скобок правила стиля, к которому вы хотите добавить объявление.</span><span class="sxs-lookup"><span data-stu-id="273b1-223">In the **Styles** pane, choose between the brackets of the style rule to which you want to add the declaration.</span></span>  <span data-ttu-id="273b1-224">Курсор фокусируется на том, что позволяет вводить текст.</span><span class="sxs-lookup"><span data-stu-id="273b1-224">The cursor focuses, allowing you to enter text.</span></span>  
-1.  <span data-ttu-id="273b1-225">Введите имя свойства и нажмите кнопку `Enter` .</span><span class="sxs-lookup"><span data-stu-id="273b1-225">Enter a property name and select `Enter`.</span></span>  
-1.  <span data-ttu-id="273b1-226">Введите допустимое значение для этого свойства и нажмите кнопку `Enter` .</span><span class="sxs-lookup"><span data-stu-id="273b1-226">Enter a valid value for that property and select `Enter`.</span></span>  
+1.  <span data-ttu-id="75186-225">[Выберите элемент](#choose-an-element).</span><span class="sxs-lookup"><span data-stu-id="75186-225">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="75186-226">В области **Стилей** выберите между скобками правила стиля, к которому необходимо добавить объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-226">In the **Styles** pane, choose between the brackets of the style rule to which you want to add the declaration.</span></span>  <span data-ttu-id="75186-227">Курсор фокусируется, позволяя вводить текст.</span><span class="sxs-lookup"><span data-stu-id="75186-227">The cursor focuses, allowing you to enter text.</span></span>  
+1.  <span data-ttu-id="75186-228">Введите имя свойства и выберите `Enter` .</span><span class="sxs-lookup"><span data-stu-id="75186-228">Enter a property name and select `Enter`.</span></span>  
+1.  <span data-ttu-id="75186-229">Введите допустимые значения для этого свойства и выберите `Enter` .</span><span class="sxs-lookup"><span data-stu-id="75186-229">Enter a valid value for that property and select `Enter`.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-border-bottom-style.msft.png" alt-text="Добавление объявления в правило стиля" lightbox="../media/css-elements-styles-border-bottom-style.msft.png":::
-   <span data-ttu-id="273b1-228">Добавление `border-bottom-style:groove` объявления в правило стиля</span><span class="sxs-lookup"><span data-stu-id="273b1-228">Add the `border-bottom-style:groove` declaration to a style rule</span></span>  
+   <span data-ttu-id="75186-231">Добавление `border-bottom-style:groove` объявления в правило стиля</span><span class="sxs-lookup"><span data-stu-id="75186-231">Add the `border-bottom-style:groove` declaration to a style rule</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-229">Изменение имени или значения объявления</span><span class="sxs-lookup"><span data-stu-id="273b1-229">Change a declaration name or value</span></span>  
+### <a name="change-a-declaration-name-or-value"></a><span data-ttu-id="75186-232">Изменение имени или значения объявления</span><span class="sxs-lookup"><span data-stu-id="75186-232">Change a declaration name or value</span></span>  
 
-<span data-ttu-id="273b1-230">Выберите и измените имя или значение объявления, чтобы изменить его.</span><span class="sxs-lookup"><span data-stu-id="273b1-230">Choose and edit the name or value of a declaration to change it.</span></span>  <span data-ttu-id="273b1-231">Сочетания клавиш для быстрого увеличения или уменьшения значения (, или единиц) можно найти [в статье изменение значений объявлений](#change-declaration-values-with-keyboard-shortcuts) `0.1` `1` `10` `100` .</span><span class="sxs-lookup"><span data-stu-id="273b1-231">See [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts) for shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units.</span></span>  
+<span data-ttu-id="75186-233">Выберите и измените имя или значение объявления, чтобы изменить его.</span><span class="sxs-lookup"><span data-stu-id="75186-233">Choose and edit the name or value of a declaration to change it.</span></span>  <span data-ttu-id="75186-234">Для ярлыков для быстрого приращения или приумноживления значения на `0.1` , `1` , или `10` `100` единицы, перейдите к [изменению](#change-declaration-values-with-keyboard-shortcuts)значений объявления с помощью клавиши ярлыки .</span><span class="sxs-lookup"><span data-stu-id="75186-234">For shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units, navigate to [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Изменение значения объявления" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
-   <span data-ttu-id="273b1-233">Изменение значения `border-bottom-style` объявления</span><span class="sxs-lookup"><span data-stu-id="273b1-233">Change the value of the `border-bottom-style` declaration</span></span>  
+   <span data-ttu-id="75186-236">Изменение значения `border-bottom-style` объявления</span><span class="sxs-lookup"><span data-stu-id="75186-236">Change the value of the `border-bottom-style` declaration</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-234">Изменение значений объявлений с помощью сочетаний клавиш</span><span class="sxs-lookup"><span data-stu-id="273b1-234">Change declaration values with keyboard shortcuts</span></span>  
+### <a name="change-declaration-values-with-keyboard-shortcuts"></a><span data-ttu-id="75186-237">Изменение значений объявления с помощью ярлыков клавиатуры</span><span class="sxs-lookup"><span data-stu-id="75186-237">Change declaration values with keyboard shortcuts</span></span>  
 
-<span data-ttu-id="273b1-235">При редактировании значения объявления вы можете использовать следующие сочетания клавиш, чтобы увеличить значение на определенную величину.</span><span class="sxs-lookup"><span data-stu-id="273b1-235">While editing the value of a declaration, you may use the following keyboard shortcuts to increment the value by a specific amount.</span></span>  
+<span data-ttu-id="75186-238">При редактировании значения объявления можно использовать следующие клавиши, чтобы приумнозить значение на определенную сумму.</span><span class="sxs-lookup"><span data-stu-id="75186-238">While editing the value of a declaration, you may use the following keyboard shortcuts to increment the value by a specific amount.</span></span>  
 
-*   <span data-ttu-id="273b1-236">Выберите `Alt` + `Up` \ (Windows, Linux \) или `Option` + `Up` \ (macOS \), чтобы увеличить его `0.1` .</span><span class="sxs-lookup"><span data-stu-id="273b1-236">Select `Alt`+`Up` \(Windows, Linux\) or `Option`+`Up` \(macOS\) to increment by `0.1`.</span></span>  
-*   <span data-ttu-id="273b1-237">Выберите `Up` , чтобы изменить значение `1` , или, `0.1` Если текущее значение находится в диапазоне от `-1` и до `1` .</span><span class="sxs-lookup"><span data-stu-id="273b1-237">Select `Up` to change the value by `1`, or by `0.1` if the current value is between `-1` and `1`.</span></span>  
-*   <span data-ttu-id="273b1-238">Выберите, `Shift` + `Up` чтобы увеличить `10` .</span><span class="sxs-lookup"><span data-stu-id="273b1-238">Select `Shift`+`Up` to increment by `10`.</span></span>  
-*   <span data-ttu-id="273b1-239">Выберите `Shift` + `Page Up` \ (Windows, Linux \) или `Shift` + `Command` + `Up` \ (macOS \), чтобы увеличить значение `100` .</span><span class="sxs-lookup"><span data-stu-id="273b1-239">Select `Shift`+`Page Up` \(Windows, Linux\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.</span></span>  
+*   <span data-ttu-id="75186-239">Выберите `Alt` + `Up` \(Windows, Linux\) `Option` + `Up` или \(macOS\) для приращения путем `0.1` .</span><span class="sxs-lookup"><span data-stu-id="75186-239">Select `Alt`+`Up` \(Windows, Linux\) or `Option`+`Up` \(macOS\) to increment by `0.1`.</span></span>  
+*   <span data-ttu-id="75186-240">Выберите изменение значения путем или путем, если `Up` `1` `0.1` текущее значение находится между `-1` и `1` .</span><span class="sxs-lookup"><span data-stu-id="75186-240">Select `Up` to change the value by `1`, or by `0.1` if the current value is between `-1` and `1`.</span></span>  
+*   <span data-ttu-id="75186-241">Выберите `Shift` + `Up` для приращения `10` путем .</span><span class="sxs-lookup"><span data-stu-id="75186-241">Select `Shift`+`Up` to increment by `10`.</span></span>  
+*   <span data-ttu-id="75186-242">Выберите `Shift` + `Page Up` \(Windows, Linux\) `Shift` + `Command` + `Up` или \(macOS\) `100` для приумнождения значения путем .</span><span class="sxs-lookup"><span data-stu-id="75186-242">Select `Shift`+`Page Up` \(Windows, Linux\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.</span></span>  
 
-<span data-ttu-id="273b1-240">Кроме того, выполняется уменьшение.</span><span class="sxs-lookup"><span data-stu-id="273b1-240">Decrementing also works.</span></span>  <span data-ttu-id="273b1-241">Просто замените каждый из `Up` упомянутых выше экземпляров `Down` .</span><span class="sxs-lookup"><span data-stu-id="273b1-241">Just replace each instance of `Up` mentioned above with `Down`.</span></span>  
+<span data-ttu-id="75186-243">Приумножная работа также работает.</span><span class="sxs-lookup"><span data-stu-id="75186-243">Decrementing also works.</span></span>  <span data-ttu-id="75186-244">Просто замените каждый экземпляр `Up` упомянутых выше `Down` .</span><span class="sxs-lookup"><span data-stu-id="75186-244">Just replace each instance of `Up` mentioned above with `Down`.</span></span>  
 
-### <span data-ttu-id="273b1-242">Добавление класса в элемент</span><span class="sxs-lookup"><span data-stu-id="273b1-242">Add a class to an element</span></span>  
+### <a name="add-a-class-to-an-element"></a><span data-ttu-id="75186-245">Добавление класса в элемент</span><span class="sxs-lookup"><span data-stu-id="75186-245">Add a class to an element</span></span>  
 
-<span data-ttu-id="273b1-243">Чтобы добавить класс в элемент, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="273b1-243">Complete the following actions to add a class to an element.</span></span>  
+<span data-ttu-id="75186-246">Выполните следующие действия, чтобы добавить класс в элемент.</span><span class="sxs-lookup"><span data-stu-id="75186-246">Complete the following actions to add a class to an element.</span></span>  
 
-1.  <span data-ttu-id="273b1-244">[Выберите элемент](#select-an-element) в **дереве DOM**.</span><span class="sxs-lookup"><span data-stu-id="273b1-244">[Select the element](#select-an-element) in the **DOM Tree**.</span></span>  
-1.  <span data-ttu-id="273b1-245">Выберите **. CLS**.</span><span class="sxs-lookup"><span data-stu-id="273b1-245">Choose **.cls**.</span></span>  
-1.  <span data-ttu-id="273b1-246">Введите имя класса в текстовом поле **Добавить новый класс** .</span><span class="sxs-lookup"><span data-stu-id="273b1-246">Enter the name of the class in the **Add New Class** text box.</span></span>  
-1.  <span data-ttu-id="273b1-247">Выберите `Enter` .</span><span class="sxs-lookup"><span data-stu-id="273b1-247">Select `Enter`.</span></span>  
+1.  <span data-ttu-id="75186-247">[Выберите элемент dom](#choose-an-element) **Tree**.</span><span class="sxs-lookup"><span data-stu-id="75186-247">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
+1.  <span data-ttu-id="75186-248">Выберите **.cls**.</span><span class="sxs-lookup"><span data-stu-id="75186-248">Choose **.cls**.</span></span>  
+1.  <span data-ttu-id="75186-249">Введите имя класса в текстовом окне **Добавить новый** класс.</span><span class="sxs-lookup"><span data-stu-id="75186-249">Enter the name of the class in the **Add New Class** text box.</span></span>  
+1.  <span data-ttu-id="75186-250">Выберите `Enter` .</span><span class="sxs-lookup"><span data-stu-id="75186-250">Select `Enter`.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Область «классы элементов»" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
-   <span data-ttu-id="273b1-249">Область « **классы элементов** »</span><span class="sxs-lookup"><span data-stu-id="273b1-249">The **Element Classes** pane</span></span>  
+:::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Области классов элементов" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
+   <span data-ttu-id="75186-252">Области **классов** элементов</span><span class="sxs-lookup"><span data-stu-id="75186-252">The **Element Classes** pane</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-250">Переключение класса</span><span class="sxs-lookup"><span data-stu-id="273b1-250">Toggle a class</span></span>  
+### <a name="toggle-a-class"></a><span data-ttu-id="75186-253">Toggle a class</span><span class="sxs-lookup"><span data-stu-id="75186-253">Toggle a class</span></span>  
 
-<span data-ttu-id="273b1-251">Выполните указанные ниже действия, чтобы включить или отключить класс для элемента.</span><span class="sxs-lookup"><span data-stu-id="273b1-251">Complete the following actions to enable or disable a class on an element.</span></span>  
+<span data-ttu-id="75186-254">Выполните следующие действия, чтобы включить или отключить класс элемента.</span><span class="sxs-lookup"><span data-stu-id="75186-254">Complete the following actions to enable or disable a class on an element.</span></span>  
 
-1.  <span data-ttu-id="273b1-252">[Выберите элемент](#select-an-element) в **дереве DOM**.</span><span class="sxs-lookup"><span data-stu-id="273b1-252">[Select the element](#select-an-element) in the **DOM Tree**.</span></span>  
-1.  <span data-ttu-id="273b1-253">Откройте область **классы элементов** .</span><span class="sxs-lookup"><span data-stu-id="273b1-253">Open the **Element Classes** pane.</span></span>  <span data-ttu-id="273b1-254">Дополнительные сведения о том, [как добавить класс в элемент](#add-a-class-to-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-254">See [Add a class to an element](#add-a-class-to-an-element).</span></span>  <span data-ttu-id="273b1-255">Под текстовым полем **Добавить новый класс** находятся все классы, которые применяются к определенному элементу.</span><span class="sxs-lookup"><span data-stu-id="273b1-255">Below the **Add New Class** text box are all of the classes that are being applied to the specific element.</span></span>  
-1.  <span data-ttu-id="273b1-256">Установите флажок рядом с классом, который вы хотите включить или отключить.</span><span class="sxs-lookup"><span data-stu-id="273b1-256">Toggle the checkbox next to the class that you want to enable or disable.</span></span>  
+1.  <span data-ttu-id="75186-255">[Выберите элемент dom](#choose-an-element) **Tree**.</span><span class="sxs-lookup"><span data-stu-id="75186-255">[Select the element](#choose-an-element) in the **DOM Tree**.</span></span>  
+1.  <span data-ttu-id="75186-256">Откройте области **классов** элементов.</span><span class="sxs-lookup"><span data-stu-id="75186-256">Open the **Element Classes** pane.</span></span>  <span data-ttu-id="75186-257">Перейдите [к добавлению класса к элементу.](#add-a-class-to-an-element)</span><span class="sxs-lookup"><span data-stu-id="75186-257">Navigate to [Add a class to an element](#add-a-class-to-an-element).</span></span>  <span data-ttu-id="75186-258">В **текстовом окне Добавить** новый класс приведены все классы, применяемые к конкретному элементу.</span><span class="sxs-lookup"><span data-stu-id="75186-258">Below the **Add New Class** text box are all of the classes applied to the specific element.</span></span>  
+1.  <span data-ttu-id="75186-259">Переключите контрольный ящик рядом с классом, который необходимо включить или отключить.</span><span class="sxs-lookup"><span data-stu-id="75186-259">Toggle the checkbox next to the class that you want to turn on or off.</span></span>  
 
-### <span data-ttu-id="273b1-257">Добавление правила стиля</span><span class="sxs-lookup"><span data-stu-id="273b1-257">Add a style rule</span></span>  
+### <a name="add-a-style-rule"></a><span data-ttu-id="75186-260">Добавление правила стиля</span><span class="sxs-lookup"><span data-stu-id="75186-260">Add a style rule</span></span>  
 
-<span data-ttu-id="273b1-258">Чтобы добавить новое правило стиля, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="273b1-258">Complete the following actions to add a new style rule.</span></span>  
+<span data-ttu-id="75186-261">Выполните следующие действия, чтобы добавить новое правило стиля.</span><span class="sxs-lookup"><span data-stu-id="75186-261">Complete the following actions to add a new style rule.</span></span>  
 
-1.  <span data-ttu-id="273b1-259">[Выберите элемент](#select-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-259">[Select an element](#select-an-element).</span></span>  
-1.  <span data-ttu-id="273b1-260">Нажмите **новое правило стиля** \ ( ![ новое правило стиля ][ImageNewStyleRuleIcon] ).</span><span class="sxs-lookup"><span data-stu-id="273b1-260">Choose **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\).</span></span>  <span data-ttu-id="273b1-261">DevTools вставляет новое правило под правилом **element. Style** .</span><span class="sxs-lookup"><span data-stu-id="273b1-261">DevTools inserts a new rule beneath the **element.style** rule.</span></span>  
+1.  <span data-ttu-id="75186-262">[Выберите элемент](#choose-an-element).</span><span class="sxs-lookup"><span data-stu-id="75186-262">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="75186-263">Выберите **новое правило стиля** \. Новое правило стиля ![ ][ImageNewStyleRuleIcon] \).</span><span class="sxs-lookup"><span data-stu-id="75186-263">Choose **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\).</span></span>  <span data-ttu-id="75186-264">DevTools вставляет новое правило под **правилом element.style.**</span><span class="sxs-lookup"><span data-stu-id="75186-264">DevTools inserts a new rule beneath the **element.style** rule.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-262">На приведенном ниже рисунке DevTools добавляет `h1.devsite-page-title` правило стиля после выбора **нового правила стиля**.</span><span class="sxs-lookup"><span data-stu-id="273b1-262">In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you choose **New Style Rule**.</span></span>  
+> <span data-ttu-id="75186-265">На следующем рисунке DevTools добавляет правило стиля после `h1.devsite-page-title` выбора **правила New Style.**</span><span class="sxs-lookup"><span data-stu-id="75186-265">In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you choose **New Style Rule**.</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-style-new.msft.png" alt-text="Добавление нового правила стиля" lightbox="../media/css-elements-styles-style-new.msft.png":::
-   <span data-ttu-id="273b1-264">Добавление нового правила стиля</span><span class="sxs-lookup"><span data-stu-id="273b1-264">Add a new style rule</span></span>  
+   <span data-ttu-id="75186-267">Добавление нового правила стиля</span><span class="sxs-lookup"><span data-stu-id="75186-267">Add a new style rule</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="273b1-265">Выберите таблицу стилей, к которой нужно добавить правило.</span><span class="sxs-lookup"><span data-stu-id="273b1-265">Choose which stylesheet to add a rule to</span></span>  
+#### <a name="choose-which-stylesheet-to-add-a-rule-to"></a><span data-ttu-id="75186-268">Выберите таблицу стилей, чтобы добавить правило</span><span class="sxs-lookup"><span data-stu-id="75186-268">Choose which stylesheet to add a rule to</span></span>  
 
-<span data-ttu-id="273b1-266">При [добавлении нового правила стиля](#add-a-style-rule)нажмите и удерживайте **новое правило** стиля \ ( ![ новое правило стиля), ][ImageNewStyleRuleIcon] чтобы выбрать таблицу стилей, к которой нужно добавить правило.</span><span class="sxs-lookup"><span data-stu-id="273b1-266">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\) to choose which stylesheet to add the style rule to.</span></span>  
+<span data-ttu-id="75186-269">При [добавлении](#add-a-style-rule)нового правила стиля выберите и удерживайте правило **New Style** \( New Style Rule \) для выбора таблицы стилей для добавления ![ правила ][ImageNewStyleRuleIcon] стиля.</span><span class="sxs-lookup"><span data-stu-id="75186-269">When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\) to choose which stylesheet to add the style rule to.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Выбор таблицы стилей" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
-   <span data-ttu-id="273b1-268">Выбор таблицы стилей</span><span class="sxs-lookup"><span data-stu-id="273b1-268">Choose a stylesheet</span></span>  
+:::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Выберите таблицу стилей" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
+   <span data-ttu-id="75186-271">Выберите таблицу стилей</span><span class="sxs-lookup"><span data-stu-id="75186-271">Choose a stylesheet</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="273b1-269">Добавление правила стиля в определенное место</span><span class="sxs-lookup"><span data-stu-id="273b1-269">Add a style rule to a specific location</span></span>  
+#### <a name="add-a-style-rule-to-a-specific-location"></a><span data-ttu-id="75186-272">Добавление правила стиля в определенное расположение</span><span class="sxs-lookup"><span data-stu-id="75186-272">Add a style rule to a specific location</span></span>  
 
-<span data-ttu-id="273b1-270">Выполните указанные ниже действия, чтобы добавить правило стиля в конкретное расположение на вкладке " **стили** ".</span><span class="sxs-lookup"><span data-stu-id="273b1-270">Complete the following actions to add a style rule to a specific location in the **Styles** tab.</span></span>  
+<span data-ttu-id="75186-273">Выполните следующие действия, чтобы добавить правило стиля в определенное расположение в панели **Стилей.**</span><span class="sxs-lookup"><span data-stu-id="75186-273">Complete the following actions to add a style rule to a specific location in the **Styles** panel.</span></span>  
 
-1.  <span data-ttu-id="273b1-271">Наведите указатель мыши на правило стиля, которое находится в том месте, куда вы хотите добавить новое правило стиля.</span><span class="sxs-lookup"><span data-stu-id="273b1-271">Hover over the style rule that is directly above where you want to add your new style rule.</span></span>  
-1.  <span data-ttu-id="273b1-272">[Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="273b1-272">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="273b1-273">Нажмите кнопку **Вставить правило стиля ниже** \ ( ![ Вставьте правило стиля ниже значка ][ImageNewStyleRuleIcon] \).</span><span class="sxs-lookup"><span data-stu-id="273b1-273">Choose **Insert Style Rule Below** \(![Insert Style Rule Below icon][ImageNewStyleRuleIcon]\).</span></span>  
+1.  <span data-ttu-id="75186-274">Наведите курс на правило стиля, которое находится непосредственно над тем, где необходимо добавить новое правило стиля.</span><span class="sxs-lookup"><span data-stu-id="75186-274">Hover on the style rule that is directly above where you want to add your new style rule.</span></span>  
+1.  <span data-ttu-id="75186-275">[ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="75186-275">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="75186-276">Выберите **Правило стиля вставки ниже** \. ![ Вставить правило стиля ниже значок ][ImageNewStyleRuleIcon] \).</span><span class="sxs-lookup"><span data-stu-id="75186-276">Choose **Insert Style Rule Below** \(![Insert Style Rule Below icon][ImageNewStyleRuleIcon]\).</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Вставить правило стиля ниже" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
-   **<span data-ttu-id="273b1-275">Вставить правило стиля ниже</span><span class="sxs-lookup"><span data-stu-id="273b1-275">Insert Style Rule Below</span></span>**  
+:::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Вставьте правило стиля ниже" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
+   **<span data-ttu-id="75186-278">Вставьте правило стиля ниже</span><span class="sxs-lookup"><span data-stu-id="75186-278">Insert Style Rule Below</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-276">Панель инструментов "другие действия"</span><span class="sxs-lookup"><span data-stu-id="273b1-276">Reveal the More Actions toolbar</span></span>  
+### <a name="reveal-the-more-actions-toolbar"></a><span data-ttu-id="75186-279">Раскрой панель инструментов More Actions</span><span class="sxs-lookup"><span data-stu-id="75186-279">Reveal the More Actions toolbar</span></span>  
 
-<span data-ttu-id="273b1-277">На панели инструментов " **другие действия** " можно выполнять указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="273b1-277">The **More Actions** toolbar lets you perform the following actions.</span></span>  
+<span data-ttu-id="75186-280">Панель **инструментов More Actions** позволяет выполнять следующие действия.</span><span class="sxs-lookup"><span data-stu-id="75186-280">The **More Actions** toolbar lets you perform the following actions.</span></span>  
 
-*   <span data-ttu-id="273b1-278">Вставка правила стиля прямо ниже того, на котором вы отправили фокус.</span><span class="sxs-lookup"><span data-stu-id="273b1-278">Insert a style rule directly below the one you are focused on.</span></span>  
-*   <span data-ttu-id="273b1-279">Добавьте в `background-color` `color` `box-shadow` правило стиля, которое `text-shadow` вы хотите включить, или объявление.</span><span class="sxs-lookup"><span data-stu-id="273b1-279">Add a `background-color`, `color`, `box-shadow`, or `text-shadow` declaration to the style rule you are focused on.</span></span>  
+*   <span data-ttu-id="75186-281">Вставьте правило стиля непосредственно под тем, на который вы ориентированы.</span><span class="sxs-lookup"><span data-stu-id="75186-281">Insert a style rule directly below the one you are focused on.</span></span>  
+*   <span data-ttu-id="75186-282">Добавьте `background-color` , `color` или объявление к `box-shadow` `text-shadow` правилу стиля, на который вы ориентированы.</span><span class="sxs-lookup"><span data-stu-id="75186-282">Add a `background-color`, `color`, `box-shadow`, or `text-shadow` declaration to the style rule you are focused on.</span></span>  
 
-<span data-ttu-id="273b1-280">Выполните указанные ниже действия, чтобы открыть панель инструментов **Дополнительные действия** .</span><span class="sxs-lookup"><span data-stu-id="273b1-280">Complete the following actions to reveal the **More Actions** toolbar.</span></span>  
+<span data-ttu-id="75186-283">Выполните следующие действия, чтобы выявить панель **инструментов More Actions.**</span><span class="sxs-lookup"><span data-stu-id="75186-283">Complete the following actions to reveal the **More Actions** toolbar.</span></span>  
 
-1.  <span data-ttu-id="273b1-281">На вкладке **стили** наведите указатель мыши на правило стиля.</span><span class="sxs-lookup"><span data-stu-id="273b1-281">In the **Styles** tab, hover over a style rule.</span></span>  <span data-ttu-id="273b1-282">**Дополнительные действия** \ ( `...` \) находятся в правом нижнем углу раздела "правило стиля".</span><span class="sxs-lookup"><span data-stu-id="273b1-282">**More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.</span></span>  
+1.  <span data-ttu-id="75186-284">В панели **Стилей** введите правило стиля.</span><span class="sxs-lookup"><span data-stu-id="75186-284">In the **Styles** panel, hover on a style rule.</span></span>  <span data-ttu-id="75186-285">**Дополнительные** действия `...` \( \) раскрыты в нижнем правом разделе правила стиля.</span><span class="sxs-lookup"><span data-stu-id="75186-285">**More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="273b1-283">На приведенном ниже рисунке наведите указатель мыши на `.header-holder.has-default-focus` правило стиля и **другие действия** будут отображены в правом нижнем углу раздела "правило стиля".</span><span class="sxs-lookup"><span data-stu-id="273b1-283">In the following figure, hover over the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.</span></span>  
+    > <span data-ttu-id="75186-286">На следующей фигуре наведите курс на правило стиля, и в нижнем правом разделе правила стиля будет обнаружено больше `.header-holder.has-default-focus` действий. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="75186-286">In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.</span></span>  
     
-    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Показать дополнительные действия" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
-       <span data-ttu-id="273b1-285">Показать **Дополнительные действия** \ ( `...` \)</span><span class="sxs-lookup"><span data-stu-id="273b1-285">Reveal **More Actions** \(`...`\)</span></span>  
+    :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Раскрыть дополнительные действия" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
+       <span data-ttu-id="75186-288">**Раскрой дополнительные** действия `...` \( \)</span><span class="sxs-lookup"><span data-stu-id="75186-288">Reveal **More Actions** \(`...`\)</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="273b1-286">Наведите указатель мыши на элемент **Дополнительные действия** , `...` чтобы отобразить указанные выше действия.</span><span class="sxs-lookup"><span data-stu-id="273b1-286">Hover over **More Actions** \(`...`\) to reveal the actions mentioned above.</span></span>  
+1.  <span data-ttu-id="75186-289">Наведите **курсор на дополнительные** действия `...` \( \) для раскрытия указанных выше действий.</span><span class="sxs-lookup"><span data-stu-id="75186-289">Hover on **More Actions** \(`...`\) to reveal the actions mentioned above.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="273b1-287">**Правило стиля вставки, показанное ниже** , выводится при наведении указателя мыши на **другие действия**.</span><span class="sxs-lookup"><span data-stu-id="273b1-287">The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.</span></span>  
+    > <span data-ttu-id="75186-290">Действие **Insert Style Под действием вставляется** после нависания над **дополнительными действиями.**</span><span class="sxs-lookup"><span data-stu-id="75186-290">The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.</span></span>  
     
-    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Панель инструментов «другие действия»" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
-       <span data-ttu-id="273b1-289">Панель инструментов « **другие действия** »</span><span class="sxs-lookup"><span data-stu-id="273b1-289">The **More Actions** toolbar</span></span>  
+    :::image type="complex" source="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png" alt-text="Панель инструментов More Actions" lightbox="../media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png":::
+       <span data-ttu-id="75186-292">Панель **инструментов More Actions**</span><span class="sxs-lookup"><span data-stu-id="75186-292">The **More Actions** toolbar</span></span>  
     :::image-end:::  
     
-### <span data-ttu-id="273b1-290">Переключить объявление</span><span class="sxs-lookup"><span data-stu-id="273b1-290">Toggle a declaration</span></span>  
+### <a name="toggle-a-declaration"></a><span data-ttu-id="75186-293">Toggle a declaration</span><span class="sxs-lookup"><span data-stu-id="75186-293">Toggle a declaration</span></span>  
 
-<span data-ttu-id="273b1-291">Выполните действия folllwoing, чтобы переключить одно объявление на \ (или выключить).</span><span class="sxs-lookup"><span data-stu-id="273b1-291">Complete the folllwoing actions to toggle a single declaration on \(or off\).</span></span>  
+<span data-ttu-id="75186-294">Выполните действия folllwoing, чтобы переключение одной декларации на \(или off\).</span><span class="sxs-lookup"><span data-stu-id="75186-294">Complete the folllwoing actions to toggle a single declaration on \(or off\).</span></span>  
 
-1.  <span data-ttu-id="273b1-292">[Выберите элемент](#select-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-292">[Select an element](#select-an-element).</span></span>  
-1.  <span data-ttu-id="273b1-293">В области **стили** наведите указатель мыши на правило, которое определяет объявление.</span><span class="sxs-lookup"><span data-stu-id="273b1-293">In the **Styles** pane, hover over the rule that defines the declaration.</span></span>  <span data-ttu-id="273b1-294">Рядом с каждым объявлением появится флажок.</span><span class="sxs-lookup"><span data-stu-id="273b1-294">A checkbox appears next to each declaration.</span></span>  
-1.  <span data-ttu-id="273b1-295">Установите флажок \ (или снимите) флажок рядом с объявлением.</span><span class="sxs-lookup"><span data-stu-id="273b1-295">Check \(or uncheck\) the checkbox next to the declaration.</span></span>  <span data-ttu-id="273b1-296">Если вы снимите флажок объявления, DevTools пересекает его, чтобы показать, что он больше не активен.</span><span class="sxs-lookup"><span data-stu-id="273b1-296">When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.</span></span>  
+1.  <span data-ttu-id="75186-295">[Выберите элемент](#choose-an-element).</span><span class="sxs-lookup"><span data-stu-id="75186-295">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="75186-296">В области **Стилей** наведите курсор на правило, определя которое определяет объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-296">In the **Styles** pane, hover on the rule that defines the declaration.</span></span>  <span data-ttu-id="75186-297">Рядом с каждым объявлением отображается почтовый ящик.</span><span class="sxs-lookup"><span data-stu-id="75186-297">A checkbox appears next to each declaration.</span></span>  
+1.  <span data-ttu-id="75186-298">Проверьте \(или разгрузку\) почтовый ящик рядом с объявлением.</span><span class="sxs-lookup"><span data-stu-id="75186-298">Check \(or uncheck\) the checkbox next to the declaration.</span></span>  <span data-ttu-id="75186-299">При отладке объявления DevTools пересекает его, чтобы указать, что она больше не активна.</span><span class="sxs-lookup"><span data-stu-id="75186-299">When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-297">На приведенном ниже рисунке `margin-top` свойство для выбранного в данный момент элемента было отключено.</span><span class="sxs-lookup"><span data-stu-id="273b1-297">In the following figure, the `margin-top` property for the currently selected element has been toggled off.</span></span>  
+> <span data-ttu-id="75186-300">На следующем рисунке свойство для выбранного в настоящее время элемента `margin-top` отключено.</span><span class="sxs-lookup"><span data-stu-id="75186-300">In the following figure, the `margin-top` property for the currently selected element has been toggled off.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Переключить объявление" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
-   <span data-ttu-id="273b1-299">Переключить объявление</span><span class="sxs-lookup"><span data-stu-id="273b1-299">Toggle a declaration</span></span>  
+:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Toggle a declaration" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
+   <span data-ttu-id="75186-302">Toggle a declaration</span><span class="sxs-lookup"><span data-stu-id="75186-302">Toggle a declaration</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-300">Добавление объявления цвета фона</span><span class="sxs-lookup"><span data-stu-id="273b1-300">Add a background-color declaration</span></span>  
+### <a name="add-a-background-color-declaration"></a><span data-ttu-id="75186-303">Добавление объявления фонового цвета</span><span class="sxs-lookup"><span data-stu-id="75186-303">Add a background-color declaration</span></span>  
 
-<span data-ttu-id="273b1-301">Выполните указанные ниже действия, чтобы добавить `background-color` объявление к элементу.</span><span class="sxs-lookup"><span data-stu-id="273b1-301">Complete the following actions to add a `background-color` declaration to an element.</span></span>  
+<span data-ttu-id="75186-304">Выполните следующие действия, чтобы `background-color` добавить в элемент объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-304">Complete the following actions to add a `background-color` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="273b1-302">Наведите указатель мыши на правило стиля, в которое вы хотите добавить `background-color` объявление.</span><span class="sxs-lookup"><span data-stu-id="273b1-302">Hover over the style rule that you want to add the `background-color` declaration to.</span></span>  
-1.  <span data-ttu-id="273b1-303">[Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="273b1-303">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="273b1-304">Нажмите кнопку **добавить цвет фона** \ ( ![ Добавить значок цвет фона ][ImageAddBackgroundColorIcon] ).</span><span class="sxs-lookup"><span data-stu-id="273b1-304">Choose **Add Background Color** \(![Add Background Color icon][ImageAddBackgroundColorIcon]\).</span></span>  
+1.  <span data-ttu-id="75186-305">Наведите курс на правило стиля, в которое нужно добавить `background-color` объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-305">Hover on the style rule that you want to add the `background-color` declaration to.</span></span>  
+1.  <span data-ttu-id="75186-306">[ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="75186-306">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="75186-307">Выберите **Добавить фоновый** цвет \. ![ Добавьте значок фонового ][ImageAddBackgroundColorIcon] цвета \).</span><span class="sxs-lookup"><span data-stu-id="75186-307">Choose **Add Background Color** \(![Add Background Color icon][ImageAddBackgroundColorIcon]\).</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Добавление цвета фона" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
-   **<span data-ttu-id="273b1-306">Добавление цвета фона</span><span class="sxs-lookup"><span data-stu-id="273b1-306">Add Background Color</span></span>**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Добавление фонового цвета" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
+   **<span data-ttu-id="75186-309">Добавление фонового цвета</span><span class="sxs-lookup"><span data-stu-id="75186-309">Add Background Color</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-307">Добавление объявления цвета</span><span class="sxs-lookup"><span data-stu-id="273b1-307">Add a color declaration</span></span>  
+### <a name="add-a-color-declaration"></a><span data-ttu-id="75186-310">Добавление объявления цвета</span><span class="sxs-lookup"><span data-stu-id="75186-310">Add a color declaration</span></span>  
 
-<span data-ttu-id="273b1-308">Выполните указанные ниже действия, чтобы добавить `color` объявление к элементу.</span><span class="sxs-lookup"><span data-stu-id="273b1-308">Complete the following actions to add a `color` declaration to an element.</span></span>  
+<span data-ttu-id="75186-311">Выполните следующие действия, чтобы `color` добавить в элемент объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-311">Complete the following actions to add a `color` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="273b1-309">Наведите указатель мыши на правило стиля, в которое вы хотите добавить `color` объявление.</span><span class="sxs-lookup"><span data-stu-id="273b1-309">Hover over the style rule that you want to add the `color` declaration to.</span></span>  
-1.  <span data-ttu-id="273b1-310">[Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="273b1-310">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="273b1-311">Нажмите кнопку **добавить цвет** \ ( ![ добавить цвет значок ][ImageAddColorIcon] ).</span><span class="sxs-lookup"><span data-stu-id="273b1-311">Choose **Add Color** \(![Add Color icon][ImageAddColorIcon]\).</span></span>  
+1.  <span data-ttu-id="75186-312">Наведите курс на правило стиля, в которое нужно добавить `color` объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-312">Hover on the style rule that you want to add the `color` declaration to.</span></span>  
+1.  <span data-ttu-id="75186-313">[ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="75186-313">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="75186-314">Выберите **Добавить цвет** \. Добавить ![ значок цвета ][ImageAddColorIcon] \).</span><span class="sxs-lookup"><span data-stu-id="75186-314">Choose **Add Color** \(![Add Color icon][ImageAddColorIcon]\).</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Добавить цвет" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
-   **<span data-ttu-id="273b1-313">Добавить цвет</span><span class="sxs-lookup"><span data-stu-id="273b1-313">Add Color</span></span>**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Добавление цвета" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
+   **<span data-ttu-id="75186-316">Добавление цвета</span><span class="sxs-lookup"><span data-stu-id="75186-316">Add Color</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-314">Добавление объявления с помощью блочной тени</span><span class="sxs-lookup"><span data-stu-id="273b1-314">Add a box-shadow declaration</span></span>  
+### <a name="add-a-box-shadow-declaration"></a><span data-ttu-id="75186-317">Добавление объявления box-shadow</span><span class="sxs-lookup"><span data-stu-id="75186-317">Add a box-shadow declaration</span></span>  
 
-<span data-ttu-id="273b1-315">Выполните указанные ниже действия, чтобы добавить `box-shadow` объявление к элементу.</span><span class="sxs-lookup"><span data-stu-id="273b1-315">Complete the follwoing actions to add a `box-shadow` declaration to an element.</span></span>  
+<span data-ttu-id="75186-318">Выполните следующие действия, чтобы `box-shadow` добавить в элемент объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-318">Complete the follwoing actions to add a `box-shadow` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="273b1-316">Наведите указатель мыши на правило стиля, в которое вы хотите добавить `box-shadow` объявление.</span><span class="sxs-lookup"><span data-stu-id="273b1-316">Hover over the style rule that you want to add the `box-shadow` declaration to.</span></span>  
-1.  <span data-ttu-id="273b1-317">[Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="273b1-317">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="273b1-318">Нажмите кнопку **"добавить тень"** , а затем — ![ значок "добавить тень" ][ImageAddBoxShadowIcon] .</span><span class="sxs-lookup"><span data-stu-id="273b1-318">Choose **Add Box Shadow** \(![Add Box Shadow icon][ImageAddBoxShadowIcon]\).</span></span>  
+1.  <span data-ttu-id="75186-319">Наведите курс на правило стиля, в которое нужно добавить `box-shadow` объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-319">Hover on the style rule that you want to add the `box-shadow` declaration to.</span></span>  
+1.  <span data-ttu-id="75186-320">[ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="75186-320">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="75186-321">Выберите **Добавить поле Shadow** \. Добавьте ![ значок Тень окна ][ImageAddBoxShadowIcon] \).</span><span class="sxs-lookup"><span data-stu-id="75186-321">Choose **Add Box Shadow** \(![Add Box Shadow icon][ImageAddBoxShadowIcon]\).</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Добавление тени для поля" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
-   **<span data-ttu-id="273b1-320">Добавление тени для поля</span><span class="sxs-lookup"><span data-stu-id="273b1-320">Add Box Shadow</span></span>**  
+:::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Добавление тени box" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
+   **<span data-ttu-id="75186-323">Добавление тени box</span><span class="sxs-lookup"><span data-stu-id="75186-323">Add Box Shadow</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-321">Добавление объявления тени для текста</span><span class="sxs-lookup"><span data-stu-id="273b1-321">Add a text-shadow declaration</span></span>  
+### <a name="add-a-text-shadow-declaration"></a><span data-ttu-id="75186-324">Добавление объявления text-shadow</span><span class="sxs-lookup"><span data-stu-id="75186-324">Add a text-shadow declaration</span></span>  
 
-<span data-ttu-id="273b1-322">Выполните указанные ниже действия, чтобы добавить `text-shadow` объявление к элементу.</span><span class="sxs-lookup"><span data-stu-id="273b1-322">Complete the following actions to add a `text-shadow` declaration to an element.</span></span>  
+<span data-ttu-id="75186-325">Выполните следующие действия, чтобы `text-shadow` добавить в элемент объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-325">Complete the following actions to add a `text-shadow` declaration to an element.</span></span>  
 
-1.  <span data-ttu-id="273b1-323">Наведите указатель мыши на правило стиля, в которое вы хотите добавить `text-shadow` объявление.</span><span class="sxs-lookup"><span data-stu-id="273b1-323">Hover over the style rule that you want to add the `text-shadow` declaration to.</span></span>  
-1.  <span data-ttu-id="273b1-324">[Показать панель инструментов " **другие действия** "](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="273b1-324">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
-1.  <span data-ttu-id="273b1-325">Нажмите кнопку **Добавить тень текста** \ ( ![ Добавить значок тени текста ][ImageAddTextShadowIcon] ).</span><span class="sxs-lookup"><span data-stu-id="273b1-325">Choose **Add Text Shadow** \(![Add Text Shadow icon][ImageAddTextShadowIcon]\).</span></span>  
+1.  <span data-ttu-id="75186-326">Наведите курс на правило стиля, в которое нужно добавить `text-shadow` объявление.</span><span class="sxs-lookup"><span data-stu-id="75186-326">Hover on the style rule that you want to add the `text-shadow` declaration to.</span></span>  
+1.  <span data-ttu-id="75186-327">[ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).</span><span class="sxs-lookup"><span data-stu-id="75186-327">[Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).</span></span>  
+1.  <span data-ttu-id="75186-328">Выберите **Добавить текстовую тень** \. Добавьте ![ значок Text Shadow ][ImageAddTextShadowIcon] \).</span><span class="sxs-lookup"><span data-stu-id="75186-328">Choose **Add Text Shadow** \(![Add Text Shadow icon][ImageAddTextShadowIcon]\).</span></span>  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Добавление тени текста" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
-   **<span data-ttu-id="273b1-327">Добавление тени текста</span><span class="sxs-lookup"><span data-stu-id="273b1-327">Add Text Shadow</span></span>**  
+   **<span data-ttu-id="75186-330">Добавление тени текста</span><span class="sxs-lookup"><span data-stu-id="75186-330">Add Text Shadow</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="273b1-328">Изменение цвета с помощью палитры цветов</span><span class="sxs-lookup"><span data-stu-id="273b1-328">Change colors with the Color Picker</span></span>  
+### <a name="change-colors-with-the-color-picker"></a><span data-ttu-id="75186-331">Изменение цветов с помощью выборки цвета</span><span class="sxs-lookup"><span data-stu-id="75186-331">Change colors with the Color Picker</span></span>  
 
-<span data-ttu-id="273b1-329">В **средстве выбора цвета** есть графический интерфейс для изменения `color` и `background-color` объявлений.</span><span class="sxs-lookup"><span data-stu-id="273b1-329">The **Color Picker** provides a GUI for changing `color` and `background-color` declarations.</span></span>  
+<span data-ttu-id="75186-332">Выбор **цвета предоставляет** GUI для изменений и `color` `background-color` объявлений.</span><span class="sxs-lookup"><span data-stu-id="75186-332">The **Color Picker** provides a GUI for changing `color` and `background-color` declarations.</span></span>  
 
-<span data-ttu-id="273b1-330">Выполните указанные ниже действия, чтобы открыть окно **выбора цвета**.</span><span class="sxs-lookup"><span data-stu-id="273b1-330">Complete the following actions to open the **Color Picker**.</span></span>  
+<span data-ttu-id="75186-333">Выполните следующие действия, чтобы открыть **выбор цвета.**</span><span class="sxs-lookup"><span data-stu-id="75186-333">Complete the following actions to open the **Color Picker**.</span></span>  
 
-1.  <span data-ttu-id="273b1-331">[Выберите элемент](#select-an-element).</span><span class="sxs-lookup"><span data-stu-id="273b1-331">[Select an element](#select-an-element).</span></span>  
-1.  <span data-ttu-id="273b1-332">На вкладке **стили** найдите и щелкните то `color` `background-color` же объявление, которое вы хотите изменить.</span><span class="sxs-lookup"><span data-stu-id="273b1-332">In the **Styles** tab, find the `color`, `background-color`, or similar declaration that you want to change.</span></span>  <span data-ttu-id="273b1-333">Слева от "," `color` `background-color` или аналогичного значения есть маленький квадрат, который является предварительным просмотром цвета.</span><span class="sxs-lookup"><span data-stu-id="273b1-333">To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.</span></span>  
+1.  <span data-ttu-id="75186-334">[Выберите элемент](#choose-an-element).</span><span class="sxs-lookup"><span data-stu-id="75186-334">[Select an element](#choose-an-element).</span></span>  
+1.  <span data-ttu-id="75186-335">В панели **Стилей** найдите `color` или `background-color` аналогичное объявление, которое необходимо изменить.</span><span class="sxs-lookup"><span data-stu-id="75186-335">In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.</span></span>  <span data-ttu-id="75186-336">Слева от значения , или аналогичного значения, имеется небольшой квадрат, который является `color` `background-color` предварительным просмотром цвета.</span><span class="sxs-lookup"><span data-stu-id="75186-336">To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="273b1-334">На приведенном ниже рисунке небольшой квадрат слева от него `rgba(0, 0, 0, 0.7)` является предварительным просмотром этого цвета.</span><span class="sxs-lookup"><span data-stu-id="273b1-334">In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.</span></span>  
+    > <span data-ttu-id="75186-337">На следующем рисунке небольшой квадрат слева `rgba(0, 0, 0, 0.7)` — это предварительный просмотр этого цвета.</span><span class="sxs-lookup"><span data-stu-id="75186-337">In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-rule-overlay-color-box.msft.png" alt-text="Цвет предварительного просмотра" lightbox="../media/css-elements-styles-rule-overlay-color-box.msft.png":::
-       <span data-ttu-id="273b1-336">Цвет предварительного просмотра</span><span class="sxs-lookup"><span data-stu-id="273b1-336">Color preview</span></span>  
+       <span data-ttu-id="75186-339">Цвет предварительного просмотра</span><span class="sxs-lookup"><span data-stu-id="75186-339">Color preview</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="273b1-337">Нажмите кнопку Предварительный просмотр, чтобы открыть окно **выбора цвета**.</span><span class="sxs-lookup"><span data-stu-id="273b1-337">Choose the preview to open the **Color Picker**.</span></span>  
+1.  <span data-ttu-id="75186-340">Выберите предварительный просмотр, чтобы **открыть выбор цвета**.</span><span class="sxs-lookup"><span data-stu-id="75186-340">Choose the preview to open the **Color Picker**.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-rule-color-picker.msft.png" alt-text="Выбор цвета" lightbox="../media/css-elements-styles-rule-color-picker.msft.png":::
-       <span data-ttu-id="273b1-339">**Выбор цвета**</span><span class="sxs-lookup"><span data-stu-id="273b1-339">The **Color Picker**</span></span>  
+       <span data-ttu-id="75186-342">Выбор **цвета**</span><span class="sxs-lookup"><span data-stu-id="75186-342">The **Color Picker**</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="273b1-340">На приведенном ниже рисунке и списке описывает каждого элемента пользовательского интерфейса в **палитре цветов**.</span><span class="sxs-lookup"><span data-stu-id="273b1-340">The following figure and list descries of each of the UI elements of the **Color Picker**.</span></span>  
+<span data-ttu-id="75186-343">Следующая фигура и список descries каждого из элементов пользовательского интерфейса **в color Picker**.</span><span class="sxs-lookup"><span data-stu-id="75186-343">The following figure and list descries of each of the UI elements of the **Color Picker**.</span></span>  
 
-:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="Палитра цветов с заметками" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
-   <span data-ttu-id="273b1-342">**Палитра цветов**с заметками</span><span class="sxs-lookup"><span data-stu-id="273b1-342">The **Color Picker**, annotated</span></span>  
+:::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="Выбор цвета, аннотированный" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
+   <span data-ttu-id="75186-345">Выбор **цвета,** аннотированный</span><span class="sxs-lookup"><span data-stu-id="75186-345">The **Color Picker**, annotated</span></span>  
 :::image-end:::  
 
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-343">1,1</span><span class="sxs-lookup"><span data-stu-id="273b1-343">1</span></span>  
+      <span data-ttu-id="75186-346">1</span><span class="sxs-lookup"><span data-stu-id="75186-346">1</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-344">Оттенки</span><span class="sxs-lookup"><span data-stu-id="273b1-344">Shades</span></span>**  
+      **<span data-ttu-id="75186-347">Оттенки</span><span class="sxs-lookup"><span data-stu-id="75186-347">Shades</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -443,54 +443,54 @@ ms.locfileid: "11204014"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-345">2</span><span class="sxs-lookup"><span data-stu-id="273b1-345">2</span></span>  
+      <span data-ttu-id="75186-348">2</span><span class="sxs-lookup"><span data-stu-id="75186-348">2</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-346">Выбрав</span><span class="sxs-lookup"><span data-stu-id="273b1-346">Eyedropper</span></span>**  
+      **<span data-ttu-id="75186-349">Eyedropper</span><span class="sxs-lookup"><span data-stu-id="75186-349">Eyedropper</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="273b1-347">Дополнительные сведения можно найти с помощью [пипетки, выключив образец цвета на странице](#sample-a-color-off-the-page-with-the-eyedropper).</span><span class="sxs-lookup"><span data-stu-id="273b1-347">For more information, navigate to [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).</span></span>  
+      <span data-ttu-id="75186-350">Дополнительные сведения можно получить в примере цвета со [страницы с помощью eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).</span><span class="sxs-lookup"><span data-stu-id="75186-350">For more information, navigate to [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-348">Трехконтактный</span><span class="sxs-lookup"><span data-stu-id="273b1-348">3</span></span>  
+      <span data-ttu-id="75186-351">3</span><span class="sxs-lookup"><span data-stu-id="75186-351">3</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-349">Копировать в буфер</span><span class="sxs-lookup"><span data-stu-id="273b1-349">Copy To Clipboard</span></span>**  
+      **<span data-ttu-id="75186-352">Копировать в буфер</span><span class="sxs-lookup"><span data-stu-id="75186-352">Copy To Clipboard</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="273b1-350">Скопируйте **Отображаемое значение** в буфер обмена.</span><span class="sxs-lookup"><span data-stu-id="273b1-350">Copy the **Display Value** to your clipboard.</span></span>  
+      <span data-ttu-id="75186-353">Скопируйте **значение Display в** буфер обмена.</span><span class="sxs-lookup"><span data-stu-id="75186-353">Copy the **Display Value** to your clipboard.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-351">четырехпроцессорном</span><span class="sxs-lookup"><span data-stu-id="273b1-351">4</span></span>  
+      <span data-ttu-id="75186-354">4</span><span class="sxs-lookup"><span data-stu-id="75186-354">4</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-352">Отображаемое значение</span><span class="sxs-lookup"><span data-stu-id="273b1-352">Display Value</span></span>**  
+      **<span data-ttu-id="75186-355">Отображение значения</span><span class="sxs-lookup"><span data-stu-id="75186-355">Display Value</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="273b1-353">Представление RGBA, HSLA или шестнадцатеричного представления цвета.</span><span class="sxs-lookup"><span data-stu-id="273b1-353">The RGBA, HSLA, or Hex representation of the color.</span></span>  
+      <span data-ttu-id="75186-356">Представление цвета RGBA, HSLA или Hex.</span><span class="sxs-lookup"><span data-stu-id="75186-356">The RGBA, HSLA, or Hex representation of the color.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-354">5</span><span class="sxs-lookup"><span data-stu-id="273b1-354">5</span></span>  
+      <span data-ttu-id="75186-357">5</span><span class="sxs-lookup"><span data-stu-id="75186-357">5</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-355">Цветовая палитра</span><span class="sxs-lookup"><span data-stu-id="273b1-355">Color Palette</span></span>**  
+      **<span data-ttu-id="75186-358">Цветовая палитра</span><span class="sxs-lookup"><span data-stu-id="75186-358">Color Palette</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="273b1-356">Выберите один из квадратов, чтобы изменить цвет на этот квадрат.</span><span class="sxs-lookup"><span data-stu-id="273b1-356">Choose one of the squares to change the color to that square.</span></span>  
+      <span data-ttu-id="75186-359">Выберите один из квадратов, чтобы изменить цвет на этот квадрат.</span><span class="sxs-lookup"><span data-stu-id="75186-359">Choose one of the squares to change the color to that square.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-357">152</span><span class="sxs-lookup"><span data-stu-id="273b1-357">6</span></span>  
+      <span data-ttu-id="75186-360">6</span><span class="sxs-lookup"><span data-stu-id="75186-360">6</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-358">Отношения</span><span class="sxs-lookup"><span data-stu-id="273b1-358">Hue</span></span>**  
+      **<span data-ttu-id="75186-361">Hue</span><span class="sxs-lookup"><span data-stu-id="75186-361">Hue</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -498,10 +498,10 @@ ms.locfileid: "11204014"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-359">5-7</span><span class="sxs-lookup"><span data-stu-id="273b1-359">7</span></span>  
+      <span data-ttu-id="75186-362">7</span><span class="sxs-lookup"><span data-stu-id="75186-362">7</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-360">Opacity (Прозрачность)</span><span class="sxs-lookup"><span data-stu-id="273b1-360">Opacity</span></span>**  
+      **<span data-ttu-id="75186-363">Opacity (Прозрачность)</span><span class="sxs-lookup"><span data-stu-id="75186-363">Opacity</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -509,44 +509,44 @@ ms.locfileid: "11204014"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-361">No8</span><span class="sxs-lookup"><span data-stu-id="273b1-361">8</span></span>  
+      <span data-ttu-id="75186-364">8</span><span class="sxs-lookup"><span data-stu-id="75186-364">8</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-362">Переключатель отображения значений</span><span class="sxs-lookup"><span data-stu-id="273b1-362">Display Value Switcher</span></span>**  
+      **<span data-ttu-id="75186-365">Переключатель отображения значений</span><span class="sxs-lookup"><span data-stu-id="75186-365">Display Value Switcher</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="273b1-363">Переключение между представлениями "RGBA", "HSLA" и "шестнадцатеричный" текущего цвета.</span><span class="sxs-lookup"><span data-stu-id="273b1-363">Toggle between the RGBA, HSLA, and Hex representations of the current color.</span></span>  
+      <span data-ttu-id="75186-366">Перетасковка между представлениями RGBA, HSLA и Hex текущего цвета.</span><span class="sxs-lookup"><span data-stu-id="75186-366">Toggle between the RGBA, HSLA, and Hex representations of the current color.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="273b1-364">@</span><span class="sxs-lookup"><span data-stu-id="273b1-364">9</span></span>  
+      <span data-ttu-id="75186-367">9</span><span class="sxs-lookup"><span data-stu-id="75186-367">9</span></span>  
    :::column-end:::
    :::column span="1":::
-      **<span data-ttu-id="273b1-365">Переключатель цветовой палитры</span><span class="sxs-lookup"><span data-stu-id="273b1-365">Color Palette Switcher</span></span>**  
+      **<span data-ttu-id="75186-368">Коммутатор цветовой палитры</span><span class="sxs-lookup"><span data-stu-id="75186-368">Color Palette Switcher</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="273b1-366">Переключение между [палитрой «дизайн материала][MaterialDesignColorSystem]», настраиваемой палитрой или палитрой цветов страницы.</span><span class="sxs-lookup"><span data-stu-id="273b1-366">Toggle between the [Material Design palette][MaterialDesignColorSystem], a custom palette, or a page colors palette.</span></span>  <span data-ttu-id="273b1-367">DevTools создает цветовую палитру страницы на основе цветов, найденных в стилях.</span><span class="sxs-lookup"><span data-stu-id="273b1-367">DevTools generates the page color palette based on the colors that it finds in your stylesheets.</span></span>  
+      <span data-ttu-id="75186-369">Перегиб между палитрой [material Design,][MaterialDesignColorSystem]настраиваемой палитрой или палитрой цветов страниц.</span><span class="sxs-lookup"><span data-stu-id="75186-369">Toggle between the [Material Design palette][MaterialDesignColorSystem], a custom palette, or a page colors palette.</span></span>  <span data-ttu-id="75186-370">DevTools создает цветовую палитру страниц на основе цветов, которые он находит в таблицах стилей.</span><span class="sxs-lookup"><span data-stu-id="75186-370">DevTools generates the page color palette based on the colors that it finds in your stylesheets.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-#### <span data-ttu-id="273b1-368">Выбор цвета на странице с помощью пипетки</span><span class="sxs-lookup"><span data-stu-id="273b1-368">Sample a color off the page with the Eyedropper</span></span>  
+#### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a><span data-ttu-id="75186-371">Пример цвета со страницы с помощью Eyedropper</span><span class="sxs-lookup"><span data-stu-id="75186-371">Sample a color off the page with the Eyedropper</span></span>  
 
-<span data-ttu-id="273b1-369">Когда вы откроете окно **выбора цвета**, по умолчанию будет включена **Пипетка** \ ( ![ Пипетка ][ImageEyedropperIcon] \).</span><span class="sxs-lookup"><span data-stu-id="273b1-369">When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper][ImageEyedropperIcon]\) is on by default.</span></span>  <span data-ttu-id="273b1-370">Чтобы изменить выбранный цвет на другой цвет на странице, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="273b1-370">Complete the following actions to change the selected color to some other color on the page.</span></span>  
+<span data-ttu-id="75186-372">Когда вы открываете **Выбор цвета,** **Eyedropper** \( ![ Eyedropper ][ImageEyedropperIcon] \) находится на по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="75186-372">When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper][ImageEyedropperIcon]\) is on by default.</span></span>  <span data-ttu-id="75186-373">Выполните следующие действия, чтобы изменить выбранный цвет на другой цвет на странице.</span><span class="sxs-lookup"><span data-stu-id="75186-373">Complete the following actions to change the selected color to some other color on the page.</span></span>  
 
-1.  <span data-ttu-id="273b1-371">Наведите указатель мыши на целевой цвет в окне просмотра.</span><span class="sxs-lookup"><span data-stu-id="273b1-371">Hover over the target color in the viewport.</span></span>  
-1.  <span data-ttu-id="273b1-372">Нажмите кнопку подтвердить.</span><span class="sxs-lookup"><span data-stu-id="273b1-372">Choose to confirm.</span></span>  
+1.  <span data-ttu-id="75186-374">Наведите курсор на целевой цвет в представлении.</span><span class="sxs-lookup"><span data-stu-id="75186-374">Hover on the target color in the viewport.</span></span>  
+1.  <span data-ttu-id="75186-375">Выберите подтверждение.</span><span class="sxs-lookup"><span data-stu-id="75186-375">Choose to confirm.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="273b1-373">На приведенном ниже рисунке в **средстве выбора цвета** отображается текущее цветное значение `rgba(0,0,0,0.7)` , которое близко к черному.</span><span class="sxs-lookup"><span data-stu-id="273b1-373">In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.</span></span>  <span data-ttu-id="273b1-374">Определенный цвет должен измениться на черную версию, которая выделена в окне просмотра, после того как вы выберете его.</span><span class="sxs-lookup"><span data-stu-id="273b1-374">The specific color should change to the version of black that is currently highlighted in the viewport after you chose it.</span></span>  
+    > <span data-ttu-id="75186-376">На следующем рисунке в **списке цветов** указывается текущее значение цвета `rgba(0,0,0,0.7)` , близкое к черному.</span><span class="sxs-lookup"><span data-stu-id="75186-376">In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.</span></span>  <span data-ttu-id="75186-377">Определенный цвет должен измениться на версию черного цвета, которая в данный момент выделяется в представлении после его выборки.</span><span class="sxs-lookup"><span data-stu-id="75186-377">The specific color should change to the version of black that is currently highlighted in the viewport after you chose it.</span></span>  
     
-    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Использование пипетки" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
-       <span data-ttu-id="273b1-376">Использование пипетки</span><span class="sxs-lookup"><span data-stu-id="273b1-376">Using the Eyedropper</span></span>  
+    :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Использование eyedropper" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+       <span data-ttu-id="75186-379">Использование eyedropper</span><span class="sxs-lookup"><span data-stu-id="75186-379">Using the Eyedropper</span></span>  
     :::image-end:::  
     
 <!--todo:  add the section on the Angle clock section for What's New 88.  -->  
 
-## <span data-ttu-id="273b1-377">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="273b1-377">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="75186-380">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="75186-380">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -563,23 +563,23 @@ ms.locfileid: "11204014"
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
-[DevToolsCSSGetStarted]: ../css/index.md "Начало просмотра и изменения CSS | Документы Microsoft"  
-[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Добавление PseudoState в класс — начало работы с просмотром и изменением CSS | Документы Microsoft"  
-[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Просмотр CSS для элемента — начало работы с просмотром и изменением CSS | Документы Microsoft"  
-[DevToolsCssPrintPreview]: ../css/print-preview.md "Принудительная установка Microsoft Edge DevTools в режиме предварительного просмотра (тип носителя для печати CSS) | Документы Microsoft"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Создание доступного для чтения файла minified — Справка по отладке JavaScript | Документы Microsoft"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Запуск команд с командным меню Microsoft Edge DevTools | Документы Майкрософт"  
+[DevToolsCSSGetStarted]: ../css/index.md "Начало работы с просмотром и изменением CSS-| Документы Майкрософт"  
+[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Добавление псевдостата в класс . Начало работы с просмотром и изменением CSS-| Документы Майкрософт"  
+[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Просмотр CSS для элемента . Начало работы с просмотром и изменением CSS | Документы Майкрософт"  
+[DevToolsCssPrintPreview]: ../css/print-preview.md "Force Microsoft Edge DevTools into Print Preview Mode (CSS Print Media Type) | Документы Майкрософт"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Сделайте минированную папку читаемой — отладка ссылки javaScript | Документы Майкрософт"  
 
-[MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "Макет "Цветовая система-материал""  
-[MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "Модель Box | MDN"  
-[MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "Типы выбора — "конкретное |" MDN"  
+[MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "Цветовая система — material Design"  
+[MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "Модель окна | MDN"  
+[MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "Типы селекторов — | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="273b1-387">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="273b1-387">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="273b1-388">Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/css/reference) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="273b1-388">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="75186-390">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="75186-390">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="75186-391">Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/css/reference) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).</span><span class="sxs-lookup"><span data-stu-id="75186-391">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="273b1-390">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="273b1-390">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="75186-393">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="75186-393">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

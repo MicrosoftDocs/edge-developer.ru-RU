@@ -1,34 +1,34 @@
 ---
-description: Использование подсказки в коде Visual Studio
-title: расширение ссылки и кода
+description: Использование веб-хинта в Visual Studio Code
+title: webhint Visual Studio расширение кода
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, код для VS, код Visual Studio, ссылка "веб-подсказка"
-ms.openlocfilehash: ec218fab8cbfb8181a0416c8e0eadc0e00412529
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+keywords: Microsoft edge, веб-разработка, vs код, визуальный код студии, веб-хинт
+ms.openlocfilehash: 3dfd900bf818d02dbc8123c00e7928e56d9b6ade
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695861"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399276"
 ---
-# <span data-ttu-id="0a0fa-104">Расширение ссылки и кода</span><span class="sxs-lookup"><span data-stu-id="0a0fa-104">Webhint Vs Code Extension</span></span>  
+# <a name="webhint-vs-code-extension"></a><span data-ttu-id="e4c41-104">Webhint Vs Расширение кода</span><span class="sxs-lookup"><span data-stu-id="e4c41-104">Webhint Vs Code Extension</span></span>  
 
-<span data-ttu-id="0a0fa-105">Используйте веб- [подсказку][WebhintMain], настраиваемый инструмент linting, чтобы улучшить доступность, производительность, совместимость с различными браузерами, совместимость с PWA и безопасность сайта.</span><span class="sxs-lookup"><span data-stu-id="0a0fa-105">Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.</span></span>  <span data-ttu-id="0a0fa-106">Она проверяет ваш код на предмет рекомендаций и распространенных ошибок.</span><span class="sxs-lookup"><span data-stu-id="0a0fa-106">It checks your code for best practices and common errors.</span></span> <span data-ttu-id="0a0fa-107">Этот проект с открытым исходным кодом, изначально разработанный группой Microsoft EDGE, теперь является частью [OpenJS Foundation][OpenjsFoundation].</span><span class="sxs-lookup"><span data-stu-id="0a0fa-107">This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].</span></span>  <span data-ttu-id="0a0fa-108">Группа Microsoft Edge продолжает вносить вклад в веб-подсказку в сообществе в сообщество.</span><span class="sxs-lookup"><span data-stu-id="0a0fa-108">The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.</span></span>  
+<span data-ttu-id="e4c41-105">Используйте [webhint][WebhintMain], настраиваемый инструмент подкладки, чтобы повысить доступность, производительность, совместимость между браузерами, совместимость PWA и безопасность вашего сайта.</span><span class="sxs-lookup"><span data-stu-id="e4c41-105">Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.</span></span>  <span data-ttu-id="e4c41-106">Он проверяет код на наличие лучших практик и распространенных ошибок.</span><span class="sxs-lookup"><span data-stu-id="e4c41-106">It checks your code for best practices and common errors.</span></span> <span data-ttu-id="e4c41-107">Этот проект с открытым исходным кодом, изначально разработанный командой Microsoft Edge, теперь является частью [OpenJS Foundation.][OpenjsFoundation]</span><span class="sxs-lookup"><span data-stu-id="e4c41-107">This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].</span></span>  <span data-ttu-id="e4c41-108">Команда Microsoft Edge продолжает вносить вклад в веб-хинт вместе с веб-разработчиками в сообществе.</span><span class="sxs-lookup"><span data-stu-id="e4c41-108">The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.</span></span>  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Снимок экрана: расширение кода и ссылки на него":::
-   <span data-ttu-id="0a0fa-110">Снимок экрана: расширение кода и ссылки на него</span><span class="sxs-lookup"><span data-stu-id="0a0fa-110">Screenshot of webhint VS Code extension</span></span>  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Снимок экрана расширения Visual Studio кода":::
+   <span data-ttu-id="e4c41-110">Снимок экрана расширения Visual Studio кода</span><span class="sxs-lookup"><span data-stu-id="e4c41-110">Screenshot of webhint Visual Studio Code extension</span></span>  
 :::image-end:::
 
-<!--![Screenshot of webhint VS Code extension][ImageWebhintExtension]  -->  
+<!--![Screenshot of webhint Visual Studio Code extension][ImageWebhintExtension]  -->  
 
-<span data-ttu-id="0a0fa-111">Выявление и устранение проблем в HTML, CSS, JavaScript, TypeScript и т. д. Добавьте расширение веб- [подсказки для кода VS][VisualstudioMarketplaceWebhint].</span><span class="sxs-lookup"><span data-stu-id="0a0fa-111">Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for VS Code][VisualstudioMarketplaceWebhint].</span></span>  <span data-ttu-id="0a0fa-112">Подсказки выводятся в виде встроенных подчеркивания и обобщены на панели " **проблемы** ".</span><span class="sxs-lookup"><span data-stu-id="0a0fa-112">Hints appear as inline underlines and are summarized in the **Problems** pane.</span></span>  
+<span data-ttu-id="e4c41-111">Определите и исправьте проблемы в HTML, CSS, JavaScript, TypeScript и других, добавив расширение веб-Visual Studio [Code.][VisualstudioMarketplaceWebhint]</span><span class="sxs-lookup"><span data-stu-id="e4c41-111">Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].</span></span>  <span data-ttu-id="e4c41-112">Подсказки отображаются в качестве подчеркнутой линии и суммируются в области **Проблем.**</span><span class="sxs-lookup"><span data-stu-id="e4c41-112">Hints appear as inline underlines and are summarized in the **Problems** pane.</span></span>  
 
-## <span data-ttu-id="0a0fa-113">Конфигурация</span><span class="sxs-lookup"><span data-stu-id="0a0fa-113">Configuration</span></span>  
+## <a name="configuration"></a><span data-ttu-id="e4c41-113">Настройка</span><span class="sxs-lookup"><span data-stu-id="e4c41-113">Configuration</span></span>  
 
-<span data-ttu-id="0a0fa-114">Это расширение использует JSON-файл [конфигурации по умолчанию][GithubWebhintioIndexjson] , который активирует подсказки и синтаксические анализаторы для HTML, CSS, шаблонов системы \ (JSX/Целевая, угловая и т. д.), JavaScript/TypeScript и т. д.</span><span class="sxs-lookup"><span data-stu-id="0a0fa-114">This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems \(JSX/TSX, Angular, and so on\), JavaScript/TypeScript, and more.</span></span>  
+<span data-ttu-id="e4c41-114">В этом [][GithubWebhintioIndexjson] расширении используется json-файл конфигурации по умолчанию, который активирует подсказки и разметки для HTML, CSS, систем шаблонов \(JSX/TSX, Angular и т. д.), JavaScript/TypeScript и т. д.</span><span class="sxs-lookup"><span data-stu-id="e4c41-114">This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems \(JSX/TSX, Angular, and so on\), JavaScript/TypeScript, and more.</span></span>  
 
 ```json
 {
@@ -80,37 +80,37 @@ ms.locfileid: "10695861"
 }
 ```  
 
-<span data-ttu-id="0a0fa-115">Если вы хотите, чтобы дополнительные элементы управления подсказками и парсеры были активированы, создайте локальный `.hintrc` файл для настройки веб-подсказки.</span><span class="sxs-lookup"><span data-stu-id="0a0fa-115">If you want more control over the hints and parsers that get activated, create a local `.hintrc` file to configure webhint.</span></span>  <span data-ttu-id="0a0fa-116">Чтобы получить справку по выводу из конкретных подсказок, ознакомьтесь с [руководством пользователя по этой подсказке][WebhintDocsUserguideConfiguringSummary].</span><span class="sxs-lookup"><span data-stu-id="0a0fa-116">For help with output from specific hints, see [webhint user guide][WebhintDocsUserguideConfiguringSummary].</span></span>  
+<span data-ttu-id="e4c41-115">Если необходимо больше контролировать активированные подсказки и разберегатели, создайте локальный файл для `.hintrc` настройки веб-хинта.</span><span class="sxs-lookup"><span data-stu-id="e4c41-115">If you want more control over the hints and parsers that get activated, create a local `.hintrc` file to configure webhint.</span></span>  <span data-ttu-id="e4c41-116">Для справки по выходу из определенных подсказок перейдите в [руководство пользователя webhint.][WebhintDocsUserguideConfiguringSummary]</span><span class="sxs-lookup"><span data-stu-id="e4c41-116">For help with output from specific hints, navigate to [webhint user guide][WebhintDocsUserguideConfiguringSummary].</span></span>  
 
-## <span data-ttu-id="0a0fa-117">Связь с командой "Подсказка"</span><span class="sxs-lookup"><span data-stu-id="0a0fa-117">Getting in touch with the webhint team</span></span>  
+## <a name="getting-in-touch-with-the-webhint-team"></a><span data-ttu-id="e4c41-117">Контакт с командой веб-сайтов</span><span class="sxs-lookup"><span data-stu-id="e4c41-117">Getting in touch with the webhint team</span></span>  
 
-<span data-ttu-id="0a0fa-118">Отправьте отзыв, выполнив [архивацию проблем][GithubWebhintioIssuesNew] в [репозитории GitHub][GithubWebhintio]веб контрольных подсказок.</span><span class="sxs-lookup"><span data-stu-id="0a0fa-118">Send your feedback by [filing an issue][GithubWebhintioIssuesNew] in [webhint GitHub repo][GithubWebhintio].</span></span>  
+<span data-ttu-id="e4c41-118">Отправка отзывов [путем отправки проблемы в][GithubWebhintioIssuesNew] [repo веб-службы GitHub.][GithubWebhintio]</span><span class="sxs-lookup"><span data-stu-id="e4c41-118">Send your feedback by [filing an issue][GithubWebhintioIssuesNew] in [webhint GitHub repo][GithubWebhintio].</span></span>  
 
-<span data-ttu-id="0a0fa-119">Чтобы присвоить это расширение, ознакомьтесь с руководством по соавтору для ссылки на ссылку [и расширение кода][GithubWebhintioExtensionVscodeContributing].</span><span class="sxs-lookup"><span data-stu-id="0a0fa-119">To contribute to the extension, see [webhint VS Code extension contribution guide][GithubWebhintioExtensionVscodeContributing].</span></span>  
+<span data-ttu-id="e4c41-119">Чтобы внести свой вклад в расширение, перейдите к [веб-Visual Studio в руководстве по расширению кода.][GithubWebhintioExtensionVscodeContributing]</span><span class="sxs-lookup"><span data-stu-id="e4c41-119">To contribute to the extension, navigate to [webhint Visual Studio Code extension contribution guide][GithubWebhintioExtensionVscodeContributing].</span></span>  
 
-## <span data-ttu-id="0a0fa-120">См. также</span><span class="sxs-lookup"><span data-stu-id="0a0fa-120">See also</span></span>  
+## <a name="see-also"></a><span data-ttu-id="e4c41-120">См. также</span><span class="sxs-lookup"><span data-stu-id="e4c41-120">See also</span></span>  
 
-*   [<span data-ttu-id="0a0fa-121">Специальные возможности</span><span class="sxs-lookup"><span data-stu-id="0a0fa-121">Accessibility</span></span>][AccessibilityIndex]  
-*   [<span data-ttu-id="0a0fa-122">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="0a0fa-122">Visual Studio Code</span></span>][VisualstudiocodeIndex]  
+*   [<span data-ttu-id="e4c41-121">Специальные возможности</span><span class="sxs-lookup"><span data-stu-id="e4c41-121">Accessibility</span></span>][AccessibilityIndex]  
+*   [<span data-ttu-id="e4c41-122">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="e4c41-122">Visual Studio Code</span></span>][VisualstudiocodeIndex]  
 
 <!-- image links -->  
 
-<!--[ImageWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint VS Code extension"  -->  
+<!--[ImageWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint Visual Studio Code extension"  -->  
 
 <!--links -->  
 
-[AccessibilityIndex]: /microsoft-edge/accessibility "Специальные возможности | Документы Microsoft"  
+[AccessibilityIndex]: /microsoft-edge/accessibility "Доступность | Документы Майкрософт"  
 
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Код Visual Studio | Документы Microsoft"  
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio код | Документы Майкрософт"  
 
-[GithubWebhintio]: https://github.com/webhintio/hint "Подсказка | GitHub"  
-[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Всплывающая подсказка | GitHub"  
-[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index. JSON-webhintio/подсказка | GitHub"
-[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "Новые проблемы — webhintio/подсказка | GitHub"  
+[GithubWebhintio]: https://github.com/webhintio/hint "веб-| GitHub"  
+[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Способствуя — веб-| GitHub"  
+[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index.js- webhintio/hint | GitHub"
+[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "Новые проблемы — веб-| GitHub"  
 
-[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "Подсказка | Visual Studio Marketplace"  
+[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "веб-| Visual Studio Marketplace"  
 
 [OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
 
-[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Настройка подсказки | Документация по подсказкам"  
-[WebhintMain]:  https://webhint.io "Подсказка"  
+[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Настройка веб-| документация по веб-сайтам"  
+[WebhintMain]:  https://webhint.io "webhint"  

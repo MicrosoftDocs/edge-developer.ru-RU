@@ -1,18 +1,18 @@
 ---
 description: Как включить темную тему в Microsoft Edge DevTools.
-title: Включение темной темы в Microsoft Edge DevTools
+title: Включить темную тему в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 7eaedc59bf1b8ab592612f3a2006a0aac1dfbe9e
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: dc857a65deef9b62614da79d2648c8b92ac9db07
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125099"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399024"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,51 +28,51 @@ ms.locfileid: "11125099"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="020bc-104">Включение темной темы в Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="020bc-104">Enable Dark Theme In Microsoft Edge DevTools</span></span>  
+# <a name="enable-dark-theme-in-microsoft-edge-devtools"></a><span data-ttu-id="abd9a-104">Включить темную тему в Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="abd9a-104">Enable Dark Theme in Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="020bc-105">Вы можете включить темную тему в меню " [Параметры](#set-up-dark-theme-from-settings) " или " [команды](#set-up-dark-theme-from-the-command-menu)".</span><span class="sxs-lookup"><span data-stu-id="020bc-105">You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the [Command Menu](#set-up-dark-theme-from-the-command-menu).</span></span>  
+<span data-ttu-id="abd9a-105">Вы можете включить темную тему в [Параметры](#set-up-dark-theme-from-settings) или [командное меню](#set-up-dark-theme-from-the-command-menu).</span><span class="sxs-lookup"><span data-stu-id="abd9a-105">You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the [Command Menu](#set-up-dark-theme-from-the-command-menu).</span></span>  
 
 :::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="Темная тема" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
-   <span data-ttu-id="020bc-107">Темная тема</span><span class="sxs-lookup"><span data-stu-id="020bc-107">The dark theme</span></span>  
+   <span data-ttu-id="abd9a-107">Темная тема</span><span class="sxs-lookup"><span data-stu-id="abd9a-107">The dark theme</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="020bc-108">Настройка темной темы из параметров</span><span class="sxs-lookup"><span data-stu-id="020bc-108">Set up dark theme from Settings</span></span>  
+## <a name="set-up-dark-theme-from-settings"></a><span data-ttu-id="abd9a-108">Настройка темной темы из параметров</span><span class="sxs-lookup"><span data-stu-id="abd9a-108">Set up dark theme from Settings</span></span>  
 
-1.  <span data-ttu-id="020bc-109">Нажмите кнопку **Настройка DevTools и** выберите `...` пункт **Параметры**.</span><span class="sxs-lookup"><span data-stu-id="020bc-109">Choose **Customize And Control DevTools** \(`...`\) and then choose **Settings**.</span></span>  <span data-ttu-id="020bc-110">Вы также можете открыть **Параметры** , нажав клавишу `F1` .</span><span class="sxs-lookup"><span data-stu-id="020bc-110">You may also open **Settings** by pressing `F1`.</span></span>  
+1.  <span data-ttu-id="abd9a-109">Выберите Параметры настройки и управления **DevTools** `...` \( \) >. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="abd9a-109">Choose **Customize And Control DevTools** \(`...`\) > **Settings**.</span></span>  <span data-ttu-id="abd9a-110">Вы также можете открыть **Параметры,** выбрав `F1` .</span><span class="sxs-lookup"><span data-stu-id="abd9a-110">You may also open **Settings** by selecting `F1`.</span></span>  
     
-    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Темная тема" lightbox="../media/customize-options-settings.msft.png":::
-       <span data-ttu-id="020bc-112">Открыть **Параметры**</span><span class="sxs-lookup"><span data-stu-id="020bc-112">Open **Settings**</span></span>  
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Открытие "Параметров"" lightbox="../media/customize-options-settings.msft.png":::
+       <span data-ttu-id="abd9a-112">Параметры **open**</span><span class="sxs-lookup"><span data-stu-id="abd9a-112">Open **Settings**</span></span>  
     :::image-end:::  
 
-1.  <span data-ttu-id="020bc-113">В области **Параметры** в разделе **внешний вид**щелкните раскрывающийся список **Тема** и выберите **темный**.</span><span class="sxs-lookup"><span data-stu-id="020bc-113">On the **Preferences** pane,  under **Appearance**, click on the **Theme** drop-down, and choose **Dark**.</span></span>  
+1.  <span data-ttu-id="abd9a-113">На области **"Предпочтения"** в **статье Внешний вид**выберите **темную**  >  **тему**.</span><span class="sxs-lookup"><span data-stu-id="abd9a-113">On the **Preferences** pane,  under **Appearance**, choose **Theme** > **Dark**.</span></span>  
     
-    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Темная тема" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
-       **<span data-ttu-id="020bc-115">Предпочтения</span><span class="sxs-lookup"><span data-stu-id="020bc-115">Preferences</span></span>**  
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Предпочтения" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+       **<span data-ttu-id="abd9a-115">Предпочтения</span><span class="sxs-lookup"><span data-stu-id="abd9a-115">Preferences</span></span>**  
     :::image-end:::  
 
-## <span data-ttu-id="020bc-116">Настройка темной темы из меню команд</span><span class="sxs-lookup"><span data-stu-id="020bc-116">Set up dark theme from the Command Menu</span></span>  
+## <a name="set-up-dark-theme-from-the-command-menu"></a><span data-ttu-id="abd9a-116">Настройка темной темы из меню команды</span><span class="sxs-lookup"><span data-stu-id="abd9a-116">Set up dark theme from the Command Menu</span></span>  
 
-1.  <span data-ttu-id="020bc-117">[Открытие меню команд][DevtoolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="020bc-117">[Open the Command Menu][DevtoolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="020bc-118">Начните вводить текст `dark` , выберите команду **темная тема** и нажмите кнопку, `Enter` чтобы выполнить команду.</span><span class="sxs-lookup"><span data-stu-id="020bc-118">Start typing `dark`, select the **Switch To Dark Theme** command, and then select `Enter` to run the command.</span></span>  
+1.  <span data-ttu-id="abd9a-117">[Откройте командное меню.][DevtoolsCommandMenu]</span><span class="sxs-lookup"><span data-stu-id="abd9a-117">[Open the Command Menu][DevtoolsCommandMenu].</span></span>  
+1.  <span data-ttu-id="abd9a-118">Введите команду Switch To Dark Theme и выберите команду для `dark` \*\*\*\* `Enter` запуска.</span><span class="sxs-lookup"><span data-stu-id="abd9a-118">Type `dark`, choose the **Switch To Dark Theme** command, and then select `Enter` to run the command.</span></span>  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Темная тема" lightbox="../media/customize-command-menu-dark.msft.png":::
-       <span data-ttu-id="020bc-120">Команда "темная тема"</span><span class="sxs-lookup"><span data-stu-id="020bc-120">The dark theme command</span></span>  
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Команда темной темы" lightbox="../media/customize-command-menu-dark.msft.png":::
+       <span data-ttu-id="abd9a-120">Команда темной темы</span><span class="sxs-lookup"><span data-stu-id="abd9a-120">The dark theme command</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="020bc-121">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="020bc-121">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="abd9a-121">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="abd9a-121">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Меню команд | Документы Microsoft"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Командное меню | Документы Майкрософт"  
 
 > [!NOTE]
-> <span data-ttu-id="020bc-123">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="020bc-123">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="020bc-124">Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="020bc-124">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="abd9a-123">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="abd9a-123">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="abd9a-124">Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).</span><span class="sxs-lookup"><span data-stu-id="abd9a-124">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="020bc-126">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="020bc-126">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="abd9a-126">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="abd9a-126">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

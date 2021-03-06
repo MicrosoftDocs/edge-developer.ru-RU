@@ -1,18 +1,18 @@
 ---
 description: Все способы открытия Microsoft Edge DevTools.
-title: Открытие Microsoft Edge DevTools
+title: Откройте Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/18/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: d21ebbf0b84be757c1b7a69d36b3bd3cc8403c6d
-ms.sourcegitcommit: 77c8f42cc84600c2b853b15aaaecf0749b74bb01
+ms.openlocfilehash: 770a9d3e7a0eaaecf322d2ca847d971d1ad11b9a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11238229"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398268"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,64 +28,62 @@ ms.locfileid: "11238229"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# <span data-ttu-id="22ead-104">Открытие Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="22ead-104">Open Microsoft Edge DevTools</span></span>  
+# <a name="open-microsoft-edge-devtools"></a><span data-ttu-id="4d7d5-104">Откройте Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="4d7d5-104">Open Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="22ead-105">Существует множество способов открыть Microsoft Edge DevTools, так как разным пользователям нужен быстрый доступ к различным частям пользовательского интерфейса DevTools.</span><span class="sxs-lookup"><span data-stu-id="22ead-105">There are many ways to open Microsoft Edge DevTools, because different users want fast access to different parts of the DevTools UI.</span></span>  
+<span data-ttu-id="4d7d5-105">Существует множество способов открытия Microsoft Edge DevTools, так как разным пользователям нужен быстрый доступ к различным частям пользовательского интерфейса DevTools.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-105">There are many ways to open Microsoft Edge DevTools, because different users want fast access to different parts of the DevTools UI.</span></span>  
 
-## <span data-ttu-id="22ead-106">Откройте панель "Элементы" для проверки DOM или CSS</span><span class="sxs-lookup"><span data-stu-id="22ead-106">Open the Elements panel to inspect the DOM or CSS</span></span>  
+## <a name="open-the-elements-panel-to-inspect-the-dom-or-css"></a><span data-ttu-id="4d7d5-106">Откройте панель Elements для проверки DOM или CSS</span><span class="sxs-lookup"><span data-stu-id="4d7d5-106">Open the Elements panel to inspect the DOM or CSS</span></span>  
 
-<span data-ttu-id="22ead-107">Каждая из следующих задач позволяет проверить стили или атрибуты узла DOM.</span><span class="sxs-lookup"><span data-stu-id="22ead-107">Each of the following tasks enable you to inspect the styles or attributes of a DOM node.</span></span>
+<span data-ttu-id="4d7d5-107">Каждая из следующих задач позволяет проверять стили или атрибуты узла DOM.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-107">Each of the following tasks enable you to inspect the styles or attributes of a DOM node.</span></span>
 
-*   <span data-ttu-id="22ead-108">Наведите курсор на элемент, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Проверить".**</span><span class="sxs-lookup"><span data-stu-id="22ead-108">Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
-*   <span data-ttu-id="22ead-109">Выберите `Control` + `Shift` + `C` \(Windows, Linux\) или `Command` + `Option` + `C` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="22ead-109">Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\).</span></span>  <span data-ttu-id="22ead-110">Для получения дополнительных сведений перейдите в [Microsoft Edge DevTools сочетания клавиш][DevtoolsShortcutsIndex].</span><span class="sxs-lookup"><span data-stu-id="22ead-110">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
+*   <span data-ttu-id="4d7d5-108">Наведите курсор на элемент, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Инспектировать**.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-108">Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.</span></span>  
+*   <span data-ttu-id="4d7d5-109">Выберите `Control` + `Shift` + `C` \(Windows, Linux\) `Command` + `Option` + `C` или \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="4d7d5-109">Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\).</span></span>  <span data-ttu-id="4d7d5-110">Дополнительные сведения перейдите к [клавишам Microsoft Edge DevTools.][DevtoolsShortcutsIndex]</span><span class="sxs-lookup"><span data-stu-id="4d7d5-110">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="Параметр "Проверить"" lightbox="../media/bing-right-click-inspect.msft.png":::
-   <span data-ttu-id="22ead-112">Параметр **"Проверить"**</span><span class="sxs-lookup"><span data-stu-id="22ead-112">The **Inspect** option</span></span>  
+:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="Параметр Inspect" lightbox="../media/bing-right-click-inspect.msft.png":::
+   <span data-ttu-id="4d7d5-112">Параметр **Inspect**</span><span class="sxs-lookup"><span data-stu-id="4d7d5-112">The **Inspect** option</span></span>  
 :::image-end:::  
 
-<!--See [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
+<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
 
-## <span data-ttu-id="22ead-113">Открытие панели консоли</span><span class="sxs-lookup"><span data-stu-id="22ead-113">Open the Console panel</span></span>  
+## <a name="open-the-console-panel"></a><span data-ttu-id="4d7d5-113">Откройте панель Консоли</span><span class="sxs-lookup"><span data-stu-id="4d7d5-113">Open the Console panel</span></span>  
 
-<span data-ttu-id="22ead-114">Каждая из следующих задач позволяет [][DevtoolsConsoleIndex] открыть панель консоли для просмотра зарегистрированных сообщений или запуска JavaScript.</span><span class="sxs-lookup"><span data-stu-id="22ead-114">Each of the following tasks enable you to open the [Console][DevtoolsConsoleIndex] pane to view logged messages or run JavaScript.</span></span>  
+<span data-ttu-id="4d7d5-114">Каждая из следующих задач позволяет [][DevtoolsConsoleIndex] открыть консольную панель для просмотра зарегистрированных сообщений или запуска JavaScript.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-114">Each of the following tasks enable you to open the [Console][DevtoolsConsoleIndex] pane to view logged messages or run JavaScript.</span></span>  
 
-*   <span data-ttu-id="22ead-115">Чтобы открыть панель консоли, с помощью [следующих][DevtoolsConsoleIndex] действий.</span><span class="sxs-lookup"><span data-stu-id="22ead-115">Use the following steps to open [Console][DevtoolsConsoleIndex] pane.</span></span>  
+*   <span data-ttu-id="4d7d5-115">Чтобы открыть консоль, используйте [следующие][DevtoolsConsoleIndex] действия.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-115">Use the following steps to open [Console][DevtoolsConsoleIndex] pane.</span></span>  
     
-    1.  <span data-ttu-id="22ead-116">[Откройте DevTools.](#open-microsoft-edge-devtools)</span><span class="sxs-lookup"><span data-stu-id="22ead-116">[Open DevTools](#open-microsoft-edge-devtools).</span></span>  
-    1.  <span data-ttu-id="22ead-117">Выберите [панель][DevtoolsConsoleIndex] консоли.</span><span class="sxs-lookup"><span data-stu-id="22ead-117">Select the [Console][DevtoolsConsoleIndex] pane.</span></span>  
+    1.  <span data-ttu-id="4d7d5-116">[Откройте DevTools](#open-microsoft-edge-devtools).</span><span class="sxs-lookup"><span data-stu-id="4d7d5-116">[Open DevTools](#open-microsoft-edge-devtools).</span></span>  
+    1.  <span data-ttu-id="4d7d5-117">Выберите [консольную][DevtoolsConsoleIndex] панель.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-117">Choose the [Console][DevtoolsConsoleIndex] pane.</span></span>  
 
-*   <span data-ttu-id="22ead-118">Чтобы перейти непосредственно в [панель][DevtoolsConsoleIndex] консоли, выберите `Control` + `Shift` + `J` \(Windows, Linux\) или `Command` + `Option` + `J` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="22ead-118">To jump straight into the [Console][DevtoolsConsoleIndex] pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="22ead-119">Для получения дополнительных сведений перейдите в [Microsoft Edge DevTools сочетания клавиш][DevtoolsShortcutsIndex].</span><span class="sxs-lookup"><span data-stu-id="22ead-119">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
+*   <span data-ttu-id="4d7d5-118">Чтобы перейти прямо [в][DevtoolsConsoleIndex] консольную панель, выберите `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` или \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="4d7d5-118">To jump straight into the [Console][DevtoolsConsoleIndex] pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="4d7d5-119">Дополнительные сведения перейдите к [клавишам Microsoft Edge DevTools.][DevtoolsShortcutsIndex]</span><span class="sxs-lookup"><span data-stu-id="4d7d5-119">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
-<!--See [Get Started With The Console][ConsoleGetStarted].  -->
+<!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
-## <span data-ttu-id="22ead-120">Открытие предыдущей панели</span><span class="sxs-lookup"><span data-stu-id="22ead-120">Open the previous panel</span></span>  
+## <a name="open-the-previous-panel"></a><span data-ttu-id="4d7d5-120">Откройте предыдущую панель</span><span class="sxs-lookup"><span data-stu-id="4d7d5-120">Open the previous panel</span></span>  
 
-<span data-ttu-id="22ead-121">Чтобы перейти к предыдущей открытой панели, выберите `Control` + `Shift` + `I` \(Windows, Linux\) или `Command` + `Option` + `I` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="22ead-121">To jump to the previous panel that you had open, select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  <span data-ttu-id="22ead-122">Для получения дополнительных сведений перейдите в [Microsoft Edge DevTools сочетания клавиш][DevtoolsShortcutsIndex].</span><span class="sxs-lookup"><span data-stu-id="22ead-122">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
+<span data-ttu-id="4d7d5-121">Чтобы перейти к предыдущей панели, которую вы открыли, выберите `Control` + `Shift` + `I` \(Windows, Linux\) `Command` + `Option` + `I` или \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="4d7d5-121">To jump to the previous panel that you had open, select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  <span data-ttu-id="4d7d5-122">Дополнительные сведения перейдите к [клавишам Microsoft Edge DevTools.][DevtoolsShortcutsIndex]</span><span class="sxs-lookup"><span data-stu-id="4d7d5-122">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
-## <span data-ttu-id="22ead-123">Открытие Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="22ead-123">Open Microsoft Edge DevTools</span></span>  
+## <a name="open-microsoft-edge-devtools"></a><span data-ttu-id="4d7d5-123">Откройте Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="4d7d5-123">Open Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="22ead-124">Чтобы открыть DevTools, используйте один из следующих параметров.</span><span class="sxs-lookup"><span data-stu-id="22ead-124">To open DevTools, use either of the following options.</span></span>  
+<span data-ttu-id="4d7d5-124">Чтобы открыть DevTools, используйте любой из следующих параметров.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-124">To open DevTools, use either of the following options.</span></span>  
 
-*   <span data-ttu-id="22ead-125">Используйте пользовательский интерфейс Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="22ead-125">Use the Microsoft Edge UI.</span></span>  
+*   <span data-ttu-id="4d7d5-125">Используйте пользовательский интерфейс Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-125">Use the Microsoft Edge UI.</span></span>  
     
-    1.  <span data-ttu-id="22ead-126">Выберите **значок "Параметры" и другие** параметры \( `...` \).</span><span class="sxs-lookup"><span data-stu-id="22ead-126">Select the **Settings and more** \(`...`\) icon.</span></span>  
-    1.  <span data-ttu-id="22ead-127">Choose **More Tools**.</span><span class="sxs-lookup"><span data-stu-id="22ead-127">Choose **More Tools**.</span></span>  
-    1.  <span data-ttu-id="22ead-128">Choose **Developer Tools**.</span><span class="sxs-lookup"><span data-stu-id="22ead-128">Choose **Developer Tools**.</span></span>  
+    1.  <span data-ttu-id="4d7d5-126">Выберите **значок Параметры и другие** `...` \( \) > **дополнительные**средства  >   **разработки инструментов.**</span><span class="sxs-lookup"><span data-stu-id="4d7d5-126">Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.</span></span>  
     
-*   <span data-ttu-id="22ead-129">Используйте клавиатуру.</span><span class="sxs-lookup"><span data-stu-id="22ead-129">Use the keyboard.</span></span>  
-    *   <span data-ttu-id="22ead-130">Выберите `F12` или `Control` + `Shift` + `I` \(Windows, Linux\) или `Command` + `Option` + `I` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="22ead-130">Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  
+*   <span data-ttu-id="4d7d5-127">Используйте клавиатуру.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-127">Use the keyboard.</span></span>  
+    *   <span data-ttu-id="4d7d5-128">Выберите `F12` `Control` + `Shift` + `I` или \(Windows, Linux\) `Command` + `Option` + `I` или \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="4d7d5-128">Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  
 
-<span data-ttu-id="22ead-131">Для получения дополнительных сведений перейдите в [Microsoft Edge DevTools сочетания клавиш][DevtoolsShortcutsIndex].</span><span class="sxs-lookup"><span data-stu-id="22ead-131">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
+<span data-ttu-id="4d7d5-129">Дополнительные сведения перейдите к [клавишам Microsoft Edge DevTools.][DevtoolsShortcutsIndex]</span><span class="sxs-lookup"><span data-stu-id="4d7d5-129">For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].</span></span>  
 
-:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Откройте DevTools из главного меню Microsoft Edge" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
-   <span data-ttu-id="22ead-133">Откройте DevTools из главного меню Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="22ead-133">Open DevTools from the Microsoft Edge main menu</span></span>  
+:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Откройте DevTools из основного меню Microsoft Edge" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+   <span data-ttu-id="4d7d5-131">Откройте DevTools из основного меню Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="4d7d5-131">Open DevTools from the Microsoft Edge main menu</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="22ead-134">Автоматическое открытие DevTools на каждой новой вкладке</span><span class="sxs-lookup"><span data-stu-id="22ead-134">Auto-open DevTools on every new tab</span></span>  
+## <a name="auto-open-devtools-on-every-new-tab"></a><span data-ttu-id="4d7d5-132">Автоматическое открытие DevTools на каждой новой вкладке</span><span class="sxs-lookup"><span data-stu-id="4d7d5-132">Auto-open DevTools on every new tab</span></span>  
 
-<span data-ttu-id="22ead-135">Чтобы автоматически открыть DevTools на каждой новой вкладке, откройте Microsoft Edge из командной строки и передав `--auto-open-devtools-for-tabs` флаг.</span><span class="sxs-lookup"><span data-stu-id="22ead-135">To auto-open DevTools on every new tab, open Microsoft Edge from the command-line and pass the `--auto-open-devtools-for-tabs` flag.</span></span>  
+<span data-ttu-id="4d7d5-133">Чтобы автоматически открыть DevTools на каждой новой вкладке, откройте Microsoft Edge из командной строки и передай `--auto-open-devtools-for-tabs` флаг.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-133">To auto-open DevTools on every new tab, open Microsoft Edge from the command-line and pass the `--auto-open-devtools-for-tabs` flag.</span></span>  
 
-### [<span data-ttu-id="22ead-136">CMD (Windows)</span><span class="sxs-lookup"><span data-stu-id="22ead-136">CMD (Windows)</span></span>](#tab/cmd-Windows/)  
+### [<a name="cmd-windows"></a><span data-ttu-id="4d7d5-134">CMD (Windows)</span><span class="sxs-lookup"><span data-stu-id="4d7d5-134">CMD (Windows)</span></span>](#tab/cmd-Windows/)  
 
 <a id="auto-open-devtools-command-line"></a>  
 
@@ -93,7 +91,7 @@ ms.locfileid: "11238229"
 start msedge --auto-open-devtools-for-tabs
 ```  
 
-### [<span data-ttu-id="22ead-137">PowerShell (Windows)</span><span class="sxs-lookup"><span data-stu-id="22ead-137">PowerShell (Windows)</span></span>](#tab/powershell-Windows/)  
+### [<a name="powershell-windows"></a><span data-ttu-id="4d7d5-135">PowerShell (Windows)</span><span class="sxs-lookup"><span data-stu-id="4d7d5-135">PowerShell (Windows)</span></span>](#tab/powershell-Windows/)  
 
 <a id="auto-open-devtools-command-line"></a>  
 
@@ -101,7 +99,7 @@ start msedge --auto-open-devtools-for-tabs
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 ```  
 
-### [<span data-ttu-id="22ead-138">bash (macOS)</span><span class="sxs-lookup"><span data-stu-id="22ead-138">bash (macOS)</span></span>](#tab/bash-macos/)  
+### [<a name="bash-macos"></a><span data-ttu-id="4d7d5-136">Bash (macOS)</span><span class="sxs-lookup"><span data-stu-id="4d7d5-136">bash (macOS)</span></span>](#tab/bash-macos/)  
 
 <a id="auto-open-devtools-command-line"></a>  
 
@@ -109,7 +107,7 @@ Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```  
 
-### [<span data-ttu-id="22ead-139">bash (Linux)</span><span class="sxs-lookup"><span data-stu-id="22ead-139">bash (Linux)</span></span>](#tab/bash-linux/)  
+### [<a name="bash-linux"></a><span data-ttu-id="4d7d5-137">Bash (Linux)</span><span class="sxs-lookup"><span data-stu-id="4d7d5-137">bash (Linux)</span></span>](#tab/bash-linux/)  
 
 <a id="auto-open-devtools-command-line"></a>  
 
@@ -119,49 +117,49 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 * * *  
 
-## <span data-ttu-id="22ead-140">Включите или выключите клавишу F12</span><span class="sxs-lookup"><span data-stu-id="22ead-140">Toggle the F12 keyboard shortcut on or off</span></span>  
+## <a name="toggle-the-f12-keyboard-shortcut-on-or-off"></a><span data-ttu-id="4d7d5-138">Toggle the F12 keyboard shortcut on or off</span><span class="sxs-lookup"><span data-stu-id="4d7d5-138">Toggle the F12 keyboard shortcut on or off</span></span>  
 
-<span data-ttu-id="22ead-141">Чтобы изменить параметр `F12` сочетания клавиш, который открывает DevTools, выполните следующие действия.</span><span class="sxs-lookup"><span data-stu-id="22ead-141">To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions.</span></span>  
+<span data-ttu-id="4d7d5-139">Чтобы изменить параметр `F12` ярлыка клавиатуры, открываемой в DevTools, выполните следующие действия.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-139">To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="22ead-142">Выберите значок **"Параметры" и другие** параметры `...` \( \) > **"Параметры".**</span><span class="sxs-lookup"><span data-stu-id="22ead-142">Choose the icon the **Settings and more** \(`...`\) icon > **Settings**.</span></span>  
-1.  <span data-ttu-id="22ead-143">В **параметрах поиска введите** `Developer Tools` .</span><span class="sxs-lookup"><span data-stu-id="22ead-143">In **Search settings**, enter `Developer Tools`.</span></span>  
+1.  <span data-ttu-id="4d7d5-140">Выберите значок **Параметры и больше** \( `...` \) значок > **параметры**.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-140">Choose the icon the **Settings and more** \(`...`\) icon > **Settings**.</span></span>  
+1.  <span data-ttu-id="4d7d5-141">В **параметрах поиска**введите `Developer Tools` .</span><span class="sxs-lookup"><span data-stu-id="4d7d5-141">In **Search settings**, enter `Developer Tools`.</span></span>  
     
-    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="Параметр "Открыть DevTools" при нажатии клавиши F12" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
-       <span data-ttu-id="22ead-145">Параметр **"Открыть DevTools"** при нажатии клавиши F12</span><span class="sxs-lookup"><span data-stu-id="22ead-145">The **Open the DevTools when the F12 key is pressed** setting</span></span>  
+    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="Откройте параметр DevTools при нажатии клавиши F12" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
+       <span data-ttu-id="4d7d5-143">Откройте **параметр DevTools при** нажатии клавиши F12</span><span class="sxs-lookup"><span data-stu-id="4d7d5-143">The **Open the DevTools when the F12 key is pressed** setting</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="22ead-146">Нажмите **кнопку "Открыть DevTools"** при нажатии клавиши F12, чтобы отключить параметр \(или on\).</span><span class="sxs-lookup"><span data-stu-id="22ead-146">Choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off \(or on\).</span></span>  <span data-ttu-id="22ead-147">Отключите параметр, чтобы не открывать DevTools с помощью сочетания `F12` клавиш.</span><span class="sxs-lookup"><span data-stu-id="22ead-147">Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.</span></span>  
+1.  <span data-ttu-id="4d7d5-144">Откройте **devTools,** когда клавиша F12 прижата, чтобы переключить параметр для отключения \(или on\).</span><span class="sxs-lookup"><span data-stu-id="4d7d5-144">Choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off \(or on\).</span></span>  <span data-ttu-id="4d7d5-145">Переключите параметр, чтобы остановить путь к клавиатуре `F12` от открытия DevTools.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-145">Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.</span></span>  
     
-    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="Параметр "Открыть DevTools" при нажатии клавиши F12 отключен" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
-       <span data-ttu-id="22ead-149">Параметр **"Открыть DevTools"** при нажатии клавиши F12 отключен</span><span class="sxs-lookup"><span data-stu-id="22ead-149">The **Open the DevTools when the F12 key is pressed** setting is turned off</span></span>  
+    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="Откройте параметр DevTools при нажатии клавиши F12" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
+       <span data-ttu-id="4d7d5-147">Откройте **параметр DevTools при** нажатии клавиши F12</span><span class="sxs-lookup"><span data-stu-id="4d7d5-147">The **Open the DevTools when the F12 key is pressed** setting is turned off</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="22ead-150">После отключения этого переключа выберите, чтобы подтвердить, что `F12` DevTools больше не открывается.</span><span class="sxs-lookup"><span data-stu-id="22ead-150">After you set the toggle to off, select `F12` to confirm that DevTools no longer open.</span></span>  
+1.  <span data-ttu-id="4d7d5-148">После того, как вы установите отключение очки, выберите, чтобы подтвердить, что `F12` DevTools больше не открыт.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-148">After you set the toggle to off, select `F12` to confirm that DevTools no longer open.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="22ead-151">После отключения параметра **Open the DevTools** при нажатии клавиши F12, чтобы открыть DevTools, выполните одно из следующих действий.</span><span class="sxs-lookup"><span data-stu-id="22ead-151">After you turn off the **Open the DevTools when the F12 key is pressed** setting, to open the DevTools, complete one of the following actions.</span></span>  
+    > <span data-ttu-id="4d7d5-149">После отключения **параметра Open the DevTools** при нажатии клавиши F12 для открытия DevTools выполните одно из следующих действий.</span><span class="sxs-lookup"><span data-stu-id="4d7d5-149">After you turn off the **Open the DevTools when the F12 key is pressed** setting, to open the DevTools, complete one of the following actions.</span></span>  
     > 
-    > *   <span data-ttu-id="22ead-152">Выберите `Ctrl` + `Shift` + `I` .</span><span class="sxs-lookup"><span data-stu-id="22ead-152">Select `Ctrl`+`Shift`+`I`.</span></span>  
-    > *   <span data-ttu-id="22ead-153">Откройте контекстное меню \(щелкните правой кнопкой мыши\) > **проверить.**</span><span class="sxs-lookup"><span data-stu-id="22ead-153">Open the contextual menu \(right-click\) > **Inspect**.</span></span>  
+    > *   <span data-ttu-id="4d7d5-150">Выберите `Ctrl` + `Shift` + `I` .</span><span class="sxs-lookup"><span data-stu-id="4d7d5-150">Select `Ctrl`+`Shift`+`I`.</span></span>  
+    > *   <span data-ttu-id="4d7d5-151">Откройте контекстное меню \(правой кнопкой мыши\) **>.**</span><span class="sxs-lookup"><span data-stu-id="4d7d5-151">Open the contextual menu \(right-click\) > **Inspect**.</span></span>  
     
-## <span data-ttu-id="22ead-154">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="22ead-154">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="4d7d5-152">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="4d7d5-152">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevtoolsConsoleIndex]: ../console/index.md "Обзор консоли | Документация Майкрософт"  
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Сочетания клавиш Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Клавиши Microsoft Edge DevTools | Документы Майкрософт"  
 
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->  
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
 
 > [!NOTE]
-> <span data-ttu-id="22ead-157">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="22ead-157">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="22ead-158">Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/open) находится здесь и автором является [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="22ead-158">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="4d7d5-155">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="4d7d5-155">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="4d7d5-156">Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/open) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).</span><span class="sxs-lookup"><span data-stu-id="4d7d5-156">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="22ead-160">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="22ead-160">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="4d7d5-158">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="4d7d5-158">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

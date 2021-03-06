@@ -1,18 +1,18 @@
 ---
-description: Руководство по открытию меню команд, выполнению команд, просмотру других действий и т. д.
-title: Выполнение команд с помощью командного меню Microsoft Edge DevTools
+description: Руководство о том, как открыть командное меню, запустить команды, просмотреть другие действия и другие действия.
+title: Запуск команд с помощью меню Команды Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: a9e67815f69a44d3bd2a741738b04c7170f6ac15
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125281"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398030"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,54 +28,52 @@ ms.locfileid: "11125281"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="6c667-104">Выполнение команд с помощью командного меню Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="6c667-104">Run Commands With The Microsoft Edge DevTools Command Menu</span></span>  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a><span data-ttu-id="00934-104">Запуск команд с помощью меню Команды Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="00934-104">Run commands with the Microsoft Edge DevTools Command menu</span></span>  
 
-  
+<span data-ttu-id="00934-105">Командное меню обеспечивает быстрый способ навигации по пользовательскому интерфейсу Microsoft Edge DevTools и выполнения общих задач, таких как отключение [JavaScript.][JavascriptDisable]</span><span class="sxs-lookup"><span data-stu-id="00934-105">The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].</span></span>  <span data-ttu-id="00934-106">Вы можете быть знакомы с аналогичной функцией в Microsoft Visual Studio Code под названием [Командная][VisualStudioCodeUICommandPalette]палитра , которая была первоначальной вдохновением для командного меню.</span><span class="sxs-lookup"><span data-stu-id="00934-106">You may be familiar with a similar feature in Microsoft Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.</span></span>  
 
-<span data-ttu-id="6c667-105">Меню команд предоставляет быстрый способ навигации по пользовательскому интерфейсу Microsoft Edge DevTools и выполнения стандартных задач, таких как [Отключение JavaScript][JavascriptDisable].</span><span class="sxs-lookup"><span data-stu-id="6c667-105">The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].</span></span>  <span data-ttu-id="6c667-106">Возможно, вы знакомы с аналогичной функцией в коде Visual Studio, которая называется [палитрой команд][VisualStudioCodeUICommandPalette], которая была первоначальной для меню команд.</span><span class="sxs-lookup"><span data-stu-id="6c667-106">You may be familiar with a similar feature in Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.</span></span>  
-
-:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Отключение JavaScript с помощью меню команд" lightbox="../media/command-menu-run-command-java.msft.png":::
-   <span data-ttu-id="6c667-108">Отключение JavaScript с помощью меню команд</span><span class="sxs-lookup"><span data-stu-id="6c667-108">Using the Command Menu to disable JavaScript</span></span>  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Использование командного меню для отключения JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
+   <span data-ttu-id="00934-108">Использование командного меню для отключения JavaScript</span><span class="sxs-lookup"><span data-stu-id="00934-108">Using the Command Menu to disable JavaScript</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="6c667-109">Открытие меню команд</span><span class="sxs-lookup"><span data-stu-id="6c667-109">Open the Command Menu</span></span>  
+## <a name="open-the-command-menu"></a><span data-ttu-id="00934-109">Откройте меню команд</span><span class="sxs-lookup"><span data-stu-id="00934-109">Open the Command Menu</span></span>  
 
-<span data-ttu-id="6c667-110">Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \).</span><span class="sxs-lookup"><span data-stu-id="6c667-110">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="6c667-111">Или нажмите кнопку **Настройка DevTools** `...` и выберите **команду выполнить**.</span><span class="sxs-lookup"><span data-stu-id="6c667-111">Or choose **Customize And Control DevTools** `...` and then choose **Run Command**.</span></span>  
+<span data-ttu-id="00934-110">Выберите `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` или \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="00934-110">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="00934-111">Или выберите настраивать и **управлять DevTools** `...` \( \) > **run Command**.</span><span class="sxs-lookup"><span data-stu-id="00934-111">Or choose **Customize And Control DevTools** \(`...`\) > **Run Command**.</span></span>  
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Отключение JavaScript с помощью меню команд" lightbox="../media/command-menu-options-run-command.msft.png":::
-   <span data-ttu-id="6c667-113">Команда "выполнить"</span><span class="sxs-lookup"><span data-stu-id="6c667-113">Run Command</span></span>  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Командный запуск" lightbox="../media/command-menu-options-run-command.msft.png":::
+   <span data-ttu-id="00934-113">Командный запуск</span><span class="sxs-lookup"><span data-stu-id="00934-113">Run Command</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="6c667-114">Просмотр других доступных действий</span><span class="sxs-lookup"><span data-stu-id="6c667-114">See other available actions</span></span>  
+## <a name="display-other-available-actions"></a><span data-ttu-id="00934-114">Отображение других доступных действий</span><span class="sxs-lookup"><span data-stu-id="00934-114">Display other available actions</span></span>  
 
-<span data-ttu-id="6c667-115">Если вы используете рабочий процесс, описанный в разделе [Открыть меню команд](#open-the-command-menu), откроется меню команд с `>` символом, предварительно заданным в текстовом поле меню команды.</span><span class="sxs-lookup"><span data-stu-id="6c667-115">If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.</span></span>  
+<span data-ttu-id="00934-115">Если вы используете рабочий процесс, описанный в меню [Open the Command,](#open-the-command-menu)меню команд открывается с помощью символа, предварительно заранее задаваемого в `>` текстовое поле Меню команд.</span><span class="sxs-lookup"><span data-stu-id="00934-115">If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.</span></span>  
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Отключение JavaScript с помощью меню команд" lightbox="../media/command-menu-run-command.msft.png":::
-   <span data-ttu-id="6c667-117">Символ команды</span><span class="sxs-lookup"><span data-stu-id="6c667-117">The command character</span></span>  
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Символ команды" lightbox="../media/command-menu-run-command.msft.png":::
+   <span data-ttu-id="00934-117">Символ команды</span><span class="sxs-lookup"><span data-stu-id="00934-117">The command character</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="6c667-118">Удалите `>` символ и введите текст `?` , чтобы просмотреть другие действия, доступные в меню команд.</span><span class="sxs-lookup"><span data-stu-id="6c667-118">Delete the `>` character and type `?` to see other actions that are available from the Command Menu.</span></span>  
+<span data-ttu-id="00934-118">Удалите `>` символ и тип, чтобы `?` отобразить другие действия, доступные в командном меню.</span><span class="sxs-lookup"><span data-stu-id="00934-118">Delete the `>` character and type `?` to display other actions that are available from the Command Menu.</span></span>  
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Отключение JavaScript с помощью меню команд" lightbox="../media/command-menu-help.msft.png":::
-   <span data-ttu-id="6c667-120">Другие доступные действия</span><span class="sxs-lookup"><span data-stu-id="6c667-120">Other available actions</span></span>  
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Другие доступные действия" lightbox="../media/command-menu-help.msft.png":::
+   <span data-ttu-id="00934-120">Другие доступные действия</span><span class="sxs-lookup"><span data-stu-id="00934-120">Other available actions</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="6c667-121">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="6c667-121">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="00934-121">Взаимодействие с командой средств разработчика Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="00934-121">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Отключение JavaScript в Microsoft Edge DevTools | Документы Microsoft"  
+[JavascriptDisable]: ../javascript/disable.md "Отключить JavaScript с помощью Microsoft Edge DevTools | Документы Майкрософт"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Палитра команд — пользовательский интерфейс кода Visual Studio"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Палитра команд — Visual Studio пользовательского интерфейса кода"  
 
 > [!NOTE]
-> <span data-ttu-id="6c667-124">Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6c667-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="6c667-125">Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="6c667-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="00934-124">Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="00934-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="00934-125">Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).</span><span class="sxs-lookup"><span data-stu-id="00934-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="6c667-127">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6c667-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="00934-127">Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="00934-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

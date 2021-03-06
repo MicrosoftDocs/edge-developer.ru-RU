@@ -1,585 +1,277 @@
 ---
-description: Справочник по протоколу DevTools версии 0.1 (EdgeHTML) для домена времени работы. Домен времени работы предоставляет time JavaScript с помощью удаленной оценки и зеркальных объектов. Результаты оценки возвращаются в виде зеркального объекта, который предоставляет тип объекта, представление строки и уникальный идентификатор, которые можно использовать для дальнейшей ссылки на объект. Исходные объекты сохраняются в памяти, если они не отпущены явным образом.
-title: Домен времени работы — протокол DevTools версии 0.1 (EdgeHTML)
+description: Ссылка На протокол DevTools Версии 0.1 (EdgeHTML) для домена runtime.  Домен runtime предоставляет время запуска JavaScript с помощью удаленной оценки и зеркальных объектов.  Результаты оценки возвращаются в виде зеркального объекта, который предоставляет тип объекта, представление строки и уникальный идентификатор, который можно использовать для дальнейшей ссылки на объект.  Исходные объекты сохраняются в памяти, если они не будут либо явно освобождены.
+title: Домен runtime - Протокол DevTools Версии 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 942a105199c8740fb7f7496b2a68e3eb0cc46fb4
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d9aa87c1c289452844ef3442811f84881fc752b4
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235202"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397694"
 ---
-# <span data-ttu-id="6039f-106">Домен времени работы — протокол DevTools версии 0.1 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="6039f-106">Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)</span></span>  
-
-<span data-ttu-id="6039f-107">Домен времени работы предоставляет time JavaScript с помощью удаленной оценки и зеркальных объектов.</span><span class="sxs-lookup"><span data-stu-id="6039f-107">Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.</span></span> <span data-ttu-id="6039f-108">Результаты оценки возвращаются в виде зеркального объекта, который предоставляет тип объекта, представление строки и уникальный идентификатор, которые можно использовать для дальнейшей ссылки на объект.</span><span class="sxs-lookup"><span data-stu-id="6039f-108">Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference.</span></span> <span data-ttu-id="6039f-109">Исходные объекты сохраняются в памяти, если они не отпущены явным образом.</span><span class="sxs-lookup"><span data-stu-id="6039f-109">Original objects are maintained in memory unless they are either explicitly released.</span></span>
-
-| | |
-|-|-|
-| [**<span data-ttu-id="6039f-110">Методы</span><span class="sxs-lookup"><span data-stu-id="6039f-110">Methods</span></span>**](#methods) | <span data-ttu-id="6039f-111">[enable,](#enable) [disable,](#disable) [evaluate,](#evaluate) [callFunctionOn](#callfunctionon), [getProperties](#getproperties)</span><span class="sxs-lookup"><span data-stu-id="6039f-111">[enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties)</span></span> |
-| [**<span data-ttu-id="6039f-112">Мероприятия</span><span class="sxs-lookup"><span data-stu-id="6039f-112">Events</span></span>**](#events) | <span data-ttu-id="6039f-113">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span><span class="sxs-lookup"><span data-stu-id="6039f-113">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span></span> |
-| [**<span data-ttu-id="6039f-114">Типы</span><span class="sxs-lookup"><span data-stu-id="6039f-114">Types</span></span>**](#types) | <span data-ttu-id="6039f-115">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span><span class="sxs-lookup"><span data-stu-id="6039f-115">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span></span> |
-## <span data-ttu-id="6039f-116">Методы</span><span class="sxs-lookup"><span data-stu-id="6039f-116">Methods</span></span>
-
-### <span data-ttu-id="6039f-117">"Включить"</span><span class="sxs-lookup"><span data-stu-id="6039f-117">enable</span></span>
-<span data-ttu-id="6039f-118">Включает отчеты о <code>executionContextsCleared</code> событии.</span><span class="sxs-lookup"><span data-stu-id="6039f-118">Enables reporting of the <code>executionContextsCleared</code> event.</span></span>
-
-
----
-
-### <span data-ttu-id="6039f-119">"Отключить" </span><span class="sxs-lookup"><span data-stu-id="6039f-119">disable</span></span>
-<span data-ttu-id="6039f-120">Отключает отчет о <code>executionContextsCleared</code> событии.</span><span class="sxs-lookup"><span data-stu-id="6039f-120">Disables reporting of the <code>executionContextsCleared</code> event.</span></span>
-
-
----
-
-### <span data-ttu-id="6039f-121">evaluate</span><span class="sxs-lookup"><span data-stu-id="6039f-121">evaluate</span></span>
-<span data-ttu-id="6039f-122">Оценивает выражение для глобального объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-122">Evaluates expression on global object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-123">Параметры</span><span class="sxs-lookup"><span data-stu-id="6039f-123">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-124">выражение</span><span class="sxs-lookup"><span data-stu-id="6039f-124">expression</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-125">Выражение для оценки.</span><span class="sxs-lookup"><span data-stu-id="6039f-125">Expression to evaluate.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-126">silent</span><span class="sxs-lookup"><span data-stu-id="6039f-126">silent</span></span> <br/> <i><span data-ttu-id="6039f-127">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-127">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-128">В тихом режиме исключения, выброшенные во время оценки, не сообщаются и не приостанавливали выполнение.</span><span class="sxs-lookup"><span data-stu-id="6039f-128">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span> <span data-ttu-id="6039f-129">Переопределяет <code>setPauseOnException</code> состояние.</span><span class="sxs-lookup"><span data-stu-id="6039f-129">Overrides <code>setPauseOnException</code> state.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-130">contextId</span><span class="sxs-lookup"><span data-stu-id="6039f-130">contextId</span></span> <br/> <i><span data-ttu-id="6039f-131">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-131">optional</span></span></i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td><span data-ttu-id="6039f-132">Указывает, в какой контексте выполнения выполнять оценку.</span><span class="sxs-lookup"><span data-stu-id="6039f-132">Specifies in which execution context to perform evaluation.</span></span> <span data-ttu-id="6039f-133">Если этот параметр опущен, оценка будет выполнена в контексте проверенной страницы.</span><span class="sxs-lookup"><span data-stu-id="6039f-133">If the parameter is omitted the evaluation will be performed in the context of the inspected page.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-134">returnByValue</span><span class="sxs-lookup"><span data-stu-id="6039f-134">returnByValue</span></span> <br/> <i><span data-ttu-id="6039f-135">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-135">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-136">Должен ли результат быть объектом JSON, который должен быть отправлен значением.</span><span class="sxs-lookup"><span data-stu-id="6039f-136">Whether the result is expected to be a JSON object that should be sent by value.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-137">awaitPromise</span><span class="sxs-lookup"><span data-stu-id="6039f-137">awaitPromise</span></span> <br/> <i><span data-ttu-id="6039f-138">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-138">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-139">Будет ли <code>await</code> разрешено выполнение для возвращаемой величины и возврата после ожидания обещания.</span><span class="sxs-lookup"><span data-stu-id="6039f-139">Whether execution should <code>await</code> for resulting value and return once awaited promise is resolved.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-140">Возвращает</span><span class="sxs-lookup"><span data-stu-id="6039f-140">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-141">result</span><span class="sxs-lookup"><span data-stu-id="6039f-141">result</span></span></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="6039f-142">Результат оценки.</span><span class="sxs-lookup"><span data-stu-id="6039f-142">Evaluation result.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <span data-ttu-id="6039f-143">callFunctionOn</span><span class="sxs-lookup"><span data-stu-id="6039f-143">callFunctionOn</span></span>
-<span data-ttu-id="6039f-144">Вызывает функцию с заданным объявлением для данного объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-144">Calls function with given declaration on the given object.</span></span> <span data-ttu-id="6039f-145">Группа объектов результата наследуется от целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-145">Object group of the result is inherited from the target object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-146">Параметры</span><span class="sxs-lookup"><span data-stu-id="6039f-146">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-147">functionDeclaration</span><span class="sxs-lookup"><span data-stu-id="6039f-147">functionDeclaration</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-148">Объявление вызываемой функции.</span><span class="sxs-lookup"><span data-stu-id="6039f-148">Declaration of the function to call.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-149">objectId</span><span class="sxs-lookup"><span data-stu-id="6039f-149">objectId</span></span> <br/> <i><span data-ttu-id="6039f-150">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-150">optional</span></span></i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="6039f-151">Идентификатор объекта для вызова функции.</span><span class="sxs-lookup"><span data-stu-id="6039f-151">Identifier of the object to call function on.</span></span> <span data-ttu-id="6039f-152">Должен быть указан objectId или executionContextId.</span><span class="sxs-lookup"><span data-stu-id="6039f-152">Either objectId or executionContextId should be specified.</span></span>  <span data-ttu-id="6039f-153">objectId должен быть из функции Runtime.evaluate().</span><span class="sxs-lookup"><span data-stu-id="6039f-153">objectId must be from the Runtime.evaluate() function.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-154">arguments</span><span class="sxs-lookup"><span data-stu-id="6039f-154">arguments</span></span> <br/> <i><span data-ttu-id="6039f-155">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-155">optional</span></span></i></td>
-            <td><a href="#callargument"><code class="flyout">CallArgument[]</code></a></td>
-            <td><span data-ttu-id="6039f-156">Аргументы вызова.</span><span class="sxs-lookup"><span data-stu-id="6039f-156">Call arguments.</span></span> <span data-ttu-id="6039f-157">Все аргументы вызова должны принадлежать к одному и тем же мирам JavaScript, что и целевой объект.</span><span class="sxs-lookup"><span data-stu-id="6039f-157">All call arguments must belong to the same JavaScript world as the target object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-158">silent</span><span class="sxs-lookup"><span data-stu-id="6039f-158">silent</span></span> <br/> <i><span data-ttu-id="6039f-159">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-159">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-160">В тихом режиме исключения, выброшенные во время оценки, не сообщаются и не приостанавливали выполнение.</span><span class="sxs-lookup"><span data-stu-id="6039f-160">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span> <span data-ttu-id="6039f-161">Переопределяет <code>setPauseOnException</code> состояние.</span><span class="sxs-lookup"><span data-stu-id="6039f-161">Overrides <code>setPauseOnException</code> state.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-162">returnByValue</span><span class="sxs-lookup"><span data-stu-id="6039f-162">returnByValue</span></span> <br/> <i><span data-ttu-id="6039f-163">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-163">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-164">Должен ли результат быть объектом JSON, который должен быть отправлен значением.</span><span class="sxs-lookup"><span data-stu-id="6039f-164">Whether the result is expected to be a JSON object which should be sent by value.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-165">awaitPromise</span><span class="sxs-lookup"><span data-stu-id="6039f-165">awaitPromise</span></span> <br/> <i><span data-ttu-id="6039f-166">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-166">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-167">Будет ли <code>await</code> разрешено выполнение для возвращаемой величины и возврата после ожидания обещания.</span><span class="sxs-lookup"><span data-stu-id="6039f-167">Whether execution should <code>await</code> for resulting value and return once awaited promise is resolved.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-168">Возвращает</span><span class="sxs-lookup"><span data-stu-id="6039f-168">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-169">result</span><span class="sxs-lookup"><span data-stu-id="6039f-169">result</span></span></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="6039f-170">Результат вызова.</span><span class="sxs-lookup"><span data-stu-id="6039f-170">Call result.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <span data-ttu-id="6039f-171">getProperties</span><span class="sxs-lookup"><span data-stu-id="6039f-171">getProperties</span></span>
-<span data-ttu-id="6039f-172">Возвращает свойства заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-172">Returns properties of a given object.</span></span> <span data-ttu-id="6039f-173">Группа объектов результата наследуется от целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-173">Object group of the result is inherited from the target object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-174">Параметры</span><span class="sxs-lookup"><span data-stu-id="6039f-174">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-175">objectId</span><span class="sxs-lookup"><span data-stu-id="6039f-175">objectId</span></span></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="6039f-176">Идентификатор объекта, для котором возвращаются свойства.</span><span class="sxs-lookup"><span data-stu-id="6039f-176">Identifier of the object to return properties for.</span></span>  <span data-ttu-id="6039f-177">objectId должен быть от функции Debugger.evaluateOnCallFrame().</span><span class="sxs-lookup"><span data-stu-id="6039f-177">objectId must be from the Debugger.evaluateOnCallFrame() function.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-178">ownProperties</span><span class="sxs-lookup"><span data-stu-id="6039f-178">ownProperties</span></span> <br/> <i><span data-ttu-id="6039f-179">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-179">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-180">Если имеется true, возвращает свойства, принадлежащие только самому элементу, а не его прототипу цепочки.</span><span class="sxs-lookup"><span data-stu-id="6039f-180">If true, returns properties belonging only to the element itself, not to its prototype chain.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-181">accessorPropertiesOnly</span><span class="sxs-lookup"><span data-stu-id="6039f-181">accessorPropertiesOnly</span></span> <br/> <i><span data-ttu-id="6039f-182">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-182">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b><span data-ttu-id="6039f-183">Экспериментальная.</span><span class="sxs-lookup"><span data-stu-id="6039f-183">Experimental.</span></span> </b></span><span data-ttu-id="6039f-184">Если установлено true, возвращает только свойства доступа (с getter/setter); внутренние свойства также не возвращаются.</span><span class="sxs-lookup"><span data-stu-id="6039f-184">If true, returns accessor properties (with getter/setter) only; internal properties are not returned either.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-185">Возвращает</span><span class="sxs-lookup"><span data-stu-id="6039f-185">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-186">result</span><span class="sxs-lookup"><span data-stu-id="6039f-186">result</span></span></td>
-            <td><a href="#propertydescriptor"><code class="flyout">PropertyDescriptor[]</code></a></td>
-            <td><span data-ttu-id="6039f-187">Свойства объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-187">Object properties.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## <span data-ttu-id="6039f-188">Мероприятия</span><span class="sxs-lookup"><span data-stu-id="6039f-188">Events</span></span>
-
-### <span data-ttu-id="6039f-189">executionContextsCleared</span><span class="sxs-lookup"><span data-stu-id="6039f-189">executionContextsCleared</span></span>
-<span data-ttu-id="6039f-190">Выдан, когда все executionContexts были очищены в браузере</span><span class="sxs-lookup"><span data-stu-id="6039f-190">Issued when all executionContexts were cleared in browser</span></span>
-
-
----
-
-### <span data-ttu-id="6039f-191">exceptionThrown</span><span class="sxs-lookup"><span data-stu-id="6039f-191">exceptionThrown</span></span>
-<span data-ttu-id="6039f-192">Выдается, когда исключение было выброшено и необбрано.</span><span class="sxs-lookup"><span data-stu-id="6039f-192">Issued when exception was thrown and unhandled.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-193">Параметры</span><span class="sxs-lookup"><span data-stu-id="6039f-193">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-194">timestamp</span><span class="sxs-lookup"><span data-stu-id="6039f-194">timestamp</span></span></td>
-            <td><a href="#timestamp"><code class="flyout">Timestamp</code></a></td>
-            <td><span data-ttu-id="6039f-195">Timestamp исключения.</span><span class="sxs-lookup"><span data-stu-id="6039f-195">Timestamp of the exception.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-196">exceptionDetails</span><span class="sxs-lookup"><span data-stu-id="6039f-196">exceptionDetails</span></span></td>
-            <td><a href="#exceptiondetails"><code class="flyout">ExceptionDetails</code></a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## <span data-ttu-id="6039f-197">Типы</span><span class="sxs-lookup"><span data-stu-id="6039f-197">Types</span></span>
-
-### <a name="scriptid"></a> <span data-ttu-id="6039f-198">ScriptId</span><span class="sxs-lookup"><span data-stu-id="6039f-198">ScriptId</span></span> `string`
-
-<span data-ttu-id="6039f-199">Уникальный идентификатор скрипта.</span><span class="sxs-lookup"><span data-stu-id="6039f-199">Unique script identifier.</span></span>
-
-
----
-
-### <a name="remoteobjectid"></a> <span data-ttu-id="6039f-200">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="6039f-200">RemoteObjectId</span></span> `string`
-
-<span data-ttu-id="6039f-201">Уникальный идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-201">Unique object identifier.</span></span>
-
-
----
-
-### <a name="unserializablevalue"></a> <span data-ttu-id="6039f-202">UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="6039f-202">UnserializableValue</span></span> `string`
-
-<span data-ttu-id="6039f-203">Значение примитива, которое не может быть в строке JSON.</span><span class="sxs-lookup"><span data-stu-id="6039f-203">Primitive value which cannot be JSON-stringified.</span></span>
-
-##### <span data-ttu-id="6039f-204">Допустимые значения</span><span class="sxs-lookup"><span data-stu-id="6039f-204">Allowed Values</span></span>
-<span data-ttu-id="6039f-205">Бесконечность, неn, -Infinity, -0</span><span class="sxs-lookup"><span data-stu-id="6039f-205">Infinity, NaN, -Infinity, -0</span></span>
-
----
-
-### <a name="remoteobject"></a> <span data-ttu-id="6039f-206">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="6039f-206">RemoteObject</span></span> `object`
-
-<span data-ttu-id="6039f-207">Зеркальный объект, ссылающийся на исходный объект JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6039f-207">Mirror object referencing original JavaScript object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-208">Свойства</span><span class="sxs-lookup"><span data-stu-id="6039f-208">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-209">Тип</span><span class="sxs-lookup"><span data-stu-id="6039f-209">type</span></span></td>
-            <td><code class="flyout">string</code> <br/> <i><span data-ttu-id="6039f-210">Допустимые значения: object, function, undefined, string, number, boolean, symbol</span><span class="sxs-lookup"><span data-stu-id="6039f-210">Allowed values: object, function, undefined, string, number, boolean, symbol</span></span></i></td>
-            <td><span data-ttu-id="6039f-211">Тип объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-211">Object type.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-212">subtype</span><span class="sxs-lookup"><span data-stu-id="6039f-212">subtype</span></span> <br/> <i><span data-ttu-id="6039f-213">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-213">optional</span></span></i></td>
-            <td><code class="flyout">string</code> <br/> <i><span data-ttu-id="6039f-214">Допустимые значения: null, error, promise</span><span class="sxs-lookup"><span data-stu-id="6039f-214">Allowed values: null, error, promise</span></span></i></td>
-            <td><span data-ttu-id="6039f-215">Подсказка подтипа объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-215">Object subtype hint.</span></span> <span data-ttu-id="6039f-216">Указывается только <code>object</code> для значений типов.</span><span class="sxs-lookup"><span data-stu-id="6039f-216">Specified for <code>object</code> type values only.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-217">className</span><span class="sxs-lookup"><span data-stu-id="6039f-217">className</span></span> <br/> <i><span data-ttu-id="6039f-218">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-218">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-219">Имя класса объекта (конструктора).</span><span class="sxs-lookup"><span data-stu-id="6039f-219">Object class (constructor) name.</span></span> <span data-ttu-id="6039f-220">Указывается только <code>object</code> для значений типов.</span><span class="sxs-lookup"><span data-stu-id="6039f-220">Specified for <code>object</code> type values only.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-221">value</span><span class="sxs-lookup"><span data-stu-id="6039f-221">value</span></span> <br/> <i><span data-ttu-id="6039f-222">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-222">optional</span></span></i></td>
-            <td><code class="flyout">any</code></td>
-            <td><span data-ttu-id="6039f-223">Значение удаленного объекта в случае значений примитивов или значений JSON (если он был запротид).</span><span class="sxs-lookup"><span data-stu-id="6039f-223">Remote object value in case of primitive values or JSON values (if it was requested).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-224">unserializableValue</span><span class="sxs-lookup"><span data-stu-id="6039f-224">unserializableValue</span></span> <br/> <i><span data-ttu-id="6039f-225">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-225">optional</span></span></i></td>
-            <td><a href="#unserializablevalue"><code class="flyout">UnserializableValue</code></a></td>
-            <td><span data-ttu-id="6039f-226">Значение примитива, которое не может быть в строке JSON, не имеет</span><span class="sxs-lookup"><span data-stu-id="6039f-226">Primitive value which can not be JSON-stringified does not have</span></span> <code>value</code><span data-ttu-id="6039f-227">, но получает это свойство.</span><span class="sxs-lookup"><span data-stu-id="6039f-227">, but gets this property.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-228">description</span><span class="sxs-lookup"><span data-stu-id="6039f-228">description</span></span> <br/> <i><span data-ttu-id="6039f-229">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-229">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-230">Строка представления объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-230">String representation of the object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-231">objectId</span><span class="sxs-lookup"><span data-stu-id="6039f-231">objectId</span></span> <br/> <i><span data-ttu-id="6039f-232">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-232">optional</span></span></i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="6039f-233">Уникальный идентификатор объекта (для не примитивных значений).</span><span class="sxs-lookup"><span data-stu-id="6039f-233">Unique object identifier (for non-primitive values).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-234">msDebuggerPropertyId</span><span class="sxs-lookup"><span data-stu-id="6039f-234">msDebuggerPropertyId</span></span> <br/> <i><span data-ttu-id="6039f-235">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-235">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b><span data-ttu-id="6039f-236">Экспериментальная.</span><span class="sxs-lookup"><span data-stu-id="6039f-236">Experimental.</span></span> </b></span><span data-ttu-id="6039f-237">Майкрософт: связанный ид свойства отладки для этого объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-237">Microsoft: The associated debugger property id for this object.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="propertydescriptor"></a> <span data-ttu-id="6039f-238">PropertyDescriptor</span><span class="sxs-lookup"><span data-stu-id="6039f-238">PropertyDescriptor</span></span> `object`
-
-<span data-ttu-id="6039f-239">Дескриптор свойства объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-239">Object property descriptor.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-240">Свойства</span><span class="sxs-lookup"><span data-stu-id="6039f-240">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-241">name</span><span class="sxs-lookup"><span data-stu-id="6039f-241">name</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-242">Имя свойства или описание символа.</span><span class="sxs-lookup"><span data-stu-id="6039f-242">Property name or symbol description.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-243">value</span><span class="sxs-lookup"><span data-stu-id="6039f-243">value</span></span> <br/> <i><span data-ttu-id="6039f-244">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-244">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="6039f-245">Значение, связанное со свойством.</span><span class="sxs-lookup"><span data-stu-id="6039f-245">The value associated with the property.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-246">writable</span><span class="sxs-lookup"><span data-stu-id="6039f-246">writable</span></span> <br/> <i><span data-ttu-id="6039f-247">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-247">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-248">Имеет значение True, если значение, связанное со свойством, может быть изменено (только дескрипторы данных).</span><span class="sxs-lookup"><span data-stu-id="6039f-248">True if the value associated with the property may be changed (data descriptors only).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-249">получить</span><span class="sxs-lookup"><span data-stu-id="6039f-249">get</span></span> <br/> <i><span data-ttu-id="6039f-250">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-250">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="6039f-251">Функция, которая служит в качестве дескриптора для свойства, или если нет <code>undefined</code> getter (только дескрипторы доступа).</span><span class="sxs-lookup"><span data-stu-id="6039f-251">A function which serves as a getter for the property, or <code>undefined</code> if there is no getter (accessor descriptors only).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-252">set</span><span class="sxs-lookup"><span data-stu-id="6039f-252">set</span></span> <br/> <i><span data-ttu-id="6039f-253">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-253">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="6039f-254">Функция, которая служит в качестве задавщика для свойства или если нет задавщика <code>undefined</code> (только дескрипторы доступа).</span><span class="sxs-lookup"><span data-stu-id="6039f-254">A function which serves as a setter for the property, or <code>undefined</code> if there is no setter (accessor descriptors only).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-255">настраиваемая</span><span class="sxs-lookup"><span data-stu-id="6039f-255">configurable</span></span></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-256">True, если тип этого дескриптора свойства может быть изменен и свойство может быть удалено из соответствующего объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-256">True if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-257">enumerable</span><span class="sxs-lookup"><span data-stu-id="6039f-257">enumerable</span></span></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-258">True, если это свойство появляется во время нумерации свойств соответствующего объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-258">True if this property shows up during enumeration of the properties on the corresponding object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-259">wasThrown</span><span class="sxs-lookup"><span data-stu-id="6039f-259">wasThrown</span></span> <br/> <i><span data-ttu-id="6039f-260">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-260">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-261">True, если результат был выброшен во время оценки.</span><span class="sxs-lookup"><span data-stu-id="6039f-261">True if the result was thrown during the evaluation.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-262">isOwn</span><span class="sxs-lookup"><span data-stu-id="6039f-262">isOwn</span></span> <br/> <i><span data-ttu-id="6039f-263">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-263">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="6039f-264">Имеет свойство True, если свойство принадлежит объекту.</span><span class="sxs-lookup"><span data-stu-id="6039f-264">True if the property is owned for the object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-265">msReturnValue</span><span class="sxs-lookup"><span data-stu-id="6039f-265">msReturnValue</span></span> <br/> <i><span data-ttu-id="6039f-266">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-266">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b><span data-ttu-id="6039f-267">Экспериментальная.</span><span class="sxs-lookup"><span data-stu-id="6039f-267">Experimental.</span></span> </b></span><span data-ttu-id="6039f-268">Майкрософт: имеет значение True, если свойство является возвращаемой.</span><span class="sxs-lookup"><span data-stu-id="6039f-268">Microsoft: True if the property is a return value.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-269">symbol,</span><span class="sxs-lookup"><span data-stu-id="6039f-269">symbol</span></span> <br/> <i><span data-ttu-id="6039f-270">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-270">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="6039f-271">Объект символа свойства, если свойство имеет `symbol` тип.</span><span class="sxs-lookup"><span data-stu-id="6039f-271">Property symbol object, if the property is of the `symbol` type.</span></span> </td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="callargument"></a> <span data-ttu-id="6039f-272">CallArgument</span><span class="sxs-lookup"><span data-stu-id="6039f-272">CallArgument</span></span> `object`
-
-<span data-ttu-id="6039f-273">Представляет аргумент вызова функции.</span><span class="sxs-lookup"><span data-stu-id="6039f-273">Represents function call argument.</span></span> <span data-ttu-id="6039f-274">Должен быть указан либо ид удаленного <code>objectId</code> объекта, примитив, несериализируемый значение примитива, либо ни один <code>value</code> из них (для неопределенных).</span><span class="sxs-lookup"><span data-stu-id="6039f-274">Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-275">Свойства</span><span class="sxs-lookup"><span data-stu-id="6039f-275">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-276">value</span><span class="sxs-lookup"><span data-stu-id="6039f-276">value</span></span> <br/> <i><span data-ttu-id="6039f-277">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-277">optional</span></span></i></td>
-            <td><code class="flyout">any</code></td>
-            <td><span data-ttu-id="6039f-278">Значение примитива или сериализуемый объект JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6039f-278">Primitive value or serializable javascript object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-279">unserializableValue</span><span class="sxs-lookup"><span data-stu-id="6039f-279">unserializableValue</span></span> <br/> <i><span data-ttu-id="6039f-280">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-280">optional</span></span></i></td>
-            <td><a href="#unserializablevalue"><code class="flyout">UnserializableValue</code></a></td>
-            <td><span data-ttu-id="6039f-281">Значение примитива, которое не может быть в строке JSON.</span><span class="sxs-lookup"><span data-stu-id="6039f-281">Primitive value which can not be JSON-stringified.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-282">objectId</span><span class="sxs-lookup"><span data-stu-id="6039f-282">objectId</span></span> <br/> <i><span data-ttu-id="6039f-283">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-283">optional</span></span></i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="6039f-284">Удаленный handle объекта.</span><span class="sxs-lookup"><span data-stu-id="6039f-284">Remote object handle.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="executioncontextid"></a> <span data-ttu-id="6039f-285">ExecutionContextId</span><span class="sxs-lookup"><span data-stu-id="6039f-285">ExecutionContextId</span></span> `integer`
-
-<span data-ttu-id="6039f-286">ИД контекста выполнения.</span><span class="sxs-lookup"><span data-stu-id="6039f-286">Id of an execution context.</span></span>
-
-
----
-
-### <a name="exceptiondetails"></a> <span data-ttu-id="6039f-287">ExceptionDetails</span><span class="sxs-lookup"><span data-stu-id="6039f-287">ExceptionDetails</span></span> `object`
-
-<span data-ttu-id="6039f-288">Подробные сведения об исключении (или ошибке), которое было выброшено во время компиляции или выполнения сценария.</span><span class="sxs-lookup"><span data-stu-id="6039f-288">Detailed information about exception (or error) that was thrown during script compilation or execution.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-289">Свойства</span><span class="sxs-lookup"><span data-stu-id="6039f-289">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-290">exceptionId</span><span class="sxs-lookup"><span data-stu-id="6039f-290">exceptionId</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="6039f-291">ИД исключения.</span><span class="sxs-lookup"><span data-stu-id="6039f-291">Exception id.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-292">текст</span><span class="sxs-lookup"><span data-stu-id="6039f-292">text</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-293">Текст исключения, который должен использоваться вместе с объектом исключения при наличии.</span><span class="sxs-lookup"><span data-stu-id="6039f-293">Exception text, which should be used together with exception object when available.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-294">lineNumber</span><span class="sxs-lookup"><span data-stu-id="6039f-294">lineNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="6039f-295">Номер строки расположения исключения (на основе 0).</span><span class="sxs-lookup"><span data-stu-id="6039f-295">Line number of the exception location (0-based).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-296">columnNumber</span><span class="sxs-lookup"><span data-stu-id="6039f-296">columnNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="6039f-297">Номер столбца расположения исключения (на основе 0).</span><span class="sxs-lookup"><span data-stu-id="6039f-297">Column number of the exception location (0-based).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-298">scriptId</span><span class="sxs-lookup"><span data-stu-id="6039f-298">scriptId</span></span> <br/> <i><span data-ttu-id="6039f-299">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-299">optional</span></span></i></td>
-            <td><a href="#scriptid"><code class="flyout">ScriptId</code></a></td>
-            <td><span data-ttu-id="6039f-300">ИД сценария расположения исключения.</span><span class="sxs-lookup"><span data-stu-id="6039f-300">Script ID of the exception location.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-301">url</span><span class="sxs-lookup"><span data-stu-id="6039f-301">url</span></span> <br/> <i><span data-ttu-id="6039f-302">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-302">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-303">URL-адрес расположения исключения, который будет использоваться, когда сценарий не был указан.</span><span class="sxs-lookup"><span data-stu-id="6039f-303">URL of the exception location, to be used when the script was not reported.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-304">stackTrace</span><span class="sxs-lookup"><span data-stu-id="6039f-304">stackTrace</span></span> <br/> <i><span data-ttu-id="6039f-305">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-305">optional</span></span></i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
-            <td><span data-ttu-id="6039f-306">Трассировка стека JavaScript, если она доступна.</span><span class="sxs-lookup"><span data-stu-id="6039f-306">JavaScript stack trace if available.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-307">exception</span><span class="sxs-lookup"><span data-stu-id="6039f-307">exception</span></span> <br/> <i><span data-ttu-id="6039f-308">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-308">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="6039f-309">Объект исключения, если он доступен.</span><span class="sxs-lookup"><span data-stu-id="6039f-309">Exception object if available.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-310">executionContextId</span><span class="sxs-lookup"><span data-stu-id="6039f-310">executionContextId</span></span> <br/> <i><span data-ttu-id="6039f-311">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-311">optional</span></span></i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td><span data-ttu-id="6039f-312">Идентификатор контекста, в котором произошло исключение.</span><span class="sxs-lookup"><span data-stu-id="6039f-312">Identifier of the context where exception happened.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="timestamp"></a> <span data-ttu-id="6039f-313">Метка времени</span><span class="sxs-lookup"><span data-stu-id="6039f-313">Timestamp</span></span> `integer`
-
-<span data-ttu-id="6039f-314">Количество миллисекунд с момента эпохи.</span><span class="sxs-lookup"><span data-stu-id="6039f-314">Number of milliseconds since epoch.</span></span>
-
-
----
-
-### <a name="callframe"></a> <span data-ttu-id="6039f-315">CallFrame</span><span class="sxs-lookup"><span data-stu-id="6039f-315">CallFrame</span></span> `object`
-
-<span data-ttu-id="6039f-316">Запись стека для ошибок и утверждений во время работы.</span><span class="sxs-lookup"><span data-stu-id="6039f-316">Stack entry for runtime errors and assertions.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-317">Свойства</span><span class="sxs-lookup"><span data-stu-id="6039f-317">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-318">functionName</span><span class="sxs-lookup"><span data-stu-id="6039f-318">functionName</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-319">Имя функции JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6039f-319">JavaScript function name.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-320">scriptId</span><span class="sxs-lookup"><span data-stu-id="6039f-320">scriptId</span></span></td>
-            <td><a href="#scriptid"><code class="flyout">ScriptId</code></a></td>
-            <td><span data-ttu-id="6039f-321">ИД скрипта JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6039f-321">JavaScript script id.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-322">url</span><span class="sxs-lookup"><span data-stu-id="6039f-322">url</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-323">Имя или URL-адрес сценария JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6039f-323">JavaScript script name or url.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-324">lineNumber</span><span class="sxs-lookup"><span data-stu-id="6039f-324">lineNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="6039f-325">Номер строки сценария JavaScript (на основе 0).</span><span class="sxs-lookup"><span data-stu-id="6039f-325">JavaScript script line number (0-based).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-326">columnNumber</span><span class="sxs-lookup"><span data-stu-id="6039f-326">columnNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="6039f-327">Номер столбца сценария JavaScript (на основе 0).</span><span class="sxs-lookup"><span data-stu-id="6039f-327">JavaScript script column number (0-based).</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="stacktrace"></a> <span data-ttu-id="6039f-328">StackTrace</span><span class="sxs-lookup"><span data-stu-id="6039f-328">StackTrace</span></span> `object`
-
-<span data-ttu-id="6039f-329">Вызов кадров для утверждений или сообщений об ошибках.</span><span class="sxs-lookup"><span data-stu-id="6039f-329">Call frames for assertions or error messages.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="6039f-330">Свойства</span><span class="sxs-lookup"><span data-stu-id="6039f-330">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="6039f-331">description</span><span class="sxs-lookup"><span data-stu-id="6039f-331">description</span></span> <br/> <i><span data-ttu-id="6039f-332">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-332">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="6039f-333">Строковая метка трассировки стека.</span><span class="sxs-lookup"><span data-stu-id="6039f-333">String label of this stack trace.</span></span> <span data-ttu-id="6039f-334">Для а async traces это может быть имя функции, которая инициировала ассынский вызов.</span><span class="sxs-lookup"><span data-stu-id="6039f-334">For async traces this may be a name of the function that initiated the async call.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-335">callFrames</span><span class="sxs-lookup"><span data-stu-id="6039f-335">callFrames</span></span></td>
-            <td><a href="#callframe"><code class="flyout">CallFrame[]</code></a></td>
-            <td><span data-ttu-id="6039f-336">Имя функции JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6039f-336">JavaScript function name.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="6039f-337">parent</span><span class="sxs-lookup"><span data-stu-id="6039f-337">parent</span></span> <br/> <i><span data-ttu-id="6039f-338">необязательные</span><span class="sxs-lookup"><span data-stu-id="6039f-338">optional</span></span></i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
-            <td><span data-ttu-id="6039f-339">Асинхронная трассировка стека JavaScript, предшествующего этому стеку, если доступна.</span><span class="sxs-lookup"><span data-stu-id="6039f-339">Asynchronous JavaScript stack trace that preceded this stack, if available.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
+# <a name="runtime-domain---devtools-protocol-version-01-edgehtml"></a><span data-ttu-id="4af80-106">Домен runtime - Протокол DevTools Версии 0.1 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="4af80-106">Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)</span></span>  
+
+<span data-ttu-id="4af80-107">Домен runtime предоставляет время запуска JavaScript с помощью удаленной оценки и зеркальных объектов.</span><span class="sxs-lookup"><span data-stu-id="4af80-107">Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.</span></span>  <span data-ttu-id="4af80-108">Результаты оценки возвращаются в виде зеркального объекта, который предоставляет тип объекта, представление строки и уникальный идентификатор, который можно использовать для дальнейшей ссылки на объект.</span><span class="sxs-lookup"><span data-stu-id="4af80-108">Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference.</span></span>  <span data-ttu-id="4af80-109">Исходные объекты сохраняются в памяти, если они не будут либо явно освобождены.</span><span class="sxs-lookup"><span data-stu-id="4af80-109">Original objects are maintained in memory unless they are either explicitly released.</span></span>  
+
+| <span data-ttu-id="4af80-110">Категория</span><span class="sxs-lookup"><span data-stu-id="4af80-110">Classification</span></span> | <span data-ttu-id="4af80-111">Участники</span><span class="sxs-lookup"><span data-stu-id="4af80-111">Members</span></span> |  
+|:--- |:--- |  
+| [<span data-ttu-id="4af80-112">Методы</span><span class="sxs-lookup"><span data-stu-id="4af80-112">Methods</span></span>](#methods) | <span data-ttu-id="4af80-113">[включить,](#enable) [отключить,](#disable) [оценить,](#evaluate) [callFunctionOn](#callfunctionon), [getProperties](#getproperties)</span><span class="sxs-lookup"><span data-stu-id="4af80-113">[enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties)</span></span> |  
+| [<span data-ttu-id="4af80-114">Мероприятия</span><span class="sxs-lookup"><span data-stu-id="4af80-114">Events</span></span>](#events) | <span data-ttu-id="4af80-115">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span><span class="sxs-lookup"><span data-stu-id="4af80-115">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span></span> |  
+| [<span data-ttu-id="4af80-116">Типы</span><span class="sxs-lookup"><span data-stu-id="4af80-116">Types</span></span>](#types) | <span data-ttu-id="4af80-117">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span><span class="sxs-lookup"><span data-stu-id="4af80-117">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span></span> |  
+
+## <a name="methods"></a><span data-ttu-id="4af80-118">Методы</span><span class="sxs-lookup"><span data-stu-id="4af80-118">Methods</span></span>  
+
+### <a name="enable"></a><span data-ttu-id="4af80-119">"Включить"</span><span class="sxs-lookup"><span data-stu-id="4af80-119">enable</span></span>  
+
+<span data-ttu-id="4af80-120">Включает отчеты о `executionContextsCleared` событии.</span><span class="sxs-lookup"><span data-stu-id="4af80-120">Enables reporting of the `executionContextsCleared` event.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="disable"></a><span data-ttu-id="4af80-121">"Отключить" </span><span class="sxs-lookup"><span data-stu-id="4af80-121">disable</span></span>  
+
+<span data-ttu-id="4af80-122">Отключение отчетов о `executionContextsCleared` событии.</span><span class="sxs-lookup"><span data-stu-id="4af80-122">Disables reporting of the `executionContextsCleared` event.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="evaluate"></a><span data-ttu-id="4af80-123">оценка</span><span class="sxs-lookup"><span data-stu-id="4af80-123">evaluate</span></span>  
+
+<span data-ttu-id="4af80-124">Оценивает выражение на глобальном объекте.</span><span class="sxs-lookup"><span data-stu-id="4af80-124">Evaluates expression on global object.</span></span>  
+
+| <span data-ttu-id="4af80-125">Параметры</span><span class="sxs-lookup"><span data-stu-id="4af80-125">Parameters</span></span> | <span data-ttu-id="4af80-126">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-126">Type</span></span> | <span data-ttu-id="4af80-127">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-127">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-128">выражение</span><span class="sxs-lookup"><span data-stu-id="4af80-128">expression</span></span> | `string` | <span data-ttu-id="4af80-129">Выражение для оценки.</span><span class="sxs-lookup"><span data-stu-id="4af80-129">Expression to evaluate.</span></span> |  
+| <span data-ttu-id="4af80-130">silent \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-130">silent \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-131">В режиме молчаливого режима исключения, выброшенные во время оценки, не сообщаются и не приостанавливали выполнение.</span><span class="sxs-lookup"><span data-stu-id="4af80-131">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span>  <span data-ttu-id="4af80-132">Переопределяет `setPauseOnException` состояние.</span><span class="sxs-lookup"><span data-stu-id="4af80-132">Overrides `setPauseOnException` state.</span></span> |  
+| <span data-ttu-id="4af80-133">contextId \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-133">contextId \(optional\)</span></span> | [<span data-ttu-id="4af80-134">ExecutionContextId</span><span class="sxs-lookup"><span data-stu-id="4af80-134">ExecutionContextId</span></span>](#executioncontextid) | <span data-ttu-id="4af80-135">Указывает, в котором контекст выполнения для выполнения оценки.</span><span class="sxs-lookup"><span data-stu-id="4af80-135">Specifies in which execution context to perform evaluation.</span></span>  <span data-ttu-id="4af80-136">Если параметр опущен, оценка будет выполнена в контексте проверенной страницы.</span><span class="sxs-lookup"><span data-stu-id="4af80-136">If the parameter is omitted the evaluation will be performed in the context of the inspected page.</span></span> |  
+| <span data-ttu-id="4af80-137">returnByValue \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-137">returnByValue \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-138">Ожидается ли, что результат будет объектом JSON, который должен быть отправлен по значению.</span><span class="sxs-lookup"><span data-stu-id="4af80-138">Whether the result is expected to be a JSON object that should be sent by value.</span></span> |  
+| <span data-ttu-id="4af80-139">awaitPromise \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-139">awaitPromise \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-140">Будет ли `await` разрешено выполнение для результативного значения и возврата после ожидания обещания.</span><span class="sxs-lookup"><span data-stu-id="4af80-140">Whether execution should `await` for resulting value and return once awaited promise is resolved.</span></span> |  
+
+| <span data-ttu-id="4af80-141">Возвращает</span><span class="sxs-lookup"><span data-stu-id="4af80-141">Returns</span></span> | <span data-ttu-id="4af80-142">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-142">Type</span></span> | <span data-ttu-id="4af80-143">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-143">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-144">результат</span><span class="sxs-lookup"><span data-stu-id="4af80-144">result</span></span> | [<span data-ttu-id="4af80-145">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-145">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="4af80-146">Результат оценки.</span><span class="sxs-lookup"><span data-stu-id="4af80-146">Evaluation result.</span></span> |  
+
+---  
+
+### <a name="callfunctionon"></a><span data-ttu-id="4af80-147">callFunctionOn</span><span class="sxs-lookup"><span data-stu-id="4af80-147">callFunctionOn</span></span>  
+
+<span data-ttu-id="4af80-148">Функция вызовов с заданным объявлением на заданный объект.</span><span class="sxs-lookup"><span data-stu-id="4af80-148">Calls function with given declaration on the given object.</span></span>  <span data-ttu-id="4af80-149">Объектная группа результата наследуется от целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-149">Object group of the result is inherited from the target object.</span></span>  
+
+| <span data-ttu-id="4af80-150">Параметры</span><span class="sxs-lookup"><span data-stu-id="4af80-150">Parameters</span></span> | <span data-ttu-id="4af80-151">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-151">Type</span></span> | <span data-ttu-id="4af80-152">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-152">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-153">functionDeclaration</span><span class="sxs-lookup"><span data-stu-id="4af80-153">functionDeclaration</span></span> | `string` | <span data-ttu-id="4af80-154">Объявление функции вызова.</span><span class="sxs-lookup"><span data-stu-id="4af80-154">Declaration of the function to call.</span></span> |  
+| <span data-ttu-id="4af80-155">objectId \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-155">objectId \(optional\)</span></span> | [<span data-ttu-id="4af80-156">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="4af80-156">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="4af80-157">Идентификатор объекта для вызова функции.</span><span class="sxs-lookup"><span data-stu-id="4af80-157">Identifier of the object to call function on.</span></span>  <span data-ttu-id="4af80-158">Либо `objectId` `executionContextId` заданы, либо должны быть указаны.</span><span class="sxs-lookup"><span data-stu-id="4af80-158">Either `objectId` or `executionContextId` should be specified.</span></span>  <span data-ttu-id="4af80-159">objectId должен быть из функции Runtime.evaluate()</span><span class="sxs-lookup"><span data-stu-id="4af80-159">objectId must be from the Runtime.evaluate() function.</span></span> |  
+| <span data-ttu-id="4af80-160">аргументы \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-160">arguments \(optional\)</span></span> | [<span data-ttu-id="4af80-161">CallArgument[]</span><span class="sxs-lookup"><span data-stu-id="4af80-161">CallArgument[]</span></span>](#callargument) | <span data-ttu-id="4af80-162">Аргументы вызова.</span><span class="sxs-lookup"><span data-stu-id="4af80-162">Call arguments.</span></span>  <span data-ttu-id="4af80-163">Все аргументы вызовов должны принадлежать одному миру JavaScript как целевому объекту.</span><span class="sxs-lookup"><span data-stu-id="4af80-163">All call arguments must belong to the same JavaScript world as the target object.</span></span> |  
+| <span data-ttu-id="4af80-164">silent \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-164">silent \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-165">В режиме молчаливого режима исключения, выброшенные во время оценки, не сообщаются и не приостанавливали выполнение.</span><span class="sxs-lookup"><span data-stu-id="4af80-165">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span>  <span data-ttu-id="4af80-166">Переопределяет `setPauseOnException` состояние.</span><span class="sxs-lookup"><span data-stu-id="4af80-166">Overrides `setPauseOnException` state.</span></span> |  
+| <span data-ttu-id="4af80-167">returnByValue \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-167">returnByValue \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-168">Ожидается ли, что результат будет объектом JSON, который должен быть отправлен по значению.</span><span class="sxs-lookup"><span data-stu-id="4af80-168">Whether the result is expected to be a JSON object which should be sent by value.</span></span> |  
+| <span data-ttu-id="4af80-169">awaitPromise \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-169">awaitPromise \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-170">Будет ли `await` разрешено выполнение для результативного значения и возврата после ожидания обещания.</span><span class="sxs-lookup"><span data-stu-id="4af80-170">Whether execution should `await` for resulting value and return once awaited promise is resolved.</span></span> |  
+
+| <span data-ttu-id="4af80-171">Возвращает</span><span class="sxs-lookup"><span data-stu-id="4af80-171">Returns</span></span> | <span data-ttu-id="4af80-172">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-172">Type</span></span> | <span data-ttu-id="4af80-173">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-173">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-174">результат</span><span class="sxs-lookup"><span data-stu-id="4af80-174">result</span></span> | [<span data-ttu-id="4af80-175">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-175">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="4af80-176">Результат вызова.</span><span class="sxs-lookup"><span data-stu-id="4af80-176">Call result.</span></span> |  
+
+---  
+
+### <a name="getproperties"></a><span data-ttu-id="4af80-177">getProperties</span><span class="sxs-lookup"><span data-stu-id="4af80-177">getProperties</span></span>  
+
+<span data-ttu-id="4af80-178">Возвращает свойства заданного объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-178">Returns properties of a given object.</span></span>  <span data-ttu-id="4af80-179">Объектная группа результата наследуется от целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-179">Object group of the result is inherited from the target object.</span></span>  
+
+| <span data-ttu-id="4af80-180">Параметры</span><span class="sxs-lookup"><span data-stu-id="4af80-180">Parameters</span></span> | <span data-ttu-id="4af80-181">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-181">Type</span></span> | <span data-ttu-id="4af80-182">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-182">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-183">objectId</span><span class="sxs-lookup"><span data-stu-id="4af80-183">objectId</span></span> | [<span data-ttu-id="4af80-184">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="4af80-184">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="4af80-185">Идентификатор объекта для возврата свойств.</span><span class="sxs-lookup"><span data-stu-id="4af80-185">Identifier of the object to return properties for.</span></span>  `objectId` <span data-ttu-id="4af80-186">должно быть из `Debugger.evaluateOnCallFrame()` функции.</span><span class="sxs-lookup"><span data-stu-id="4af80-186">must be from the `Debugger.evaluateOnCallFrame()` function.</span></span> |  
+| <span data-ttu-id="4af80-187">ownProperties \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-187">ownProperties \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-188">Если `true` возвращает свойства, принадлежащие только самому элементу, а не цепочке прототипов.</span><span class="sxs-lookup"><span data-stu-id="4af80-188">If `true`, returns properties belonging only to the element itself, not to its prototype chain.</span></span> |  
+| <span data-ttu-id="4af80-189">accessorPropertiesOnly \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-189">accessorPropertiesOnly \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-190">**Экспериментальные**.</span><span class="sxs-lookup"><span data-stu-id="4af80-190">**Experimental**.</span></span>  <span data-ttu-id="4af80-191">Если `true` , возвращает свойства вспомогательного оборудования \(с getter/setter\) только; внутренние свойства также не возвращаются.</span><span class="sxs-lookup"><span data-stu-id="4af80-191">If `true`, returns accessor properties \(with getter/setter\) only; internal properties are not returned either.</span></span> |  
+
+| <span data-ttu-id="4af80-192">Возвращает</span><span class="sxs-lookup"><span data-stu-id="4af80-192">Returns</span></span> | <span data-ttu-id="4af80-193">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-193">Type</span></span> | <span data-ttu-id="4af80-194">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-194">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-195">результат</span><span class="sxs-lookup"><span data-stu-id="4af80-195">result</span></span> | [<span data-ttu-id="4af80-196">PropertyDescriptor[]</span><span class="sxs-lookup"><span data-stu-id="4af80-196">PropertyDescriptor[]</span></span>](#propertydescriptor) | <span data-ttu-id="4af80-197">Свойства объектов.</span><span class="sxs-lookup"><span data-stu-id="4af80-197">Object properties.</span></span> |  
+
+---  
+
+## <a name="events"></a><span data-ttu-id="4af80-198">Мероприятия</span><span class="sxs-lookup"><span data-stu-id="4af80-198">Events</span></span>  
+
+### <a name="executioncontextscleared"></a><span data-ttu-id="4af80-199">executionContextsCleared</span><span class="sxs-lookup"><span data-stu-id="4af80-199">executionContextsCleared</span></span>  
+
+<span data-ttu-id="4af80-200">Выдан, когда все executionContexts были очищены в браузере.</span><span class="sxs-lookup"><span data-stu-id="4af80-200">Issued when all executionContexts were cleared in browser.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="exceptionthrown"></a><span data-ttu-id="4af80-201">exceptionThrown</span><span class="sxs-lookup"><span data-stu-id="4af80-201">exceptionThrown</span></span>  
+
+<span data-ttu-id="4af80-202">Выдано, когда исключение было выброшено и ненаблюдаемо.</span><span class="sxs-lookup"><span data-stu-id="4af80-202">Issued when exception was thrown and unhandled.</span></span>  
+
+| <span data-ttu-id="4af80-203">Параметры</span><span class="sxs-lookup"><span data-stu-id="4af80-203">Parameters</span></span> | <span data-ttu-id="4af80-204">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-204">Type</span></span> | <span data-ttu-id="4af80-205">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-205">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-206">timestamp</span><span class="sxs-lookup"><span data-stu-id="4af80-206">timestamp</span></span> | [<span data-ttu-id="4af80-207">Метка времени</span><span class="sxs-lookup"><span data-stu-id="4af80-207">Timestamp</span></span>](#timestamp) | <span data-ttu-id="4af80-208">Timestamp исключения.</span><span class="sxs-lookup"><span data-stu-id="4af80-208">Timestamp of the exception.</span></span> |  
+| <span data-ttu-id="4af80-209">exceptionDetails</span><span class="sxs-lookup"><span data-stu-id="4af80-209">exceptionDetails</span></span> | [<span data-ttu-id="4af80-210">ExceptionDetails</span><span class="sxs-lookup"><span data-stu-id="4af80-210">ExceptionDetails</span></span>](#exceptiondetails) | &nbsp; |  
+
+---  
+
+## <a name="types"></a><span data-ttu-id="4af80-211">Типы</span><span class="sxs-lookup"><span data-stu-id="4af80-211">Types</span></span>  
+
+### <a name="scriptid-string"></a><span data-ttu-id="4af80-212">Строка ScriptId</span><span class="sxs-lookup"><span data-stu-id="4af80-212">ScriptId string</span></span>  
+
+<a name="scriptid"></a>  
+
+<span data-ttu-id="4af80-213">Уникальный идентификатор скрипта.</span><span class="sxs-lookup"><span data-stu-id="4af80-213">Unique script identifier.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="remoteobjectid-string"></a><span data-ttu-id="4af80-214">Строка RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="4af80-214">RemoteObjectId string</span></span>  
+
+<a name="remoteobjectid"></a>  
+
+<span data-ttu-id="4af80-215">Уникальный идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-215">Unique object identifier.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="unserializablevalue-string"></a><span data-ttu-id="4af80-216">Строка UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="4af80-216">UnserializableValue string</span></span>  
+
+<a name="unserializablevalue"></a>  
+
+<span data-ttu-id="4af80-217">Примитивное значение, которое не может быть строкифицировано JSON.</span><span class="sxs-lookup"><span data-stu-id="4af80-217">Primitive value which cannot be JSON-stringified.</span></span>  
+
+##### <a name="allowed-values"></a><span data-ttu-id="4af80-218">Допустимые значения</span><span class="sxs-lookup"><span data-stu-id="4af80-218">Allowed Values</span></span>  
+
+`Infinity`<span data-ttu-id="4af80-219">, `NaN`, `-Infinity`,</span><span class="sxs-lookup"><span data-stu-id="4af80-219">, `NaN`, `-Infinity`,</span></span> `-0`  
+
+---  
+
+### <a name="remoteobject-object"></a><span data-ttu-id="4af80-220">Объект RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-220">RemoteObject object</span></span>  
+
+<a name="remoteobject"></a>  
+
+<span data-ttu-id="4af80-221">Объект Mirror, отсылающий к исходному объекту JavaScript.</span><span class="sxs-lookup"><span data-stu-id="4af80-221">Mirror object referencing original JavaScript object.</span></span>  
+
+| <span data-ttu-id="4af80-222">Свойства</span><span class="sxs-lookup"><span data-stu-id="4af80-222">Properties</span></span> | <span data-ttu-id="4af80-223">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-223">Type</span></span> | <span data-ttu-id="4af80-224">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-224">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-225">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-225">type</span></span> | `string` | <span data-ttu-id="4af80-226">Тип объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-226">Object type.</span></span>  <span data-ttu-id="4af80-227">Допустимые значения:  `object` , , , , , `function` `undefined` `string` `number` `boolean` и</span><span class="sxs-lookup"><span data-stu-id="4af80-227">Allowed values:  `object`, `function`, `undefined`, `string`, `number`, `boolean`, and</span></span> `symbol` |  
+| <span data-ttu-id="4af80-228">подтип \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-228">subtype \(optional\)</span></span> | `string` | <span data-ttu-id="4af80-229">Подсказка подтипа объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-229">Object subtype hint.</span></span>  <span data-ttu-id="4af80-230">Только для `object` значений типа.</span><span class="sxs-lookup"><span data-stu-id="4af80-230">Specified for `object` type values only.</span></span>  <span data-ttu-id="4af80-231">Допустимые значения:  `null` `error` и</span><span class="sxs-lookup"><span data-stu-id="4af80-231">Allowed values:  `null`, `error`, and</span></span> `promise` |  
+| <span data-ttu-id="4af80-232">className \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-232">className \(optional\)</span></span> | `string` | <span data-ttu-id="4af80-233">Имя объекта класса \(конструктор\).</span><span class="sxs-lookup"><span data-stu-id="4af80-233">Object class \(constructor\) name.</span></span>  <span data-ttu-id="4af80-234">Только для `object` значений типа.</span><span class="sxs-lookup"><span data-stu-id="4af80-234">Specified for `object` type values only.</span></span> |  
+| <span data-ttu-id="4af80-235">значение \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-235">value \(optional\)</span></span> | `any` | <span data-ttu-id="4af80-236">Значение удаленного объекта в случае примитивных значений или значений JSON \(если оно было запророшно\).</span><span class="sxs-lookup"><span data-stu-id="4af80-236">Remote object value in case of primitive values or JSON values \(if it was requested\).</span></span> |  
+| <span data-ttu-id="4af80-237">unserializableValue \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-237">unserializableValue \(optional\)</span></span> | [<span data-ttu-id="4af80-238">UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="4af80-238">UnserializableValue</span></span>](#unserializablevalue) | <span data-ttu-id="4af80-239">Примитивное значение, которое не может быть JSON-stringified, не `value` имеет, но получает это свойство.</span><span class="sxs-lookup"><span data-stu-id="4af80-239">Primitive value which can not be JSON-stringified does not have `value`, but gets this property.</span></span> |  
+| <span data-ttu-id="4af80-240">описание \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-240">description \(optional\)</span></span> | `string` | <span data-ttu-id="4af80-241">Строковая репрезентация объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-241">String representation of the object.</span></span> |  
+| <span data-ttu-id="4af80-242">objectId \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-242">objectId \(optional\)</span></span> | [<span data-ttu-id="4af80-243">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="4af80-243">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="4af80-244">Уникальный идентификатор объекта \(для небытийных значений\).</span><span class="sxs-lookup"><span data-stu-id="4af80-244">Unique object identifier \(for non-primitive values\).</span></span> |  
+| <span data-ttu-id="4af80-245">msDebuggerPropertyId \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-245">msDebuggerPropertyId \(optional\)</span></span> | `string` | <span data-ttu-id="4af80-246">**Экспериментальные**.</span><span class="sxs-lookup"><span data-stu-id="4af80-246">**Experimental**.</span></span>  <span data-ttu-id="4af80-247">Microsoft. Связанный с этим объектом ID свойства отладки.</span><span class="sxs-lookup"><span data-stu-id="4af80-247">Microsoft:  The associated debugger property ID for this object.</span></span> |  
+
+---  
+
+### <a name="propertydescriptor-object"></a><span data-ttu-id="4af80-248">Объект PropertyDescriptor</span><span class="sxs-lookup"><span data-stu-id="4af80-248">PropertyDescriptor object</span></span>  
+
+<a name="propertydescriptor"></a>  
+
+<span data-ttu-id="4af80-249">Дескриптор свойства объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-249">Object property descriptor.</span></span>  
+
+| <span data-ttu-id="4af80-250">Свойства</span><span class="sxs-lookup"><span data-stu-id="4af80-250">Properties</span></span> | <span data-ttu-id="4af80-251">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-251">Type</span></span> | <span data-ttu-id="4af80-252">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-252">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-253">name</span><span class="sxs-lookup"><span data-stu-id="4af80-253">name</span></span> | `string` | <span data-ttu-id="4af80-254">Имя свойства или описание символа.</span><span class="sxs-lookup"><span data-stu-id="4af80-254">Property name or symbol description.</span></span> |  
+| <span data-ttu-id="4af80-255">значение \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-255">value \(optional\)</span></span> | [<span data-ttu-id="4af80-256">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-256">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="4af80-257">Значение, связанное с свойством.</span><span class="sxs-lookup"><span data-stu-id="4af80-257">The value associated with the property.</span></span> |  
+| <span data-ttu-id="4af80-258">writable \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-258">writable \(optional\)</span></span> | `boolean` | `True` <span data-ttu-id="4af80-259">если значение, связанное с свойством, может быть изменено \(только дескрипторы данных\).</span><span class="sxs-lookup"><span data-stu-id="4af80-259">if the value associated with the property may be changed \(data descriptors only\).</span></span> |  
+| <span data-ttu-id="4af80-260">получить \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-260">get \(optional\)</span></span> | [<span data-ttu-id="4af80-261">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-261">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="4af80-262">Функция, которая служит в качестве геттера для свойства, или если нет геттера `undefined` \(только дескрипторы аксессуара\).</span><span class="sxs-lookup"><span data-stu-id="4af80-262">A function which serves as a getter for the property, or `undefined` if there is no getter \(accessor descriptors only\).</span></span> |  
+| <span data-ttu-id="4af80-263">set \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-263">set \(optional\)</span></span> | [<span data-ttu-id="4af80-264">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-264">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="4af80-265">Функция, которая служит сеттером для свойства или если нет сеттера `undefined` \(только дескрипторы аксессуара\).</span><span class="sxs-lookup"><span data-stu-id="4af80-265">A function which serves as a setter for the property, or `undefined` if there is no setter \(accessor descriptors only\).</span></span> |  
+| <span data-ttu-id="4af80-266">настраиваемый</span><span class="sxs-lookup"><span data-stu-id="4af80-266">configurable</span></span> | `boolean` | `True` <span data-ttu-id="4af80-267">если тип этого дескриптора свойства может быть изменен и если свойство может быть удалено из соответствующего объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-267">if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</span></span> |  
+| <span data-ttu-id="4af80-268">переоменимый</span><span class="sxs-lookup"><span data-stu-id="4af80-268">enumerable</span></span> | `boolean` | `True` <span data-ttu-id="4af80-269">если это свойство появляется во время переопечатки свойств соответствующего объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-269">if this property shows up during enumeration of the properties on the corresponding object.</span></span> |  
+| <span data-ttu-id="4af80-270">wasThrown \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-270">wasThrown \(optional\)</span></span> | `boolean` | `True` <span data-ttu-id="4af80-271">если результат был брошен во время оценки.</span><span class="sxs-lookup"><span data-stu-id="4af80-271">if the result was thrown during the evaluation.</span></span> |  
+| <span data-ttu-id="4af80-272">isOwn \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-272">isOwn \(optional\)</span></span> | `boolean` | `True` <span data-ttu-id="4af80-273">если свойство принадлежит объекту.</span><span class="sxs-lookup"><span data-stu-id="4af80-273">if the property is owned for the object.</span></span> |  
+| <span data-ttu-id="4af80-274">msReturnValue \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-274">msReturnValue \(optional\)</span></span> | `boolean` | <span data-ttu-id="4af80-275">**Экспериментальные**.</span><span class="sxs-lookup"><span data-stu-id="4af80-275">**Experimental**.</span></span>  <span data-ttu-id="4af80-276">Майкрософт:  `True` если свойство является возвращаемой величиной.</span><span class="sxs-lookup"><span data-stu-id="4af80-276">Microsoft:  `True` if the property is a return value.</span></span> |  
+| <span data-ttu-id="4af80-277">символ \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-277">symbol \(optional\)</span></span> | [<span data-ttu-id="4af80-278">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-278">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="4af80-279">Объект символа свойства, если свойство имеет `symbol` тип.</span><span class="sxs-lookup"><span data-stu-id="4af80-279">Property symbol object, if the property is of the `symbol` type.</span></span> |  
+
+---  
+
+### <a name="callargument-object"></a><span data-ttu-id="4af80-280">Объект CallArgument</span><span class="sxs-lookup"><span data-stu-id="4af80-280">CallArgument object</span></span>  
+
+<a name="callargument"></a>  
+
+<span data-ttu-id="4af80-281">Представляет аргумент вызова функции.</span><span class="sxs-lookup"><span data-stu-id="4af80-281">Represents function call argument.</span></span>  <span data-ttu-id="4af80-282">Либо удаленный идентификационный объект, неопределимое примитивное значение, либо значение \(для неопределённого\) не `value` должно быть указано.</span><span class="sxs-lookup"><span data-stu-id="4af80-282">Either remote object ID `value`, unserializable primitive value or neither of \(for undefined\) them should be specified.</span></span>  
+
+| <span data-ttu-id="4af80-283">Свойства</span><span class="sxs-lookup"><span data-stu-id="4af80-283">Properties</span></span> | <span data-ttu-id="4af80-284">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-284">Type</span></span> | <span data-ttu-id="4af80-285">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-285">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-286">значение \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-286">value \(optional\)</span></span> | `any` | <span data-ttu-id="4af80-287">Примитивное значение или серийный объект javascript.</span><span class="sxs-lookup"><span data-stu-id="4af80-287">Primitive value or serializable javascript object.</span></span> |  
+| <span data-ttu-id="4af80-288">unserializableValue \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-288">unserializableValue \(optional\)</span></span> | [<span data-ttu-id="4af80-289">UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="4af80-289">UnserializableValue</span></span>](#unserializablevalue) | <span data-ttu-id="4af80-290">Примитивное значение, которое не может быть jSON-stringified.</span><span class="sxs-lookup"><span data-stu-id="4af80-290">Primitive value which can not be JSON-stringified.</span></span> |  
+| <span data-ttu-id="4af80-291">objectId \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-291">objectId \(optional\)</span></span> | [<span data-ttu-id="4af80-292">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="4af80-292">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="4af80-293">Удаленная ручка объекта.</span><span class="sxs-lookup"><span data-stu-id="4af80-293">Remote object handle.</span></span> |  
+
+---  
+
+### <a name="executioncontextid-integer"></a><span data-ttu-id="4af80-294">Integer executionContextId</span><span class="sxs-lookup"><span data-stu-id="4af80-294">ExecutionContextId integer</span></span>  
+
+<a name="executioncontextid"></a>  
+
+<span data-ttu-id="4af80-295">ID контекста выполнения.</span><span class="sxs-lookup"><span data-stu-id="4af80-295">ID of an execution context.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="exceptiondetails-object"></a><span data-ttu-id="4af80-296">Объект ExceptionDetails</span><span class="sxs-lookup"><span data-stu-id="4af80-296">ExceptionDetails object</span></span>  
+
+<a name="exceptiondetails"></a>  
+
+<span data-ttu-id="4af80-297">Подробные сведения об исключении \(или ошибке\), которое было выброшено во время компиляции или выполнения скрипта.</span><span class="sxs-lookup"><span data-stu-id="4af80-297">Detailed information about exception \(or error\) that was thrown during script compilation or execution.</span></span>  
+
+| <span data-ttu-id="4af80-298">Свойства</span><span class="sxs-lookup"><span data-stu-id="4af80-298">Properties</span></span> | <span data-ttu-id="4af80-299">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-299">Type</span></span> | <span data-ttu-id="4af80-300">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-300">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-301">exceptionId</span><span class="sxs-lookup"><span data-stu-id="4af80-301">exceptionId</span></span> | `integer` | <span data-ttu-id="4af80-302">ID исключения.</span><span class="sxs-lookup"><span data-stu-id="4af80-302">Exception ID.</span></span> |  
+| <span data-ttu-id="4af80-303">текст</span><span class="sxs-lookup"><span data-stu-id="4af80-303">text</span></span> | `string` | <span data-ttu-id="4af80-304">Текст исключения, который следует использовать вместе с объектом исключения при наличии.</span><span class="sxs-lookup"><span data-stu-id="4af80-304">Exception text, which should be used together with exception object when available.</span></span> |  
+| <span data-ttu-id="4af80-305">lineNumber</span><span class="sxs-lookup"><span data-stu-id="4af80-305">lineNumber</span></span> | `integer` | <span data-ttu-id="4af80-306">Номер строки расположения исключения \(0-based\).</span><span class="sxs-lookup"><span data-stu-id="4af80-306">Line number of the exception location \(0-based\).</span></span> |  
+| <span data-ttu-id="4af80-307">columnNumber</span><span class="sxs-lookup"><span data-stu-id="4af80-307">columnNumber</span></span> | `integer` | <span data-ttu-id="4af80-308">Номер столбца расположения исключения \(0-based\).</span><span class="sxs-lookup"><span data-stu-id="4af80-308">Column number of the exception location \(0-based\).</span></span> |  
+| <span data-ttu-id="4af80-309">scriptId \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-309">scriptId \(optional\)</span></span> | [<span data-ttu-id="4af80-310">ScriptId</span><span class="sxs-lookup"><span data-stu-id="4af80-310">ScriptId</span></span>](#scriptid) | <span data-ttu-id="4af80-311">ID сценария расположения исключений.</span><span class="sxs-lookup"><span data-stu-id="4af80-311">Script ID of the exception location.</span></span> |  
+| <span data-ttu-id="4af80-312">URL\(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-312">url \(optional\)</span></span> | `string` | <span data-ttu-id="4af80-313">URL-адрес расположения исключения, который будет использоваться, когда сценарий не был указан.</span><span class="sxs-lookup"><span data-stu-id="4af80-313">URL of the exception location, to be used when the script was not reported.</span></span> |  
+| <span data-ttu-id="4af80-314">stackTrace \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-314">stackTrace \(optional\)</span></span> | [<span data-ttu-id="4af80-315">StackTrace</span><span class="sxs-lookup"><span data-stu-id="4af80-315">StackTrace</span></span>](#stacktrace) | <span data-ttu-id="4af80-316">Трассировка стека JavaScript при наличии.</span><span class="sxs-lookup"><span data-stu-id="4af80-316">JavaScript stack trace if available.</span></span> |  
+| <span data-ttu-id="4af80-317">исключение \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-317">exception \(optional\)</span></span> | [<span data-ttu-id="4af80-318">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="4af80-318">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="4af80-319">Объект Исключения, если он доступен.</span><span class="sxs-lookup"><span data-stu-id="4af80-319">Exception object if available.</span></span> |  
+| <span data-ttu-id="4af80-320">executionContextId \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-320">executionContextId \(optional\)</span></span> | [<span data-ttu-id="4af80-321">ExecutionContextId</span><span class="sxs-lookup"><span data-stu-id="4af80-321">ExecutionContextId</span></span>](#executioncontextid) | <span data-ttu-id="4af80-322">Идентификатор контекста, в котором произошло исключение.</span><span class="sxs-lookup"><span data-stu-id="4af80-322">Identifier of the context where exception happened.</span></span> |  
+
+---  
+
+### <a name="timestamp-integer"></a><span data-ttu-id="4af80-323">Integer Timestamp</span><span class="sxs-lookup"><span data-stu-id="4af80-323">Timestamp integer</span></span>  
+
+<a name="timestamp"></a>  
+
+<span data-ttu-id="4af80-324">Количество миллисекунд с эпохи.</span><span class="sxs-lookup"><span data-stu-id="4af80-324">Number of milliseconds since epoch.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="callframe-object"></a><span data-ttu-id="4af80-325">Объект CallFrame</span><span class="sxs-lookup"><span data-stu-id="4af80-325">CallFrame object</span></span>  
+
+<a name="callframe"></a>  
+
+<span data-ttu-id="4af80-326">Стек записи для ошибок и утверждений во время работы.</span><span class="sxs-lookup"><span data-stu-id="4af80-326">Stack entry for runtime errors and assertions.</span></span>  
+
+| <span data-ttu-id="4af80-327">Свойства</span><span class="sxs-lookup"><span data-stu-id="4af80-327">Properties</span></span> | <span data-ttu-id="4af80-328">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-328">Type</span></span> | <span data-ttu-id="4af80-329">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-329">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-330">functionName</span><span class="sxs-lookup"><span data-stu-id="4af80-330">functionName</span></span> | `string` | <span data-ttu-id="4af80-331">Имя функции JavaScript.</span><span class="sxs-lookup"><span data-stu-id="4af80-331">JavaScript function name.</span></span> |  
+| <span data-ttu-id="4af80-332">scriptId</span><span class="sxs-lookup"><span data-stu-id="4af80-332">scriptId</span></span> | [<span data-ttu-id="4af80-333">ScriptId</span><span class="sxs-lookup"><span data-stu-id="4af80-333">ScriptId</span></span>](#scriptid) | <span data-ttu-id="4af80-334">ID скрипта JavaScript.</span><span class="sxs-lookup"><span data-stu-id="4af80-334">JavaScript script ID.</span></span> |  
+| <span data-ttu-id="4af80-335">url</span><span class="sxs-lookup"><span data-stu-id="4af80-335">url</span></span> | `string` | <span data-ttu-id="4af80-336">Имя сценария JavaScript или URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="4af80-336">JavaScript script name or url.</span></span> |  
+| <span data-ttu-id="4af80-337">lineNumber</span><span class="sxs-lookup"><span data-stu-id="4af80-337">lineNumber</span></span> | `integer` | <span data-ttu-id="4af80-338">Номер строки скрипта JavaScript \(0-based\).</span><span class="sxs-lookup"><span data-stu-id="4af80-338">JavaScript script line number \(0-based\).</span></span> |  
+| <span data-ttu-id="4af80-339">columnNumber</span><span class="sxs-lookup"><span data-stu-id="4af80-339">columnNumber</span></span> | `integer` | <span data-ttu-id="4af80-340">Номер столбца скрипта JavaScript \(0-based\).</span><span class="sxs-lookup"><span data-stu-id="4af80-340">JavaScript script column number \(0-based\).</span></span> |  
+
+---  
+
+### <a name="stacktrace-object"></a><span data-ttu-id="4af80-341">Объект StackTrace</span><span class="sxs-lookup"><span data-stu-id="4af80-341">StackTrace object</span></span>  
+
+<a name="stacktrace"></a>  
+
+<span data-ttu-id="4af80-342">Кадры вызовов для утверждений или сообщений об ошибках.</span><span class="sxs-lookup"><span data-stu-id="4af80-342">Call frames for assertions or error messages.</span></span>  
+
+| <span data-ttu-id="4af80-343">Свойства</span><span class="sxs-lookup"><span data-stu-id="4af80-343">Properties</span></span> | <span data-ttu-id="4af80-344">Тип</span><span class="sxs-lookup"><span data-stu-id="4af80-344">Type</span></span> | <span data-ttu-id="4af80-345">Сведения</span><span class="sxs-lookup"><span data-stu-id="4af80-345">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="4af80-346">описание \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-346">description \(optional\)</span></span> | `string` | <span data-ttu-id="4af80-347">Строковая метка этого следа стека.</span><span class="sxs-lookup"><span data-stu-id="4af80-347">String label of this stack trace.</span></span>  <span data-ttu-id="4af80-348">Для следов async это может быть имя функции, которая инициировала вызов async.</span><span class="sxs-lookup"><span data-stu-id="4af80-348">For async traces this may be a name of the function that initiated the async call.</span></span> |  
+| <span data-ttu-id="4af80-349">callFrames</span><span class="sxs-lookup"><span data-stu-id="4af80-349">callFrames</span></span> | [<span data-ttu-id="4af80-350">CallFrame[]</span><span class="sxs-lookup"><span data-stu-id="4af80-350">CallFrame[]</span></span>](#callframe) | <span data-ttu-id="4af80-351">Имя функции JavaScript.</span><span class="sxs-lookup"><span data-stu-id="4af80-351">JavaScript function name.</span></span> |  
+| <span data-ttu-id="4af80-352">родительский \(необязательный\)</span><span class="sxs-lookup"><span data-stu-id="4af80-352">parent \(optional\)</span></span> | [<span data-ttu-id="4af80-353">StackTrace</span><span class="sxs-lookup"><span data-stu-id="4af80-353">StackTrace</span></span>](#stacktrace) | <span data-ttu-id="4af80-354">Асинхронный след стека JavaScript, предшествующий этому стеку, если доступен.</span><span class="sxs-lookup"><span data-stu-id="4af80-354">Asynchronous JavaScript stack trace that preceded this stack, if available.</span></span> |  
+
+---  
