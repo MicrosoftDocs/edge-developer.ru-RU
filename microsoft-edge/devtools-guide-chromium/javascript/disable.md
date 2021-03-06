@@ -1,18 +1,18 @@
 ---
-description: Откройте меню команд и запустите команду "Отключить JavaScript".
+description: Откройте командное меню и запустите команду "Отключить JavaScript".
 title: Отключение JavaScript с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: f7aafee4b05f843319a4a744e6cba148d4642667
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 2067944fa17c332dd15ffb3ef97afe02d35685ed
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230672"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398562"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,39 +28,39 @@ ms.locfileid: "11230672"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Отключение JavaScript с помощью Microsoft Edge DevTools  
+# <a name="disable-javascript-with-microsoft-edge-devtools"></a>Отключение JavaScript с помощью Microsoft Edge DevTools  
 
-Выполните следующие действия, чтобы увидеть, как выглядит и работает веб-страница при отключаемом JavaScript.  
+Выполните следующие действия, чтобы отобразить внешний вид и поведение веб-страницы при отключении JavaScript.  
 
-1.  [Откройте Microsoft Edge DevTools.][DevToolsOpen]  
-1.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) или `Command` + `Shift` + `P` \(macOS\), чтобы открыть меню **команд.**  
+1.  [Откройте Microsoft Edge DevTools][DevToolsOpen].  
+1.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` или \(macOS\) для открытия **командного меню.**  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Меню команд" lightbox="../media/javascript-console-command.msft.png":::
        Меню **команд**  
     :::image-end:::  
     
-1.  Начните `javascript` вводить текст, **выберите "Отключить JavaScript",** а затем `Enter` выберите команду.  JavaScript теперь отключен.  
+1.  Начните `javascript` печатать, **выберите отключить JavaScript,** а затем выберите для запуска `Enter` команды.  JavaScript теперь отключен.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Выберите Отключить JavaScript в меню команд" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       Выберите **"Отключить JavaScript"** в меню **команд**  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Выберите отключение JavaScript в командном меню" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       Выберите **отключение JavaScript** в **командном меню**  
     :::image-end:::  
     
-    Желтый значок предупреждения рядом с **"Источники"** напоминает, что JavaScript отключен.  
+    Желтый значок предупреждения рядом с **Источниками** напоминает, что JavaScript отключен.  
     
     :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Значок предупреждения рядом с источниками" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        Значок предупреждения рядом с **источниками**  
     :::image-end:::  
     
-JavaScript остается отключенным на вкладке до тех пор, пока вы открыли DevTools.  
+JavaScript остается отключенным на вкладке до тех пор, пока у вас открыты DevTools.  
 
-Может потребоваться перезагрузить страницу, чтобы узнать, зависит ли страница от JavaScript во время загрузки.  
+Может потребоваться обновить страницу, чтобы просмотреть, зависит ли веб-страница от JavaScript во время загрузки.  
 
 Чтобы повторно включить JavaScript, выполните следующие действия.  
 
-*   Снова откройте **меню команд** и запустите `Enable JavaScript` команду.  
-*   Закроем DevTools.  
+*   Откройте **командное меню** снова и запустите `Enable JavaScript` команду.  
+*   Закрой DevTools.  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -70,7 +70,7 @@ JavaScript остается отключенным на вкладке до те
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

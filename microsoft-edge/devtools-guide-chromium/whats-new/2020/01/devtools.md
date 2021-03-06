@@ -1,18 +1,18 @@
 ---
-description: Трехмерное представление, интеграция Visual Studio с Microsoft EDGE и многое другое.
-title: Новые возможности DevTools (Microsoft Edge 81)
+description: 3D View, Visual Studio интеграция с Microsoft Edge и другие.
+title: Новые возможности в DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 3081ebb256a9ede637aaaddc3c3cdf7a70a201bb
-ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
+ms.openlocfilehash: a60be4d55d7f6152ed7ce7afd24049f0f5909a4b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015477"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398247"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,68 +28,68 @@ ms.locfileid: "11015477"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Новые возможности DevTools (Microsoft Edge 81)  
+# <a name="whats-new-in-devtools-microsoft-edge-81"></a>Что нового в DevTools (Microsoft Edge 81)  
 
-## Объявления из группы Microsoft Edge DevTools  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Объявления из команды Microsoft Edge DevTools  
 
-В следующих разделах представлен список извещений, которые вы могли не получить в Microsoft Edge DevTools Teams! Узнайте, как использовать новые функции в DevTools, расширения кода Visual Studio и многое другое.  Чтобы оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительной версии Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Twitter][EdgeDevToolsTwitterAccount].  
+В следующих разделах приводится список объявлений, которые вы, возможно, пропустили из команды Microsoft Edge DevTools.  Ознакомьтесь с объявлениями, чтобы попробовать новые возможности в расширениях Кода DevTools, Microsoft Visual Studio и других.  Чтобы оставаться в курсе всех последних и самых больших функций в средствах разработчика, скачайте каналы предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] и следуйте за нами [в Twitter.][EdgeDevToolsTwitterAccount]  
 
-### Улучшение специальных возможностей в DevTools  
+### <a name="accessibility-improvements-to-the-devtools"></a>Улучшения доступности для DevTools  
 
-Группа DevTools изменила 170 в Chromium для устранения проблем с высокой контрастностью цвета, клавиатуры и средства чтения с экрана в DevTools.  Каждый разработчик, создающий веб-сайт, должен иметь возможность использовать DevTools.  
+Команда DevTools внесла 170 изменений в Chromium для решения проблем контрастности цвета, клавиатуры и чтения с экрана в DevTools.  Каждый разработчик, строив веб,должен иметь возможность использовать DevTools.  
 
-:::image type="complex" source="../../images/2020/01/a11y-performance-tool.msft.gif" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/a11y-performance-tool.msft.gif":::
-   Средство " **производительность** " в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана  
+:::image type="complex" source="../../images/2020/01/a11y-performance-tool.msft.gif" alt-text="Средство Performance в DevTools с навигацией по клавиатуре и улучшениями чтения с экрана" lightbox="../../images/2020/01/a11y-performance-tool.msft.gif":::
+   Средство **Performance** в DevTools с навигацией по клавиатуре и улучшениями чтения с экрана  
 :::image-end:::  
 
-Сведения о том, как сделать веб-страницу доступной для всех пользователей?  Скачайте [расширения для][WebhintBrowserExtension] Microsoft Edge " [Специальные возможности][AccessibilityInsights] ", чтобы приступить к работе.  
+Хотите узнать, как сделать веб-страницу доступной для всех пользователей?  Скачайте [сведения о доступности][AccessibilityInsights] и [расширения веб-страниц][WebhintBrowserExtension] для Microsoft Edge, чтобы начать работу.  
 
-Если вы используете средства чтения с экрана или клавиатуру для навигации по DevTools, отправьте нам свой отзыв, выполнив [твит][PostTweetEdgeDevTools] в США или щелкнув значок [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) !  
+Если вы используете считыватели экрана или клавиатуру для навигации по DevTools, отправьте нам свои отзывы, направив на нас твиты или отправив значок [Отправка отзывов!](#getting-in-touch-with-microsoft-edge-devtools-team) [][PostTweetEdgeDevTools]  
 
-[#963183][CR963183] проблем с Chromium  
+Проблема Chromium [#963183][CR963183]  
 
-### Использование DevTools на других языках  
+### <a name="using-the-devtools-in-other-languages"></a>Использование DevTools на других языках  
 
-Многие разработчики используют другие инструменты разработчика, такие как StackOverflow и код Visual Studio, на родном языке, а не только на английском языке.  Мы рады объявить локализацию для DevTools, который теперь вы можете использовать на одном из 10 языков, кроме английского.  
+Многие разработчики используют другие средства разработчика, такие как StackOverflow и Visual Studio Code, на родном языке, а не только на английском языке.  Мы рады сообщить о локализации для DevTools, которые теперь можно использовать на одном из 10 языков, кроме английского:  
 
 :::row:::
    :::column span="":::
-      Китайский (упрощенное письмо) —  &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      Китайский \(Упрощенный\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      Китайский (традиционное письмо) —  &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      Китайский \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Французский — Fran&#231;AIS
+      Французский —&#231;ais
    :::column-end:::
    :::column span="":::
-      Немецкий — Deutsch
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Итальянский — Italiano
-   :::column-end:::
-   :::column span="":::
-      Японская  &#26085;&#26412;&#35486;
+      Немецкий - deutsch
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Корейский —  &#54620;&#44397;&#50612;
+      Итальянский - italiano
    :::column-end:::
    :::column span="":::
-      Португальский (portugu&#234;s)
+      Японский - &#26085;&#26412;&#35486;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Русский —  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+      Корейский - &#54620;&#44397;&#50612;
    :::column-end:::
    :::column span="":::
-      Испанская — ESPA&#241;OL
+      Португальский — portugu&#234;s
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Русский  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+   :::column-end:::
+   :::column span="":::
+      Испанский язык — espa&#241;ol
    :::column-end:::
 :::row-end:::
 
@@ -103,270 +103,270 @@ ms.locfileid: "11015477"
 | Russian – русский | Spanish - español |  
 -->  
 
-DevTools автоматически соответствует языку, который вы используете для Microsoft Edge in `edge://settings/languages` .  
+DevTools автоматически совпадают с языком, который используется для Microsoft `edge://settings/languages` Edge.  
 
-Если вы хотите, чтобы Microsoft Edge выоставался на одном языке, а DevTools на русском языке, нажмите кнопку `F1` DevTools, чтобы открыть вкладку [Параметры][Settings] и отключить **язык браузера**.  
+Если вы хотите, чтобы Microsoft Edge был на одном языке, а ваши devTools оставались на английском языке, выберите в DevTools, чтобы открыть параметры и отключить язык браузера `F1` **Match.** [][Settings]  
 
-:::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/localized-devtools.msft.png":::
+:::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="DevTools на немецком языке" lightbox="../../images/2020/01/localized-devtools.msft.png":::
    DevTools на немецком языке  
 :::image-end:::  
 
-Сообщения **консоли** не локализуются.  На языке, используемом для Microsoft EDGE, отображаются только строки, используемые в пользовательском интерфейсе DevTools.  
+**Сообщения** консоли не локализованы.  Только строки, используемые в пользовательском интерфейсе DevTools, отображаются на языке, используемом для Microsoft Edge.  
 
-Если вы хотите использовать DevTools на языке, отличном от того, на котором они доступны, [твит][PostTweetEdgeDevTools] в США или щелкните значок [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) .  
+Если вы хотите использовать DevTools на другом языке, чем [доступные,][PostTweetEdgeDevTools] отправьте нам сообщение в Twitter или выберите значок [Отправка отзывов.](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[#941561][CR941561] проблем с Chromium  
+Проблема Chromium [#941561][CR941561]  
 
-### Веб – подсказка с расширением Microsoft Edge  
+### <a name="webhint-microsoft-edge-extension"></a>webhint Microsoft Edge extension  
 
-Расширение веб-подсказки Microsoft EDGE позволяет легко находить и получать отзывы о специальных возможностях, совместимости с браузерами, безопасности, производительности и других средствах в DevTools.  Узнайте больше о [https://webhint.io][Webhint] .  
+Расширение Microsoft Edge позволяет легко сканировать веб-страницу и получать отзывы о доступности, совместимости браузера, безопасности, производительности и других данных в DevTools.  Дополнительные публикации [https://webhint.io][Webhint] в .  
 
-:::image type="complex" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
-   Вкладка **"Подсказка** " в DevTools, если установлено расширение браузера веб.  
+:::image type="complex" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="Средство Подсказки в DevTools при установке расширения веб-браузера" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
+   Средство **Подсказки** в DevTools при установке расширения веб-браузера  
 :::image-end:::  
 
-[Попробуйте расширение браузера веб для подсказки в Microsoft Edge][MicrosoftEdgeInsiderAddons].  После установки расширения откройте DevTools и перейдите на вкладку подсказки.  В этой статье запустите настраиваемое сканирование сайта.  Чтобы получить дополнительные сведения, [заwebhint.IO][WebhintBrowserExtension] в голову.  
+[Попробуйте расширение веб-браузера в Microsoft Edge][MicrosoftEdgeInsiderAddons].  После установки расширения откройте DevTools и выберите **средство Hints.**  Отсюда запустите настраиваемую проверку сайта.  [Переехав в webhint.io,][WebhintBrowserExtension] чтобы узнать больше.  
 
-### Трехмерное представление  
+### <a name="3d-view"></a>Трехмерное представление  
 
-С помощью **трехмерного представления** вы можете выполнять отладку своего веб-приложения, перемещаясь по [объектной модели документов \ (DOM)][MDNDocumentObjectModel] или контексту стека [z-индексов][MDNZIndex] .  
+Использование **3D-представления** для отлаживания веб-приложения путем навигации по объектной модели документа [\(DOM\)][MDNDocumentObjectModel] или контексту укладки [индекса z.][MDNZIndex]  
 
-:::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/3dview.msft.png":::
-   Трехмерное представление в DevTools  
+:::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="3D-представление в DevTools" lightbox="../../images/2020/01/3dview.msft.png":::
+   3D-представление в DevTools  
 :::image-end:::  
 
-Для доступа к трехмерному представлению нажмите клавишу `Ctrl`  +  `Shift`  +  `P` Ввод в **режиме 3D-представления** и выберите **Показать 3D-представление**.  
+Чтобы получить доступ к 3D-представлению, выберите `Ctrl`  +  `Shift`  +  `P` , введите **в 3D-представлении** и выберите **Показать 3D View**.  
 
-Мы работаем над ИНТЕРФЕЙСом и добавляем дополнительные функции в 3D-представление, поэтому отправьте нам свой [отзыв](#getting-in-touch-with-microsoft-edge-devtools-team).  
+Команда Microsoft Edge работает с командой Chromium в пользовательском интерфейсе и добавляет дополнительные функциональные возможности для 3D-представления, поэтому отправьте свои [отзывы.](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[#987787][CR987787] проблем с Chromium  
+Проблема Chromium [#987787][CR987787]  
 
-### Расширения кода Visual Studio  
+### <a name="visual-studio-code-extensions"></a>Visual Studio расширения кода  
 
-Кроме того, в команде DevTools были выпущены некоторые расширения для [кода Visual Studio][VisualStudioCode] , позволяющие использовать возможности DevTools прямо из текстового редактора. Ознакомьтесь с приведенными ниже расширениями.  
+Команда DevTools также выпустила некоторые расширения для [кода Visual Studio,][VisualStudioCode] которые могут использовать силу DevTools непосредственно из текстового редактора! Ознакомьтесь с расширениями ниже:  
 
-#### Элементы Microsoft Edge  
+#### <a name="elements-for-microsoft-edge"></a>Элементы для Microsoft Edge  
 
-Используйте инструмент "элементы" в коде Visual Studio, добавив [элементы для расширения кода Microsoft Edge \ (Chromium \)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio.  
+Используйте средство Elements из Visual Studio кода, добавив элементы для [Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio кода.  
 
-:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
-   Инструмент " **элементы** " в коде Visual Studio с использованием элементов для расширения Microsoft Edge  
+:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="Средство Elements в Visual Studio с помощью расширения Elements for Microsoft Edge" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
+   Средство **Elements** в Visual Studio с помощью расширения Elements for Microsoft Edge  
 :::image-end:::  
 
-Для получения дополнительных сведений изучите [элементы для расширения кода Microsoft Edge Visual Studio][VisualStudioCodeElementEdgeExtension].  
+Дополнительные сведения вы можете получить в [службе Elements for Microsoft Edge Visual Studio кода.][VisualStudioCodeElementEdgeExtension]  
 
-#### Отладчик для Microsoft Edge  
+#### <a name="debugger-for-microsoft-edge"></a>Отладка для Microsoft Edge  
 
-С помощью [отладчика для расширения кода Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio выполните отладку JavaScript, который выполняется в Microsoft EDGE, прямо из кода Visual Studio.  
+С [расширением кода Debugger для Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio отладка JavaScript, запущенная в Microsoft Edge непосредственно из Visual Studio Code.  
 
-:::image type="complex" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
-   Отладчик для расширения Microsoft EDGE в Visual Studio  
+:::image type="complex" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Отладка для расширения Microsoft Edge в Visual Studio коде" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
+   Отладка для расширения Microsoft Edge в Visual Studio коде  
 :::image-end:::  
 
-Дополнительные сведения [об отладке Microsoft Edge из кода Visual Studio можно найти в этой процедуре][VisualStudioCodeDebuggerEdgeExtension].  
+Дополнительные сведения о том, как отчудировать Microsoft Edge от [Visual Studio Code.][VisualStudioCodeDebuggerEdgeExtension]  
 
-#### webhint  
+#### <a name="webhint"></a>webhint  
 
-Расширение [кода Visual Studio, которое используется][VisualStudioMarketplaceWebhintExtension] `webhint` для усовершенствования веб-страницы во время их написания! Это расширение запускает и сообщает диагностику файлов рабочей области на основе `webhint` анализа.  
+Расширение [веб-Visual Studio][VisualStudioMarketplaceWebhintExtension] кода используется для улучшения `webhint` веб-страницы во время ее написания.  Это расширение запускает и сообщает диагностику в файлах рабочего пространства на основе `webhint` анализа.  
 
-:::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
-   Расширение кода Visual Studio «веб-подсказка» для анализа `.tsx` файла в коде Visual Studio  
+:::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Веб-Visual Studio кода, анализируя файл tsx в Visual Studio Code" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
+   Веб-Visual Studio кода, анализируя `.tsx` файл в Visual Studio Code  
 :::image-end:::  
 
-[Узнайте больше о расширении подсказки кода Visual Studio][WebhintVisualStudioCodeExtension].  
+[Узнайте больше о расширении веб-Visual Studio code.][WebhintVisualStudioCodeExtension]  
 
-### Интеграция с Visual Studio  
+### <a name="visual-studio-integration"></a>Visual Studio интеграции  
 
-В Visual Studio 2019 версии 16,2 или более поздней Используйте отладчик Visual Studio для отладки JavaScript, который выполняется в Microsoft Edge.  [Загрузите Visual Studio 2019][MicrosoftVisualStudioDownloads] , чтобы попробовать эту функцию!  
+В Visual Studio 2019 версии 16.2 или более поздней версии Visual Studio отладка JavaScript, запущенного в Microsoft Edge.  [Скачайте Visual Studio 2019,][MicrosoftVisualStudioDownloads] чтобы попробовать эту функцию!  
 
-:::image type="complex" source="../../images/2020/01/vs.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/vs.msft.png":::
-   Visual Studio с возможностью запуска веб-приложения в Microsoft Edge Канарские, dev или Beta  
+:::image type="complex" source="../../images/2020/01/vs.msft.png" alt-text="Visual Studio с возможностью запуска веб-приложения в Microsoft Edge Canary, Dev или Beta" lightbox="../../images/2020/01/vs.msft.png":::
+   Visual Studio с возможностью запуска веб-приложения в Microsoft Edge Canary, Dev или Beta  
 :::image-end:::  
 
-Дополнительные [сведения об отладке Microsoft Edge из Visual Studio][MicrosoftVisualStudio].  
+[Узнайте больше о отладке Microsoft Edge][MicrosoftVisualStudio]из Visual Studio.  
 
-### Сообщения консоли предотвращения отслеживания  
+### <a name="tracking-prevention-console-messages"></a>Отслеживание сообщений консоли предотвращения  
 
-Защита от слежения — это уникальная функция в Microsoft EDGE, которая защищает вас от отслеживания веб-сайтов, которые вы еще не посещаете.  Параметр предотвращения отслеживания по умолчанию — это режим балансировки, который блокирует средства отслеживания и известных злоумышленников, чтобы обеспечить баланс конфиденциальности и веб-совместимости.  Чтобы получить более подробную информацию о совместимости веб-страницы, если некоторые средства отслеживания заблокированы, мы также добавили предупреждающие сообщения на консоли, когда средство отслеживания заблокировано.  
+Отслеживание предотвращения — это уникальная функция в Microsoft Edge, которая защищает вас от отслеживания веб-сайтов, которые вы еще не посещали.  Параметр предотвращения отслеживания по умолчанию — это режим Balanced, который блокирует сторонние трекеры и известные вредоносные трекеры для обеспечения баланса конфиденциальности и совместимости с веб-сайтом.  Чтобы получить больше информации о совместимости веб-страницы при блокировке определенных трекеров, **** в консоль добавлялись предупреждающие сообщения, когда трекер заблокирован.  
 
-:::image type="complex" source="../../images/2020/01/tracking-prevention.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/tracking-prevention.msft.png":::
-   Сообщения на консоли, когда предотвращение отслеживания блокирует доступ к хранилищу для средства отслеживания  
+:::image type="complex" source="../../images/2020/01/tracking-prevention.msft.png" alt-text="Сообщения в консоли при отслеживании предотвращения блокирования доступа к хранилищам для трекера" lightbox="../../images/2020/01/tracking-prevention.msft.png":::
+   Сообщения в консоли при **отслеживании** предотвращения блокирования доступа к хранилищам для трекера  
 :::image-end:::  
 
-[Узнайте больше о предотвращении отслеживания и балансе между конфиденциальностью и веб-совместимостью][TrackingPrevention].  
+[Дополнительные данные о предотвращении отслеживания и балансе между конфиденциальностью и веб-совместимостью.][TrackingPrevention]  
 
-## Объявления из проекта Chromium  
+## <a name="announcements-from-the-chromium-project"></a>Объявления из проекта Chromium  
 
-В следующих разделах описаны дополнительные возможности, доступные в Microsoft Edge 81, которые были задействованы в проекте Open Source Chromium.  
+В следующих разделах представлены дополнительные функции, доступные в Microsoft Edge 81, которые были внесены в проект Chromium с открытым исходным кодом.  
 
-### Поддержка Moto G4 в режиме устройства  
+### <a name="moto-g4-support-in-device-mode"></a>Поддержка Moto G4 в режиме устройства  
 
-После [включения панели инструментов устройства][DeviceToolbar]имитируйте размеры окна просмотра Moto G4 в списке **устройств** .  
+После [включения панели инструментов устройства][DeviceToolbar]смоделировать размеры представления Moto G4 из списка **Устройств.**  
 
-:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/motog4.msft.png":::
-   Имитация окна просмотра Moto G4  
+:::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Моделирование представления Moto G4" lightbox="../../images/2020/01/motog4.msft.png":::
+   Моделирование представления Moto G4  
 :::image-end:::  
 
-Щелкните [Показать рамку устройства][DeviceFrame] , чтобы показать аппаратуру Moto G4 в окне просмотра.  
+Выберите [показать кадр устройства,][DeviceFrame] чтобы показать оборудование Moto G4 вокруг представления.  
 
-:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/motog4frame.msft.png":::
-   Аппаратное обеспечение Moto G4  
+:::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Отображение оборудования Moto G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
+   Отображение оборудования Moto G4  
 :::image-end:::  
 
-Дополнительные возможности:  
+Связанные функции:  
 
-*   Откройте [меню команд][CommandMenu] и выполните команду, `Capture screenshot` чтобы сделать снимок экрана просмотра, включающий оборудование Moto G4 (после включения команды **Показать рамку устройства**).  
-*   [Регулирование сети и ЦП][ThrottleNetworkAndCpu] для более точной имитации условий просмотра веб-страниц пользователя на мобильном устройстве.  
+*   Откройте [командное меню][CommandMenu] и запустите команду, чтобы сделать снимок экрана представления, включающее оборудование `Capture screenshot` Moto G4 (после включения **show Device Frame).**  
+*   [Перекрой сеть и ЦП,][ThrottleNetworkAndCpu] чтобы более точно имитировать условия просмотра веб-страниц мобильного пользователя.  
 
-[#924693][CR924693] проблем с Chromium  
+Проблема Chromium [#924693][CR924693]  
 
-### Обновления, связанные с файлами cookie  
+### <a name="cookie-related-updates"></a>Обновления, связанные с cookie  
 
-#### Заблокированные cookie-файлы в области "cookie"  
+#### <a name="blocked-cookies-in-the-cookies-pane"></a>Заблокированные файлы cookie в области cookie  
 
-В области "файлы cookie" на панели приложения теперь отображаются заблокированные файлы cookie с желтым фоном.  
+В области cookies на панели Приложения теперь отображаются заблокированные файлы cookie с желтым фоном.  
 
-:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/blockedcookies.msft.png":::
-   Заблокированные cookie-файлы в области "cookie" на панели приложения  
+:::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text="Заблокированные файлы cookie в области cookies панели Приложения" lightbox="../../images/2020/01/blockedcookies.msft.png":::
+   Заблокированные файлы cookie в области cookies панели Приложения  
 :::image-end:::  
 
-[#1030258][CR1030258] проблем с Chromium  <!-- inaccessible  -->  
+Проблема Chromium [#1030258][CR1030258]  <!-- inaccessible  -->  
 
-#### Приоритет cookie-файлов в области "cookie"  
+#### <a name="cookie-priority-in-the-cookie-pane"></a>Приоритет cookie в области Cookie  
 
-Таблицы cookie на панелях сеть и приложения теперь включают столбец **приоритета** .  
+Таблицы cookies в **** **средствах сети** и приложений теперь включают **столбец Priority.**  
 
 > [!CAUTION]
-> Chromiumные браузеры, такие как Microsoft EDGE, — это единственные браузеры, поддерживающие приоритет cookie-файлов.  
+> Браузеры на основе хрома, такие как Microsoft Edge, являются единственными браузерами, которые поддерживают приоритет cookie.  
 
-[#1026879][CR1026879] проблем с Chromium  
+Проблема Chromium [#1026879][CR1026879]  
 
-#### Изменение всех значений cookie-файлов  
+#### <a name="edit-all-cookie-values"></a>Изменение всех значений cookie  
 
-Все ячейки в таблицах cookie теперь доступны для редактирования, кроме ячеек в столбце **Размер** , так как этот столбец представляет размер файла cookie в байтах.  Просмотрите [поля][CookiesFields] , поясняющие каждый столбец.  
+Все ячейки в таблицах Cookie теперь можно изменить, за исключением ячеек в столбце **Размер,** так как этот столбец представляет размер сети cookie в bytes.  Для объяснения каждого столбца перейдите к [Полям][CookiesFields].  
 
-:::image type="complex" source="../../images/2020/01/editcookie.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/editcookie.msft.png":::
-   Изменение значения cookie-файла  
+:::image type="complex" source="../../images/2020/01/editcookie.msft.png" alt-text="Редактирование значения cookie" lightbox="../../images/2020/01/editcookie.msft.png":::
+   Редактирование значения cookie  
 :::image-end:::  
 
-#### Копирование как Node.js выбор для включения данных cookie  
+#### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a>Скопируйте Node.js, чтобы включить данные cookie  
 
-Щелкните правой кнопкой мыши по сетевому запросу и выберите команду **Копировать**  >  **копию как Node.js извлечь** , чтобы получить `fetch` выражение, включающее данные cookie.  
+Чтобы получить выражение, которое включает данные cookie, наведите курсор на сетевой запрос, откройте контекстное меню \(правой кнопкой мыши\) и выберите копию копии в качестве `fetch` ****  >  **Node.js.**  
 
-:::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/fetchcookies.msft.png":::
-   Копирование как Node.js выборка  
+:::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Скопируйте как Node.js извлечение" lightbox="../../images/2020/01/fetchcookies.msft.png":::
+   Скопируйте как Node.js извлечение  
 :::image-end:::  
 
-[#1029826][CR1029826] проблем с Chromium  
+Проблема Chromium [#1029826][CR1029826]  
 
-### Более точные значки манифеста веб-приложения  
+### <a name="more-accurate-web-app-manifest-icons"></a>Более точные значки манифеста веб-приложения  
 
-Ранее область манифеста на панели приложения отправляет свои собственные запросы для отображения значков манифеста веб-приложения.  DevTools теперь показывает тот же значок манифеста, который использует Microsoft Edge.  
+Ранее панель Манифеста в панели Приложений отправляла собственные запросы для отображения значков манифеста веб-приложений.  В DevTools теперь показан точно такой же значок манифеста, который использует Microsoft Edge.  
 
-:::image type="complex" source="../../images/2020/01/manifesticons.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/manifesticons.msft.png":::
-   Значки в области «манифест»  
+:::image type="complex" source="../../images/2020/01/manifesticons.msft.png" alt-text="Значки в области Манифест" lightbox="../../images/2020/01/manifesticons.msft.png":::
+   Значки в области Манифест  
 :::image-end:::  
 
-[#985402][CR985402] проблем с Chromium  
+Проблема Chromium [#985402][CR985402]  
 
-### Наведите указатель мыши на свойства содержимого CSS, чтобы увидеть неэкранированные значения  
+### <a name="hover-on-css-content-properties-to-display-unescaped-values"></a>Наведите курсор на свойства контента CSS для отображения неоконченных значений  
 
-Наведите указатель мыши на значение `content` свойства, чтобы увидеть неэкранированную версию значения.  
+Наведите курсор на значение свойства, чтобы `content` отобразить неоконченную версию значения.  
 
-Например, в этой статье вы узнаете [о том,][CSSContentDemo] что на `p::after` панели Стили отображается строка с escape-символами.  
+Например, в этой [демонстрации][CSSContentDemo] при проверке псевдоэлемента в области Стилей отображается сбежавая `p::after` строка: ****  
 
-:::image type="complex" source="../../images/2020/01/escapedstring.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/escapedstring.msft.png":::
-   Строка с escape-символом  
+:::image type="complex" source="../../images/2020/01/escapedstring.msft.png" alt-text="Сбежавая строка" lightbox="../../images/2020/01/escapedstring.msft.png":::
+   Сбежавая строка  
 :::image-end:::  
 
-При наведении указателя мыши на значение, которое `content` отображается в неэкранированном значении:  
+При наведении на значение отображается `content` неоконченная величина.  
 
-:::image type="complex" source="../../images/2020/01/unescapedstring.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/unescapedstring.msft.png":::
-   Неэкранированное значение  
+:::image type="complex" source="../../images/2020/01/unescapedstring.msft.png" alt-text="Неоконченные значения" lightbox="../../images/2020/01/unescapedstring.msft.png":::
+   Неоконченные значения  
 :::image-end:::  
 
-### Дополнительные сведения об ошибках на карте исходного кода на консоли  
+### <a name="more-detailed-source-map-errors-in-the-console"></a>Более подробные ошибки исходных карт в консоли  
 
-Теперь консоль содержит более подробные сведения о том, почему не удалось загрузить или проанализировать исходную карту.  Ранее она только что предоставила ошибку, не объясняющую, что пошло не так.  
+Консоль теперь содержит более подробные данные о том, почему не удалось загрузить или размыть исходные карты.  Ранее он просто предоставил ошибку, не объясняя, что пошло не так.  
 
-:::image type="complex" source="../../images/2020/01/sourcemap.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/sourcemap.msft.png":::
-   Ошибка при загрузке карты исходного кода на консоли  
+:::image type="complex" source="../../images/2020/01/sourcemap.msft.png" alt-text="Ошибка загрузки исходных карт в консоли" lightbox="../../images/2020/01/sourcemap.msft.png":::
+   Ошибка загрузки исходных карт в консоли  
 :::image-end:::  
 
-### Настройка отключения прокрутки за пределами файла  
+### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a>Параметр отключения прокрутки в конце файла  
 
-Откройте [Параметры][Settings] и выберите Отключить **Preferences**  >  **исходные**настройки.  >  **разрешите прокрутку за** пределами файла, чтобы отключить поведение пользовательского интерфейса по умолчанию, позволяющее прокручивать прокрутку за пределами файла на панели « **источники** ».  
+Откройте [параметры,][Settings] а **** затем отключите источники предпочтений, позволяющие прокручивать последний конец файла, чтобы отключить поведение пользовательского интерфейса по умолчанию, которое позволяет прокручиваться хорошо, минуя конец файла в панели  >  ****  >  **** **Источников.**  
 
-:::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/settings.msft.png":::
-   Отключение **разрешения на прокрутку за** пределами файла в параметрах  
+:::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Отключение Разрешить прокрутку последнего конца файла" lightbox="../../images/2020/01/settings.msft.png":::
+   **Отключение Разрешить прокрутку последнего конца файла в** параметрах  
 :::image-end:::  
 
-:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="Средство &quot;производительность&quot; в DevTools с улучшенной навигацией с помощью клавиатуры и средства чтения с экрана" lightbox="../../images/2020/01/scrollingsources.msft.png":::
-   Прокрутка за пределами файла теперь отключена на панели «источники»  
+:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="Прокрутка в конце файла теперь отключена в панели Источники" lightbox="../../images/2020/01/scrollingsources.msft.png":::
+   Прокрутка в конце файла теперь отключена в панели Источники  
 :::image-end:::  
 
-## Загрузка каналов предварительной версии Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Скачивание Microsoft Edge предварительных каналов  
 
-Если вы используете Windows или macOS, рассматривайте в качестве браузера по умолчанию использование [каналов предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] .  Каналы предварительного просмотра предоставляют доступ к последним функциям DevTools.  
+Если вы находитесь на Windows или macOS, рассмотрите возможность использования каналов [предварительного][MicrosoftEdgePreviewChannels] просмотра Microsoft Edge в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
-## Знакомство с Microsoft Edge DevTools Team  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Имитировать окно просмотра для мобильных устройств: Эмуляция мобильных устройств с помощью режима устройства в Microsoft Edge DevTools | Документы Microsoft"
-[DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "Показать рамку устройства — имитировать мобильные устройства с помощью режима устройства в Microsoft Edge DevTools | Документы Microsoft"
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
-[ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "Регулирование сети и ЦП — Эмуляция мобильных устройств с помощью режима устройства в Microsoft Edge DevTools | Документы Microsoft"
-[Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры: Настройка Microsoft Edge DevTools | Документы Microsoft"
-[MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio | Документы Microsoft"  
-[CookiesFields]: /microsoft-edge/devtools-guide-chromium/storage/cookies#fields "Поля — просмотр, изменение и удаление cookie-файлов в Microsoft Edge DevTools | Документы Microsoft"  
+[DeviceToolbar]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Имитация мобильного представления — имитация мобильных устройств с помощью режима устройства в Microsoft Edge DevTools | Документы Майкрософт"
+[DeviceFrame]: /microsoft-edge/devtools-guide-chromium/device-mode/index#show-device-frame "Показать кадр устройства — имитация мобильных устройств с помощью режима устройства в Microsoft Edge DevTools | Документы Майкрософт"
+[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Запуск команд с командным меню Microsoft Edge DevTools | Документы Майкрософт"  
+[ThrottleNetworkAndCpu]: /microsoft-edge/devtools-guide-chromium/device-mode/index#throttle-the-network-and-cpu "Throttle сети и ЦП - Имитация мобильных устройств с режимом устройства в Microsoft Edge DevTools | Документы Майкрософт"
+[Settings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры — настройка средств разработчика Microsoft Edge | Документация Майкрософт"
+[MicrosoftVisualStudio]: /microsoft-edge/visual-studio/index "Visual Studio | Документы Майкрософт"  
+[CookiesFields]: /microsoft-edge/devtools-guide-chromium/storage/cookies#fields "Поля — просмотр, редактирование и удаление файлов cookie с помощью Microsoft Edge DevTools | Документы Майкрософт"  
 
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Отладчик для расширения кода Microsoft Edge Visual Studio"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Элементы расширения кода Microsoft Edge Visual Studio"  
+[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Отладка для расширения Visual Studio Microsoft Edge"  
+[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Элементы для расширения кода Microsoft Edge Visual Studio microsoft Edge"  
 
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Каналы предварительной версии Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Каналы предварительного просмотра Microsoft Edge"  
 
-[VisualStudioCode]: https://aka.ms/vscode "Код Visual Studio"  
-[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Отладчик для Microsoft Edge-Visual Studio Marketplace"  
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Элементы для Microsoft Edge \ (Chromium \) — Visual Studio Marketplace"  
-[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code ""Подсказка" — Visual Studio Marketplace"
+[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Код"  
+[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Отладка для Microsoft Edge — Visual Studio Marketplace"  
+[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Элементы для Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
+[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint — Visual Studio Marketplace"
 
-[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Улучшение защиты от слежения в блоге Microsoft Edge"
+[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Улучшение предотвращения отслеживания в блоге Microsoft Edge"
 
-[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Надстройки Microsoft Edge для участников программы предварительной оценки"  
-[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Скачайте Visual Studio 2019 для Windows & Mac"  
+[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Надстройки инсайдеров Microsoft Edge"  
+[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Загрузка Visual Studio 2019 г. для Windows & Mac"  
 
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Публикация твита"  
 
-[CR924693]: https://crbug.com/924693 "Запрос функции: Добавление Moto G4 в список режимов устройства | Ошибки Chromium"  
-[CR1030258]: https://crbug.com/1030258 "CR 1030258 | Ошибки Chromium"  
-[CR1026879]: https://crbug.com/1026879 "На вкладке cookie на консоли разработки больше не отображается приоритет | Ошибки Chromium"  
-[CR1029826]: https://crbug.com/1029826 "Вкладка "сеть" — > щелкнуть правой кнопкой мыши, чтобы запрашивать > копирование > копирование в качестве выборке не копирует файлы cookie | Ошибки Chromium"  
-[CR985402]: https://crbug.com/985402 "строки ошибки значка манифеста веб-приложения — это запутанная | Ошибки Chromium"  
-[CR963183]: https://crbug.com/963183 "DevTools не соответствуют требованиям WCAG | Ошибки Chromium"  
-[CR941561]: https://crbug.com/941561 "Локализуемость DevTools | Ошибки Chromium"  
-[CR987787]: https://crbug.com/987787 "3D-представление DOM | Ошибки Chromium"  
+[CR924693]: https://crbug.com/924693 "Запрос на функции. Добавьте Moto G4 в список режимов устройств | Chromium Bugs"  
+[CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium Bugs"  
+[CR1026879]: https://crbug.com/1026879 "Вкладка Cookie в консоли разработчиков больше не показывает приоритета | Chromium Bugs"  
+[CR1029826]: https://crbug.com/1029826 "сетевой вкладка -> правильно выбрать для запроса -> -> копию, так как извлечение не копирует файлы cookie | Chromium Bugs"  
+[CR985402]: https://crbug.com/985402 "Строки ошибки манифеста веб-приложения сбивают с толку | Chromium Bugs"  
+[CR963183]: https://crbug.com/963183 "DevTools не соответствуют требованиям WCAG | Chromium Bugs"  
+[CR941561]: https://crbug.com/941561 "Локализуемость | Chromium Bugs"  
+[CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Bugs"  
 
-[CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Демонстрация для без последовательного содержимого CSS"  
+[CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Демонстрация для неоконченного контента CSS"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Новая ошибка — MicrosoftDocs/Edge-разработчик"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Новая проблема — MicrosoftDocs/edge-developer"  
 
-[TheWebWeWant]: https://aka.ms/webwewant "Требуемый веб-сайт"  
-[AccessibilityInsights]: https://aka.ms/a11yinsights "Аналитические сведения о специальных возможностях"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Объектная модель документов (DOM) | MDN"  
-[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-индекс | MDN"  
+[TheWebWeWant]: https://aka.ms/webwewant "Веб-сайт, который мы хотим"  
+[AccessibilityInsights]: https://aka.ms/a11yinsights "Сведения о доступности"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Объектная модель документа (DOM) | MDN"  
+[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools учетной записи Twitter"  
 
-[Webhint]: https://aka.ms/webhint "Подсказка"  
+[Webhint]: https://aka.ms/webhint "webhint"  
 
-[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Расширение браузеров веб – подсказок | Документация по подсказкам"  
-[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Расширение кода Visual Studio "Подсказка" | Документация по подсказкам"  
+[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Расширение браузера веб-| документация по веб-сайтам"  
+[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio расширение кода | документация по веб-сайтам"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/updates/2020/01/devtools/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/updates/2020/01/devtools/index) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

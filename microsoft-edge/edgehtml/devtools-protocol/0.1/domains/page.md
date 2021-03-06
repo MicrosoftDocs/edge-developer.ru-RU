@@ -1,85 +1,69 @@
 ---
-description: Справочник по протоколу DevTools версии 0.1 (EdgeHTML) для домена страницы. Действия и события, связанные с проверенной страницей, относятся к домену страницы.
-title: Домен страницы — протокол DevTools версии 0.1 (EdgeHTML)
+description: Ссылка на протокол DevTools Версии 0.1 (EdgeHTML) для домена Страницы. Действия и события, связанные с проверенной страницей, относятся к домену страницы.
+title: Домен страницы — Протокол DevTools Версии 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 55575e54b9125d7ff544c23c81da4b15d3b56fb1
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: b04b0685a6b465d40e999a2a48d370573a3058d8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235577"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399150"
 ---
-# Домен страницы — протокол DevTools версии 0.1 (EdgeHTML)  
+# <a name="page-domain---devtools-protocol-version-01-edgehtml"></a>Домен страницы — Протокол DevTools Версии 0.1 (EdgeHTML)  
 
-Действия и события, связанные с проверенной страницей, относятся к домену страницы.
+Действия и события, связанные с проверенной страницей, относятся к домену страницы.  
 
-| | |
-|-|-|
-| [**Методы**](#methods) | [включить,](#enable) [отключить,](#disable) [перейти](#navigate) |
-| [**Типы**](#types) | [FrameId](#frameid) |
-## Методы
+| Категория | Участники |  
+|:--- |:--- |  
+| [**Методы**](#methods) | [включить,](#enable) [отключить,](#disable) [перейти](#navigate) |  
+| [**Типы**](#types) | [FrameId](#frameid) |  
 
-### "Включить"
-Включает уведомления домена страницы.
+## <a name="methods"></a>Методы  
 
+### <a name="enable"></a>"Включить"  
 
----
+Включает уведомления домена страницы.  
 
-### "Отключить" 
-Отключает уведомления домена страницы.
+&nbsp;  
 
+---  
 
----
+### <a name="disable"></a>"Отключить"   
 
-### переход
-Переходит на текущую страницу по заданным URL-адресам.
+Отключение уведомлений домена страницы.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL-адрес для навигации по странице.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td><span><b>Экспериментальная. </b></span>ИД кадра, который будет перемещаться.</td>
-        </tr>
-    </tbody>
-</table>
+&nbsp;  
 
----
+---  
 
-## Типы
+### <a name="navigate"></a>переход  
 
-### <a name="frameid"></a> FrameId `string`
+Перемещает текущую страницу на данный URL-адрес.  
 
-Уникальный идентификатор кадра.
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| url | `string` | URL-адрес для навигации по странице. |  
 
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | **Экспериментальные**.  Frame ID, который будет перемещаться. |  
 
----
+---  
+
+## <a name="types"></a>Типы  
+
+### <a name="frameid-string"></a>Строка FrameId  
+
+<a name="frameid"></a>  
+
+Уникальный идентификатор кадра.  
+
+&nbsp;  
+
+---  

@@ -1,112 +1,111 @@
 ---
-ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
-description: В этом руководстве представлен обзор новых функций и API в EdgeHTML 16.
+description: В этом руководстве представлен обзор компонентов и стандартов разработчика, включенных в EdgeHTML 16.
 title: Новые функции и API в EdgeHTML 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, веб-разработка, html, css, javascript, разработчик
-ms.date: 11/19/2020
-ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 7697114546153555d947903eda6bf8477cca3516
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
+keywords: edge, web development, html, css, javascript, developer
+ms.openlocfilehash: e6ec2ec4a3152e9dfe73938784968fe3403d99cf
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235467"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399199"
 ---
-# Новые возможности EdgeHTML 16  
+# <a name="whats-new-in-edgehtml-16"></a>Новые возможности в EdgeHTML 16  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Вот список новых и обновленных функций, которые поставляются в веб-платформе [EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/17) в составе [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update) \(10/2017, сборка 16299\).  Изменения в конкретных сборках Windows Insider Preview см. в записях microsoft [Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) и [What's New in EdgeHTML.](../whats-new.md)  
+Вот список новых и обновленных функций, отправляемых на веб-платформе [EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/17) в рамках обновления Создатели падения [Windows 10](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update) \(10/2017, Сборка 16299\).  Изменения в определенных сборках предварительного просмотра предварительной версии Windows см. в [веб-сайте Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) и [What's New in EdgeHTML.](../whats-new.md)  
 
 Ниже приводится permalink для следующего списка изменений:  [https://aka.ms/devguide_edgehtml_16](./edgehtml-16.md) .  
 
-## Новые и обновленные функции  
+## <a name="new-and-updated-features"></a>Новые и обновленные функции  
 
-### Макет сетки CSS  
+### <a name="css-grid-layout"></a>Макет сетки CSS  
 
-Microsoft Edge теперь поддерживает реализацию макета [сетки CSS](https://www.w3.org/TR/css-grid-1)без префикса.  [Макет сетки](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) определяет двухмерную систему макета на основе сетки, которая обеспечивает более плавность макета, чем это возможно, при расположении с помощью с плавающей заместки или сценариев.  В примере ниже для создания структуры для базовой веб-страницы используется макет сетки CSS.  
+Microsoft Edge теперь поддерживает неоконченную реализацию [макета сетки CSS.](https://www.w3.org/TR/css-grid-1)  [Схема сетки](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) определяет двухмерную систему макета на основе сетки, которая обеспечивает больше плавности макета, чем это возможно, при расположении с помощью поплавков или скриптов.  В приведенной ниже примере используется схема сетки CSS для создания структуры базовой веб-страницы.  
 
-<iframe height='303' scrolling='no' title='Макет сетки CSS' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>См. макет <a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'> сетки CSS пера </a> от MSEdgeDev <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev) на <a href='https://codepen.io'> </a> CodePen.</iframe>  
+<iframe height='303' scrolling='no' title='Макет сетки CSS' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>См. макет <a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'> сетки Pen CSS </a> от MSEdgeDev <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev) на <a href='https://codepen.io'> CodePen </a> .</iframe>  
 
-### CSS object-fit and object-position  
+### <a name="css-object-fit-and-object-position"></a>Объектная и объектная позиция CSS  
 
-EdgeHTML 16 поддерживает свойства CSS [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit) и [`object-position`](https://developer.mozilla.org/docs/Web/CSS/object-position) .  Эти свойства контролируют положение и размер замененного содержимого в поле содержимого.  
+EdgeHTML 16 представляет поддержку свойств CSS [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit) и [`object-position`](https://developer.mozilla.org/docs/Web/CSS/object-position) .  Эти свойства контролируют положение и размер замененного контента в поле контента.  
 
-### Средства разработчика  
+### <a name="developer-tools"></a>Средства разработчика  
 
-В этом выпуске мы начали основные усилия по рефакторингу Microsoft Edge DevTools для повышения надежности и производительности, а также добавили ряд новых функций, которые вы можете начать использовать уже сегодня в сборках для программы [insider Для Windows.](https://insider.windows.com)  Подробнее об изменениях можно узнать в руководстве По разработке для [Microsoft Edge.](../whats-new.md)  
+В этом выпуске мы начали основные усилия по рефакторингу Microsoft Edge DevTools для повышения надежности и производительности, а также добавили кучу новых функций, которые можно начать использовать сегодня в сборках [Windows Insider.](https://insider.windows.com)  Дополнительные новости о том, что изменилось, ознакомьтесь с руководством Microsoft [Edge DevTools!](../whats-new.md)  
 
-### JavaScript  
+### <a name="javascript"></a>JavaScript  
 
-[EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/31) строится на оптимизации производительности JavaScript предыдущих выпусков, расширяя возможность ядра Chakra откладывать или повторно откладывать функции, использовать многоморфные кэши и оптимизировать функции с помощью `try` / `finally` блоков.  
+[EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/31) строится на оптимизации производительности Javascript предыдущих выпусков, расширяя возможности двигателя Chakra для отсрочки или повторного отодвигания функций, использования многоморфных кэшей и оптимизации функций с помощью `try` / `finally` блоков.  
 
-Кроме того, функции, которые были предварительно представлены в EdgeHTML 15, теперь стабильны и включены по умолчанию:  
+Кроме того, функции, которые впервые были предварительно предварительно представлены в EdgeHTML 15, теперь стабильны и включены по умолчанию:  
 
-#### Новые возможности  
+#### <a name="new-features"></a>Новые возможности  
 
 Включено по умолчанию  
 
-*   [WebAssembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP \([demo](https://webassembly.org/demo)\)  
-*   [Общая память и атомарные](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
+*   [WebAssembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP \([демонстрация](https://webassembly.org/demo)\)  
+*   [Общая память и атомы](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
-### API запроса оплаты  
+### <a name="payment-request-api"></a>API запроса оплаты  
 
-[API](../windows-integration/payment-request-api.md) запроса платежей — это открытый кросс браузерный стандарт, который позволяет браузерам действовать в качестве посредника между продавцами, потребителями и методами оплаты (например, кредитными картами),которые потребители хранили в облаке.  API в EdgeHTML 16 обновлен в соответствии с последней спецификацией [API](https://w3c.github.io/payment-request) запроса платежей W3C.  К ним относятся:  
+API [запроса](../windows-integration/payment-request-api.md) платежей — это открытый меж браузерный стандарт, который позволяет браузерам выступать в качестве посредника между продавцами, потребителями и методами оплаты \(например, кредитными картами\), которые потребители хранят в облаке.  API в EdgeHTML 16 был обновлен в соответствии с последней спецификацией API запроса [платежей](https://w3c.github.io/payment-request) W3C.  К ним относятся:  
 
 *   Поддержка `canMakePayment()` метода  
 *   Поддержка `requestId` свойства  
 *   Поддержка `id` свойства  
-*   Значение по умолчанию для параметра метода `complete()` `result` изменилось с " " на "unknown"  
+*   Значение по умолчанию для `complete()` параметра `result` метода изменено с "" на "неизвестный"  
 
-### Служебные сценарии  
+### <a name="service-workers"></a>Служебные сценарии  
 
-[Service Workers](https://www.w3.org/TR/service-workers-1) — это сценарии на основе событий, которые запускаются в фоновом режиме веб-страницы.  Сотрудники службы обеспечивают функции, которые ранее были доступны только в таких приложениях, как перехват и обработка запросов из сети, управление фоновой синхронизацией, локальное хранилище и push-уведомления.  Поддержка сотрудников службы еще находится на стадии разработки, но вы можете протестировать PWA в Microsoft Edge с помощью нашей экспериментальной поддержки рабочих служб, включив в нее функцию работы `about:flags` службы.  
+[Сотрудники служб](https://www.w3.org/TR/service-workers-1) — это сценарии, управляемые событиями, которые работают на фоне веб-страницы.  Сотрудники службы обеспечивают функции, ранее доступные только с помощью локальных приложений, таких как перехват и обработка запросов из сети, управление и обработка фоновой синхронизации, локальное хранилище и push-уведомления.  Поддержка для сотрудника службы по-прежнему находится в разработке, но вы можете проверить свою PWA в Microsoft Edge с помощью нашей экспериментальной поддержки сотрудника службы, включив функцию работника службы `about:flags` в .  
 
-### WebVR  
+### <a name="webvr"></a>WebVR  
 
-WebVR для Microsoft Edge добавлена поддержка [контроллеров движения.](https://developer.microsoft.com/windows/mixed-reality/motion_controllers)  Эти контроллеры имеют точное положение в пространстве, позволяя точно взаимодействовать с цифровыми объектами в виртуальной реальности.  
+WebVR для Microsoft Edge добавил поддержку [контроллеров движения.](https://developer.microsoft.com/windows/mixed-reality/motion_controllers)  Эти контроллеры имеют точное положение в пространстве, позволяя тонко взаимодействовать с цифровыми объектами в виртуальной реальности.  
 
 :::image type="complex" source="../media/MotionControllers.jpg" alt-text="Контроллеры движения" lightbox="../media/MotionControllers.jpg":::
    Контроллеры движения  
 :::image-end:::  
 
-WebVR также был оптимизирован для поддержки двух различных типов работы.  
+Веб-видеорегистратор также оптимизирован для поддержки двух различных типов работы.  
 
-**Компьютеры Windows Mixed Reality** — настольные компьютеры и ноутбуки со встроенной графикой.  При подключении к этим устройствам наши иммерсивные гарнитуры будут работать со частотой 60 кадров в секунду.  
-**Компьютеры Windows Mixed Reality—** настольные компьютеры и ноутбуки с дискретной графикой.  При подключении к этим устройствам наши иммерсивные гарнитуры будут работать со частотой 90 кадров в секунду.  
+**Компьютеры смешанной реальности** Windows — настольные компьютеры и ноутбуки с интегрированной графикой.  При подключении к этим устройствам наши иммерсивные гарнитуры будут работать со 60 кадрами в секунду.  
+**Windows Mixed Reality Ultra PCs** — настольные компьютеры и ноутбуки с дискретной графикой.  При подключении к этим устройствам наши иммерсивные гарнитуры будут работать со 90 кадрами в секунду.  
 
-Обе программы установки поддерживают одно и то же иммерсивное видео и игровое время.  
+Обе установки будут поддерживать один и тот же захватывающий видео и игровой опыт.  
 
-Дополнительные сведения о предстоящих обновлениях Windows Mixed Reality можно узнать в записи блога об обновлении праздников [Windows Mixed Reality.](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update)  
+Дополнительные сведения о предстоящих обновлениях смешанной реальности Windows вы можете узнать в блоге блога [обновления windows Mixed Reality.](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update)  
 
-Руководства и демонстрации можно найти в руководстве разработчика [WebVR.](/microsoft-edge/webvr)  
+Для руководств и демонстраций перенахлопайся в Руководство по разработчику [Веб-видеорегистратора.](/microsoft-edge/webvr)  
 
  > [!NOTE] 
  > Так как спецификация WebVR еще находится в разработке, реализация Microsoft Edge может измениться позже.  
 
-## Новые API в EdgeHTML 16  
+## <a name="new-apis-in-edgehtml-16"></a>Новые API в EdgeHTML 16  
 
-Ниже полный список новых API в EdgeHTML 16.  Они перечислены в формате `[interface name].[api name]` .
+Полный список новых API в EdgeHTML 16.  Они перечислены в формате `[interface name].[api name]` .
 
 > [!NOTE] 
-> Несмотря на то что в модели DOM есть следующие API, все еще возможно, что некоторые из них находятся в разработке.  Официальное слово о поддержке функций можно найти в статусе платформы [Microsoft Edge.](https://developer.microsoft.com/microsoft-edge/platform/status)  
+> Несмотря на то, что следующие API выставлены в DOM, поведение некоторых из них по-прежнему находится в разработке.  Обратитесь [к статусу платформы Microsoft Edge](https://developer.microsoft.com/microsoft-edge/platform/status) для официального слова о поддержке функций.  
 
 ---  
 
-<iframe height='559' scrolling='no' title='Новые API в EdgeHTML 16' src='//codepen.io/MSEdgeDev/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>См. API-код для новых перьев в <a href='https://codepen.io/MSEdgeDev/pen/jLGZZY/'> EdgeHTML 16 от </a> MSEdgeDev <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev) на <a href='https://codepen.io'> </a> CodePen.</iframe>  
+<iframe height='559' scrolling='no' title='Новые API в EdgeHTML 16' src='//codepen.io/MSEdgeDev/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>См. новые <a href='https://codepen.io/MSEdgeDev/pen/jLGZZY/'> API pen в EdgeHTML 16 </a> msEdgeDev <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev) на <a href='https://codepen.io'> CodePen </a> .</iframe>  
 
 ---  
 
-## Предыдущие выпуски EdgeHTML  
+## <a name="previous-edgehtml-releases"></a>Предыдущие выпуски EdgeHTML  
 
-[EdgeHTML 12 / Сборка Windows 10240 (7/2015)](./edgehtml-12.md)  
+[EdgeHTML 12 / Windows build 10240 (7/2015)](./edgehtml-12.md)  
 
-[EdgeHTML 13 / Сборка Windows 10586 (11/2015)](./edgehtml-13.md)  
+[EdgeHTML 13 / Windows build 10586 (11/2015)](./edgehtml-13.md)  
 
-[EdgeHTML 14 / Сборка Windows 14393 (8/2016)](./edgehtml-14.md)  
+[EdgeHTML 14 / Windows build 14393 (8/2016)](./edgehtml-14.md)  
 
 [EdgeHTML 15 / Сборка Windows 15063 (4/2017)](./edgehtml-15.md)  

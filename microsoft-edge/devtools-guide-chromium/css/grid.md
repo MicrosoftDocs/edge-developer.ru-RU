@@ -1,104 +1,104 @@
 ---
 description: Узнайте, как использовать Microsoft Edge DevTools для просмотра и изменения CSS страницы CSS.
-title: Проверка сетки CSS в Microsoft Edge DevTools
+title: Проверка CSS Grid в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 1fe6bd1c8efd244315fb9a38777df6ea3e9b1a4d
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 5e4b20690eac3a692f6428f391def102a4f78ecb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231099"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398772"
 ---
-# Проверка сетки CSS  
+# <a name="inspect-css-grid"></a>Проверка сетки CSS  
 
-В этой статье вы можете определить сетки CSS на веб-сайте и отладить проблемы макета сетки с помощью настраиваемых наложения сетки.  
+В этой статье вы можете определить сетки CSS на веб-сайте и отладить проблемы макета сетки с помощью настраиваемых накладок сетки.  
 
-Примеры, используемые на рисунках в этой статье, взяты с следующих веб-страниц.  
+Примеры, используемые в рисунках в этой статье, взяты из следующих веб-страниц.  
 
-*   [Поле "Вешка"][JecFyiDemoCssGridFruit]  
-*   [Поле "Неугомя"][JecFyiDemoCssGridSnack]  
+*   [Поле "Фрукты"][JecFyiDemoCssGridFruit]  
+*   [Снэк-ок][JecFyiDemoCssGridSnack]  
 
-## Перед началом работы  
+## <a name="before-you-begin"></a>Перед началом работы  
 
-Сетка CSS — это мощная парадигма макета для Интернета.  Отличное место для начала изучения сетки CSS и многих функций — это руководство по макету сетки [CSS][MdnCssGridLayout] на MDN.  
+CSS Grid — это мощная парадигма макета для Интернета.  Отличное место для начала изучения CSS Grid и многих функций — руководство по макету [сетки CSS][MdnCssGridLayout] на MDN.  
 
-## Обнаружение сеток CSS  
+## <a name="discover-css-grids"></a>Откройте для себя сетки CSS  
 
-Если htmL-элемент на странице имеет или применяется к ней, рядом с ней на панели элементов отображается индикатор `display: grid` `display: inline-grid` `grid` событий. [][DevtoolsGuideChromiumOpen]  
+Если элемент HTML на вашей странице имеет или применяется к ней, рядом с ней в панели Elements отображается `display: grid` `display: inline-grid` `grid` значок. [][DevtoolsGuideChromiumOpen]  
 
-:::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Обнаружение сетки" lightbox="../media/grid-discover-grid.msft.png":::
-   Обнаружение сетки  
+:::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Откройте сетку" lightbox="../media/grid-discover-grid.msft.png":::
+   Откройте сетку  
 :::image-end:::  
 
-Выберите индикатор событий, чтобы выровнять отображение наложения сетки на странице.  Наложение появляется над элементом и, как сетка, отображает положение линий сетки и дорожек:  
+Выберите значок, чтобы отобразить накладку сетки на странице.  Наложение появляется над элементом, выложенным как сетка, чтобы отобразить положение линий и треков сетки:  
 
-:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Индикатор событий сетки" lightbox="../media/grid-highlight-grid.msft.png":::
-   Индикатор событий сетки  
+:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Значок сетки toggle" lightbox="../media/grid-highlight-grid.msft.png":::
+   Значок сетки toggle  
 :::image-end:::  
 
-Откройте области **макета.**  Если сетки включены на страницу, в области макета содержится раздел **Grid,** содержащий несколько параметров для просмотра сеток. ****  
+Откройте области **макета.**  Когда сетки включены на странице, в области **Макета** содержится раздел **Grid,** содержащий несколько вариантов просмотра сетки.  
 
 :::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Области макета" lightbox="../media/grid-layout-pane.msft.png":::
    **Области** макета  
 :::image-end:::  
 
-Раздел **Grid** в области **макета** содержит следующие 2 под раздела.  
+Раздел **Grid** в области **Макет** содержит следующие 2 под раздела.  
 
 *   Параметры отображения наложения  
 *   Наложения сетки  
 
 <!--todo: @zoher verify the details for each of the sub-sections.  -->  
 
-## Параметры отображения наложения  
+## <a name="overlay-display-settings"></a>Параметры отображения наложения  
 
-Параметры **отображения наложения** состоят из следующих 2 частей.  
+Параметры **отображения overlay состоят** из следующих 2 частей.  
 
-*   Выберите один из следующих параметров из меню в выпадаемом меню.  
+*   Выберите один из следующих вариантов из меню отсев.  
     
-    | Вариант строки | Сведения |  
+    | Параметр Line | Сведения |  
     |:--- |:--- |  
-    | **Скрытие подписей строк** | Скрыть метки линий для каждого наложения сетки. |  
-    | **Показывать номера строк** | Отображение номеров линий для каждого наложения сетки \(выбрано по умолчанию\). |  
-    | **Показать имена строк** | Отображение имен линий для каждого наложения сетки при их выводе. |  
+    | **Скрыть метки строки** | Скрыть метки линий для каждой сетки наложения. |  
+    | **Показать номера строк** | Отображение номеров линий для каждой сетки наложения \(выбрано по умолчанию\). |  
+    | **Показать имена строк** | Отображение имен линий для каждой сетки при условии их наложения. |  
     
-*  Выберите этот контрольный параметр рядом со следующими вариантами.  
+*  Выберите контрольный ящик далее следующие параметры.  
     
     | Параметр | Сведения |  
     |:--- |:--- |  
-    | **Показать размеры дорожки**  | Отображение \(или скрытие\) размеров дорожек. |  
-    | **Показать имена области** | Отображение \(или скрытие\) имен области при их выводе. |  
-    | **Расширение линий сетки** | Отображает \(или скрывает\) расширения размеров сетки вдоль каждой оси.  По умолчанию линии сетки показаны внутри элемента только с установленным или `display: grid` `display: inline-grid` установленным значением CSS. |  
+    | **Показать размеры трека**  | Отображение \(или скрыть\) размеров треков. |  
+    | **Показать имена области** | Отображение \(или скрыть\) имен области, когда предоставляются имена. |  
+    | **Расширение линий сетки** | Отображает \(или скрывает\) расширения размеров сетки вдоль каждой оси.  По умолчанию строки сетки показаны только внутри элемента с набором `display: grid` `display: inline-grid` CSS или на нем. |  
     
-В следующих разделах представлены подробные сведения о каждом из параметров отображения **наложения.**  
+В следующих разделах представлены сведения для каждого из **параметров отображения overlay.**  
 
-### Показывать номера строк  
+### <a name="show-line-numbers"></a>Показать номера строк  
 
-По умолчанию положительные и отрицательные номера строк отображаются на наложение сетки.  
+По умолчанию на накладке сетки отображаются номера положительных и отрицательных строк.  
 
-Для получения дополнительных сведений о отрицательных числах в наложение сетки перейдите к расположению на основе [строки с помощью сетки CSS.][MdnLineBasedPlacementCssGrid]  
+Дополнительные сведения о отрицательных номерах в сетке наложения перейдите к размещению на основе [строки с CSS Grid][MdnLineBasedPlacementCssGrid].  
 
 :::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Отображение номеров строк" lightbox="../media/grid-show-line-numbers.msft.png":::
    Отображение номеров строк  
 :::image-end:::  
 
-### Скрытие подписей строк  
+### <a name="hide-line-labels"></a>Скрыть метки строки  
 
-Выберите **"Скрыть метки строки",** чтобы скрыть номера строк.  
+Выберите **метки hide line,** чтобы скрыть номера строк.  
 
-:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Скрытие подписей строк" lightbox="../media/grid-hide-line-labels.msft.png":::
-   Скрытие подписей строк  
+:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Скрыть метки строки" lightbox="../media/grid-hide-line-labels.msft.png":::
+   Скрыть метки строки  
 :::image-end:::  
 
-### Показать имена строк  
+### <a name="show-line-names"></a>Показать имена строк  
 
-Для получения дополнительных сведений об именах строк в наложение сетки перейдите к макету с [помощью именуемой сетки.][MdnLayoutUsingNamedGridLines]  
+Дополнительные сведения о именах строк в накладке сетки перейдите в [Макет с помощью именных линий сетки.][MdnLayoutUsingNamedGridLines]  
 
-Select **Show line names** to view the line names instead of numbers.  В примере 4 строки имеют имена: `left` , , , и `middle1` `middle2` `right` .  
+Выберите **имена строк Show,** чтобы просмотреть имена строк, а не числа.  В примере 4 строки имеют имена: `left` `middle1` , и `middle2` `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
@@ -106,83 +106,83 @@ Select **Show line names** to view the line names instead of numbers.  В при
    **Показать имена строк**  
 :::image-end:::  
 
-### Показать размеры дорожки  
+### <a name="show-track-sizes"></a>Показать размеры трека  
 
-В поле **"Показать размеры дорожки"** для просмотра размеров дорожки сетки.  
+Включить **контрольный ящик Размеров** трассы Show для просмотра размеров трассы сетки.  
 
-DevTools отображает `[authored size]` и `[computed size]` в каждой метке строки.  
+DevTools отображает `[authored size]` и `[computed size]` на каждой метке строки.  
 
 | Size | Сведения |  
 |:--- |:--- |  
-| **авторский размер** | Размер, определенный в таблице стилей \(пропущен, если не определен\). |  
-| **вычисляемая величина** | Фактический размер на экране. |  
+| **авторский размер** | Размер, определенный в таблице стилей \(опущен, если не определен\). |  
+| **вычислительный размер** | Фактический размер на экране. |  
 
-В демонстрации размеры `snack-box` столбцов определяются в `grid-template-columns:1fr 2fr;` CSS.  Поэтому метки строк столбцов отображают как авторские, так и вычисляемые размеры.  
+В демонстрации размеры `snack-box` столбцов определяются в `grid-template-columns:1fr 2fr;` CSS.  Поэтому метки строк столбцов отображают как авторские, так и вычислительные размеры.  
 
-| Размер отслеживания | Авторский размер | Вычисляемая величина |  
+| Размер дорожки | Авторский размер | Вычислительный размер |  
 |:--- |:--- |:--- |  
-| **1fr** &#x2022; **96.66px** | 1fr | 96,66px |  
-| **2fr** &#x2022; **193.32px** | 2fr | 193,32px |  
+| **1fr** &#x2022; **96.66px** | 1fr | 96.66px |  
+| **2fr** &#x2022; **193.32px** | 2fr | 193.32px |  
 
-Метки строк отображают только вычисленные размеры, так как в таблице стилей не определены размеры строк.  
+Метки строк отображают только вычисляемые размеры, так как в таблице стилей нет размеров строк.  
 
-| Размер отслеживания | Авторский размер | Вычисляемая величина |  
+| Размер дорожки | Авторский размер | Вычислительный размер |  
 |:--- |:--- |:--- |  
 | **80px** | &nbsp;| 80px |  
 | **80px** | &nbsp;| 80px |  
 
-:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Показать размеры дорожки" lightbox="../media/grid-show-track-sizes.msft.png":::
-   **Показать размеры дорожки**  
+:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Показать размеры трека" lightbox="../media/grid-show-track-sizes.msft.png":::
+   **Показать размеры трека**  
 :::image-end:::  
 
-### Показать имена области  
+### <a name="show-area-names"></a>Показать имена области  
 
-Чтобы просмотреть имена области, в убедитесь, что в списке **должны быть имена** области.  В этом примере сетка имеет 3 области: **верхняя,** **нижняя1** и **нижняя 2.**  
+Чтобы просмотреть имена области, вкажите почтовый ящик **Имена области** Показать.  В примере в сетке 3 области: **верхняя,** **нижняя и** **нижняя 2.**  
 
 :::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Показать имена области" lightbox="../media/grid-show-area-names.msft.png":::
    **Показать имена области**  
 :::image-end:::  
 
-### Расширение линий сетки  
+### <a name="extend-grid-lines"></a>Расширение линий сетки  
 
-В поле **"Расширить линии сетки",** чтобы линии сетки были расширены до края точки просмотра вдоль каждой оси.  
+**Вдайте контрольный** ящик Extend grid lines для расширения линий сетки до края представления на каждой оси.  
 
 :::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Расширение линий сетки" lightbox="../media/grid-extend-grid-lines.msft.png":::
    **Расширение линий сетки**  
 :::image-end:::  
 
-## Наложения сетки  
+## <a name="grid-overlays"></a>Наложения сетки  
 
-Раздел **"Наложения сетки"** содержит список сеток, присутствующих на странице, каждый из которых с помощью контрольного списка, а также различные параметры.  
+Раздел **Grid overlays** содержит список сетки, которые присутствуют на странице, каждая из которых имеет почтовый ящик, а также различные параметры.  
 
-### Включить представления наложения для нескольких сеток  
+### <a name="enable-overlay-views-of-multiple-grids"></a>Включить представления наложения нескольких сеток  
 
-Чтобы отобразить сетку наложения для нескольких сеток, выберите его рядом с каждым именем сетки.  В этом примере включены 2 наложения сетки, каждая из которых представлена разными цветами.  
+Чтобы отобразить сетку наложения для нескольких сеток, выберите контрольный ящик рядом с каждым именем сетки.  В примере включено 2 сетки, каждая из которых представлена разными цветами.  
 
 *   `main`  
 *   `div.snack-box`  
     
-:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Включить представления наложения для нескольких сеток" lightbox="../media/grid-grid-overlays.msft.png":::
-   Включить представления наложения для нескольких сеток  
+:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Включить представления наложения нескольких сеток" lightbox="../media/grid-grid-overlays.msft.png":::
+   Включить представления наложения нескольких сеток  
 :::image-end:::  
 
-### Настройка цвета наложения сетки  
+### <a name="customize-the-grid-overlay-color"></a>Настройка цвета наложения сетки  
 
-Чтобы открыть палитру и настроить цвет наложения сетки, выберите поле рядом с именем наложения сетки.  
+Чтобы открыть выбор цвета и настроить цвет наложения сетки, выберите поле рядом с именем наложения сетки.  
 
 :::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Настройка цвета наложения сетки" lightbox="../media/grid-grid-overlays-color.msft.png":::
    Настройка цвета наложения сетки  
 :::image-end:::  
 
-### Выделение сетки  
+### <a name="highlight-the-grid"></a>Выделение сетки  
 
-Чтобы выделить HTML-элемент **** на панели "Элементы" и прокрутить его на веб-странице, выберите элемент **Show** на панели элементов \( Элемент Show в значке панели элементов ![ ][ImageShowElementInElementsPanelIcon] \)  
+Чтобы выделить элемент HTML в средстве **Elements** и прокрутите его на веб-странице, выберите элемент Show в панели **Elements** \( Элемент Show в значке панели ![ Elements ][ImageShowElementInElementsPanelIcon] \) .  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Выделение сетки" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Выделение сетки  
 :::image-end:::  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -198,8 +198,8 @@ DevTools отображает `[authored size]` и `[computed size]` в кажд
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Сетка CSS | jec.fyi"  
 
 [MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "Макет сетки CSS | MDN"  
-[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Макет с использованием именуемой сетки | MDN"  
-[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Размещение на основе строк с помощью сетки CSS | MDN"  
+[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Макет с использованием именных линий сетки | MDN"  
+[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Размещение на основе строки с CSS Grid | MDN"  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  

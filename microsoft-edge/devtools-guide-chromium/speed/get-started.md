@@ -1,18 +1,18 @@
 ---
-description: Узнайте, как использовать Microsoft Edge DevTools для поиска возможностей, позволяющих быстрее загружать веб-сайты.
+description: Узнайте, как использовать Microsoft Edge DevTools для поиска способов ускорения загрузки веб-сайтов.
 title: Оптимизация скорости веб-сайта с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: af655941fdc836759651e8d8202e41d8d03331c5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 7de97ab27528e89e2373e0a0d1002e8c86e37613
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125491"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398114"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,213 +28,213 @@ ms.locfileid: "11125491"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Оптимизация скорости веб-сайта с помощью Microsoft Edge DevTools  
+# <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>Оптимизация скорости веб-сайта с помощью Microsoft Edge DevTools  
 
-## Цель учебника  
+## <a name="goal-of-tutorial"></a>Цель учебника  
 
-В этом учебнике объясняется, как использовать Microsoft Edge DevTools, чтобы найти способы быстрой загрузки веб-сайтов.  
+В этом руководстве рассказывается о том, как использовать Microsoft Edge DevTools для поиска способов ускорения загрузки веб-сайтов.  
 
-## Предварительные условия  
+## <a name="prerequisites"></a>Предварительные условия  
 
-*   У вас должен быть базовый интерфейс разработки веб-приложений, аналогично тому, что научились в этом [Знакомство с классом веб-разработки][CourseraIntroductionWebDevelopmentClass].  
-*   Вам ничего не нужно знать о быстродействии нагрузки.  В этом учебнике вы узнаете об этом.  
+*   Вы должны иметь базовый опыт веб-разработки, аналогичный тому, что преподается в этом классе ["Введение в веб-разработку".][CourseraIntroductionWebDevelopmentClass]  
+*   Вам не нужно ничего знать о производительности нагрузки.  Об этом вы узнаете в этом руководстве.  
 
-## Введение  
+## <a name="introduction"></a>Введение  
 
-Это Илья.  Илья чрезвычайно знаменита в отношении Cat общества.  Он создал веб-сайт, чтобы его вентиляторы могли узнать о своем любимом продуктов.  Его вентиляторы понравятся на сайте, но в Илья сохраняются жалобы, которые медленно загружаются на сайт.  Илья предложит вам помочь ему ускорить работу сайта.  
+Это Тони.  Тони очень известен в кошачьем обществе.  Он создал веб-сайт, чтобы его поклонники могли узнать о его любимых продуктах.  Его поклонники любят сайт, но Тони продолжает слышать жалобы, что сайт загружается медленно.  Тони попросил вас помочь ему ускорить сайт.  
 
-:::image type="complex" source="../media/speed-tony.msft.png" alt-text="Илья CAT" lightbox="../media/speed-tony.msft.png":::
-   Илья CAT  
+:::image type="complex" source="../media/speed-tony.msft.png" alt-text="Tony the cat" lightbox="../media/speed-tony.msft.png":::
+   Tony the cat  
 :::image-end:::  
 
-## Действие 1: аудит сайта  
+## <a name="step-1-audit-the-site"></a>Шаг 1. Аудит сайта  
 
-Всякий раз, когда вы захотите улучшить производительность загрузки сайта, **всегда начинайте с аудита**.  
-Аудитория имеет 2 важные функции.  
+Всякий раз, когда вы затеяли повышение производительности загрузки сайта, **всегда начните с аудита.**  
+Аудит имеет 2 важных функции:  
 
-*   Она создает **базовый план** для измерения последующих изменений.  
-*   Здесь вы найдете **Советы** , которые помогут вам изменить наиболее благоприятные изменения.  
+*   Он создает **базовый уровень** для измерения последующих изменений.  
+*   Это дает вам **полезные советы** о том, какие изменения оказывают наибольшее влияние.  
     
-### Настройка  
+### <a name="set-up"></a>Настройка  
 
-Сначала необходимо настроить сайт, чтобы вы могли вносить в него изменения позже.  
+Сначала необходимо настроить сайт, чтобы можно было внести изменения в него позже.  
 
-1.  [Откройте исходный код для сайта](https://glitch.com/edit/#!/tony).  Эта вкладка называется **вкладкой "редактор"**.  
+1.  [Откройте исходный код сайта](https://glitch.com/edit/#!/tony).  Эта вкладка называется вкладка **редактора**.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-server-js.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-server-js.msft.png":::
-       **Вкладка "редактор"**  
+    :::image type="complex" source="../media/speed-glitch-tony-server-js.msft.png" alt-text="Вкладка редактора" lightbox="../media/speed-glitch-tony-server-js.msft.png":::
+       Вкладка **редактора**  
     :::image-end:::  
     
-1.  Выберите **Илья**.  Откроется меню.  
+1.  Выберите **Тони**.  Появляется меню.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-server-js-remix-project.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-server-js-remix-project.msft.png":::
-       Меню, которое появляется после нажатия кнопки **Илья**  
+    :::image type="complex" source="../media/speed-glitch-tony-server-js-remix-project.msft.png" alt-text="Меню, которое появляется после выбора Тони" lightbox="../media/speed-glitch-tony-server-js-remix-project.msft.png":::
+       Меню, которое появляется после выбора **Тони**  
     :::image-end:::  
     
-1.  Выберите **Remix проект**.  Имя проекта меняется с **Илья** на случайное сгенерированное имя.  Теперь у вас есть Редактируемая копия кода.  Позже вы можете внести изменения в этот код.  
-1.  Нажмите кнопку **Показать** и выберите **в новом окне**.  Демонстрационный ролик откроется на новой вкладке.  Эта вкладка упоминается как **вкладка Demo**.  Загрузка сайта может занять некоторое время.  
+1.  Выберите **Проект Remix**.  Имя проекта изменяется с **тони** на какое-то случайным образом созданным именем.  Теперь у вас есть собственная редактируемая копия кода.  Позже вы можете внести изменения в этот код.  
+1.  Выберите **Показать** и **выбрать в новом окне**.  Демонстрация открывается на новой вкладке.  Эта вкладка называется вкладка **демо.**  Загрузка сайта может занять некоторое время.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
-       Вкладка "демонстрация"  
+    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Вкладка демонстрации" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
+       Вкладка демонстрации  
     :::image-end:::  
     
-1.  Выберите `Control` + `Shift` + `J` \ (Windows, Linux \) или `Command` + `Option` + `J` \ (macOS \).  Рядом с демоном DevTools откроется Microsoft Edge.  
+1.  Выберите `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` или \(macOS\).  Microsoft Edge DevTools открывается рядом с демонстрацией.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
-       DevTools и демонстрация  
+    :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools и демо" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
+       DevTools и демо  
     :::image-end:::  
     
-Для остальных снимков экрана в этом учебнике DevTools отображается в отдельном окне.  Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть меню команд, введите его `Undock` и выберите команду **открепить в отдельном окне**.  
+Для остальных скриншотов в этом руководстве DevTools отображается в отдельном окне.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) или `Command` + `Shift` + `P` \(macOS\) `Undock` **** для открытия командного меню, ввода и выбора Undock в отдельное окно.  
 
-:::image type="complex" source="../media/speed-console.msft.png" alt-text="Илья CAT" lightbox="../media/speed-console.msft.png":::
-   Незакрепленные DevTools  
+:::image type="complex" source="../media/speed-console.msft.png" alt-text="Неохватанные DevTools" lightbox="../media/speed-console.msft.png":::
+   Неохватанные DevTools  
 :::image-end:::  
 
-### Создание базового плана  
+### <a name="establish-a-baseline"></a>Создание базового плана  
 
-Базовый план — это запись того, как выполняется сайт, прежде чем вы внесли улучшения производительности.  
+Базовая запись о том, как сайт выполнялся, прежде чем вы сделали какие-либо улучшения производительности.  
 
-1.  Перейдите на вкладку **Аудит** .  Она может быть скрыта за кнопкой " **Дополнительные панели** " \ "дополнительные панели ![ ][ImageMorePanelsIcon] \".  На этой панели есть Lighthouse, так как проект, который включает панель «аудиты», называется **Lighthouse**.  
+1.  Выберите средство **аудита.**  Она может быть скрыта за кнопкой **More Panels** ![ \( More Panels ][ImageMorePanelsIcon] \) .  На этой панели есть маяк, так как проект, который имеет полномочия панели аудитов, называется **Маяк.**  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
-    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="Илья CAT" lightbox="../media/speed-audits-performance.msft.png":::
-       Панель « **Аудит** »  
+    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="Средство аудита" lightbox="../media/speed-audits-performance.msft.png":::
+       Средство **аудита**  
     :::image-end:::  
     
     <!--todo: add link to Lighthouse when section is available  -->  
     <!-- /web/tools/lighthouse  -->  
     
-1.  Соответствие параметров конфигурации аудита с параметрами, приведенными на предыдущем рисунке.  Ниже приведено описание различных параметров.  
+1.  Параметры конфигурации аудита совпадают с настройками предыдущего рисунка.  Вот объяснение различных вариантов:  
     
-    *   **Устройства**.  При настройке на **мобильном устройстве** изменяется строка агента пользователя и имитируется мобильное окно просмотра.  Настройка для **настольного компьютера** очень просто отключает изменения на **мобильном устройстве** .  
-    *   **Аудита**.  Отключение категории не позволяет панели аудита выполнять эти проверки и исключает из отчета эти проверки.  Если вы хотите просмотреть предоставленные типы рекомендаций, оставьте другие доступные категории.  Отключение категорий немного ускоряет процесс аудита.  
-    *   **Регулирование**.  Для **эмуляции медленного 4G, скорость процессора 4X** эмулирует типичные условия обзора на мобильном устройстве.  Она называется смоделированной, так как панель "Аудит" не выполняет никаких действий по регулированию в процессе аудита.  Вместо этого оно просто экстраполяция того, сколько времени займет загрузка страницы в условиях мобильных устройств.  Параметр " **применено...** ", в свою очередь, в действительности регулирует производительность процессора и сети с компромиссом более продолжительного процесса аудита.  
-    *   **Очистите хранилище**.  При установке этого флажка все хранилище, связанное со страницей, будет очищено перед каждым аудитом.  Оставьте этот параметр, если вы хотите подвергать аудиту, как посетители в первый раз будут работать на вашем сайте.  Отключите этот параметр, если вы хотите использовать функцию повторного посещения.  
+    *   **Устройство**.  Set to **Mobile** изменяет строку агента пользователя и имитирует мобильный видпорт.  Установите для **настольного** компьютера в значительной степени просто отключит **мобильные** изменения.  
+    *   **Аудиты**.  Отключите категорию, чтобы группа **аудитов** не проводила эти аудиты, и исключите эти аудиты из отчета.  Оставьте остальные категории включенными, если вы хотите отобразить типы предоставляемых рекомендаций.  Отключите категории, чтобы немного ускорить процесс аудита.  
+    *   **Регулирование.**  **Задаваемых для имитации медленного 4G, 4x замедление** ЦП имитирует типичные условия просмотра на мобильном устройстве.  Она называется "смоделированная", так как панель аудита фактически не работает в процессе аудита.  Вместо этого он просто экстраполирует время загрузки страницы в условиях мобильной связи.  Параметр **Applied...,** с другой стороны, фактически обрабатывает ЦП и сеть с помощью более длительного процесса аудита.  
+    *   **Clear Storage**.  Включив почтовый ящик, чтобы очистить все хранилища, связанные со страницей перед каждым аудитом.  Оставьте этот параметр, если вы хотите проверять, как посетители впервые испытывают ваш сайт.  Отключите этот параметр, если вы хотите повторить посещение.  
     
-1.  Выберите команду **запустить аудиты**.  После 10 – 30 секунд на панели «аудиты» отображается отчет о быстродействии сайта.  
+1.  Выберите **выполнить аудиты.**  Через 10-30 секунд панель **Аудита** отображает отчет о производительности сайта.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png":::
-       Отчет для панели «аудит» для производительности сайта  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png" alt-text="Отчет для панели аудитов производительности сайта" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png":::
+       Отчет для панели аудитов производительности сайта  
     :::image-end:::  
     
-#### Обработка ошибок отчета  
+#### <a name="handling-report-errors"></a>Обработка ошибок отчета  
 
-Если вы когда-либо получаете сообщение об ошибке в отчете на панели аудиты, попробуйте запустить вкладку Demo из окна **InPrivate** без открытия других вкладок.  Это гарантирует, что вы используете Microsoft Edge из чистого состояния.  Определенные расширения Microsoft Edge часто мешают процессу аудита.  
+Если вы когда-либо получили ошибку в отчете панели аудитов, попробуйте запускать вкладку демонстрации из окна **InPrivate** без открытия других вкладок.  Это гарантирует, что вы работаете Microsoft Edge из чистого состояния.  Расширение Microsoft Edge, в частности, часто вмешивается в процесс аудита.  
 
 <!--todo: add screen capture for error in audit -->  
 <!--
-:::image type="complex" source="../media/speed-.msft.png" alt-text="Илья CAT" lightbox="../media/speed-.msft.png":::
+:::image type="complex" source="../media/speed-.msft.png" alt-text="A report that errored" lightbox="../media/speed-.msft.png":::
    A report that errored  
 :::image-end:::  
 -->  
 
-### Понимание отчета  
+### <a name="understand-your-report"></a>Понимание отчета  
 
-Число в верхней части отчета является общим показателем эффективности сайта.  После внесения изменений в код вы должны увидеть этот номер.  Более высокие баллы означают более высокую производительность.  
+Номер в верхней части отчета — это общая оценка производительности сайта.  Позже при внесении изменений в код число отображаемого кода должно вырасти.  Более высокий балл означает лучшую производительность.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png" alt-text="Общая оценка производительности" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png":::
    Общая оценка производительности  
 :::image-end:::  
 
-Раздел **метрики** содержит количественные измерения производительности сайта.  Каждая метрика обеспечивает различные аспекты производительности.  Например, при первом обобщении с **содержимым** появляется сообщение о том, что содержимое сначала закрашено на экран, что является важной вехой в восприятии загрузки страницы, в то время как в **интерактивном режиме** отмечается тот момент, когда страница будет готова для обработки взаимодействия с пользователем.  
+В **разделе Metrics** приводится количественная оценка производительности сайта.  Каждый показатель дает представление о различных аспектах производительности.  Например, first **Contentful Paint** сообщает вам, когда содержимое сначала покрашено на экран, что является важной вехой в восприятии пользователем нагрузки страницы, в то время как **Time To Interactive** указывает точку, на которой страница отображается достаточно готова для обработки взаимодействий пользователей.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
-   Раздел **метрики**  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="Раздел Метрик" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
+   Раздел **Метрик**  
 :::image-end:::  
 
-Щелкните выделенный выключатель на приведенном ниже рисунке, чтобы просмотреть описание каждой метрики, а затем нажмите **Дополнительные сведения** , чтобы прочитать его документацию.  
+Выберите выделенную кнопку торгле в следующем рисунке, чтобы отобразить описание для каждой метрики, и узнайте больше, **чтобы** прочитать документацию об этом.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
-   Щелкните выделенный выключатель, чтобы развернуть элементы метрик  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Выберите выделенную кнопку toggle для расширения элементов Metrics" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
+   Выберите выделенную кнопку toggle для расширения элементов Metrics  
 :::image-end:::  
 
-Под метриками представлен набор снимков экрана, показывающий, как страница выглядит как загруженная.  
+Ниже Метрики — это коллекция скриншотов, которые показывают, как выглядела страница при загрузке.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
-   Снимки экрана, посвященные загрузке страницы  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="Скриншоты того, как выглядела страница при загрузке" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
+   Скриншоты того, как выглядела страница при загрузке  
 :::image-end:::  
 
-В разделе " **возможности** " представлены конкретные советы по повышению производительности загрузки данной страницы.  
+В **разделе "Возможности"** приводится конкретный совет по повышению производительности нагрузки на этой конкретной странице.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
-   Раздел " **возможности** "  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="Раздел Возможности" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
+   Раздел **Возможности**  
 :::image-end:::  
 
-Выберите возможность, чтобы узнать больше о ней.  
+Выберите возможность узнать больше об этом.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png":::
-   **Исключение ресурсов блокировки рендеринга** возможная сделка  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png" alt-text="Исключить возможность блокировки ресурсов отрисовки" lightbox="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png":::
+   **Исключить возможность блокировки ресурсов отрисовки**  
 :::image-end:::  
 
-Выберите дополнительные **сведения** , чтобы просмотреть документацию о важности возможной сделки и конкретные рекомендации по ее устранению.  
+Узнайте **больше,** чтобы отобразить документацию о том, почему важна возможность, и рекомендации по ее устранению.  
 
-:::image type="complex" source="../media/speed-web-dev-performance-audits.msft.png" alt-text="Илья CAT" lightbox="../media/speed-web-dev-performance-audits.msft.png":::
-   Документация по **устранению ресурсов с блокировкой рендеринга** возможная сделка  
+:::image type="complex" source="../media/speed-web-dev-performance-audits.msft.png" alt-text="Документация по возможности устранения ресурсов, блокирующих отрисовки" lightbox="../media/speed-web-dev-performance-audits.msft.png":::
+   Документация по возможности **устранения ресурсов, блокирующих отрисовки**  
 :::image-end:::  
 
-Раздел **Диагностика** содержит дополнительные сведения о факторах, которые влияют на время загрузки страницы.  
+В **разделе Диагностика** содержится больше сведений о факторах, влияющих на время загрузки страницы.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
-   Раздел " **Диагностика** "  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="Раздел Диагностика" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
+   Раздел **Диагностика**  
 :::image-end:::  
 
-В разделе **переданные аудиты** показано, что делает сайт правильно.  Выберите этот пункт, чтобы развернуть раздел.  
+В **разделе Пройденные аудиты** показано, что сайт делает правильно.  Выберите для расширения раздела.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
-   Раздел " **пройденные аудиты** "  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="Раздел Пройденные аудиты" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
+   Раздел **Пройденные аудиты**  
 :::image-end:::  
 
-## Этап 2: эксперименты  
+## <a name="step-2-experiment"></a>Шаг 2. Эксперимент  
 
-Раздел "возможности" в отчете об аудите содержит советы по улучшению производительности страницы.  В этом разделе вы реализуете рекомендованные изменения в базе кода, проведя аудит сайта после каждого изменения, чтобы определить, как оно влияет на скорость сайта.  
+В разделе Возможности отчета о аудите вы можете получить советы по повышению производительности страницы.  В этом разделе реализуются рекомендуемые изменения в кодовую базу, аудит сайта после каждого изменения, чтобы оценить, как это влияет на скорость сайта.  
 
-### Включение сжатия текста  
+### <a name="enable-text-compression"></a>Включить сжатие текста  
 
-В отчете говорится, что отсутствие огромных полезных данных сети является одной из самых первых возможностей для повышения производительности страницы.  Включить сжатие текста — это возможность улучшить производительность страницы.  
+В отчете говорится, что одной из главных возможностей повышения производительности страницы является предотвращение огромных сетевых полезной нагрузки.  Включение сжатия текста — это возможность повысить производительность страницы.  
 
-Сжатие текста — это сокращение размера текстового файла перед отправкой по сети, а также его сжатие.  Например, вы можете почтовые индексы, чтобы уменьшить размер папки.  
+Сжатие текста — это уменьшение или сжатие размера текстового файла перед отправкой его по сети.  Аналогично тому, как можно архивировать каталог перед отправкой, чтобы уменьшить размер.  
 
-Перед включением сжатия вы можете вручную проверить, сжимаются ли текстовые ресурсы.  
+Перед тем как включить сжатие, ознакомьтесь с несколькими способами вручную проверить, сжаты ли текстовые ресурсы.  
 
-1.  Откройте вкладку **сеть** .  
+1.  Выберите средство **Network.**  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
-       Панель " **сеть** "  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="Панель Network" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
+       Средство **Network**  
     :::image-end:::  
     
-1.  Выберите значок **Параметры сети** .  
-1.  Установите флажок **использовать строки большого запроса** .  Высота строк в таблице сетевых запросов возрастает.  
+1.  Выберите **значок параметра Network.**  
+1.  Выберите **почтовый ящик Use Large Request Rows.**  Высота строк в таблице сетевых запросов увеличивается.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
-       Большие строки в таблице "сетевые запросы"  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Большие строки в таблице сетевых запросов" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
+       Большие строки в таблице сетевых запросов  
     :::image-end:::  
     
-1.  Если столбец **Размер** не отображается в таблице сетевых запросов, щелкните заголовок таблицы и выберите команду **Размер**.  
+1.  Если **столбец Размер** в таблице сетевых запросов не отображается, выберите заглавную таблицу > **Размер**.  
 
-В каждой ячейке **размера** отображаются два значения.  Верхнее значение — размер загруженного ресурса.  
-Минимальное значение — размер несжатого ресурса.  Если оба значения совпадают, значит, ресурс не сжимается, когда он отправляется по сети.  Например, на предыдущем рисунке значения Top и Bottom для параметров "" `bundle.js` — " `1.2 MB` и" `1.2 MB` ... ".  
+Каждая **ячейка Size** отображает два значения.  Верхнее значение — размер загруженного ресурса.  
+Нижнее значение — это размер ненапечатаемого ресурса.  Если эти два значения одинаковы, ресурс не сжимается, когда он отправляется по сети.  Например, на предыдущем рисунке верхние и нижние значения `bundle.js` для них `1.2 MB` и `1.2 MB` .  
 
-Проверка на наличие сжатия с помощью проверки заголовков HTTP ресурса.  
+Проверьте сжатие, проверив http-заготки ресурса:  
 
-1.  Выберите **bundle.js**.  
-1.  Откройте вкладку **заголовки** .  
+1.  Выберите `bundle.js` .  
+1.  Выберите панель **загона.**  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
-       Вкладка " **заголовки** "  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="Панель "Заготки"" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
+       Панель **"Заготки"**  
     :::image-end:::  
     
-1.  Поиск заголовка в разделе **заголовков ответа** `content-encoding` .  Вы не видите один из них, то есть `bundle.js` не был сжат.  Когда ресурс сжимается, этот верхний колонтитул обычно имеет значение `gzip` , `deflate` или `br` .  Описание этих значений показано в разделе [директивы][MDNContentEncodingDirectives] .  
+1.  Поиск раздела **Заглавные ответы** для `content-encoding` загона.  Заголовки `content-encoding` не отображаются, что означает, `bundle.js` что не было сжато.  При сжатии ресурса этот заглавный загот обычно задатки `gzip` , `deflate` или `br` .  Для объяснения значений перейдите к [Директивам.][MDNContentEncodingDirectives]  
 
-Достаточно с пояснениями.  Время, чтобы внести некоторые изменения!  Включите сжатие текста, добавив несколько строк кода.  
+Достаточно объяснений.  Время внести некоторые изменения.  Включить сжатие текста, добавив несколько строк кода:  
 
-1.  На вкладке "редактор" выберите **server.js**.  
+1.  На вкладке редактор выберите **server.js**.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Изменение server.js" lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
        Edit `server.js`  
     :::image-end:::  
     
-1.  Добавьте следующий код для **server.js**.  Убедитесь, что он должен быть помещен `app.use(compression())` `app.use(express.static('build'))` .  
+1.  Добавьте следующий код в **server.js. **  Убедитесь, что поставить `app.use(compression())` перед `app.use(express.static('build'))` .  
 
     ```javascript
     const express = require('express');
@@ -251,266 +251,266 @@ ms.locfileid: "11125491"
     ```  
     
     > [!NOTE]
-    > Как правило, вы должны установить `compression` пакет с помощью какого-либо вида `npm i -S compression` , но это еще не сделано.  
+    > Обычно, вы должны установить пакет `compression` с помощью что-то `npm i -S compression` вроде, но это уже было сделано для вас.  
     
-1.  Дождитесь, пока не будет развернуто новая сборка сайта.  Неузорная анимация рядом с **инструментами** означает, что сайт перестраивается и повторно развертывается.  Изменение будет готово, когда анимация рядом с пунктом " **инструменты** " исчезает.  Выберите команду **Показать** , а затем еще раз выберите **в новом окне** .  
+1.  Подождите, пока глюк развернет новую сборку сайта.  Фантазия анимации рядом с **Инструменты** означает, что сайт перестроен и передиплоен.  Изменение готово, когда анимация рядом с **Инструменты** уходит.  Выберите **Показать** и **снова выбрать в новом окне.**  
     
     <!--
-    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js-edited.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-server-js-edited.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js-edited.msft.png" alt-text="The animation that indicates that the site is getting built" lightbox="../media/speed-glitch-tony-remix-server-js-edited.msft.png":::
        The animation that indicates that the site is getting built  
     :::image-end:::  
     -->  
     
-Используйте рабочие процессы, которые вы узнали ранее, чтобы вручную проверить, работает ли сжатие.  
+Используйте рабочие процессы, которые вы узнали ранее, чтобы вручную проверить, работает ли сжатие:  
 
-1.  Вернитесь на вкладку Demo и повторно загрузите страницу.  Столбец « **Размер** » теперь должен показывать 2 разных значения для текстовых ресурсов `bundle.js` , таких как.  На рисунке после следующего значения аргумента " `256 KB` `bundle.js` равно" — Размер файла, отправленного по сети, а в качестве нижнего значения `1.2 MB` — несжатый размер файла.  
+1.  Возвращайся на вкладку демонстрации и обнови страницу.  Столбец **Размер** теперь должен показывать 2 различных значения для текстовых ресурсов, таких как `bundle.js` .  На рисунке ниже верхнее значение для — размер файла, отправленного по сети, а нижним значением является `256 KB` `bundle.js` ненапечатаный размер `1.2 MB` файла.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-main.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-network-main.msft.png":::
-       В столбце " **Размер** " теперь показано 2 разных значения для текстовых ресурсов.  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-main.msft.png" alt-text="В столбце Размер теперь показаны 2 различных значения для текстовых ресурсов" lightbox="../media/speed-glitch-tony-remix-network-main.msft.png":::
+       В **столбце Размер** теперь показаны 2 различных значения для текстовых ресурсов  
     :::image-end:::  
     
-1.  В разделе **заголовки ответа** `bundle.js` теперь должен быть указан `content-encoding: gzip` верхний колонтитул.
+1.  Раздел **Заглавные ответы** теперь `bundle.js` должен включать `content-encoding: gzip` заглавную.
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
-       Раздел **заголовки ответа** теперь содержат заголовок Content-Encoding  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="В разделе Заглавные ответы теперь содержится заготчик коди-кодинга контента" lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
+       В **разделе Заглавные ответы** теперь содержится заготчик коди-кодинга контента  
     :::image-end:::  
     
-Проведите аудит страницы, чтобы оценить, какое влияние сжатие текста влияет на производительность загрузки страницы:  
+Проверь страницу еще раз, чтобы оценить, какое влияние оказывает сжатие текста на производительность нагрузки страницы:  
 
-1.  Перейдите на вкладку **Аудит** .  
-1.  Выберите команду **выполнить аудит** \ ( ![ выполнить аудит ][ImagePerformIcon] \).  
-1.  Параметры не совпадают.  
-1.  Выберите команду **запустить аудит**.  
+1.  Выберите средство **аудита.**  
+1.  Выберите **Выполнение аудита** \. ![ Выполните аудит ][ImagePerformIcon] \).  
+1.  Оставьте параметры так же, как и раньше.  
+1.  Выберите **аудит Run**.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
-       Отчет "Аудит" после включения сжатия текста  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="Отчет аудита после включения сжатия текста" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
+       Отчет аудита после включения сжатия текста  
     :::image-end:::  
     
-<!--  Woohoo!  That looks like progress.  -->  Общая оценка производительности должна быть увеличена, а это значит, что сайт быстрее.  
+<!--  Woohoo!  That looks like progress.  -->  Общий показатель производительности должен был увеличиться, а это значит, что сайт становится быстрее.  
 
-#### Сжатие текста в реальном мире  
+#### <a name="text-compression-in-the-real-world"></a>Сжатие текста в реальном мире  
 
-На большинстве серверов есть простые решения, подобные этим, чтобы включить сжатие.  Просто выполните поиск, чтобы настроить любой сервер, который вы используете для сжатия текста.  
+Большинство серверов действительно имеют простые исправления, такие как это для включения сжатия!  Просто сделайте поиск о том, как настроить любой сервер, который используется для сжатия текста.  
 
-### Изменение размера изображения  
+### <a name="resize-images"></a>Resize images  
 
-Отчет о том, что не следует избегать огромных полезных данных сети, является одной из самых первых возможностей для повышения производительности страницы.  Изменение размеров изображений помогает уменьшить размер полезных данных в сети.  Если пользователь просматривает изображения на экране мобильного устройства размером 500 в пикселах, это не значит, что при отправке изображения в масштабе не более 1500 точек.  В идеале вы отправляете изображение в 500 в масштабе по пикселю.  
+В отчете указывается, что одной из главных возможностей повышения производительности страницы является предотвращение огромных сетевых полезной нагрузки.  Размер изображений позволяет уменьшить размер полезной нагрузки сети.  Если пользователь просматривает изображения на экране мобильного устройства шириной 500 пикселей, отправка изображения шириной 1500 пикселей не имеет смысла.  В идеале вы отправляете не более 500 пикселей изображения.  
 
-1.  В отчете выберите **исключить огромные полезные данные сети** , чтобы узнать, какие изображения нужно изменить.  Похоже, что 2 файлов JPG — более 2000 КБ, что больше не требуется.  
+1.  В отчете выберите **Избегать огромных сетевых** полезной нагрузки для отображения изображений, которые следует повторно использовать.  Похоже, что 2 из jpg-файлов более 2000 КБ, что больше, чем необходимо.  
     
     <!--
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Details about the properly size images opportunity" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
        Details about the properly size images opportunity  
     :::image-end:::  
     -->
     
-1.  Вернувшись на вкладку Редактор, открыть `src/model.js` .  
-1.  Заменить `const dir = 'big'` на `const dir = 'small'` .  Этот каталог содержит копии тех же изображений, размер которых был изменен.  
-1.  Вновь проведите аудит страницы, чтобы увидеть, как это изменение влияет на производительность загрузки.  
+1.  Возвращаясь на вкладку редактора, откройте `src/model.js` .  
+1.  Замените `const dir = 'big'` `const dir = 'small'` .  Этот каталог содержит копии тех же изображений, которые были повторно размера.  
+1.  Снова проверь страницу, чтобы показать, как изменение влияет на производительность нагрузки.  
     
-    :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
-       Отчет об аудите после изменения размеров изображений  
+    :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="Отчет аудита после повторного размеров изображений" lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
+       Отчет аудита после повторного размеров изображений  
     :::image-end:::  
     
-Похоже, что изменение имеет незначительный уровень влияния на общую оценку производительности.  Тем не менее, в этом случае баллы не показываются четко, так как данные сети, которые вы сохраняете, не отображаются.  Общий размер старой фотографии — около 5,3 мегабайт, в то время как теперь это не более 0,18 МБ.  
+Отображаемая перемена имеет незначительное влияние на общую оценку производительности.  Однако одна вещь, которая не показывает четко, это то, сколько сетевых данных вы экономите пользователей.  Общий размер старых фотографий составил около 5,3 мегабайт, в то время как сейчас он составляет всего 0,18 мегабайта.  
 
-#### Изменение размеров изображений в реальном мире  
+#### <a name="resizing-images-in-the-real-world"></a>Размер изображений в реальном мире  
 
-В случае с небольшим приложением вы можете использовать один из этих способов, так как это может быть достаточно хорошим.  Но для больших приложений это очевидно не масштабируется.  Ниже приведены некоторые стратегии управления изображениями в крупных приложениях.  
+Для небольшого приложения сделать разовую размер, как это может быть достаточно хорошо.  Но для большого приложения это, очевидно, не масштабируемо.  Вот некоторые стратегии управления изображениями в крупных приложениях:  
 
-*   Изменение размера изображения во время процесса сборки.  
-*   Создавайте несколько размеров изображения во время процесса сборки, а затем используйте `srcset` их в коде.  Во время выполнения браузер берет на себя выбор оптимального размера для устройства.  
-    <!--See [Relative-sized images][relative].  -->
+*   Resize images during your build process.  
+*   Создайте несколько размеров каждого изображения в процессе сборки и используйте `srcset` в коде.  При запуске браузер принимает решение о том, какой размер лучше всего для устройства.  
+    <!--Navigate to [Relative-sized images][relative].  -->
     
 <!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->  
 
-*   Использование сети CDN изображений, позволяющей динамически изменять размер изображения при запросе.  
-*   По крайней мере, оптимизируйте каждое изображение.  Это может создать огромный выигрыш.  
-  Оптимизация — это время, когда вы запускаете изображение с помощью специальной программы, которая уменьшает размер файла изображения.  Дополнительные советы приведены в статье основные сведения об [оптимизации изображений][EssentialImageOptimization] .  
+*   Используйте CDN изображения, который позволяет динамически реамизировать изображение при его запросе.  
+*   По крайней мере, оптимизируйте каждое изображение.  Это может создать огромную экономию.  
+  Оптимизация — это при запуске изображения через специальную программу, которая уменьшает размер файла изображений.  Дополнительные советы, перейдите к [существенной оптимизации изображения][EssentialImageOptimization].  
     
-### Исключение ресурсов блокировки рендеринга  
+### <a name="eliminate-render-blocking-resources"></a>Устранение ресурсов, блокирующих рендеринг  
 
-В последней версии отчета говорится о том, что в настоящее время ресурсы, блокирующие рендеринг, стали самой большой возможностью.  
+В последнем отчете говорится, что устранение ресурсов, блокирующих рендеринг, теперь является самой большой возможностью.  
 
-Ресурс блокировки обработки — это внешний файл JavaScript или CSS, который браузер должен загрузить, проанализировать и выполнить, прежде чем отобразить страницу.  Цель состоит в том, чтобы запустить только основной код CSS и JavaScript, необходимый для правильного отображения страницы.  
+Ресурс, блокирующий отрисовку, — это внешний файл JavaScript или CSS, который браузер должен скачать, разбрасировать и запустить до отображения страницы.  Цель состоит в том, чтобы выполнить только основной код CSS и JavaScript, необходимый для правильного отображения страницы.  
 
-Первая задача — это поиск кода, который не нужно выполнять при загрузке страницы.  
+Первой задачей является поиск кода, который не требуется запускать на странице нагрузки.  
 
-1.  Чтобы просмотреть блокируемые ресурсы, нажмите кнопку **удалить ресурсы блокировки рендеринга** .  
+1.  Выберите **исключить ресурсы, блокирующие отрисовки,** чтобы отобразить заблокированные ресурсы:  
     `lodash.js` и `jquery.js` .  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
-       Дополнительные сведения о **ресурсах блокировки обработки** с возможностью устранения  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="Дополнительные сведения о возможности устранения ресурсов, блокирующих отрисовки" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
+       Дополнительные сведения о возможности **устранения ресурсов, блокирующих отрисовки**  
     :::image-end:::  
     
-1.  Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть меню команд, начните вводить текст `Coverage` , а затем выберите команду **Показать покрытие**.  
+1.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` или \(macOS\) `Coverage` **** для открытия командного меню, начала ввода, а затем выберите Показать покрытие .  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
-       Открытие меню "команд" на панели " **Аудит** "  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Откройте меню команд из панели Аудиты" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
+       Откройте меню команд из панели **Аудиты**  
     :::image-end:::  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
-       Вкладка " **покрытие** "  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="Средство Coverage" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
+       Средство **Coverage**  
     :::image-end:::  
     
-1.  Нажмите кнопку **Обновить** \ ( ![ обновить ][ImageRefreshIcon] \).  На вкладке " **покрытие** " представлены общие сведения о том, какая часть `bundle.js` кода `jquery.js` и `lodash.js` выполняется при загрузке страницы.  На рисунке ниже показано, что около 76% и 30% файлов jQuery и Lodash не используются соответственно.  
+1.  Выберите **обновление** \. ![ Обновление ][ImageRefreshIcon] \).  Средство **Coverage** предоставляет обзор того, сколько кода в , и запускается во время `bundle.js` `jquery.js` `lodash.js` загрузки страницы.  На следующем рисунке не используется соответственно около 76% и 30% файлов jQuery и Lodash.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
-       Отчет о покрытии  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="Отчет По охвату" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
+       Отчет По охвату  
     :::image-end:::  
     
-1.  Выделите строку **jquery.js** .  DevTools откроет файл на панели «источники».  Строка кода была выполнена, если рядом с ней есть синяя полоска.  Красная черта означает, что она не была выполнена и определенно не требуется при загрузке страницы.  
+1.  Выберите **строкуjquery.js.**  DevTools открывает файл в панели Источники.  Строка кода побежала, если рядом с ней имеется синяя строка.  Красная планка означает, что она не была запускаться и определенно не требуется для загрузки страницы.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
-       Просмотр файла jQuery на панели « **источники** »  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Просмотр файла jQuery в панели Источники" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+       Просмотр файла jQuery в панели **Источники**  
     :::image-end:::  
     
-1.  Прокрутите код jQuery на немного.  Некоторые строки, которые получают слово "выполнить", на самом деле представляют собой комментарии.  Выполнение этого кода с помощью Minifier, который содержит примечания, — еще один способ уменьшить размер файла.  
+1.  Прокрутите код jQuery немного.  Некоторые строки, которые получают "запустить" на самом деле просто комментарии.  Запуск этого кода через мини-файл, который полосы комментариев является еще одним способом уменьшить размер этого файла.  
 
-Коротко говоря, при работе с собственным кодом вкладка "покрытие" помогает проанализировать код, построчно и поставлять только код, необходимый для загрузки страницы.  
+Короче говоря, при работе с собственным кодом средство **Coverage** помогает анализировать код, строку за строкой и только отгрузку кода, необходимого для загрузки страницы.  
 
-Нужны ли `jquery.js` `lodash.js` файлы и даже для загрузки страницы?  На вкладке Блокировка запроса показано, что происходит, когда ресурсы недоступны.  
+Нужны ли файлы и файлы `jquery.js` `lodash.js` для загрузки страницы?  Средство **блокировки** запроса отображает, что происходит, когда ресурсы недоступны.  
 
-1.  Откройте вкладку **сеть** .  
-1.  Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \), чтобы снова открыть меню команд.  
-1.  Начните вводить данные `blocking` и выберите команду **Показать блокировку запросов**.  
+1.  Выберите средство **Network.**  
+1.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` или \(macOS\) для повторного открытия командного меню.  
+1.  Начните `blocking` вводить текст, а затем **выберите блокировку запроса на показ.**  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
-       Вкладка " **Блокировка запросов** "  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="Средство блокировки запроса" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
+       Средство **блокировки запроса**  
     :::image-end:::  
     
-1.  Нажмите кнопку **Добавить узор** \ ( ![ Добавить шаблон ][ImageAddPatternIcon] \), введите `/libs/*` и выберите `Enter` для подтверждения.  
+1.  Выберите **Добавить шаблон** \. Добавьте шаблон ![ ][ImageAddPatternIcon] \), введите , а затем `/libs/*` `Enter` выберите, чтобы подтвердить.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
-       Добавление шаблона для блокирования запросов в `libs` Каталог  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Добавление шаблона для блокировки любого запроса в каталог libs" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
+       Добавление шаблона для блокировки любого запроса `libs` в каталог  
     :::image-end:::  
     
-1.  Обновите страницу.  Запросы jQuery и Lodash красного цвета, означающие, что запросы были заблокированы.   Страница по-прежнему загружается и является интерактивной, поэтому она выглядит так, как это не требуется.  
+1.  Обновите страницу.  Запросы jQuery и Lodash являются красными, что означает, что запросы были заблокированы.   Страница по-прежнему загружается и является интерактивной, поэтому похоже, что эти ресурсы вообще не нужны!  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
-       На панели **Network (сеть** ) показано, что запросы заблокированы  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="Панель Network показывает, что запросы были заблокированы" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
+       Средство **Network** показывает, что запросы заблокированы  
     :::image-end:::  
     
-1.  Выберите команду **удалить все шаблоны** \ ( ![ удалить все шаблоны ][ImageRemoveIcon] \), чтобы удалить `/libs/*` шаблон блокировки.  
+1.  Выберите **Удалить все шаблоны** \. Удалите все ![ шаблоны ][ImageRemoveIcon] \) для удаления `/libs/*` шаблона блокировки.  
     
-Как правило, вкладка "блокировка запросов" полезна для имитации того, как работает страница, если какой-либо из указанных ресурсов недоступен.  
+Как правило, средство блокировки **запроса** полезно для моделирования поведения страницы, если какой-либо ресурс не доступен.  
 
-Теперь удалите ссылки на эти файлы из кода и выполните аудит страницы еще раз:  
+Теперь удалите ссылки на эти файлы из кода и снова проверите страницу:  
 
-1.  Вернувшись на вкладку Редактор, открыть `template.html` .  
+1.  Возвращаясь на вкладку редактора, откройте `template.html` .  
 1.  Удалите `<script src="/libs/lodash.js">` и `<script src="/libs/jquery.js"></script>`.  
-1.  Дождитесь повторного создания и повторного развертывания сайта.  
-1.  Снова проведите аудит страницы с помощью панели **аудита** .  Ваши общие баллы должны быть улучшены.  
+1.  Дождись повторной сборки и повторного развертывания сайта.  
+1.  Снова аудит страницы из средства **аудита.**  Ваш общий результат должен был улучшиться снова.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
-       Отчет об **аудите** после удаления ресурсов блокировки рендеринга  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="Отчет аудита после удаления ресурсов, блокирующих рендеринг" lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
+       Отчет **аудита** после удаления ресурсов, блокирующих рендеринг  
     :::image-end:::  
     
-#### Оптимизация критического пути отрисовки в реальном мире  
+#### <a name="optimizing-the-critical-rendering-path-in-the-real-world"></a>Оптимизация пути критической визуализации в реальном мире  
 
-**Критический путь рендеринга** указывает на код, необходимый для загрузки страницы.  Как правило, скорость загрузки страницы повышается за счет отправки критического кода только при загрузке страницы, а затем — через отложенную загрузку всех остальных.  
+Путь **критической визуализации** относится к коду, необходимому для загрузки страницы.  В общем, ускорять загрузку страницы, только отгрузка критического кода во время загрузки страницы, а затем ленивая загрузка всего остального.  
 
 <!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->  
 
-*   Маловероятно, что вы можете найти сценарии, которые можно удалить прямо, но вы можете найти большое количество сценариев, которые вам не нужно запрашивать во время загрузки страницы, и, возможно, они будут запрашиваться асинхронно.  <!--See [Using async or defer][async].  -->  
-*   Если вы используете платформу, убедитесь в том, что у нее есть производственный режим.  Этот режим может использовать такие функции, как [Tree встряхнув][WebpackTreeShaking] , для удаления ненужного кода, блокирующего критический рендеринг.  
+*   Маловероятно, что вы сможете найти сценарии, которые можно удалить прямо, но вы можете найти много скриптов, которые вам не нужно запрашивать во время загрузки страницы, а вместо этого может быть запротезировали асинхронно.  <!--Navigate to [Using async or defer][async].  -->  
+*   Если вы используете фреймворк, проверьте, есть ли в нем режим производства.  Этот режим может использовать [][WebpackTreeShaking] такую функцию, как встряхивания дерева, чтобы исключить ненужный код, блокирующий критически важную отрисовку.  
     
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->  
 
-### Работа менее основного потока  
+### <a name="do-less-main-thread-work"></a>Меньше работы основного потока  
 
-В последней версии отчета представлены некоторые небольшие возможности по экономии средств в разделе "возможности", но если вы просмотрии раздел "Диагностика", это похоже на то, что наибольший узкий участок слишком велик для основного потока.  
+В последнем отчете показано некоторое незначительное потенциальное сэкономление в разделе Возможности, но если вы посмотрите вниз в разделе Диагностика, то, похоже, что самое большое узким местом является слишком большая активность основного потока.  
 
-Основной поток — это тот случай, когда браузер выполняет большую часть работы, необходимой для отображения страницы, например синтаксического анализа и выполнения HTML, CSS и JavaScript.  
+Основной поток — это то, что браузер делает большую часть работы, необходимой для отображения страницы, например для размыва и запуска HTML, CSS и JavaScript.  
 
-Цель состоит в том, чтобы проанализировать трудозатраты, выполняемые основным потоком при загрузке страницы, и найти способы задержать или удалить ненужные данные.  
+Цель состоит в том, чтобы использовать панель Performance для анализа работы основного потока во время загрузки страницы, а также поиска способов отложить или удалить ненужные работы.  
 
-1.  Откройте вкладку **производительность** .  
-1.  Выберите **Параметры захвата** \ ( ![ Параметры захвата ][ImageCaptureIcon] ).  
-1.  Настройте **сеть** на **медленное 3G** и **ЦП** , чтобы **6X замедление**.  На мобильных устройствах обычно используются больше ограничений на оборудование, чем на ноутбуках или настольных компьютерах, поэтому эти параметры позволяют загрузить страницу так, как если бы вы использовали менее мощное устройство.  
-1.  Нажмите кнопку **Обновить** \ ( ![ обновить ][ImageRefreshIcon] \).  DevTools обновляет страницу и создает визуализацию всей выполненной работы, чтобы загрузить страницу.  Этот зрительный образ называется **трассировкой**.  
+1.  Выберите **средство Performance.**  
+1.  Выберите **Параметры захвата** \. ![ Параметры захвата ][ImageCaptureIcon] \).  
+1.  Установите **сеть** для **замедления 3G** и **ЦП** до **замедления 6x**.  Мобильные устройства обычно имеют больше ограничений оборудования, чем ноутбуки или настольные компьютеры, поэтому эти параметры позволяет испытывать нагрузку на страницу, как если бы вы использовали менее мощное устройство.  
+1.  Выберите **обновление** \. ![ Обновление ][ImageRefreshIcon] \).  DevTools обновляет страницу, а затем создает визуализацию всей работы, выполняемой для загрузки страницы.  Эта визуализация называется **трассировка**.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
-       Трассировка загрузки страницы на панели **производительности**  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="Трассировка средства Performance для загрузки страницы" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
+       **Трассировка** средства Performance для загрузки страницы  
     :::image-end:::  
     
-Трассировка отображает операцию в хронологическом порядке, слева направо.  На диаграммах с частотой кадров, ЦП и нетто в верхней части экрана дается обзор кадров в секунду, активности ЦП и активности сети.  Выделенный блок желтого цвета, показанный на рисунке после следующего, ЦП полностью загружен с действиями в сценарии.  Это говорит о том, что вы можете ускорить загрузку страницы, выполнив меньше действий JavaScript.  
+Трассировка показывает активность в хронологическом порядке, слева направо.  Диаграммы FPS, CPU и NET в верхней части дают обзор кадров в секунду, активности ЦП и сетевой активности.  Блок желтого цвета, выделенный на рисунке после следующего, ЦП был полностью занят действиями скриптов.  Это подсказка о том, что вы можете ускорить загрузку страниц, делая меньше работы с JavaScript.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
-   Раздел обзора трассировки  
+:::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="Раздел Обзор трассировки" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
+   Раздел Обзор трассировки  
 :::image-end:::  
 
-Изучите трассировку, чтобы найти способы выполнения меньшей работы в JavaScript.  
+Изучите след, чтобы найти способы сделать меньше работы JavaScript:  
 
-1.  Щелкните раздел **время показа** , чтобы развернуть его.  В зависимости от того факта, что существует ряд мер [времени][MDNUserTimingApi] , не отклика, может показаться, что приложение Илья использует режим разработки реагируй.  Переключение в режим рабочего режима может привести к снижению производительности WINS.  
+1.  Чтобы расширить его, выберите раздел **Timings.**  Основываясь на том, что может быть куча мер [Timings][MDNUserTimingApi] от React, кажется, что приложение Тони использует режим разработки React.  Переход на производственный режим React может привести к некоторому простому выигрышу производительности.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
-       Раздел " **временные интервалы** "  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="Раздел Timings" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
+       Раздел **Timings**  
     :::image-end:::  
     
-1.  Чтобы свернуть этот раздел, выберите **время показа** еще раз.  
-1.  Просмотрите **основной** раздел.  В этом разделе показан хронологический журнал основных операций потока, слева направо.  Ось y (сверху вниз) показывает причины возникновения событий.  Например, в figyre после указанных ниже `Evaluate Script` событий событие привело `(anonymous)` к выполнению функции, которое привело к выполнению `(anonymous)` `__webpack__require__` и т. д.  
+1.  Снова **выберите Тайминги,** чтобы свернуть этот раздел.  
+1.  Просмотрите **раздел Main.**  В этом разделе показан хронологический журнал основной активности потока слева направо.  Y-axis (сверху вниз) показывает, почему произошли события.  Например, в figyre после следующего события, событие вызвало функцию для запуска, что вызвало запуск, что вызвало `Evaluate Script` `(anonymous)` `(anonymous)` `__webpack__require__` запуск, и так далее.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
-       **Основной** раздел  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="Основной раздел" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
+       Основной **** раздел  
     :::image-end:::  
     
-1.  Прокрутите страницу вниз до конца **основного** раздела.  При использовании платформы большая часть верхнего действия вызывается платформой, которая обычно находится в вашем элементе управления.  Действия, вызванные вашим приложением, обычно находятся в нижней части экрана.  В этом приложении это похоже на функцию с именем, которая `App` вызывает большое количество запросов к `mineBitcoin` функции.  Это звучит так, как Илья может использовать устройства своего вентилятора для cryptocurrency...  
+1.  Прокрутите вниз в нижней части **основного** раздела.  При использовании фреймворка большая часть верхней активности вызвана рамками, которые обычно находятся вне вашего контроля.  Действие, вызываемая вашим приложением, обычно находится в нижней части.  В этом приложении кажется, что функция с именем вызывает большое количество запросов `App` для `mineBitcoin` функции.  Похоже, Тони может использовать устройства своих поклонников для майнинга криптовалюты...  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png":::
-       Наведение указателя на `mineBitcoin` мероприятие  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png" alt-text="Наведите курсор на действие mineBitcoin" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png":::
+       Наведите курсор `mineBitcoin` на действие  
     :::image-end:::  
     
     > [!NOTE]
-    > Несмотря на то что запросы вашей платформы обычно прерываются из вашего элемента управления, иногда вы можете структурировать приложение таким образом, чтобы она выполнялась неэффективно.  Реструктуризация приложения для эффективного использования инфраструктуры — это способ выполнения менее основного потока работ.  Тем не менее, для этого необходимо глубокое понимание того, как работает ваша платформа, и какие изменения вносятся в вашем собственном коде для более эффективной работы с платформой.  
+    > Несмотря на то, что запросы, которые делает ваша структура, обычно не под вашим контролем, иногда вы можете структурировать приложение таким образом, что это приводит к неэффективному запуску фреймворка.  Реструктуризация приложения для эффективного использования фреймворка — это способ сделать меньше основной работы потока.  Однако для этого требуется глубокое понимание того, как работает ваша структура, и какие изменения вы вносяте в собственный код для более эффективного использования фреймворка.  
     
-1.  Разверните раздел **снизу вверх** .  На этой вкладке прерываются действия, которые выполнялись в течение всего времени.  Если вы ничего не видите в разделе Bottom-Up, щелкните надпись для **основного** раздела.  В разделе " **снизу вверх** " отображаются только сведения о каких-либо действиях или группах действий, которые вы уже выбрали.  Например, если вы `mineBitcoin` **настроили** одно из действий, в разделе снизу вверх будет отображаться только информация для этого действия.  
+1.  **Расширь раздел Bottom-Up.**  Эта вкладка разбивает, какие действия заняли больше всего времени.  Если в разделе Bottom-Up ничего не отображается, выберите метку для **раздела Main.**  В **разделе Bottom-Up** показаны только сведения о любых действиях или группах действий, выбранных в настоящее время.  Например, если вы выбрали одно из действий, в разделе Bottom-Up будут показываться только сведения `mineBitcoin` об этом одном действии. ****  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
-       Вкладка " **снизу вверх** "  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="Вкладка Bottom-Up" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
+       Вкладка **Bottom-Up**  
     :::image-end:::  
     
-В столбце " **собственное время** " показано, сколько времени было затрачено непосредственно на каждое действие.  Например, на приведенном ниже рисунке около 63% времени основного потока было затрачено на выполнение `mineBitcoin` функции.  
+Столбец **Self Time** показывает, сколько времени было затрачено непосредственно в каждом действии.  Например, на следующую цифру было потрачено около 63% основного времени потока на `mineBitcoin` функцию.  
 
-Время от времени до того, чтобы узнать, используется ли производственный режим и уменьшается активность JavaScript, может ускорить загрузку страницы.  Начните работу в режиме "в производство":  
+Время для проверки того, может ли использование режима производства и снижение активности JavaScript ускорить загрузку страницы.  Начните с режима производства:  
 
-1.  На вкладке Редактор откройте `webpack.config.js` .  
-1.  Заменить `"mode":"development"` на `"mode":"production"` .  
-1.  Дождитесь завершения развертывания новой сборки.  
-1.  Вновь проведите аудит страницы.  
+1.  На вкладке редактор откройте `webpack.config.js` .  
+1.  Изменение `"mode":"development"` в `"mode":"production"` .  
+1.  Подождите развертывание новой сборки.  
+1.  Снова аудит страницы.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png":::
-       Отчет по аудиту после настройки пакета для использования режима "в производство"  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png" alt-text="Отчет аудита после настройки вебпака для использования режима производства" lightbox="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png":::
+       Отчет аудита после настройки вебпака для использования режима производства  
     :::image-end:::  
     
-Сокращение действий JavaScript путем удаления запроса на `mineBitcoin` :  
+Уменьшите активность JavaScript, удалив запрос `mineBitcoin` на:  
 
-1.  На вкладке Редактор откройте `src/App.jsx` .  
-1.  Закомментируйте запрос `this.mineBitcoin(1500)` в `constructor` .  
-1.  Дождитесь завершения развертывания новой сборки.  
-1.  Вновь проведите аудит страницы.  
+1.  На вкладке редактор откройте `src/App.jsx` .  
+1.  Комментарий `this.mineBitcoin(1500)` запроса в `constructor` .  
+1.  Подождите развертывание новой сборки.  
+1.  Снова аудит страницы.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png" alt-text="Илья CAT" lightbox="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png":::
-       Отчет по аудиту после удаления ненужных действий JavaScript  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png" alt-text="Отчет аудита после удаления ненужной работы JavaScript" lightbox="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png":::
+       Отчет аудита после удаления ненужной работы JavaScript  
     :::image-end:::  
     
-Похоже, что Последнее изменение вызвало значительный переход в производительности!  
+Похоже, что последнее изменение вызвало массовый скачок производительности!  
 
 > [!NOTE]
-> Этот раздел предоставил краткое введение в панель производительности.  Дополнительные сведения о том, как анализировать производительность страниц, можно найти в статье [Анализ производительности][DevtoolsEvaluatePerformanceReference] .  
+> В этом разделе представлено краткое введение в панель Performance.  Дополнительные данные о том, как анализировать производительность страниц, перейдите к ссылке [на анализ производительности.][DevtoolsEvaluatePerformanceReference]  
 
 <!--todo: add section when available -->  
 
-#### Выполнение менее основного потока работ в реальном мире  
+#### <a name="doing-less-main-thread-work-in-the-real-world"></a>Работа с меньшим количеством основных потоков в реальном мире  
 
-Как правило, панель **производительности** является наиболее распространенным способом для понимания того, какие действия выполняет загружаемый сайт, и Узнайте о способах удаления ненужных действий.  
+В общем, средство **Performance** — это наиболее распространенный способ понять, какие действия ваш сайт делает при загрузке, и найти способы удаления ненужных действий.  
 
-Если вы предпочитаете использовать более похожий подход `console.log()` , Пользовательский API для работы с [временными][MDNUserTimingApi] сведениями позволяет вам произвольно помечать определенные этапы жизненного цикла приложения, чтобы отслеживать продолжительность каждого из этих фаз.  
+Если вы предпочитаете более похожий `console.log()` подход, [API][MDNUserTimingApi] времени пользователя позволяет произвольно отмечать определенные этапы жизненного цикла приложения, чтобы отслеживать, сколько времени занимает каждый из этих этапов.  
 
-## Краткий обзор  
+## <a name="summary"></a>Сводка  
 
-*   Каждый раз, когда вы задаете оптимальное качество нагрузки для сайта, всегда начинайте с аудита.  Аудит определяет базовые показатели и предоставляет советы по улучшению.  
-*   За один раз сделайте одно изменение и проведите аудит страницы после каждого изменения, чтобы увидеть, как это изолированное изменение влияет на производительность.  
+*   Всякий раз, когда вы затеяли оптимизацию производительности загрузки сайта, всегда начните с аудита.  Аудит устанавливает базовый уровень и дает советы по улучшению.  
+*   Внося по одному изменение за раз и проверяя веб-страницу после каждого изменения, чтобы отобразить, как это изолированное изменение влияет на производительность.  
 
 <!--
 ## Next steps  
@@ -519,7 +519,7 @@ ms.locfileid: "11125491"
 *   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.  
 -->  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -534,20 +534,20 @@ ms.locfileid: "11125491"
 [ImageRemoveIcon]: ../media/remove-icon.msft.png  
 <!-- links -->  
 
-[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Справка по анализу производительности | Документы Microsoft"  
+[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Справочные ссылки | Документы Майкрософт"  
 
-[CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Знакомство с классом веб-разработки | Coursera"  
+[CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Введение в класс веб-разработки | Coursera"  
 
-[EssentialImageOptimization]: https://images.guide "Оптимизация изображений"  
+[EssentialImageOptimization]: https://images.guide "Необходимая оптимизация изображений"  
 
-[MDNContentEncodingDirectives]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives "Директивы-кодировка содержимого | MDN"  
+[MDNContentEncodingDirectives]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives "Директивы — кодиро-кодиро-| MDN"  
 [MDNUserTimingApi]: https://developer.mozilla.org/docs/Web/API/User_Timing_API "API времени пользователя | MDN"  
 
-[WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "Tree встряхнув | упаковать"  
+[WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "Встряхивания | webpack"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

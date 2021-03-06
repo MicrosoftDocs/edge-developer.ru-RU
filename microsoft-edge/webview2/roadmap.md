@@ -1,39 +1,40 @@
 ---
-description: Узнайте о том, что дальше в WebView2
-title: План для Microsoft Edge WebView 2
+description: Узнайте, что будет дальше для WebView2
+title: Дорожная карта для Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Host, элемент управления "веб-браузер", HTML Edge
-ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.openlocfilehash: 0f51b5cab32bdb9b9aa9b6baceef5fe5a17eea54
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182362"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398415"
 ---
-# WebView2ная схема Microsoft Edge  
-
-##### Последнее обновление: Ноябрь 2020 г.  
-
-Элемент управления WebView2 позволяет разработчикам внедрять веб-технологии в собственные приложения.  На следующей странице приведена схема перспективной схемы для WebView2.  
+# <a name="microsoft-edge-webview2-roadmap"></a>Дорожная карта Microsoft Edge WebView2  
 
 > [!NOTE]
-> WebView2 находится в активном состоянии, а план продолжает развиваться, основываясь на изменениях рынка и отзывах пользователей, поэтому обратите внимание на то, что описанные здесь планы не являются исчерпывающими, и их может изменить.  
+> Последнее обновление: ноябрь 2020 г.  
 
-Если у вас есть проблемы или вопросы по поводу плана, предоставьте отзыв в [репозитории обратной связи][GithubMicrosoftedgeWebviewfeedbackMain].  
+Управление WebView2 позволяет разработчикам встраить веб-технологии в свои собственные приложения.  На следующей странице описывается перспективная дорожная карта для WebView2.  
 
-Для будущих обновлений группа разработчиков WebView2 планирует следующие основные усилия.  
+> [!NOTE]
+> WebView2 находится в активной разработке, и дорожная карта продолжает развиваться с учетом изменений рынка и отзывов клиентов, поэтому обратите внимание, что описанные здесь планы не являются исчерпывающими и подлежат изменениям.  
+
+Если у вас есть проблемы или вопросы о дорожной карте, предоподавайте свои отзывы в [репо обратной связи.][GithubMicrosoftedgeWebviewfeedbackMain]  
+
+Команда WebView2 планирует следующие основные усилия для будущих обновлений.  
 
 :::row:::
    :::column span="1":::
-      Установщик среды выполнения WebView2  
+      Установщик времени работы WebView2  
    :::column-end:::
    :::column span="2":::
-      *   4 квартал 2020
+      *   Q4 2020
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -41,7 +42,7 @@ ms.locfileid: "11182362"
       Фиксированная версия  
    :::column-end:::
    :::column span="2":::
-      *   4 квартал 2020  
+      *   Q4 2020  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -49,41 +50,41 @@ ms.locfileid: "11182362"
       Общая доступность  
    :::column-end:::
    :::column span="2":::
-      *   Win32 C/C++ \ (Q4 2020 \)  
-      *   .NET \ (Q4 2020 \)  
+      *   Win32 C/C++ \(Q4 2020\)  
+      *   .NET \(Q4 2020\)  
       *   [WinUI3.0][GithubMicrosoftUiXamlRoadmap]  
    :::column-end:::
 :::row-end:::  
 
-## Среда выполнения и установщик WebView2  
+## <a name="webview2-runtime-and-installer"></a>Время запуска и установки WebView2  
 
-[Модель распространения Evergreen][ConceptDistributionEvergreenModel] позволяет целевому объекту или цепочке установить среду выполнения WebView2 на компьютер пользователя.  В среде выполнения и установщике Evergreen WebView2 достигнут общий доступ \ (GA \).  
+[Модель распространения Evergreen][ConceptDistributionEvergreenModel] позволяет нацелить или установить на компьютер пользователя время запуска WebView2.  Время запуска и установки Evergreen WebView2 достигло общего уровня доступности \(GA\).  
 
-## Фиксированная версия  
+## <a name="fixed-version"></a>Исправленная версия  
 
-С помощью [фиксированной модели распространения версий][ConceptsDistributionFixedVersionModel] можно упаковать двоичные файлы Microsoft EDGE в собственное приложение.  Фиксированная версия достигла общей доступности \ (GA \).  
+[Модель распространения фиксированной][ConceptsDistributionFixedVersionModel] версии позволяет упаковывать двухфайли Microsoft Edge внутри вашего родного приложения.  Исправленная версия достигла общей доступности \(GA\).  
 
-## Общая доступность  
+## <a name="general-availability"></a>Общая доступность  
 
-### Win32 C/C++  
+### <a name="win32-cc"></a>Win32 C/C++  
 
-Пакет SDK для Win32 C/C++ достиг GA.  
+SDK Win32 C/C++ достиг ga.  
 
-### .NET  
+### <a name="net"></a>.NET  
 
-.NET SDK достиг себя в течение "GA". 
+SDK .NET достиг ga. 
 
-### WinUI3.0  
+### <a name="winui-30"></a>WinUI3.0  
 
-Вы можете получить доступ к WebView2 в приложениях UWP с помощью [Win UI 3,0][UwpToolkitsWinui3Index], в настоящее время в Alpha.  Дополнительные сведения о том, как своевременно поддерживаться, можно найти в разделе [планы библиотеки пользовательского интерфейса Windows][GithubMicrosoftUiXamlRoadmap].  
+Вы можете получить доступ к WebView2 в приложениях UWP с помощью [win UI 3.0,][UwpToolkitsWinui3Index]в настоящее время в альфа-версии.  Дополнительные сведения о том, как быть в курсе, перейдите к дорожной карте [библиотеки пользовательского интерфейса Windows.][GithubMicrosoftUiXamlRoadmap]  
 
 <!-- links -->  
 
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Модель распространения Evergreen — распространение приложений с помощью WebView2 | Документы Microsoft"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Стандартная модель распространения версий — распространение приложений с помощью WebView2 | Документы Microsoft"  
+[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Модель распространения Evergreen — распространение приложений с помощью webView2 | Документы Майкрософт"  
+[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Модель распространения фиксированной версии — распространение приложений с помощью webView2 | Документы Майкрософт"  
 
-[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Библиотека пользовательского интерфейса Windows 3,0 Preview 1 (Май 2020) | Документы Microsoft"  
+[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Библиотека пользовательского интерфейса Windows 3.0 Preview 1 (май 2020 г.) | Документы Майкрософт"  
 
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback-MicrosoftEdge/WebViewFeedback | GitHub"  
+[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Отзывы веб-просмотров — MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "План библиотеки пользовательского интерфейса Windows — Microsoft/Microsoft-UI-XAML | GitHub"  
+[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Дорожная карта библиотеки пользовательского интерфейса Windows — microsoft/microsoft-ui-xaml | GitHub"  

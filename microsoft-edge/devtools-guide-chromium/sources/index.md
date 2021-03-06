@@ -1,18 +1,18 @@
 ---
-description: Отображение и редактирование файлов, создание фрагментов кода, отладка JavaScript и настройка рабочих пространств в панели источников Microsoft Edge DevTools.
+description: Отображение и редактирование файлов, создание фрагментов, отладка JavaScript и настройка рабочих пространств в панели Источников Microsoft Edge DevTools.
 title: Обзор панели источников
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: b90f927670146c004a335256ace28203219442eb
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235272"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397764"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,38 +28,38 @@ ms.locfileid: "11235272"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Обзор панели источников  
+# <a name="sources-panel-overview"></a>Обзор панели источников  
 
-Используйте панель источников Microsoft **** Edge DevTools для выполнения следующих действий.  
+Для выполнения следующих действий используйте панель Microsoft Edge DevTools **Sources.**  
 
 *   [Отображение файлов.](#display-files)  
-*   [Редактирование CSS и JavaScript.](#edit-css-and-javascript)  
-*   [Создайте и **сохраните фрагменты** Кода JavaScript,](#create-save-and-run-snippets)которые можно запустить на любой веб-странице.  **Фрагменты кода похожи** на закладки.  
-*   [Отлаговка JavaScript](#debug-javascript).  
-*   [Настройка рабочей области, чтобы](#set-up-a-workspace)изменения, внесенные в DevTools, были сохранены в код в файловой системе.  
+*   [Изменение CSS и JavaScript](#edit-css-and-javascript).  
+*   [Создание и сохранение **фрагментов** JavaScript,](#create-save-and-run-snippets)которые можно запустить на любой веб-странице.  **Фрагменты похожи** на закладки.  
+*   [Отламывка JavaScript](#debug-javascript).  
+*   [Настройка рабочего пространства,](#set-up-a-workspace)чтобы изменения, внесенные в DevTools, были сохранены в коде файловой системы.  
     
-## Отображение файлов  
+## <a name="display-files"></a>Отображение файлов  
 
-Используйте **страницу** для отображения всех ресурсов, загруженных страницей.
+Используйте **панель Page;** отображение всех ресурсов, загруженных на странице.
 
-:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
-   The **Page** pane  
+:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="Панель Page" lightbox="../media/sources-page-pane.msft.png":::
+   Панель **Page**  
 :::image-end:::  
 
-Как **организована** страница:  
-*   Верхний уровень, как на `top` предыдущем рисунке, представляет [HTML-кадр.][W3CHtml4Frames]  Найдите `top` на каждой странице, которую вы посещаете.  `top` представляет основной кадр документа.  
-*   Второй уровень, как на предыдущем `docs.microsoft.com` рисунке, представляет [собой источник.][HtmlstandardOrigin]  
-*   Третий уровень, четвертый уровень и так далее представляют каталоги и ресурсы, загруженные из этого источника.  Например, на предыдущем рисунке полный путь к `devtools-guide-chromium` ресурсу: `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
+Порядок **** организации области Страницы:  
+*   Верхний уровень, например `top` на предыдущем рисунке, представляет [htmL-кадр.][W3CHtml4Frames]  Найдите `top` на каждой странице, которую вы посещаете.  `top` представляет основную рамку документа.  
+*   Второй уровень, например `docs.microsoft.com` на предыдущем рисунке, представляет [происхождение][HtmlstandardOrigin].  
+*   На третьем, четвертом уровнях и так далее представлены каталоги и ресурсы, загруженные из этого происхождения.  Например, на предыдущем рисунке полный путь к `devtools-guide-chromium` ресурсу `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-Выберите файл в **области** страниц, чтобы отобразить содержимое в области **редактора.**  Вы можете отобразить любой тип файла.  Для изображений отображается предварительный просмотр изображения.  
+Выберите файл на панели **Страницы,** чтобы отобразить содержимое в **области редактора.**  Вы можете отображать любой тип файла.  Для изображений отображается предварительный просмотр изображения.  
 
 :::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Отображение содержимого a4d10f71.index-docs.js в области редактора" lightbox="../media/sources-editor-pane.msft.png":::
-   Отображение содержимого в `a4d10f71.index-docs.js` области **редактора**  
+   Отображение содержимого `a4d10f71.index-docs.js` панели **редактора**  
 :::image-end:::  
 
-## Редактирование CSS и JavaScript  
+## <a name="edit-css-and-javascript"></a>Изменение CSS и JavaScript  
 
-С помощью **области редактора** можно редактировать CSS и JavaScript.  DevTools обновляет страницу для запуска нового кода.  Например, если изменить CSS-файл, добавив правило стиля ниже:
+Используйте области **редактора** для редактирования CSS и JavaScript.  DevTools обновляет страницу для запуска нового кода.  Например, если изменить CSS-файл, добавив правило стиля ниже:
 
 ```css
 .metadata.page-metadata {
@@ -67,23 +67,23 @@ ms.locfileid: "11235272"
 }
 ```
 
-Это изменение вступает в силу немедленно.
+Это изменение должно вступает в силу немедленно.
 
-:::image type="complex" source="../media/edit-css.msft.png" alt-text="Измените CSS в области редактора, чтобы изменить цвет текста субтитра на красный" lightbox="../media/edit-css.msft.png":::
-   Измените CSS в **области** редактора, чтобы изменить цвет текста субтитра на красный  
+:::image type="complex" source="../media/edit-css.msft.png" alt-text="Изменение CSS в области редактора, чтобы изменить текстовый цвет субтитра на красный" lightbox="../media/edit-css.msft.png":::
+   Изменение CSS в **области редактора,** чтобы изменить текстовый цвет субтитра на красный  
 :::image-end:::  
 
-Изменения CSS вступает в силу немедленно, сохранение не требуется.  Чтобы изменения JavaScript вступили в силу, выберите `Control` + `S` \(Windows, Linux\) или `Command` + `S` \(macOS\).  DevTools не выполняет скрипт повторно, поэтому единственными изменениями JavaScript, которые вступает в силу, являются изменения, внесенные в функции.  Например, на следующем рисунке обратите внимание, что это не `console.log('A')` `console.log('B')` так.  Если DevTools повторно запускает весь сценарий после вставки изменения, то текст был бы зарегистрирован в `A` консоли. ****  
+Изменения CSS вступает в силу немедленно, без сохранения.  Чтобы изменения JavaScript вступили в силу, выберите `Control` + `S` \(Windows, Linux\) `Command` + `S` или \(macOS\).  DevTools не выполняет повторного запуска скрипта, поэтому только изменения JavaScript, которые вступает в силу, это те, которые вы делаете внутри функций.  Например, на следующем рисунке обратите внимание, как `console.log('A')` не запустить, в то время как `console.log('B')` делает.  Если DevTools повторно запускает весь скрипт после внося изменения, то текст регистрируется `A` в **консоли**.  
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Редактирование JavaScript в области редактора" lightbox="../media/edit-js.msft.png":::
-   Редактирование JavaScript в **области редактора**  
+   Редактирование JavaScript в **панели редактора**  
 :::image-end:::  
 
-DevTools стирает изменения CSS и JavaScript при перезагрузке страницы.  Перейдите [в папку "Настройка рабочей области",](#set-up-a-workspace) чтобы узнать, как сохранить изменения в файловой системе.  
+DevTools стирает изменения CSS и JavaScript при обновлении страницы.  Перейдите [к настройкам рабочего пространства,](#set-up-a-workspace) чтобы узнать, как сохранить изменения в файловой системе.  
 
-## Создание, сохранение и запуск фрагментов кода  
+## <a name="create-save-and-run-snippets"></a>Создание, сохранение и запуск фрагментов  
 
-Фрагменты кода — это сценарии, которые можно запускать на любой странице.  Предположим, что вы многократно вводите следующий код в **консоли,** чтобы вставить библиотеку jQuery на страницу, чтобы можно было запускать команды jQuery из **консоли.**  
+Фрагменты — это скрипты, которые можно выполнить на любой странице.  Представьте, что вы несколько раз введите следующий код в **консоли,** чтобы вставить библиотеку jQuery на страницу, чтобы можно было запускать команды jQuery из **консоли.**  
 
 ```javascript
 let script = document.createElement('script');
@@ -93,36 +93,36 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```  
 
-Вместо этого вы можете сохранить **** этот код в фрагменте кода и запустить его с помощью нескольких нажатий кнопки в любое время.  DevTools сохраняет **фрагмент** в файловой системе.  
+Вместо этого вы можете сохранить **** этот код в фрагменте и запустить его с помощью нескольких нажатий кнопки в любое время.  DevTools сохраняет **фрагмент файла** в файловой системе.  
 
-:::image type="complex" source="../media/snippet.msft.png" alt-text="Фрагмент кода, который вставляет библиотеку jQuery на страницу" lightbox="../media/snippet.msft.png":::
-   Фрагмент **кода,** который вставляет библиотеку jQuery на страницу  
+:::image type="complex" source="../media/snippet.msft.png" alt-text="Фрагмент, который вставляет библиотеку jQuery на страницу" lightbox="../media/snippet.msft.png":::
+   Фрагмент, **который** вставляет библиотеку jQuery на страницу  
 :::image-end:::  
 
-Чтобы запустить **фрагмент:**
+Для запуска **фрагмента:**
 
-*   Откройте файл с помощью области **фрагментов** кода и выберите **"Выполнить"** \( ![ Кнопка "Выполнить" ][ImageRunIcon] \).  
-*   Откройте меню [команд,][DevtoolsGuideChromiumCommandMenuIndex]удалите символ, введите , введите имя фрагмента кода, а `>` `!` затем выберите **** `Enter` .  
+*   Откройте файл с помощью **панели фрагментов** и выберите **Выполнить** \. ![ Кнопка Запуск ][ImageRunIcon] \).  
+*   Откройте [командное меню,][DevtoolsGuideChromiumCommandMenuIndex]удалите символ, введите, введите имя `>` фрагмента, а затем выберите `!` **** `Enter` .  
     
-Чтобы узнать [больше,][DevtoolsGuideChromiumJavascriptSnippets] перейдите к фрагментам кода на любой странице.
+Перейдите [к запуску фрагментов кода с любой страницы,][DevtoolsGuideChromiumJavascriptSnippets] чтобы узнать больше.
 
-## Отлаговка JavaScript  
+## <a name="debug-javascript"></a>Отламывка JavaScript  
 
-Вместо того чтобы использовать для того, чтобы выявить, где происходит ошибка JavaScript, рассмотрите возможность использования средств отладки `console.log()` Microsoft Edge DevTools.  Общая идея состоит в том, чтобы установить точку останова, которая является преднамеренным местом остановки в коде, а затем пошаговая пошаговая часть времени работы кода по одной строке за раз.  Пошаговая пошаговая часть кода может отображать и изменять значения всех текущих свойств **** и переменных, запускать JavaScript в консоли и многого другое.
+Вместо того, чтобы использовать для того, чтобы сделать вывод о неправильном использовании JavaScript, следует использовать средства отладки `console.log()` Microsoft Edge DevTools.  Общая идея состоит в том, чтобы установить точку остановки, которая является преднамеренным местом остановки в коде, а затем выполнить время работы кода по одной строке за раз.  При прошаговке кода можно отобразить и изменить значения всех задаваемых в настоящее время свойств и переменных, запустить JavaScript в консоли **и**другие.
 
-Перейдите [к началу отладки JavaScript,][DevtoolsGuideChromiumJavascriptIndex] чтобы изучить основы отладки в DevTools.
+Перейдите [к началу отладки JavaScript,][DevtoolsGuideChromiumJavascriptIndex] чтобы узнать основы отладки в DevTools.
 
-:::image type="complex" source="../media/debugging.msft.png" alt-text="Отлаговка JavaScript" lightbox="../media/debugging.msft.png":::
-   Отлаговка JavaScript  
+:::image type="complex" source="../media/debugging.msft.png" alt-text="Отламывка JavaScript" lightbox="../media/debugging.msft.png":::
+   Отламывка JavaScript  
 :::image-end:::  
 
-## Настройка рабочей области  
+## <a name="set-up-a-workspace"></a>Настройка рабочего пространства  
 
-По умолчанию при редактировании файла в средстве **"Источники"** эти изменения теряются при перезагрузке страницы.  **Workspaces** позволяют сохранить изменения, внесенные в DevTools, в файловую систему.  По сути, DevTools можно использовать в качестве редактора кода.
+По умолчанию при редактировании файла в средстве **Sources** эти изменения теряются при обновлении страницы.  **Рабочей области позволяют** сохранять изменения, внесенные в DevTools, в файловую систему.  По сути, DevTools может использоваться в качестве редактора кода.
 
-Перейдите [к редактированию файлов с помощью workspaces,][DevtoolsGuideChromiumWorkspacesIndex] чтобы начать работу.
+Перейдите [к редактированию файлов с помощью рабочей области,][DevtoolsGuideChromiumWorkspacesIndex] чтобы начать работу.
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -132,18 +132,18 @@ document.head.appendChild(script);
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Запуск команд с помощью меню команд Microsoft Edge DevTools | Документы Майкрософт"  
-[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Начало отладки JavaScript в Microsoft Edge DevTools | Документы Майкрософт"  
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Запуск фрагментов Кода JavaScript на любой странице с Помощью Microsoft Edge DevTools | Документы Майкрософт"  
-[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Редактирование файлов с помощью workspaces | Документы Майкрософт"  
+[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Запуск команд с командным меню Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Начало работы с отладки JavaScript в Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Запустите фрагменты JavaScript на любой странице с помощью Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Изменение файлов с помощью рабочей области | Документы Майкрософт"  
 
-[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin | HTML Standard"  
+[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin | СТАНДАРТ HTML"  
 
-[W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Frames | W3C"  
+[W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Кадры | W3C"  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/sources) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/sources) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

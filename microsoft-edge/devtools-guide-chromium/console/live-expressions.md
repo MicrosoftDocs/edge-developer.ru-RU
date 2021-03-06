@@ -1,18 +1,18 @@
 ---
-description: Если вы обнаружите, что одинаковые выражения JavaScript отображаются на консоли несколько раз, попробуйте вместо этого использовать выражения в реальном времени.
-title: Контроль значений выражений JavaScript в Real-Time с помощью выражений в реальном времени
+description: Если вы находите, что введите те же выражения JavaScript в консоль несколько раз, попробуйте Live Expressions вместо этого.
+title: Просмотр значений выражений JavaScript в режиме реального времени с помощью Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: f6787455863f738d0fa4e014ca8fc318ad83a9cb
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 5bc49b60cc1c1dfb41c793c3fec7681fb6415e4c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125232"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398800"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,22 +28,22 @@ ms.locfileid: "11125232"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Контроль значений выражений JavaScript в Real-Time с помощью выражений в реальном времени  
+# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>Просмотр значений выражений JavaScript в режиме реального времени с помощью Live Expressions  
 
-Если вы обнаружите, что один и тот же выражение JavaScript будет вводиться повторно в консоль, возможно, вам будет проще создать **выражение в реальном времени**.  С помощью **выражений в реальном времени** вы вводите выражение один раз, а затем закрепите его в верхней части консоли.  Значение выражения обновляется почти в режиме реального времени.  
+Если вы напечатаете одно и то же выражение JavaScript в консоли несколько раз, вам может быть проще создать **выражение Live.**  С **помощью Live Expressions** вы введите выражение один раз, а затем прикрепите его к верхней части консоли.  Значение обновлений выражения почти в режиме реального времени.  
 
-## Создание выражения в реальном времени  
+## <a name="create-a-live-expression"></a>Создание live expression  
 
-1.  [Открытие консоли][DevToolsConsoleReferenceOpenConsole].  
-1.  Выберите **создать выражение в реальном времени** \ ( ![ создать выражение в реальном времени ][ImageCreateLiveExpressionIcon] ).  Появится текстовое поле " **выражение в реальном времени** ".  
+1.  [Откройте консоль.][DevToolsConsoleReferenceOpenConsole]  
+1.  Выберите **Создать живое выражение** \. ![ Создайте живое ][ImageCreateLiveExpressionIcon] выражение \).  Появится текстовое поле **Live Expression.**  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Ввод данных Document. activeElement в текстовое поле &quot;Интерактивное выражение&quot;" lightbox="../media/console-create-live-expression.msft.png":::
-       Ввод `document.activeElement` текста в текстовое поле " **интерактивное выражение** "  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Ввод document.activeElement в текстовом окне Live Expression" lightbox="../media/console-create-live-expression.msft.png":::
+       Ввод `document.activeElement` текста **в текстовом окне Live Expression**  
     :::image-end:::  
     
-1.  Выберите `Control` + `Enter` \ (Windows, Linux \) или `Command` + `Enter` \ (macOS \), чтобы сохранить выражение, или выберите его за пределами текстового поля " **выражение в реальном времени** ".  
+1.  Выберите `Control` + `Enter` \(Windows, Linux\) `Command` + `Enter` или \(macOS\) **** для сохранения выражения или выберите вне текстового ящика Live Expression.  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -53,11 +53,11 @@ ms.locfileid: "11125232"
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Открытие ссылки на консоль консоли | Документы Microsoft"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Откройте консоль — справочный | Документы Майкрософт"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

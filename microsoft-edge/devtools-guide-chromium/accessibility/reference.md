@@ -1,18 +1,18 @@
 ---
-description: Исчерпывающая Справка по специальным возможностям в Microsoft Edge DevTools.
-title: Справка по специальным возможностям
+description: Полная ссылка на функции доступности в Microsoft Edge DevTools.
+title: Справка о доступности
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: de8f4bee6fef7725af9b97fb80ab45582dfa2286
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125316"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398338"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,165 +28,165 @@ ms.locfileid: "11125316"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Справка по специальным возможностям  
+# <a name="accessibility-reference"></a>Справка о доступности  
 
-Эта страница является исчерпывающей ссылкой на специальные возможности в Microsoft Edge DevTools.  Оно предназначено для веб-разработчиков, которые:  
+Эта страница — это всеобъемлющая ссылка на функции доступности в Microsoft Edge DevTools.  Он предназначен для веб-разработчиков, которые:  
 
-*   Разработайте основные принципы DevTools, например, как открыть ее.  
-*   Знакомы с [принципами специальных возможностей и][MDNAccessibility]рекомендациями.  
+*   У вас есть базовое представление о DevTools, например о том, как его открыть.  
+*   Знакомы с [принципами доступности и лучшими практиками.][MDNAccessibility]  
     
-Цель этой ссылки — помочь вам найти все средства, доступные в DevTools, которые помогут вам изучить специальные возможности на странице.  
+Эта ссылка поможет вам найти все средства, доступные в DevTools, которые помогут вам изучить доступность страницы.  
 
-Если вы ищете справку по переходу на DevTools с помощью специальных возможностей, таких как средство чтения с экрана, вы узнаете о том, что нужно сделать для навигации по [Microsoft Edge DevTools с технологией специальных возможностей][DevtoolsAccessibilityNavigation] .  
+Если вы ищете помощь в навигации по DevTools с помощью вспомогательных технологий, таких как считыватель экрана, перейдите к навигации [Microsoft Edge DevTools с помощью вспомогательных технологий][DevtoolsAccessibilityNavigation].  
 
-## Общие сведения о специальных возможностях в Microsoft Edge DevTools  
+## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Обзор возможностей доступности в Microsoft Edge DevTools  
 
-В этом разделе объясняется, как DevTools в общий набор средств для специальных возможностей.  
+В этом разделе объясняется, как DevTools вписывается в общий набор средств доступности.  
 
-Если вы решите, что страница доступна, вам нужно будет 2 общих вопросов.  
+При определении доступности страницы необходимо иметь в виду 2 общих вопроса:  
 
-1.  Вы можете перемещаться по странице с помощью клавиатуры или [средства чтения с экрана][MDNScreenReader]?  
-1.  Правильно ли помечены элементы страницы для средств чтения с экрана?  
+1.  Можете ли вы перемещаться по странице с помощью клавиатуры или [чтения с экрана?][MDNScreenReader]  
+1.  Правильно ли помечены элементы страницы для чтения с экрана?  
     
-Как правило, DevTools поможет устранить ошибки, связанные с вопросами #2, так как эти ошибки легко выявить автоматически.  Вопрос #1 так же важен, но, к сожалению, DevTools не поможет вам.  Единственный способ найти ошибки, связанные с вопросом #1, — попытаться использовать страницу с помощью клавиатуры или средства чтения с экрана самостоятельно.  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
+В общем, DevTools должен помочь вам устранить ошибки, связанные с вопросом #2, так как эти ошибки легко обнаружить в автоматическом режиме.  Вопрос #1 так же важен, но, к сожалению, DevTools не поможет вам там.  Единственный способ найти ошибки, связанные с вопросом #1, это попробовать использовать страницу с клавиатурой или экраном чтения самостоятельно.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Аудит специальных возможностей страницы  
+## <a name="audit-the-accessibility-of-a-page"></a>Аудит доступности страницы  
 
 > [!NOTE]
-> Панель **Аудит** содержит ссылки на содержимое, размещенное на сторонних веб-сайтах.  Корпорация Майкрософт не несет ответственности за контент этих сайтов и любые данные, которые могут быть собраны, и не может контролировать их.  
+> Средство **аудита** предоставляет ссылки на контент, который содержится на сторонних веб-сайтах.  Корпорация Майкрософт не несет ответственности и не контролирует содержимое этих сайтов и любые данные, которые могут быть собраны.  
 
-Как правило, с помощью панели аудит вы можете определить, есть ли в следующих случаях:  
+В общем случае используйте панель аудитов, чтобы определить, если:  
 
-*   Страница правильно помечена для средств чтения с экрана.  
-*   Элементы текста на странице имеют достаточные коэффициенты контрастности.  Посмотрите [Просмотр коэффициента контрастности текстового элемента в средстве выбора цвета](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+*   Страница правильно помечена для чтения с экрана.  
+*   Текстовые элементы на странице имеют достаточные коэффициенты контрастности.  Перейдите [к просмотру соотношения контрастности текстового элемента в элементе Color Picker.](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker)  
 
-Чтобы выполнить аудит страницы, выполните указанные ниже действия.  
+Аудит страницы:  
 
-1.  Перейдите к URL-адресу, на который вы хотите подвестись.  
-1.  В DevTools откройте вкладку **аудитория** .  DevTools показывает различные параметры конфигурации.  
+1.  Перейдите к URL-адресу, который необходимо аудитировать.  
+1.  В DevTools выберите средство **аудита.**  В DevTools показаны различные параметры конфигурации.  
     
     :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-audits-pane.msft.png":::
        Настройка аудита  
     :::image-end:::  
     
     > [!NOTE]
-    > Снимки экрана в этом разделе собраны в версии 79 Microsoft Edge.  Вы можете проверить, на какой версии вы работаете `edge://version` .  В более ранних версиях Microsoft Edge пользовательский интерфейс панели **аудита** выглядит иначе, но общий рабочий процесс одинаков.  
+    > Скриншоты в этом разделе были сделаны с помощью версии 79 Microsoft Edge.  Вы можете проверить, в какой версии вы `edge://version` работаете.  Пользовательский **интерфейс** средства аудита выглядит иначе в более ранних версиях Microsoft Edge, но общий рабочий процесс одинаковый.  
     
-1.  Для **устройства**выберите **мобильные** устройства, если вы хотите имитировать мобильное устройство.  Этот параметр позволяет изменить строку вашего агента пользователя и изменить размер окна просмотра.  Если Мобильная версия страницы отображается не так, как для классической версии, этот параметр может существенно повлиять на результаты аудита.  
-1.  Убедитесь, что в разделе " **Аудит** " включен параметр " **Специальные возможности** ".  Отключите другие категории, если вы хотите исключить их из отчета.  Если вы хотите найти другие способы улучшить качество страницы, оставьте это поле пустым.  
-1.  Раздел **регулирования** позволяет регулировать сеть и ЦП, что бывает полезно при анализе производительности нагрузки.  Этот параметр должен быть неважен для оценки доступности, поэтому вы можете использовать любой из них.  
-1.  Флажок **clear Storage (очистить хранилище** ) позволяет очистить все хранилище перед загрузкой страницы или сохранением хранилища между загрузкой страниц.  Этот параметр также может быть неважен для оценки доступности, поэтому вы можете использовать любой из них.  
-1.  Выберите команду **запустить аудиты**. После 10 – 30 секунд DevTools предоставляет отчет.  В отчете приводятся различные советы по улучшению доступности страницы.  
+1.  Для **устройства**выберите **Mobile,** если вы хотите смоделировать мобильное устройство.  Этот параметр изменяет строку агента пользователя и изменяет параметр viewport.  Если мобильная версия страницы отображает не так, как в настольной версии, этот параметр может существенно действовать на результаты аудита.  
+1.  В разделе **Аудиты** убедитесь, что **включена доступность.**  Отключите другие категории, если вы хотите исключить их из отчета.  Оставьте их включенными, если вы хотите найти другие способы улучшения качества страницы.  
+1.  Раздел **регулирование позволяет** управлять сетью и ЦП, что полезно при анализе производительности нагрузки.  Этот параметр должен быть неактуален для оценки доступности, поэтому вы можете использовать все, что хотите.  
+1.  Почтовый **ящик Clear Storage** позволяет очистить все хранилища перед загрузкой страницы или сохранить хранилище между нагрузками на страницу.  Этот параметр также, вероятно, не имеет значения для оценки доступности, поэтому вы можете использовать все, что вы предпочитаете.  
+1.  Выберите **выполнить аудиты.** Через 10-30 секунд DevTools предоставляет отчет.  В отчете вы можете получить различные советы по улучшению доступности страницы.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Отчет" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
        Отчет  
     :::image-end:::  
     
-1.  Щелкните аудиторию, чтобы получить дополнительные сведения о нем.  
+1.  Чтобы узнать больше об этом, выберите аудит.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
-       Дополнительные сведения об аудите  
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Дополнительные сведения о аудите" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
+       Дополнительные сведения о аудите  
     :::image-end:::  
     
-1.  Выберите дополнительные **сведения** , чтобы просмотреть документацию по аудиту.  
+1.  Чтобы **просмотреть** документацию этого аудита, выберите Дополнительные дополнительные.  
     
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
-       Просмотр документации по аудиту  
+    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Просмотр документации аудита" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+       Просмотр документации аудита  
     :::image-end:::  
     
-### Дополнительные сведения: расширение aXe  
+### <a name="see-also-axe-extension"></a>См. также: расширение aXe  
 
-Вы можете использовать [расширение aXe][ChromeWebStoreAxe] , а не панель **аудита** .  
-Расширение aXe обычно предоставляет те же сведения, так как это базовый обработчик, который включает в себя панель аудита.  Расширение aXe имеет другой пользовательский интерфейс и описывает аудит слегка разными способами.  
-Одно из преимуществ, которое имеет расширение aXe на панели **аудитов** , состоит в том, что она позволяет проверять и вымечать узлы, в которых произошел сбой.  
+Вы можете использовать расширение [aXe,][ChromeWebStoreAxe] а не средство **аудита.**  
+Расширение aXe обычно предоставляет ту же информацию, так как это является движком, который приводит в движок панели Аудиты.  Расширение aXe имеет другой пользовательский интерфейс и описывает аудиты немного по-другому.  
+Одно из преимуществ расширения aXe над средством **Аудита** заключается в том, что оно позволяет проверять и выделять узлы с ошибками.  
 
-:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
+:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="Расширение aXe" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
    Расширение aXe  
 :::image-end:::  
 
-## Область "Специальные возможности"  
+## <a name="the-accessibility-panel"></a>Панель доступности  
 
-В области " **Специальные возможности** " можно просмотреть дерево специальных возможностей, атрибуты ARIA и вычисляемые свойства специальных возможностей узлов DOM.  
+Панель **доступности** — это панель, на которой вы видите дерево доступности, атрибуты ARIA и вычислительные свойства узлов DOM.  
 
-Чтобы открыть область " **Специальные возможности** ", выполните указанные ниже действия.  
+Чтобы открыть панель **доступности:**  
 
-1.  Откройте вкладку **элементы** .  
-1.  В **дереве DOM**выберите элемент, который нужно проверить.  
-1.  Откройте вкладку **Специальные возможности** .  Эта вкладка может быть скрыта за кнопкой **другие вкладки** \ ( ![ другие вкладки ][ImageMoreTabsIcon] \).  
+1.  Выберите **средство Elements.**  
+1.  В дереве **DOM выберите**элемент, который необходимо проверить.  
+1.  Выберите панель **доступности.**  Эта панель может быть скрыта за кнопкой **More Tabs** \( ![ More Tabs ][ImageMoreTabsIcon] \)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   Проверка `h1` элемента домашней страницы DevTools в области " **Специальные возможности** "  
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Проверьте элемент h1 домашней страницы DevTools в панели доступности" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+   Проверьте `h1` элемент домашней страницы DevTools в панели **доступности**  
 :::image-end:::  
 
-### Просмотр положения элемента в дереве специальных возможностей  
+### <a name="view-the-position-of-an-element-in-the-accessibility-tree"></a>Просмотр положения элемента в дереве доступности  
 
-[Дерево специальных возможностей][MDNAccessibilityTree] — это подмножество дерева DOM.  Она включает только элементы из дерева DOM, которые являются важными и полезны для отображения содержимого страницы в средстве чтения с экрана.  
+Дерево [доступности][MDNAccessibilityTree] — это подмножество дерева DOM.  Он содержит только элементы из дерева DOM, которые являются актуальными и полезными для отображения содержимого страницы в считыватель экрана.  
 
-Проверьте расположение элемента в дереве специальных возможностей в [области "Специальные возможности](#the-accessibility-pane)".  
+Проверьте положение элемента в дереве доступности из панели [accessibility.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
-   Раздел **дерева специальных возможностей**  
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Раздел Дерево доступности" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+   Раздел **Дерево доступности**  
 :::image-end:::  
 
-### Просмотр атрибутов ARIA элемента  
+### <a name="view-the-aria-attributes-of-an-element"></a>Просмотр атрибутов ARIA элемента  
 
-Атрибуты ARIA гарантируют, что средства чтения с экрана имеют всю необходимую информацию для правильного представления содержимого страницы.  
+Атрибуты ARIA гарантируют, что читатели экрана будут иметь всю необходимую информацию для правильного представления содержимого страницы.  
 
-Просмотрите атрибуты ARIA элемента в [области "Специальные возможности](#the-accessibility-pane)".  
+Просмотр атрибутов ARIA элемента в панели [доступности.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   Раздел **атрибутов ARIA**  
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Раздел Атрибуты ARIA" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+   Раздел **Атрибуты ARIA**  
 :::image-end:::  
 
-### Просмотр вычисляемых свойств специальных возможностей для элемента  
+### <a name="view-the-computed-accessibility-properties-of-an-element"></a>Просмотр свойств вычислительной доступности элемента  
 
 > [!NOTE]
-> Если вы ищете вычисляемые свойства CSS, перейдите в раздел [Вычисляемая вкладка][DevtoolsCssReferenceViewActuallyAppliedElements].  
+> Если вы ищете вычислительные свойства CSS, перейдите на [панель Computed.][DevtoolsCssReferenceViewActuallyAppliedElements]  
 
-Некоторые свойства специальных возможностей динамически рассчитываются браузером.  Эти свойства отображаются в разделе " **вычисляемые свойства** " области " **Специальные возможности** ".  
+Некоторые свойства доступности динамически вычисляются браузером.  Эти свойства отображаются в разделе **Computed Properties** панели **доступности.**  
 
-Просмотр вычисляемых свойств специальных возможностей для элемента в [области специальных возможностей](#the-accessibility-pane).  
+Просмотр свойств вычислительной доступности элемента в панели [доступности.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   Раздел " **вычисляемые свойства** " области " **Специальные возможности** "  
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Раздел Computed Properties панели доступности" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+   Раздел **Computed Properties** панели **доступности**  
 :::image-end:::  
 
-## Просмотр коэффициента контрастности текстового элемента в палитре цветов  
+## <a name="view-the-contrast-ratio-of-a-text-element-in-the-color-picker"></a>Просмотр соотношения контрастности текстового элемента в элементе Color Picker  
 
-Некоторые люди со слабым зрением не видят области как очень яркие или очень темные.  Все обычно выводятся примерно одинаковая яркость, что делает ее более четкими и контурами.  
+Некоторые люди с низким зрением не видят области как очень яркие или очень темные.  Все имеет тенденцию отображаться примерно с одинаковой яркостью, что затрудняет разграничение контуров и краев.  
 
-Коэффициент контрастности измеряет разницу яркости между передним и фоном текста.  Если текст имеет низкую степень контрастности, пользователи с низким зрением могут в буквальном смысле работать с вашим сайтом в качестве пустого экрана.  
+Коэффициент контрастности измеряет разницу в яркости между переднем плане и фоном текста.  Если в тексте низкий контраст, то пользователи с низким зрением могут буквально оказаться на вашем сайте в виде пустого экрана.  
 
-С помощью средства выбора цвета вы можете убедиться, что текст соответствует рекомендуемым уровням контрастности:  
+Выбор цвета поможет вам убедиться, что текст соответствует рекомендуемым уровням коэффициента контрастности:  
 
-1.  Откройте вкладку **элементы** .  
-1.  В **дереве DOM**выделите текстовый элемент, который нужно проверить.  
+1.  Выберите **средство Elements.**  
+1.  В **дереве DOM выберите**текстовый элемент, который необходимо проверить.  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Проверка абзаца в **дереве DOM**  
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Проверка абзаца в дереве DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+       Проверка абзаца **в дереве DOM**  
     :::image-end:::  
     
-1.  В области **стили** щелкните квадратик цвета рядом со `color` значением элемента.  
+1.  В панели **Стилей** выберите цветной квадрат рядом со `color` значением элемента.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
-       `color`Свойство элемента  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="Свойство цвета элемента" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+       Свойство `color` элемента  
     :::image-end:::  
     
-1.  Проверьте раздел **коэффициент контрастности** в палитре цветов.  Один флажок означает, что элемент соответствует [минимальным рекомендациям][W3CContrastMinimum].  Два флажка означают, что они соответствуют [улучшенным рекомендациям][W3CContrastEnhanced].  
+1.  Проверьте раздел **Коэффициент контрастности** в цветопоимке.  Одна из контрольных знаков означает, что элемент соответствует [минимальной рекомендации.][W3CContrastMinimum]  Два контрольных знака означает, что он соответствует [расширенной рекомендации][W3CContrastEnhanced].  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       В разделе " **степень контрастности** " в окне выбора цвета показаны 2 метки и значение `13.97`  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="В разделе Коэффициент контрастности в средстве выборки цвета показаны 2 контрольных знака и значение 13,97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+       В **разделе Коэффициент** контрастности в средстве цветопоимыватель показаны 2 контрольных знака и значение `13.97`  
     :::image-end:::  
     
-1.  Щелкните раздел **коэффициент контрастности** , чтобы просмотреть дополнительные сведения.  В визуальном элементе выбора в верхней части окна выбора цвета появится линия.  Если текущий цвет соответствует рекомендациям, то все элементы на одной и той же стороне линии также соответствуют рекомендациям.  Если текущий цвет не соответствует рекомендациям, то на одном и том же стороне не будут выводится соответствие рекомендациям.  
+1.  Дополнительные сведения можно получить в разделе **Коэффициент контрастности.**  Строка отображается в визуальном выборщике в верхней части выборки цвета.  Если текущий цвет соответствует рекомендациям, то все, что на той же стороне линии, также соответствует рекомендациям.  Если текущий цвет не соответствует рекомендациям, то все, что имеет одну и ту же сторону, также не соответствует рекомендациям.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Настройка аудита" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       Линия **коэффициента контрастности** в средстве выбора визуальных элементов  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Линия коэффициента контрастности в визуальном выборке" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+       Линия **коэффициента контрастности** в визуальном выборке  
     :::image-end:::  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -196,21 +196,21 @@ ms.locfileid: "11125316"
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Навигация в Microsoft Edge DevTools с технологией специальных возможностей | Документы Microsoft"  
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Просмотр только CSS, которая фактически применяется к ссылке element-CSS | Документы Microsoft"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Перейдите по Microsoft Edge DevTools с помощью вспомогательных технологий | Документы Майкрософт"  
+[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Просмотр только CSS, который на самом деле применяется к элементу — CSS Reference | Документы Майкрософт"  
 
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "Axe — тестирование специальных возможностей в Интернете-веб-магазин Chrome"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe — тестирование веб-доступности — Chrome Web Store"  
 
-[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Дерево специальных возможностей (AOM) | MDN"  
-[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Специальные возможности | MDN"  
-[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Средство чтения с экрана | MDN"  
+[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Дерево доступности (AOM) | MDN"  
+[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Доступность | MDN"  
+[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Считыватель | MDN"  
 
-[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Контрастность (улучшенная) уровень AAA | PNG"  
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Контрастность (минимум) уровень AA | PNG"  
+[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced) Level AAA | W3C"  
+[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Контрастный (минимальный) уровень AA | W3C"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

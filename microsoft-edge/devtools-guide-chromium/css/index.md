@@ -1,18 +1,18 @@
 ---
-description: Сведения о том, как использовать Microsoft Edge DevTools для просмотра и изменения CSS-страниц.
+description: Узнайте, как использовать Microsoft Edge DevTools для просмотра и изменения CSS страницы.
 title: Начало работы с просмотром и редактированием CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 3cd833c97cb2e7b746943f18526d09481b4e3cc5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b3d19d34f329fec7a3903fb37e8be3558ba4d31d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125211"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399094"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,172 +28,172 @@ ms.locfileid: "11125211"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Начало работы с просмотром и редактированием CSS  
+# <a name="get-started-with-viewing-and-changing-css"></a>Начало работы с просмотром и редактированием CSS  
 
-Эти интерактивные учебники помогут вам ознакомиться с основными принципами просмотра и изменения CSS для страниц с помощью Microsoft Edge DevTools.  
+Выполните эти интерактивные учебники, чтобы узнать основы просмотра и изменения CSS для страницы с помощью Microsoft Edge DevTools.  
 
-## Открытие примеров CSS  
+## <a name="open-css-examples"></a>Откройте примеры CSS  
 
-1.  Удерживайте клавишу `Control` \ (Windows, Linux \) или `Command` \ (macOS \) и выберите **CSS-примеры** , которые нужно открыть в новом окне.  
+1.  Удерживайте `Control` \(Windows, Linux\) `Command` или \(macOS\) и выберите **CSS Examples** для открытия в новом окне.  
     
     [Примеры CSS][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > Если вы хотите [закрепить окно DevTools][DevToolsCustomizePlacement] справа от окна просмотра \ (на рисунке ниже), выберите **Настройка и управление DevTools** `...` .  В раскрывающемся меню **Настройка и управление DevTools** в разделе **закрепляемая на стороне** нажмите кнопку **закрепить вправо**.  
+    > Если вы хотите пристыковаться к окну [DevTools][DevToolsCustomizePlacement] справа от вашего viewport \(отображается на следующем рисунке\), выберите Настройка и управление **DevTools** `...` .  В разделе Настройка и управление выпадаемым меню **DevTools** в разделе **Док-станция** выберите **док справа.**  
     
-## Просмотр CSS для элемента  
+## <a name="view-the-css-for-an-element"></a>Просмотр CSS для элемента  
 
 1.  [Откройте примеры CSS](#open-css-examples).  
-1.  Наведите указатель мыши на `Inspect Me!` текст, откройте контекстное меню, а затем выберите команду **проверить**.  
-    1.  В DevTools на панели " **элементы** " на вкладке " **дерево DOM** " `Inspect Me!` выделена кнопка "элемент".  
+1.  Наведите `Inspect Me!` курсор на текст, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
+    1.  В DevTools на **элементе Elements** на панели **дерева DOM** элемент `Inspect Me!` выделяется.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-inspect-me.msft.png":::
-           Рисунок 1: в **дереве DOM** выделено проверенный элемент  
+        :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="Элемент проверки выделен в дереве DOM" lightbox="../media/css-elements-inspect-me.msft.png":::
+           Элемент проверки выделен в **дереве DOM**  
         :::image-end:::  
         
-    1.  `Inspect Me!`Найдите значение атрибута в элементе `data-message` и скопируйте его.  
-1.  На странице в поле **значение `data-message` :** введите значение.  
-1.  Наведите указатель мыши на `Inspect Me!` текст, откройте контекстное меню, а затем выберите команду **проверить**.  
-    1.  В DevTools на панели **элементы** откройте вкладку **стили** .  
-    1.  На вкладке **стили** `Inspect Me!` элемент выделен.  
+    1.  В `Inspect Me!` элементе найдите значение атрибута `data-message` и скопируйте его.  
+1.  На странице в **значении `data-message` : textbox** введите значение.  
+1.  Наведите `Inspect Me!` курсор на текст, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
+    1.  В DevTools на **инструменте Elements** выберите панель **Стилей.**  
+    1.  В панели **Styles** элемент `Inspect Me!` выделяется.  
     1.  В `Inspect Me!` элементе найдите `aloha` правило класса.  
         
         > [!NOTE]
-        > Вы видите это правило, так как оно применяется к `Inspect Me!` элементу.  
+        > Это правило отображается, так как оно применяется к `Inspect Me!` элементу.  
         
-    1.  В `aloha` классе найдите значение для `padding` стиля и скопируйте его.  
+    1.  В классе `aloha` найдите значение для `padding` стиля и скопируйте его.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
-           Рисунок 2: классы CSS, примененные к выбранному элементу, такие как `aloha` , отображаются на вкладке **стили**  
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Классы CSS применяются к проверенному элементу, выделенному в панели Styles" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+           Классы CSS применяются к выбранному элементу, например, отображаются `aloha` в панели **Styles**  
         :::image-end:::  
         
-1.  На странице в поле **значение `padding` :** введите значение.  
+1.  На странице в **значении `padding` : textbox** введите значение.  
 
-## Добавление объявления CSS в элемент  
+## <a name="add-a-css-declaration-to-an-element"></a>Добавление объявления CSS в элемент  
 
-Используйте вкладку **стили** , если вы хотите изменить или добавить объявления CSS к элементу.  
+Используйте панель **Стилей,** чтобы изменить или добавить в элемент объявления CSS.  
 
 > [!NOTE]
-> Завершите [Просмотр CSS для](#view-the-css-for-an-element) учебника по элементу, прежде чем сделать это.  
+> Выполните [просмотр CSS для руководства по элементам](#view-the-css-for-an-element) перед этим.  
 
 1.  [Откройте примеры CSS](#open-css-examples).  
-1.  Наведите указатель мыши на `Add A Background Color To Me!` текст, откройте контекстное меню, а затем выберите команду **проверить**.  
-1.  Нажмите кнопку в `element.style` верхней части вкладки **стили** .  
-1.  Введите текст `background-color` и выберите его `Enter` .  
-1.  Введите текст `honeydew` и выберите его `Enter` .  В **дереве DOM** вы увидите, что к элементу применено объявление встроенного стиля.  
+1.  Наведите `Add A Background Color To Me!` курсор на текст, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
+1.  Выберите `element.style` в верхней части панели **Стилей.**  
+1.  Введите `background-color` и выберите `Enter` .  
+1.  Введите `honeydew` и выберите `Enter` .  В **dom Tree**отображается вложенное объявление стиля, примененное к элементу.  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
-       Рисунок 3: `background-color:honeydew` объявление применено к элементу с помощью `element.style` раздела вкладки " **стили** "  
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Добавление объявления CSS в элемент с помощью панели Стилей" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+       Объявление `background-color:honeydew` применяется к элементу с помощью раздела панели `element.style` **Стилей**  
     :::image-end:::  
     
-## Добавление класса CSS в элемент  
+## <a name="add-a-css-class-to-an-element"></a>Добавление класса CSS в элемент  
 
-С помощью вкладки " **стили** " можно увидеть, как выглядит элемент, когда класс CSS применяется к элементу или удаляется из него.  
+Чтобы отобразить внешний вид элемента при применении класса CSS к элементу или его удалении, перейдите на панель **Стилей.**  
 
 > [!NOTE]
-> Завершите [Просмотр CSS для](#view-the-css-for-an-element) учебника по элементу, прежде чем сделать это.  
+> Выполните [просмотр CSS для руководства по элементам](#view-the-css-for-an-element) перед этим.  
 
 1.  [Откройте примеры CSS](#open-css-examples).  
-1.  Наведите указатель мыши на `Add A Class To Me!` текст, откройте контекстное меню, а затем выберите команду **проверить**.  
-1.  Выберите **. CLS**.  DevTools открывает текстовое поле, в котором можно добавлять классы к выбранному элементу.  
-1.  Введите `color_me` текст в текстовом поле **Добавить новый класс** и нажмите кнопку `Enter` .  Флажок отображается под текстовым полем " **Добавить новый класс** ", в котором можно включить или отключить класс.  Если `Add A Class To Me!` к элементу применены другие классы, вы также можете переключаться между ними.  
+1.  Наведите `Add A Class To Me!` курсор на текст, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
+1.  Выберите **.cls**.  DevTools открывает текстовое поле, в котором можно добавить классы к выбранному элементу.  
+1.  `color_me`Введите **текстовое поле Добавить новый класс** и выберите `Enter` .  В текстовом окне **Добавить новый** класс отображается почтовый ящик, в котором можно отключить класс.  Если к элементу применены какие-либо другие классы, вы также можете ото всех `Add A Class To Me!` перегнастить.  
     
-    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
-       Рисунок 4: `color_me` класс применен к элементу с помощью раздела **. CLS** на вкладке " **стили** ".  
+    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Применить класс color_me к элементу" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
+       Класс применяется к элементу с `color_me` помощью раздела **.cls** панели **Styles**  
     :::image-end:::  
     
-## Добавление PseudoState в класс  
+## <a name="add-a-pseudostate-to-a-class"></a>Добавление псевдостата в класс  
 
-С помощью вкладки **стили** вы можете навсегда применить CSS-PseudoState к элементу.  DevTools поддерживает `:active` , `:focus` , `:hover` , и `:visited` .  
+Используйте панель **Стилей** для постоянного применения псевдостата CSS к элементу.  DevTools поддерживает `:active` `:focus` , и `:hover` `:visited` .  
 
 > [!NOTE]
-> Завершите [Просмотр CSS для](#view-the-css-for-an-element) учебника по элементу, прежде чем сделать это.  
+> Выполните [просмотр CSS для руководства по элементам](#view-the-css-for-an-element) перед этим.  
 
 1.  [Откройте примеры CSS](#open-css-examples).  
-1.  Наведите указатель мыши на `Hover Over Me!` текст.  Цвет фона изменится.  
-1.  Наведите указатель мыши на `Hover Over Me!` текст, откройте контекстное меню, а затем выберите команду **проверить**.  
-1.  На вкладке **стили** выберите **: Hov**.  
-1.  Установите флажок **: наведение указателя мыши** .  Цвет фона изменится так же, как и раньше, несмотря на то, что вы не наводите указатель мыши на элемент.  
+1.  Наведите курсор `Hover Over Me!` на текст.  Меняется цвет фона.  
+1.  Наведите `Hover Over Me!` курсор на текст, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
+1.  В панели **Стилей** выберите **:hov**.  
+1.  Проверьте **:hover** checkbox.  Цвет фона меняется так же, как и раньше, даже если вы не нависаете над элементом.  
     
-    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
-       Рисунок 5: Переключение `:hover` PseudoState на элементе  
+    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Toggle the hover pseudostate on an element" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
+       Toggle the `:hover` pseudostate on an element  
     :::image-end:::  
     
-## Изменение размеров элемента  
+## <a name="change-the-dimensions-of-an-element"></a>Изменение размеров элемента  
 
-С помощью интерактивной схемы **"модель Box** " на вкладке " **стили** " можно изменить ширину, высоту, заполнение, границу или длину границы элемента.  
+Используйте **интерактивную** схему Box Model в панели **Стилей,** чтобы изменить ширину, высоту, обивку, маржу или длину границы элемента.  
 
 > [!NOTE]
-> Завершите [Просмотр CSS для](#view-the-css-for-an-element) учебника по элементу, прежде чем сделать это.  
+> Выполните [просмотр CSS для руководства по элементам](#view-the-css-for-an-element) перед этим.  
 
 1.  [Откройте примеры CSS](#open-css-examples).  
-1.  Наведите указатель мыши на `Change My Margin!` текст, откройте контекстное меню, а затем выберите команду **проверить**.  
-1.  На схеме **модель Box** на вкладке **стили** наведите указатель мыши на **Заполнение**.  Заполнение элемента выделено в окне просмотра.  
+1.  Наведите `Change My Margin!` курсор на текст, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
+1.  На **схеме Box Model** в панели **Стили** наведите курс на **обивку.**  Заполнение элемента выделено в представлении.  
 
     > [!NOTE]
-    > В зависимости от размера окна DevTools, возможно, потребуется прокрутить в нижнюю часть вкладки **стили** , чтобы увидеть **модель Box**.  
+    > В зависимости от размера окна DevTools может потребоваться прокрутка в нижней части панели **Стилей** для отображения **модели Box.**  
 
-1.  Дважды щелкните левое поле в **модели Box**, которое в настоящее время имеет значение `-` , означающее, что у элемента нет левого поля.  
-1.  Введите текст `100px` и выберите его `Enter` .  **Модель Box** по умолчанию имеет значения пикселей, но также принимает другие значения, например `25%` или `10vw` .  
+1.  Дважды щелкните левую маржу в **модели Box,** которая в настоящее время имеет значение, которое означает, что элемент не имеет `-` левого поля.  
+1.  Введите `100px` и выберите `Enter` .  Модель **box по** умолчанию по умолчанию имеет пиксели, но также принимает другие значения, такие как , или `25%` `10vw` .  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
-             Рисунок 6: наведение указателя мыши на заполнение элемента  
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Наведите курсор на обивку элемента" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+             Наведите курсор на обивку элемента  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
-             Рисунок 7: изменение левого поля элемента  
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Изменение левого поля элемента" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
+             Изменение левого поля элемента  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-## Отладка запросов мультимедиа  
+## <a name="debugging-media-queries"></a>Отладка запросов мультимедиа  
 
-С помощью [запросов мультимедиа][MDNUsingMediaGueries] можно сделать так, чтобы ваш веб-продукт реагировал на изменения параметров конфигурации для каждого пользователя.  Наиболее важным вариантом использования является предоставление для продукта другого макета CSS в зависимости от размеров окна просмотра.  Использование раздельных макетов позволяет создавать макеты с одним столбцом для мобильных устройств и многостолбцовый макет, если доступно больше свободного пространства на экране.  
+[Запросы мультимедиа][MDNUsingMediaGueries] — это способ заставить веб-продукт реагировать на изменения параметров конфигурации для каждого пользователя.  Наиболее важным случаем использования является предоставление вашему продукту другого макета CSS в зависимости от размеров представления.  Использование отдельных макетов позволяет разметку с одним столбцом для мобильных устройств и макеты с несколькими столбцами при наличии большего имени экрана.  
 
-Чтобы выполнить отладку или тестирование запросов мультимедиа, определенных в таблице CSS, выполните указанные ниже действия.  
+Если вы хотите отлагировать или протестировать запросы мультимедиа, определенные в CSS, используйте следующие действия.  
 
-1.  Откройте Инструменты разработчика и щелкните значок " **Переключить панель инструментов устройства** " в верхней части экрана или выберите `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` в macOS \).  
+1.  Откройте инструменты разработчика и выберите значок панели инструментов **Toggle** в левом верхней части или `Ctrl` + `Shift` + `M` выберите \( `Cmd` + `Shift` + `M` на macOS\).  
     
-    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
-       Рисунок 8: Открытие панели инструментов устройства  
+    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Откройте панель инструментов устройства" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
+       Откройте панель инструментов устройства  
     :::image-end:::  
     
-1.  На панели инструментов устройства откройте `...` меню в верхнем правом углу и выберите **просмотреть запросы мультимедиа**.  На экран выводится цветная полоса, представляющая различные запросы мультимедиа.  
+1.  Открыв панель инструментов устройства, выберите меню в правом верхнем ряду и `...` выберите **View Media Queries**.  Цветные полосы, отображаемые над веб-страницей, представляют различные запросы мультимедиа.  
     
-    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
-       Рис. 9: отображение запросов мультимедиа на панели инструментов устройства  
+    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Показать запросы мультимедиа в панели инструментов устройства" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+       Показать запросы мультимедиа в панели инструментов устройства  
     :::image-end:::  
     
-1.  Наведите указатель мыши на границу линии, чтобы просмотреть значения различных запросов мультимедиа. Выберите каждый из них, чтобы изменить размер веб-страницы.  
+1.  Наведите курсор на границы в барах, чтобы отобразить значения различных запросов мультимедиа.  Выберите каждый из них для повторного выбора веб-страницы, чтобы соответствовать.  
     
-    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
-       Рисунок 10: выбор запроса мультимедиа из панели предварительного просмотра  
+    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Выбор запроса мультимедиа из панели предварительного просмотра" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
+       Выбор запроса мультимедиа из панели предварительного просмотра  
     :::image-end:::  
     
-1.  Чтобы выполнить отладку запросов мультимедиа и открыть CSS-файл в `Sources` редакторе, наведите указатель мыши на любой из сегментов отрезков, откройте контекстное меню, а затем выберите команду `reveal in source code` .  
+1.  Чтобы отлажать запросы мультимедиа и открыть CSS-файл в редакторе; наведите курсор на любой из сегментов панели, откройте контекстное меню \(правой кнопкой `Sources` мыши\) и выберите `reveal in source code` .  
     
-    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Проверяемый элемент выделен в дереве DOM" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
-       Рисунок 11: отображение запросов мультимедиа в редакторе источников  
+    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Раскрытие запросов мультимедиа в редакторе источников" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
+       Раскрытие запросов мультимедиа в редакторе источников  
     :::image-end:::  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Изменение положения DevTools Microsoft EDGE (Отстыковка, закрепить в нижней части, закрепить слева)"  
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Изменение размещения Microsoft Edge DevTools (Undock, dock to bottom, dock to left)"  
 
-[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Примеры CSS — Microsoft EDGE (Chromium) DevTools | Цепь"  
+[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Примеры CSS — Microsoft Edge (Chromium) DevTools | Glitch"  
 
-[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Использование мультимедийных запросов | MDN"  
+[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Использование запросов мультимедиа | MDN"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/css/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/css/index) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

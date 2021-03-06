@@ -1,6 +1,8 @@
 ---
-description: Вопросы, которые следует учитывать при использовании API времени работы Windows.
+description: Рекомендации по использованию API среды выполнения Windows
 title: Рекомендации по использованию API среды выполнения Windows
+ms.custom: ''
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 ms.topic: article
@@ -10,32 +12,31 @@ ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
 caps.latest.revision: 8
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 718a23646ec9a82c1d53a2669d7cdbf218647e41
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 170374fd109802bff0aa0fc93cea6c8d50c9d7c7
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235482"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399346"
 ---
-# Рекомендации по использованию API среды выполнения Windows  
+# <a name="considerations-when-using-the-windows-runtime-api"></a>Рекомендации по использованию API среды выполнения Windows  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-В JavaScript можно использовать почти все элементы API времени работы Windows.  Однако есть некоторые аспекты представления элементов в среде runtime Windows на JavaScript, которые следует помнить.  
+В JavaScript можно использовать практически каждый элемент API времени запуска Windows.  Однако есть некоторые аспекты представления JavaScript элементов windows Runtime, которые следует иметь в виду.  
 
 > [!IMPORTANT]
-> Сведения о создании компонентов времени работы Windows на C++, C# или Visual Basic и их [][WindowsUwpComponentsCreatingCpp] потреблении в Java [Visual Basic Script][WindowsUwpComponentsCreatingCsharpVb]см. в под этой теме.  
+> Сведения о создании компонентов windows Runtime в C++, C# или Visual Basic и их потреблении в JavaScript см. в руб. Создание компонентов времени запуска Windows в [C++][WindowsUwpComponentsCreatingCpp] и Создание компонентов времени запуска Windows в [C# и Visual Basic][WindowsUwpComponentsCreatingCsharpVb].  
 
-## Особые случаи в представлении javaScript типов времени работы Windows  
+## <a name="special-cases-in-the-javascript-representation-of-windows-runtime-types"></a>Особые случаи в представлении JavaScript типов windows runtime  
 
 :::row:::
    :::column span="1":::
-      Строки  
+      Strings  
    :::column-end:::
    :::column span="3":::
-      Неинициализированная строка передается методу времени runtime Windows в качестве строки "undefined", а строка, задав для нее, передается в качестве строки `null` "null".  \(Это справедливо всякий раз, когда строка или значение приводится к строке.\) Перед тем как передать строку методу времени запуска Windows, необходимо инициализировать ее как пустую строку `null` `undefined` \(""\).  
+      Неинициальная строка передается методу windows Runtime в качестве строки "undefined", а строка, задаваемая в качестве строки `null` "null".  \(Это верно, когда значение или значение принудилось к строке.\) Перед тем, как передать строку методу запуска Windows, следует инициализировать ее как пустую строку `null` `undefined` \("\").  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -43,7 +44,7 @@ ms.locfileid: "11235482"
       Интерфейсы  
    :::column-end:::
    :::column span="3":::
-      Невозможно реализовать интерфейс времени выполнения Windows в JavaScript.  
+      Невозможно реализовать интерфейс windows Runtime в JavaScript.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -51,8 +52,8 @@ ms.locfileid: "11235482"
       Массивы  
    :::column-end:::
    :::column span="3":::
-      Массивы в среде разработки Windows не могут меняться, поэтому методы, которые меняют их в JavaScript, не работают в массивах времени запуска Windows.  
-      *   Массивы: если передать значение массива JavaScript методу времени работы Windows, массив будет скопирован.  Методу времени работы Windows не удастся изменить массив или его члены и вернуть его в приложение JavaScript.  Однако можно использовать типированные массивы \(например, [Int32Array Object][MDNInt32array]\), которые не копируется.  
+      Массивы времени запуска Windows не являются resizable, поэтому методы, которые меняют массивы в JavaScript, не работают на массивах времени запуска Windows.  
+      *   Массивы. Если передать значение массива JavaScript методу запуска Windows, массив копируется.  Метод windows Runtime не может изменять массив или его членов и возвращать его в приложение JavaScript.  Однако можно использовать типированные массивы \(например, [Объект Int32Array\),][MDNInt32array]которые не копируется.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -60,7 +61,7 @@ ms.locfileid: "11235482"
       Структуры  
    :::column-end:::
    :::column span="3":::
-      Структуры времени работы Windows — это объекты в JavaScript.  Если вы хотите передать структуру времени работы Windows методу времени работы Windows, не выдайте ее с помощью ключевого `new` слова.  Вместо этого создайте объект и добавьте соответствующие члены и их значения.  Имена участников должны быть в "верблюжьем" примере: `SomeStruct.firstMember` .  
+      Структуры времени запуска Windows — это объекты в JavaScript.  Если вы хотите передать структуру времени запуска Windows методу windows runtime, не моментально перенастройте структуру с помощью ключевого `new` слова.  Вместо этого создайте объект и добавьте соответствующие участники и их значения.  Имена участников должны быть в случае верблюда: `SomeStruct.firstMember` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -68,32 +69,32 @@ ms.locfileid: "11235482"
       Объекты  
    :::column-end:::
    :::column span="3":::
-      Объекты JavaScript не такие, как объекты управляемого кода \( `System.Object` \).  Вы не можете передать объект JavaScript методу времени работы Windows, для который требуется `System.Object` .  
+      Объекты JavaScript не то же самое, что управляемые объекты кода `System.Object` \( \).  Вы не можете передать объект JavaScript методу windows Runtime, который требует `System.Object` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Удостоверение объекта  
+      Идентификатор объекта  
    :::column-end:::
    :::column span="3":::
-      В большинстве случаев объекты, переданные между временем работы Windows и JavaScript, не изменяются.  Обдвижок JavaScript поддерживает карту известных объектов.  Когда объект возвращается из точки windows Runtime, он соразмерно карте, и если он не существует, создается новый объект.  Эта же процедура следует для объектов, которые представляют интерфейсы, возвращаемые методами времени работы Windows.  Существует два типа исключений:  
+      В большинстве случаев объекты, переданные между временем запуска Windows и JavaScript, не изменяются.  В движке JavaScript поддерживается карта известных объектов.  Когда объект возвращается из времени запуска Windows, он совпадает с картой, и если он не существует, создается новый объект.  Такая же процедура для объектов, которые представляют интерфейсы, возвращаемые методами windows Runtime.  Существует два вида исключений:  
       
-      *   Объекты, которые возвращаются при вызове в окну windows, а затем добавляют новые свойства \(expando\), не сохраняют свои новые свойства при их возвращении в окну windows Runtime.  Однако когда они возвращаются в приложение JavaScript, так как они совпадают с существующим объектом, возвращенный объект имеет свойства expando.  
-      *   Структуры и делегаты в windows Runtime нельзя идентифицировать как идентичные ранее использованным структурам или делегатам.  При каждом возвращении структуры или делегата она получает новую ссылку.  
+      *   Объекты, возвращаемые после вызова во время запуска Windows, а затем добавлены новые свойства \(expando\) не сохраняют свои новые свойства при их возвращении в время запуска Windows.  Однако, когда они возвращаются в приложение JavaScript, так как они соответствуют существующему объекту, возвращенный объект имеет свойства expando.  
+      *   Структуры и делегаты в Windows Runtime не могут быть идентифицированы как идентичные ранее используемым структурам или делегатам.  Каждый раз, когда структура или делегат возвращается, она получает новую ссылку.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Конфликты имен  
+      Столкновения имен  
    :::column-end:::
    :::column span="3":::
-      У нескольких интерфейсов времени работы Windows могут быть члены с одинаковыми именами.  Если они объединены в одном объекте JavaScript (который может быть представлением класса или интерфейса времени работы), члены будут представлены с помощью полного имени.  Вы можете вызвать эти члены, используя следующий синтаксис:  
+      В нескольких интерфейсах windows Runtime могут быть члены с одинаковыми именами.  Если они объединены в один объект JavaScript (который может быть представлением класса запуска или интерфейса), участники представлены с полностью квалифицированными именами.  Вы можете вызвать этих членов, используя следующий синтаксис:  
       
       ```cpp
       Class["MemberName"](parameter)
       ```  
       
-      В следующем коде два интерфейса имеют метод Draw, а класс времени выполнения реализует оба интерфейса.  
+      В следующем коде два интерфейса имеют метод Draw, а класс выполнения реализует оба интерфейса.  
       
       ```cpp
       namespace CollisionExample {
@@ -112,7 +113,7 @@ ms.locfileid: "11235482"
       }
       ```  
       
-      Вот как можно вызвать вышеперечисленный код в JavaScript.  
+      Вот как можно вызвать вышеуказанный код в JavaScript.  
       
       ```javascript
       var example = new ExampleObject();
@@ -123,10 +124,10 @@ ms.locfileid: "11235482"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      `Out` parameters  
+      `Out` параметры  
    :::column-end:::
    :::column span="3":::
-      Если метод времени работы Windows имеет несколько параметров, в JavaScript метод имеет объект JavaScript в качестве возвращаемого значения, а объект имеет свойства, соответствующие `out` `out` параметру.  Например, рассмотрим следующую подпись времени работы Windows на C++.  
+      Если метод запуска Windows имеет несколько параметров, в JavaScript метод имеет объект JavaScript в качестве возвращаемого значения, а объект имеет свойства, соответствующие `out` `out` параметру.  Например, рассмотрим следующую подпись времени запуска Windows в C++.  
       
       ```cpp
       void ExampleMethod(
@@ -135,21 +136,21 @@ ms.locfileid: "11235482"
       )
       ```  
       
-      Версия этой подписи JavaScript:  
+      Версия JavaScript этой подписи:  
       
       ```javascript
       var returnValue = exampleMethod();
       ```  
       
-      В этом примере `returnValue` это объект JavaScript, который имеет два поля: `first` и `second` .  
+      В этом `returnValue` примере объект JavaScript имеет два поля: `first` и `second` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Статические члены  
+      Статические участники  
    :::column-end:::
    :::column span="3":::
-      В windows Runtime определяются как статические члены, так и члены экземпляра.  В JavaScript статические члены добавляются в объект, связанный с классом или интерфейсом времени работы Windows.  
+      Время запуска Windows определяет как статических участников, так и экземпляров.  В JavaScript к объекту, связанному с классом или интерфейсом Windows Runtime, добавляются статические участники.  
       
       ```javascript
       // Static method.
@@ -160,13 +161,13 @@ ms.locfileid: "11235482"
    :::column-end:::
 :::row-end:::  
     
-Дополнительные сведения о представлении JavaScript базовых типов в среде разработки Windows см. в представлении [javaScript типов времени windows.][WindowsRuntimeJavascriptTypes]  
+Дополнительные сведения о представлении JavaScript базовых типов запуска Windows см. в [javaScript Representation of Windows Runtime Types.][WindowsRuntimeJavascriptTypes]  
 
 <!-- links -->  
  
-[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Представление типов времени работы Windows на JavaScript | Документы Майкрософт"
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Представление JavaScript типов запуска Windows | Документы Майкрософт"  
 
-[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Компоненты времени работы Windows с C++/CX | Документы Майкрософт"  
-[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Компоненты времени работы Windows с C# и Visual Basic | Документы Майкрософт"  
+[WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Компоненты windows runtime с C++/CX | Документы Майкрософт"  
+[WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Компоненты windows runtime с C# и Visual Basic | Документы Майкрософт"  
 
 [MDNInt32array]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array "Int32Array | MDN"  

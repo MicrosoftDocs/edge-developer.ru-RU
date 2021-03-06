@@ -1,6 +1,8 @@
 ---
-description: Использование точки запуска Windows в JavaScript.
+description: Использование среды выполнения Windows в JavaScript
 title: Использование среды выполнения Windows в JavaScript
+ms.custom: ''
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 ms.topic: article
@@ -10,37 +12,36 @@ ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
 caps.latest.revision: 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 10c90a225816cf32e01bc33648571c13a1aae090
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 4e137526ce147cdeb82749474bd43d1b3697361b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235418"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399325"
 ---
-# Использование среды выполнения Windows в JavaScript  
+# <a name="using-the-windows-runtime-in-javascript"></a>Использование среды выполнения Windows в JavaScript  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-При написании приложения универсальной платформы Windows \(UWP\) можно использовать классы, методы и свойства в среде разработки Windows почти так же, как и для использования объектов, методов и свойств JavaScript.  В этом разделе представлены вводимые сведения и ссылки на разделы, в которых поясняются основные понятия использования API-api в среде разработки Windows в JavaScript, в том числе описание представления типов в среде runtime Windows, использование асинхронных методов времени работы Windows, а также прослушивание событий и обработка событий в среде запуска Windows.  
+При написании приложения Универсальной платформы Windows \(UWP\) можно использовать классы, методы и свойства Windows так же, как и родной объект, методы и свойства JavaScript.  В этом разделе представлены вводные сведения и ссылки на темы, которые объясняют основные понятия использования API времени запуска Windows в JavaScript, в том числе разъяснение того, как представлены типы запуска Windows, как использовать асинхронные методы запуска Windows, а также как прослушивать и обрабатывать события во время запуска Windows.  
 
-Для общей языковой документации ознакомьтесь со справочной библиотекой [JavaScript][MDNJavascriptReference] MDN.  
+Для общей языковой документации ознакомьтесь с справочной библиотекой [JavaScript][MDNJavascriptReference] MDN.  
 
 > [!IMPORTANT]
-> Функции времени работы Windows недоступны для приложений, которые работают в Internet Explorer.  
+> Функции windows Runtime недоступны для приложений, которые работают в Internet Explorer.  
 
-## Справочная документация по времени работы Windows  
+## <a name="windows-runtime-reference-documentation"></a>Справочная документация по windows runtime  
 
-Справочную документацию см. в [справочнике по времени работы Windows.][UwpApiIndex]  Примеры кода доступны в JavaScript, а также на C++, C# и Visual Basic.  
+Справочная документация см. [в справке о времени запуска Windows.][UwpApiIndex]  Примеры кода доступны в JavaScript, а также в C++, C# и Visual Basic.  
 
-## Написание компонентов времени работы Windows на C++, C# или Visual Basic  
+## <a name="writing-windows-runtime-components-in-c-c-or-visual-basic"></a>Написание компонентов времени запуска Windows в C++, C# или Visual Basic  
 
-Инструкции и рекомендации по написанию компонентов времени разработки Windows, которые можно использовать в JavaScript, см. в руководстве по созданию компонентов времени разработки Windows на [C++][WindowsUwpWinrtCpp] и созданию компонентов времени разработки Windows на [C# и Visual Basic.][WindowsUwpWinrtCsharpVb]  
+Инструкции и рекомендации по написанию компонентов windows runtime, которые можно использовать в JavaScript, см. в статьи Создание компонентов времени запуска Windows в [C++][WindowsUwpWinrtCpp] и Создание компонентов времени запуска Windows в C# и [Visual Basic][WindowsUwpWinrtCsharpVb].  
 
-## Соглашения casing с функциями времени работы Windows  
+## <a name="casing-conventions-with-windows-runtime-features"></a>Конвенции casing с функциями windows Runtime  
 
-Соглашения о casing для функций времени работы Windows в JavaScript немного отличаются от соглашений для других языков:  
+Конвенции casing для функций windows Runtime в JavaScript немного отличаются от соглашений для других языков:  
 
 *   Пространства имен и классы находятся в случае Pascal:  
     
@@ -48,7 +49,7 @@ ms.locfileid: "11235418"
     Windows.Deployment.PackageInfo;
     ```  
     
-*   Члены классов, включая методы и свойства, а также члены структур и нумерации, находятся в "верблюжих" случаях:  
+*   Члены классов, включая методы и свойства, а также члены структур и перемерий, находятся в случае верблюда:  
     
     ```javascript
     Deployment.PackageInfo.createPackage();
@@ -59,8 +60,8 @@ ms.locfileid: "11235418"
     ```javascript
     dataTransferManager.ontargetapplicationchosen;
     ```  
-
-## См. также  
+    
+## <a name="see-also"></a>См. также  
 
 [Рекомендации по использованию API среды выполнения Windows][WindowsRuntimeConsiderationsApi]  
 [Использование асинхронных методов среды выполнения Windows][WindowsRuntimeAsynchronousMethods]   
@@ -68,16 +69,16 @@ ms.locfileid: "11235418"
 [Представление типов среды выполнения Windows в JavaScript][WindowsRuntimeJavascriptTypes]   
 [JavaScript Projection of Windows Runtime DateTime and TimeSpan][WindowsRuntimeDatetimeTimespan]  
 
-<!-- links  -->  
+<!-- links -->  
 
-[WindowsRuntimeConsiderationsApi]: ./considerations-when-using-the-windows-runtime-api.md "Вопросы, которые следует учитывать при использовании API времени работы Windows | Документы Майкрософт"  
-[WindowsRuntimeEventsJavascript]: ./handling-windows-runtime-events-in-javascript.md "Обработка событий в среде запуска Windows в JavaScript | Документы Майкрософт"  
-[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Представление типов времени работы Windows на JavaScript | Документы Майкрософт"  
-[WindowsRuntimeAsynchronousMethods]: ./using-windows-runtime-asynchronous-methods.md "Использование асинхронных методов в времени работы Windows | Документы Майкрософт"  
-[WindowsRuntimeDatetimeTimespan]: ./windows-runtime-datetime-and-timespan-representations.md "Представления даты и времени в времени и времени в времени windows | Документы Майкрософт"  
+[WindowsRuntimeConsiderationsApi]: ./considerations-when-using-the-windows-runtime-api.md "Соображения при использовании API для windows runtime | Документы Майкрософт"  
+[WindowsRuntimeEventsJavascript]: ./handling-windows-runtime-events-in-javascript.md "Обработка событий запуска Windows в JavaScript | Документы Майкрософт"  
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Представление JavaScript типов запуска Windows | Документы Майкрософт"  
+[WindowsRuntimeAsynchronousMethods]: ./using-windows-runtime-asynchronous-methods.md "Использование асинхронных методов запуска Windows | Документы Майкрософт"  
+[WindowsRuntimeDatetimeTimespan]: ./windows-runtime-datetime-and-timespan-representations.md "Представления даты и времени работы Windows | Документы Майкрософт"  
 
-[UwpApiIndex]: /uwp/api/index "Пространства имен UWP в Windows | Документы Майкрософт"  
-[WindowsUwpWinrtCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Компоненты времени работы Windows с C++/CX | Документы Майкрософт"  
-[WindowsUwpWinrtCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Компоненты времени работы Windows с C# и Visual Basic | Документы Майкрософт"  
+[UwpApiIndex]: /uwp/api/index "Пространства имен Windows UWP | Документы Майкрософт"  
+[WindowsUwpWinrtCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Компоненты windows runtime с C++/CX | Документы Майкрософт"  
+[WindowsUwpWinrtCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Компоненты windows runtime с C# и Visual Basic | Документы Майкрософт"  
 
-[MDNJavascriptReference]: https://developer.mozilla.org/docs/Web/JavaScript/Reference "Справка по JavaScript | MDN"  
+[MDNJavascriptReference]: https://developer.mozilla.org/docs/Web/JavaScript/Reference "Справочные | MDN"  

@@ -1,18 +1,18 @@
 ---
 description: Используйте API консоли для записи сообщений на консоль.
-title: Справочник по API консоли
+title: Ссылка на API консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 38fb3ee2345530775423ac3ec8e53e0d8de76eaf
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: f38a7403cf11fbec5f5833fc0b1ed10207b436de
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125288"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398051"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,23 +28,23 @@ ms.locfileid: "11125288"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Справочник по API консоли  
+# <a name="console-api-reference"></a>Ссылка на API консоли  
 
-Используйте методы API консоли для записи сообщений на консоль из JavaScript.  Для интерактивного знакомства со статьей перейдите в раздел Начало [работы с сообщениями журнала на консоли][DevtoolsConsoleLog].  Для удобства работы с удобными методами, такими как `debug()` или `monitorEvents()` доступные только в области **консоли** , перейдите по [ссылке API для консольных программ][DevtoolConsoleUtilities].  
+Используйте методы API консоли для записи сообщений на консоль из JavaScript.  Для интерактивного знакомства с этой темой перейдите к разделу Начало работы с ведением журнала [сообщений на консоли.][DevtoolsConsoleLog]  Для таких удобных методов, как или доступных только из области консоли, перейдите к ссылке `debug()` `monitorEvents()` [API API консоли utilities.][DevtoolConsoleUtilities] ****  
 
 ---  
 
-## затребованного  
+## <a name="assert"></a>утверждения  
 
 ```javascript
 console.assert(expression, object)
 ```
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Error`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Error`  
 
 <!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
 
-При вычислении выводит на консоль [сообщение об ошибке](#error) `expression` `false` .  
+Записывает [ошибку](#error) на консоль при `expression` оценке `false` .  
 
 ```javascript
 const x = 5;
@@ -53,13 +53,13 @@ const reason = 'x is expected to be less than y';
 console.assert(x < y, {x, y, reason});
 ```  
 
-:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-assert-button.msft.png":::
-   Рисунок 1: результат `console.assert()` примера  
+:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="Результат примера console.assert()" lightbox="../media/console-demo-assert-button.msft.png":::
+   Рис. 1. Результат `console.assert()` примера  
 :::image-end:::  
 
 ---  
 
-## Сброс  
+## <a name="clear"></a>clear  
 
 ```javascript
 console.clear()
@@ -71,23 +71,23 @@ console.clear()
 console.clear();  
 ```  
 
-Если включен [протокол Preserve][DevtoolsConsoleReferenceLevel] , метод [clear](#clear) отключен.  
+Если [включен журнал сохранения,][DevtoolsConsoleReferenceLevel] [четкий](#clear) метод отключен.  
 
-### См. также  
+### <a name="see-also"></a>См. также  
 
 *   [Очистка консоли][DevtoolsConsoleReferenceClear]  
 
 ---  
 
-## счет  
+## <a name="count"></a>количество  
 
 ```javascript
 console.count([label])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Записывает количество вызовов метода [Count](#count) в той же строке и с тем же `label` .  Для сброса счетчика используйте метод [countReset](#countreset) .  
+Записывает количество раз, когда метод [подсчета](#count) вызывался в одной строке и с той же `label` строкой .  Чтобы сбросить количество, используйте метод [countReset.](#countreset)  
 
 ```javascript
 console.count();
@@ -96,19 +96,19 @@ console.count();
 console.count();
 ```  
 
-:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-count-button.msft.png":::
-   Рисунок 2: результат `console.count()` примера  
+:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="Результат примера console.count()" lightbox="../media/console-demo-count-button.msft.png":::
+   Рис. 2. Результат `console.count()` примера  
 :::image-end:::  
 
 ---  
 
-## countReset  
+## <a name="countreset"></a>countReset  
 
 ```javascript
 console.countReset([label])
 ```  
 
-Сбрасывает число.  
+Сбрасывает количество.  
 
 ```javascript
 console.countReset();
@@ -117,93 +117,93 @@ console.countReset('coffee');
 
 ---  
 
-## отладка  
+## <a name="debug"></a>отладка  
 
 ```javascript
 console.debug(object [, object, ...])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Verbose`
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Verbose`
 
-Совпадает с [журналом](#log) , кроме разных уровней ведения журнала.  
+Идентично [журналу,](#log) за исключением разного уровня журнала.  
 
 ```javascript
 console.debug('debug');  
 ```  
 
-:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-debug-button.msft.png":::
-   Рисунок 3: результат `console.debug()` примера  
+:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="Результат примера console.debug()" lightbox="../media/console-demo-debug-button.msft.png":::
+   Рис. 3. Результат `console.debug()` примера  
 :::image-end:::  
 
 ---  
 
-## dir  
+## <a name="dir"></a>dir  
 
 ```javascript
 console.dir(object)
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Печатает представление JSON указанного объекта.  
+Печать представления JSON указанного объекта.  
 
 ```javascript
 console.dir(document.head);
 ```  
 
-:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-dir-button.msft.png":::
-   Рисунок 4: результат `console.dir()` примера  
+:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="Пример console.dir()" lightbox="../media/console-demo-dir-button.msft.png":::
+   Рис. 4. Результат `console.dir()` примера  
 :::image-end:::  
 
 ---  
 
-## dirxml  
+## <a name="dirxml"></a>dirxml  
 
 ```javascript
 console.dirxml(node)
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Печатает XML-представление потомков `node` .  
+Печать XML-представления потомков `node` .  
 
 ```javascript
 console.dirxml(document);
 ```  
 
-:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-dirxml-button.msft.png":::
-   На рисунке 5 показан результат примера. `console.dirxml()`  
+:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="Результат примера console.dirxml()" lightbox="../media/console-demo-dirxml-button.msft.png":::
+   Рис. 5. Результат `console.dirxml()` примера  
 :::image-end:::  
 
 ---  
 
-## ошибка  
+## <a name="error"></a>ошибка  
 
 ```javascript
 console.error(object [, object, ...])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Error`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Error`  
 
-Выводит на `object` консоль сообщение об ошибке, форматирует его как ошибку и включает трассировку стека.  
+Принты `object` на консоль, форматирование ее как ошибку, и включает трассировку стека.  
 
 ```javascript
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```  
 
-:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-error-button.msft.png":::
-   Рисунок 6: результат `console.error()` примера  
+:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="Пример console.error()" lightbox="../media/console-demo-error-button.msft.png":::
+   Рис. 6. Результат `console.error()` примера  
 :::image-end:::  
 
 ---  
 
-## группа  
+## <a name="group"></a>группа  
 
 ```javascript
 console.group(label)
 ```  
 
-Визуально группирует сообщения, пока не будет использован метод [groupEnd](#groupend) .  Используйте метод [groupCollapsed](#groupcollapsed) , чтобы свернуть группу при первом входе в систему на консоли.  
+Визуально группит сообщения вместе до тех пор, пока не будет использован метод [groupEnd.](#groupend)  Используйте метод [groupCollapsed,](#groupcollapsed) чтобы обвалить группу при первоначальном входе в консоль.  
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -215,81 +215,81 @@ console.info('Raph');
 console.groupEnd(label);
 ```  
 
-:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-group-button.msft.png":::
-   На рисунке 7 показан результат примера. `console.group()`  
+:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="Пример console.group()" lightbox="../media/console-demo-group-button.msft.png":::
+   Рис. 7. Результат `console.group()` примера  
 :::image-end:::  
 
 ---  
 
-## groupCollapsed  
+## <a name="groupcollapsed"></a>groupCollapsed  
 
 ```javascript
 console.groupCollapsed(label)
 ```  
 
-То же, что и в методе [log](#log) , за исключением того, что группа изначально свернута при входе в систему на консоли.  
+То же, [что](#log) и метод журнала, за исключением того, что группа сначала разрушается при входе в консоль.  
 
 ---  
 
-## groupEnd  
+## <a name="groupend"></a>groupEnd  
 
 ```javascript
 console.groupEnd(label)
 ```  
 
-Прекращение визуальной группировки сообщений.  Просмотрите метод [группировки](#group) .  
+Остановка визуальной группировки сообщений.  Перейдите к [групповому методу.](#group)  
 
 ---  
 
-## "Сведения"  
+## <a name="info"></a>"Сведения"  
 
 ```javascript
 console.info(object [, object, ...])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Идентичен методу [log](#log) .  
+Идентично [методу журнала.](#log)  
 
 ```javascript
 console.info('info');
 ```  
 
-:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-info-button.msft.png":::
-   Рисунок 8: результат `console.info()` примера  
+:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="Результат примера console.info()" lightbox="../media/console-demo-info-button.msft.png":::
+   Рис. 8. Результат `console.info()` примера  
 :::image-end:::  
 
 ---  
 
-## выходе  
+## <a name="log"></a>журнал  
 
 ```javascript
 console.log(object [, object, ...])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Вывод на консоль сообщения.  
+Печать сообщения на консоли.  
 
 ```javascript
 console.log('log');
 ```  
 
-:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-log-button.msft.png":::
-   На рисунке 9 показан результат примера. `console.log()`  
+:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="Пример console.log()" lightbox="../media/console-demo-log-button.msft.png":::
+   Рис. 9. Результат `console.log()` примера  
 :::image-end:::  
 
 ---  
 
-## таблич  
+## <a name="table"></a>таблица  
 
 ```javascript
 console.table(array)
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Заносит в журнал массив объектов в виде таблицы.  
+Регистрит массив объектов в качестве таблицы.  
 
 ```javascript
 console.table([
@@ -309,19 +309,19 @@ console.table([
 ]);
 ```  
 
-:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-table-button.msft.png":::
-   Рисунок 10: результат `console.table()` примера  
+:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="Пример console.table()" lightbox="../media/console-demo-table-button.msft.png":::
+   Рис. 10. Результат `console.table()` примера  
 :::image-end:::  
 
 ---  
 
-## time  
+## <a name="time"></a>time  
 
 ```javascript
 console.time([label])
 ```  
 
-Запуск нового таймера.  Используйте метод [timeEnd](#timeend) , чтобы остановить таймер и напечатать время, затраченное на консоль.  
+Запускает новый timer.  Используйте метод [TimeEnd,](#timeend) чтобы остановить время и распечатать время, заданное консоли.  
 
 ```javascript
 console.time();
@@ -331,33 +331,33 @@ for (var i = 0; i < 100000; i++) {
 console.timeEnd();
 ```  
 
-:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-time-button.msft.png":::
-   На рисунке 11 показан результат примера. `console.time()`  
+:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="Пример console.time()" lightbox="../media/console-demo-time-button.msft.png":::
+   Рис. 11. Результат `console.time()` примера  
 :::image-end:::  
 
 ---  
 
-## timeEnd  
+## <a name="timeend"></a>TimeEnd  
 
 ```javascript
 console.timeEnd([label])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Останавливает таймер.  Просмотрите метод [time (время](#time) ).  
+Останавливает отмерить время.  Перейдите к [методу времени.](#time)  
 
 ---  
 
-## событий  
+## <a name="trace"></a>трассировка  
 
 ```javascript
 console.trace()
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Info`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Info`  
 
-Выводит на консоль трассировку стека.  
+Печать трассировки стека на консоль.  
 
 ```javascript
 const first = () => { second(); };
@@ -367,47 +367,47 @@ const fourth = () => { console.trace(); };
 first();
 ```  
 
-:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-trace-button.msft.png":::
-   Рис. 12: результат `console.trace()` примера  
+:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="Результат примера console.trace()" lightbox="../media/console-demo-trace-button.msft.png":::
+   Рис. 12. Результат `console.trace()` примера  
 :::image-end:::  
 
 ---  
 
-## оповещает  
+## <a name="warn"></a>предупреждение  
 
 ```javascript
 console.warn(object [, object, ...])
 ```  
 
-[Уровень журнала][DevtoolsConsoleReferencePersist]: `Warning`  
+[Уровень журнала:][DevtoolsConsoleReferencePersist] `Warning`  
 
-Вывод на консоль предупреждения.  
+Напечатает предупреждение консоли.  
 
 ```javascript
 console.warn('warn');
 ```  
 
-:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="Результат примера Console. Assert ()" lightbox="../media/console-demo-warn-button.msft.png":::
-   Рисунок 13: результат `console.warn()` примера  
+:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="Результат примера console.warn()" lightbox="../media/console-demo-warn-button.msft.png":::
+   Рис. 13. Результат `console.warn()` примера  
 :::image-end:::  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Начало работы с сообщениями журнала на консоли"  
-[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Справочник по API для консольных программ"  
-[DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "Удаление ссылки на консоль консоли"  
-[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Сохранение сообщений на странице с загрузкой на консоли"  
-[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Фильтрация по уровню журнала — Справочник по консоли"  
+[DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Начало работы с ведением журнала сообщений в консоли"  
+[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Ссылка на API API консоли utilities"  
+[DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "Очистить консоль - консоль ссылки"  
+[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Упорязать сообщения по загрузкам страниц - Консольная ссылка"  
+[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Фильтр по уровню журнала — консольная ссылка"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Средства разработчика Microsoft Edge (Chromium)"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/console/api) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/console/api) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

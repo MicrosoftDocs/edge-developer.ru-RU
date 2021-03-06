@@ -1,18 +1,18 @@
 ---
-description: Пользователи ожидают интерактивные и плавные страницы.  Каждая стадия в пиксельном конвейере представляет возможность ввести jank.  Узнайте о средствах и стратегиях для выявления и устранения распространенных проблем, которые замедляют производительность во время выполнения.
-title: Анализ производительности в времени выполнения
+description: Пользователи ожидают интерактивные и гладкие страницы.  Каждый этап конвейера пикселей представляет возможность ввести jank.  Узнайте о средствах и стратегиях для выявления и устранения распространенных проблем, которые замедляют производительность выполнения.
+title: Анализ производительности выполнения
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: d42ac5e7a7456971d48198a1f362eebe7156bbce
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230609"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398002"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -28,46 +28,46 @@ ms.locfileid: "11230609"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Анализ производительности в времени выполнения 
+# <a name="analyze-runtime-performance"></a>Анализ производительности выполнения  
 
-Пользователи ожидают интерактивные и плавные страницы.  Каждая стадия в пиксельном конвейере представляет возможность ввести jank.  Узнайте о средствах и стратегиях для выявления и устранения распространенных проблем, которые замедляют производительность во время выполнения.  
+Пользователи ожидают интерактивные и гладкие страницы.  Каждый этап конвейера пикселей представляет возможность ввести jank.  Узнайте о средствах и стратегиях для выявления и устранения распространенных проблем, которые замедляют производительность выполнения.  
 
-### Сводка  
+### <a name="summary"></a>Сводка  
 
-*   Не пишите JavaScript, который заставляет браузер пересчитывать макет.  Разделяйте функции чтения и записи, а затем выполните чтение.  
-*   Не усложняйте CSS.  Используйте меньше CSS и сохраняйте простоты селекторов CSS.  
-*   Избегайте максимально возможного макета.  Выберите CSS,который вообще не активирует макет.  
-*   Рисование может занять больше времени, чем любое другое действие отрисовки.  Следите за узкими местами для кисок.  
+*   Не пишите JavaScript, который заставляет браузер пересчитывать макет.  Разделяйте функции чтения и записи и выполните сначала чтение.  
+*   Не усложняйте работу CSS.  Используйте меньше CSS и сохраняйте простые селекторы CSS.  
+*   Избегайте макета как можно больше.  Выберите CSS, который вообще не запускает макет.  
+*   Рисование может занять больше времени, чем любая другая отрисовка.  Следите за узкими местами для краски.  
     
-## JavaScript  
+## <a name="javascript"></a>JavaScript  
 
-Вычисления JavaScript, особенно те, которые вызывают существенные визуальные изменения, могут привести к застою производительности приложения.  Не мешайте взаимодействию с пользователем с помощью JavaScript во время неудалась или длительной работы.  
+Вычисления JavaScript, особенно те, которые вызывают обширные визуальные изменения, могут привести к срыву производительности приложений.  Не позволяйте вовремя или длительному JavaScript вмешиваться в взаимодействие пользователей.  
 
-### JavaScript: средства  
+### <a name="javascript-tools"></a>JavaScript: средства  
 
-Сформуйте запись на панели **"Производительность"** и наймите подозрительные длинные `Evaluate Script` события.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
+Сними запись в **средстве Performance** и найми подозрительно длинные `Evaluate Script` события.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
 
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-F вы знаете, что в JavaScript достаточно много jank, возможно, вам потребуется оказаться на следующем уровне анализа и собрать профиль ЦП JavaScript.  Профили ЦП показывают, где время работы затрачено на функции страницы.  Узнайте, как создавать профили ЦП в [среде запуска JavaScript.][DevtoolsRenderingToolsJavascriptRuntime]
+f. Вы заметь довольно много jank в JavaScript, возможно, потребуется взять анализ на следующий уровень и собрать профиль ЦП JavaScript.  Профили ЦП показывают, где время работы тратится в функциях страницы.  Узнайте, как создавать профили ЦП в [режиме ускорения запуска JavaScript.][DevtoolsRenderingToolsJavascriptRuntime]
 
-### JavaScript: проблемы  
+### <a name="javascript-problems"></a>JavaScript: проблемы  
 
-В следующей таблице описываются некоторые распространенные проблемы JavaScript и возможные решения:  
+В следующей таблице описаны некоторые распространенные проблемы JavaScript и возможные решения.  
 
-| Проблема | Пример. | Решение |  
+| Проблема | Пример | Решение |  
 |:--- |:--- |:--- |  
-| Дорогостоящие обработчики ввода, влияющие на отклик или анимацию.  | Касание, параллакс прокрутка.  | Разрешите браузеру обрабатывать касание и прокрутку или привязывать прослушиватель как можно позднее.  См. контрольный список производительности во время выполнения пользователя PaulСвойла (PaulСвойл) с дорогими [обработчиками входных данных.][WebPerformanceCalendarRuntimeChecklist]  |  
-| JavaScript с плохой временем, влияющий на отклик, анимацию, загрузку.  | Пользователь прокручивает страницу сразу после загрузки, setTimeout / setInterval.  | Оптимизация времени работы JavaScript: `requestAnimationFrame` использование, распространение манипуляций DOM по кадрам, использование [веб-работников.][MDNUsingWebWorkers]  |  
-| Долгосрочный JavaScript, влияющий на отклик.  | Событие [DOMContentLoaded][MDNUsingWebWorkers] заглохает, так как оно совмещается с работой JS.  | Перемещайте чисто вычислительные трудоемкие работы [в веб-работники.][MDNUsingWebWorkers]  Если вам нужен доступ к DOM, используйте `requestAnimationFrame` .  <!--See also [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
-| Сценарии сборки мусора, влияющие на отклик или анимацию.  | Сборка мусора может происходить где угодно.  | Напишите меньше скриптов сборки мусора.  См. контрольный список производительности сборки мусора в анимации в списке производительности [во время выполнения полю ПолОмА ( PaulСвой).][WebPerformanceCalendarRuntimeChecklist]  |  
+| Дорогие обработчики ввода, влияющие на отклик или анимацию.  | Сенсорный, параллакс прокрутки.  | Позвольте браузеру обрабатывать сенсорные и прокрутки или связывать слушателя как можно позже.  Перейдите [к дорогим обработчикам ввода в][WebPerformanceCalendarRuntimeChecklist]контрольном списке производительности выполнения ПолОм Льюисом .  |  
+| Плохо приурочная javaScript влияет на отклик, анимацию, загрузку.  | Пользователь прокручивает сразу после загрузки страницы setTimeout/setInterval.  | Оптимизация времени работы JavaScript: `requestAnimationFrame` использование, распространение манипуляций с DOM по кадрам, использование [веб-рабочих][MDNUsingWebWorkers].  |  
+| Долгосрочный JavaScript, влияющий на отклик.  | Событие [DOMContentLoaded][MDNUsingWebWorkers] приостановилось, так как оно завалено работой JS.  | Перемещение чистой вычислительной работы на [веб-рабочих][MDNUsingWebWorkers].  Если вам нужен доступ к DOM, используйте `requestAnimationFrame` .  <!--Navigate to [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
+| Сценарии garbage-y, влияющие на отклик или анимацию.  | Сбор мусора может происходить в любом месте.  | Записывая меньше сценариев с мусором.  Перейдите к разделу Сбор мусора в анимации в контрольном списке производительности во время выполнения [Полом Льюисом.][WebPerformanceCalendarRuntimeChecklist]  |  
 
 <!--todo: add Optimize JavaScript runtime section when available  -->  
 
-## Стиль  
+## <a name="style"></a>Стиль  
 
-Изменение стиля является дорогостоящим, особенно если эти изменения влияют на несколько элементов в DOM.  Каждый раз, когда вы применяли стили к элементу, браузер вычисляет влияние на все связанные элементы, пересчитывает макет и перерасчеты.  
+Изменения стиля являются дорогостоящими, особенно если эти изменения затрагивают несколько элементов в DOM.  Каждый раз, когда к элементу применяются стили, браузер высчитывает влияние на все связанные элементы, пересчитывает макет и перекетирует.  
 
 <!--Related Guides:  
 
@@ -76,13 +76,13 @@ F вы знаете, что в JavaScript достаточно много jank, 
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->  
 
-### Стиль: средства  
+### <a name="style-tools"></a>Стиль: средства  
 
-Запись на панели **"Производительность".**  Проверьте запись на большие `Recalculate Style` события \(отображаются в сиреневом цвете\).  
+Запись в средстве **Performance.**  Проверьте запись для больших `Recalculate Style` событий \(отображается в фиолетовом\).  
 
 <!--todo: add Recording section when available  -->  
 
-Щелкните `Recalculate Style` событие, чтобы **** просмотреть дополнительные сведения о нем в области сведений.  Если изменение стиля забирает много времени, это будет множать производительность.  Если вычисления стиля влияют на большое количество элементов, это еще одна область с местом для улучшения.  
+Выберите `Recalculate Style` событие, чтобы просмотреть дополнительные сведения о нем в области **Details.**  Если изменения стиля забирают длительное время, это является хитом производительности.  Если вычисления стилей влияют на большое количество элементов, это еще одна область, где есть возможности для улучшения.  
 
 :::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Длинный стиль пересчета" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
    Длинный стиль пересчета  
@@ -90,19 +90,19 @@ F вы знаете, что в JavaScript достаточно много jank, 
 
 Чтобы уменьшить влияние `Recalculate Style` событий:  
 
-*   Используйте [триггеры CSS,][CssTriggers] чтобы узнать, какие свойства CSS активирует макет, paint и составные.  Эти свойства оказывают наихудшее влияние на производительность отрисовки.  
-*   Переключиться на свойства, которые имеют меньшее влияние.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
+*   Используйте [триггеры CSS,][CssTriggers] чтобы узнать, какие свойства CSS вызывают макет, краску и композит.  Эти свойства оказывают самое сильное влияние на производительность отрисовки.  
+*   Переключиться на свойства, которые имеют меньшее влияние.  <!--For more guidance, navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
     
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
-### Стиль: проблемы  
+### <a name="style-problems"></a>Стиль: проблемы  
 
-В следующей таблице описаны некоторые распространенные проблемы со стилем и возможные решения:  
+В следующей таблице описаны некоторые распространенные проблемы стиля и возможные решения.  
 
-| Проблема | Пример. | Решение |  
+| Проблема | Пример | Решение |  
 |:--- |:--- |:--- |  
-| Затратные вычисления стиля, влияющие на отклик или анимацию.  | Любое свойство CSS, которое изменяет геометрию элемента, например ширину, высоту или положение; Браузер проверяет все остальные элементы и пересчитает макет.  | Избегайте CSS- инициирует макеты |  
-| Сложные селекторы, влияющие на отклик или анимацию.  | Вложенные селекторы принудительно должны знать браузер обо всех остальных элементах, включая родителей и детей.  | Ссылаться на элемент в CSS можно только с помощью класса.  |  
+| Дорогостоящие вычисления стилей, влияющие на отклик или анимацию.  | Любое свойство CSS, которое изменяет геометрию элемента, например ширину, высоту или положение; браузер проверяет все остальные элементы и пересчитывает макет.  | Избегайте CSS, который запускает макеты |  
+| Сложные селекторы, влияющие на отклик или анимацию.  | Вложенные селекторы заставляют браузер знать все обо всех остальных элементах, включая родителей и детей.  | Ссылка на элемент в CSS только с классом.  |  
 
 <!--todo: add Avoid CSS that triggers layouts section when available -->  
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class) section when available -->  
@@ -113,11 +113,11 @@ F вы знаете, что в JavaScript достаточно много jank, 
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->  
 
-## Макет  
+## <a name="layout"></a>Макет  
 
-Макет (или перенабор в Firefox) — это процесс, с помощью которого браузер вычисляет положение и размеры всех элементов на странице.  Модель макета в Интернете означает, что один элемент может повлиять на других; например, ширина элемента обычно влияет на ширину любых потомков и так далее, в любом случае вверх и `<body>` вниз по дереву.  Этот процесс может быть довольно сложной для браузера.  
+Макет (или переток в Firefox) — это процесс, при котором браузер вычисляет позиции и размеры всех элементов на странице.  Модель макета веб-сайта означает, что один элемент может влиять на другие; например, ширина элемента, как правило, влияет на ширину любых детских элементов и так далее на всем протяжении `<body>` дерева.  Этот процесс может быть достаточно вовлечен для браузера.  
 
-Как правило, если вы запросите геометрическое значение из DOM до завершения фрейма, вы найдете "принудительно синхронные макеты", что может быть большим узким местом производительности, если он повторяется часто или выполняется для большого дерева DOM.  
+Как правило, если вы попросите вернуть геометрическое значение из DOM до завершения кадра, вы найдете "принудительно синхронные макеты", что может быть большим узким местом производительности, если часто повторяться или выполняться для большого дерева DOM.  
 
 <!--Related Guides:  
 
@@ -127,38 +127,38 @@ F вы знаете, что в JavaScript достаточно много jank, 
 <!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->  
 <!--todo: add Diagnose Forced Synchronous Layouts section when available  -->  
 
-### Макет: средства  
+### <a name="layout-tools"></a>Макет: средства  
 
-В **области** "Производительность" указывается, когда страница вызывает принудительные синхронные макеты.  Эти `Layout` события помечаются красными полосами.  
+В **области Performance** определяется, когда страница вызывает принудительное синхронное расположение.  Эти `Layout` события отмечены красными полосами.  
 
-:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Принудительный синхронный макет" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
-   Принудительный синхронный макет  
+:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Принудительное синхронное расположение" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+   Принудительное синхронное расположение  
 :::image-end:::  
 
-"Раскладка макета" — это повторение принудительно синхронных условий макета.  Это происходит, когда JavaScript несколько раз записывает и считывает из DOM, что заставляет браузер пересчитать макет снова и снова.  Чтобы определить разметку макета, найди шаблон нескольких принудительных предупреждений о синхронном макете.  См. предыдущий рисунок.  
+"Обмывка макета" — это повторение условий принудительного синхронного макета.  Это происходит, когда JavaScript пишет и читает из DOM несколько раз, что заставляет браузер пересчитать макет снова и снова.  Чтобы определить обмыв макета, найди шаблон нескольких принудительных синхронных предупреждений макета.  Просмотрите предыдущую фигуру.  
 
-### Макет: проблемы  
+### <a name="layout-problems"></a>Макет: проблемы  
 
-В следующей таблице описываются некоторые распространенные проблемы с макетом и возможные решения:  
+В следующей таблице описаны некоторые распространенные проблемы макета и возможные решения.  
 
-| Проблема | Пример. | Решение |  
+| Проблема | Пример | Решение |  
 |:--- |:--- |:--- |  
-| Принудительный синхронный макет, влияющий на отклик или анимацию.  | Принудительным выполнением макета браузером ранее в пиксельном конвейере, что приводит к повторяемой процедуре отрисовки.  | Сначала пакетное чтение в стиле, а затем любые записи.  <!--See also [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
-| Thrashing макета, влияющий на отклик или анимацию.  | Цикл, который помещает браузер в цикл чтения-записи и чтения-записи, заставляет браузер пересчитывать макет снова и снова.  | Автоматически пакетные операции чтения и записи с помощью [библиотеки FastDom.][GitHubWilsonpageFastdom]  |  
+| Принудительный синхронный макет, влияющий на отклик или анимацию.  | Принуждение браузера к выполнению макета ранее в конвейере пикселей, что приводит к повторяемой процедуре отрисовки.  | Пакет вашего стиля сначала читается, а затем записывает все записи.  <!--Navigate to [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
+| Обмыв макета, влияющий на реакцию или анимацию.  | Цикл, который помещает браузер в цикл чтения и чтения, заставляя браузер пересчитывать макет снова и снова.  | Автоматически пакетные операции чтения с помощью [библиотеки FastDom.][GitHubWilsonpageFastdom]  |  
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
-## Paint и composite  
+## <a name="paint-and-composite"></a>Краска и композит  
 
-Paint — это процесс заполнения пикселей.  Зачастую это наиболее затратная часть процесса отрисовки.  Если вы заметили, что страница в любом случае неуявная, скорее всего, у вас возникнут проблемы с киской.  
+Paint — это процесс заполнения пикселей.  Зачастую это самая затратная часть процесса отрисовки.  Если вы заметили, что ваша страница не работает так, как задумано, вполне вероятно, что у вас есть проблемы с краской.  
 
-Композитные части страницы помещаются вместе для отображения на экране.  В большинстве случае, если вы не хотите использовать свойства только компонатора и не хотите использовать кисть, производительность должна существенно улучшиться, но следует избегать чрезмерного количества уровней.  <!--See also [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
+Композитизация — это то, где расписные части страницы сложены для отображения на экране.  По большей части, если придерживаться свойств только для композитора и вообще избегать краски, следует заметить значительное улучшение производительности, но необходимо следить за чрезмерными количествами уровней.  <!--Navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### Paint и composite: Tools  
+### <a name="paint-and-composite-tools"></a>Краска и композитные: средства  
 
-Хотите узнать, сколько времени занимает рисование или как часто происходит рисование?  Проверьте параметр ["Включить расширенный инструментарий paint"][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] на панели **"Производительность",** а затем с помощью записи.  Если большая часть времени отрисовки потрачена на рисование, возникают проблемы с рисованием.  
+Хотите узнать, сколько времени занимает рисование и как часто происходит рисование?  Проверьте параметр [Включить расширенный инструментарий для краски][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] в панели **Performance,** а затем сдайте запись.  Если большая часть времени отрисовки отработана, возникают проблемы с краской.  
 
 <!--
 :::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -171,26 +171,26 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 <!--todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live  -->  
 
-### Paint и composite: проблемы  
+### <a name="paint-and-composite-problems"></a>Краска и композитные: проблемы  
 
-В следующей таблице описываются некоторые распространенные проблемы с paint и составными решениями, а также возможные решения:  
+В следующей таблице описаны некоторые распространенные проблемы с краской и композитными решениями.  
 
-| Проблема | Пример. | Решение |  
+| Проблема | Пример | Решение |  
 |:--- |:--- |:--- |  
-| Нарисуются ливня, влияющие на отклик или анимацию.  | Большие области киок или дорогостоящие кинты, влияющие на отклик или анимацию.  | Избегайте использования кисти, рекламы элементов, которые перемещаются на собственный уровень, используйте преобразования и прозрачность.  <!--See [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
-| Уровни, влияющие на анимации.  | Чрезмерное количество элементов с большим `translateZ(0)` влиянием на производительность анимации.  | Повышение до уровней экономно и только в том случае, если вы знаете, что он предлагает существенные улучшения.  <!--See [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
+| Краска штормов, влияющих на отклик или анимацию.  | Большие области краски или дорогие краски, влияющие на отклик или анимацию.  | Избегайте краски, продвигая элементы, которые перемещаются в собственный слой, используйте преобразования и непрозрачность.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Уровни взрывов, влияющих на анимации.  | Перепроизводства слишком многих элементов с `translateZ(0)` большим влиянием на производительность анимации.  | Продвигать в слои экономно, и только тогда, когда вы знаете, он предлагает ощутимые улучшения.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Ускорение времени работы JavaScript | Документы Майкрософт"  
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Включить расширенный инструментарий paint — справочник по анализу производительности | Документы Майкрософт"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Включаем расширенный инструментарий краски - справочные ссылки на анализ производительности | Документы Майкрософт"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
@@ -208,15 +208,15 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 [CssTriggers]: https://csstriggers.com "Триггеры CSS"  
 
-[MDNUsingWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers "Использование веб-работников | MDN"  
+[MDNUsingWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers "Использование веб-| MDN"  
 
-[WebPerformanceCalendarRuntimeChecklist]: https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/ "Контрольный список производительности в времени выполнения — календарь производительности веб-сайтов"  
+[WebPerformanceCalendarRuntimeChecklist]: https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/ "Контрольный список производительности выполнения — веб-календарь производительности"  
 
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom | GitHub"  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) находится здесь и автором является [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) и [Meggin Kearney][MegginKearney] \(Tech Writer\).  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\) и [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

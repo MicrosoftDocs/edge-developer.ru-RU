@@ -1,18 +1,18 @@
 ---
-description: Сведения о том, как просматривать, изменять и удалять файлы cookie HTTP для страницы с помощью Microsoft Edge DevTools.
-title: Просмотр, изменение и удаление cookie-файлов в Microsoft Edge DevTools
+description: Узнайте, как просматривать, изменять и удалять файлы cookie http для страницы с помощью Microsoft Edge DevTools.
+title: Просмотр, редактирование и удаление файлов cookie с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 328771aa254dac1f851535a44126ea220dc95a9c
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 9c040aaa30142c2759c67b2c034d3a9271ca0a64
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125484"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397750"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,72 +28,72 @@ ms.locfileid: "11125484"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Просмотр, изменение и удаление cookie-файлов в Microsoft Edge DevTools  
+# <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>Просмотр, редактирование и удаление файлов cookie с помощью Microsoft Edge DevTools  
 
-[Cookie-файлы HTTP][MDNHTTPCookies] преимущественно используются для управления сеансами пользователей, хранения параметров персонализации пользователей и отслеживания поведения пользователей.  Файлы cookie — это также причина, по которой на этой странице используются формы разрешения файлов cookie, которые вы видите в Интернете.  В приведенном ниже руководстве объясняется, как просматривать, изменять и удалять cookie-файлы HTTP для страницы с [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+[Файлы cookie http][MDNHTTPCookies] используются в основном для управления сеансами пользователей, хранения предпочтений по персонализации пользователей и отслеживания поведения пользователей.  Файлы cookie также являются причиной всех раздражающих на этой странице форм согласия **cookies,** которые находятся в Интернете.  В следующем руководстве рассказывается о просмотре, редактировании и удалении файлов cookie http для веб-страницы с [помощью Microsoft Edge DevTools.][MicrosoftEdgeDevTools]  
 
-## Открытие области "файлы cookie"  
+## <a name="open-the-cookies-pane"></a>Откройте области cookies  
 
 1.  [Откройте DevTools][DevToolsOpen].  
-1.  Перейдите на вкладку **приложение** , чтобы открыть панель **приложения** .  Откроется область **манифеста** .  
+1.  Выберите **вкладку Application** для открытия панели **приложения.**  Должна **открыться** области Манифеста.  
     
-    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-manifest-empty.msft.png":::
-       Рисунок 1: область манифеста  
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Области Манифест" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Рис. 1. Области манифеста  
     :::image-end:::  
 
-1.  В разделе **хранилище** разверните **cookie-файлы**, а затем выберите источник.  
+1.  В **статье Хранилище** **расширяют файлы Cookie,** а затем выберите источник.  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
-       Рисунок 2: область "cookie"  
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Области cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+       Рис. 2. Области cookies  
     :::image-end:::  
 
-## Поля  
+## <a name="fields"></a>Поля  
 
-Таблица **cookies** включает в себя указанные ниже поля.  
+Таблица **Cookies** содержит следующие поля.  
 
-*   **Имя**.  Имя cookie-файла.  
-*   **Value (значение**).  Значение cookie-файла.  
-*   **Domain (домен**).  Узлы, которым разрешено принимать cookie-файлы.  Ознакомьтесь [с областями cookie-файлов][MDNHTTPCookiesScope].  
-*   **Path (путь**).  URL-адрес, который должен существовать в запрашиваемом URL-адресе, чтобы отправить `Cookie` заголовок.  Ознакомьтесь [с областями cookie-файлов][MDNHTTPCookiesScope].  
-*   **Истекает/Макс-возраст**.  Дата окончания срока действия или максимальный возраст cookie-файла.  Просмотр [постоянных файлов cookie][MDNHTTPCookiesPermanent].  Для [cookie-файлов сеанса][MDNHTTPCookiesSession] это значение всегда `Session` .  
-*   **Размер**.  Размер cookie-файла (в байтах).  
-*   **Http**.  Если значение равно true, это поле указывает на то, что файл cookie следует использовать только по протоколу HTTP и не может быть изменен на JavaScript.  Просмотр [файлов cookie для HttpOnly][MDNHTTPCookiesSecure].  
-*   **Безопасность**.  Если значение равно true, это поле указывает на то, что файл cookie должен быть отправлен на сервер только через безопасное HTTPS-соединение.  Просмотр [защищенных файлов cookie][MDNHTTPCookiesSecure].  
-*   **SameSite**.  Содержит `strict` или `lax` Если объект cookie использует экспериментальный атрибут [SameSite][MDNHTTPCookiesSamesite] .  
-*   **Priority (приоритет**).  Contains `low` , `medium` \ (по умолчанию \) или, `high` Если cookie использует устаревший атрибут [приоритета cookie-файлов][ChromiumIssue232693] .
+*   **Имя**.  Имя файла cookie.  
+*   **Значение**.  Значение файла cookie.  
+*   **Домен**.  Хосты, которые могут получать файлы cookie.  Перейдите [к области cookie.][MDNHTTPCookiesScope]  
+*   **Путь**.  URL-адрес, который должен существовать в запрашиваемом URL-адресе для отправки `Cookie` загона.  Перейдите [к области cookie.][MDNHTTPCookiesScope]  
+*   **Истекает / Max-Age**.  Срок действия или максимальный возраст файла cookie.  Перейдите к [постоянным файлам cookie.][MDNHTTPCookiesPermanent]  Для [файлов cookie сеанса][MDNHTTPCookiesSession] это значение всегда `Session` .  
+*   **Размер**.  Размер файла cookie в bytes.  
+*   **HTTP**.  Если это поле верно, это поле указывает на то, что файлы cookie должны использоваться только для http и javaScript.  Перейдите к [файлам cookie HttpOnly][MDNHTTPCookiesSecure].  
+*   **Secure**.  Если это поле верно, это поле указывает на то, что файл cookie должен быть отправлен на сервер только по безопасному подключению HTTPS.  Перейдите к [безопасному файлу cookie.][MDNHTTPCookiesSecure]  
+*   **SameSite**.  Содержит `strict` или если cookie использует `lax` экспериментальный атрибут [Samesite.][MDNHTTPCookiesSamesite]  
+*   **Приоритет**.  Содержит `low` , `medium` \(по умолчанию\), или если cookie использует атрибут `high` [приоритета cookie.][ChromiumIssue232693]
 
-## Фильтрация файлов cookie  
+## <a name="filter-cookies"></a>Фильтрация файлов cookie  
 
-Используйте текстовое поле " **Фильтр** " для фильтрации файлов cookie по **имени** или **значению**.  Фильтрация по другим полям не поддерживается.  
+Используйте **текстовое** поле Filter для фильтрации файлов cookie по **имени** или **значению**.  Фильтрация другими полями не поддерживается.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
-   Рис. 3: Фильтрация файлов cookie, которые не содержат текст `ID`  
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Фильтрация файлов cookie, не содержащих текстовый ID" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+   Рис. 3. Фильтрация файлов cookie, не содержащих текст `ID`  
 :::image-end:::  
 
-## Изменение файла cookie  
+## <a name="edit-a-cookie"></a>Изменение файла cookie  
 
-Поля « **имя**», « **значение**», « **домен**», « **путь**» и « **срок действия/максимум»** можно редактировать.  
+**Имена,** **значение,** **домен,** **путь**и **истекает / Max-Age** поля являются редактируемыми.  
 Дважды щелкните поле, чтобы изменить его.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
-   Рисунок 4: Задание имени файла cookie `DEVTOOLS!`  
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Настройка имени cookie в DEVTOOLS!" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+   Рис. 4. Настройка имени файла cookie `DEVTOOLS!`  
 :::image-end:::  
 
-## Удаление файлов cookie  
+## <a name="delete-cookies"></a>Удаление файлов cookie  
 
-Выберите файл cookie и выберите пункт **Удалить выбранное** ![ удаление, ][ImageDeleteIcon]  чтобы удалить определенный файл cookie.  
+Выберите файл cookie и выберите **Delete Selected** \( ![ Delete Selected \) для удаления ][ImageDeleteIcon] определенного файла cookie.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
-   Рисунок 5: удаление определенного файла cookie  
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Удаление определенного файла cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+   Рис. 5. Удаление определенного файла cookie  
 :::image-end:::  
 
-Выберите **Очистить все** ![ Очистить все ][ImageClearIcon]  , чтобы удалить все файлы cookie.  
+Выберите **Clear All** \( Clear All ![ ][ImageClearIcon] \) для удаления всех файлов cookie.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Область «манифест»" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
-   Рисунок 6: Очистка всех cookie-файлов  
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Очистка всех файлов cookie" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+   Рис. 6. Очистка всех файлов cookie  
 :::image-end:::  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -104,21 +104,21 @@ ms.locfileid: "11125484"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium)"  
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Открыть Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Средства разработчика Microsoft Edge (Chromium)"  
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Откройте Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium дата_выпуска 232693: реализация поля приоритета для cookie-файлов | Ошибки Chromium"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Выпуск Chromium 232693: реализация поля приоритетов для файлов cookie | Chromium Bugs"  
 
-[MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookie-файлы HTTP | MDN"  
-[MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookie-файлы HTTP: постоянные cookie-файлы | MDN"  
-[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookie-файлы HTTP — SameSite cookie-файлы | MDN"  
-[MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "Cookie-файлы HTTP — область "cookie" | MDN"  
-[MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "Cookie-файлы HTTP — безопасные и HttpOnly cookie-файлы | MDN"  
-[MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "Cookie-файлы HTTP: файлы cookie-сеансов | MDN"  
+[MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Файлы cookie http | MDN"  
+[MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Файлы cookie HTTP — постоянные файлы cookie | MDN"  
+[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Файлы cookie HTTP — файлы cookie sameSite | MDN"  
+[MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "Файлы cookie HTTP — область файлов cookie | MDN"  
+[MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "Cookies HTTP - Безопасные и httpOnly cookies | MDN"  
+[MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "Файлы cookie HTTP — файлы cookie сеанса | MDN"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

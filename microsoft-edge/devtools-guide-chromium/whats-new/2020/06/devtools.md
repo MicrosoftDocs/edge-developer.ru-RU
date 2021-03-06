@@ -1,378 +1,386 @@
 ---
-description: Функции отладки сетки CSS, запросы на изменение и воспроизведение с помощью консоли сети и многое другое.
-title: Новые возможности DevTools (Microsoft Edge 85)
+description: Функции отладки сетки CSS, запросы на редактирование и воспроизведение с сетевой консоли и другие.
+title: Новые возможности в DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
-ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
+ms.openlocfilehash: 3085153b87f09c1b5aba8fbe43c42cef0851fa9c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015463"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397757"
 ---
-# Новые возможности DevTools (Microsoft Edge 85)  
+# <a name="whats-new-in-devtools-microsoft-edge-85"></a>Что нового в DevTools (Microsoft Edge 85)  
 
-## Объявления из группы Microsoft Edge DevTools  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Объявления из команды Microsoft Edge DevTools  
 
-В следующих разделах представлен список извещений, которые могут быть пропущены командой Microsoft Edge DevTools.  Просмотрите объявления, чтобы ознакомиться с новыми возможностями в DevTools, расширениях кода Visual Studio и многое другое.  Чтобы всегда оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Microsoft Edge DevTools Team для Twitter][EdgeDevToolsTwitterAccount].  
+В следующих разделах приводится список объявлений, которые вы, возможно, пропустили из команды Microsoft Edge DevTools.  Ознакомьтесь с объявлениями, чтобы попробовать новые возможности в расширениях Кода DevTools, Microsoft Visual Studio и других.  Чтобы оставаться в курсе всех последних и самых больших функций в средствах разработчика, скачайте каналы предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] и следуйте команде Microsoft [Edge DevTools в Twitter.][EdgeDevToolsTwitterAccount]  
 
-### Функции отладки сетки каскадных стилей  
+### <a name="css-grid-debugging-features"></a>Функции отладки сетки CSS  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
    Экспериментальная функция  
 :::image-end:::  
 
-Группа Microsoft Edge DevTools — совместная работа с группой Chrome DevTools и Chromium, чтобы добавить в DevTools новые функции отладки сетки каскадных стилей.  Теперь вы можете отображать номера линий сетки, зазоры сетки и дополнительные линии сетки в качестве наложений на страницы.  Кроме того, в скором времени становятся более улучшены инструменты сетки.  
+Команда Microsoft Edge DevTools сотрудничает с командой Chrome DevTools и сообществом Chromium, чтобы добавить новые функции отладки сетки CSS в DevTools.  Теперь вы можете отображать номера линий сетки, пробелы в сетке и расширенные строки сетки в качестве наложения на страницу.  Кроме того, в ближайшее время будут усовершенствования средств сетки.  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-   Функции отладки сетки каскадных стилей
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Функции отладки сетки CSS" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+   Функции отладки сетки CSS
 :::image-end:::  
 
 > [!NOTE]
-> Чтобы включить эксперимент, ознакомьтесь со следующей страницей [Включение экспериментальных функций][DevtoolsExperimentalFeaturesTurnOn] и установите флажок **включить новые возможности отладки сетки каскадных стилей**.  
+> Чтобы включить эксперимент, [][DevtoolsExperimentalFeaturesTurnOn] перейдите к экспериментальным функциям и выберите почтовый ящик рядом с включить новые функции отладки **CSS Grid.**  
 > 
-> Чтобы опробовать эксперимент с образцом, ознакомьтесь со статьей [Пример планировщика сетки каскадных стилей][CodepenRachelweilYzwBzKM].  
+> Чтобы попробовать эксперимент с образцом, перейдите к [примеру планировщика сетки CSS.][CodepenRachelweilYzwBzKM]  
 
-[#1047356][CR1047356] проблем с Chromium  
+Проблема Chromium [#1047356][CR1047356]  
 
-### Изменение и повторное воспроизведение запросов с помощью сетевой консоли  
+### <a name="edit-and-replay-requests-with-the-network-console"></a>Редактирование и воспроизведение запросов с помощью сетевой консоли  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция на запросах в [сетевом журнале][DevtoolsNetworkIndexLogActivity] с помощью **сетевой консоли**." ::: 
-
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
-   Изменение и повторное воспроизведение запроса в [NetworkLog][DevtoolsNetworkIndexLogActivity] с помощью **сетевой консоли**  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
+   Экспериментальная функция  
 :::image-end:::  
 
-Новая панель, **Сетевая консоль** открывается в [ящике DevTools][DevtoolsCustomizeIndexDrawer] и автоматически заполняется данными для HTTP-запроса.  Чтобы просмотреть ответ, возвращенный сервером, измените запрос и нажмите кнопку **Отправить**.  
+Теперь вы можете использовать **редактирование** и воспроизведение запросов в сетевом журнале [с][DevtoolsNetworkIndexLogActivity] помощью **сетевой консоли.**  
 
-Вы также можете использовать **консоль сети** для создания и отправки HTTP-запросов непосредственно из DevTools.  
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Редактирование и воспроизведение запроса в NetworkLog с помощью сетевой консоли" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+   Редактирование и воспроизведение запроса в [NetworkLog][DevtoolsNetworkIndexLogActivity] с помощью **сетевой консоли**  
+:::image-end:::  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   Панель " **Сетевая консоль** "  
+Новая панель сетевой консоли открывается в [ящике DevTools][DevtoolsCustomizeIndexDrawer] и автоматически заполняется информацией для запроса HTTP. ****  Чтобы отобразить ответ, возвращаемый с сервера, отредактировать запрос \(если это необходимо\) и выберите **Отправить**.  
+
+Можно также использовать **сетевой консоли** для создания и отправки http-запросов непосредственно из DevTools.  
+
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Панель сетевой консоли" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+   Панель **сетевой консоли**  
 :::image-end:::  
 
 > [!TIP]
-> Чтобы увидеть **сетевую консоль** в главной панели \ (Top \), а не в [DevTools][DevtoolsCustomizeIndexDrawer], ознакомьтесь с разделами [Перемещение инструментов между панелями](#move-tools-between-panels).  
+> Чтобы **отобразить** консоль Сети в главной панели \(top\) вместо [ящика DevTools,][DevtoolsCustomizeIndexDrawer]перейдите к перемещая [средствам между панелями.](#move-tools-between-panels)  
 
 > [!NOTE]
-> Чтобы включить эксперимент, ознакомьтесь со следующей командой [Включение экспериментальных функций][DevtoolsExperimentalFeaturesTurnOn] и установите флажок **включить сетевую консоль**.  
+> Чтобы включить эксперимент, перейдите к [включаем][DevtoolsExperimentalFeaturesTurnOn] экспериментальные функции и выберите почтовый ящик рядом с **сетевой консолью.**  
 > 
-> Откройте [Журнал сети][DevtoolsNetworkIndexLogActivity], откройте контекстное меню (щелкните правой кнопкой мыши и выберите команду **изменить и воспроизвести**).  
+> Откройте [сетевой журнал,][DevtoolsNetworkIndexLogActivity]откройте контекстное меню \(правой кнопкой мыши\) и выберите **Изменить и переиграть**.  
 
-[#1093687][CR1093687] проблем с Chromium  
+Проблема Chromium [#1093687][CR1093687]  
 
-### События respondWith рабочего процесса на вкладке время  
+### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>Работник службы отвечает На события во вкладке Timing  
 
-Вкладка **время** на панели " **сеть** " теперь включает `respondWith` события рабочих процессов служб.  `respondWith`Событие "сотрудник службы" показывает продолжительность, начиная с момента, `fetch` когда обработчик событий сотрудника службы начнет выполняться до того момента, когда `respondWith` `fetch` будет сопоставлено обещание обработчика.  
+Вкладка **Timing** средства **Network** теперь включает события `respondWith` сотрудников службы.  Событие сотрудника службы показывает продолжительность времени, непосредственно перед началом работы обработника событий сотрудника службы до времени, когда обещание обработника `respondWith` `fetch` будет `respondWith` `fetch` урегулировано.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   `respondWith`Событие "сотрудник службы" на вкладке " **время** " на панели " **сеть** "  
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Событие respondWith service worker на вкладке Timing панели Network" lightbox="../../media/2020/06/timing-tab.msft.png":::
+   Событие `respondWith` сотрудника службы на **вкладке Timing** средства **Network**  
 :::image-end:::  
 
-Развернутый **ответ получен** , чтобы просмотреть дополнительные сведения из `fetch` ответа, например, `CacheStorageCacheName` `serviceWorkerResponseSource` и `ResponseTime` .  
+Расширение **ответов,** полученных для отображения дополнительных сведений `fetch` из ответа, как `CacheStorageCacheName` , и `serviceWorkerResponseSource` `ResponseTime` .  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/timing-tab2.msft.png":::
-   **Получен ответ на запрос** Expand для просмотра дополнительных сведений из `fetch` ответа  
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Расширение ответов, полученных для отображения дополнительных сведений из ответа на выборки" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+   Расширение **ответов,** полученных для отображения дополнительных сведений из `fetch` ответа  
 :::image-end:::  
 
-[#1066579][CR1066579] проблем с Chromium  
+Проблема Chromium [#1066579][CR1066579]  
 
-### Обратная связь по этой подсказке на панели "вопросы"  
-
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция [вопросы][DevtoolsIssues].":::
-
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
-   Обратная связь по этой подсказке на панели "вопросы"  
-:::image-end:::  
-
-> [!NOTE]
-> Чтобы включить эксперимент, ознакомьтесь со следующей страницей [Включение экспериментальных функций][DevtoolsExperimentalFeaturesTurnOn] и установите флажок **включить подсказку**.  
-> 
-> Откройте панель " [проблемы][DevtoolsIssues] ", чтобы увидеть отзыв из подсказки.  
-
-[#1070378][CR1070378] проблем с Chromium  
-
-### Перемещение инструментов между панелями  
+### <a name="webhint-feedback-in-the-issues-panel"></a>webhint feedback in the Issues panel  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
    Экспериментальная функция  
 :::image-end:::  
 
-Обычно такие инструменты, как **элементы** и **сеть** , можно открывать только на главной панели \ (Top \) DevTools.  Аналогичным образом такие инструменты, как **трехмерный вид** и **проблемы** , можно открывать только на панели ящик \ (Нижняя \) DevTools.  Теперь вы можете настраивать макет DevTools, перемещая инструменты между верхней и нижней панелями.  
+[webhint][WebhintMain] — это средство с открытым исходным кодом, которое обеспечивает обратную связь в режиме реального времени о доступности, совместимости между браузерами, безопасности, производительности, PWAs и других распространенных проблемах веб-разработки веб-сайтов.  Просмотр отзывов веб-сайтов в панели ["Проблемы".][DevtoolsIssues]  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   Перемещение вкладок между панелями  
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+   webhint feedback in the Issues panel  
 :::image-end:::  
 
 > [!NOTE]
-> Чтобы включить эксперимент, ознакомьтесь со следующей страницей [Включение экспериментальных функций][DevtoolsExperimentalFeaturesTurnOn] и установите флажок **включить функцию поддержки для перемещения вкладок между панелями**.  
+> Чтобы включить эксперимент, перейдите к [включаем экспериментальные функции][DevtoolsExperimentalFeaturesTurnOn] и выберите почтовый ящик рядом с **веб-хинтом Enable**.  
+> 
+> Откройте панель ["Проблемы",][DevtoolsIssues] чтобы отобразить отзывы из веб-хинта.  
 
-[#897944][CR897944] проблем с Chromium  
+Проблема Chromium [#1070378][CR1070378]  
 
-### Улучшенная всплывающая подсказка инициатора на панели "сеть"  
+### <a name="move-tools-between-panels"></a>Перемещение инструментов между панелями  
 
-В Microsoft Edge 83 и 84 с помощью всплывающих подсказок для столбца инициаторов, в котором отображается причина запроса ресурсов, в [сетевом журнале][DevtoolsNetworkIndexLogActivity] отображается горизонтальная полоса прокрутки.  Вы можете видеть стек вызовов, который инициировал запрос, прокручивать по горизонтали в подсказке.  
-
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
-   Всплывающая подсказка инициатора в Microsoft Edge 84  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Экспериментальная функция":::
+   Экспериментальная функция  
 :::image-end:::  
 
-Начиная с Microsoft Edge 85, теперь вы можете видеть стек вызовов инициаторов в подсказке без горизонтальной прокрутки.  
+Обычно такие средства, как **Elements** и **Network,** могут открываться только в основной панели \(top\) DevTools.  Аналогичным образом такие средства, как **3D View** и **Issues,** могут открываться только в панели ящика \(bottom\) DevTools.  Теперь вы можете настроить макет DevTools, перемещая инструменты между верхней и нижней панелями.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
-   Всплывающая подсказка инициатора в Microsoft Edge 85
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Перемещение инструментов между панелями" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   Перемещение инструментов между панелями  
 :::image-end:::  
 
-[#1069404][CR1069404] проблем с Chromium  
+> [!NOTE]
+> Чтобы включить эксперимент, [][DevtoolsExperimentalFeaturesTurnOn] перейдите к включаем экспериментальные функции и выберите контрольный ящик рядом, чтобы включить поддержку для перемещения вкладок **между панелями.**  
 
-## Объявления из проекта Chromium  
+Проблема Chromium [#897944][CR897944]  
 
-В следующих разделах описаны дополнительные возможности, доступные в Microsoft Edge 85, которые были задействованы в проекте Open Source Chromium.  
+### <a name="improved-initiator-tooltip-in-the-network-panel"></a>Улучшенный инструментарий Инициатора в панели Network  
 
-### Редактирование стилей для платформ CSS в JS  
+В Microsoft Edge 83 и 84 в сетевом журнале с горизонтальной панелью [][DevtoolsNetworkIndexLogActivity] прокрутки отображаются инструменты для столбца Инициатор, который показывает причину запроса ресурсов.  Отобразить стек вызовов, который инициировал запрос, удалось только путем горизонтального прокрутки в панели инструментов.  
 
-Панель " **стили** " теперь обеспечивает улучшенную поддержку редактирования стилей, созданных с помощью API [объектной модели CSS (CSSOM)][CsswgDraftsCssom] .  Во многих платформах и библиотеках, использующих CSS из JS, для конструирования стилей используются API CSSOM в разделе "внутри".  
-
-Теперь вы можете изменять стили, добавленные в JavaScript с помощью [построенных таблиц стилей][WicgConstructStylesheet].  Создаваемые таблицы стилей — это новый способ создания и распространения многократно используемых стилей при использовании [теневой модели DOM][MdnShadowDom].  
-
-Например, стили, `h1` добавленные с помощью `CSSStyleSheet` \ (CSSOM API \), не были изменены ранее.  Теперь стили доступны для редактирования в области **стили** .  
-
-:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/css-in-js.msft.png":::
-   Изменение `background` свойства `h1` стиля, добавленного в значение `CSSStyleSheet` FROM `pink` `lightblue` .
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Инструментарий Инициатора в Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+   Инструментарий Инициатора в Microsoft Edge 84  
 :::image-end:::  
 
-Придайте этой функции [пример с использованием CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
+Начиная с Microsoft Edge 85, теперь вы можете отображать стек вызовов Инициатора в панели инструментов без прокрутки по горизонтали.  
 
-[#946975][CR946975] проблем с Chromium  
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Инструментарий Инициатора в Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+   Инструментарий Инициатора в Microsoft Edge 85
+:::image-end:::  
 
-### Lighthouse 6 на панели Lighthouse  
+Проблема Chromium [#1069404][CR1069404]  
 
-Панель **Lighthouse** теперь работает под управлением Lighthouse 6.  Полный список всех изменений можно найти в разделе [заметки о выпуске 6.0.0][GithubGoogleChromeLighthouse600].  
+## <a name="announcements-from-the-chromium-project"></a>Объявления из проекта Chromium  
 
-Lighthouse 6,0 предлагает три новые метрики для отчета: самую крупную краску \ (LCP \), интегральная схема сдвига \ (CLS \) и общее время блокировки \ (TBT \).  
+В следующих разделах представлены дополнительные функции, доступные в Microsoft Edge 85, которые были внесены в проект Chromium с открытым исходным кодом.  
 
-Формула оценки производительности также была изменена в соответствии с тем, чтобы лучше понять процесс загрузки пользователя.  
+### <a name="style-editing-for-css-in-js-frameworks"></a>Редактирование стилей для структур CSS-in-JS  
 
-[#772558][CR772558] проблем с Chromium  
+В **области Стилей** теперь лучше поддерживать стили редактирования, созданные с API объектов [CSS (CSSOM).][CsswgDraftsCssom]  Многие инфраструктуры и библиотеки CSS-in-JS используют API CSSOM под капотом для создания стилей.  
 
-#### Устаревшее изображение для первого осмысленного изображения  
+Теперь вы можете изменять стили, добавленные в JavaScript, используя [таблицы конструкторских стилей.][WicgConstructStylesheet]  Конструкторные таблицы стилей — это новый способ создания и распространения многоиспользоваемых стилей при использовании [теневого DOM.][MdnShadowDom]  
 
-Первый значащий графический редактор (FMP \ "\" \ "\") устарел в Lighthouse 6,0.  FMP также был удален из панели **Performance** .  **Самая крупная краска с содержимым** — Рекомендуемая замена для fmp.  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
+Например, `h1` стили, добавленные `CSSStyleSheet` с API CSSOM\), ранее не редактироваться не были.  Стили теперь можно изменить в панели **Стилей.**  
+
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Изменение фонового свойства стилей h1, добавленных cSSStyleSheet с розового на lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
+   Изменение `background` свойства `h1` стилей, добавленных `CSSStyleSheet` с на `pink` `lightblue` .
+:::image-end:::  
+
+Попробуйте использовать эту функцию с помощью примера [CSS-in-JS.][CodepenZoherghadyaliAbdgrpz]
+
+Проблема Chromium [#946975][CR946975]  
+
+### <a name="lighthouse-6-in-the-lighthouse-panel"></a>Маяк 6 в панели Маяк  
+
+Панель **Lighthouse** теперь работает Lighthouse 6.  Полный список всех изменений перейдите к [заметкам о выпуске v6.0.0.][GithubGoogleChromeLighthouse600]  
+
+Маяк 6.0 вводит в отчет три новые метрики: Самая большая контентная краска \(LCP\), Накопительная смена макета \(CLS\) и Общее время блокировки \(TBT\).  
+
+Формула показателей производительности также была перенагружена, чтобы лучше отражать нагрузку пользователя.  
+
+Проблема Chromium [#772558][CR772558]  
+
+#### <a name="first-meaningful-paint-deprecation"></a>Первая амортизации содержательной краски  
+
+Первая значимая краска \(FMP\) отстает в Lighthouse 6.0.  FMP также удален из панели **Performance.**  **Самая большая контентная краска** — это рекомендуемая замена для FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
 
-[#1096008][CR1096008] проблем с Chromium  
+Проблема Chromium [#1096008][CR1096008]  
 
-### Поддержка новых функций JavaScript  
+### <a name="support-for-new-javascript-features"></a>Поддержка новых функций JavaScript  
 
-В DevTools теперь улучшена поддержка некоторых последних языковых функций JavaScript.  
+DevTools теперь лучше поддерживает некоторые из последних языковых функций JavaScript.  
 
 :::row:::
    :::column span="1":::
-      [Необязательное автозавершение цепочки цепочек][V8DevOptionalChaining]  
+      [Необязательный][V8DevOptionalChaining] автозаполнение синтаксиса цепочки  
    :::column-end:::
    :::column span="2":::
-      Автоматическое завершение свойств в **консоли** теперь поддерживает дополнительный синтаксис цепочек, например  `name?.` теперь он работает и в дополнение к нему `name.` `name[` .  
+      Автоматическое завершение свойства в **консоли** теперь поддерживает необязательный синтаксис цепочки, например, теперь работает в дополнение к  `name?.` и `name.` `name[` .  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Подсветка синтаксиса для [закрытых полей][V8DevClassFieldsPrivate]  
+      Синтаксис выделения для [частных полей][V8DevClassFieldsPrivate]  
    :::column-end:::
    :::column span="2":::
-      закрытые поля класса теперь правильно выделены синтаксисом и печатаются на панели « **источники** ».  
+      Поля частных классов теперь правильно выделены синтаксис и довольно напечатаны в **панели Источники.**  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Выделение синтаксиса для [непустого оператора слияния][V8DevNullishCoalescing]
+      Синтаксис, выделяющийся для [оператора совмещений Nullish][V8DevNullishCoalescing]
    :::column-end:::
    :::column span="2":::
-      DevTools правильно — печатает на панели « **источники** » оператор объединения без значений NULL.  
+      DevTools теперь правильно печатает nullish coalescing operator в **панели Источники.**  
    :::column-end:::
 :::row-end:::  
 
-Проблемы с Chromium [#1073903][CR1073903], [#1083214][CR1083214] [#1083797][CR1083797]  
+Проблемы Chromium [#1073903,][CR1073903] [#1083214][CR1083214], [#1083797][CR1083797]  
 
-### Новые предупреждения о сочетаниях клавиш для приложения в области манифеста  
+### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>Новые предупреждения о ярлыке приложения в области Манифест  
 
-**Сочетания клавиш** для работы с приложениями помогают пользователям быстро запускать наиболее распространенные или Рекомендуемые задачи в веб-приложении.  
+**Ярлыки приложений помогают** пользователям быстро приступить к общим или рекомендуемым задачам в веб-приложении.  
 
 <!--todo: add App shortcuts when section is live  -->  
 
-В области **манифеста** отображаются предупреждения для указанных ниже условий.  
+В **области Манифест** теперь показаны предупреждения для следующих условий.  
 
-* Значки сочетаний клавиш приложения меньше 96x96 пикселей  
-* Значки сочетаний клавиш приложения и манифеста не квадратны \ (так как значки игнорируются)  
+* Значки ярлыка приложения меньше 96x96 пикселей  
+* Значки ярлыка приложения и значки манифеста не являются квадратными \(так как значки игнорируются\)  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
-   Предупреждения о сочетаниях клавиш для приложения  
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Предупреждения о ярлыке приложения" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+   Предупреждения о ярлыке приложения  
 :::image-end:::  
 
-[#955497][CR955497] проблем с Chromium  
+Проблема Chromium [#955497][CR955497]  
 
-### Последовательная отображение вычисляемой области  
+### <a name="consistent-display-of-the-computed-pane"></a>Последовательное отображение вычислительной области  
 
-**Вычисляемая** область на панели " **элементы** " теперь отображается единообразно в виде области на всех размерах окна просмотра.  Ранее **Вычисляемая** область была объединена в области " **стили** ", когда ширина окна просмотра DevTools была узкой.  
+Компьютерная **области** в **инструменте Elements** теперь последовательно отображается в качестве области во всех размерах viewport.  Ранее **вычислительная часть** слилась в области **Стилей,** когда ширина представления DevTools была узкой.  
 
-:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/computed-pane.msft.png":::
-   **Вычисляемая** область последовательно отображается как отдельная область, даже если DevTools узким.
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Вычислительная области последовательно отображает в качестве отдельной области, даже если DevTools являются узкими" lightbox="../../media/2020/06/computed-pane.msft.png":::
+   Компьютерная **области** последовательно отображает в качестве отдельной области, даже если DevTools являются узкими.
 :::image-end:::  
 
-[#1073899][CR1073899] проблем с Chromium  
+Проблема Chromium [#1073899][CR1073899]  
 
-### Смещения байт-кода для файлов сборки  
+### <a name="bytecode-offsets-for-webassembly-files"></a>Смещение bytecode для файлов WebAssembly  
 
-DevTools теперь использует смещения байт-кода для отображения номеров строк Wasm дизассемблированного кода.  
-Номера строк упрощают просмотр двоичных данных и более последовательную работу, так как среда выполнения Wasm ссылается на расположение.  
+DevTools теперь использует смещения bytecode для отображения номеров строки разборки Wasm.  
+Номера строк делают более понятным, что вы смотрите на двоичные данные, и в большей мере соответствуют расположениям ссылок на время запуска Wasm.  
 
-[#1071432][CR1071432] проблем с Chromium  
+Проблема Chromium [#1071432][CR1071432]  
 
-### Построчное копирование и вырезание на панели «источники»  
+### <a name="line-wise-copy-and-cut-in-sources-panel"></a>Line-wise copy and cut in Sources Panel  
 
-При копировании или вырезании без выделения в [редакторе палитры «источники][DevtoolsSourcesEditCssJavascript]» DevTools копирует или вырезает текущую строку содержимого.  
+При выполнении копирования или вырезания без выбора в редакторе панели [Источников,][DevtoolsSourcesEditCssJavascript]DevTools копирует или режет текущую строку контента.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   С курсором в конце строки 5 копируется вся строка из **pen.js** в DevTools и вставляется в [код Visual Studio][VSCode].
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="С помощью курсора в конце строки 5 скопируйте всю строку из pen.js в DevTools и вклеив Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   С помощью курсора в конце строки 5 скопируйте всю строку из **pen.js** в DevTools и вклеив [Visual Studio Code][VisualStudioCode].
 :::image-end:::  
 
-[#800028][CR800028] проблем с Chromium
+Проблема Chromium [#800028][CR800028]
 
-### Обновления параметров консоли  
+### <a name="console-settings-updates"></a>Обновления параметров консоли  
 
-#### Разгруппирование одинаковых сообщений консоли  
+#### <a name="ungroup-same-console-messages"></a>Разгруппировка тех же сообщений консоли  
 
-Для повторяющихся сообщений **Группа одинаковый** переключатель в разделе Параметры консоли будет применена.  Ранее она была применена к аналогичным сообщениям.  
+Группа, **похожая** на параметры консоли, теперь применяется к дублирующимся сообщениям.  Раньше он просто применялся к подобным сообщениям.  
 
-Например, ранее DevTools не разгруппирование сообщений, несмотря на то, что `hello` флажок **Group похоже** не установлен.  Теперь `hello` сообщения разгруппированы.  
+Например, ранее DevTools не разгруппировали сообщения, даже несмотря на то, что подобная группа не `hello` была перенастройкой. ****  Теперь сообщения `hello` негруппировываются.  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   Если флажок " **Группировать как** " не установлен, `hello` сообщения разносятся в разгруппирование
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="При неконтраншировке аналогичных групп сообщения привета негруппировываются" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+   При **** неконтраншировке аналогичных групп сообщения `hello` негруппировываются
 :::image-end:::  
 
-Придайте этой функции [пример, который отправляет на консоль повторяющиеся сообщения][CodepenZoherghadyaliZyrjgdJ].  
+Дайте этой функции попробовать [пример, который отправляет дублирующиеся сообщения на консоль][CodepenZoherghadyaliZyrjgdJ].  
 
-[#1082963][CR1082963] проблем с Chromium  
+Проблема Chromium [#1082963][CR1082963]  
 
-### Сохранение только выбранных контекстных параметров  
+### <a name="persisting-selected-context-only-settings"></a>Сохраняемая только параметры выбранного контекста  
 
-**Выбранный контекст** теперь сохраняется только в параметрах консоли.  Ранее параметры были сброшены каждый раз при закрытии и повторном открытии DevTools.  Изменение приводит к поведению параметров с другими параметрами консоли.  
+В **настоящее время сохраняются** только параметры выбранного контекста в параметрах консоли.  Ранее параметры сбрасывались при каждом закрытии и возобновлении работы DevTools.  Это изменение делает поведение параметра совместимым с другими настройками консоли.  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/selected-context.msft.png":::
-   Параметр " **только выбранный контекст** "  
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Только параметр выбранного контекста" lightbox="../../media/2020/06/selected-context.msft.png":::
+   **Только параметр выбранного** контекста  
 :::image-end:::  
 
-[#1055875][CR1055875] проблем с Chromium  
+Проблема Chromium [#1055875][CR1055875]  
 
-### Обновления панели "производительность"  
+### <a name="performance-panel-updates"></a>Обновления панели производительности  
 
-#### Информация кэша компиляции для JavaScript на панели "производительность"  
+#### <a name="javascript-compilation-cache-information-in-performance-tool"></a>Сведения о кэше компиляции JavaScript в **средстве Performance**  
 
-[Данные кэша компиляции для JavaScript][V8DevCodeCaching] теперь всегда отображаются на вкладке "Сводка" на панели "производительность".  Ранее DevTools не показывает ничего, связанного с кэшированием кода, если кэширование кода не произошло.  
+[Сведения о кэше компиляции JavaScript][V8DevCodeCaching] теперь всегда отображаются в панели **сводки** средства **Performance.**  Ранее в DevTools не было ничего, связанного с кэшингом кода, если кэшировать код не удалось.  
 
-:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
-   Данные кэша компиляции для JavaScript  
+:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Сведения о кэше компиляции JavaScript" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
+   Сведения о кэше компиляции JavaScript  
 :::image-end:::  
 
-[#912581][CR912581] проблем с Chromium  
+Проблема Chromium [#912581][CR912581]  
 
-#### Выравнивание времени навигации на панели «производительность»  
+#### <a name="navigation-timing-alignment-in-the-performance-panel"></a>Выравнивание времени навигации в панели Performance  
 
-Панель **производительности** , используемая для отображения времени на линейках на основе начала записи.  Время ожидания изменилось для записей, в которых пользователь осуществляет переход, где DevTools теперь показывает время линейки относительно навигации.  
+Панель **Performance** используется для показа времени в линейках на основе начала записи.  Теперь время изменилось для записей, в которых пользователь перемещается, где в DevTools теперь указывается время линейки относительно навигации.  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/nav-timing.msft.png":::
-   Выравнивание времени навигации на панели « **производительность** »  
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Выравнивание времени навигации в средстве Performance" lightbox="../../media/2020/06/nav-timing.msft.png":::
+   Выравнивание времени навигации в **средстве Performance**  
 :::image-end:::  
 
-Время, для которого `DOMContentLoaded` Первая краска, первая краска и наибольшее количество событий, связанных с содержимым, обновляется в соответствии с началом навигации, а это значит, что время соответствует значению времени, указанное в `PerformanceObserver` .  
+Время для событий , First Paint, First Contentful Paint и Biggest Contentful Paint обновляется по отношению к началу навигации, что означает, что время совпадает со сроками, о которых сообщается `DOMContentLoaded` `PerformanceObserver` .  
 
-[#974550][CR974550] проблем с Chromium  
+Проблема Chromium [#974550][CR974550]  
 
-### Новые значки для точек останова, условных точек останова и logpoints  
+### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>Новые значки для точек разрыва, условных точек и точек входа  
 
-На панели « **источники** » есть новые дизайны для точек останова, условных точек останова и logpoints.  Точки останова представлены на красном круге, точно так же, как и в [Visual Studio][VSCode] , и в [Visual Studio][VS].  Значки добавляются для различения условных точек останова и logpoints.  
+Панель **Источников** имеет новые проекты для точек разрыва, условных точек и точек входа.  Точки breakpoints представлены красным кругом, как и [Visual Studio код][VisualStudioCode] [и Visual Studio][VisualStudio].  Значки добавляются для дифференцировать условные точки и точки входа.  
 
-:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Экспериментальная функция" lightbox="../../media/2020/06/breakpoints.msft.png":::
+:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Точки останова" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Точки останова  
 :::image-end:::  
 
-[#1041830][CR1041830] проблем с Chromium  
+Проблема Chromium [#1041830][CR1041830]  
 
-## Загрузка каналов предварительной версии Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Скачивание Microsoft Edge предварительных каналов  
 
-Если вы используете Windows или macOS, рассматривайте в качестве браузера по умолчанию использование [каналов предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] .  Каналы предварительного просмотра предоставляют доступ к последним функциям DevTools.  
+Если вы находитесь на Windows или macOS, рассмотрите возможность использования каналов [предварительного][MicrosoftEdgePreviewChannels] просмотра Microsoft Edge в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
-## Знакомство с Microsoft Edge DevTools Team  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Инструменты разработчика Microsoft EDGE (Chromium) | Документы Microsoft"  
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Ящик — настройка Microsoft Edge DevTools | Документы Microsoft"
-[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Включите экспериментальные функции — экспериментальные функции | Документы Microsoft"  
-[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Поиск и устранение проблем с помощью средства Microsoft Edge DevTools "вопросы" | Документы Microsoft"
-[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Общие сведения об панели редактирования CSS и JavaScript-sources | Документы Microsoft"  
-[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Регистрация активности сети — проверка активности сети в Microsoft Edge DevTools | Документы Microsoft"
+[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Средства разработки Microsoft Edge (Chromium) | Документы Майкрософт"  
+[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Запуск команд с командным меню Microsoft Edge DevTools | Документы Майкрософт"
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Ящик — настройка Microsoft Edge DevTools | Документы Майкрософт"
+[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Включаем экспериментальные функции — экспериментальные | Документы Майкрософт"  
+[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Поиск и устранение проблем со средством "Проблемы" средств разработчика Microsoft Edge | Документация Майкрософт"
+[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Изменение CSS и JavaScript — обзор панели источников | Документы Майкрософт"  
+[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Сетевое действие журнала — Проверка сетевой активности в Microsoft Edge DevTools | Документы Майкрософт"
 
-[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Редактирование стилей для платформ CSS-JS | CodePen"
-[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Отправлять повторяющиеся сообщения на консоль | CodePen"
-[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "Пример планировщика сетки CSS | CodePen"
+[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Редактирование стилей для CSS-in-JS frameworks | CodePen"
+[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Отправка дублирующих сообщений в консольные | CodePen"
+[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "Пример планирования сетки CSS | CodePen"
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Ошибки Chromium"  
 
-[CR772558]: https://crbug.com/772558 "DevTools: обновление до последней версии Lighthouse | Ошибки Chromium"  
-[CR800028]: https://crbug.com/800028 "Повторяющийся ярлык строки в редакторе средств разработчика не работает после обновления Chrome | Ошибки Chromium"  
-[CR912581]: https://crbug.com/912581 "Предоставление сценариев, которые были бы кэшированы в коде с помощью V8 в DevTools/about: Tracing | Ошибки Chromium"  
-[CR946975]: https://crbug.com/946975 "Боковая панель "стили DevTools" не работает с сконструированными таблицами стилей | Ошибки Chromium"  
-[CR955497]: https://crbug.com/955497 "Контекстное меню значка приложения для PWAs | Ошибки Chromium"  
-[CR974550]: https://crbug.com/974550 "Несоответствие метрик между панелью производительности и performanceObserver | Ошибки Chromium"  
-[CR1041830]: https://crbug.com/1041830 "Улучшение цветопередачи для точек останова | Ошибки Chromium"  
-[CR1055875]: https://crbug.com/1055875 "Значение выбранного контекста параметр консоли не сохраняется после закрытия и повторного открытия средств разработчика | Ошибки Chromium"  
-[CR1066579]: https://crbug.com/1066579 "DevTools: Показать ServiceWorkers выбор временной шкалы для запроса на панели "сеть" | Ошибки Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Базовые возможности для разработчиков Wasm | Ошибки Chromium"  
-[CR1073899]: https://crbug.com/1073899 "Вкладка "вычисляемый стиль" исчезает в режиме отклика | Ошибки Chromium"  
-[CR1073903]: https://crbug.com/1073903 "DevTools: выделение синтаксических конструкций не работает с закрытыми полями | Ошибки Chromium"  
-[CR1082963]: https://crbug.com/1082963 "Не удается отключить поведение группировки аналогичных сообщений в консоли | Ошибки Chromium"  
-[CR1083214]: https://crbug.com/1083214 "Acorn не поддерживает дополнительное объединение | Ошибки Chromium"  
-[CR1083797]: https://crbug.com/1083797 "Неправильное распечатка для ненулевого объединения | Ошибки Chromium"  
-[CR1096008]: https://crbug.com/1096008 "Удалить FMP | Ошибки Chromium"  
-[CR1047356]: https://crbug.com/1047356 "Сетка CSS/гибкая таблица/подсказка для таблиц | Ошибки Chromium"  
-[CR1093687]: https://crbug.com/1093687 "Инструмент "создать" для создания и воспроизведения запросов виртуальных сетей | Ошибки Chromium"  
-[CR1070378]: https://crbug.com/1070378 "Интегрировать подсказку в DevTools | Ошибки Chromium"  
-[CR1069404]: https://crbug.com/1069404 "[Средства разработки] всплывающие элементы мини-приложения слишком узкие | Ошибки Chromium"  
-[CR897944]: https://crbug.com/897944 "Перетаскиваемые панели DevTool | Ошибки Chromium"
+[CR772558]: https://crbug.com/772558 "DevTools: обновление до последней версии | Ошибки Chromium"  
+[CR800028]: https://crbug.com/800028 "Дублировать ярлык строки в редакторе Средства разработчика, не работая после обновления Chrome | Ошибки Chromium"  
+[CR912581]: https://crbug.com/912581 "Показать, какие скрипты были кэшироваться V8 в DevTools/about:tracing | Ошибки Chromium"  
+[CR946975]: https://crbug.com/946975 "Боковая панель стилей DevTools не работает со построенными таблицами стилей | Ошибки Chromium"  
+[CR955497]: https://crbug.com/955497 "Меню ярлыка значка приложения для pwAs | Ошибки Chromium"  
+[CR974550]: https://crbug.com/974550 "Несоответствие показателей между панелью Perf и performanceObserver | Ошибки Chromium"  
+[CR1041830]: https://crbug.com/1041830 "Улучшение цветов для точек | Ошибки Chromium"  
+[CR1055875]: https://crbug.com/1055875 "Значение параметра выбранной консоли только контекста не сохраняется после закрытия и открытия средств разработки | Ошибки Chromium"  
+[CR1066579]: https://crbug.com/1066579 "DevTools: Show ServiceWorkers Fetch Timeline per request in Network panel | Ошибки Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Ошибки Chromium"  
+[CR1073899]: https://crbug.com/1073899 "Вкладка computed style исчезает в режиме отклика | Ошибки Chromium"  
+[CR1073903]: https://crbug.com/1073903 "DevTools: выделение синтаксиса не работает с частными полями | Ошибки Chromium"  
+[CR1082963]: https://crbug.com/1082963 "Нельзя отключить аналогичное поведение сообщений группы консоли | Ошибки Chromium"  
+[CR1083214]: https://crbug.com/1083214 "acorn не поддерживает необязательный | Ошибки Chromium"  
+[CR1083797]: https://crbug.com/1083797 "Красивая печать, нарушенная для ненульского | Ошибки Chromium"  
+[CR1096008]: https://crbug.com/1096008 "Удаление FMP-| Ошибки Chromium"  
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Ошибки Chromium"  
+[CR1093687]: https://crbug.com/1093687 "Создание средства для создания и воспроизведения синтетических сетевых запросов | Ошибки Chromium"  
+[CR1070378]: https://crbug.com/1070378 "Интеграция веб-хинта в devTools | Ошибки Chromium"  
+[CR1069404]: https://crbug.com/1069404 "[Средства разработчика] всплывающие окантовки виджетов слишком узкие | Ошибки Chromium"  
+[CR897944]: https://crbug.com/897944 "Перетаскиваемые панели | Ошибки Chromium"
 
-[GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v 6.0.0-GoogleChrome/Lighthouse | GitHub"  
+[GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse | GitHub"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Новая ошибка — MicrosoftDocs/Edge-разработчик"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Новая проблема — MicrosoftDocs/edge-developer"  
 
-[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Использование теневой модели DOM | MDN"
+[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Использование теневых doM-| MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Каналы предварительной версии Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Каналы предварительного просмотра Microsoft Edge"  
 
-[VS]: https://visualstudio.microsoft.com/ "Visual Studio"
-[VSCode]: https://code.visualstudio.com/ "Код Visual Studio"  
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
+[VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
 
-[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Объектная модель CSS (CSSOM) | Черновики редакторов рабочих групп W3C CSS"  
+[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Объектная модель CSS (CSSOM) | Проекты редактора рабочей группы W3C CSS"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Публикация твита"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools учетной записи Twitter"  
 
-[V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Закрытые поля класса — открытые и закрытые поля класса | V8. Разработки"  
-[V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Кэширование кода для разработчиков JavaScript | V8. Разработки"  
-[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Ненулевое объединение | V8. Разработки"  
-[V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Дополнительные сцепления | V8. Разработки"  
+[V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Поля частных классов — общедоступные и частные | V8. Dev"  
+[V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Кэшинг кода для разработчиков JavaScript | V8. Dev"  
+[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish coalescing | V8. Dev"  
+[V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Необязательный | V8. Dev"  
 
-[WebhintMain]: https://webhint.io "Подсказка"  
+[WebhintMain]: https://webhint.io "webhint"  
 
-[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Объекты стилей, которые вы создаете? Веб-Incubator CG"
+[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Объекты таблицы стилей| CG веб-инкубатора"
 
 <!--[WebDevLighthouseWhatsNew60]: https://web.dev/lighthouse-whats-new-6.0 "What's New in Lighthouse 6.0 | Web.Dev"  -->  
 <!--[WebDevVitalsCoreWeb]: https://web.dev/vitals#core-web-vitals "Core Web Vitals - Web Vitals | Web.Dev"  -->  
@@ -387,11 +395,11 @@ DevTools теперь использует смещения байт-кода д
 <!--[WebDevFirstMeaningfulPaint]: https://web.dev/first-meaningful-paint "First Meaningful Paint | Web.Dev"  -->  
 <!--[WhatsNew201902ConstructableStylesheets]: ../../2019/02/constructable-stylesheets.md "Constructable Stylesheets: seamless reusable styles | Microsoft Docs"  -->  
 
-[TheWebWeWant]: https://webwewant.fyi/ "Требуемый веб-сайт"  
+[TheWebWeWant]: https://webwewant.fyi/ "Веб-сайт, который мы хотим"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница [будет найдена, и](https://developers.google.com/web/updates/2020/06/devtools/index) ее можно создать с помощью [Jecelyn Yeen][JecelynYeen] \ (разработчик отвечает, Chrome DevTools \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Исходная страница находится [здесь](https://developers.google.com/web/updates/2020/06/devtools/index). Ее автор — [Jecelyn Yeen][JecelynYeen] (Джеслин Йен) \(советник по разработке, Chrome DevTools\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

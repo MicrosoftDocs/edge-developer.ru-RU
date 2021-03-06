@@ -1,18 +1,18 @@
 ---
-description: Код на стороне клиента будет читаемым и отлаженным даже после того, как вы объедините, minify или компилируете его.
-title: Сопоставление предварительно обработанного кода с исходным кодом
+description: Держите код клиента читаемым и отладки даже после объединения, минификации или компилляции.
+title: Карта предварительного кода в исходный код
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: debea327be41ab8aa2da19aa8cc128a1897e51e5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124685"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398394"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,68 +28,68 @@ ms.locfileid: "11124685"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Сопоставление предварительно обработанного кода с исходным кодом  
+# <a name="map-preprocessed-code-to-source-code"></a>Карта предварительного кода в исходный код  
 
-Код на стороне клиента будет читаемым и отлаженным даже после того, как вы объедините, minify или компилируете его.  С помощью карт исходного кода сопоставьте исходный код с скомпилированным кодом.  
+Держите код клиента читаемым и отладки даже после объединения, минификации или компилляции.  Используйте исходные карты, чтобы сопопооставить исходный код с скомпилным кодом.  
 
-### Краткий обзор  
+### <a name="summary"></a>Сводка  
 
-*   С помощью карт исходного кода сопоставьте minified код с исходным кодом. После этого вы сможете прочитать и отладить скомпилированный код в исходном источнике.  
-*   Используйте только предварительные процессоры с возможностью создания карт исходного кода.  
-*   Убедитесь в том, что веб-сервер может служить исходными картами.  
+*   Используйте исходные карты для совмещений минифицированного кода с исходным кодом.  Затем вы сможете читать и отлаговка скомпилировать код в исходном источнике.  
+*   Используйте только предварительные процессоры, способные производить исходные карты.  
+*   Убедитесь, что веб-сервер может обслуживать исходные карты.  
     
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-## Приступая к работе с препроцессорами  
+## <a name="get-started-with-preprocessors"></a>Начало работы с препроцессорами  
 
-В этой статье объясняется, как взаимодействовать с исходными картами JavaScript на панели "DevTools источники".  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; see Set Up CSS & JS Preprocessors.  -->  
+В этой статье рассказывается, как взаимодействовать с исходными картами JavaScript в панели источников DevTools.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
 
-## Использование поддерживаемой предварительной обработки  
+## <a name="use-a-supported-preprocessor"></a>Использование поддерживаемых препроцессора  
 
-Вам необходимо использовать Minifier, который способен создавать карты исходного кода.  <!--For the most popular options, navigate to preprocessor support section.  -->  Для расширенного представления перейдите к [исходным картам: языки, инструменты и другие информационные][GitHubWikiSourceMapsLanguagesTools] вики-страницы.  
+Используйте мини-fier, который способен создавать исходные карты.  <!--For the most popular options, navigate to preprocessor support section.  -->  Для расширенного представления перейдите на исходные [карты: языки, инструменты и другую страницу вики-информации.][GitHubWikiSourceMapsLanguagesTools]  
 
-<!--todo: add link to see the preprocessor support section when section is available -->  
+<!--todo: add link to display the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-В сочетании с исходными картами обычно используются следующие типы предварительной обработки:  
+Следующие типы препроцессоров обычно используются в сочетании с исходными картами:  
 
-*   Transpilers \ ([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
-*   Компиляторы \ ([компилятор замыканий][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [DART][DartMain]\)  
-*   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)  
+*   Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)  
+*   Компиляторы \.[Компилятор закрытия][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Дартс][DartMain]\)  
+*   Minifiers \.[UglifyJS][GitHubMishooUglifyJS]\)  
     
-## Карты исходного кода на панели «источники DevTools»  
+## <a name="source-maps-in-devtools-sources-panel"></a>Исходные карты в панели Источников DevTools  
 
-Карты исходного кода из предварительной обработки заставляют DevTools загрузить исходные файлы в дополнение к minified.  Затем вы можете использовать оригиналы для задания точек останова и пошагового кода.  В то же время Microsoft EDGE на самом деле выполняет minified код. Это дает вам иллюзию запуска сайта разработки в рабочей среде.  
+Исходные карты из препроцессоров приводят к загрузке исходных файлов в дополнение к добытым файлам.  Затем вы используете оригиналы для набора точек остановок и шага по коду.  Тем временем Microsoft Edge фактически запускает ваш заминированный код.  Запуск кода создает иллюзию запуска сайта разработки в производстве.  
 
-При запуске карт исходного кода в DevTools следует обратить внимание на то, что JavaScript не скомпилирован и вы можете просматривать все отдельные файлы JavaScript, на которые он ссылается.  Используется сопоставление источника, но в фоновом режиме фактически запускается скомпилированный код.  Любые ошибки, журналы и точки останова сопоставлены с кодом разработки для Awesome Debugging!  Таким образом, это дает впечатление, что вы используете сайт разработчика в производстве.  
+При запуске исходных карт в DevTools следует заметить, что JavaScript не компилироваться, а все отдельные файлы JavaScript, на которые он ссылается, отображаются.  Исходные карты в DevTools используют исходные сопоставления, но в основе функции фактически выполняется скомпилирован код.  Любые ошибки, журналы и брейк-пойнты на карте кода разработчика для отладки.  Таким образом, в действительности это дает вам иллюзию, что вы работаете на сайте разработчика в производстве.  
 
-### Включение карт исходного кода в параметрах  
+### <a name="enable-source-maps-in-settings"></a>Включить исходные карты в настройках  
 
-Исходные карты включены по умолчанию. <!--\(as of Microsoft Edge 39\)-->, но если вы хотите дважды проверить или включить их; Сначала откройте DevTools, нажмите кнопку **Настройка и управление DevTools** \ ( `...` \) и выберите пункт **Параметры**.  В области **Параметры** в разделе **источники**установите флажок **включить сопоставления источников JavaScript**.  Вы также можете установить флажок **включить сопоставления источников CSS**.  
+Исходные карты включены по умолчанию<!-- \(as of Microsoft Edge 39\)-->, но если вы хотите дважды проверить или включить их; сначала откройте DevTools, выберите Настройка и управление **DevTools** `...` \( \) > **параметры**.  На области **"Предпочтения"** в **статье Источники**включаем **включить исходные карты JavaScript.**  Вы также можете включить исходные **карты включить CSS.**  
 
-:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Включение карт исходного кода" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   **Включение карт исходного кода JavaScript**  
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Включить исходные карты" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+   **Включить исходные карты JavaScript**  
 :::image-end:::  
 
-### Отладка с помощью карт исходного кода  
+### <a name="debugging-with-source-maps"></a>Отладка с помощью исходных карт  
 
-При включении отладки кода и сопоставления источников отображаются два места.  
+Когда отладка кода и исходных карт включена, исходные карты показываются в двух местах:  
 
-1.  На консоли \ (ссылка на источник — это исходный файл, а не созданный).  
-1.  При пошаговом выполнении кода \ (ссылки в стеке вызовов должны открыть исходный исходный файл)  
+1.  В консоли \(ссылкой на источник должен быть исходный файл, а не созданный\)  
+1.  При перешагнул код \(ссылки в стеке вызовов должны открыть исходный файл\)  
     
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
-## @sourceURL и displayName  
+## <a name="sourceurl-and-displayname"></a>@sourceURL и displayName  
 
-Несмотря на то, что она не входит в спецификацию карты источника, она `@sourceURL` позволяет упростить разработку при работе с evalами.  Этот вспомогательный элемент выглядит очень похож на `//# sourceMappingURL` свойство и на самом деле упоминается в спецификации исходной карты v3.  
+Хотя эта спецификация не является частью спецификации Source Map, она позволяет значительно упростить разработку при `@sourceURL` работе с evals.  Помощник отображается аналогично свойству и упоминается в спецификациях `//# sourceMappingURL` Source Map V3.  
 
-Включив в код следующее специальное примечание, которое будет вычислено, вы можете присвоить именам и встроенным сценариям и стилям, чтобы они отображались в DevTools с более логичными именами.  
+Включив в код следующий специальный комментарий, который является evaled, вы можете назвать evals и inline scripts and styles, чтобы каждый из них был более логичным именем в devTools.  
 
 ```javascript
 //# sourceURL=source.coffee
@@ -99,46 +99,46 @@ ms.locfileid: "11124685"
 
 *   [ролик][CssNinjaDemoSourceMapping]
 
-Выполните указанные ниже действия.  
+Выполните следующие действия.  
 
-1.  Откройте DevTools и перейдите на панель " **источники** ".  
-1.  Введите имя файла в поле **код:** input.  
-1.  Нажмите кнопку **Compile (компилировать** ).  
-1.  Появится предупреждение с вычисленной суммой из источника CoffeeScript.  
+1.  Откройте DevTools и перейдите на панель **Источники.**  
+1.  Введите имя файла в **поле Имя кода:** поле ввода.  
+1.  Выберите **кнопку компилятор.**  
+1.  Оповещение отображается с оцененной суммой из источника CoffeeScript.  
     
-Если развернуть раздел **источники** , вы увидите новый файл с пользовательским именем, введенным ранее.  Если дважды щелкнуть для просмотра этого файла, он будет содержать скомпилированный код JavaScript для первоначального источника.  Однако в последней строке есть `// @sourceURL` Примечание, указывающее исходный исходный файл.  Это может помочь при отладке при работе с языковыми абстракциями.  
+При расширении **подгруппы Источники** теперь отображается новый файл с настраиваемым иным файлом, который был введен ранее.  Если дважды щелкнуть, чтобы просмотреть этот файл, он содержит составленный JavaScript для исходного источника.  В последней строке, однако, находится `// @sourceURL` комментарий, указывающий исходный исходный файл.  Это может помочь вам в отладки при работе с языковыми абстракциями.  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Включение карт исходного кода" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Работа с sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    Работа с `sourceURL`  
 :::image-end:::  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[BabelJS]: https://babeljs.io "Babel является компилятором JavaScript"  
+[BabelJS]: https://babeljs.io "Babel — компилятор JavaScript"  
 
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
 
-[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Простой пример имени//# sourceURL eval"  
+[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Простой пример именования eval //# sourceURL"  
 
-[DartMain]: https://www.dartlang.org "Язык программирования DART"  
+[DartMain]: https://www.dartlang.org "Дартс язык программирования"  
 
-[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "Google/замыкание — компилятор | GitHub"  
+[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/closure-compiler | GitHub"  
 
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
 
-[GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Карты исходного кода: языки, инструменты и другая информация | Вики-сайт GitHub"  
+[GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Исходные карты: языки, инструменты и другие | Вики GitHub"  
 
-[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Приступая к работе-"Google/traceur-Compiler | Вики-сайт GitHub"  
+[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Начало работы — google/traceur-compiler | Вики GitHub"  
 
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница размещается [здесь](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) и разрабатывается с помощью [Meggin Kearney][MegginKearney] \ (технический писатель \) и [пола Bakaus][PaulBakaus] \ (Open Web Developer, Google: Tools, Performance, Animation и UX).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) находится здесь и является автором [Meggin Kearney][MegginKearney] \(Tech Writer\) и Пола [Бакауса][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation и UX\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -1,18 +1,18 @@
 ---
-description: Откройте вкладку датчики и перейдите к разделу ориентация.
-title: Имитация ориентации устройства с помощью Microsoft Edge DevTools
+description: Откройте средство Датчики и перейдите в раздел Ориентация.
+title: Имитация ориентации устройств с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 754df3b271b44f986802c2847862624f6a8b5bd9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124959"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398716"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,40 +28,40 @@ ms.locfileid: "11124959"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Имитация ориентации устройства с помощью Microsoft Edge DevTools  
+# <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a>Имитация ориентации устройств с помощью Microsoft Edge DevTools  
 
-Выполните указанные ниже действия, чтобы имитировать различные ориентации устройств в Microsoft Edge DevTools.  
+Выполните следующие действия для имитации различных ориентаций устройств из Microsoft Edge DevTools.  
 
 <!--todo: update device orientation section when available -->  
 
-1.  Выберите `Control` + `Shift` + `P` \ (Windows, Linux \) или `Command` + `Shift` + `P` \ (macOS \), чтобы открыть **меню команд**.  
+1.  Выберите `Control` + `Shift` + `P` \(Windows, Linux\) `Command` + `Shift` + `P` или \(macOS\) для открытия **командного меню.**  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Меню команд" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **Меню команд**  
+       Меню **команд**  
     :::image-end:::  
     
-1.  Введите текст `sensors` , нажмите кнопку **Показать датчики**и выберите `Enter` .  Вкладка **датчики** откроется в нижней части окна DevTools.  
-1.  В списке **ориентация** выберите одну из готовых ориентаций (например `Portrait upside down` , или настроить **пользовательскую ориентацию** ), чтобы обеспечить точное расположение.  
+1.  `sensors`Введите, **выберите датчики show**и выберите `Enter` .  Средство **Sensors** открывается в нижней части окна DevTools.  
+1.  В **списке Ориентация** выберите одну из заранее выбранных ориентиров или выберите настраиваемую ориентацию для `Portrait upside down` предоставления вашей точной ориентации. ****  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Меню команд" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             Выбор `Portrait upside down` из списка **ориентации**  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Выберите Портрет вверх ногами из списка Ориентация" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             Выбор `Portrait upside down` из списка **Ориентация**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          После выбора варианта **Пользовательская ориентация**будет `alpha` `beta` `gamma` включена.  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
+          После выбора **настраиваемой ориентации** `alpha` включены поля и `beta` `gamma` поля.  
+          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
-          Вы также можете настроить пользовательскую ориентацию, перетащив **модель ориентации**.  Удерживайте `Shift` перед перетаскиванием, чтобы повернуть вдоль `alpha` оси.  
+          Вы также можете настроить настраиваемую ориентацию, перетаскив модель **ориентации.**  Удерживайте `Shift` перед перетаскиванием, чтобы повернуть по `alpha` оси.  
           
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Меню команд" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
-             **Модель ориентации**  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Модель ориентации" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+             Модель **ориентации**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -73,8 +73,8 @@ ms.locfileid: "11124959"
 <!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

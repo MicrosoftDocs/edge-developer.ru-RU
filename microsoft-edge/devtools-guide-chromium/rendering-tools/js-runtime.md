@@ -1,18 +1,18 @@
 ---
-description: Нахождение ресурсоемких функций с помощью панели DevTools Memory (Microsoft EDGE).
+description: Определение дорогостоящих функций с помощью панели памяти Microsoft Edge DevTools.
 title: Ускорение среды выполнения JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: f3cf0440579865495f4afc8b1ae4e3940af7b04f
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 682001ae8d265b342e5d6e0725f9f8ac4e298cf8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125358"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397603"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -28,120 +28,120 @@ ms.locfileid: "11125358"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Ускорение среды выполнения JavaScript  
+# <a name="speed-up-javascript-runtime"></a>Ускорение среды выполнения JavaScript  
 
-Нахождение ресурсоемких функций с помощью панели **памяти** .  
+Определение дорогостоящих функций с **помощью панели памяти.**  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Образцы профилей  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Примеры профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Примеры профилей  
 :::image-end:::  
 
-### Краткий обзор  
+### <a name="summary"></a>Сводка  
 
-*   Записывайте именно те функции, которые были вызваны, и объем памяти, необходимый для выделения ресурсов, на панели **памяти** .  
-*   Визуализируйте свои профили как flameную диаграмму.  
+*   Зафиксировать точно, какие функции были вызваны и сколько памяти требуется для каждой из них с помощью выборки выделения в **панели памяти.**  
+*   Визуализация профилей в качестве диаграммы пламени.  
     
-## Запись профиля выборки  
+## <a name="record-a-sampling-profile"></a>Запись профиля выборки  
 
-Если вы заметили, что Jank в коде JavaScript, соберите профиль выборки.  Профили выборки показывают, где на странице потратило время выполнения.  
+Если вы заметили jank в JavaScript, соберите профиль выборки.  В профилях выборки покажите, где время работы тратится на функции на странице.  
 
-1.  Откройте панель **память** в DevTools.  
-1.  Установите переключатель **выборка распределения** .  
-1.  Нажмите кнопку **начать**.  
-1.  В зависимости от того, что вы пытаетесь проанализировать, вы можете либо повторно загрузить страницу, взаимодействовать со страницей, либо просто разрешить выполнение страницы.  
-1.  Когда все будет готово, нажмите кнопку **остановить** .  
+1.  Перейдите к **панели памяти** DevTools.  
+1.  Выберите радио **кнопку Распределение выборки.**  
+1.  Выберите **Начните**.  
+1.  В зависимости от того, что вы пытаетесь проанализировать, вы можете обновить страницу, взаимодействовать со страницей или просто запустить страницу.  
+1.  Выберите **кнопку Stop** по завершению.  
     
 > [!NOTE]
-> Вы также можете использовать [API консольных утилит][DevtoolsConsoleUtilities] для записи и группировки профилей из командной строки.  
+> Можно также использовать [API консоли utilities][DevtoolsConsoleUtilities] для записи профилей командной строки и групп.  
 
-## Просмотр профиля выборки  
+## <a name="view-sampling-profile"></a>Просмотр профиля выборки  
 
-Когда вы закончите запись, DevTools автоматически заполнит панель **памяти** в разделе **Профили выборки** с данными из записи.  
+Когда вы закончите запись, DevTools **** автоматически заполняет панель памяти в **профили SAMPLING** с данными из записи.  
 
-Представление по умолчанию имеет **большой вид \ (снизу вверх)**.  Это представление позволяет узнать, какие функции приводили к снижению производительности и как проанализировать пути вызова для этих функций.  
+Представление по умолчанию **— Heavy \(Bottom Up\)**.  Это представление позволяет просмотреть, какие функции оказали наибольшее влияние на производительность и просмотреть путь запроса для каждой функции.  
 
-### Изменение порядка сортировки  
+### <a name="change-sort-order"></a>Изменение порядка сортировки  
 
-Чтобы изменить порядок сортировки, щелкните раскрывающееся меню рядом с **выделенной функцией фокуса** , ![ ][ImageFocusIcon] а затем выберите один из указанных ниже вариантов.
+Чтобы изменить порядок сортировки, выберите меню dropdown рядом с выбранной функцией **фокуса** \( функция фокуса \) и выберите один из ![ ][ImageFocusIcon] следующих вариантов.
 
-**Диаграмма**.  Диаграмма, на которой показана Хронология записи.  
+**Диаграмма**.  Отображает хронологическую диаграмму записи.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   Flame диаграмма  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Диаграмма пламени" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   Диаграмма пламени  
 :::image-end:::  
 
-**Тяжелая – (снизу вверх)**.  Перечисление функций, влияющих на производительность, и позволяет исследовать пути вызова функций.  Это представление по умолчанию.  
+**Heavy \(Bottom Up\)**.  Списки функций по влиянию на производительность и позволяет изучить пути вызова к функциям.  Это представление по умолчанию.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Тяжелая диаграмма" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Тяжелая диаграмма  
 :::image-end:::  
 
-**Дерево \ (сверху вниз)**.  Показывает общую картину структуры вызова, начиная с верхней части стека вызова.  
+**Tree \(Top Down\)**.  Отображает общую картину структуры вызовов, начиная с верхней части стека вызовов.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
-   Древовидная диаграмма  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Диаграмма дерева" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
+   Диаграмма дерева  
 :::image-end:::  
 
-### Исключить функции  
+### <a name="exclude-functions"></a>Исключение функций  
 
-Чтобы исключить функцию из профиля выборочной выборки, выберите ее и нажмите кнопку **исключить выбранную функцию** \ (исключить выбранную функцию \ ![ ][ImageExcludeIcon] ).  Функция запроса \ (родительский элемент) исключенной функции \ (дочерней) оценивается выделенной памятью, назначенной исключенной функции \ (дочерняя).  
+Чтобы исключить функцию из профиля выборки, выберите ее, а затем выберите исключенную выбранную функцию **\(** исключить выбранную ![ ][ImageExcludeIcon] функцию \) кнопку.  Функция запроса \(parent\) исключенной функции \(child\) заряжается выделенной памятью, назначенной исключенной функции \(child\).  
 
-Нажмите кнопку **восстановить все функции** \ ( ![ восстановить все функции ][ImageRestoreIcon] \), чтобы восстановить все исключенные функции, возвращенные в запись.  
+Выберите **кнопку восстановление** всех функций \( восстановление всех функций \) для восстановления всех исключенных функций ![ обратно в ][ImageRestoreIcon] запись.  
 
-## Просмотр профиля выборки как диаграммы  
+## <a name="view-sampling-profile-as-chart"></a>Просмотр профиля выборки в качестве диаграммы  
 
-Представление Диаграмма обеспечивает визуальное представление профиля выборки с течением времени.  
+Представление Диаграммы обеспечивает визуальное представление профиля выборки со временем.  
 
-После [записи профиля выборочной](#record-a-sampling-profile)настройки просмотрите запись в виде Flame диаграммы, [изменив порядок сортировки](#change-sort-order) на **Chart**.  
+После [записи профиля выборки](#record-a-sampling-profile)просмотреть запись в качестве диаграммы [пламени,](#change-sort-order) изменив порядок сортировки на **диаграмму**.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   Flame представления диаграммы  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Представление диаграммы пламени" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+   Представление диаграммы пламени  
 :::image-end:::  
 
-Flame диаграмма делится на две части.  
+Диаграмма пламени разделена на две части.  
 
-| индекса | Составляющая | Описание |  
+| индекс | Часть | Описание |  
 | --- |:--- |:--- |  
-| 1,1 | Обзор | Представление всей записи в Birds взгляда.  Высота отрезков соответствует глубине стека вызова.  Таким образом, чем выше отрезок, тем глубже стека вызовов.  |  
-| 2 | Стеки вызовов | Это подробное представление функций, которые были вызваны во время записи.  Горизонтальная ось — это время и вертикальная ось — стек вызовов.  Стеки организованы сверху вниз.  Таким образом, функция сверху вызывается под ней и т. д.  |  
+| 1 | Обзор | Вид с глаз птиц на всю запись.  Высота баров соответствует глубине стека вызовов.  Чем выше планка, тем глубже стек вызовов.  |  
+| 2 | Стеки вызовов | Это углубленное представление функций, которые были вызваны во время записи.  Горизонтальная ось — это время, а вертикальная ось — это стек вызовов.  Стеки организованы сверху вниз.  Таким образом, функция в верхней части называется одна ниже нее, и так далее.  |  
 
-Функции окрашены в случайном порядке.  Нет связи с цветами, используемыми в других панелях.  Однако функции всегда выделяются одинаково во всех вызовах, чтобы можно было видеть закономерности в каждой среде выполнения.  
+Функции окрашены случайным образом.  Нет корреляции с цветами, используемыми в других панелях.  Однако функции всегда покрашены одинаково между вызовами, чтобы вы могли наблюдать шаблоны в каждом времени работы.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
-   Диаграмма с аннотированными Flame  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Аннотированная диаграмма пламени" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
+   Аннотированная диаграмма пламени  
 :::image-end:::  
 
-Высокий стек вызовов не обязательно важен, это означает, что было вызвано много функций.  Но широкий отрезок означает, что выполнение функции заняло много времени.  Они являются кандидатами для оптимизации.  
+Высокий стек вызовов не обязательно является значительным, это просто означает, что было вызвано множество функций.  Но широкая планка означает, что для выполнения функции потребовалось много времени.  Это кандидаты на оптимизацию.  
 
-### Масштабирование отдельных частей записи  
+### <a name="zoom-in-on-specific-parts-of-recording"></a>Увеличение масштабирования определенных частей записи  
 
-Выберите, удерживайте и перетащите указатель мыши по левому краю обзора и проведите по экрану, чтобы увеличить масштаб отдельных частей стека вызова.  После масштабирования стек вызовов автоматически отображает выбранную часть записи.  
+Выберите, удерживайте и перетащите мышь влево и вправо по обзору, чтобы увеличить масштаб определенных частей стека вызовов.  После масштабирования стек вызовов автоматически отображает часть выбранной записи.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
-   Диаграмма с увеличенным масштабом  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Масштабирование диаграммы" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
+   Масштабирование диаграммы  
 :::image-end:::  
 
-### Просмотр сведений о функции  
+### <a name="view-function-details"></a>Просмотр сведений о функциях  
 
-Выберите функцию, чтобы просмотреть ее определение на панели « **источники** ».  
+Выберите функцию для просмотра определения в панели **Источники.**  
 
-Наведите указатель мыши на функцию, чтобы отобразить имя и данные о времени.  Ниже приведены сведения.  
+Наведите курсор на функцию, чтобы отобразить данные о времени и имени.  Ниже предоставляются следующие сведения.  
 
-| Подробнее | Описание |  
+| Подробные | Описание |  
 |:--- |:--- |  
 | **Name** | Имя функции.  |  
-| **Сам размер** | Размер текущего вызова функции, включая только инструкции в функции.  |  
-| **Общий размер** | Размер текущего вызова функции и всех ее вызываемых функций.  |  
-| **URL-адрес** | Расположение определения функции в форме `base.js:261` Where `base.js` — имя файла, в котором определена функция, и `261` является номером строки определения.  |  
+| **Размер self** | Размер текущего призыва функции, включая только утверждения в функции.  |  
+| **Общий размер** | Размер текущего призыва этой функции и всех функций, которые она называла.  |  
+| **URL-адрес** | Расположение определения функции в виде имени файла, в котором определена функция, и является номером `base.js:261` `base.js` `261` строки определения.  |  
 <!--*   **Aggregated self time**.  Aggregate time for all invocations of the function across the recording, not including functions called by this function.  -->  
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Образцы профилей" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Просмотр сведений о функциях на диаграмме" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
    Просмотр сведений о функциях на диаграмме  
 :::image-end:::  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -153,13 +153,13 @@ Flame диаграмма делится на две части.
 
 <!-- links -->  
 
-[DevtoolsConsoleUtilities]: ../console/utilities.md "Справочник по API служебных программ для консоли | Документы Microsoft"  
-[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "Profile — Справочник по API для служебных программ консоли | Документы Microsoft"  
-[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "Справочник по API для служебных программ на консоли profileEnd | Документы Microsoft"  
+[DevtoolsConsoleUtilities]: ../console/utilities.md "Справочные | Документы Майкрософт"  
+[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile — справочные ссылки на API для консоли | Документы Майкрософт"  
+[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd — справочные | Документы Майкрософт"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) и [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \) и [Meggin Kearney][MegginKearney] \ (технический редактор \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\) и [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

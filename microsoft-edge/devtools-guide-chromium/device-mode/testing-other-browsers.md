@@ -1,18 +1,18 @@
 ---
-description: Ваше задание не заканчивается, и вы не гарантируете, что ваш сайт будет работать в Microsoft EDGE и Android.  Несмотря на то, что режим устройства может имитировать ряд других устройств, таких как iPhone, мы рекомендуем вам извлечь решения для эмуляции, предоставляемой другими браузерами.
+description: Ваша работа не заканчивается обеспечением того, чтобы ваш сайт отлично работает в Microsoft Edge и Android.  Несмотря на то, что режим устройства способен имитировать ряд других устройств, таких как iPhone, мы рекомендуем вам проверить решения для эмуляции, предоставляемые другими браузерами.
 title: Эмуляция и тестирование других браузеров
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 1a7cc1c7e0a49760f30afdc16921824372b3a1aa
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 6b1239db373bd13d798ac90ac47a10878d07cdcb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124945"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398688"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,35 +28,35 @@ ms.locfileid: "11124945"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Эмуляция и тестирование других браузеров  
+# <a name="emulate-and-test-other-browsers"></a>Эмуляция и тестирование других браузеров  
 
-Ваше задание не заканчивается, и вы не гарантируете, что ваш сайт будет работать в Microsoft EDGE и Android.  Несмотря на то, что режим устройства может имитировать ряд других устройств, таких как iPhone, мы рекомендуем вам извлечь решения для эмуляции, предоставляемой другими браузерами.  
+Ваша работа не заканчивается обеспечением того, чтобы ваш сайт отлично работает в Microsoft Edge и Android.  Несмотря на то, что режим устройства способен имитировать ряд других устройств, таких как iPhone, мы рекомендуем вам проверить решения для эмуляции, предоставляемые другими браузерами.  
 
-### Краткий обзор  
+### <a name="summary"></a>Сводка  
 
-*   Если вы не имеете определенного устройства или хотите проверит что-либо, лучше использовать эмуляцию устройства прямо в браузере.  
-*   Эмуляторы устройств и симуляторы позволяют имитировать сайт разработки на различных устройствах с рабочей станции.  
-*   Облачные Эмуляторы позволяют автоматизировать модульные тесты для сайта на разных платформах.  
+*   Если у вас нет определенного устройства или вы хотите что-то проверить, лучше всего подражать устройству прямо в браузере.  
+*   Эмуляторы и симуляторы устройств позволяют имитировать сайт разработки на различных устройствах с рабочей станции.  
+*   Облачные эмуляторы позволяют автоматизировать тесты единиц для вашего сайта на разных платформах.  
 
-## Эмуляторы браузеров  
+## <a name="browser-emulators"></a>Эмуляторы браузера  
 
-Эмуляторы браузеров очень удобны для проверки скорости реагирования на сайт, но каждый из них не эмулирует различия в API, поддержку CSS и некоторые поведения, которые вы видите в браузере для мобильных устройств.  Протестируйте сайт в браузерах, работающих на реальных устройствах, чтобы убедиться в том, что все работает должным образом.  
+Эмуляторы браузера отлично подходит для тестирования отзывчивости сайта, но каждый из них не эмулирует различия в API, поддержке CSS и определенных действиях, отображаемых в мобильном браузере.  Проверьте свой сайт в браузерах, работающих на реальных устройствах, чтобы быть уверены, что все ведет себя так, как ожидалось.  
 
-### Режим разработки с откликом Firefox  
+### <a name="firefox-responsive-design-view"></a>Представление дизайна с отзывчивым запросом на Firefox  
 
-У Firefox есть [реагирующий на запросы режим разработки][MDNResponsiveDesignMode] , с помощью которого вы сможете остановиться на определенных устройствах, а вместо этого Изучите изменения структуры на распространенных размерах экрана или собственного размера, перетаскивая края.  
+Firefox имеет [адаптивный][MDNResponsiveDesignMode] дизайн, который призывает вас перестать думать с точки зрения конкретных устройств и вместо этого изучить, как ваш дизайн меняется в общих размеров экрана или вашего собственного размера, перетаскивание края.  
 
-### Эмуляция EdgeHTML  
+### <a name="edgehtml-emulation"></a>Эмуляция EdgeHTML  
 
-Для эмуляции телефонной системы Windows используйте [встроенную эмуляцию][DevToolsEdgeHtmlEmulation]Microsoft Edge \ (EdgeHTML \).  
+Чтобы подражать телефонам Windows, используйте встроенную эмуляцию Microsoft Edge \(EdgeHTML\). [][DevToolsEdgeHtmlEmulation]  
 
-[Эмуляция IE 11][Ie11DevToolsEmulation] используется для моделирования того, как страница может выглядеть в более ранних версиях Internet Explorer.  
+Используйте [эмуляцию IE 11 для][Ie11DevToolsEmulation] имитации того, как может выглядеть страница в более старых версиях Internet Explorer.  
 
-## Эмуляторы устройств и симуляторы  
+## <a name="device-emulators-and-simulators"></a>Эмуляторы и симуляторы устройств  
 
-Симуляторы устройств и Эмуляторы моделируют не только среду браузера, но и все устройство.  Каждый из них полезен для тестирования возможностей, требующих интеграции с ОС, например входных данных формы с виртуальными клавиатурами.  
+Симуляторы устройств и эмуляторы имитируют не только среду браузера, но и все устройство.  Каждый из них полезен для тестирования вещей, которые требуют интеграции ОС, например ввода форм с виртуальными клавиатурами.  
 
-### Эмулятор Android  
+### <a name="android-emulator"></a>Эмулятор Android  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
@@ -64,20 +64,20 @@ ms.locfileid: "11124945"
 :::image-end:::  
 -->  
 
-В настоящее время невозможно установить Microsoft EDGE на эмуляторе Android.  Однако вы можете использовать браузер Android, оболочку содержимого Chromium и Firefox для Android, который мы рассмотрим позже в этом руководстве.  Chromium Content Shell запускает тот же механизм отрисовки Chromium, что и Microsoft EDGE, но не имеет каких бы то ни было специальных возможностей браузера.  
+На данный момент нет способа установить Microsoft Edge на эмуляторе Android.  Тем не менее, вы можете использовать Android Browser, Chromium Content Shell и Firefox для Android, которые мы рассмотрели позже в этом руководстве.  Chromium Content Shell работает с тем же механизмом визуализации хрома, что и Microsoft Edge, но не имеет каких-либо специальных функций браузера.  
 
-Эмулятор Android поставляется с пакетом SDK для Android, который необходимо загрузить в составе [Android Studio][AndroidStudioDownload].  Затем следуйте инструкциям по [настройке виртуального устройства][AndroidStudioCreateManageVirtualDevices] и [запуску эмулятора][AndroidStudioRunAppsAndroidEmulator].  
-После загрузки эмулятора щелкните значок браузера и проверьте свой сайт в старом браузере акций для Android.  
+Эмулятор Android поставляется с SDK Android, который необходимо скачать в составе [Android Studio.][AndroidStudioDownload]  Затем выполните инструкции [по настройкам виртуального устройства][AndroidStudioCreateManageVirtualDevices] и [запуску эмулятора.][AndroidStudioRunAppsAndroidEmulator]  
+После загрузки эмулятора выберите значок Браузер и проверьте свой сайт в старом браузере Stock для Android.  
 
-#### Оболочка содержимого Chromium на Android  
+#### <a name="chromium-content-shell-on-android"></a>Оболочка контента Chromium на Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell  
 :::image-end:::  
 -->  
 
-Чтобы установить оболочку содержимого Chromium для Android, оставьте симулятор запущенным и выполните следующую команду:  
+Чтобы установить оболочку контента Chromium для Android, оставьте эмулятор запущенным и запустите следующую команду.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -85,78 +85,78 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-Теперь вы можете протестировать сайт с помощью оболочки содержимого Chromium.  
+Теперь вы можете протестировать свой сайт с помощью оболочки контента Chromium.  
 
-#### Firefox для Android  
+#### <a name="firefox-on-android"></a>Firefox на Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator  
 :::image-end:::  
 -->  
 
-Как и в оболочке содержимого Chromium, вы можете получить APK для установки Firefox на эмулятор.  
+Как и в оболочке контента Chromium, вы можете получить AK для установки Firefox на эмулятор.  
 
-[Скачайте правильный файл. apk][MozillaFirefoxDownload].  
+[Скачайте правильный файл .apk][MozillaFirefoxDownload].  
 
-Чтобы установить файл на открытый эмулятор или подключенное устройство с Android, выполните следующую команду:  
+Чтобы установить файл на открытый эмулятор или подключенное android-устройство, запустите следующую команду.  
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```  
 
-### Имитатор iOS  
+### <a name="ios-simulator"></a>симулятор iOS  
 
-Имитатор iOS для Mac OS X поставляется с Xcode, который [устанавливается из App Store][MacAppStoreXcode].  
+Симулятор iOS для Mac OS X поставляется с Xcode, который [устанавливается из App Store.][MacAppStoreXcode]  
 
-Когда вы закончите работу, научитесь работать с имитатором с помощью [документации разработчика Apple][AppleSimulatorHelp].  
+После этого узнайте, как работать с симулятором с помощью документации [разработчика Apple.][AppleSimulatorHelp]  
 
 > [!NOTE]
-> Чтобы не открывать Xcode каждый раз, когда вы хотите использовать имитатор iOS, откройте его, а затем щелкните правой кнопкой мыши значок имитатора iOS в Dock и выберите пункт **сохранить в Закреплениях**.  Теперь просто щелкаю этот значок, когда он вам нужен.  
+> Чтобы не открывать Xcode каждый раз, когда необходимо использовать симулятор iOS, откройте его, наведите курсор на значок симулятора iOS в доке, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Keep in Dock**.  Теперь просто выберите значок всякий раз, когда это нужно.  
 
-###  Microsoft EDGE (EdgeHTML)  
+###  <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML)  
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
-   Современная виртуальная машина IE  
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Современный IE VM" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+   Современный IE VM  
 :::image-end:::  
 
-Microsoft Edge \ (EdgeHTML \) виртуальные машины \ (VMS \) предоставляют доступ к разным версиям EdgeHTML и IE на компьютере с помощью VirtualBox \ (или VMWare).  Выберите [виртуальную машину на странице загрузки][MicrosoftDeveloperEdgeVms].  
+Виртуальные машины Microsoft Edge \(EdgeHTML\) позволяют получать доступ к различным версиям EdgeHTML и IE на компьютере с помощью VirtualBox \(или VMWare\).  Выберите [виртуальную машину на странице загрузки.][MicrosoftDeveloperEdgeVms]  
 
-## Эмуляторы и симуляторы на основе облака  
+## <a name="cloud-based-emulators-and-simulators"></a>Облачные эмуляторы и симуляторы  
 
-Если вы не можете использовать Эмуляторы и у вас нет доступа к реальным устройствам, Эмуляторы на основе облака являются следующим лучшим делом.  Большое преимущество облачных эмуляторов на реальных устройствах и местных эмуляторах состоит в том, что вы можете автоматизировать тестирование модулей для сайта на разных платформах.  
+Если вы не можете использовать эмуляторы и не имеете доступа к реальным устройствам, то облачные эмуляторы — это следующая лучшая вещь.  Большое преимущество облачных эмуляторов перед реальными устройствами и локальными эмуляторами заключается в том, что вы можете автоматизировать тесты единиц для вашего сайта на разных платформах.  
 
-*   [BrowserStack (коммерческая версия)][|::ref1::|] — это самый простой способ использовать ручное тестирование.  Вы выбираете операционную систему, выбираете версию браузера и тип устройства, выбираете URL-адрес, который будет просматривать размещенную виртуальную машину, с которой вы можете взаимодействовать.  Вы также можете запускать несколько эмуляторов на одном экране, что позволяет тестировать внешний вид и функции приложения на нескольких устройствах одновременно.  
-*   [SauceLabs (коммерческая версия)][SauceLabs] позволяет выполнять модульные тесты внутри эмулятора, который может быть весьма полезен для создания сценариев на сайте и просмотра видеозаписи после этого на различных устройствах.  Вы также можете выполнять тестирование на сайте вручную.  
-*   [Устройства в любом месте (в коммерческой версии)][AppExperience] не используют Эмуляторы, но реальные устройства, которыми вы можете управлять удаленно.  Это очень полезно в том случае, если вам нужно воспроизвести проблему на конкретном устройстве и не удается просмотреть ошибку с помощью любого из параметров предыдущих руководств.  
+*   [BrowserStack (коммерческий)][|::ref1::|] является самым простым в использовании для ручного тестирования.  Вы выбираете операционную систему, выбираете версию браузера и тип устройства, выберите URL-адрес для просмотра, и она раскручивает виртуальную машину, с которой вы можете взаимодействовать.  Вы также можете запускать несколько эмуляторов на одном экране, что позволяет одновременно протестировать внешний вид приложения на нескольких устройствах.  
+*   [SauceLabs (коммерческий)][SauceLabs] позволяет запускать блок-тесты внутри эмулятора, которые могут быть действительно полезны для скриптов потока через ваш сайт и просмотра видеозаписи этого на различных устройствах.  Кроме того, вы можете делать ручное тестирование на своем сайте.  
+*   [Device Anywhere (коммерческий)][AppExperience] использует не эмуляторы, а реальные устройства, которые можно управлять удаленно.  Это очень полезно в случае, если вам необходимо воспроизвести проблему на определенном устройстве и не отображать ошибку с помощью каких-либо параметров в предыдущих руководствах.  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) — эмуляция | Документы Microsoft"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) — эмуляция | Документы Майкрософт"  
 
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Эмуляция браузеров, размеров экрана и точек доступа к GPS | Документы Microsoft"  
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Эмулировать браузеры, размеры экрана и расположения GPS | Документы Майкрософт"  
 
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Скачать виртуальные машины"  
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Скачивание виртуальных машин"  
 
-[AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Создание виртуальных устройств и управление ими | Разработчики Android"  
-[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Скачайте инструменты для Android Studio и SDK | Разработчики Android"  
-[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Запуск приложений в эмуляторе Android | Разработчики Android"  
+[AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Создание и управление виртуальными устройствами | Разработчики Android"  
+[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Скачайте инструменты Android Studio и SDK | Разработчики Android"  
+[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Запустите приложения в эмуляторе Android | Разработчики Android"  
 
-[AppExperience]: https://www.sigos.com/app-experience/ "Взаимодействие с приложениями"  
-[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Справка по имитатору — текущая | Изображение"  
+[AppExperience]: https://www.sigos.com/app-experience/ "Опыт работы с приложениями"  
+[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Справка по симулятору — текущее | Apple"  
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
-[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode в магазине Mac App Store"  
-[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Режим конструктора | MDN"  
-[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Скачивание браузера Firefox"  
-[SauceLabs]: https://saucelabs.com "Работа со семинарами"  
+[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode в Магазине приложений Mac"  
+[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Адаптивный режим | MDN"  
+[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Скачайте браузер Firefox"  
+[SauceLabs]: https://saucelabs.com "Лаборатории соуса"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) и [Meggin Kearney][MegginKearney] \ (технический редактор \) и [Пол Bakaus][PaulBakaus] \ (веб-разработчик отвечает на Google | Инструменты, производительность, анимация, UX и т. д.  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) находится здесь и является автором [Meggin Kearney][MegginKearney] \(Tech Writer\) и Пол [Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Средства, производительность, анимация, UX\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

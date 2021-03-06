@@ -1,18 +1,18 @@
 ---
-description: Полный справочник по всем функциям и поведениям, связанным с ИНТЕРФЕЙСом консоли в Microsoft Edge DevTools.
-title: Справочник по консоли
+description: Всестороннюю ссылку на все функции и поведение, связанные с интерфейсом консоли в Microsoft Edge DevTools.
+title: Ссылка консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 27d521a4af528e95d06f58ac240f620a9c745044
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 1aed46486240dea19420e8b7cb52b6758f1f528b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125260"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399164"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,231 +28,231 @@ ms.locfileid: "11125260"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Справочник по консоли  
+# <a name="console-reference"></a>Ссылка консоли  
 
-Эта страница содержит ссылки на возможности, связанные с консолью Microsoft Edge DevTools.  Предполагается, что вы уже знакомы с использованием консоли для просмотра сообщений в журнале и запуска JavaScript.  В противном случае перейдите в раздел Начало работы [с JavaScript на консоли][DevToolsConsoleJavascript] и приступайте к [регистрации сообщений на консоли][DevToolsConsoleLog].  
+Эта страница является ссылкой на функции, связанные с консоли Microsoft Edge DevTools.  Предполагается, что вы уже знакомы с использованием консоли для просмотра зарегистрированных сообщений и запуска JavaScript.  Если нет, перейдите к [началу работы с запуском JavaScript в][DevToolsConsoleJavascript] консоли и начать работу с ведением журнала [сообщений в консоли][DevToolsConsoleLog].  
 
-Если вы ищете ссылку API на функции, такие как `console.log()` , [Справочник по API консоли][DevToolsConsoleApi].  Для справки по функциям `monitorEvents()` , например, перейдите на [ссылку API служебных программ для консоли][DevToolsConsoleUtilities].  
+Если вы ищете ссылку API на такие `console.log()` функции, как, перейдите к [консоли API Reference][DevToolsConsoleApi].  Для справки о таких `monitorEvents()` функциях, как, перейдите к [ссылке API консоли utilities][DevToolsConsoleUtilities].  
 
-## Открытие консоли  
+## <a name="open-the-console"></a>Откройте консоль  
 
-Вы можете открыть консоль как [панель](#open-the-console-panel) или как [вкладку в ящике](#open-the-console-tab-in-the-drawer).  
+Консоль можно **открыть** как [средство](#open-the-console-tool) в верхней области или как средство [в ящике.](#open-the-console-tool-in-the-drawer)  
 
-### Открытие панели консоли  
+### <a name="open-the-console-tool"></a>Откройте средство Консоли  
 
-Выберите `Control` + `Shift` + `J` \ (Windows, Linux \) или `Command` + `Option` + `J` \ (macOS \).  
+Выберите `Control` + `Shift` + `J` \(Windows, Linux\) `Command` + `Option` + `J` или \(macOS\).  
 
-:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="Панель консоли" lightbox="../media/console-hello-console.msft.png":::
-   Панель **консоли**  
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="Средство Консоли" lightbox="../media/console-hello-console.msft.png":::
+   Средство **Консоли**  
 :::image-end:::  
 
-Чтобы открыть панель консоли из [меню команд][DevToolsCommandMenu], начните вводить текст, `Console` а затем запустите команду **Показать консоль** с индикатором **панели** рядом с ним.  
+Чтобы открыть **консольный** инструмент из командного [меню,][DevToolsCommandMenu]начните вводить текст и запустите команду "Показать консоль", рядом с ней имеется значок `Console` **** **Панель.**  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Панель консоли" lightbox="../media/console-command-menu-show-console.msft.png":::
-   Команда для отображения панели **консоли**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Команда, чтобы показать панель консоли" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Команда, чтобы показать **средство Консоли**  
 :::image-end:::  
 
-### Открытие вкладки "консоль" в ящике  
+### <a name="open-the-console-tool-in-the-drawer"></a>Откройте средство Консоли в ящике  
 
-Выберите пункт `Escape` **Настройка DevTools** \ ( `...` \) и нажмите кнопку **Показать входной ящик консоли**.  
+Выберите или выберите Настройка и `Escape` **управление DevTools** `...` \( \) и выберите **ящик консоли Show**.  
 
-:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Панель консоли" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
-   **Показать консольный ящик**  
+:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Показать ящик консоли" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+   **Показать ящик консоли**  
 :::image-end:::  
 
-Ящик появляется в нижней части окна DevTools и открывается вкладка **консоли** .  
+Ящик всплывет в нижней части окна DevTools с открытым средством **консоли.**  
 
-:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="Панель консоли" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
-   Вкладка « **консоль** » в **ящике**  
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="Средство консоли в ящике" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+   Средство **консоли** в **ящике**  
 :::image-end:::  
 
-Чтобы открыть вкладку консоль в [меню команд][DevToolsCommandMenu], начните вводить текст, `Console` а затем запустите команду **Показать консоль** с индикатором **ящика** рядом с ним.  
+Чтобы открыть **консольный** инструмент из командного [меню,][DevToolsCommandMenu]начните вводить текст и запустите команду "Показать консоль", рядом с ней имеется значок `Console` **** **Ящика.**  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Панель консоли" lightbox="../media/console-command-menu-show-console.msft.png":::
-   Команда для отображения вкладки " **консоль** " в **ящике**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Команда, чтобы показать средство **Console** в ящике" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Команда, чтобы показать **консольный** инструмент в **ящике**  
 :::image-end:::  
 
-### Открытие параметров консоли  
+### <a name="open-console-settings"></a>Параметры открытой консоли  
 
-На панели " **Параметры консоли** ![ " нажмите значок ][ImageSettingsButtonIcon] "Параметры консоли".  
+Выберите **параметры** консоли \. ![ Значок Параметры ][ImageSettingsButtonIcon] консоли \).  
 
-:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Панель консоли" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Параметры консоли" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Параметры консоли**  
 :::image-end:::  
 
-Ниже описаны ссылки для каждого параметра.  
+Ссылки ниже объясняют каждый параметр:  
 
 *   [**Скрыть сеть**](#hide-network-messages)  
-*   [**Сохранить журнал**](#persist-messages-across-page-loads)  
-*   [**Только выделенный контекст**](#filter-out-messages-from-different-contexts)  
-*   [**Одинаковая группа**](#disable-message-grouping)  
-*   [**Запись в журнал XmlHttpRequest**](#log-xhr-and-fetch-requests)  
-*   [**Упреждающая Оценка**](#disable-eager-evaluation)  
-*   [**Автозаполнение из истории**](#disable-autocomplete-from-history)  
+*   [**Сохранение журнала**](#persist-messages-across-page-loads)  
+*   [**Только выбранный контекст**](#filter-out-messages-from-different-contexts)  
+*   [**Группа Similar**](#disable-message-grouping)  
+*   [**Журнал XmlHttpRequests**](#log-xhr-and-fetch-requests)  
+*   [**Оценка с желанием**](#disable-eager-evaluation)  
+*   [**Автозаполнеть из истории**](#disable-autocomplete-from-history)  
     
-### Открытие боковой панели консоли  
+### <a name="open-the-console-sidebar"></a>Откройте боковую панель консоли  
 
-Нажмите кнопку **Показать боковую панель консоли** \ ( ![ Показать боковую панель консоли ][ImageShowConsoleSidebarIcon] ), чтобы отобразить боковую панель, которая удобна для фильтрации.  
+Выберите **боковую панель** консоли показать \. Показать боковую панель консоли \) для демонстрации боковой панели, которая полезна ![ для ][ImageShowConsoleSidebarIcon] фильтрации.  
 
-:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Панель консоли" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
-   **Console (консоль** ) Врезка  
+:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Боковая панель консоли" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+   **Консоль** Боковая панель  
 :::image-end:::  
 
-## Просмотр сообщений  
+## <a name="view-messages"></a>Просмотр сообщений  
 
-В этом разделе описаны возможности, которые позволят изменить способ представления сообщений на консоли.  В этом пошаговом руководстве показано, как [Просмотреть сообщения][DevToolsConsoleViewMessages] .  
+В этом разделе содержатся функции, которые изменяют то, как сообщения представлены в консоли.  Для практических погон перейдите к [просмотру сообщений.][DevToolsConsoleViewMessages]  
 
-### Отключение группировки сообщений  
+### <a name="disable-message-grouping"></a>Отключение группировки сообщений  
 
-[Откройте параметры консоли](#open-console-settings) и отключите **группу, как** отключить поведение группировки сообщений по умолчанию для консоли.  Посмотрите, как [XHR журнал и](#log-xhr-and-fetch-requests) выводит запросы на получение примера.  
+[Откройте параметры консоли и](#open-console-settings) отключим **группу,** аналогичную отключению поведения группы сообщений по умолчанию консоли.  Например, перейдите к запросам [log XHR и Fetch](#log-xhr-and-fetch-requests).  
 
-### Регистрация запросов XHR и FETCH  
+### <a name="log-xhr-and-fetch-requests"></a>Запросы на журнал XHR и fetch  
 
-[Откройте параметры консоли](#open-console-settings) и включите в **журнал записи XMLHttpRequest** , чтобы регистрировать все `XMLHttpRequest` и `Fetch` запросы на консоли по мере их появления.  
+[Откройте параметры консоли](#open-console-settings) и вйдите **в журнал XMLHttpRequests** для входа всех и запросов в консоль по мере их `XMLHttpRequest` `Fetch` создания.  
 
-:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Панель консоли" lightbox="../media/console-xhr-fetch.msft.png":::
-   Журналы `XMLHttpRequest` и `Fetch` запросы  
+:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Запросы журнала XMLHttpRequest и Fetch" lightbox="../media/console-xhr-fetch.msft.png":::
+   Журнал `XMLHttpRequest` и `Fetch` запросы  
 :::image-end:::  
-Верхнее сообщение на предыдущем рисунке показывает поведение группировки по умолчанию для **консоли**.  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
+В верхнем сообщении на предыдущем рисунке отображается поведение группы консоли по **умолчанию.**  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
 
 <!--  
 > ##### Old Figure 9  
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping  
-> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="Панель консоли" lightbox="../media/console-xhr-fetch-all.msft.png":::
+> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping" lightbox="../media/console-xhr-fetch-all.msft.png":::
 >    How the logged XMLHttpRequest and Fetch requests look after ungrouping  
 > :::image-end:::  
 -->  
 
 <!--todo: add example for ungrouping console items  -->  
 
-### Сохранение сообщений на загрузок страниц  
+### <a name="persist-messages-across-page-loads"></a>Упорязать сообщения во всех загрузках страниц  
 
-По умолчанию консоль очищается каждый раз, когда вы загружаете новую страницу.  Чтобы сохранить сообщения на нескольких страницах, [откройте параметры консоли](#open-console-settings) и установите флажок **сохранить журнал** .  
+По умолчанию консоль очищается при загрузке новой страницы.  Для сохранения сообщений в разных нагрузках страниц [откройте параметры](#open-console-settings) консоли и вйдите в почтовый ящик **Preserve Log.**  
 
-### Скрыть сетевые сообщения  
+### <a name="hide-network-messages"></a>Скрыть сетевые сообщения  
 
-По умолчанию браузер записывает сетевые сообщения на **консоль**.  На приведенном ниже рисунке выбранное сообщение представляет код состояния HTTP `429` .  
+По умолчанию браузер регистрит сетевые сообщения в **консоли.**  На следующем рисунке выбранное сообщение представляет код состояния HTTP `429` .  
 
-:::image type="complex" source="../media/console-show-network.msft.png" alt-text="Панель консоли" lightbox="../media/console-show-network.msft.png":::
-   `429`Сообщение на **консоли**  
+:::image type="complex" source="../media/console-show-network.msft.png" alt-text="Сообщение 429 в консоли" lightbox="../media/console-show-network.msft.png":::
+   Сообщение `429` в **консоли**  
 :::image-end:::  
-Чтобы скрыть сетевые сообщения, выполните указанные ниже действия.  
+Чтобы скрыть сетевые сообщения:  
 
-1.  [Откройте параметры консоли](#open-console-settings).  
-1.  Включите флажок **Скрыть сеть** .  
+1.  [Параметры открытой консоли](#open-console-settings).  
+1.  Включить **почтовый ящик Hide Network.**  
     
-## Фильтрация сообщений  
+## <a name="filter-messages"></a>Фильтрация сообщений  
 
-Есть несколько способов отфильтровать сообщения на консоли.  
+Существует множество способов фильтрации сообщений в консоли.  
 
-### Фильтрация сообщений браузера  
+### <a name="filter-out-browser-messages"></a>Фильтрация сообщений браузера  
 
-[Откройте панель консоли](#open-the-console-sidebar) и выберите пункт **сообщения пользователя** , чтобы отображались только те сообщения, которые поставляются из JavaScript страницы.  
+[Откройте боковую панель консоли](#open-the-console-sidebar) и **выберите сообщения пользователей,** чтобы показать только сообщения, которые поступили из JavaScript страницы.  
 
-:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Панель консоли" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
-   Просмотр сообщений пользователя  
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Просмотр сообщений пользователей" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+   Просмотр сообщений пользователей  
 :::image-end:::  
 
-### Фильтрация по уровню ведения журнала  
+### <a name="filter-by-log-level"></a>Фильтр по уровню журнала  
 
-DevTools назначает каждому `console.*` методу уровень серьезности.  Существует 4 уровня: `Verbose` ,, `Info` `Warning` , и `Error` .  Например, `console.log()` входит в `Info` группу, в то время как `console.error()` она находится в `Error` группе.  [Справочник по API консоли][DevToolsConsoleApi] описывает уровень важности каждого применимого метода.  Каждое сообщение, которое браузер записывает на консоль, также имеет уровень серьезности.  Вы можете скрыть любые ненужные сообщения.  Например, если вы заинтересованы в `Error` сообщениях, вы можете скрыть другие три группы.  
+DevTools назначает каждому `console.*` методу уровень серьезности.  Существует 4 уровня: `Verbose` `Info` , , и `Warning` `Error` .  Например, `console.log()` находится в `Info` группе, в то время `console.error()` как в `Error` группе.  Ссылка [на API консоли][DevToolsConsoleApi] описывает уровень серьезности каждого применимого метода.  Каждое сообщение, которое браузер входит в консоль, также имеет уровень серьезности.  Вы можете скрыть любой уровень сообщений, который вас не интересует.  Например, если вас интересуют только сообщения, можно скрыть `Error` остальные 3 группы.  
 
-Щелкните раскрывающийся список **уровни журнала** , чтобы включить или отключить `Verbose` , `Info` `Warning` или `Error` сообщения.  
+Выберите **отсев уровней** журналов, чтобы включить или отключить `Verbose` `Info` `Warning` `Error` сообщения.  
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Панель консоли" lightbox="../media/console-log-level-default-levels.msft.png":::
-   Раскрывающийся список **уровней журнала**  
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Отсев уровней журналов" lightbox="../media/console-log-level-default-levels.msft.png":::
+   **Отсев уровней** журналов  
 :::image-end:::  
 
-Вы также можете отфильтровать по уровню журнала, [открыв боковую панель консоли](#open-the-console-sidebar) и выбрав пункт **ошибки**, **предупреждения**, **сведения**или **подробный**.  
+Вы также можете фильтровать по уровню [журнала,](#open-the-console-sidebar) открыв боковую панель консоли и затем вычеты **ошибок,** **** предупреждений, **info**или **Verbose**.  
 
-:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Панель консоли" lightbox="../media/console-sidebar-warnings.msft.png":::
+:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Использование боковой панели для просмотра предупреждений" lightbox="../media/console-sidebar-warnings.msft.png":::
    Использование боковой панели для просмотра предупреждений  
 :::image-end:::  
 
-### Фильтрация сообщений по URL-адресу  
+### <a name="filter-messages-by-url"></a>Фильтрация сообщений по URL-адресу  
 
-Введите и `url:` URL-адрес, чтобы просматривать только те сообщения, которые были отправлены из этого URL-адреса.  После ввода `url:` DevTools появятся все нужные URL-адреса.  Домены также работают.  Например, если `https://example.com/a.js` `https://example.com/b.js` сообщения записываются в журнал, `url:https://example.com` вы можете сосредоточиться на сообщениях из этих 2 сценариев.  
+Введите `url:` url-адрес, чтобы просматривать только сообщения, которые пришли из этого URL-адреса.  После введите `url:` DevTools показывает все релевантные URL-адреса.  Домены также работают.  Например, если вы и журналируете сообщения, вы можете сосредоточиться на сообщениях `https://example.com/a.js` `https://example.com/b.js` из этих `url:https://example.com` 2 скриптов.  
 
-:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Панель консоли" lightbox="../media/console-filter-text.msft.png":::
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Фильтр URL-адреса" lightbox="../media/console-filter-text.msft.png":::
    Фильтр URL-адреса  
 :::image-end:::  
 
-Введите текст `-url:` , чтобы скрыть сообщения от этого URL-адреса.  Это называется фильтром отрицательных URL-адресов.  
+`-url:`Введите, чтобы скрыть сообщения из этого URL-адреса.  Это называется фильтром отрицательного URL-адреса.  
 
-:::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="Панель консоли" lightbox="../media/console-negative-filter-text.msft.png":::
-   Фильтр отрицательных URL-адресов, в котором скрываются все сообщения, соответствующие `https://b.wal.co` URL-адресу.
+:::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="Отрицательный URL-фильтр, который скрывает все сообщения, которые соответствуют https://b.wal.co URL-адресу" lightbox="../media/console-negative-filter-text.msft.png":::
+   Отрицательный URL-фильтр, который скрывает все сообщения, которые соответствуют `https://b.wal.co` URL-адресу
 :::image-end:::  
 
-Вы также можете показывать сообщения с одного URL-адреса, [открыв боковую панель консоли](#open-the-console-sidebar), развернув раздел " **пользовательские сообщения** ", а затем щелкнув URL-адрес сценария, содержащего сообщения, на которые нужно обратить внимание.  
+Вы также можете показывать сообщения из одного URL-адреса, открыв **** боковую панель [консоли,](#open-the-console-sidebar)расширив раздел "Сообщения пользователей", а затем нажав URL-адрес скрипта, содержащий сообщения, на которых необходимо сосредоточиться.  
 
-:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Панель консоли" lightbox="../media/console-filter-text-specified.msft.png":::
-   Просмотр сообщений, которые были получены `wp-ad.min.js`  
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Просмотр сообщений, которые поступили из wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+   Просмотр сообщений, которые пришли из `wp-ad.min.js`  
 :::image-end:::  
 
-### Фильтрация сообщений в разных контекстах  
+### <a name="filter-out-messages-from-different-contexts"></a>Фильтрация сообщений из разных контекстов  
 
-Предположим, что у вас есть реклама \ (AD) на вашей странице.  Рекламное объявление встраивается в приложение `<iframe>` и создает большое количество сообщений на консоли.  Так как объявление запущено в другом [контексте JavaScript](#select-javascript-context), один из способов скрыть сообщения — [открыть параметры консоли](#open-console-settings) и установить флажок **только выбранный контекст** .  
+Предположим, что на странице есть реклама \(ad\).  В консоль встроено большое количество `<iframe>` сообщений.  Так как это сообщение работает в другом контексте [JavaScript,](#select-javascript-context)одним [](#open-console-settings) из способов скрыть сообщения является открытие параметров консоли и включив выбранный почтовый ящик **Только** контекст.  
 
-### Фильтрация сообщений, не соответствующих шаблону регулярного выражения  
+### <a name="filter-out-messages-that-do-not-match-a-regular-expression-pattern"></a>Фильтрация сообщений, не совпадает с шаблоном регулярных выражений  
 
-Введите регулярное выражение, например `/[gm][ta][mi]/` в текстовое поле **Фильтр** , чтобы отфильтровать сообщения, которые не соответствуют этому шаблону.  DevTools проверяет, найден ли шаблон в тексте сообщения или сценарий, который привел к занесению в журнал сообщения.  
+Введите регулярное выражение, например `/[gm][ta][mi]/` в текстовом окне **Filter,** чтобы отфильтровать сообщения, которые не соответствуют этому шаблону.  DevTools проверяет, найден ли шаблон в тексте сообщения или скрипте, из-за чего сообщение было в журнале.  
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Панель консоли" lightbox="../media/console-filter-regex.msft.png":::
-   Фильтрация сообщений, не соответствующих `/[gm][ta][mi]/` выражению регулярного выражения  
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Фильтрация сообщений, не совпадает с выражением regex" lightbox="../media/console-filter-regex.msft.png":::
+   Фильтрация сообщений, не совпадает с `/[gm][ta][mi]/` выражением regex  
 :::image-end:::  
 
-## Запуск JavaScript  
+## <a name="run-javascript"></a>Запуск JavaScript  
 
-В этом разделе описаны возможности, связанные с выполнением JavaScript на консоли.  В этом пошаговом руководстве показано, как [запускать JavaScript][DevToolsConsoleOverviewJavascript] .  
+В этом разделе содержатся функции, связанные с запуском JavaScript в консоли.  Для практических походить перейдите к [запуску JavaScript][DevToolsConsoleOverviewJavascript].  
 
-### Повторное выполнение выражений из истории  
+### <a name="re-run-expressions-from-history"></a>Повторное запуск выражений из истории  
 
-Нажмите клавишу `Up Arrow` для циклического просмотра истории выражений JavaScript, которые выполнялись на консоли раньше.  Выберите `Enter` , чтобы выполнить это выражение еще раз.  
+Выберите ключ для цикла в истории выражений JavaScript, которые были ранее в `Up Arrow` консоли.  Выберите, `Enter` чтобы выполнить это выражение еще раз.  
 
-### Просмотр значения выражения в режиме реального времени с помощью выражений с реальными данными  
+### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>Просмотр значения выражения в режиме реального времени с помощью Live Expressions  
 
-Если вы обнаружите, что один и тот же выражение JavaScript будет вводиться повторно в консоль, возможно, вам будет проще создать **выражение в реальном времени**.  С помощью **выражений в реальном времени** вы вводите выражение один раз, а затем закрепите его в верхней части консоли.  Значение выражения обновляется почти в режиме реального времени.  Просмотрите [значения выражений JavaScript в Real-Time с помощью выражений в реальном времени][DevToolsConsoleLiveExpressions].  
+Если вы напечатаете одно и то же выражение JavaScript в консоли несколько раз, вам может быть проще создать **выражение Live.**  С **помощью Live Expressions** вы введите выражение один раз, а затем прикрепите его к верхней части консоли.  Значение обновлений выражения почти в режиме реального времени.  Перейдите [к просмотру значений выражения JavaScript в Real-Time с живыми выражениями][DevToolsConsoleLiveExpressions].  
 
-### Отключение безотлагательной оценки  
+### <a name="disable-eager-evaluation"></a>Отключение оценки нетерпеливых  
 
-По мере ввода выражений JavaScript в консоли **упреждающая Оценка** показывает предварительный просмотр возвращаемого значения для этого выражения.  [Откройте параметры консоли](#open-console-settings) и отключите флажок **упреждающая Оценка** , чтобы отключить предварительный просмотр возвращаемых значений.  
+При вписывке выражений JavaScript в консоли **в режиме "Нетерпеливые** оценки" показан предварительный просмотр возвращаемого значения для этого выражения.  [Откройте параметры консоли и](#open-console-settings) отключите контрольный ящик **"Нетерпеливые** оценки", чтобы отключить предварительные просмотры возвращаемой стоимости.  
 
-### Отключение автозаполнения из истории  
+### <a name="disable-autocomplete-from-history"></a>Отключение автокомплекта из истории  
 
-По мере ввода выражения в всплывающем окне для консоли отображаются выражения, которые были выполнены раньше.  Эти выражения добавляются в начале `>` символа.  [Откройте меню Параметры консоли](#open-console-settings) и отключите флажок **Автозаполнение из журнала** , чтобы отключить отображение выражений из истории.  
+При введите выражение, в окне всплывающее окно автокомплета консоли показаны выражения, которые вы запустили ранее.  Эти выражения предварительно примыкают к `>` символу.  [Откройте параметры консоли](#open-console-settings) и отключите автоматический автомат из почтового ящика **"История",** чтобы перестать показывать выражения из вашей истории.  
 
 > [!NOTE]
-> На приведенном ниже рисунке, `document.querySelector('a')` а `document.querySelector('img')` также выражения, которые были оценены ранее.  
+> На следующем рисунке `document.querySelector('a')` и `document.querySelector('img')` находятся выражения, которые были оценены ранее.  
 
-:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="Панель консоли" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
-   В всплывающем окне "Автозаполнение" отображаются выражения из истории  
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="Всплывающее всплывающее всплывающее окантовка автокомплекта отображает выражения из истории" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+   Всплывающее всплывающее всплывающее окантовка автокомплекта отображает выражения из истории  
 :::image-end:::  
 
-### Выбор контекста JavaScript  
+### <a name="select-javascript-context"></a>Выбор контекста JavaScript  
 
-По умолчанию раскрывающийся список **контекстов JavaScript** имеет значение **Top**, которое представляет [контекст просмотра][MDNBrowsingContext] основного документа.  
+По умолчанию **выпадение контекста JavaScript** устанавливается на [][MDNBrowsingContext] вершину, **** что представляет контекст просмотра основного документа.  
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Панель консоли" lightbox="../media/console-dom-level-top.msft.png":::
-   Раскрывающийся список **контекстов JavaScript**  
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Отсев контекста JavaScript" lightbox="../media/console-dom-level-top.msft.png":::
+   **Отсев контекста JavaScript**  
 :::image-end:::  
 
-Предположим, что у вас есть реклама на странице, внедренная в `<iframe>` .  Вы хотите запустить JavaScript, чтобы настроить модель DOM рекламы.  Сначала необходимо выбрать контекст обзора рекламы из раскрывающегося списка **контекстов JavaScript** .  
+Предположим, у вас есть на странице, встроенная в `<iframe>` .  Необходимо запустить JavaScript, чтобы настроить DOM этого ad.  Сначала необходимо выбрать контекст просмотра рекламы из выпадаемого **контекста JavaScript.**  
 
-:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Панель консоли" lightbox="../media/console-dom-level-multiple.msft.png":::
-   Выбор другого контекста JavaScript  
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Выберите другой контекст JavaScript" lightbox="../media/console-dom-level-multiple.msft.png":::
+   Выберите другой контекст JavaScript  
 :::image-end:::  
 
-## Очистка консоли  
+## <a name="clear-the-console"></a>Очистка консоли  
 
-Чтобы очистить консоль, вы можете использовать любой из следующих рабочих процессов:  
+Для очистки консоли можно использовать любой из следующих процессов:  
 
-*   Выберите **Очистить консоль** \ ( ![ Очистить консоль ][ImageClearConsoleIcon] ).  
-*   Щелкните сообщение правой кнопкой мыши и выберите команду **Очистить консоль**.  
-*   Введите `clear()` значение в поле консоль и нажмите кнопку `Enter` .  
-*   Выполните на `console.clear()` веб-странице сценарий JavaScript.  
-*   Выберите, `Control` + `L` пока консоль находится в фокусе.  
+*   Выберите **четкую** консоль \. ![ Четкая ][ImageClearConsoleIcon] консоль \).  
+*   Наведите курсор на сообщение, откройте контекстное меню \(righ-click\) и выберите **четкую консоль**.  
+*   Введите `clear()` консоль **и** выберите `Enter` .  
+*   Запуск `console.clear()` с JavaScript для веб-страницы.  
+*   Выберите, `Control` + `L` **пока консоль** находится в фокусе.  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -264,20 +264,20 @@ DevTools назначает каждому `console.*` методу уровен
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
-[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Просмотр сообщений с запротоколированием — обзор консоли | Документы Microsoft"  
-[DevToolsConsoleApi]: ./api.md "Справочник по API консоли | Документы Microsoft"  
-[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Выполнение JavaScript: обзор консоли | Документы Microsoft"  
-[DevToolsConsoleJavascript]: ./javascript.md "Начало работы с JavaScript на консоли | Документы Microsoft"  
-[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Просмотр значений выражений JavaScript в режиме реального времени с помощью выражений в реальном масштабе | Документы Microsoft"  
-[DevToolsConsoleLog]: ./log.md "Начало работы с сообщениями в журнале на консоли | Документы Microsoft"  
-[DevToolsConsoleUtilities]: ./utilities.md "Справочник по API служебных программ для консоли | Документы Microsoft"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Запустите команды с помощью командного меню Microsoft Edge DevTools | Документы Майкрософт"  
+[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Просмотр зарегистрированных сообщений — обзор консоли | Документы Майкрософт"  
+[DevToolsConsoleApi]: ./api.md "Справочные | Документы Майкрософт"  
+[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Запуск JavaScript — обзор консоли | Документы Майкрософт"  
+[DevToolsConsoleJavascript]: ./javascript.md "Начало работы с запуском JavaScript в консоли | Документы Майкрософт"  
+[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Просмотр значений выражений JavaScript в режиме реального времени с помощью live Expressions | Документы Майкрософт"  
+[DevToolsConsoleLog]: ./log.md "Начало работы с ведением журналов сообщений в консоли | Документы Майкрософт"  
+[DevToolsConsoleUtilities]: ./utilities.md "Справочные ссылки на API консоли utilities | Документы Майкрософт"  
 
-[MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Контекст просмотра | MDN"  
+[MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Просмотр контекста | MDN"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/console/reference) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/console/reference) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

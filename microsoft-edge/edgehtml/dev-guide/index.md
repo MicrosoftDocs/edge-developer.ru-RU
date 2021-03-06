@@ -1,116 +1,117 @@
 ---
-description: В этом руководстве представлен обзор функций и стандартов разработчика, включенных в Microsoft Edge.
-title: Новые возможности EdgeHTML 18
+description: В этом руководстве представлен обзор компонентов и стандартов разработчика, включенных в Microsoft Edge.
+title: Новые возможности в EdgeHTML 18
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
-keywords: edge, веб-разработка, html, css, javascript, разработчик, devtools
+keywords: edge, web development, html, css, javascript, developer, devtools
 ms.custom: RS5
-ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 15d3321e05f8a307d8014696f1ab78a8967f7129
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 6b53163115ad7db8e5b792cadda0c59b93b6711b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235271"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399227"
 ---
-# Руководство разработчика Microsoft Edge
+# <a name="microsoft-edge-developer-guide"></a>Руководство по разработчикам Microsoft Edge  
 
 > [!TIP]
-> Мы сотрудничаем с другими браузерами и веб-сообществом, внедряя веб-документы [MDN](https://developer.mozilla.org/) в качестве точного места для полезной, непреднастояющей документации браузера для текущих и новых веб-технологий на основе стандартов. [](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/) Подробные сведения о поддержке API EdgeHTML можно найти непосредственно на каждой странице библиотеки [веб-ссылок MDN.](https://developer.mozilla.org/docs/Web) Последние функции, [](https://developer.microsoft.com/microsoft-edge/platform/status/?q=edge%3AShipped%20edge%3APrefixed%20edge%3A'Preview%20Release) поддерживаемые в Microsoft Edge, можно получить в статусе платформы Microsoft Edge. 
+> Мы сотрудничаем с другими браузерами и веб-сообществом в принятии [веб-документов MDN](https://developer.mozilla.org/) в качестве окончательного места для полезной, объективной, браузерно-агностиковой документации для текущих и новых веб-технологий на основе стандартов. [](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/)  Сведения о поддержке API edgeHTML можно найти непосредственно на каждой странице веб-справочной [библиотеки MDN.](https://developer.mozilla.org/docs/Web)  Посетите состояние платформы Microsoft Edge [для](https://developer.microsoft.com/microsoft-edge/platform/status/?q=edge%3AShipped%20edge%3APrefixed%20edge%3A'Preview%20Release) последних функций, поддерживаемых в Microsoft Edge.  
 
-## Новые возможности EdgeHTML 18
+## <a name="whats-new-in-edgehtml-18"></a>Новые возможности в EdgeHTML 18  
 
-EdgeHTML 18 включает следующие новые и обновленные функции, включенные в текущий выпуск платформы Microsoft Edge с обновлением Windows 10 за октябрь 2018 г. (сборка 17763, 10 октября [2018](/windows/uwp/whats-new/windows-10-build-17763) г.). Изменения в конкретных сборках [Windows Insider](https://insider.windows.com/) Preview см. в записях microsoft [Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) и [What's New in EdgeHTML.](./whats-new.md)
+EdgeHTML 18 включает следующие новые и обновленные функции, отправляемые в текущем выпуске платформы Microsoft Edge, по мере обновления [Windows 10 октября 2018](/windows/uwp/whats-new/windows-10-build-17763) \(10/2018, Сборка 17763\).  Изменения в определенных [сборках предварительного](https://insider.windows.com) просмотра предварительной версии Windows см. в [веб-сайте Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) и [What's New in EdgeHTML.](./whats-new.md)  
 
-Ниже приводится permalink для следующего списка изменений: [https://aka.ms/devguide_edgehtml_18](./whats-new.md) .
+Ниже приводится permalink для следующего списка изменений: [https://docs.microsoft.com/microsoft-edge/dev-guide](#new-apis-in-edgehtml-18) .  
 
-## Новые и обновленные функции
+## <a name="new-and-updated-features"></a>Новые и обновленные функции  
 
-### Политики автозапуска
+### <a name="autoplay-policies"></a>Политики автозапуска  
 
-С обновлением Windows 10 за октябрь 2018 г. Microsoft Edge предоставляет клиентам возможность персонализировать свои предпочтения браузера на веб-сайтах, которые автоматически воспроизведение мультимедиа со звуком, чтобы свести к минимуму отвлекающие факторы в Интернете и сэкономить пропускную способность. Пользователи могут настраивать поведение мультимедиа с помощью глобальных и индивидуальных элементов управления автоза воспроизведением. Кроме того, Microsoft Edge автоматически подавляет автозапок мультимедиа на фоновых вкладок.
+С обновлением Windows 10 Октябрь 2018 Microsoft Edge предоставляет клиентам возможность персонализировать свои предпочтения просмотра на веб-сайтах, которые автоигрируют носители со звуком, чтобы свести к минимуму отвлекающие факторы в Интернете и сохранить пропускную способность.  Пользователи могут настраивать поведение мультимедиа с помощью элементов управления автоматической воспроизведением как на глобальном, так и на сайте.  Кроме того, Microsoft Edge автоматически подавляет автоматическое воспроизведение мультимедиа на фоновых вкладок.  
 
-Подробные [сведения](./browser-features/autoplay-policies.md) и практические руководства по обеспечению хорошего взаимодействия с пользователем с мультимедиа, который находится на сайте, можно найти в руководстве по политикам автозахва.
+Ознакомьтесь с руководством [по](./browser-features/autoplay-policies.md) политикам автоплея, чтобы получить подробные сведения и практические сведения, чтобы обеспечить хорошее взаимодействие пользователей со средствами массовой информации, которые можно найти на вашем сайте.  
 
-### Улучшения для chakra
+### <a name="chakra-improvements"></a>Улучшения chakra  
 
-EdgeHTML 18 включает обновления ядра JavaScript для Chakra для поддержки новых функций ES и WASM в дополнение к улучшениям производительности и производительности. Подробные сведения можно узнать в заметках о выпуске [ChakraCore 1.11.](https://github.com/Microsoft/ChakraCore/wiki/Roadmap#chakracore-111)
+EdgeHTML 18 включает обновления для двигателя JavaScript Chakra для поддержки новых функций ES и WASM, а также улучшения производительности и производительности.  Подробные сведения о [выпуске ChakraCore 1.11.](https://github.com/Microsoft/ChakraCore/wiki/Roadmap#chakracore-111)  
 
-### Обновления CSS
+### <a name="css-updates"></a>Обновления CSS  
 
-Мы добавили дополнительный прогресс в экспериментальной реализации маскировки [CSS](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) (за флагом "Включить [](https://developer.mozilla.org/docs/Web/CSS/mask-position)маску *CSS"),* а также добавили поддержку композитных масок, [](https://developer.mozilla.org/docs/Web/CSS/mask-composite)положения маски и повторения [маски.](https://developer.mozilla.org/docs/Web/CSS/mask-repeat) Для обеспечения совместимости сайтов Microsoft Edge также поддерживает следующие свойства *-webkit-properties:* -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-size.
+Мы продвинулись вперед в экспериментальной реализации [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) \(за флагом Маски *CSS* enable\) с дополнительной поддержкой маски-композитных, [маск-позиций](https://developer.mozilla.org/docs/Web/CSS/mask-position)и [маски-повторения](https://developer.mozilla.org/docs/Web/CSS/mask-repeat). [](https://developer.mozilla.org/docs/Web/CSS/mask-composite)  Для совместимости веб-сайтов Microsoft Edge также поддерживает следующие свойства *webkit-:* -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-mask-size.  
 
-Кроме того, Microsoft Edge [](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap
-) теперь поддерживает переполнение и [](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior) частичную поддержку поведения переполнения `auto` (и `contain` значений).
+Кроме того, Microsoft Edge [](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap) теперь поддерживает переполнение и частичную поддержку [overscroll-behaviour](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior) \( `auto` и `contain` значения\).  
 
-### Средства разработчика
+### <a name="developer-tools"></a>Средства разработчика  
 
-Последнее обновление Microsoft Edge DevTools добавляет ряд удобных функций как в пользовательский интерфейс, так и на первый план, включая новые выделенные панели для сотрудников службы и хранилища, средства поиска исходных файлов в отладке, а также новые домены протокола Edge DevTools для отладки стилей и макетов и консольных API.
+Последнее обновление Microsoft Edge DevTools добавляет ряд удобств как для пользовательского интерфейса, так и под капотом, включая новые выделенные панели для сотрудников службы и хранилища, средства поиска исходных файлов в Debugger, а также новые домены Edge DevTools Protocol для отладки стилей и макетов и API консоли.  
 
-[DevTools в последнем обновлении Windows 10 (EdgeHTML 18)](../devtools-guide/whats-new.md) имеет все сведения.
+[DevTools в последнем обновлении Windows 10 (EdgeHTML 18)](./whats-new.md) имеет все сведения.  
 
-### Прослушивание ваших отзывов
+### <a name="listening-to-your-feedback"></a>Прослушивание отзывов  
 
-Мы прослушиваем ваши отзывы и реализовали поддержку нескольких запрашиваемого API в EdgeHTML 18, включая метод, используемый для настройки пользовательского изображения при перетаскивание, а также свойство API синхронизации ресурсов производительности, которое можно использовать для возврата хронометра непосредственно перед тем, как браузер начнет процесс рукопожатия для защиты текущего [`DataTransfer.setDragImage()`](https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage) [`secureConnectionStart`](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart) подключения. 
+Мы прислушиваемся к вашим отзывам и реализуем поддержку нескольких запрашиваемого API в EdgeHTML 18, включая метод [DataTransfer.setDragImage(),](https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage) используемый для настройки настраиваемого изображения при перетаскивание и сбросе, и [secureConnectionStart](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart)— свойство API времени выполнения ресурсов, которое можно использовать для возврата хронометра непосредственно перед началом процесса рукопожатия браузера для обеспечения текущего подключения.  
 
-Кроме того, никто не поддерживает перечисленные атрибуты коллекции, поэтому мы добавили поддержку для возврата имен атрибутов элемента в качестве массива строк, а также для перегона [`Element.getAttributeNames`](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames) boolean атрибута (удаление, если присутствует [`Element.toggleAttribute`](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute) и добавление, если нет).
+Кроме того, никто не любит перенаписывать коллекцию атрибутов, поэтому мы добавили поддержку [Element.getAttributeNames,](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames) чтобы вернуть имена атрибутов элемента в качестве массива строк, а также [Element.toggleAttribute,](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute) чтобы переманить атрибут boolean \(удаление, если присутствует, и добавление если нет\).  
 
-### Прогрессивные веб-приложения
+### <a name="progressive-web-apps"></a>Прогрессивные веб-приложения  
 
-#### Фоновый сценарий жизненного времени
+#### <a name="lifetime-background-script"></a>Сценарий фона продолжительности жизни  
 
-Приложения JavaScript для Windows 10 ** (веб-приложения, запущенные в процессеWWAHost.exe) теперь поддерживают необязательный фоновый сценарий для каждого приложения, который запускается до активации любых представлений и запускается в течение всего процесса. Благодаря этому можно отслеживать и изменять навигацию, отслеживать состояние навигации, отслеживать ошибки навигации и запускать код перед активацией представлений. 
+Приложения JavaScript Windows 10 \(веб-приложения, запущенные в процессе\) теперь поддерживают необязательный фоновый сценарий для каждого приложения, который запускается до активации любых представлений и выполняется в течение всего `WWAHost.exe` процесса.  С помощью этого можно отслеживать и изменять навигацию, отслеживать состояние навигации, отслеживать ошибки навигации и запускать код до активации представлений.  
 
-Если указано в манифесте приложения, каждое из представлений приложения (windows) предоставляется сценарию как экземпляры нового класса, предоставляя те же события, свойства и методы, что и общее [`StartPage`](/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) [](/uwp/schemas/appxpackage/appx-package-manifest) [`WebUIView`](/uwp/api/windows.ui.webui.webuiview) (Win32) [WebView.](/uwp/api/windows.web.ui.iwebviewcontrol) Ваш сценарий может прослушивать событие [`NewWebUIViewCreated`](/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) для перехвата управления навигацией для нового представления:
+Если указано как [StartPage](/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) в манифесте [приложения,](/uwp/schemas/appxpackage/appx-package-manifest)каждое из представлений приложения \(windows\) подвергается скрипту в качестве экземпляров нового класса [WebUIView,](/uwp/api/windows.ui.webui.webuiview) предоставляя те же события, свойства и методы, что и общие \(Win32\) [WebView](/uwp/api/windows.web.ui.iwebviewcontrol).  Сценарий может прослушивать событие [NewWebUIViewCreated,](/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) чтобы перехватить управление навигацией для нового представления:  
 
-```JavaScript
+```javascript
 Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWebUIViewCreatedEventHandler);
-```
+```  
 
- Любая активация приложения с помощью фонового сценария будет зависеть от самого `StartPage` сценария для навигации.
+ Любая активация приложения со сценарием фона в качестве сценария будет зависеть `StartPage` от самого скрипта для навигации.  
 
-#### Масштабирование текста
+#### <a name="text-scaling"></a>Масштабирование текста  
 
-В обновлении Windows 10 за октябрь [**](/windows/uwp/design/input/text-scaling#user-experience) 2018 г. вводится параметр "Увеличить размер текста" для улучшения доступности конечных пользователей, и pwAs, установленные в Windows (в дополнение к UWP и большинству классических приложений), теперь поддерживают эту функцию автоматически. Для элементов управления PWAs и WebView текстовое масштабирование работает так же, как и масштабирование DPI. Если пользователь изменяет и текстовую шкалу, и масштаб DPI, результатом будет продукт этих двух.
+Обновление Windows 10 октября 2018 г. вводит параметр Make [text bigger](/windows/uwp/design/input/text-scaling#user-experience) для улучшения доступности для конечного пользователя, а pwAs, установленные на Windows \(кроме того, UWP и большинство настольных приложений\) теперь поддерживают эту функцию автоматически.  Для элементов управления PWAs и WebView текстовая шкала работает так же, как масштабирование DPI.  Если пользователь изменяет как текстовую шкалу, так и масштаб DPI, результатом является результат этих двух.  
 
- Рекомендации по проектированию можно получить в руководстве [по](/windows/uwp/design/input/text-scaling) масштабируемости текста UWP в *Центре разработки для Windows.*
+ Для руководства по проектированию ознакомьтесь с руководством [по](/windows/uwp/design/input/text-scaling) масштабации текста в *Центре разработки Windows.*  
 
-### Обновления для рабочих служб 
+### <a name="service-worker-updates"></a>Обновления сотрудника службы  
 
-Чтобы узнать, что такое сотрудники-службы и как они работают, ознакомьтесь со сводой [API]( https://developer.mozilla.org/docs/Web/API/Service_Worker_API) рабочих служб, написанной нашими партнерами на сайте MDN.  В EdgeHTML 18 было несколько обновлений для сотрудников служб, поддерживающих Microsoft Edge. Позволяет сотруднику службы использовать обещание ответа, а также возвращает ИД клиента, который текущий рабочий `fetchEvent` [`preloadResponse`]( https://developer.mozilla.org/docs/Web/API/FetchEvent) [`resultingClientId`]( https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) службы контролирует.  
-Интерфейс предоставляет методы для управления предварительной загрузкой ресурсов, что позволяет одновременно делать запрос во время загрузки рабочим процессом службы, избегая [`NavigationPreloadManager`]( https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager) задержки времени. Ознакомьтесь со списком методов и свойств предварительной загрузки рабочих служб, которые поддерживаются [свойствами API.](#new-apis-in-edgehtml-18) 
+Сведения о том, какие работники службы и как они работают, ознакомьтесь с сводной сводке [API API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) service worker, написанной нашими партнерами в MDN.  В EdgeHTML 18 было несколько обновлений для вспомогательных служб Microsoft Edge.  Это позволяет работнику службы использовать `fetchEvent` [preloadResponse](https://developer.mozilla.org/docs/Web/API/FetchEvent) для обещания ответа, а в [результатеClientId](https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) возвращает ID клиента, который контролирует текущий сотрудник службы.  
+Интерфейс [NavigationPreloadManager](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager) предоставляет методы управления предварительной загрузкой ресурсов, что позволяет параллельно делать запрос во время загрузки сотрудника службы, избегая задержки времени.  Ознакомьтесь с [недавно поддерживаемыми свойствами API](#new-apis-in-edgehtml-18) для списка методов и свойств предварительной загрузки service Worker.  
 
-### Проверка подлинности в Интернете
+### <a name="web-authentication"></a>Проверка подлинности в Интернете  
 
-Теперь Microsoft Edge включает неподдерживаемую поддержку для нового [API](https://blogs.windows.com/msedgedev/2018/07/30/introducing-web-authentication-microsoft-edge/) веб-проверки подлинности [(например, WebAuthN).](https://w3c.github.io/webauthn/) Веб-проверка подлинности предоставляет открытое, масштабируемое и совмещаемое решение для упрощения проверки подлинности, обеспечивая более надежную и безопасную работу пользователей, заменяя пароли более надежными аппаратными учетными данными. Реализация в Microsoft Edge позволяет [](https://www.microsoft.com/windows/windows-hello) пользователям в дополнение к внешним аутентификаторам, таким [](https://fidoalliance.org) как ключи безопасности FIDO2 или ключи безопасности FIDO U2F, в дополнение к внешним аутентификаторам, таким как ключи безопасности FIDO2 или КЛАВИШи безопасности FIDO U2F, безопасно войти на веб-сайты.
+Microsoft Edge теперь включает [неоконченную](https://blogs.windows.com/msedgedev/2018/07/30/introducing-web-authentication-microsoft-edge) поддержку нового API веб-проверки подлинности \(aka [WebAuthN](https://w3c.github.io/webauthn)\).  Веб-проверка подлинности предоставляет открытое, масштабируемое и интероперабельное решение для упрощения проверки подлинности, что позволяет улучшить и обеспечить безопасность пользователей, заменив пароли более надежными учетными данными, связанными с оборудованием.  Реализация в Microsoft Edge позволяет использовать [Windows Hello,](https://www.microsoft.com/windows/windows-hello) позволяя пользователям войти с их лицом, отпечатками пальцев или ПИН-кодом, а также внешними аутентификаторами, например ключами безопасности FIDO2 или ключами безопасности FIDO U2F, для безопасной проверки подлинности веб-сайтов. [](https://fidoalliance.org)  
 
-Дополнительные сведения можно найти в записи блога "Знакомство с [веб-проверкой](https://blogs.windows.com/msedgedev/2018/07/30/introducing-web-authentication-microsoft-edge)подлинности в Microsoft Edge".
+Дополнительные сведения перенапорку в блоге "Введение веб-проверки подлинности [в Microsoft Edge".](https://blogs.windows.com/msedgedev/2018/07/30/introducing-web-authentication-microsoft-edge)  
 
-### WebDriver
+### <a name="webdriver"></a>WebDriver  
 
-WebDriver теперь является функцией [Windows](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) по запросу (FoD), что упрощает автоматизацию тестирования в Microsoft Edge и получения нужной версии для вашего устройства. При установке [WebDriver](https://www.w3.org/TR/webdriver) вам больше не нужно будет вручную соответствовать сборке, ветвьм и ветвям. Веб-диск будет автоматически обновляться в зависимости от новых обновлений Windows 10. 
+WebDriver теперь является функцией [Windows](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) по запросу \(FoD\), что упрощает автоматизацию тестирования в Microsoft Edge и получения нужной версии для устройства.  При установке [WebDriver](https://www.w3.org/TR/webdriver) больше не нужно будет вручную соответствовать сборке/ветвью/вкусу, ваш веб-диск будет автоматически обновляться, чтобы соответствовать любым новым обновлениям Windows 10.  
 
-Чтобы установить WebDriver, включив режим разработчика, или установить его как автономный, переходить к функциям > Apps > Apps & > Manage optional features. Дополнительные сведения можно узнать в объявлении [WebDriver на сайте блога Windows.](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand)
+Вы можете установить WebDriver, включив режим разработчика, или **** установить его в качестве автономных, переехав в параметры Apps Apps & Функции Управление необязательными  >  ****  >  ****  >  **функциями.**  Дополнительные сведения можно получить в объявлении [WebDriver на сайте Блога Windows.](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand)  
 
-### Свойства веб-уведомлений
-Теперь для веб-уведомлений поддерживаются четыре новых свойства: , и , улучшена возможность создания уведомлений в Интернете, совместимых с существующими системами уведомлений, в то же время независимо от [`actions`](https://developer.mozilla.org/docs/Web/API/notification/actions) [`badge`](https://developer.mozilla.org/docs/Web/API/notification/badge) [`image`](https://developer.mozilla.org/docs/Web/API/notification/image) `maxActions` платформы.
+### <a name="web-notification-properties"></a>Свойства веб-уведомлений  
 
-### Веб-представление
+В настоящее время для веб-уведомлений поддерживаются четыре новых  [свойства:](https://developer.mozilla.org/docs/Web/API/notification/actions) [действия,](https://developer.mozilla.org/docs/Web/API/notification/badge) [значки,](https://developer.mozilla.org/docs/Web/API/notification/image)изображения и, улучшающие нашу возможность создания уведомлений в Интернете, совместимых с существующими системами уведомлений, при этом не зависят от  `maxActions` платформы.  
 
-#### Служебные сценарии
-[Службы](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) теперь поддерживаются в веб-оке управления, в дополнение к браузеру Microsoft Edge и приложениям JavaScript для Windows 10. Все варианты веб-приложения Microsoft Edge[(PWA,](../hosting/webview/index.md) [UWP,](/uwp/api/Windows.UI.Xaml.Controls.WebView) [Win32)](/windows/communitytoolkit/controls/wpf-winforms/webview)поддерживают сотрудников службы, однако следует помнить, что [API Push](https://developer.mozilla.org/docs/Web/API/Push_API) еще не доступен для версий UWP и Win32.
+### <a name="webview"></a>Веб-представление  
 
-Для архитектур приложений x64 требуются нейтральные *пакеты* (любой ЦП) или *пакеты x64,* так как рабочие процессы WoW64 не поддерживаются. (Чтобы сэкономить место на диске, версия требуемого DLL WoW не включена в Windows.)
+#### <a name="service-workers"></a>Служебные сценарии  
 
-#### Обновления Win32 WebView
+[Теперь сотрудники](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) служб поддерживаются в области управления WebView в дополнение к браузеру Microsoft Edge и приложениям Для Windows 10 JavaScript.  Все вкусы веб-браузера Microsoft Edge \([PWA,](/microsoft-edge/hosting/webview) [UWP,](/uwp/api/Windows.UI.Xaml.Controls.WebView) [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)\) службы поддержки, однако имейте в виду, что [API Push](https://developer.mozilla.org/docs/Web/API/Push_API) еще не доступен для версий UWP и Win32.  
 
-В edgeHTML [WebViewControl](/windows/communitytoolkit/controls/wpf-winforms/webview) для классических приложений Для Windows (Win32) было обновлено несколько новых функций, в том числе возможность внедрять сценарий при загрузке страницы до запуска любых других сценариев на странице ( ) и знать, когда определенный [`AddInitializeScript`](/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript) WebViewControl получает или теряет фокус ( [`GotFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus) / [`LostFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus) ).
+Архитектуры приложений x64 требуют нейтральных пакетов \(Любой ЦП\) или x64, так как сотрудники служб не поддерживаются в процессах WoW64.  \(Чтобы сохранить пространство диска, версия WoW необходимых DLLs не входит в Windows.\)  
 
-Кроме того, теперь можно создать новый WebViewControl в качестве открытого [`window.open`](https://developer.mozilla.org/docs/Web/API/Window/open) окна. Это событие по-прежнему сообщает приложению, когда сценарий внутри WebViewControl вызывает window.open, как всегда, но с EdgeHTML 18 включает возможность отсрочки ( ) для того, чтобы установить [`NewWindowRequested`](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) [`NewWindowRequestedEventArgs`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) новый WebViewControl ( ) в качестве целевого для [`GetDeferral`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral) [`NewWindow`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow) window.open:
+#### <a name="win32-webview-updates"></a>Обновления Win32 WebView  
+
+Приложения EdgeHTML [WebViewControl](/windows/communitytoolkit/controls/wpf-winforms/webview) для настольных компьютеров Windows \(Win32\) обновлены несколькими новыми функциями, в том числе возможностью вводить скрипт на загрузку страницы до запуска любых других скриптов на странице \([AddInitializeScript](/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript)\) и узнать, когда определенный веб-сайт WebViewControl получает или теряет фокус \([GotFocus](/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus) / [LostFocus](/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus)\).  
+
+Кроме того, теперь можно создать новый WebViewControl в качестве открытого окна [из window.open.](https://developer.mozilla.org/docs/Web/API/Window/open)  Событие [NewWindowRequested](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) по-прежнему сообщает приложению, когда скрипт внутри WebViewControl вызывает window.open, как всегда, но с EdgeHTML 18 его [NewWindowRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) включает возможность принимать отсрочку \([GetDeferral](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)\) для того, чтобы установить новый WebViewControl \([NewWindow](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)\) в качестве цели для окна.open.:  
 
 ```csharp
 WebViewControlProcess wvProc;
@@ -138,36 +139,37 @@ String htmlContent = "<html><script>window.open('http://mydomain.com')</script><
 webView.NavigateToString(htmlContent);
 ```  
 
-Наконец, power users might notice the appearance of the *Desktop App Web Viewer* (previously named *Win32WebViewHost),* an internal system app representing the Win32 WebView, in the following places:
-- В центре *действий Windows 10.* Источник этих уведомлений должен быть понятен из Веб-просмотр, который был в приложении Win32.
-- В пользовательском интерфейсе параметров доступа к устройству (*Settings->Privacy->Camera/Location/Microphone).* Отключение любого из этих параметров отключает доступ из всех веб-просмотров, установленных в приложениях Win32.
+Наконец, пользователи питания могут заметить приближение веб-просмотра настольных приложений \(ранее именуемого Win32WebViewHost\), внутреннего системного приложения, представляющего WebView Win32, в следующих местах:  
 
-![Параметр доступа к устройству для просмотра классических приложений](./media/desktop-app-web-viewer.png)
+*   В Центре действий Windows 10.  Источник этих уведомлений следует понимать как из веб-приложения Win32.  
+*   В параметрах доступа к устройству пользовательский интерфейс \( `Settings`  >  `Privacy`  >  `Camera/Location/Microphone` \).  Отключение любого из этих параметров отключает доступ ко всем webViews, установленным в приложениях Win32.  
 
-## Неподготовленные функции
+![Параметр доступа к устройству для просмотра веб-приложений для настольных приложений](./media/desktop-app-web-viewer.png)  
 
-### Фильтр XSS теперь не замесан
+## <a name="deprecated-features"></a>Неподготовленные функции  
 
-С помощью EdgeHTML 18 мы удаляем фильтр XSS в Microsoft Edge. Наши клиенты остаются защищенными благодаря современным стандартам, таким как политика безопасности контента [(CSP),](https://developer.mozilla.org/docs/Web/HTTP/CSP)которые предоставляют более мощные, мощные, мощные и безопасные механизмы для защиты от атак путем вливания содержимого с высокой совместимостью в современных браузерах.
+### <a name="xss-filter-now-retired"></a>Фильтр XSS теперь отменен  
 
-## Новые API в EdgeHTML 18
+С помощью EdgeHTML 18 мы удаляем фильтр XSS в Microsoft Edge.  Наши клиенты остаются защищенными благодаря современным стандартам, таким как Политика безопасности контента [(CSP),](https://developer.mozilla.org/docs/Web/HTTP/CSP)которые обеспечивают более мощные, исполнительные и безопасные механизмы для защиты от атак впрыска контента с высокой совместимостью в современных браузерах.  
 
-Полный список новых API в EdgeHTML 18. Они перечислены в формате [имя интерфейса]. [имя API].
+## <a name="new-apis-in-edgehtml-18"></a>Новые API в EdgeHTML 18  
+
+Полный список новых API в EdgeHTML 18.  Они перечислены в формате [имя интерфейса]. [имя api].  
 
 > [!NOTE] 
-> Несмотря на то что в модели DOM 2016 2013 2013 2013 2013 2013 2013 2013 2013 2013 2013, возможно, все еще находятся на стадии разработки и скрыты за экспериментальным флагом. Официальное слово о поддержке функций можно найти в статусе платформы [Microsoft Edge.](https://developer.microsoft.com/microsoft-edge/platform/status/)
+> Хотя следующие API выставлены в DOM, поведение некоторых из них может по-прежнему быть в разработке и скрыто за экспериментальным флагом.  Обратитесь  [к статусу платформы Microsoft Edge](https://developer.microsoft.com/microsoft-edge/platform/status/) для официального слова о поддержке функций.  
 
 <iframe height='580' scrolling='no' title='Новые API в EdgeHTML 18' src='//codepen.io/MSEdgeDev/embed/5d7be9404d82575162b486e79d0dd58f
-/?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>См. API-код для новых перьев в <a href='https://codepen.io/MSEdgeDev/pen/5d7be9404d82575162b486e79d0dd58f'> EdgeHTML 18 от </a> MSEdgeDev ( <a href='https://codepen.io/MSEdgeDev'> </a> @MSEdgeDev) на <a href='https://codepen.io'> </a> CodePen.</iframe>
+/?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>См. новые <a href='https://codepen.io/MSEdgeDev/pen/5d7be9404d82575162b486e79d0dd58f'> API pen в EdgeHTML 18 </a> msEdgeDev <a href='https://codepen.io/MSEdgeDev'> </a> (@MSEdgeDev) на <a href='https://codepen.io'> CodePen </a> .</iframe>  
 
-## Предыдущие выпуски EdgeHTML
+## <a name="previous-edgehtml-releases"></a>Предыдущие выпуски EdgeHTML  
 
-[EdgeHTML 13 / Сборка Windows 10586 (11/2015)](./whats-new/edgehtml-13.md)
+[EdgeHTML 13 / Windows build 10586 (11/2015)](./whats-new/edgehtml-13.md)  
 
-[EdgeHTML 14 / Сборка Windows 14393 (8/2016)](./whats-new/edgehtml-14.md)
+[EdgeHTML 14 / Windows build 14393 (8/2016)](./whats-new/edgehtml-14.md)  
 
-[EdgeHTML 15 / Сборка Windows 15063 (4/2017)](./whats-new/edgehtml-15.md)
+[EdgeHTML 15 / Сборка Windows 15063 (4/2017)](./whats-new/edgehtml-15.md)  
 
-[EdgeHTML 16 / Сборка Windows 16299 (10/2017)](./whats-new/edgehtml-16.md)
+[EdgeHTML 16 / Сборка Windows 16299 (10/2017)](./whats-new/edgehtml-16.md)  
 
-[EdgeHTML 17 / Сборка Windows 17134 (04/2018)](./whats-new/edgehtml-17.md)
+[EdgeHTML 17 / Windows build 17134 (04/2018)](https://aka.ms/devguide_edgehtml_17)  

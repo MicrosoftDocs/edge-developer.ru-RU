@@ -1,65 +1,63 @@
 ---
-ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
-description: Узнайте, как упаковать расширение.
+description: Узнайте, как можно упаковть расширение.
 title: Расширения — упаковка
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, веб-разработка, html, css, javascript, разработчик
-ms.date: 12/15/2020
+ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
+keywords: edge, web development, html, css, javascript, developer
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 0ea4d6a4450d47d116164fd8481fdfb0f79bd30b
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 62c7858c38cf0c06e24c25938a885b10b391fd8f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235720"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398499"
 ---
-# Упаковка расширений Microsoft Edge  
+# <a name="packaging-microsoft-edge-extensions"></a>Упаковка расширений Microsoft Edge  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Итак, вы завершили расширение и готовы упаковть его. Вам может быть интересно узнать, какие дальнейшие действия необходимо предпринять для получения этих данных от потенциальных пользователей. Это руководство призвано научить вас делать именно это.
+Таким образом, вы, наконец, завершили расширение и готовы упаковть его. Возможно, вам будет интересно, какие дальнейшие шаги необходимо предпринять для получения этого в руки потенциальных пользователей. Это руководство предназначено для обучения тому, как это сделать.  
 
-Руководство по упаковке расширений является исчерпывающим, так как оно охватывает все, что вам нужно знать о упаковке, даже более подробные, nitty gritty сведения. Если вы не хотите узнать все, что нужно знать о упаковке расширения, вы не готовы к этому. Мы добавили поддержку расширений в ManifoldJS, средство с открытым кодом Node.js, которое отнимает большую часть ваших пакетов.
-
-> [!NOTE]
-> Отправка расширения Microsoft Edge в Microsoft Store в настоящее время является ограниченной возможностью. [Получите к нам](https://aka.ms/extension-request) свои запросы, чтобы стать частью Microsoft Store, и мы будем учесть, что вы будете обновляться в будущем.
-
-
-Используйте описанную ниже схему процесса, чтобы сооставить свою упаковку adventure!
-
-
-## [Расширения в Центре разработки для Windows](./packaging/extensions-in-the-windows-dev-center.md)
-
-Независимо от того, какой маршрут создания пакета вы выберете ( вручную или ManifoldJS), первым шагом является регистрация учетной записи разработчика Windows и регистрация имен расширений.
-
-После этого можно перейти к созданию [](./packaging/creating-and-testing-extension-packages.md) и тестированию пакетов расширений, чтобы узнать, как создаются AppX и вручную упаковываются расширения, или перейти к более простому маршруту и перейти к использованию [ManifoldJS](./packaging/using-ManifoldJS-to-package-extensions.md)для упаковки расширений.
+Руководство по упаковке расширения является всеобъемлющим в том, что оно охватывает все, что вы хотите знать о упаковке, даже более тонкие, nitty песчаные детали. Если вы не хотите узнать все, что нужно знать о упаковке расширения, вам повезло. Мы добавили поддержку расширений в ManifoldJS, средство Node.js с открытым исходным кодом, которое отнимает большую часть проблемы упаковки.  
 
 > [!NOTE]
-> После того как вы обратитесь к нам и утвердите свое расширение в Microsoft Store, ознакомьтесь с контрольным списком отправки [приложения.](https://docs.microsoft.com/windows/uwp/publish/app-submissions)
+> Отправка расширения Microsoft Edge в Microsoft Store в настоящее время является ограниченной возможностью. [Связаться с нами](https://developer.microsoft.com/en-us/microsoft-edge/extensions/requests) с вашими запросами на участие в Microsoft Store, и мы рассмотрим вас для будущего обновления.  
+
+Используйте схему процесса ниже, чтобы наметить ваше приключение упаковки!  
+
+## [<a name="extensions-in-the-windows-dev-center"></a>Расширения в Центре разработки для Windows](./packaging/extensions-in-the-windows-dev-center.md)  
+
+Независимо от того, какой маршрут создания пакета вы выбираете вручную или manifoldJS, первым шагом является регистрация учетной записи разработчика Windows и регистрация имени(ы) вашего расширения.  
+
+После этого можно перейти к созданию [](./packaging/creating-and-testing-extension-packages.md) и тестированию пакетов расширений, чтобы узнать, как создаются и вручную упаковываются приложения, или перейти к более простому маршруту и перейти к использованию [пакетных](./packaging/using-ManifoldJS-to-package-extensions.md)расширений.  
+
+> [!NOTE]
+> После того как вы обратитесь к нам и получили одобрение на расширение в Microsoft Store, ознакомьтесь с контрольным списком отправки [приложений.](https://docs.microsoft.com/windows/uwp/publish/app-submissions)  
 
 
-## [Создание и тестирование пакетов расширений](./packaging/creating-and-testing-extension-packages.md)
+## [<a name="creating-and-testing-extension-packages"></a>Создание и тестирование пакетов расширений](./packaging/creating-and-testing-extension-packages.md)  
 
-В этом разделе руководства поется о создании пакета расширения вручную после того, как вы настроите учетную запись разработчика Windows и зарезервировали свои имена [расширений.](./packaging/extensions-in-the-windows-Dev-Center.md) Если вам интересно узнать более подробные сведения о упаковке расширения, ознакомьтесь с этим документом.
+Этот раздел руководства проходит через ручное создание пакета расширения после того, как вы настроите учетную запись разработчика Windows и зарезервировали свое имя [расширения (s).](./packaging/extensions-in-the-windows-Dev-Center.md) Если вам интересны более подробные сведения о упаковке расширения, ознакомьтесь с этим.  
 
-Также включены сведения о том, как протестировать и [распаковать упакованное расширение.](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) Эта информация актуальна, даже если вы прошли маршрут упаковки ManifoldJS.
+Также включена информация о том, как протестировать и [распаковать упакованное расширение.](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) Эта информация актуальна, даже если вы прошли маршрут упаковки ManifoldJS.  
 
-## [Локализация пакетов расширений](./packaging/localizing-extension-packages.md)
-Этап локализации пакета приходится между созданием appxmanifest.xml файла и последней командой для упаковки расширения.
-Это позволяет указать языки, поддерживаемые вашими расширениями в списке Microsoft Store, и язык, на котором имя расширения отображается в Windows.
+## [<a name="localizing-extension-packages"></a>Локализация пакетов расширений](./packaging/localizing-extension-packages.md)  
 
-Вы можете перейти к [локализации](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) имени и описания Microsoft Store в этом разделе руководства, если расширение не поддерживает несколько языков.
+Этап локализации пакета включает создание appxmanifest.xml файла и запуск последней команды для упаковки расширения.  
+Это позволяет указать языки, поддерживаемые вашими расширениями в списке Microsoft Store, и язык, на котором имя вашего расширения отображается в Windows.  
 
-## [Использование ManifoldJS для расширений пакетов](./packaging/using-ManifoldJS-to-package-extensions.md)
+В этом разделе руководства можно перейти к локализации имени и описания microsoft [Store,](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) если расширение не поддерживает несколько языков.  
 
-Маршрут средства для упаковки расширения, ManifoldJS будет упаковывать расширение в оснастку с минимальными усилиями на конце. Предодайте несколько ресурсов Windows или Microsoft Store после заполнения некоторых свойств AppXManifest, и расширение будет упаковано в течение некоторого времени.
+## [<a name="using-manifoldjs-to-package-extensions"></a>Использование ManifoldJS для расширений пакетов](./packaging/using-ManifoldJS-to-package-extensions.md)  
 
-После упаковки расширения см. [](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) раздел тестирования создания и тестирования расширения Microsoft Edge, чтобы узнать, как его выгрузить или распаковать.
+Маршрут инструмента для упаковки расширения, ManifoldJS будет упаковывать расширение в оснастке с минимальными усилиями на конце. Предостерегайте несколько активов Windows/Microsoft Store после заполнения некоторых свойств AppXManifest, и расширение будет упаковано в ближайшее время.  
 
+После упаковки расширения см. [](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) в разделе Тестирование в разделе Создание и тестирование расширения Microsoft Edge, чтобы узнать, как его разгрузить или распаковать.  
 
-## [Запуск комплекта сертификации приложений для Windows](./packaging/running-the-windows-app-certification-kit.md)
+## [<a name="running-the-windows-app-certification-kit"></a>Запуск комплекта сертификации приложений для Windows](./packaging/running-the-windows-app-certification-kit.md)  
 
-После того как у вас есть упакованное расширение, вы можете запустить его с помощью комплекта сертификации приложений для Windows. Это позволит выполнить ряд тестов пакета расширения, чтобы убедиться, что он готов к microsoft Store.
+После того как у вас есть пакетное расширение, вы можете запустить его через комплект сертификации приложений Windows. При этом в пакете расширения будет выполниться ряд тестов, чтобы убедиться, что он готов для Microsoft Store.  

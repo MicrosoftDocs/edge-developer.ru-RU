@@ -1,96 +1,95 @@
 ---
 description: Эмулировать недостатки зрения в Microsoft Edge DevTools.
-title: Эмуляция недостатков зрения в Microsoft Edge DevTools (дальтонизм)
+title: Эмулировать недостатки зрения в Microsoft Edge DevTools (цветовая слепота)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 5343d32992880f8c60501a86db6cb3a92f417331
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: eec3c95bac93e600acf1887c8d31cea2173c6aee
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230826"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397876"
 ---
-# Имитация дефектов зрения
+# <a name="emulate-vision-deficiencies"></a>Имитация дефектов зрения
 
-Для лучшего удовлетворения потребностей пользователей с недостатком цветового зрения [\(color][ColorblindawarenessMain] blindness\), Microsoft Edge [DevTools][DevtoolsIndex] позволяет моделировать определенные недостатки цветового зрения.  Средство **эмуляции недостатков зрения** имитирует следующие категории.  
+Чтобы лучше удовлетворять потребности пользователей [][ColorblindawarenessMain] с дефицитом цветового зрения \(цветовая слепота\), [Microsoft Edge DevTools][DevtoolsIndex] позволяет имитировать определенные недостатки цветового зрения.  Средство **эмулировать недостатки зрения** имитирует следующие категории.  
 
-| Недостаток цветового зрения | Сведения |  
+| Дефицит цветового зрения | Сведения |  
 |:--- |:--- |  
-| Размытое зрение | Пользователю трудно сосредоточиться на подробных сведениях. |   
+| Размытое зрение | Пользователю трудно сосредоточиться на тонкостях. |  
 | Протанопия | Пользователь не может воспринимать красный свет. |  
 | Deuteranopia | Пользователь не может воспринимать зеленый свет. |  
 | Тританопия | Пользователь не может воспринимать синий свет. |  
-| Achromatopsia | Пользователь не может воспринимать какой-либо цвет, который уменьшает весь цвет до оттенка серого. |  
+| Ахроматопсия | Пользователь не может воспринимать любой цвет, который уменьшает весь цвет до серого. |  
 
-## Переход к средствам отрисовки  
+## <a name="navigate-to-the-rendering-tools"></a>Перейдите к средствам визуализации  
 
-Чтобы смоделировать недостаток зрения, применяемый к веб-продукту, откройте [инструменты отрисовки.][DevtoolsRenderingToolsIndex]  
+Для имитации дефицита зрения, применяемой для вашего веб-продукта, откройте [средства визуализации.][DevtoolsRenderingToolsIndex]  
 
-1.  Чтобы открыть инструменты отрисовки, выберите пункт `...` меню на панели инструментов  
-1.  Выбрать `More tools`  
-1.  Выбрать `Rendering`  
+1.  Чтобы открыть средства визуализации, выберите `...` элемент меню на панели инструментов  
+1.  Выбор **дополнительных средств**  
+1.  Выберите **отрисовку**  
     
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Открытие средств отрисовки" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Открытие средств **отрисовки**  
+    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Открытие средств визуализации" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+       Открытие **средств визуализации**  
     :::image-end:::  
 
-В **этом ящике** появится меню "Отрисовка".  
+Меню **rendering** отображается в ящике.  
 
-1.  Прокрутите вниз до `Emulate vision deficiencies` пункта меню и выберите его, чтобы отобразить параметры.  
+1.  Прокрутите вниз `Emulate vision deficiencies` к элементу меню и выберите выпадаемое меню, чтобы отобразить параметры.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Меню эмуляции недостатков зрения в отрисовке" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       Меню **"Эмуляция недостатков зрения"** в **отрисовке**  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Меню Эмулировать недостатки зрения в ящике визуализации" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       Меню **недостатков эмулировать** зрение в **ящике rendering**  
     :::image-end:::  
     
 1.  Выберите параметр.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Параметры меню эмуляции недостатков зрения" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       Параметры **меню "Эмуляция недостатков зрения"**  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Параметры меню "Эмуляция недостатков зрения"" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+       Параметры **меню "Подражать недостаткам** зрения"  
     :::image-end:::  
     
-1.  В главных окнах отображается имитация выбранного параметра, примененного к текущей странице.  
+1.  В главных окнах отображается моделирование выбранного параметра, примененного к текущей странице.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Отображение с помощью имитации **Размытое зрение**" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Отображение с помощью **имитации размытого** зрения  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Отображение с помощью моделирования **Blurred Vision**" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Отображение с помощью **моделирования размытого зрения**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Отображение с помощью имитации **Achromatopsia**" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Отображение с помощью **имитации Achromatopsia** :::image-end:::  
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Отображение с помощью моделирования **Achromatopsia**" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             Отображение с помощью **моделирования Achromatopsia** :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Использование меню команд  
+## <a name="use-the-command-menu"></a>Используйте командное меню  
 
-Вы также можете использовать меню **команд для** доступа к различным имитациям.  
+Вы также можете использовать **командное меню для** доступа к различным имитациям.  
 
-1.  Выберите `Control` + `Shift` + `P` \(Windows\) или `Command` + `Shift` + `P` \(macOS\), чтобы открыть меню **команд.**  
+1.  Выберите `Control` + `Shift` + `P` \(Windows/Linux\) `Command` + `Shift` + `P` или \(macOS\) для открытия **командного меню.**  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Меню команд" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        Меню **команд**  
     :::image-end:::  
     
-1.  Введите `emulate` , выберите то, что нужно смоделировать, и `Enter` выберите.  
+1.  Введите `emulate` , выберите то, что вы хотите имитировать и выбрать `Enter` .  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Различные параметры имитации, доступные в меню команд" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       Различные параметры имитации, доступные в меню **команд**  
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Различные параметры моделирования, доступные в командном меню" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+       Различные параметры моделирования, доступные в **командном меню**  
     :::image-end:::  
     
 > [!IMPORTANT]
-> Средства **эмуляции недостатков зрения** имитируют приближение того, как человек с каждым недостатком может видеть ваш продукт.  Каждый человек разный, поэтому недостатки зрения различаются по степени серьезности от человека к человеку.  Чтобы лучше удовлетворить потребности пользователей, избегайте любых сочетаний цветов, которые могут быть проблемой.  Средства **эмуляции недостатков зрения** не являются полной оценкой доступности вашего продукта.  Вместо этого средства **эмуляции** недостатков зрения должны дать вам хороший первый шаг, чтобы избежать проблем.  
+> Средства **эмулирования** недостатков зрения имитируют приближения того, как человек с каждым недостатком может видеть ваш продукт.  Каждый человек отличается, поэтому недостатки зрения различаются по серьезности от человека к человеку.  Чтобы лучше удовлетворять потребности пользователей, избегайте любых цветовых сочетаний, которые могут быть проблемой.  Средства **эмулировать недостатки зрения** не являются полной оценкой доступности вашего продукта.  Вместо этого средства **эмулировать** недостатки зрения должны дать вам хороший первый шаг, чтобы избежать проблем.  
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Средства разработчика Microsoft Edge (Chromium) | Документы Майкрософт"  
-[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Анализ производительности в времени выполнения | Документы Майкрософт"  
+[DevToolsIndex]: ../index.md "Средства разработки Microsoft Edge (Chromium) | Документы Майкрософт"  
+[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Анализ производительности выполнения | Документы Майкрософт"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "Организация по информированию о незрячих цветах"  
+[ColorblindawarenessMain]: http://www.colourblindawareness.org "Организация цветовой слепой осведомленности"  
 
-[AmfcbMain]: https://www.amfcb.org "American Foundation для дальтоник (AFCB)"  
-
+[AmfcbMain]: https://www.amfcb.org "Американский фонд цветных слепых (AFCB)"  

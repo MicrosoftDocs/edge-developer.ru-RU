@@ -1,322 +1,164 @@
 ---
-description: Справочник по протоколу DevTools версии 0.2 (EdgeHTML) для домена страницы. Действия и события, связанные с проверенной страницей, относятся к домену страницы.
-title: Домен страницы — протокол DevTools версии 0.2 (EdgeHTML)
+description: Ссылка На протокол DevTools Версии 0.2 (EdgeHTML) для домена Страницы. Действия и события, связанные с проверенной страницей, относятся к домену страницы.
+title: Домен страницы — протокол DevTools Версии 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2f1849a2e2aa2f53cef9dff5d03ac991d368a6f3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d969dd100164ace61445a4618174cfa943dcfd2b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235187"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398849"
 ---
-# Домен страницы — протокол DevTools версии 0.2 (EdgeHTML)  
+# <a name="page-domain---devtools-protocol-version-02-edgehtml"></a>Домен страницы — протокол DevTools Версии 0.2 (EdgeHTML)  
 
-Действия и события, связанные с проверенной страницей, относятся к домену страницы.
+Действия и события, связанные с проверенной страницей, относятся к домену страницы.  
 
-| | |
-|-|-|
-| [**Методы**](#methods) | [включить,](#enable) [отключить,](#disable) [перейти,](#navigate) [getFrameTree](#getframetree) |
-| [**Мероприятия**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |
-| [**Типы**](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |
-## Методы
+| Категория | Участники |  
+|:--- |:--- |  
+| [Методы](#methods) | [включить,](#enable) [отключить,](#disable) [перейти,](#navigate) [getFrameTree](#getframetree) |  
+| [Мероприятия](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |  
+| [Типы](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |  
 
-### "Включить"
-Включает уведомления домена страницы.
+## <a name="methods"></a>Методы  
 
-</p>
+### <a name="enable"></a>"Включить"  
 
----
+Включает уведомления домена страницы.  
 
-### "Отключить" 
-Отключает уведомления домена страницы.
+&nbsp;  
 
-</p>
+---  
 
----
+### <a name="disable"></a>"Отключить"   
 
-### переход
-Переходит на текущую страницу по заданным URL-адресам.
+Отключение уведомлений домена страницы.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL-адрес для навигации по странице.</td>
-        </tr>
-        <tr>
-            <td>frameId <br/> <i>необязательные</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ИД кадра для навигации. Если не указано, будет перемещаться по верхней странице.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ИД кадра, который будет перемещаться.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+&nbsp;  
 
----
+---  
 
-### getFrameTree
-Возвращает представленную структуру дерева кадров.
+### <a name="navigate"></a>переход  
 
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameTree</td>
-            <td><a href="#frametree"><code class="flyout">FrameTree</code></a></td>
-            <td>Представляет структуру дерева кадров.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Перемещает текущую страницу на данный URL-адрес.  
 
----
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| url | `string` | URL-адрес для навигации по странице. |  
+| frameId \(необязательный\) | [FrameId](#frameid) | Frame id для навигации.  Если не указано, будет перемещаться на верхней странице. |  
 
-## Мероприятия
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | Frame id, который будет перемещаться. |  
 
-### frameAttached
-Собяно, когда фрейм присоединен к родительскому кадру.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ИД прикрепленного кадра.</td>
-        </tr>
-        <tr>
-            <td>parentFrameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Идентификатор родительского кадра.</td>
-        </tr>
-        <tr>
-            <td>stack <br/> <i>необязательные</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>Трассировка стека JavaScript, когда кадр был прикреплен, устанавливается, только если фрейм инициировался сценарием.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getframetree"></a>getFrameTree  
 
----
+Возвращает представленную структуру дерева кадра.  
 
-### frameDetached
-Происходит, когда фрейм отсоединяется от родительского кадра.
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| frameTree | [FrameTree](#frametree) | Представленная структура дерева кадра. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ИД отсоединяемого кадра.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+## <a name="events"></a>Мероприятия  
 
-### frameNavigated
-Сгорел после завершения навигации по кадру.
+### <a name="frameattached"></a>frameAttached  
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frame</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Объект Frame.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Уволено, когда кадр был присоединен к родительскому.  
 
----
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | Id прикрепленного кадра. |  
+| parentFrameId | [FrameId](#frameid) | Идентификатор родительского кадра. |  
+| stack \(необязательный\) | [Runtime.StackTrace](./runtime.md#stacktrace) | Трассировка стека JavaScript при присоединении кадра устанавливается только в том случае, если кадр инициировался из сценария. |  
 
-### loadEventFired
-Соответствует событию window.onload.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>timestamp</td>
-            <td><code class="flyout">number</code></td>
-            <td>Количество миллисекунд с момента эпохи.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="framedetached"></a>frameDetached  
 
----
+В случае, если кадр отсоединяется от родительского.  
 
-### domContentEventFired
-Соответствует событию document.onDOMContentLoaded.
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID отсоединяемого кадра. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>timestamp</td>
-            <td><code class="flyout">number</code></td>
-            <td>Количество миллисекунд с момента эпохи.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+### <a name="framenavigated"></a>frameNavigated  
 
-## Типы
+Уволен после завершения навигации по кадру.  
 
-### <a name="frameid"></a> FrameId `string`
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| кадр | [Кадр](#frame) | Объект Frame. |  
 
-Уникальный идентификатор кадра.
+---  
 
-</p>
+### <a name="loadeventfired"></a>loadEventFired  
 
----
+Соответствует `window.onload` событию.  
 
-### <a name="frame"></a> Кадр `object`
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Количество миллисекунд с эпохи. |  
 
-Сведения о фрейме на странице.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Свойства</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Уникальный идентификатор кадра.</td>
-        </tr>
-        <tr>
-            <td>parentId <br/> <i>необязательные</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Уникальный идентификатор родительского кадра.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Имя кадра, указанное в теге.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL-адрес документа фрейма.</td>
-        </tr>
-        <tr>
-            <td>securityOrigin</td>
-            <td><code class="flyout">string</code></td>
-            <td>Источник безопасности документа frame.</td>
-        </tr>
-        <tr>
-            <td>mimeType</td>
-            <td><code class="flyout">string</code></td>
-            <td>Тип mimeType кадра документа, определяемого браузером.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domcontenteventfired"></a>domContentEventFired  
 
----
+Соответствует `document.onDOMContentLoaded` событию.  
 
-### <a name="frametree"></a> FrameTree `object`
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Количество миллисекунд с эпохи. |  
 
-Сведения об иерархии frame.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Свойства</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frame</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Сведения о фрейме для этого элемента дерева.</td>
-        </tr>
-        <tr>
-            <td>childFrames <br/> <i>необязательные</i></td>
-            <td><a href="#frametree"><code class="flyout">FrameTree[]</code></a></td>
-            <td>Child frames.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+## <a name="types"></a>Типы  
 
----
+### <a name="frameid-string"></a>Строка FrameId  
+
+<a name="frameid"></a>  
+
+Уникальный идентификатор кадра.  
+
+&nbsp;  
+
+---  
+
+### <a name="frame-object"></a>Объект Frame  
+
+<a name="frame"></a>  
+
+Сведения о кадре на странице.  
+
+| Свойства | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| id | [FrameId](#frameid) | Уникальный идентификатор frame. |  
+| parentId \(необязательный\) | [FrameId](#frameid) | Уникальный идентификатор родительской рамки. |  
+| имя \(необязательный\) | `string` | Имя фрейма, указанное в теге. |  
+| url | `string` | URL-адрес документа кадра. |  
+| securityOrigin | `string` | Происхождение безопасности кадрового документа. |  
+| mimeType | `string` | MimeType кадра документа, определяемого браузером. |  
+
+---  
+
+### <a name="frametree-object"></a>Объект FrameTree  
+
+<a name="frametree"></a>  
+
+Сведения об иерархии Frame.  
+
+| Свойства | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| кадр | [Кадр](#frame) | Сведения о кадре для этого элемента дерева. |  
+| childFrames \(необязательный\) | [FrameTree[]](#frametree) | Кадры для детей. |  
+
+---  

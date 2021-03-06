@@ -1,18 +1,18 @@
 ---
-description: Просмотр узлов, поиск узлов, изменение узлов, ссылка на узлы в консоли, разрыв изменений узлов и т. д.
+description: Просмотр узлов, поиск узлов, редактирование узлов, справочных узлов в консоли, перерыв в изменениях узлов и т. д.
 title: Начало работы с просмотром и изменением DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 5b12b984aed7e35ce11dd45e8bc33f5d5fd454f8
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: bb2b733cfa3597c47f0a20de00e9c8b506e7c41c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231106"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398331"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,307 +28,307 @@ ms.locfileid: "11231106"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Начало работы с просмотром и изменением DOM  
+# <a name="get-started-with-viewing-and-changing-the-dom"></a>Начало работы с просмотром и изменением DOM  
 
-Выполните эти интерактивные учебники, чтобы изучить основы просмотра и изменения DOM страницы с помощью Microsoft Edge DevTools.  
+Выполните эти интерактивные учебники, чтобы узнать основы просмотра и изменения DOM страницы с помощью Microsoft Edge DevTools.  
 
-В этом руководстве предполагается, что вы знаете разницу между DOM и HTML.  Перейдите [к приложению: HTML и DOM для](#appendix-html-versus-the-dom) пояснения.  
+В этом руководстве предполагается, что вы знаете разницу между DOM и HTML.  Перейдите [к приложению: HTML и DOM для](#appendix-html-versus-the-dom) объяснения.  
 
-## Открытые примеры DOM  
+## <a name="open-dom-examples"></a>Откройте примеры DOM  
 
-1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **DOM Examples** to open in a new tab.  
+1.  Удерживайте `Control` \(Windows, Linux\) `Command` или \(macOS\) и выберите **примеры DOM,** чтобы открыть на новой вкладке.  
     
     [Примеры DOM][GlitchDomExamples]  
     
-## Просмотр узлов DOM  
+## <a name="view-dom-nodes"></a>Просмотр узлов DOM  
 
-Дерево DOM панели элементов — это место, в котором вы можете делать все действия, связанные с DOM, в DevTools.  
+DoM Tree панели Elements — это место, где вы делаете все действия, связанные с DOM в DevTools.  
 
-### Проверка узла  
+### <a name="inspect-a-node"></a>Проверка узла  
 
-Если вас интересует определенный узел DOM, **проверьте** это быстрый способ открыть DevTools и изучить этот узел.  
+Если вас интересует определенный узел DOM, **Проверьте** это быстрый способ открыть DevTools и исследовать этот узел.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **области "Проверка узла"** правой стороной выберите **"Майклангело" и** выберите **"Проверить".**  
+1.  В **статье Проверка узла**выберите справа **Микеланджело и** выберите **инспектировать**.  
     
     :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="Проверка узла" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
        Проверка узла  
     :::image-end:::  
     
-    1.  Откроется **панель элементов** DevTools.  `<li>Michelangelo</li>` выделен в дереве **DOM.**  
+    1.  Откроется **средство Elements** devTools.  `<li>Michelangelo</li>` выделено в **dom Tree**.  
         
-        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Выделение узла Майкланголо" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Выделение узла Микеланджело" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
            Выделение `Michelangelo` узла  
         :::image-end:::  
         
-        1.  Щелкните **значок "Проверить"** в левом верхнем углу ![ ][ImageInspectIcon] DevTools.  
+        1.  Выберите **значок Inspect** \( Inspect \) в левом верхнем углу ![ ][ImageInspectIcon] DevTools.  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Значок Проверка" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
-               Значок **"Проверка"**  
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Значок Inspect" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+               Значок **Inspect**  
             :::image-end:::  
             
-1.  В **области "Проверка узла"** щелкните **текст в Токио.**  Теперь `<li>Tokyo</li>` он выделен в дереве DOM.  
+1.  В **статье Inspect a Node**выберите текст **Tokyo.**  Теперь `<li>Tokyo</li>` выделяется дерево DOM.  
 
-Проверка узла также является первым шагом к просмотру и изменению стилей узла.  Перейдите [к началу работы с просмотром и изменением CSS.][DevToolsCssGetStarted]  
+Проверка узла также является первым шагом к просмотру и изменению стилей узла.  [Перейдите, чтобы начать с просмотра и изменения CSS][DevToolsCssGetStarted].  
 
-### Навигация по дереву DOM с помощью клавиатуры  
+### <a name="navigate-the-dom-tree-with-a-keyboard"></a>Перемещение дерева DOM с помощью клавиатуры  
 
-Выбрав узел в дереве DOM, можно перейти к дереву DOM с помощью клавиатуры.  
+Выбрав узел в dom Tree, вы можете перемещаться по дереву DOM с помощью клавиатуры.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  Under **Navigate the DOM Tree with a Keyboard,** right-choose **Ringo** and choose **Inspect**.  `<li>Ringo</li>` выбран в дереве DOM.  
+1.  В **статье Перейдите по дереву DOM с клавиатурой,** выберите Ринго правой ринго **и** выберите **Инспектировать**.  `<li>Ringo</li>` выбрано в дереве DOM.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="Проверка узла Ringo" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
        Проверка `Ringo` узла  
     :::image-end:::  
     
-    1.  Нажмите `Up` клавишу со стрелкой 2 раза.  `<ul>` .  
+    1.  Выберите `Up` клавишу стрелки 2 раза.  `<ul>` .  
         
         :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="Проверка узла ul" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
            Проверка `ul` узла  
         :::image-end:::  
         
-    1.  Нажмите `Left` клавишу со стрелкой.  Список `<ul>` свернут.  
-    1.  Нажмите `Left` клавишу со стрелкой еще раз.  Выбран родительский узел `<ul>` узла.  В этом случае это с `<div>` `navigate-the-dom-tree-with-a-keyboard-1` ИД.  
-    1.  Нажмите `Down` клавишу со стрелкой 2 раза, чтобы повторно выбрать свернутый `<ul>` список.  Это должно выглядеть следующим образом. `<ul>... </ul>`  
-    1.  Нажмите `Right` клавишу со стрелкой.  Список расширяется.  
+    1.  Выберите `Left` клавишу стрелки.  Список `<ul>` разрушается.  
+    1.  Снова выберите `Left` клавишу стрелки.  Выбран родительский `<ul>` узел.  В этом случае это `<div>` с ID `navigate-the-dom-tree-with-a-keyboard-1` .  
+    1.  Выберите клавишу стрелки 2 раза, чтобы повторно выбрать только что свернутый `Down` `<ul>` список.  Это должно выглядеть следующим образом. `<ul>... </ul>`  
+    1.  Выберите `Right` клавишу стрелки.  Список расширяется.  
 
-### Прокрутка в представление  
+### <a name="scroll-into-view"></a>Прокрутка в представлении  
 
-При просмотре дерева DOM может возникнуть интерес к узлу DOM, который в настоящее время не находится в окле просмотра.  Например, предположим, что вы прокручивали страницу вниз и вас интересует узел в `<h1>` верхней части страницы.  **Прокрутка в представлении** позволяет быстро изменить расположение окна, чтобы можно было просмотреть узел.  
+При просмотре дерева DOM может возникнуть интерес к узлу DOM, который в настоящее время не находится в представлении.  Например, предположим, что вы прокрутки в нижней части страницы, и вас интересует узел в верхней `<h1>` части страницы.  **Прокрутка** в представлении позволяет быстро переместить viewport, чтобы можно было просмотреть узел.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  Under **Scroll into View**, right-choose **Magritte** and choose **Inspect**.  
-1.  Прокрутите страницу DOM Examples до конца.  
-1.  Узел `<li>Magritte</li>` по-прежнему должен быть выбран в дереве DOM.  Если нет, перейти к [прокрутке в представлении и](#scroll-into-view) начать все сначала.  
-1.  Наведите курсор на узел, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите `<li>Magritte</li>` пункт **"Прокрутка в представление".**  В окну просмотра можно просмотреть узел **Magritte.**  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если вы не можете просмотреть параметр **"Прокрутка в** представлении".
+1.  В **статье Scroll into View**выберите **магритт** правой точки и выберите **инспект.**  
+1.  Прокрутите в нижней части страницы примеры DOM.  
+1.  Узел `<li>Magritte</li>` по-прежнему должен быть выбран в dom Tree.  Если нет, возвращайся к [прокрутке в представлении и](#scroll-into-view) начинай сначала.  
+1.  Наведите курсор на узел, откройте контекстное меню \(правой кнопкой `<li>Magritte</li>` мыши\) и выберите **Прокрутку в вид**.  Ваш видпорт прокручивается назад, чтобы просмотреть узел **Magritte.**  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если вы не можете просмотреть параметр **Scroll в представлении.**
     
-    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Прокрутка в представление" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
-       **Прокрутка в представление**  
+    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Прокрутка в представлении" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+       **Прокрутка в представлении**  
     :::image-end:::  
 
-### Поиск узлов  
+### <a name="search-for-nodes"></a>Поиск узлов  
 
-Вы можете искать в дереве DOM по строке, селектору CSS или селектору XPath.  
+Вы можете искать дерево DOM по строке, селектору CSS или селектору XPath.  
 
-1.  На панели элементов выделите **курсор.**  
-1.  Выберите `Control` + `F` \(Windows, Linux\) или `Command` + `F` \(macOS\).  В нижней части дерева DOM откроется строка поиска.  
+1.  Сосредоточь курсор на **средстве Elements.**  
+1.  Выберите `Control` + `F` \(Windows, Linux\) `Command` + `F` или \(macOS\).  Строка поиска открывается в нижней части дерева DOM.  
 1.  Введите `The Moon is a Harsh Mistress`.  Последнее предложение выделено в дереве DOM.  
     
-    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Выделение запроса на панели поиска" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
-       Выделение запроса на панели поиска  
+    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Выделение запроса в панели поиска" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
+       Выделение запроса в панели поиска  
     :::image-end:::  
     
-Как упоминалось выше, на панели поиска также поддерживаются селекторы CSS и XPath.  
+Как упоминалось выше, в панели поиска также поддерживаются селекторы CSS и XPath.  
 
-## Изменение DOM  
+## <a name="edit-the-dom"></a>Изменение DOM  
 
-Вы можете изменить DOM во время и просмотреть, как изменения влияют на страницу.  
+Вы можете изменить DOM на лету и просмотреть, как изменения влияют на страницу.  
 
-### Редактирование содержимого  
+### <a name="edit-content"></a>Редактирование контента  
 
-Чтобы изменить содержимое узла, дважды щелкните содержимое дерева DOM.  
+Чтобы изменить содержимое узла, дважды щелкните содержимое в dom Tree.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **области "Изменение содержимого"** выберите **" Michelle" (Изменить** содержимое) и выберите **"Inspect" (Проверить).**  
+1.  В **статье Редактирование контента**выберите Мишель **правильно и** выберите **инспектировать**.  
     1.  В дереве DOM дважды щелкните `Michelle` .  Другими словами, дважды щелкните текст между `<li>` и `</li>` .  Текст выделен, чтобы указать, что он выбран.  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="Редактирование текста" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
-           Редактирование текста  
+        :::image type="complex" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="Изменение текста" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
+           Изменение текста  
         :::image-end:::  
         
-    1.  Delete `Michelle` , type , then select to confirm the `Leela` `Enter` change.  Текст в DOM изменяется с **Michelle** на **Leela**.  
+    1.  `Michelle`Удалите, `Leela` введите, а `Enter` затем выберите, чтобы подтвердить изменение.  Текст в DOM изменяется с **Мишель на** **Лилу**.  
 
-### Изменение атрибутов  
+### <a name="edit-attributes"></a>Изменение атрибутов  
 
-Чтобы изменить атрибуты, дважды щелкните имя или значение атрибута.  Следуйте инструкциям, чтобы узнать, как добавить атрибуты в узел.  
+Чтобы изменить атрибуты, дважды щелкните имя или значение атрибута.  Следуйте инструкциям, чтобы узнать, как добавлять атрибуты в узел.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **области "Изменить атрибуты"** выберите "Химки" и выберите **"Проверить".** ****  
+1.  В **статье Изменить атрибуты**выберите Ховард **** правильно и выберите **инспектировать**.  
 1.  Дважды `<li>` щелкните .  Текст выделен, чтобы указать, что узел выбран.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="Изменение узла" lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
        Изменение узла  
     :::image-end:::  
     
-1.  Нажмите `Right` клавишу со стрелкой, добавьте пробел, введите `style="background-color:gold"` и выберите `Enter` .  Цвет фона узла изменяется на gold.  
+1.  Выберите `Right` клавишу стрелки, добавьте пробел, введите `style="background-color:gold"` и выберите `Enter` .  Фоновый цвет узла меняется на золото.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Добавление атрибута стиля в узел" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
        Добавление `style` атрибута в узел  
     :::image-end:::  
     
-### Изменение типа узла  
+### <a name="edit-node-type"></a>Изменение типа узла  
 
 Чтобы изменить тип узла, дважды щелкните тип и введите новый тип.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **области "Изменить тип узла"** выберите правой правой выберите **"Инсайт"** и выберите **"Проверить".**  
+1.  При **редактировании типа узла**выберите справа **Хэнк** и выберите **инспектировать**.  
     1.  Дважды `<li>` щелкните .  Текст `li` выделен.  
-    1.  Delete `li` , type , then select `button` `Enter` .  Узел `<li>` изменяется на `<button>` узел.  
+    1.  `li`Удалите, `button` введите, а затем выберите `Enter` .  Узел `<li>` изменяется в `<button>` узел.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="Изменение типа узла на кнопку" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
-           Измените тип узла на `button`  
+           Изменение типа узла на `button`  
         :::image-end:::  
         
-### Переусортовка узлов DOM  
+### <a name="reorder-dom-nodes"></a>Reorder DOM nodes  
 
-Перетащите узлы, чтобы переусортовить их.  
+Перетаскивать узлы для их переуборки.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **области "Reorder DOM Nodes" (Узлы DOM reorder)** выберите **"Elvis Presley" (Elvis Presley)** и выберите **"Inspect"**(Проверить).  
+1.  В **статье Reorder DOM Nodes**выберите правый **элвис Пресли** и выберите **Inspect**.  
     
     > [!NOTE]
     > Это последний элемент в списке.  
     
-    1.  В дереве DOM перетащите `<li>Elvis Presley</li>` его в верхнюю часть списка.  
+    1.  В дереве DOM `<li>Elvis Presley</li>` перетащите в верхнюю часть списка.  
         
         :::image type="complex" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="Перетащите узел в верхнюю часть списка" lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
            Перетащите узел в верхнюю часть списка  
         :::image-end:::  
         
-### Состояние принудительного применения  
+### <a name="force-state"></a>Состояние Force  
 
 Вы можете заставить узлы оставаться в состояниях, включая `:active` , , , , и `:hover` `:focus` `:visited` `:focus-within` .  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **состоянии Force**наведите курсор на **"Химя".**  Цвет фона становится оранжевым.  
-    1.  Right-choose **The The Of the Овне** и choose **Inspect**.  
-    1.  Щелкните правой `<li class="demo--hover">The Lord of the Flies</li>` кнопкой мыши и выберите **force State**  >  **:hover**.  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.  Цвет фона остается оранжевым, даже если вы на самом деле не наведите курсор на узел.  
+1.  В **состоянии Force**наведите курсор на **"Властелин мух".**  Цвет фона становится оранжевым.  
+    1.  Наведите курсор на **"Властелин мух",** откройте контекстное меню \(правой кнопкой мыши\) и выберите **инспектировать**.  
+    1.  Наведите `<li class="demo--hover">The Lord of the Flies</li>` курсор, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Состояние силы**  >  **:hover**.  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.  Цвет фона остается оранжевым, даже если вы на самом деле не зависаете над узлом.  
 
-### Скрытие узла  
+### <a name="hide-a-node"></a>Скрыть узел  
 
 Выберите, `H` чтобы скрыть узел.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **области "Скрыть узел"** выберите пункт "Звездочки" **и** выберите пункт **"Проверить".**  
-    1.  Нажмите `H` клавишу.  Узел скрыт.  
+1.  В **статье Скрыть узел**выберите "Звезды моего **назначения"** и выберите **инспектировать**.  
+    1.  Выберите `H` ключ.  Узел скрыт.  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Внешний вид узла в дереве DOM после его скрытия" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
-           Внешний вид узла в дереве DOM после его скрытия  
+        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Как выглядит узел в dom Tree после его сокрытого" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
+           Как выглядит узел в dom Tree после его сокрытого  
         :::image-end:::  
         
-    1.  Снова нажмите `H` клавишу.  Узел снова отображается.  
+    1.  Выберите `H` клавишу снова.  Узел отображается снова.  
 
-### Удаление узла  
+### <a name="delete-a-node"></a>Удаление узла  
 
-Выберите, `Delete` чтобы удалить узел.  
+Выберите `Delete` удаление узла.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  Under **Delete a Node**, right-choose **Foundation** and choose **Inspect**.  
-    1.  Нажмите `Delete` клавишу.  Узел удаляется.  
-    1.  Выберите `Control` + `Z` \(Windows, Linux\) или `Command` + `Z` \(macOS\).  Последнее действие отменено, и узел снова появляется.  
+1.  В **статье Delete a Node**выберите правильный выбор **Основы** и выберите **инспектировать**.  
+    1.  Выберите `Delete` ключ.  Узел удаляется.  
+    1.  Выберите `Control` + `Z` \(Windows, Linux\) `Command` + `Z` или \(macOS\).  Последнее действие отменить, и узел снова появится.  
 
-## Доступ к узлам в консоли  
+## <a name="access-nodes-in-the-console"></a>Доступ к узлам консоли  
 
 DevTools предоставляет несколько ярлыков для доступа к узлам DOM из консоли или получения ссылок JavaScript на каждый из них.  
 
-### Ссылка на текущий выбранный узел с помощью $0  
+### <a name="reference-the-currently-selected-node-with-0"></a>Ссылка на выбранный в настоящее время узел с $0  
 
-При проверке узла текст рядом с узлом означает, что вы можете ссылаться на этот узел в консоли `== $0` с `$0` переменной.  
+При проверке узла текст рядом с узлом означает, что этот узел в консоли может ссылаться `== $0` на `$0` переменную.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  Under **Reference the currently-selected node with $0**, right-choose **The Left Hand ofЯs** and choose **Inspect**.  
-    1.  Нажмите `Escape` клавишу, чтобы открыть консольный ящик.  
-    1.  Введите `$0` и нажмите `Enter` клавишу.  Результат выражения показывает, что `$0` он оценивается как `<li>The Left Hand of Darkness</li>` .  
+1.  В статье Ссылка на выбранный в настоящее время **узел с $0**, правой выберите **левую** руку тьмы и выберите **инспектировать**.  
+    1.  Выберите ключ `Escape` для открытия ящика консоли.  
+    1.  Введите `$0` и выберите `Enter` ключ.  Результат выражения показывает, что `$0` оценивает до `<li>The Left Hand of Darkness</li>` .  
         
         :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="Результат первого выражения $0 в консоли" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
             Результат первого выражения `$0` в **** консоли  
         :::image-end:::  
         
-    1.  Наведите курсор на результат.  Узел выделен в окле просмотра.  
-    1.  Щелкните дерево DOM, введите в консоли еще `<li>Dune</li>` `$0` раз, а затем выберите `Enter` еще раз.  Теперь `$0` оценивается как `<li>Dune</li>` .  
+    1.  Наведите курсор на результат.  Узел выделен в представлении.  
+    1.  Выберите `<li>Dune</li>` в дереве DOM, введите консоль `$0` снова, а затем выберите еще `Enter` раз.  Теперь `$0` оценивается до `<li>Dune</li>` .  
         
         :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="Результат второго выражения $0 в консоли" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
            Результат второго выражения `$0` в **** консоли  
         :::image-end:::  
         
-### Сохранить как глобальную переменную  
+### <a name="store-as-global-variable"></a>Хранить как глобальную переменную  
 
-Если требуется много раз сослаться на узел, храните его как глобальную переменную.  
+Если требуется много раз возвращаться к узлу, храните его в качестве глобальной переменной.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  Under **Store as global variable**, right-choose The Big **Sleep** and choose **Inspect**.  
-    1.  Щелкните правой `<li>The Big Sleep</li>` кнопкой мыши дерево DOM и выберите **"Магазин" в качестве глобальной переменной.**  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.  
-    1.  Введите `temp1` в консоли и выберите `Enter` .  Результат выражения показывает, что переменная оценивается в узле.  
+1.  В **Хранилище в качестве глобальной переменной**наведите курсор на **"Большой**сон", откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
+    1.  Наведите курсор в dom Tree, откройте контекстное меню \(правой кнопкой мыши\) и выберите `<li>The Big Sleep</li>` Store в качестве **глобальной переменной.**  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.  
+    1.  Введите `temp1` консоль и выберите `Enter` .  Результат выражения показывает, что переменная оценивает узел.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="Результат выражения temp1" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
            Результат выражения `temp1`  
         :::image-end:::  
         
-### Копирование пути JS  
+### <a name="copy-js-path"></a>Путь копирования JS  
 
-Скопируйте путь JavaScript к узлу, если вам нужно со ссылкой на него в автоматическом тесте.  
+Скопируйте путь JavaScript в узел, если необходимо ссылаться на него в автоматическом тесте.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **области "Копировать путь JS"** выберите правой копией **"Иван Иванов"** и выберите **"Проверить".**  
-    1.  Щелкните правой кнопкой мыши в дереве DOM и выберите `<li>The Brothers Karamazov</li>` **"Копировать**путь  >  **JS копирования".**  Выражение, `document.querySelector()` разрешаемого в узел, было скопировано в буфер обмена.  
-    1.  Выберите `Control` + `V` \(Windows, Linux\) или `Command` + `V` \(macOS\) для вставки выражения в консоль.  
-    1.  Выберите, `Enter` чтобы оценить выражение.
+1.  В **рамках пути Copy JS**наведите курсор на братья Карамазовы, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**. ****  
+    1.  Наведите курсор в дереве DOM, откройте контекстное меню \(правой кнопкой мыши\) и выберите `<li>The Brothers Karamazov</li>` **путь Копирование**  >  **копии JS**.  Выражение, `document.querySelector()` разрешаемая узлу, было скопировано в буфер обмена.  
+    1.  Выберите `Control` + `V` \(Windows, Linux\) `Command` + `V` или \(macOS\) для вставки выражения в консоль.  
+    1.  Выберите `Enter` для оценки выражения.
         
-        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Результат выражения Путь копирования JS" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
-           Результат выражения **"Путь копирования JS"**  
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Результат выражения Copy JS Path" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+           Результат выражения **Copy JS Path**  
         :::image-end:::  
         
-## Приостановка изменений DOM  
+## <a name="break-on-dom-changes"></a>Перерыв в изменениях DOM  
 
 DevTools позволяет приостановить JavaScript страницы, когда JavaScript изменяет DOM.  
 
-### Приорвать изменение атрибута  
+### <a name="break-on-attribute-modifications"></a>Перерыв в изменении атрибута  
 
-Используйте точки останова изменения атрибутов, если необходимо приостановить JavaScript, что приводит к изменению любого атрибута узла.  
+Используйте брейк-точки изменения атрибута, когда необходимо приостановить JavaScript, из-за чего любой атрибут узла будет изменяться.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  Under **Break on attribute modifications,** right-choose **Sauerkraut** and choose **Inspect**.  
-    1.  В дереве DOM щелкните правой кнопкой мыши и выберите `<li id="target">Sauerkraut</li>` "Приорвать ****  >  **при изменении атрибута".**  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.
+1.  В **статье Break on attribute modifications**выберите правый выбор **Sauerkraut** и выберите **Inspect**.  
+    1.  В дереве DOM наведите курсор, откройте контекстное меню \(правой кнопкой мыши\) и выберите `<li id="target">Sauerkraut</li>` **Break On**  >  **Attribute Modifications**.  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.
         
-        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Приорвать изменение атрибута" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
-           **Приорвать изменение атрибута**  
+        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Перерыв в изменении атрибута" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
+           **Перерыв в изменении атрибута**  
         :::image-end:::  
         
-    1.  На следующем этапе вам будет выдано указание нажать кнопку, которая приостановит код страницы.  После приостановки страницы вы больше не сможете прокручивать страницу.  Необходимо выбрать **сценарий возобновления** \( Resume Script \), чтобы снова сделать страницу ![ ][ImageResumeScriptIcon] прокручиваемой.
+    1.  На следующем шаге вам будет поручено выбрать кнопку, приостановив код страницы.  После приостановки страницы вы больше не сможете прокручивать страницу.  Для повторного **прокрутки** страницы необходимо выбрать сценарий резюме ![ ][ImageResumeScriptIcon] \.
         
-        :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Where to resume script running" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
-           Where to resume script running  
+        :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Где возобновить работу скрипта" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
+           Где возобновить работу скрипта  
         :::image-end:::  
         
-    1.  Нажмите **кнопку "Установить фон"** выше.  При этом для `style` атрибута узла устанавливается `background-color:thistle` ".  DevTools приостанавлиет страницу и выделяет код, который вызвал изменение атрибута.  
-    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \), as mentioned earlier.  
+    1.  Выберите **кнопку Set Background** выше.  Это задает `style` атрибут узла `background-color:thistle` .  DevTools останавливает страницу и выделяет код, из-за чего атрибут изменился.  
+    1.  Выберите **сценарий** резюме \. ![ Сценарий ][ImageResumeScriptIcon] резюме \), как упоминалось ранее.  
     
-### Приорвать удаление узла  
+### <a name="break-on-node-removal"></a>Перерыв при удалении узлов  
 
-Если необходимо приостановить удаление определенного узла, используйте точки останова удаления узлов.  
+Если необходимо приостановить удаление определенного узла, используйте точки удаления узлов.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  В **окне "Приорвать при удалении узла"** выберите "Неуловимый" и выберите **"Проверить".** ****  
-    1.  В дереве DOM щелкните правой кнопкой мыши и выберите `<li id="target">Neuromancer</li>` **"Приорвать удаление**  >  **узла".**  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.  
-    1.  Нажмите **кнопку "Удалить"** выше.  DevTools приостанавлиет страницу и выделяет код, который вызвал удаление узла.  
-    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
+1.  В статье Break on Node Removal (Удаление **узлов)** выберите **справа Neuromancer и** выберите **Inspect**.  
+    1.  В дереве DOM наведите курсор, откройте контекстное меню \(правой кнопкой мыши\) и выберите `<li id="target">Neuromancer</li>` **Break On**  >  **Node Removal**.  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.  
+    1.  Выберите **кнопку Удалить** выше.  DevTools останавливает страницу и выделяет код, из-за чего узел был удален.  
+    1.  Выберите **сценарий** резюме \. ![ Сценарий ][ImageResumeScriptIcon] резюме \).  
     
-### Приорвать изменения подtree  
+### <a name="break-on-subtree-modifications"></a>Перерыв в изменениях подтрия  
 
-После того как вы добавили точку останова изменения подпотека на узел, DevTools приостанавлит страницу при добавлении или удалении любого из потомков узла.  
+После того, как на узел будет добавлена точка взлома модификации подтримки, DevTools приостанавлит страницу при добавлении или удалении любого из потомков узла.  
 
 1.  [Откройте примеры DOM.](#open-dom-examples)  
-1.  Under **Break on Subtree Modifications**, right-choose **A Fire On The Deep** and choose **Inspect**.  
-    1.  В дереве DOM щелкните правой кнопкой мыши узел выше и выберите "Break `<ul id="target">` `<li>A Fire Upon the Deep</li>` **On**  >  **Subtree Modifications".**  Перейдите [к приложению: отсутствуют параметры,](#appendix-missing-options) если параметр не отображается.  
-    1.  Choose **Add Child**.  Код приостанавливовка, так как `<li>` узел был добавлен в список.  
-    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
+1.  В **статье Break on Subtree Modifications (Изменения subtree)** выберите правильное решение **"Пожар на глубине"** и выберите **"Проверка".**  
+    1.  В дереве DOM наведите курсор , который является узлом выше, откройте контекстное меню \(правой кнопкой мыши\) и выберите `<ul id="target">` `<li>A Fire Upon the Deep</li>` Break **On**  >  **Subtree Modifications**.  Если параметр не отображается, перейдите в [Приложение: Отсутствующие параметры.](#appendix-missing-options)  
+    1.  Выберите **Добавить ребенка**.  Код приостанавливовка, так как `<li>` узел был добавлен в список.  
+    1.  Выберите **сценарий** резюме \. ![ Сценарий ][ImageResumeScriptIcon] резюме \).  
     
-## Дальнейшие действия  
+## <a name="next-steps"></a>Дальнейшие действия  
 
-Это охватывает большинство функций, связанных с DOM, в DevTools.  Остальные узлы можно найти, щелкнув правой кнопкой мыши узлы в дереве DOM и поэкспериментируйте с другими вариантами, которые не были охвачены в этом руководстве.  Перейдите [к сочетаниям клавиш панели элементов.][DevToolsShortcutsElements]  
+Это охватывает большинство функций, связанных с DOM в DevTools.  Остальные функции можно обнаружить, зависнув на узлах дерева DOM, открыв контекстное меню \(правой кнопкой мыши\) и поэкспериментируйте с другими вариантами, которые не были охвачены в этом учебнике.  Перейдите к [клавишам клавиатуры][DevToolsShortcutsElements]панели Elements .  
 
-Ознакомьтесь [с домашней страницей Microsoft Edge DevTools,][MicrosoftEdgeDevTools] чтобы узнать все остальные возможности, которые вы можете сделать с DevTools.  
+Ознакомьтесь с [домашней страницей Microsoft Edge DevTools,][MicrosoftEdgeDevTools] чтобы узнать все остальное, что вы можете сделать с DevTools.  
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
-## Приложение: HTML и DOM  
+## <a name="appendix-html-versus-the-dom"></a>Приложение: HTML по сравнению с DOM  
 
 В следующем разделе быстро объясняется разница между HTML и DOM.  
 
 :::row:::
    :::column span="":::
-      При использовании веб-браузера для запроса страницы сервер возвращает HTML, как в следующем фрагменте кода  
+      При использовании веб-браузера для запроса страницы сервер возвращает HTML, как и следующий фрагмент кода  
 
       ```html
       <!doctype html>
@@ -345,7 +345,7 @@ DevTools позволяет приостановить JavaScript страниц
       ```  
    :::column-end:::
    :::column span="":::
-      Браузер проансирует HTML-код и создает дерево объектов, таких как следующий список.  
+      Браузер размазирует HTML и создает дерево объектов, таких как следующий список.  
       
       ```dom
       html
@@ -374,7 +374,7 @@ DevTools позволяет приостановить JavaScript страниц
       ```  
    :::column-end:::
    :::column span="":::
-      Этот код удаляет узел `h1` и добавляет другой узел в `p` DOM.  Полная doM теперь отображает следующий список.  
+      Этот код удаляет `h1` узел и добавляет другой узел в `p` DOM.  Полный DOM теперь отображает следующий список.  
       
       ```dom
       html
@@ -388,9 +388,9 @@ DevTools позволяет приостановить JavaScript страниц
    :::column-end:::
 :::row-end:::  
 
-HTML-код страницы теперь отличается от DOM.  Другими словами, HTML представляет исходное содержимое страницы, а DOM — текущее содержимое страницы.  Когда JavaScript добавляет, удаляет или редактирует узлы, DOM становится не так, как HTML.  
+HTML для страницы теперь отличается от DOM.  Другими словами, HTML представляет исходное содержимое страницы, а DOM — текущее содержимое страницы.  Когда JavaScript добавляет, удаляет или редактирует узлы, DOM становится другим, чем HTML.  
 
-Чтобы узнать [больше, перейдите в "Введение][MDNIntroductionToDOM] в DOM".  
+Перейдите [к вводу в DOM,][MDNIntroductionToDOM] чтобы узнать больше.  
 
 <!--
 ## Appendix: Scroll into view  
@@ -398,22 +398,22 @@ HTML-код страницы теперь отличается от DOM.  Дру
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.  
 
 1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.  
-1.  Right-click the `<li>Magritte</li>` node and choose **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  Navigate to [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
+1.  Hover on the `<li>Magritte</li>` node, open the contextual menu \(right-click\), and choose **Scroll into view**.  Your viewport scrolls back up so that the **Magritte** node is displayed.  If you the **Scroll into view** option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
     
     :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
        Scroll into view  
     :::image-end:::  
     -->  
 
-## Приложение: отсутствуют параметры  
+## <a name="appendix-missing-options"></a>Приложение: отсутствующие параметры  
 
-Многие инструкции в этом руководстве предписывают щелкнуть правой кнопкой мыши узел в дереве DOM, а затем выбрать параметр из всплывающее контекстное меню.  Если указанный параметр в контекстное меню не отображается, попробуйте щелкнуть правой кнопкой мыши текст узла.  
+Многие инструкции в этом руководстве поручают вам наведении на узел в dom Tree, открыть контекстное меню \(правой кнопкой мыши\), а затем выбрать вариант из контекстного меню, которое всплывает.  Если указанный параметр в контекстном меню не отображается, попробуйте отойти от текста узла и открыть контекстное меню \(правой кнопкой мыши\).  
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Где выбрать, если все параметры не отображаются" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    Где выбрать, если все параметры не отображаются  
 :::image-end:::  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -424,17 +424,17 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Средства разработчика Microsoft Edge \(Chromium\) | Документы Майкрософт"  
-[DevToolsCssGetStarted]: ../css/index.md "Начало работы с просмотром и изменением CSS | Документы Майкрософт"  
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-panel-keyboard-shortcuts "Сочетания клавиш панели элементов — Microsoft Edge DevTools Keyboard Shortcuts | Документы Майкрософт"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Средства разработки Microsoft Edge \(Chromium\) | Документы Майкрософт"  
+[DevToolsCssGetStarted]: ../css/index.md "Начало работы с просмотром и изменением CSS-| Документы Майкрософт"  
+[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Клавиши клавиатуры elements — клавиши Microsoft Edge DevTools Keyboard Shortcuts | Документы Майкрософт"  
 
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Временный сбой"
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
 
-[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Введение в DOM | MDN"  
+[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Введение в dom | MDN"  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/dom/index) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/dom/index) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

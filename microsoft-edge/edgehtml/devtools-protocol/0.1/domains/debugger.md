@@ -1,818 +1,375 @@
 ---
-description: Справочник по протоколу DevTools версии 0.1 (EdgeHTML) для домена отладки. Домен отладки предоставляет возможности отладки JavaScript. Он позволяет устанавливать и удалять точки останова, пошаговую настройку выполнения, изучать трассировки стека и т. д.
-title: Домен отлада — протокол DevTools версии 0.1 (EdgeHTML)
+description: Ссылка на протокол DevTools Версии 0.1 (EdgeHTML) для домена Debugger.  Домен Debugger предоставляет возможности отладки JavaScript.  Он позволяет устанавливать и удалять точки разрывов, проходить выполнение, изучать следы стека и т. д.
+title: Домен Debugger — протокол DevTools Версии 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 5160e6e69ec76f8c584f1bdb969464d805c7afa7
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d63408e23fd8912cf617bfefae2b991387b45a38
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235578"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397680"
 ---
-# Домен отлада — протокол DevTools версии 0.1 (EdgeHTML)  
+# <a name="debugger-domain---devtools-protocol-version-01-edgehtml"></a>Домен Debugger — протокол DevTools Версии 0.1 (EdgeHTML)  
   
-Домен отлада предоставляет возможности отладки JavaScript. Он позволяет устанавливать и удалять точки останова, пошаговую настройку выполнения, изучать трассировки стека и т. д.
-
-| | |
-|-|-|
-| [**Методы**](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [**Мероприятия**](#events) | [scriptParsed,](#scriptparsed) [breakpointResolved,](#breakpointresolved) [приостановлено,](#paused) [возобновлено](#resumed) |
-| [**Типы**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
-| [**Зависимости**](#dependencies) | [Время выполнения](runtime.md) |
-## Методы
-
-### "Включить"
-Включает отладок для заданной страницы. Клиенты не должны предполагать, что отладка включена, пока не будет получен результат для этой команды.
-
-
----
-
-### "Отключить" 
-Отключает отладок для данной страницы.
-
-
----
-
-### getPossibleBreakpoints
-Возвращает возможные расположения для точки останова. ScriptId в расположениях в начале и конце диапазона должен быть одинаковым.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>start</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Начало диапазона для поиска возможных местоположений точек останова.</td>
-        </tr>
-        <tr>
-            <td>завершить</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Конец диапазона для поиска возможных местоположений точек останова в (за исключением). Если он не указан, конец диапазона используется для окончания сценариев.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>locations</td>
-            <td><a href="#breaklocation"><code class="flyout">BreakLocation</code></a></td>
-            <td>Список возможных местоположений точек останова.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setBreakpointsActive
-Активирует или деактивирует все точки останова на странице.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>active</td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Новое значение активного состояния точек останова.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setBreakpointByUrl
-Задает точку останова JavaScript в указанном расположении, указанном с помощью URL-адреса или regex URL-адреса. После того как эта команда будет выдана, все существующие сценарии будут иметь точки останова, разрешенные и возвращенные в <code>locations</code> свойстве. Дальнейшее соответствие сценариев приведет к последующим <code>breakpointResolved</code> событиям. Эта логическая точка останова будет выдержать перезагрузку страницы.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Номер строки для назначения точки останова.</td>
-        </tr>
-        <tr>
-            <td>url <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>URL-адрес ресурсов для назначения точки останова.</td>
-        </tr>
-        <tr>
-            <td>urlRegex <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Шаблон Regex для URL-адресов ресурсов, в которые необходимо установить точки останова. Либо <code>url</code> должно <code>urlRegex</code> быть указано, либо должно быть указано.</td>
-        </tr>
-        <tr>
-            <td>columnNumber <br/> <i>необязательные</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Смещение в строке для назначения точки останова.</td>
-        </tr>
-        <tr>
-            <td>condition <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Выражение, используемое в качестве условия точки останова. Если этот способ указан, отладка останавливается только в точке останова, если это выражение оценивается как истинное.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointId</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>ИД созданной точки останова для дальнейшей ссылки.</td>
-        </tr>
-        <tr>
-            <td>locations</td>
-            <td><a href="#location"><code class="flyout">Location[]</code></a></td>
-            <td>Список местоположений, в которые эта точка останова была разрешена после добавления.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setBreakpoint
-Задает точку останова JavaScript в заданное расположение.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>location</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Расположение для определения точки останова.</td>
-        </tr>
-        <tr>
-            <td>condition <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Выражение, используемое в качестве условия точки останова. Если этот способ указан, отладка останавливается только в точке останова, если это выражение оценивается как истинное.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointId</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>ИД созданной точки останова для дальнейшей ссылки.</td>
-        </tr>
-        <tr>
-            <td>actualLocation</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Расположение, в который разрешена точка останова.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### removeBreakpoint
-Удаляет точку останова JavaScript.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointId</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### stepOver
-По шагам над заявлением.
-
-
----
-
-### stepInto
-Этапы вызова функции.
-
-
----
-
-### stepOut
-По шагам из вызова функции.
-
-
----
-
-### pause
-Останавливает следующий отчет JavaScript.
-
-
----
-
-### resume
-Возобновляет выполнение JavaScript.
-
-
----
-
-### getScriptSource
-Возвращает источник для сценария с заданным идом.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptId</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>ИД скрипта, для который требуется получить источник.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptSource</td>
-            <td><code class="flyout">string</code></td>
-            <td>Источник скрипта.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setPauseOnExceptions
-Определяет паузу в состоянии исключений. Можно установить остановку для всех исключений, невысченных исключений или без исключений. Начальная пауза в состоянии исключений <code>none</code> — .
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>state</td>
-            <td><code class="flyout">string</code> <br/> <i>Допустимые значения: none, uncaught, all</i></td>
-            <td>Приостановка в режиме исключений.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### evaluateOnCallFrame
-Оценивает выражение в заданной рамке вызова.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Идентификатор кадра вызова для оценки.</td>
-        </tr>
-        <tr>
-            <td>выражение</td>
-            <td><code class="flyout">string</code></td>
-            <td>Выражение для оценки.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>result</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Оболочка объекта для результата оценки.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setVariableValue
-Изменяет значение переменной в callframe. Области на основе объектов не поддерживаются и должны быть мутированы вручную.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scopeNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Число областей на основе 0, указанных в цепочке областей. Разрешены только типы областей "local", "closure" и "catch". Другие области могут управляться вручную.</td>
-        </tr>
-        <tr>
-            <td>variableName</td>
-            <td><code class="flyout">string</code></td>
-            <td>Имя переменной.</td>
-        </tr>
-        <tr>
-            <td>newValue</td>
-            <td><a href="runtime.md#callargument"><code class="flyout">Runtime.CallArgument</code></a></td>
-            <td>Новое значение переменной.</td>
-        </tr>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>ИД callframe, который содержит переменную.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### setBlackboxPatterns
-<span><b>Экспериментальная. </b></span>Замените предыдущие шаблоны черных ящиков на переданные. Заставляет тыловые части пропускать пошаговую или прио паузу в скриптах, url-адресом, совпадающих с одним из шаблонов. Отладик попытается выйти из сценария из черной почты, выполив "шаг" несколько раз, и, наконец, при неудачном выполнении прибег к шагу "выйти".
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>patterns</td>
-            <td><code class="flyout">string[]</code></td>
-            <td>Массив regexps, который будет использоваться для проверки URL-адреса скрипта на состояние черного ящика.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### msSetDebuggerPropertyValue
-<span><b>Экспериментальная. </b></span>Корпорация Майкрософт: задает указанное значение для указанного свойства отладки.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>debuggerPropertyId</td>
-            <td><code class="flyout">string</code></td>
-            <td>Майкрософт: ид свойства (например, msDebuggerPropertyId), который необходимо установить.</td>
-        </tr>
-        <tr>
-            <td>newValue</td>
-            <td><code class="flyout">string</code></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## Мероприятия
-
-### scriptParsed
-Срасть при разчете сценария. Это событие также иллюбуется для всех известных и несмеченных сценариев при включии отладка.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptId</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Идентификатор разлияемого скрипта.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL-адрес или имя разбияемого сценария (если таково).</td>
-        </tr>
-        <tr>
-            <td>startLine</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Смещение строк скрипта в ресурсе с заданным URL-адресом (для тегов скрипта).</td>
-        </tr>
-        <tr>
-            <td>startColumn</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Смещение столбцов сценария в ресурсе с заданным URL-адресом.</td>
-        </tr>
-        <tr>
-            <td>endLine</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Последняя строка сценария.</td>
-        </tr>
-        <tr>
-            <td>endColumn</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Длина последней строки сценария.</td>
-        </tr>
-        <tr>
-            <td>executionContextId</td>
-            <td><a href="runtime.md#executioncontextid"><code class="flyout">Runtime.ExecutionContextId</code></a></td>
-            <td>Указывает контекст создания скрипта.</td>
-        </tr>
-        <tr>
-            <td>sourceMapURL <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>URL-адрес карты источника, связанной со сценарием (если таково).</td>
-        </tr>
-        <tr>
-            <td>length <br/> <i>необязательные</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Экспериментальная. </b></span>Длина этого скрипта.</td>
-        </tr>
-        <tr>
-            <td>msParentId <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b>Экспериментальная. </b></span>Это родительский ИД документа.</td>
-        </tr>
-        <tr>
-            <td>msMimeType <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b>Экспериментальная. </b></span>Это тип MIME.</td>
-        </tr>
-        <tr>
-            <td>msIsDynamicCode <br/> <i>необязательные</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b>Экспериментальная. </b></span>Это указывает, является ли это динамическим кодом.</td>
-        </tr>
-        <tr>
-            <td>msLongDocumentId <br/> <i>необязательные</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Экспериментальная. </b></span>Это длинный ИД документа.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### breakpointResolved
-Происходит, когда точка останова разрешена к фактическому сценарию и расположению.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>breakpointId</td>
-            <td><a href="#breakpointid"><code class="flyout">BreakpointId</code></a></td>
-            <td>Уникальный идентификатор точки останова.</td>
-        </tr>
-        <tr>
-            <td>location</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Фактическое расположение точки останова.</td>
-        </tr>
-        <tr>
-            <td>msLength <br/> <i>необязательные</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span><b>Экспериментальная. </b></span>Майкрософт: длина кода (то есть количество символов) в расположении точки останова.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### пауза
-Происходит, когда отладки разрывают точку останова или исключение.
-
-<table>
-    <thead>
-        <tr>
-            <th>Параметры</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrames</td>
-            <td><a href="#callframe"><code class="flyout">CallFrame[]</code></a></td>
-            <td>Вызовите стек, на который остановлен отладок.</td>
-        </tr>
-        <tr>
-            <td>reason</td>
-            <td><code class="flyout">string</code> <br/> <i>Допустимые значения: точка останова, шаг, исключение, другое</i></td>
-            <td>Причина приостановки.</td>
-        </tr>
-        <tr>
-            <td>data <br/> <i>необязательные</i></td>
-            <td><code class="flyout">object</code></td>
-            <td>Объект, содержащий вспомогательные свойства для конкретного разрыва.</td>
-        </tr>
-        <tr>
-            <td>hitBreakpoints <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string[]</code></td>
-            <td>ИД точек останова</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### возобновлено
-Собяно, когда отладка возобновляет выполнение.
-
-
----
-
-## Типы
-
-### <a name="breakpointid"></a> BreakpointId `string`
-
-Идентификатор точки останова.
-
-
----
-
-### <a name="callframeid"></a> CallFrameId `string`
-
-Идентификатор кадра вызова.
-
-
----
-
-### <a name="location"></a> Location `object`
-
-Расположение в коде источника.
-
-<table>
-    <thead>
-        <tr>
-            <th>Свойства</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptId</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Идентификатор скрипта, как по данным в <code>Debugger.scriptParsed</code> .</td>
-        </tr>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Номер строки в сценарии (на основе 0).</td>
-        </tr>
-        <tr>
-            <td>columnNumber <br/> <i>необязательные</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Номер столбца в сценарии (на основе 0).</td>
-        </tr>
-        <tr>
-            <td>msLength</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Майкрософт: длина кода (то есть количество символов) в этом фрейме вызова.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="breaklocation"></a> BreakLocation `object`
-
-Место приорвать в исходный код.
-
-<table>
-    <thead>
-        <tr>
-            <th>Свойства</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>scriptId</td>
-            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
-            <td>Идентификатор сценария, как сообщается в <code>Debugger.scriptParsed</code> .</td>
-        </tr>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Номер строки в сценарии (на основе 0).</td>
-        </tr>
-        <tr>
-            <td>columnNumber <br/> <i>необязательные</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Номер столбца в сценарии (на основе 0).</td>
-        </tr>
-        <tr>
-            <td>msLength</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Майкрософт: длина кода (то есть количество символов) в этом фрейме вызова.</td>
-        </tr>
-        <tr>
-            <td>Тип <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Допустимые значения: debuggerStatement, call, return.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="callframe"></a> CallFrame `object`
-
-Фрейм вызова JavaScript. Массив кадров вызовов формирует стек вызовов.
-
-<table>
-    <thead>
-        <tr>
-            <th>Свойства</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>callFrameId</td>
-            <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Идентификатор кадра вызова. Этот идентификатор действителен, только когда отладка приостановлена.</td>
-        </tr>
-        <tr>
-            <td>functionName</td>
-            <td><code class="flyout">string</code></td>
-            <td>Имя функции JavaScript, вызываемой в этом фрейме вызова.</td>
-        </tr>
-        <tr>
-            <td>functionLocation <br/> <i>необязательные</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td><span><b>Экспериментальная. </b></span>Расположение в коде источника.</td>
-        </tr>
-        <tr>
-            <td>location</td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Расположение в коде источника.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>Имя или URL-адрес сценария JavaScript.</td>
-        </tr>
-        <tr>
-            <td>scopeChain</td>
-            <td><a href="#scope"><code class="flyout">Scope[]</code></a></td>
-            <td>Цепочка областей для этого кадра вызова.</td>
-        </tr>
-        <tr>
-            <td>это</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td><code>this</code> объект для этого кадра вызова.</td>
-        </tr>
-        <tr>
-            <td>returnValue <br/> <i>необязательные</i></td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Возвращаемая величина, если функция находится в точке возврата.</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="scope"></a> Область применения `object`
-
-Описание области.
-
-<table>
-    <thead>
-        <tr>
-            <th>Свойства</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Тип</td>
-            <td><code class="flyout">string</code> <br/> <i>Допустимые значения: global, local, with, closure, catch, block, script, eval, module</i></td>
-            <td>Тип области.</td>
-        </tr>
-        <tr>
-            <td>объект</td>
-            <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
-            <td>Объект, представляющий область. Для и областей он представляет фактический объект; для остальных областей он является искусственным временным объектом, который передает переменные области в качестве <code>global</code> <code>with</code> своих свойств.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>необязательные</i></td>
-            <td><code class="flyout">string</code></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>startLocation <br/> <i>необязательные</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Расположение в исходный код, где начинается область</td>
-        </tr>
-        <tr>
-            <td>endLocation <br/> <i>необязательные</i></td>
-            <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Расположение в коде источника, где заканчивается область</td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## Зависимости
-
-[Время выполнения](runtime.md)
+Домен Debugger предоставляет возможности отладки JavaScript.  Он позволяет устанавливать и удалять точки разрывов, проходить выполнение, изучать следы стека и т. д.
+
+| Категория | Участники |  
+|:--- |:--- |  
+| [Методы](#methods) | [включить](#enable), отключить [,](#disable) [getPossibleBreakpoints](#getpossiblebreakpoints), [](#resume) [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), setBreakpoint , [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [](#setbreakpoint) [пауза](#pause), резюме , [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [оценкаOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |  
+| [Мероприятия](#events) | [scriptParsed,](#scriptparsed) [breakpointResolved,](#breakpointresolved) [paused](#paused), [resumed](#resumed) |  
+| [Типы](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Расположение](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Область](#scope) |  
+| [Зависимости](#dependencies) | [Время выполнения](./runtime.md) |  
+
+## <a name="methods"></a>Методы  
+
+### <a name="enable"></a>"Включить"  
+
+Включает отладка для данной страницы.  Клиенты не должны предполагать, что отладка включена до тех пор, пока не будет получен результат для этой команды.  
+
+&nbsp;  
+
+---  
+
+### <a name="disable"></a>"Отключить"   
+
+Отладка отладки для данной страницы.  
+
+&nbsp;  
+
+---  
+
+### <a name="getpossiblebreakpoints"></a>getPossibleBreakpoints  
+
+Возвращает возможные расположения для breakpoint.  ScriptId в расположениях старта и конца диапазона должен быть одинаковым.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| start | [Расположение](#location) | Начало диапазона для поиска возможных точек разрыва. |  
+| завершить | [Расположение](#location) | Конец диапазона для поиска возможных точек разрыва в \(excluding\).  Если не указано, конец скриптов используется как конец диапазона. |  
+
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| расположения | [BreakLocation](#breaklocation) | Список возможных местоположений точки разрыва. |  
+
+---  
+
+### <a name="setbreakpointsactive"></a>setBreakpointsActive  
+
+Активирует или отключает все точки взлома на странице.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| active | `boolean` | Новое значение для активного состояния точек breakpoints. |  
+
+---  
+
+### <a name="setbreakpointbyurl"></a>setBreakpointByUrl  
+
+Задает точку разрыва JavaScript в указанном расположении, указанном URL-адресом или URL-адресом regex.  После того как эта команда будет выдана, все существующие разбиенные сценарии будут иметь точки разрывов, разрешенные и возвращенные в `locations` свойстве.  Дальнейшее соответствие размыву сценариев приведет к последующим `breakpointResolved` событиям, выданным.  Этот логический точкой разрыва будет пережить перезагрузки страниц.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| lineNumber | `integer` | Номер строки для набора точки разрыва. |  
+| URL\(необязательный\) | `string` | URL-адрес ресурсов, на которые необходимо установить точку разрыва. |  
+| urlRegex \(необязательный\) | `string` | Шаблон Regex для URL-адресов ресурсов для набора точек остановок.  Либо `url` необходимо `urlRegex` укаварить. |  
+| columnNumber \(необязательный\) | `integer` | Смещение в строке для набора точки разрыва. |  
+| условие \(необязательный\) | `string` | Выражение для использования в качестве условия breakpoint.  Если указано, отладка остановится только на точке разрыва, если это выражение будет оцениваться до true. |  
+
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | ID созданной точки breakpoint для дальнейшей ссылки. |  
+| расположения | [Расположение[]](#location) | Список местоположений, в которые эта точка взлома была разрешена после добавления. |  
+
+---  
+
+### <a name="setbreakpoint"></a>setBreakpoint  
+
+Задает точку разрыва JavaScript в заданное расположение.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| расположение | [Расположение](#location) | Расположение для набора точки разрыва. |  
+| условие \(необязательный\) | `string` | Выражение для использования в качестве условия breakpoint.  Если указано, отладка остановится только на точке разрыва, если это выражение будет оцениваться до true. |  
+
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | ID созданной точки breakpoint для дальнейшей ссылки. |  
+| actualLocation | [Расположение](#location) | Расположение этой точки разрыва. |  
+
+---  
+
+### <a name="removebreakpoint"></a>removeBreakpoint  
+
+Удаляет точку разрыва JavaScript.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | &nbsp; |  
+
+---  
+
+### <a name="stepover"></a>stepOver  
+
+Шаги по заявлению.  
+
+&nbsp;  
+
+---  
+
+### <a name="stepinto"></a>stepInto  
+
+Шаги в вызов функции.  
+
+&nbsp;  
+
+---  
+
+### <a name="stepout"></a>stepOut  
+
+Выход из вызова функции.  
+
+&nbsp;  
+
+---  
+
+### <a name="pause"></a>pause  
+
+Остановится в следующем заявлении JavaScript.  
+
+&nbsp;  
+
+---  
+
+### <a name="resume"></a>resume  
+
+Возобновляет выполнение JavaScript.  
+
+&nbsp;  
+
+---  
+
+### <a name="getscriptsource"></a>getScriptSource  
+
+Возвращает источник для скрипта с заданным ID.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | ID скрипта для получения источника. |  
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| scriptSource | `string` | Источник скрипта. |  
+
+---  
+
+### <a name="setpauseonexceptions"></a>setPauseOnExceptions  
+
+Определяет приостановка состояния исключений.  Можно запланить остановку на всех исключениях, необученных исключениях или без исключений.  Начальная пауза для состояния исключений `none` .  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| состояние | `string` | Пауза в режиме исключений.  Допустимые значения:  `none` `uncaught` и `all` |  
+
+---  
+
+### <a name="evaluateoncallframe"></a>evaluateOnCallFrame  
+
+Оценивает выражение в заданной рамке вызовов.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| callFrameId | [CallFrameId](#callframeid) | Идентификатор кадра вызовов для оценки. |  
+| выражение | `string` | Выражение для оценки. |  
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| результат | [Runtime.RemoteObject](./runtime.md#remoteobject) | Объектная оболочка для результата оценки. |  
+
+---  
+
+### <a name="setvariablevalue"></a>setVariableValue  
+
+Изменяет значение переменной в callframe.  Объектные области не поддерживаются и должны мутироваться вручную.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| scopeNumber | `integer` | 0-базирующееся число области, как было перечислены в цепочке области.  Разрешены только `local` `closure` типы области и `catch` области.  Другими областьми можно управлять вручную. |  
+| variableName | `string` | Переменное имя. |  
+| newValue | [Runtime.CallArgument](./runtime.md#callargument) | Новое переменная значение. |  
+| callFrameId | [CallFrameId](#callframeid) | ID callframe, который содержит переменную. |  
+
+---  
+
+### <a name="setblackboxpatterns"></a>setBlackboxPatterns  
+
+**Экспериментальные**.  Замените предыдущие шаблоны черных ящиков на пройденные.  Заставляет отодвигаться, чтобы пропустить шаг/паузу в скриптах с URL-адресом, совпадающий с одним из шаблонов.  Отладка будет пытаться оставить черный ящик скрипт, выполняя несколько `step in` раз, наконец, прибегая `step out` к, если неудачно.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| шаблоны | `string[]` | Массив regexps, который будет использоваться для проверки URL-адреса скрипта для состояния blackbox. |  
+
+---  
+
+### <a name="mssetdebuggerpropertyvalue"></a>msSetDebuggerPropertyValue  
+
+**Экспериментальные**.  Microsoft. Задает указанное свойство отладки указанному значению.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| debuggerPropertyId | `string` | Microsoft. ID свойства \(например, msDebuggerPropertyId\) для набора. |  
+| newValue | `string` | &nbsp; |  
+
+---  
+
+## <a name="events"></a>Мероприятия  
+
+### <a name="scriptparsed"></a>scriptParsed  
+
+Уволено при размыве сценария.  Это событие также будет уволено для всех известных и неиспользванных скриптов при включив отладку.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Идентификатор размыкаемого скрипта. |  
+| url | `string` | URL-адрес или имя разбияемого скрипта \(если таково\). |  
+| startLine | `integer` | Строка смещения скрипта в ресурсе с заданным URL-адресом \(для тегов скрипта\). |  
+| startColumn | `integer` | Столбец смещения скрипта в ресурсе с заданным URL-адресом. |  
+| endLine | `integer` | Последняя строка сценария. |  
+| endColumn | `integer` | Длина последней строки сценария. |  
+| executionContextId | [Runtime.ExecutionContextId](./runtime.md#executioncontextid) | Указывает контекст создания скрипта. |  
+| sourceMapURL \(необязательный\) | `string` | URL-адрес исходных карт, связанных со сценарием (если таково). |  
+| длина \(необязательный\) | `integer` | **Экспериментальные**.  Длина скрипта. |  
+| msParentId \(необязательный\) | `string` | **Экспериментальные**.  Это родительский документ. |  
+| msMimeType \(необязательный\) | `string` | **Экспериментальные**.  Это тип mime. |  
+| msIsDynamicCode \(необязательный\) | `boolean` | **Экспериментальные**.  Это указывает, является ли это динамический код. |  
+| msLongDocumentId \(необязательный\) | `integer` | **Экспериментальные**.  Это длинный документ. |  
+
+---  
+
+### <a name="breakpointresolved"></a>breakpointResolved  
+
+В случае, если точка разрыва будет разрешена к фактическому сценарию и расположению.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| breakpointId | [BreakpointId](#breakpointid) | Уникальный идентификатор Breakpoint. |  
+| расположение | [Расположение](#location) | Фактическое расположение точки разрыва. |  
+| msLength \(необязательный\) | `integer` | **Экспериментальные**.  Microsoft. Длина кода \(то есть количество символов\) в расположении точки разрыва. |  
+
+---  
+
+### <a name="paused"></a>пауза  
+
+Уволено, когда отладки ломаются для точки разлома или исключения.  
+
+| Параметры | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| callFrames | [CallFrame[]](#callframe) | Вызов стек отладки остановился. |  
+| причина | `string` | Причина паузы.  Допустимые значения:  `breakpoint` `step` , `exception` и `other` |  
+| данные \(необязательный\) | `object` | Объект, содержащий отдельные вспомогательные свойства. |  
+| hitBreakpoints \(необязательный\) | `string[]` | Hit breakpoints IDs |  
+
+---  
+
+### <a name="resumed"></a>возобновлено  
+
+Уволили, когда отладка возобновляет выполнение.  
+
+&nbsp;  
+
+---  
+
+## <a name="types"></a>Типы  
+
+### <a name="breakpointid-string"></a>Строка BreakpointId  
+
+<a name="breakpointid"></a>  
+
+Идентификатор Breakpoint.  
+
+&nbsp;  
+
+---  
+
+### <a name="callframeid-string"></a>Строка CallFrameId  
+
+<a name="callframeid"></a>  
+
+Идентификатор кадра вызова.  
+
+&nbsp;  
+
+---  
+
+### <a name="location-object"></a>Объект Location  
+
+<a name="location"></a>  
+
+Расположение в исходный код.  
+
+| Свойства | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Идентификатор скрипта, как сообщалось в `Debugger.scriptParsed` . |  
+| lineNumber | `integer` | Номер строки в скрипте \(0-based\). |  
+| columnNumber \(необязательный\) | `integer` | Номер столбца в скрипте \(0-based\). |  
+| msLength | `integer` | Microsoft. Длина кода \(то есть количество символов\) в этом кадре вызовов. |  
+
+---  
+
+### <a name="breaklocation-object"></a>Объект BreakLocation  
+
+<a name="breaklocation"></a>  
+
+Разорвать расположение в исходный код.  
+
+| Свойства | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Идентификатор скрипта, как сообщалось в `Debugger.scriptParsed` . |  
+| lineNumber | `integer` | Номер строки в скрипте \(0-based\). |  
+| columnNumber \(необязательный\) | `integer` | Номер столбца в скрипте \(0-based\). |  
+| msLength | `integer` | Microsoft. Длина кода \(то есть количество символов\) в этом кадре вызовов. |  
+| тип \(необязательный\) | `string` | Допустимые значения:  `debuggerStatement` `call` и `return` |  
+
+---  
+
+### <a name="callframe-object"></a>Объект CallFrame  
+
+<a name="callframe"></a>  
+
+Кадр вызова JavaScript.  Массив кадров вызовов формирует стек вызовов.  
+
+| Свойства | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| callFrameId | [CallFrameId](#callframeid) | Идентификатор кадра вызова.  Этот идентификатор действителен только во время паузы отладки. |  
+| functionName | `string` | Имя функции JavaScript, вызываемой в этом кадре вызовов. |  
+| functionLocation \(необязательный\) | [Расположение](#location) | **Экспериментальные**.  Расположение в исходный код. |  
+| расположение | [Расположение](#location) | Расположение в исходный код. |  
+| url | `string` | Имя сценария JavaScript или URL-адрес. |  
+| scopeChain | [Область[]](#scope) | Цепочка области для этого кадра вызовов. |  
+| это | [Runtime.RemoteObject](./runtime.md#remoteobject) | `this` объект для этого кадра вызовов. |  
+| returnValue \(необязательный\) | [Runtime.RemoteObject](./runtime.md#remoteobject) | Возвращаемая величина, если функция находится в точке возврата. |  
+
+---  
+
+### <a name="scope-object"></a>Объект Scope  
+
+<a name="scope"></a>  
+
+Описание области.  
+
+| Свойства | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| Тип | `string` | Тип области.  Допустимые значения: `global` , , , , , , `local` `with` `closure` `catch` `block` `script` и `eval` `module` |  
+| объект | [Runtime.RemoteObject](./runtime.md#remoteobject) | Объект, представляющий область.  Для и областей он представляет фактический объект; для остальных областей это искусственный переходный объект, который в качестве свойств передает переменные `global` `with` области. |  
+| имя \(необязательный\) | `string` | &nbsp; |  
+| startLocation \(необязательный\) | [Расположение](#location) | Расположение в исходный код, где начинается область. |  
+| endLocation \(необязательный\) | [Расположение](#location) | Расположение в исходный код, где область заканчивается. |  
+
+---  
+
+## <a name="dependencies"></a>Зависимости  
+
+[Время выполнения](./runtime.md)  

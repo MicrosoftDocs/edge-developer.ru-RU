@@ -1,69 +1,70 @@
 ---
-title: Изменение языковых параметров DevTools
+description: Изменение параметров языка DevTools.
+title: Изменение параметров языка DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, локализация, loc, язык
-ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+keywords: microsoft edge, веб-разработка, средства f12, devtools, локализация, лок, язык
+ms.openlocfilehash: 14975c8b1807565eb45c38cbc9e6a6049171bb95
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882725"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398994"
 ---
-# Изменение языковых параметров DevTools  
+# <a name="change-devtools-language-settings"></a>Изменение параметров языка DevTools  
 
-Ваши средства разработчика соответствуют языку браузера по умолчанию, если это один из десяти языков, которые в настоящее время поддерживаются (в дополнение к английскому).  
+Инструменты разработчика по умолчанию совпадают с языком браузера, если он является одним из десяти поддерживаемых в настоящее время языков \(в дополнение к английскому\).  
 
 :::row:::
    :::column span="":::
-      Китайский (упрощенное письмо) —  &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;  
+      Китайский \(Упрощенный\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;  
    :::column-end:::
    :::column span="":::
-      Китайский (традиционное письмо) —  &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Французский — Fran&#231;AIS  
-   :::column-end:::
-   :::column span="":::
-      Немецкий — Deutsch  
+      Китайский \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Итальянский — Italiano  
+      Французский —&#231;ais  
    :::column-end:::
    :::column span="":::
-      Японская  &#26085;&#26412;&#35486;  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Корейский —  &#54620;&#44397;&#50612;  
-   :::column-end:::
-   :::column span="":::
-      Португальский (portugu&#234;s)  
+      Немецкий - deutsch  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Русский —  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;  
+      Итальянский - italiano  
    :::column-end:::
    :::column span="":::
-      Испанская — ESPA&#241;OL  
+      Японский - &#26085;&#26412;&#35486;  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Корейский - &#54620;&#44397;&#50612;  
+   :::column-end:::
+   :::column span="":::
+      Португальский — portugu&#234;s  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Русский  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;  
+   :::column-end:::
+   :::column span="":::
+      Испанский язык — espa&#241;ol  
    :::column-end:::
 :::row-end:::  
 
-:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools на японском языке" lightbox="./media/localization-jp.png":::
+:::image type="complex" source="../media/localization-jp.msft.png" alt-text="DevTools на японском языке" lightbox="../media/localization-jp.msft.png":::
    DevTools на японском языке  
 :::image-end:::  
 
-Если вы хотите вернуться к DevTools на английский, перейдите в [Параметры DevTools][DevtoolschromiumCustomizeIndexSettings] или нажмите кнопку `F1`  >  **Параметры** и снимите флажок **учитывать язык браузера** .  
+Если вы хотите вернуться к языку DevTools, перейдите в [Параметры DevTools][DevtoolsCustomizeIndexSettings] или выберите, выберите Параметры и отключите языковой почтовый ящик `F1` **браузера Match.** ****  
 
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Параметры: Настройка Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Параметры — настройка средств разработчика Microsoft Edge | Документация Майкрософт"  

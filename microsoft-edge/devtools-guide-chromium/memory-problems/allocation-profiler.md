@@ -1,18 +1,18 @@
 ---
-description: Используйте инструментарий выделения на временной шкале, чтобы найти объекты, которые не собираются должным образом и продолжают хранить память.
-title: Как использовать инструментарий выделения на временной шкале
+description: Используйте приборы Распределения на временной шкале, чтобы найти объекты, которые не собираются должным образом, и сохраните память.
+title: Использование инструментов распределения в Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230917"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397820"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,80 +28,80 @@ ms.locfileid: "11230917"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Как использовать инструментарий выделения на временной шкале  
+# <a name="how-to-use-allocation-instrumentation-on-timeline"></a>Использование инструментов распределения в Timeline  
 
-Используйте **инструментарий выделения на временной** шкале, чтобы найти объекты, которые не собираются должным образом и продолжают хранить память.  
+Используйте **приборы Распределения на временной шкале,** чтобы найти объекты, которые не собираются должным образом, и сохраните память.  
 
-## Как работает инструментарий выделения на временной шкале  
+## <a name="how-allocation-instrumentation-on-timeline-works"></a>Работа приборов распределения на временной шкале  
 
-**Инструментарий выделения на** временной шкале **** объединяет подробные моментальные снимки профиля кучи с добавальным обновлением и отслеживанием панели **производительности.**  Аналогичным образом, отслеживание выделения кучи для объектов включает запуск записи, выполнение последовательности действий и остановку записи для анализа.  
+**Инструментирование распределения на временной шкале** **** объединяет подробные сведения об снимках профиля кучи с дополнительным обновлением и отслеживанием панели **Performance.**  Точно так же отслеживание выделения кучи для объектов включает запуск записи, выполнение последовательности действий и остановку записи для анализа.  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-**Инструментарий выделения** на временной шкале периодически делает моментальные снимки кучи на протяжении записи \(так часто, как каждые 50 мс\) и один окончательный снимок в конце записи.  
+**Инструментирование распределения** на временной шкале периодически делает снимки кучи на протяжении записи \(так часто, как каждые 50 мс\) и один последний снимок в конце записи.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Инструментарий выделения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **Инструментарий выделения на временной шкале**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Инструментарий распределения на временной шкале" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Инструментарий распределения на временной шкале**  
 :::image-end:::  
 
 > [!NOTE]
-> Число после этого — это ИД объекта, который сохраняется в нескольких снимках, сделанных `@` во время сеанса записи.  Постоянный ИД объекта обеспечивает точное сравнение между состояниями кучи.  Объекты перемещаются во время сборки мусора, поэтому отображать адрес объекта не имеет смысла.  
+> Номер после объекта — это объектный ID, который сохраняется на нескольких снимках, сделанных `@` во время сеанса записи.  Стойкий ID объекта позволяет точно сравнивать состояния кучи.  Объекты перемещаются во время сборов мусора, поэтому отображение адреса объекта не имеет смысла.  
 
-## Включить инструментарий выделения на временной шкале  
+## <a name="enable-allocation-instrumentation-on-timeline"></a>Включить инструментарий распределения на временной шкале  
 
-Выполните следующие действия, чтобы начать использовать **инструментарий выделения на временной шкале.**  
+Выполните следующие действия, чтобы приступить к использованию **инструментов распределения на временной шкале.**  
 
-1.  [Откройте DevTools.][DevtoolsOpenIndex]  
-1.  Откройте панель **"Память"** и выберите **инструментарий выделения на временной шкале.**  
+1.  [Откройте DevTools][DevtoolsOpenIndex].  
+1.  Откройте панель **памяти,** выберите приборы Распределения на **кнопке радиохронологии.**  
 1.  Start recording.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Запись профиля выделения кучи" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Запись профиля выделения кучи  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Профайл распределения записи кучи" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Профайл распределения записи кучи  
     :::image-end:::  
     
-## Чтение временной шкалы выделения кучи  
+## <a name="read-a-heap-allocation-timeline"></a>Чтение временной шкалы выделения кучи  
 
-Временная шкала выделения кучи показывает, где создаются объекты, и определяет путь сохранения.  На следующем рисунке полосы в верхней части указывают, когда новые объекты находятся в куче.  
+В временной шкале распределения кучи показано, где создаются объекты, и определяет путь сохранения.  На следующем рисунке в верхней части полосы указывают, когда в куче находятся новые объекты.  
 
-Высота каждой панели соответствует размеру недавно выделенных объектов, а цвет полос указывает, находятся ли эти объекты в окончательном снимке кучи.  Синие полосы указывают объекты, которые по-прежнему находятся в конце временной шкалы, серые — объекты, выделенные на временной шкале, но с тех пор собранные мусора.  
+Высота каждой панели соответствует размеру недавно выделенных объектов, а цвет баров указывает, живут ли эти объекты в окончательном снимке кучи.  Синие полосы указывают объекты, которые по-прежнему живут в конце временной шкалы, серые — объекты, выделенные во время временной шкалы, но с тех пор собранные.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Инструментарий выделения на моментальный снимок временной шкалы" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **Инструментарий выделения на моментальный снимок временной шкалы**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Инструментирование распределения на моментальный снимок временной шкалы" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **Инструментирование распределения на моментальный снимок временной шкалы**  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
-<!--todo: redo figure 4 with multiple click actions  -->  
+<!--todo: redo figure 4 with multiple choose actions  -->  
 
-Ползунки на временной шкале выше можно использовать для масштабирования определенного снимка и просмотра объектов, которые были недавно выделены на этом этапе:  
+Вы можете использовать ползунки в временной шкале выше, чтобы увеличить этот снимок и просмотреть объекты, которые были недавно выделены в этот момент:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Масштабирование моментального снимка" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   Масштабирование моментального снимка  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Масштабирование снимка" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Масштабирование снимка  
 :::image-end:::  
 
-Щелчок определенного объекта в куче показывает дерево сохранения в нижней части снимка кучи.  При проверке пути сохранения к объекту должно быть достаточно сведений, чтобы понять, почему объект не был собран, и необходимо внести необходимые изменения в код, чтобы удалить ненужные ссылки.  
+Выбор на определенном объекте в куче показывает дерево сохранения в нижней части снимка кучи.  Изучение пути сохранения объекта должно дать вам достаточно информации, чтобы понять, почему объект не был собран, и необходимо внести необходимые изменения в код, чтобы удалить ненужные ссылки.  
 
-## Просмотр выделения памяти по функции  
+## <a name="view-memory-allocation-by-function"></a>Просмотр распределения памяти по функции  
 
-Вы можете просматривать выделение памяти с помощью функции JavaScript.  Для получения дополнительных сведений перейдите к [изучить выделение памяти по функции.][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]  
+Вы можете просматривать распределение памяти с помощью функции JavaScript.  Дополнительные сведения перейдите к расследованию [распределения памяти по функции][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevToolsOpenIndex]: ../open/index.md "Откройте Microsoft Edge (Chromium) DevTools | Документы Майкрософт"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Исследование выделения памяти по функции — устранение проблем с памятью | Документы Майкрософт"  
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Исследование распределения памяти по функции — исправление проблем с памятью | Документы Майкрософт"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Скачивание канала Microsoft Edge"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Скачайте канал Microsoft Edge"  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) и автором [meggin Kearney][MegginKearney] \(Technical Writer\).  
+> Оригинальная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) и является автором [Meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

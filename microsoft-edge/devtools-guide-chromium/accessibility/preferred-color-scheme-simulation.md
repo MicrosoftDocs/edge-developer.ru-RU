@@ -1,51 +1,51 @@
 ---
-Description: Принудительное принудительное переналадка Microsoft Edge DevTools в режим просмотра цветовой схемы.
-title: Принудительное принудительное перенаполнитель microsoft Edge DevTools в режим просмотра цветовой схемы (CSS предпочитает цветовую схему)
+description: Привяжь Microsoft Edge DevTools в режим предварительного просмотра цветовой схемы.
+title: Force Microsoft Edge DevTools в режиме предварительного просмотра цветовой схемы (CSS предпочитает цветовую схему)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 29b0121a616a037fa11b61799efeffd201eb1821
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 84f482605acd6edab6829e00d5fa31f927ebc032
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230798"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398303"
 ---
-# Моделирование темной или светлой цветовой схемы  
+# <a name="dark-or-light-color-scheme-simulation"></a>Моделирование темной или светлой цветовой схемы  
 
-Операционные системы могут отображать любые приложения в более темных или светлых цветах.  Наличие веб-продукта с светлой темой в операционной системе в темном режиме очень важно и может быть проблемой с доступностью для некоторых пользователей.  В Интернете можно использовать запрос мультимедиа CSS [prefers-color-scheme,][MDNPrefersColorScheme] чтобы определить, предпочитают ли пользователи видеть ваш продукт в схеме темной или светлой цветовой схемы.  Используйте [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] для имитации изменения режима темного на светлый без изменения всей операционной системы.  
+Операционные системы могут отображать любое приложение в более темных или более светлых цветах.  Наличие веб-продукта с легкой темой в операционной системе темного режима является натертым и может быть проблемой доступности для некоторых пользователей.  В Интернете можно использовать [][MDNPrefersColorScheme] запрос CSS Media Query с предпочитаемой цветовой схемой, чтобы определить, предпочитают ли пользователи отображать ваш продукт в более темной или светлой цветовой схеме.  Используйте [Microsoft Edge DevTools][DevtoolsIndex] для имитации изменения из темно-светлого режима без изменения всей операционной системы.  
 
-1.  Откройте меню **команд.**  
-    1.  Выберите `Control` + `Shift` + `P` в Windows, Linux или `Command` + `Shift` + `P` macOS.  
+1.  Откройте **командное меню.**  
+    1.  Выберите `Control` + `Shift` + `P` \(Windows/Linux\) `Command` + `Shift` + `P` или \(macOS\).  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Меню команд" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            Меню **команд**  
         :::image-end:::  
         
-1.  Type `emulate color` , choose either **Emulate CSS prefers-color-scheme: dark** or **Emulate CSS prefers-color-scheme: light** and then select `Enter` .  
+1.  Введите , выберите эмулировать `emulate color` **CSS предпочитает-цветовой схемы:** темные или эмулировать **CSS предпочитает-цветовой схемы:** свет, а затем выберите `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Параметр цветовой схемы из меню команд" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
-       Параметр цветовой схемы из **меню команд**  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Параметр цветовой схемы из Меню команды" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
+       Параметр цветовой схемы **из Меню** команды  
     :::image-end:::  
     
     > [!IMPORTANT]
-    > Просто введите или не раскрывают нужное средство, так как существует также способ выбрать тему `dark` `light` для [DevTools.][DevtoolsGuideChromiumCustomizeDarkTheme]  Если вы хотите узнать, что выбрать, убедитесь, что вы выбираете элемент меню визуализации, а не элемент меню **внешнего** вида. ****  
+    > Просто `dark` введите или не раскроет нужный инструмент, так как существует также способ выбрать тему `light` [для DevTools][DevtoolsCustomizeDarkTheme].  Если вам интересно, что выбрать, убедитесь, **** что вы выбираете элемент меню отрисовки, а не **элемент меню** внешнего вида.  
 
-1.  После выбора цветовой схемы перезагрузить текущий документ, чтобы увидеть имитированный режим.  
+1.  После выбора цветовой схемы обновите текущий документ, чтобы отобразить смоделированный режим.  
     
     :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Режим имитации освещения в Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
        Режим имитации освещения в Microsoft Edge DevTools  
     :::image-end:::  
     
-    Просматривайте и изменяйте CSS, как и любую другую веб-страницу.  Дополнительные сведения см. в теме ["Начало работы с просмотром и изменением CSS".][DevtoolsGuideChromiumCssIndex]  
+    Просмотр и изменение CSS, как и любой другой веб-страницы.  Дополнительные сведения, перейдите к [началу работы с просмотром и изменением CSS][DevtoolsCssIndex].  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../index.md "Средства разработчика Microsoft Edge (Chromium) | Документы Майкрософт"  
-[DevtoolsGuideChromiumCustomizeDarkTheme]: ../customize/dark-theme.md "Включить темную тему в Microsoft Edge DevTools | Документы Майкрософт"
-[DevtoolsGuideChromiumCssIndex]: ../css/index.md "Начало работы с просмотром и изменением CSS | Документы Майкрософт"  
+[DevtoolsIndex]: ../index.md "Средства разработки Microsoft Edge (Chromium) | Документы Майкрософт"  
+[DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Включить темную тему в Microsoft Edge DevTools | Документы Майкрософт"
+[DevtoolsCssIndex]: ../css/index.md "Начало работы с просмотром и изменением CSS-| Документы Майкрософт"  
 
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  

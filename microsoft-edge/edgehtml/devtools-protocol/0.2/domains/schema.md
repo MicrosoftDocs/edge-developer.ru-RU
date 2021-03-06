@@ -1,79 +1,51 @@
 ---
-description: Справочник по протоколу DevTools версии 0.2 (EdgeHTML) для домена схемы. Предоставляет сведения о схеме протокола.
-title: Домен схемы — протокол DevTools версии 0.2 (EdgeHTML)
+description: Ссылка на протокол DevTools Версии 0.2 (EdgeHTML) для домена Схемы. Предоставляет сведения о схеме протокола.
+title: Домен схемы — версия протокола DevTools 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 53038a02844fafc9550a6ac26303620a1a0183f8
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 6844939f452bc96980d6d67d4652adcc7c078c7a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235182"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398149"
 ---
-# Домен схемы — протокол DevTools версии 0.2 (EdgeHTML)  
+# <a name="schema-domain---devtools-protocol-version-02-edgehtml"></a>Домен схемы — версия протокола DevTools 0.2 (EdgeHTML)  
 
-Предоставляет сведения о схеме протокола.
+Предоставляет сведения о схеме протокола.  
 
-| | |
-|-|-|
-| [**Методы**](#methods) | [getDomains](#getdomains) |
-| [**Типы**](#types) | [Домен](#domain) |
-## Методы
+| Категория | Участники |  
+|:--- |:--- |  
+| [Методы](#methods) | [getDomains](#getdomains) |  
+| [Типы](#types) | [Объект Domain](#domain) |  
 
-### getDomains
-Возвращает поддерживаемые домены.
+## <a name="methods"></a>Методы  
 
-<table>
-    <thead>
-        <tr>
-            <th>Возвращает</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>домены</td>
-            <td><a href="#domain"><code class="flyout">Domain[]</code></a></td>
-            <td>Список поддерживаемых доменов.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getdomains"></a>getDomains  
 
----
+Возвращает поддерживаемые домены.  
 
-## Типы
+| Возвращает | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| домены | [Домен[]](#domain) | Список поддерживаемых доменов. |  
 
-### <a name="domain"></a> Домен `object`
+---  
 
-Описание домена протокола.
+## <a name="types"></a>Типы  
 
-<table>
-    <thead>
-        <tr>
-            <th>Свойства</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>Доменное имя.</td>
-        </tr>
-        <tr>
-            <td>version</td>
-            <td><code class="flyout">string</code></td>
-            <td>Версия домена.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domain-object"></a>Объект Domain  
 
----
+<a name="domain"></a>  
+
+Описание домена протокола.  
+
+| Свойства | Тип | Сведения |  
+|:--- |:--- |:--- |  
+| name | `string` | Доменное имя. |  
+| version | `string` | Версия домена. |  
+
+---  

@@ -1,18 +1,18 @@
 ---
-description: Сведения о том, как найти сетевые проблемы на панели "сеть" в Microsoft Edge DevTools.
+description: Узнайте, как обнаруживать сетевые проблемы в сетевой панели Microsoft Edge DevTools.
 title: Справочные материалы по неполадкам в сети
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 12cc447fa9d8ef8624e8528430eabc25ab523dd0
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125379"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398275"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,77 +28,77 @@ ms.locfileid: "11125379"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Справочные материалы по неполадкам в сети  
+# <a name="network-issues-guide"></a>Справочные материалы по неполадкам в сети  
 
-В этом руководстве показано, как определить сетевые проблемы или возможности оптимизации на панели "сеть" Microsoft Edge DevTools.  
+В этом руководстве показано, как выявлять сетевые проблемы или возможности оптимизации в сетевой панели Microsoft Edge DevTools.  
 
-Ознакомьтесь со [статьей][NetworkPerformance] "Начало работы", чтобы ознакомиться с основными понятиями панели " **сеть** ".  
+Чтобы узнать основы сетевого средства, перейдите к [сайту Get Started][NetworkPerformance]. ****  
 
-## Запросы, поставленные в очередь или остановленные  
+## <a name="queued-or-stalled-requests"></a>Очередные или отостановимые запросы  
 
 **Симптомы**  
 
-Шесть запросов загружаются одновременно.  После этого серии запросов будут помещены в очередь или остановлены.  После завершения одного из шести первых запросов запускается один из запросов в очереди.  
+Одновременно загружаются шесть запросов.  После этого ряд запросов выстроились в очередь или застопорились.  После завершения одного из первых шести запросов начинается один из запросов в очереди.  
 
-На **каскаде** на приведенном ниже рисунке первые шесть запросов `edge-iconx1024.msft.png` актива запускаются одновременно.  Последующие запросы загружаются до тех пор, пока не завершится один из этих шести первоначальных элементов.  
+В **водопаде** на следующем рисунке одновременно начинаются первые шесть запросов `edge-iconx1024.msft.png` на актив.  Последующие запросы отостановятся до завершения одного из шести исходных запросов.  
 
-:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Пример списка в очереди или остановленного ряда на панели &quot;сеть&quot;" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   Пример списка в очереди или остановленного ряда на панели " **сеть** "  
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Пример очереди или срыва ряда в панели Network" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+   Пример очереди или срыва ряда в **средстве Network**  
 :::image-end:::  
 
 **Причины**  
 
-Слишком много запросов выполняется в одном домене.  Для подключений HTTP/1.0 или HTTP/1.1 Microsoft Edge допускает не более шести одновременных подключений TCP на одном узле.  
+Слишком много запросов делается в одном домене.  В подключениях HTTP/1.0 или HTTP/1.1 Microsoft Edge разрешает не более шести одновременных подключений TCP на один хост.  
 
-**Исправления**  
+**Исправление**  
 
-*   Реализуйте сегментирование доменов, если необходимо использовать HTTP/1.0 или HTTP/1.1.  
-*   Используйте HTTP/2.  Не используйте сегментирование доменов с протоколом HTTP/2.  
-*   Удалите или отложите ненужные запросы, чтобы загрузить критические запросы.  
+*   Реализуем осколок домена, если необходимо использовать HTTP/1.0 или HTTP/1.1.  
+*   Используйте HTTP/2.  Не используйте осколок домена с помощью HTTP/2.  
+*   Удалите или отойте ненужные запросы, чтобы критические запросы загружались ранее.  
     
-## Медленное время до первого байта (TTFB)  
+## <a name="slow-time-to-first-byte-ttfb"></a>Медленное время для первого byte (TTFB)  
 
 **Симптомы**  
 
-Запрос тратит много времени на ожидание получения первого байта с сервера.  
+Запрос тратит много времени на ожидание получения первого byte с сервера.  
 
-На рисунке ниже показана длинная зеленая полоса в **каскаде** , указывающая на то, что запрос был выполнен в течение длительного времени.  Это было смоделировано с помощью профиля, ограничивающего скорость сети и добавляя задержку.  
+На следующем рисунке длинная зеленая **** планка водопада указывает на то, что запрос долго ждали.  Это было смоделированно с помощью профиля, чтобы ограничить скорость сети и добавить задержку.  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Пример списка в очереди или остановленного ряда на панели &quot;сеть&quot;" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
-   Пример запроса с медленным временем до получения первого байта  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Пример запроса с медленным временем до первого byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   Пример запроса с медленным временем до первого byte  
 :::image-end:::  
 
 **Причины**  
 
-*   Соединение между клиентом и сервером происходит медленно.  
-*   Скорость ответа сервера не отвечает.  Разведите сервер на локальный компьютер, чтобы определить, является ли это подключение или медленный сервер.  Если вы по-прежнему получаете очень много времени на первый байт \ (TTFB \) при доступе к локальному серверу, сервер работает медленно.  
+*   Подключение между клиентом и сервером медленно.  
+*   Сервер медленно реагирует.  Локализуй сервер, чтобы определить, медленно ли это подключение или сервер.  Если при доступе к локальному серверу вы все еще получаете медленное время для первого byte \(TTFB\), сервер медленно.  
     
-**Исправления**  
+**Исправление**  
 
-*   Если соединение медленное, разрешите размещение содержимого в сети CDN или изменение поставщиков услуг размещения.  
-*   Если сервер работает медленно, рассматривайте запросы к базе данных, реализуйте кэш или изменяйте конфигурацию сервера.  
+*   Если подключение медленное, рассмотрите возможность размещения контента на CDN или изменения поставщиков хостинга.  
+*   Если сервер медленный, следует оптимизировать запросы баз данных, реализовать кэш или изменить конфигурацию сервера.  
     
-## Медленная загрузка содержимого  
+## <a name="slow-content-download"></a>Медленная загрузка контента  
 
 **Симптомы**  
 
 Загрузка запроса занимает много времени.  
 
-На приведенном ниже рисунке показана длинная синяя полоса в **каскаде** рядом с форматом PNG, поэтому загрузка занимает много времени.  
+На следующем рисунке длинная синяя планка в **водопаде** рядом с png означает, что загрузка заняла много времени.  
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Пример списка в очереди или остановленного ряда на панели &quot;сеть&quot;" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
-   Пример запроса, загрузка которого занимает много времени  
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Пример запроса, который занимает много времени для скачивания" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   Пример запроса, который занимает много времени для скачивания  
 :::image-end:::  
 
 **Причины**  
 
-*   Соединение между клиентом и сервером происходит медленно.  
-*   Загружается много контента.  
+*   Подключение между клиентом и сервером медленно.  
+*   Загружается большое количество контента.  
     
-**Исправления**  
+**Исправление**  
 
-*   Возможно, вы размещаете содержимое в сети CDN или меняете поставщиков услуг размещения.  
-*   Уменьшите количество байтов, оптимизируя запросы.  
+*   Рассмотрите возможность размещения контента на CDN или изменения поставщиков хостинга.  
+*   Отправьте меньшее количество bytes путем оптимизации запросов.  
     
 <!--   ## Contribute knowledge  
 
@@ -108,7 +108,7 @@ Do you have a network issue that should be added to this guide?
 *   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -118,15 +118,15 @@ Do you have a network issue that should be added to this guide?
 
 <!-- links -->  
 
-[NetworkPerformance]: ./index.md "Проверка активности сети в Microsoft Edge DevTools | Документы Microsoft"  
+[NetworkPerformance]: ./index.md "Проверка сетевой активности в Microsoft Edge DevTools | Документы Майкрософт"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 
-[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "Новая ошибка — MicrosoftDocs/Edge-разработчик"  
+[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "Новая проблема — MicrosoftDocs/edge-developer"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница размещается [здесь](https://developers.google.com/web/tools/chrome-devtools/network/issues) и разрабатывается с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \) и [Джонатан-искаженного][JonathanGarbee] (эксперта Google Developer, для Web Technology).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/network/issues) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\) и [Джонатан Гарби][JonathanGarbee] \(Эксперт разработчика Google для веб-технологий\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

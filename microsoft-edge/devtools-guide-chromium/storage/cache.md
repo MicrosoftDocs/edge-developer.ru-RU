@@ -1,18 +1,18 @@
 ---
-description: Просмотр данных кэша с панели приложений Microsoft Edge DevTools.
+description: Просмотр данных кэша из панели приложений Microsoft Edge DevTools.
 title: Просмотр данных кэша с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 770001beb9b7eebd4dae76355a1f3e41a8021ecb
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 7e0523e3293bbdafa9c3575344714da708fffe62
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230805"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397540"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,21 +28,21 @@ ms.locfileid: "11230805"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Просмотр данных кэша с помощью Microsoft Edge DevTools  
+# <a name="view-cache-data-with-microsoft-edge-devtools"></a>Просмотр данных кэша с помощью Microsoft Edge DevTools  
 
 В этом руководстве показано, как использовать [Microsoft Edge DevTools][MicrosoftEdgeDevTools] для проверки [данных кэша.][MDNCache]  
 
-Если вы пытаетесь проверить [данные кэша HTTP,][MDNHTTPCaching] это руководство вам не нужно.  Найдите сведения в столбце **"Размер"** **сетевого журнала.**  Перейдите в [журнал сетевой активности.][DevtoolsNetworkLogActivity]  
+Если вы пытаетесь проверить [данные кэша HTTP,][MDNHTTPCaching] это не нужное руководство.  Сведения в столбце **Размер** сетевого журнала **.**  Перейдите к [сетевой активности журнала][DevtoolsNetworkLogActivity].  
 
-## Просмотр данных кэша  
+## <a name="view-cache-data"></a>Просмотр данных кэша  
 
-1.  Выберите **вкладку "Приложение",** чтобы открыть **панель** приложений.  Обычно **по** умолчанию открывается окно манифеста.  
+1.  Выберите **вкладку Application** для открытия панели **приложения.**  Обычно **области Манифеста** открываются по умолчанию.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Области Манифест" lightbox="../media/storage-application-manifest.msft.png":::
+       Области **Манифест**  
     :::image-end:::  
     
-1.  Раз развернуть раздел **"Хранилище кэша",** чтобы просмотреть доступные кэши.  
+1.  **Расширь раздел Хранилища кэша,** чтобы просмотреть доступные кэши.  
     
     :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Доступные кэши" lightbox="../media/storage-application-cache-storage.msft.png":::
        Доступные кэши  
@@ -54,65 +54,65 @@ ms.locfileid: "11230805"
        Просмотр содержимого кэша  
     :::image-end:::  
     
-1.  Выберите ресурс, чтобы просмотреть http-заготки в разделе под таблицей.  
+1.  Выберите ресурс для просмотра заглавных таблиц HTTP в разделе под таблицей.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Просмотр HTTP-загодеров ресурса" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
-       Просмотр HTTP-загодеров ресурса  
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Просмотр http-заглавных окей ресурса" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+       Просмотр http-заглавных окей ресурса  
     :::image-end:::  
     
-1.  Выберите **"Предварительный** просмотр", чтобы просмотреть содержимое ресурса.  
+1.  Выберите **Предварительный** просмотр, чтобы просмотреть содержимое ресурса.  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Просмотр содержимого ресурса" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
        Просмотр содержимого ресурса  
     :::image-end:::  
     
-## Обновление ресурса  
+## <a name="refresh-a-resource"></a>Обновление ресурса  
 
-1.  [Просмотр данных для кэша.](#view-cache-data)  
-1.  Выберите ресурс, который нужно обновить.  DevTools выделяет его, чтобы указать, что он выбран.  
+1.  [Просмотр данных для кэша](#view-cache-data).  
+1.  Выберите ресурс, который необходимо обновить.  DevTools выделяет его, чтобы указать, что он выбран.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Выбор ресурса для обновления" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Выбор ресурса для обновления  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Выберите ресурс для обновления" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Выберите ресурс для обновления  
     :::image-end:::  
     
-1.  Choose **Refresh** \( ![ Refresh ][ImageRefreshIcon] \).  
+1.  Выберите **обновление** \. ![ Обновление ][ImageRefreshIcon] \).  
     
-## Фильтрация ресурсов  
+## <a name="filter-resources"></a>Фильтрация ресурсов  
 
-1.  [Просмотр данных для кэша.](#view-cache-data)  
-1.  Используйте **текстовое поле "Фильтр** по пути", чтобы отфильтровать все ресурсы, которые не соответствуют предоставляемой вами пути.  
+1.  [Просмотр данных для кэша](#view-cache-data).  
+1.  Используйте **текстовое поле Filter by Path,** чтобы отфильтровать все ресурсы, которые не соответствуют пути, который вы предоставляете.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Фильтрация ресурсов, которые не соответствуют указанному пути" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
-       Фильтрация ресурсов, которые не соответствуют указанному пути  
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Фильтрация ресурсов, не совпадает с указанным путем" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+       Фильтрация ресурсов, не совпадает с указанным путем  
     :::image-end:::  
     
-## Удаление ресурса  
+## <a name="delete-a-resource"></a>Удаление ресурса  
 
-1.  [Просмотр данных для кэша.](#view-cache-data)  
-1.  Выберите ресурс, который нужно удалить.  DevTools выделяет его, чтобы указать, что он выбран.  
+1.  [Просмотр данных для кэша](#view-cache-data).  
+1.  Выберите ресурс, который необходимо удалить.  DevTools выделяет его, чтобы указать, что он выбран.  
     
     :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Выбор ресурса для удаления" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
        Выбор ресурса для удаления  
     :::image-end:::  
     
-1.  Choose **Delete Selected** \( ![ Delete Selected ][ImageDeleteIcon] \).  
+1.  Выберите **Удалить выбранный** \. ![ Удалить выбранный ][ImageDeleteIcon] \).  
     
-## Удаление всех данных кэша  
+## <a name="delete-all-cache-data"></a>Удаление всех данных кэша  
 
-1.  Откройте **приложение**  >  **"Очистить хранилище".**  
-1.  Убедитесь, что включен **контрольный** ящик хранилища кэша.  
+1.  Open **Application**  >  **Clear Storage**.  
+1.  Убедитесь, что включен **почтовый ящик хранения** кэша.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="The Cache Storage checkbox" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       The **Cache Storage checkbox**  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Почтовый ящик хранения кэша" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       Почтовый **ящик хранения кэша**  
     :::image-end:::  
     
-1.  Выберите **"Очистить данные сайта".**  
+1.  Выберите **четкие данные сайта**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Кнопка очистки данных сайта" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
-       Кнопка **очистки данных** сайта  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Кнопка Clear Site Data" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+       Кнопка **Clear Site Data**  
     :::image-end:::  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -123,15 +123,15 @@ ms.locfileid: "11230805"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Средства разработчика Microsoft Edge (Chromium) | Документы Майкрософт"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Запись сетевой активности | Документы Майкрософт"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Средства разработки Microsoft Edge (Chromium) | Документы Майкрософт"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Журнал сетевой активности | Документы Майкрософт"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Кэш | MDN"  
-[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "Кэшинг HTTP | MDN"  
+[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "Http кэш | MDN"  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/storage/cache) находится здесь и автором является [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/storage/cache) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

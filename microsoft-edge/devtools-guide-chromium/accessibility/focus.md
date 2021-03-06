@@ -1,18 +1,18 @@
 ---
-description: Открыть консоль, создать выражение в реальном времени и задать для него выражение Document. activeElement.
-title: Отслеживание, какой элемент имеет фокус
+description: Откройте консоль, создайте живое выражение и установите выражение document.activeElement.
+title: Отслеживание элемента с фокусом
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125309"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398317"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,31 +28,31 @@ ms.locfileid: "11125309"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Отслеживание, какой элемент имеет фокус  
+# <a name="track-which-element-has-focus"></a>Отслеживание элемента с фокусом  
 
-Предположим, что вы тестируете специальные возможности навигации с помощью клавиатуры для страницы.  При переходе по странице с помощью `Tab` клавиши иногда теряется фокус, так как элемент, на который установлен фокус, скрыт.  
+Предположим, что вы тестируете доступность навигации по клавиатуре страницы.  При навигации по странице с ключом кольцо фокуса иногда исчезает, так как элемент с `Tab` фокусом скрыт.  
 
-Чтобы отследить фокусируемый элемент в DevTools, выполните указанные ниже действия.  
+Выполните следующие действия для отслеживания сфокусированного элемента в DevTools.  
 
-1.  Открытие **консоли**.  
-1.  Выберите **создать выражение в реальном времени** \ ( ![ создать выражение в реальном времени ][ImageCreateIcon] ).  
+1.  Откройте **консоль.**  
+1.  Выберите **Создать живое выражение** \. ![ Создайте живое ][ImageCreateIcon] выражение \).  
     
-    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Создание выражения в реальном времени" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
-       Создание выражения в реальном времени  
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Создание live expression" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Создание live expression  
     :::image-end:::  
     
 1.  Введите `document.activeElement`.  
-1.  Щелкните за пределами пользовательского интерфейса **Live Expression** , чтобы сохранить его.  
+1.  Чтобы сохранить, выберите вне пользовательского интерфейса **Live Expression.**  
     
-Значение, которое вы видите ниже, `document.activeElement` является результатом выражения.  
+Показанное ниже `document.activeElement` значение является результатом выражения.  
 
-Так как это выражение всегда представляет фокусируемый элемент, вы можете всегда следить за тем, какой элемент находится в фокусе.  
+Так как это выражение всегда представляет собой сфокусированный элемент, теперь у вас есть способ всегда отслеживать, какой элемент имеет фокус.  
 
-*   Наведите указатель мыши на результат, чтобы выделиь фокусируемый элемент в окне просмотра.  
-*   Щелкните результат правой кнопкой мыши и выберите пункт **Показать на панели элементов** , чтобы отобразить элемент в дереве DOM на панели **элементы** .  
-*   Щелкните результат правой кнопкой мыши и выберите **Сохранить как глобальную переменную** , чтобы создать ссылку на переменную на узел, который вы можете использовать на **консоли**.  
+*   Наведите курсор на результат, чтобы выделить фокусный элемент в представлении.  
+*   Наведите курсор на результат, откройте контекстное меню \(правой кнопкой мыши\) и выберите панель **Reveal in Elements,** чтобы показать элемент дерева DOM на средстве **Elements.**  
+*   Наведите курсор на результат, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Store** в качестве глобальной переменной, чтобы создать переменную ссылку на узел, который можно использовать в **консоли.**  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -63,8 +63,8 @@ ms.locfileid: "11125309"
 <!-- links -->  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

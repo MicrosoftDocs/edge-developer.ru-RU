@@ -1,18 +1,18 @@
 ---
-description: Эмуляция концепции deficiencies, закрепление слева в меню команд и т. д.
-title: Новые возможности DevTools (Microsoft Edge 83)
+description: Подражать недостаткам цветового зрения, док-станции налево в командном меню и другие.
+title: Новые возможности в DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: f9eb306ab7b30495c91ff4a70797898459d7e722
-ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
+ms.openlocfilehash: 158d91e3d9c925beebe03a1baa8d6308b650262b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015484"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398947"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,321 +28,321 @@ ms.locfileid: "11015484"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Новые возможности DevTools (Microsoft Edge 83)  
+# <a name="whats-new-in-devtools-microsoft-edge-83"></a>Что нового в DevTools (Microsoft Edge 83)  
 
-Согласно обновленному календарному плану Chromium мы настраивая наше расписание для предстоящих выпусков Microsoft EDGE и отменив выпуск Microsoft Edge 82. Дополнительные сведения находятся в записи [блога][WindowsBlogStableRelease] .  
+В соответствии с обновленным расписанием хрома мы корректируем расписание предстоящих выпусков Microsoft Edge и отменяем выпуск Microsoft Edge 82. Дополнительные сведения можно [получить в][WindowsBlogStableRelease] нашем блоге.  
 
-Ниже описаны новые возможности, доступные в DevTools в Microsoft Edge 83.  
+Вот новые функции, доступные в DevTools в Microsoft Edge 83.  
 
-## Объявления из группы Microsoft Edge DevTools  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Объявления из команды Microsoft Edge DevTools  
 
-В следующих разделах представлен список извещений, которые вы могли не получить в Microsoft Edge DevTools Teams! Узнайте, как использовать новые функции в DevTools, расширения кода Visual Studio и многое другое.  Чтобы оставаться на связи с самыми последними и более свежими возможностями, скачайте на веб – [каналы предварительной версии Microsoft Edge][MicrosoftEdgePreviewChannels] и [следуйте указаниям Twitter][EdgeDevToolsTwitterAccount].  
+В следующих разделах приводится список объявлений, которые вы, возможно, пропустили из команды Microsoft Edge DevTools.  Ознакомьтесь с объявлениями, чтобы попробовать новые возможности в расширениях Кода DevTools, Microsoft Visual Studio и других.  Чтобы оставаться в курсе всех последних и самых больших функций в средствах разработчика, скачайте каналы предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] и следуйте за нами [в Twitter.][EdgeDevToolsTwitterAccount]  
 
-### Удаленная отладка Microsoft EDGE на устройствах с Windows 10  
+### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>Удаленное отлагивание Microsoft Edge на устройствах с Windows 10  
 
-Приложение [Remote Tools для Microsoft Edge \ (бета-версия)][RemoteTools] теперь доступно в [магазине Microsoft Store][MicrosoftStore].  С помощью этого приложения, которое расширяет [портал устройств Windows][WindowsUwpDebugTestPerfDevicePortal], вы можете подключаться из экземпляра Microsoft EDGE, запущенного на компьютере разработки, на удаленное устройство с Windows 10, просмотреть список конечных объектов \ (все вкладки в Microsoft EDGE и [PWAs][PprgressiveWebAppsChromiumIndex] открыть на устройстве с Windows 10 \) и использовать DevTools на своем компьютере для разработки по отношению к целевому объекту на удаленном устройстве с Windows 10.  
+Приложение [Remote Tools для Microsoft Edge \(Beta\)][RemoteTools] теперь доступно в Microsoft [Store.][MicrosoftStore]  С помощью этого приложения, которое расширяет портал устройств [Windows,][WindowsUwpDebugTestPerfDevicePortal]вы можете подключиться от экземпляра Microsoft Edge, запущенного на компьютере разработки, к удаленному устройству Windows 10, отобразить список целей \(все вкладки в Microsoft Edge и [PWAs][ProgressiveWebAppsChromiumIndex] открыты на устройстве Windows 10\), а также использовать DevTools на машине разработки против целевой задачи, запущенной на удаленном устройстве Windows 10.  
 
-:::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
-   Приложение [Remote Tools для Microsoft EDGE (бета-версия)][RemoteTools] , доступное в [Microsoft Store][MicrosoftStore]  
+:::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="Приложение Remote Tools for Microsoft Edge (Beta), доступное в Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
+   Приложение [Remote Tools for Microsoft Edge (Beta),][RemoteTools] доступное в Microsoft [Store][MicrosoftStore]  
 :::image-end:::  
 
-[Ознакомьтесь с руководством по настройке устройства с Windows 10 и компьютера для разработки удаленной отладки][DevtoolsRemoteDebuggingWindows].  Сообщите нам об удаленной отладке, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
+[Ознакомьтесь с нашим руководством по настройке устройства Windows 10][DevtoolsRemoteDebuggingWindows]и компьютера разработки для удаленной отладки.  Дайте нам знать о вашем опыте удаленной отладки, отправив в [twitter][PostTweetEdgeDevTools] или отправив значок [обратной связи!](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-### Новые способы доступа к параметрам  
+### <a name="new-ways-to-access-settings"></a>Новые способы доступа к Настройкам  
 
-Существует множество параметров для DevTools, которые можно настроить таким образом, чтобы DevTools внешний вид, оформление и работу. В Microsoft Edge 83 доступ к [параметрам][DevtoolsCustomizeIndexSettings] в DevTools теперь стал более простым. Откройте параметры с помощью значка шестеренки рядом с пунктом оповещения консоли и главное меню.  
+Есть тонны параметров для DevTools, которые вы можете настроить, чтобы сделать DevTools выглядеть, чувствовать и работать так, как вам нужно. В Microsoft Edge 83 доступ к [настройкам][DevtoolsCustomizeIndexSettings] в DevTools теперь намного проще.  Откройте параметры со значком передач рядом с оповещениями консоли и основным меню.  
 
-:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/settings.msft.png":::
-   Значок шестеренки, чтобы открыть **Параметры** в DevTools  
+:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="Значок передач открывает параметры в DevTools" lightbox="../../media/2020/03/settings.msft.png":::
+   Значок передач открывает **параметры** в DevTools  
 :::image-end:::  
 
-Вы также можете открыть [Параметры][DevtoolsCustomizeIndexSettings] из **главного меню** в разделе **Дополнительные инструменты**.
+Вы также можете открыть [параметры][DevtoolsCustomizeIndexSettings] из **основного** меню в **дополнительных средствах.**
 
-:::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/settings2.msft.png":::
-   **Главное меню**  >  **Дополнительные инструменты**  >  **Параметры**  
+:::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Главное меню > дополнительные средства > параметры" lightbox="../../media/2020/03/settings2.msft.png":::
+   **Главное меню**  >  **Дополнительные средства**  >  **Параметры**  
 :::image-end:::  
 
-[#1050855][CR1050855] проблем с Chromium
+Проблема Chromium [#1050855][CR1050855]
 
-### Новые и улучшенные infobars
+### <a name="new-and-improved-infobars"></a>Новые и улучшенные информационные панели
 
-В DevTools теперь есть улучшенные возможности, которые появятся на панелях уведомлений \ (infobars \) на информационной панели. В Microsoft Edge 83 infobars более удобны для чтения и предоставляют кнопки, чтобы можно было принять нужное действие прямо сейчас.  
+Информационные панели уведомлений \(infobars\) в DevTools теперь имеют улучшенный внешний вид и более функциональные возможности. В Microsoft Edge 83 информационные панели легче читать и предоставлять кнопки, чтобы можно было сразу принять соответствующие действия.  
 
-:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/infobar.msft.png":::
-   Информационная панель для печати файла minified в Microsoft Edge версии 83  
+:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Infobar для красивой печати добытого файла в Microsoft Edge 83" lightbox="../../media/2020/03/infobar.msft.png":::
+   Infobar для красивой печати добытого файла в Microsoft Edge Version 83  
 :::image-end:::  
 
-[#1056348][CR1056348] проблем с Chromium
+Проблема Chromium [#1056348][CR1056348]
 
-### Навигация в окне выбора цвета с помощью клавиатуры  
+### <a name="navigate-the-color-picker-with-your-keyboard"></a>Перейдите по выбору цвета с помощью клавиатуры  
 
-[Палитра цветов][DevtoolsCssReferenceColorPicker] — это графический интерфейс пользователя на [панели «элементы»][DevtoolsCssIndex] для изменения `color` и `background-color` объявлений.  В предыдущих версиях Microsoft Edge вы не смогли перемещаться по разделу " **тени** " в [палитре цветов][DevtoolsCssReferenceColorPicker] с помощью клавиатуры.  
+Выбор [цвета —][DevtoolsCssReferenceColorPicker] это GUI в панели [Elements][DevtoolsCssIndex] для изменений и `color` `background-color` объявлений.  В предыдущих версиях Microsoft Edge вы не могли перемещаться по разделу **Оттенки** выбора [цвета][DevtoolsCssReferenceColorPicker] с помощью клавиатуры.  
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/color-picker.msft.png":::
-   Теперь вы можете использовать клавиатуру для перемещения селектора в разделе " **тени** " [палитры цветов][DevtoolsCssReferenceColorPicker]  
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Теперь вы можете использовать клавиатуру для перемещения селектора в разделе Оттенки выбора цвета" lightbox="../../media/2020/03/color-picker.msft.png":::
+   Теперь вы можете использовать клавиатуру для перемещения селектора в разделе **Оттенки** выбора [цвета][DevtoolsCssReferenceColorPicker]  
 :::image-end:::  
 
-В Microsoft Edge 83 теперь можно использовать клавиатуру для перемещения селектора в разделе **тени** окна выбора цвета.  
+В Microsoft Edge 83 теперь можно использовать клавиатуру для перемещения селектора в разделе **Оттенки** выбора цвета.  
 
-[#963183][CR963183] проблем с Chromium  
+Проблема Chromium [#963183][CR963183]  
 
-### Вкладка "Свойства" теперь заполняется после обновления страницы  
+### <a name="properties-tab-now-populates-after-a-page-refresh"></a>Вкладка Свойства теперь заполняется после обновления страницы  
 
-В Microsoft Edge 81 и более ранних версий **вкладка Свойства** на [панели элементы][DevtoolsCssIndex] была разорвана обновлениями страницы.  После обновления страницы на **вкладке Свойства** не заполнятся свойства элемента, выбранного в данный момент.  
+В Microsoft Edge 81 и ранее вкладка **Properties** в панели [Elements][DevtoolsCssIndex] была нарушена путем обновления страницы.  При обновлении страницы вкладка **Properties** не заполняла свойства выбранного в настоящее время элемента.  
 
-:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/properties-in-81.msft.png":::
-   В Microsoft Edge 81 и более ранних версий **вкладка Свойства** была пуста после обновления страницы  
+:::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="В Microsoft Edge 81 и ранее вкладка Properties была пустой после обновления страницы" lightbox="../../media/2020/03/properties-in-81.msft.png":::
+   В Microsoft Edge 81 и ранее вкладка **Properties** была пустой после обновления страницы  
 :::image-end:::  
 
-В Microsoft Edge 83 теперь вы можете видеть свойства элемента, выбранного в данный момент, после обновления страницы на **вкладке Свойства**.  
+В Microsoft Edge 83 теперь можно отобразить свойства выбранного в настоящее время элемента после обновления страницы на **вкладке Свойства.**  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/properties-in-82.msft.png":::
-   В Microsoft Edge 83 на **вкладке Свойства** отображаются свойства элемента, выбранного в данный момент, после обновления страницы.  
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="В Microsoft Edge 83 вкладка Properties отображает свойства выбранного в настоящее время элемента после обновления страницы" lightbox="../../media/2020/03/properties-in-82.msft.png":::
+   В Microsoft Edge 83 вкладка **Properties** отображает свойства выбранного в настоящее время элемента после обновления страницы  
 :::image-end:::  
 
-[#1050999][CR1050999] проблем с Chromium  
+Проблема Chromium [#1050999][CR1050999]  
 
-### Используйте клавиши со стрелками для прокрутки в инструменте "изменения"  
+### <a name="use-the-arrow-keys-to-scroll-in-the-changes-tool"></a>Используйте клавиши стрелки для прокрутки в средстве Изменения  
 
-**Средство "изменения** " отслеживает все изменения, внесенные в CSS или JavaScript, в DevTools.  Вы можете использовать **средство "изменения** ", чтобы быстро просмотреть все изменения и вернуть их в редактор или интегрированную среду разработки.  
+Средство **Изменения отслеживает** все изменения, внесенные в CSS или JavaScript в DevTools.  Вы можете использовать средство **Изменения,** чтобы быстро отображать все изменения и возвращать их в редактор/IDE.  
 
-Откройте **инструмент "изменения** ", нажав `Ctrl` + `Shift` + `P` в DevTools, чтобы открыть [меню команд][DevToolsCommandMenuIndex] и ввести текст `changes` .  Выберите и запустите команду **Показать изменения** , чтобы открыть **средство "изменения** " в DevToolsном ящике.  
+Чтобы открыть средство **Изменения,** выберите `Ctrl` + `Shift` + `P` в DevTools, чтобы открыть [командное меню][DevToolsCommandMenuIndex] и введите `changes` .  выберите и запустите команду **Show Changes,** чтобы открыть средство **Изменения** в ящике DevTools.  
 
-После внесения изменений в файл minified **инструмент "изменения** " позволяет выполнить горизонтальную прокрутку для просмотра всего кода minified.  Начиная с Microsoft Edge 83, теперь можно прокручивать по горизонтали с помощью клавиш со стрелками на клавиатуре.  
+При внесении изменения в минированную папку средство **Changes** позволяет прокручивать по горизонтали, чтобы отобразить весь заминированный код.  Начиная с Microsoft Edge 83, теперь можно прокручивать по горизонтали с помощью клавиш стрелки на клавиатуре.  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/changes.msft.png":::
-   В Microsoft Edge 83 вы можете выполнить горизонтальную прокрутку с помощью клавиш со стрелками, чтобы просмотреть изменения, внесенные в код minified в **инструменте "изменения** ".  
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="В Microsoft Edge 83 можно прокручивать по горизонтали клавиши со стрелками, чтобы отобразить код в средстве Изменения" lightbox="../../media/2020/03/changes.msft.png":::
+   В Microsoft Edge 83 можно прокручивать по горизонтали клавиши со стрелками, чтобы отобразить изменения, внесенные в ваш заминированный код в средстве **Изменения**  
 :::image-end:::  
 
-Если вы используете средства чтения с экрана или клавиатуру для навигации по DevTools, отправьте нам свой отзыв, выполнив [твит][PostTweetEdgeDevTools] в США или щелкнув значок [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) !  
+Если вы используете считыватели экрана или клавиатуру для навигации по DevTools, отправьте нам свои отзывы, направив на нас твиты или отправив значок [Отправка отзывов!](#getting-in-touch-with-microsoft-edge-devtools-team) [][PostTweetEdgeDevTools]  
 
-[#963183][CR963183] проблем с Chromium  
+Проблема Chromium [#963183][CR963183]  
 
-## Объявления из проекта Chromium  
+## <a name="announcements-from-the-chromium-project"></a>Объявления из проекта Chromium  
 
-В следующих разделах описаны дополнительные возможности, доступные в Microsoft Edge 83, которые были задействованы в проекте Open Source Chromium.  
+В следующих разделах представлены дополнительные функции, доступные в Microsoft Edge 83, которые были внесены в проект Chromium с открытым исходным кодом.  
 
-### Эмуляция видения deficiencies  
+### <a name="emulate-vision-deficiencies"></a>Имитация дефектов зрения  
 
-Откройте [вкладку рендеринг][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] и воспользуйтесь новой функцией **эмуляции deficiencies** , чтобы лучше понять, как люди с разными типами концепций deficienciesют свой сайт.  
+Откройте [вкладку Rendering][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] и используйте новую функцию **эмулировать** недостатки зрения, чтобы получить представление о том, как люди с различными типами недостатков зрения испытывают на своем сайте.  
 
-:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/vision.msft.png":::
-   Имитация размытого видения  
+:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Эмулирование размытого зрения" lightbox="../../media/2020/03/vision.msft.png":::
+   Эмулирование размытого зрения  
 :::image-end:::  
 
-DevTools может эмулировать размытое видение и следующие [типы концепций цветопередачи deficiencies][ColorBlindnessTypes].  
+DevTools может эмулировать размытое зрение и следующие типы [недостатков цветового зрения.][ColorBlindnessTypes]  
 
-| Некоторая концепция цвета | Сведения |  
+| Дефицит цветового зрения | Сведения |  
 |:--- |:--- |  
-| Protanopia | Невозможность воспринимать красный индикатор. |  
+| Протанопия | Невозможность воспринимать красный свет. |  
 | Deuteranopia | Невозможность воспринимать зеленый свет. |  
-| Tritanopia | Невозможность воспринимать любой синий индикатор. |  
-| Achromatopsia | Невозможность воспринимать любой цвет, за исключением оттенков серого \ (очень редких). |  
+| Тританопия | Невозможность воспринимать синий свет. |  
+| Ахроматопсия | Невозможность воспринимать любой цвет, за исключением оттенков серого \(крайне редко\). |  
 
-Ниже указаны менее экстремальные версии deficiencies, и в действительности они являются более распространенными.  
-Например, Protanomaly — это уменьшенная чувствительность к красному свету (в отличие от Protanopia, что является полноценным невозможностью воспринимать красный свет). Тем не менее, omaly концепция deficiencies не так четко: каждый человек, имеющий такой интерес, отличается от того, кто имеет такой же интерес, и может по-разному видеть различные варианты (которые могут выпустить больше или меньше подходящих цветов).  
+Существуют менее экстремальные версии этих недостатков цветового зрения, и на самом деле они являются более распространенными.  
+Например, протаномали — это пониженная чувствительность к красному свету (в отличие от протанопии, которая является полной невозможностью воспринимать красный свет). Тем не менее, эти недостатки зрения **omaly** не так четко определены: каждый человек с таким недостатком зрения отличается и может видеть вещи по-разному \(возможность воспринимать больше / меньше соответствующих цветов \).  
 
-Благодаря разработке для более экстремальных эмуляций в DevTools веб-приложения будут гарантированно доступны людям с protanomaly, Deuteranomaly, Tritanomaly и achromatomaly.  
+При разработке более экстремальных моделей в DevTools ваши веб-приложения гарантированно будут доступны для людей с протаномалией, deuteranomaly, tritanomaly и achromatomaly.  
 
-Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
+Отправьте свои отзывы, [отправив твит][PostTweetEdgeDevTools] или отправив значок [Отправка отзывов!](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[#1003700][CR1003700] проблем с Chromium  
+Проблема Chromium [#1003700][CR1003700]  
 
-### Эмуляция языков  
+### <a name="emulate-locales"></a>Эмулировать локальные  
 
-Эмуляция региональных стандартов путем задания местоположения в **Sensors**  >  **расположениях**датчиков. [Открыть **меню команд** ][DevToolsCommandMenuIndex] и ввести текст `Sensors` для доступа к вкладке **Sensors (датчики** ).  После выполнения этих действий DevTools изменяет текущий языковой стандарт по умолчанию, влияя на приведенный ниже код.  
+Эмулировать локальные параметры, задав расположение в **расположении**  >  **датчиков.** [Откройте **командное меню и** ][DevToolsCommandMenuIndex] `Sensors` введите, чтобы получить доступ к **вкладке Датчики.**  После выполнения этих действий DevTools изменяет текущий локальный код по умолчанию, влияя на следующий код.  
 
 *   `Intl.*` API, например: `new Intl.NumberFormat().resolvedOptions().locale`  
-*   Другие API JavaScript, поддерживающие национальные настройки `String.prototype.localeCompare` , такие как и `*.prototype.toLocaleString` , например: `123_456..toLocaleString()`  
-*   API DOM, например `navigator.language` и `navigator.languages`  
-*   Заголовок HTTP-запроса для [приема на языке][MDNAcceptLanguage]  
+*   Другие API JavaScript с локальными данными, например: `String.prototype.localeCompare` `*.prototype.toLocaleString` `123_456..toLocaleString()`  
+*   API DOM, такие как `navigator.language` и `navigator.languages`  
+*   [Заглавная головка запроса http accept-Language][MDNAcceptLanguage] HTTP  
 
 > [!NOTE]
-> Обновляются `navigator.language` и `navigator.languages` не отображаются немедленно, но только после следующей навигации или обновления страницы.  Изменения в `Accept-Language` заголовке HTTP отражаются только для последующих запросов.  
+> Обновления и не видны сразу, но только после `navigator.language` `navigator.languages` следующей навигации или обновления страницы.  Изменения в `Accept-Language` загона HTTP отражаются только для последующих запросов.  
 
-:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/locale.msft.png":::
-   Эмуляция языкового стандарта  
+:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Эмулирование локального" lightbox="../../media/2020/03/locale.msft.png":::
+   Эмулирование локального  
 :::image-end:::  
 
-Чтобы попробовать посмотреть демонстрацию, ознакомьтесь с [примером кода, зависящим от языкового стандарта][MathiasByensLocaleDemo].
+Чтобы попробовать демонстрацию, перейдите к [примеру кода,][MathiasByensLocaleDemo]зависимого от locale.
 
-[#1051822][CR1051822] проблем с Chromium
+Проблема Chromium [#1051822][CR1051822]
 
-### Отладка политики встраивания по началу (COEP)  
+### <a name="cross-origin-embedder-policy-coep-debugging"></a>Отладка политики встраивляемого в поперечнике (COEP)  
 
-На панели Network (сеть) теперь представлена отладочная информация о [политике встраивания][COEP] .  
+Панель Network теперь предоставляет сведения [о][COEP] отладки политики встраивляющихся между собой.  
 
-Столбец **Status** теперь содержит краткое описание причины блокировки запроса, а также ссылку на просмотр заголовков этого запроса для дальнейшей отладки.  
+В **столбце Status** теперь приводится краткое объяснение, почему был заблокирован запрос, а также ссылка для просмотра заглавных окей этого запроса для дальнейшей отладки:  
 
-:::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/status.msft.png":::
-   Заблокированные запросы в столбце " **состояние** "  
+:::image type="complex" source="../../media/2020/03/status.msft.png" alt-text="Заблокированные запросы в столбце **Status**" lightbox="../../media/2020/03/status.msft.png":::
+   Заблокированные запросы в **столбце Состояние**  
 :::image-end:::  
 
-В разделе **заголовки ответа** вкладки **заголовки** содержатся дополнительные инструкции по устранению проблем.  
+В **разделе Заглавные ответы** вкладки **"Заготки"** содержится дополнительные рекомендации по устранению проблем:  
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/guidance.msft.png":::
-   Другие рекомендации в разделе " **заголовки ответа** "  
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="Дополнительные рекомендации в разделе Заглавные ответы" lightbox="../../media/2020/03/guidance.msft.png":::
+   Дополнительные рекомендации в **разделе Заглавные ответы**  
 :::image-end:::  
 
-Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
+Отправьте свои отзывы, [отправив твит][PostTweetEdgeDevTools] или отправив значок [Отправка отзывов!](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[#1051466][CR1051466] проблем с Chromium  
+Проблема Chromium [#1051466][CR1051466]  
 
-### Новые значки для точек останова, условных точек останова и logpoints  
+### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>Новые значки для точек разрыва, условных точек и точек входа  
 
-На панели «источники» есть новые значки для точек останова, условных точек останова и logpoints:  
+Панель Источников имеет новые значки для точек разрыва, условных точек и точек входа:  
 
-*   Точки останова \ (![Точкой](../../media/2020/03/breakpoint.msft.png)\) представлены красными кружками.  
-*   Условные точки останова \ (![Условная точка останова](../../media/2020/03/conditional.msft.png)\) представлены в виде кружков из половины белых.  
-*   Logpoints \(![Logpoint](../../media/2020/03/logpoint.msft.png)\) представлены красными кружками с помощью значков консоли.  
+*   Breakpoints \(![Breakpoint](../../media/2020/03/breakpoint.msft.png)\) представлены красными кругами.  
+*   Условные точки разрывов \.![Условная точка разрыва](../../media/2020/03/conditional.msft.png)\) представлены полу-красными полубелыми кругами.  
+*   Logpoints \(![Logpoint](../../media/2020/03/logpoint.msft.png)\) представлены красными кругами с значками консоли.  
 
-Мотивация для новых значков — сделать пользовательский интерфейс более подродным с помощью других средств отладки графического интерфейса (обычно это цветовые точки останова), чтобы облегчить различение трех функций.  
+Мотивация для новых значков была в том, чтобы сделать пользовательский интерфейс более совместимым с другими средствами отладки GUI \(которые обычно красные точки разлома цвета\) и упростить различие между 3 функциями с первого взгляда.  
 
-[#1041830][CR1041830] проблем с Chromium  
+Проблема Chromium [#1041830][CR1041830]  
 
-### Просмотр сетевых запросов, заданных для определенного пути к файлу cookie  
+### <a name="view-network-requests-that-set-a-specific-cookie-path"></a>Просмотр сетевых запросов, за набором определенного пути cookie  
 
-С помощью нового `cookie-path` ключевого слова фильтра на панели **Network (сеть** ) можно сосредоточиться на запросах в сети, которые задают определенный [путь к файлу cookie][MDNCookiePath].  
+Используйте новое `cookie-path` ключевое слово фильтра в средстве **Network,** чтобы сосредоточиться на сетевых запросах, которые устанавливают определенный [путь cookie.][MDNCookiePath]  
 
-Изучите [запросы фильтра по свойствам][DevtoolsNetworkReferenceFilterRequestsProperties] , чтобы найти другие ключевые слова, такие как `cookie-path` .
+Проверьте [запросы фильтра по свойствам,][DevtoolsNetworkReferenceFilterRequestsProperties] чтобы узнать больше ключевых слов, как `cookie-path` .
 
-### Закрепить слева от меню команд  
+### <a name="dock-to-left-from-the-command-menu"></a>Стыковка слева от меню команды  
 
-Откройте [меню команд][DevToolsCommandMenuIndex] и выполните команду, `Dock to left` чтобы переместить DevTools в левой части окна просмотра.  
+Откройте [командное меню][DevToolsCommandMenuIndex] и запустите команду для перемещения `Dock to left` DevTools слева от вашего представления.  
 
-:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/dock-to-left.msft.png":::
-   DevTools закреплен в левой части окна просмотра  
+:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools, пристыкованный слева от viewport" lightbox="../../media/2020/03/dock-to-left.msft.png":::
+   DevTools, пристыкованный слева от viewport  
 :::image-end:::  
 
 > [!NOTE]
-> Функция " **прикрепить к левому краю** " была доступна после выпуска Microsoft Edge 75, но ранее она была доступна только в [главном меню][DevtoolsCustomizePlacementsChangeMainMenu].  Новая функция в Microsoft Edge 83 — теперь вы можете получить доступ к этой функции в меню команд.  
+> Функция **Dock слева** была доступна с Microsoft Edge 75, но ранее она была доступна только из [основного меню.][DevtoolsCustomizePlacementsChangeMainMenu]  Новая функция в Microsoft Edge 83 в том, что теперь вы можете получить доступ к этой функции из командного меню.  
 
-Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
+Отправьте свои отзывы, [отправив твит][PostTweetEdgeDevTools] или отправив значок [Отправка отзывов!](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[#1011679][CR1011679] проблем с Chromium  
+Проблема Chromium [#1011679][CR1011679]  
 
-### Панель "Аудит" теперь является панелью Lighthouse  
+### <a name="the-audits-panel-is-now-the-lighthouse-panel"></a>Панель аудитов теперь является панелью Маяк  
 
-Группа DevTools часто получила отзыв от веб-разработчиков, которые могли бы запустить [Lighthouse][GithubGoogleChromeLighthouse] из DevTools, когда они могли бы не найти панель "Lighthouse", и панель **аудиторий** стала на панели " **Lighthouse** ".  
+Команда DevTools часто получает отзывы от веб-разработчиков о том, что хотя можно было запустить [Lighthouse][GithubGoogleChromeLighthouse] из DevTools, когда они пытались его найти, они не могли найти панель "Маяк", поэтому панель **Аудиты** теперь панель **Маяк.**  
 
-:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/lighthouse.msft.png":::
+:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="Панель Lighthouse" lightbox="../../media/2020/03/lighthouse.msft.png":::
    Панель Lighthouse  
 :::image-end:::  
 
 > [!NOTE]
-> Панель **Lighthouse** содержит ссылки на содержимое, размещенное на сторонних веб-сайтах.  Корпорация Майкрософт не несет ответственности за содержимое этих сайтов и любые данные, которые могут быть собраны, и не может управлять ими.  
+> Панель **Lighthouse** предоставляет ссылки на контент, который содержится на сторонних веб-сайтах.  Корпорация Майкрософт не несет ответственности и не контролирует содержимое этих сайтов и любые данные, которые они могут собирать.  
 
-### Удаление всех локальных переопределений в папке  
+### <a name="delete-all-local-overrides-in-a-folder"></a>Удаление всех локальных переопределей в папке  
 
-После настройки **локальных переопределений** вы можете щелкнуть папку правой кнопкой мыши и выбрать команду создать **все переопределение** для удаления всех локальных переопределений в этой папке.  
+После настройки **** локальных переопределей можно навести курсор на каталог, открыть контекстное меню \(правой кнопкой мыши\) и выбрать новый параметр **Удалить** все переопределения, чтобы удалить все локальные переопределения в этой папке.  
 
-:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/overrides.msft.png":::
-   Удаление всех переопределений  
+:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Удаление всех переопределе-" lightbox="../../media/2020/03/overrides.msft.png":::
+   Удаление всех переопределе-  
 :::image-end:::  
 
-Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
+Отправьте свои отзывы, [отправив твит][PostTweetEdgeDevTools] или отправив значок [Отправка отзывов!](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[#1016501][CR1016501] проблем с Chromium  
+Проблема Chromium [#1016501][CR1016501]  
 
-### Обновленный пользовательский интерфейс длительных задач  
+### <a name="updated-long-tasks-ui"></a>Обновленный пользовательский интерфейс длинных задач  
 
-**Длинная задача** — это код JavaScript, который занимает много времени, что приводит к закреплениям веб-страницы.  
+Long **Task —** это код JavaScript, который монополизирует основной поток в течение длительного времени, из-за чего веб-страница замерзает.  
 
-На панели производительности вы можете [визуализировать длинные задачи][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] , но в Microsoft Edge 83 пользовательский интерфейс визуализации задач на панели производительности обновлен.  Область задач "Долгая задача" теперь окрашена на красный фон с чередованием.  
+Некоторое время [][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] вы могли визуализировать длинные задачи в панели Performance, но в Microsoft Edge 83 пользовательский интерфейс визуализации длинных задач в панели Performance был обновлен.  Длинная часть задачи теперь окрашена полосатым красным фоном.  
 
-:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/long-task.msft.png":::
-   Новый пользовательский интерфейс длительной задачи  
+:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="Новый пользовательский интерфейс long Task" lightbox="../../media/2020/03/long-task.msft.png":::
+   Новый пользовательский интерфейс long Task  
 :::image-end:::  
 
-Отправьте отзыв, выполнив [твит][PostTweetEdgeDevTools] или щелкнув значок " [Отправить отзыв](#getting-in-touch-with-microsoft-edge-devtools-team) "!  
+Отправьте свои отзывы, [отправив твит][PostTweetEdgeDevTools] или отправив значок [Отправка отзывов!](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
-[#1054447][CR1054447] проблем с Chromium  
+Проблема Chromium [#1054447][CR1054447]  
 
-### Поддержка маскированных значков в области манифеста  
+### <a name="maskable-icon-support-in-the-manifest-pane"></a>Поддержка значка маскировки в области Манифест  
 
-В Oreo Android появились адаптивные значки, которые отображают значки приложений в различных моделях устройств.  **Маскированные значки** — это новый формат значков, поддерживающий адаптивные значки, которые позволяют убедиться, что на устройствах, поддерживающих стандарт маскированных значков, будет хорошо выглядеть значок [PWA][PprgressiveWebAppsChromiumIndex] .  
+Android Oreo представил адаптивные значки, которые отображают значки приложений в различных формах на разных моделях устройств.  **Маскируемые** значки — это новый формат значков, который поддерживает адаптивные значки, которые позволяют обеспечить хорошее внешний вид значка [PWA][ProgressiveWebAppsChromiumIndex] на устройствах, поддерживаюх стандартные значки с масками.  
 
-Установите флажок **Показывать только минимальную безопасную область для маскированных значков** в области **манифеста** , чтобы убедиться в том, что маскирующий значок хорошо подходит для устройств с Android Oreo.  
+Вкажите в новом **Show** только минимальную безопасную область для почтового ящика с масками значков в области **Манифест,** чтобы проверить, хорошо ли выглядит ваша маскабельная иконка на устройствах Android Oreo.  
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Приложение Remote Tools для Microsoft EDGE (бета-версия), доступное в Microsoft Store" lightbox="../../media/2020/03/maskable-icons.msft.png":::
-   Флажок **Показать только минимальную безопасную область для маскированных значков**  
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Показать только минимальную безопасную область для проверки маскируемых значков" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+   Показать **только минимальную безопасную область для проверки маскируемых значков**  
 :::image-end:::  
 
 > [!NOTE]
-> Этот компонент запущен в Microsoft Edge 81.  Обновления, описанные здесь в Microsoft Edge 83, не были освещены в статье [новые возможности DevTools (Microsoft Edge 81)][WhatsNew81].  
+> Эта функция запущена в Microsoft Edge 81.  Обновления, охватываемых здесь в Microsoft Edge 83, не были охвачены в [What's New In DevTools (Microsoft Edge 81).][WhatsNew81]  
 
-## Загрузка каналов предварительной версии Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Скачивание Microsoft Edge предварительных каналов  
 
-Если вы используете Windows или macOS, рассматривайте в качестве браузера по умолчанию использование [каналов предварительного просмотра Microsoft Edge][MicrosoftEdgePreviewChannels] .  Каналы предварительного просмотра предоставляют доступ к последним функциям DevTools.  
+Если вы находитесь на Windows или macOS, рассмотрите возможность использования каналов [предварительного][MicrosoftEdgePreviewChannels] просмотра Microsoft Edge в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
-## Знакомство с Microsoft Edge DevTools Team  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[WhatsNew81]: ../01/devtools.md "Новые возможности DevTools (Microsoft Edge 81) | Документы Microsoft"  
+[WhatsNew81]: ../01/devtools.md "Новые возможности в DevTools (Microsoft Edge 81) | Документы Майкрософт"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
-[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Изменение цвета с помощью средства выбора цвета | Документы Microsoft"  
-[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Начало просмотра и изменения CSS | Документы Microsoft"  
-[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Изменение положения в главном меню | Документы Microsoft"  
-[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "Просмотр основного действия потока | Документы Microsoft"  
-[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Анализ производительности отрисовки с помощью вкладки "рендеринг" | Документы Microsoft"  
-[PprgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивные веб-приложения в Windows | Документы Microsoft"  
-[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Начало работы с удаленной отладкой на устройствах с Windows 10 | Документы Microsoft"  
-[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Точки останова по строке кода: как приостановить выполнение кода с точки останова в Microsoft Edge DevTools | Документы Microsoft"
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Фильтрация запросов по свойствам-Справка по анализу сети | Документы Microsoft"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры: Настройка Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Запуск команд с командным меню Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Измените цвета с помощью | Документы Майкрософт"  
+[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Начало работы с просмотром и изменением CSS-| Документы Майкрософт"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Изменение размещения из основного меню | Документы Майкрософт"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "Просмотр основных действий потоков | Документы Майкрософт"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Анализ производительности визуализации с помощью вкладки Rendering | Документы Майкрософт"  
+[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивные веб-приложения в Windows | Документы Майкрософт"  
+[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Начало работы с удаленной отладки устройств Windows 10 | Документы Майкрософт"  
+[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Breakpoints line-of-code - How To Pause Your Code with Breakpoints in Microsoft Edge DevTools | Документы Майкрософт"
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Фильтрация запросов по свойствам — ссылки на | Документы Майкрософт"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Параметры — настройка Microsoft Edge DevTools | Документы Майкрософт"  
 
-[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Общие сведения о портале устройств Windows"  
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Обзор портала устройств Windows"  
 
-[RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Удаленные инструменты для Microsoft EDGE (бета-версия)"  
+[RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Удаленные средства для Microsoft Edge (бета-версия)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Каналы предварительной версии Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Каналы предварительного просмотра Microsoft Edge"  
 
-[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Обновление в стабильных выпусках канала для Microsoft Edge"  
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Обновление выпусков стабильных каналов для Microsoft Edge"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Новая ошибка — MicrosoftDocs/Edge-разработчик-GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Новая проблема - MicrosoftDocs/edge-developer - GitHub"  
 
 [MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Код Visual Studio"  
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Публикация твита"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools учетной записи Twitter"  
-[TheWebWeWant]: https://webwewant.fyi "Требуемый веб-сайт"  
+[TheWebWeWant]: https://webwewant.fyi "Веб-сайт, который мы хотим"  
 
-[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Типы цветовой жалюзи"  
+[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Типы цветовой слепоты"  
 
-[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Одобрение-язык | MDN"  
-[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-cookie | MDN"  
+[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language | MDN"  
+[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-Cookie | MDN"  
 
-[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Пример кода, зависящий от языкового стандарта"  
+[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Пример кода, зависящих от локального доступа"  
 
-[CR963183]: https://crbug.com/963183 "Ошибка 963183: DevTools не соответствует требованиям WCAG"  
-[CR1003700]: https://crbug.com/1003700 "Вопрос 1003700: Добавление поддержки DevTools в целях моделирования недостатков для представления цвета"  
-[CR1011679]: https://crbug.com/1011679 "Ошибка 1011679: ввод "закрепить влево" с помощью меню команд"  
-[CR1016501]: https://crbug.com/1016501 "Ошибка 1016501: запрос компонента: кнопка для удаления всех локальных переопределений"  
-[CR1050999]: https://crbug.com/1050999 "Ошибка 1050999: вкладка "Свойства""  
-[CR1051466]: https://crbug.com/1051466 "Ошибка 1051466: поддержка отладки COOP/COEP в DevTools"  
-[CR1054447]: https://crbug.com/1054447 "Ошибка 1054447: обновление метрик производительности на временной шкале DevTools"  
-[CR1051822]: https://crbug.com/1051822 "Ошибка 1051822: DevTools: Добавление пользовательского интерфейса для эмуляции национальной настройки"
-[CR1041830]: https://crbug.com/1041830 "Ошибка 1041830: улучшение цветопередачи для точек останова"
-[CR1050855]: https://crbug.com/1050855 "Неполадка 1050855: Просмотр параметров затрудняет обнаружение"
-[CR1056348]: https://crbug.com/1056348 "Ошибка 1056348: обновление компонента на информационной панели"
+[CR963183]: https://crbug.com/963183 "Выпуск 963183: DevTools не соответствуют требованиям WCAG"  
+[CR1003700]: https://crbug.com/1003700 "Выпуск 1003700. Добавление поддержки DevTools для моделирования дефицита цветового зрения"  
+[CR1011679]: https://crbug.com/1011679 "Выпуск 1011679: ввести пункт "Стыковка налево" с помощью командного меню"  
+[CR1016501]: https://crbug.com/1016501 "Выпуск 1016501: запрос на функции: кнопка для удаления всех локальных переопределей"  
+[CR1050999]: https://crbug.com/1050999 "Выпуск 1050999: Вкладка свойств"  
+[CR1051466]: https://crbug.com/1051466 "Выпуск 1051466: поддержка отладки COOP/COEP в DevTools"  
+[CR1054447]: https://crbug.com/1054447 "Выпуск 1054447: Обновление показателей производительности в Хронике DevTools"  
+[CR1051822]: https://crbug.com/1051822 "Выпуск 1051822: DevTools: добавление пользовательского интерфейса для эмуляции локального интерфейса"
+[CR1041830]: https://crbug.com/1041830 "Выпуск 1041830: улучшение цветов для точек разрыва"
+[CR1050855]: https://crbug.com/1050855 "Выпуск 1050855: трудно найти представление параметров"
+[CR1056348]: https://crbug.com/1056348 "Выпуск 1056348: обновление компонентов Infobar"
 
-[COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "Описание COOP и COEP — политика opener для разных источников"  
-[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "Объяснение COOP и COEP — политика для внедрения разных источников"  
+[COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "CoOP и COEP — политика кросс-origin Opener"  
+[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "CoOP и COEP — политика встраивляемого перекрестного происхождения"  
 
-[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Lighthouse | GitHub"  
+[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Маяк | GitHub"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/updates/2020/03/devtools/index) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/updates/2020/03/devtools/index) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

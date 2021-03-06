@@ -1,27 +1,27 @@
 ---
-description: Справочник по API для Microsoft Edge WebView2 SDK
-title: Справочник по API Microsoft Edge WebView2
+description: Ссылка на API для SDK Microsoft Edge WebView2
+title: Ссылка на API API Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 01/07/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, приложения Win32, Win32, EDGE, ICoreWebView2, ICoreWebView2Controller, элемент управления "браузер"
-ms.openlocfilehash: 36c951967675d1daed769e40e8eacbf668a5973c
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control
+ms.openlocfilehash: 5005cd4648fae4d8ad27cc94f86ef56fea5cf44a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119054"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399234"
 ---
-# Справочник по API Microsoft Edge WebView2  
+# <a name="microsoft-edge-webview2-api-reference"></a>Ссылка на API API Microsoft Edge WebView2  
 
-Элемент управления Microsoft Edge WebView2 позволяет размещать веб-содержимое в приложении с помощью [Microsoft EDGE (Chromium)](https://www.microsoftedgeinsider.com) в качестве обработчика визуализации.  Дополнительные сведения можно найти в [статье Обзор Microsoft Edge WebView2](./index.md) и [Приступая к работе с WebView2](gettingstarted/win32.md).  
+Управление Microsoft Edge WebView2 позволяет принимать веб-контент в приложении с помощью [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) в качестве двигателя визуализации.  Дополнительные сведения перейдите к [обзору Microsoft Edge WebView2](./index.md) и [началу работы с WebView2](gettingstarted/win32.md).  
 
-Выберите языки и платформу WebView2, которые вы хотите использовать, в списке ниже.  
+Выберите языки и рамки WebView2, которые вы хотите использовать в следующем списке.  
 
-## Языки и платформы  
+## <a name="languages-and-frameworks"></a>Языки и рамки  
 
 *   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)  
 *   .NET  
@@ -29,6 +29,8 @@ ms.locfileid: "11119054"
     *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
     *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
 
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Пространство имен Microsoft. Web. WebView2. Core | Документы Microsoft"
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Пространство имен Microsoft. Web. WebView2. WPF | Документы Microsoft"
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Пространство имен Microsoft. Web. WebView2. WinForms | Документы Microsoft"
+<!-- links -->  
+
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Документы Майкрософт"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Пространство имен Microsoft.Web.WebView2.Wpf | Документы Майкрософт"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Пространство имен Microsoft.Web.WebView2.WinForms | Документы Майкрософт"

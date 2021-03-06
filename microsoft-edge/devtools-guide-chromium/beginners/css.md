@@ -1,18 +1,18 @@
 ---
 description: Начало работы с CSS
-title: 'DevTools для начинающих: Приступая к работе с CSS'
+title: 'DevTools для начинающих: начало работы с CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools
-ms.openlocfilehash: 62821084af8c22809f6e14ca4038ee173efd964a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: Microsoft edge, веб-разработка, средства f12, devtools
+ms.openlocfilehash: 7aa33c339a7d130265660e4a4af6f50dde7e3e90
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125337"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398401"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -28,83 +28,83 @@ ms.locfileid: "11125337"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# DevTools для начинающих: Приступая к работе с CSS  
+# <a name="devtools-for-beginners-get-started-with-css"></a>DevTools для начинающих: начало работы с CSS  
 
-В этом учебнике вы узнаете, как использовать CSS для стиля веб-страницы.  Кроме того, вы узнаете, как использовать Microsoft Edge DevTools для экспериментов с изменениями CSS.  
+В этом руководстве вы узнаете, как использовать CSS для стиля веб-страницы.  Вы также узнаете, как использовать Microsoft Edge DevTools для экспериментов с изменениями CSS.  
 
-В следующей статье приведен второй учебник из серии руководств, в которых рассматриваются основы разработки веб-приложений и Microsoft Edge DevTools.  Вы получаете практический опыт, завершив создание собственного веб-сайта.  Перед вторым учебником вам не нужно выполнять первый из них.  [Настройка кода](#set-up-your-code) показывает, как это сделать.  
+Следующая статья — это второй учебник из серии учебников, который учит вас основам веб-разработки и Microsoft Edge DevTools.  Вы получаете практический опыт, фактически построив собственный веб-сайт.  Вам не нужно завершить первый учебник, прежде чем следовать второму.  [Настройка кода показывает,](#set-up-your-code) как настроиться.  
 
 > [!NOTE]
-> Этот учебник предназначен для абсолютных новичков и специализируется на **основах разработки веб-приложений** и основах использования DevTools для экспериментов с CSS.  Если вам нужен учебник, который фокусируется только на DevTools, перейдите к разделу [Начало работы с помощью просмотра и изменения CSS][DevtoolsCssIndex].  
+> Этот учебник предназначен для абсолютных новичков **** и посвящен основам веб-разработки и основам использования DevTools для экспериментов с CSS.  Если вы хотите учебник, который фокусируется только на DevTools, перейдите к началу просмотра и [изменения CSS][DevtoolsCssIndex].  
 
-В начале учебника ваш сайт должен выглядеть так, как показано на следующем рисунке.  
+В начале учебника ваш сайт должен выглядеть следующим образом.  
 
-:::image type="complex" source="../media/beginners-css-intro1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-intro1.msft.png":::
-   Как выглядит ваш веб-сайт  
+:::image type="complex" source="../media/beginners-css-intro1.msft.png" alt-text="Как выглядит ваш сайт в настоящее время" lightbox="../media/beginners-css-intro1.msft.png":::
+   Как выглядит ваш сайт в настоящее время  
 :::image-end:::  
 
-После того как вы закончите обучение, сайт должен выглядеть так, как показано на рисунке ниже.  
+После завершения руководства сайт должен выглядеть следующим образом.  
 
-:::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-intro2.msft.png":::
-   Сведения о том, как должен выглядеть сайт в конце учебника  
+:::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="Как должен выглядеть ваш сайт в конце учебника" lightbox="../media/beginners-css-intro2.msft.png":::
+   Как должен выглядеть ваш сайт в конце учебника  
 :::image-end:::  
 
-## Цели  
+## <a name="goals"></a>Цели  
 
-Следуйте этим рекомендациям, чтобы лучше разобраться в описанных ниже концепциях и задачах.  
+Следуйте этому учебнику, чтобы лучше понять следующие понятия и задачи.  
 
 *   Использование CSS для стиля веб-страницы.  
 *   Использование Microsoft Edge DevTools для экспериментов с CSS.  
-*   Разница между платформами CSS и CSS.  
+*   Разница между CSS и CSS frameworks.  
 
-Вы собираетесь создать реальный веб-сайт.  
+Вы строите реальный веб-сайт.  
 
-## Предварительные условия  
+## <a name="prerequisites"></a>Предварительные условия  
 
-Перед началом работы с учебником заполните следующие предварительные требования.  
+Перед попыткой этого руководства выполните следующие необходимые условия.  
 
-*   Закончите [работу с HTML и моделью DOM][DevtoolsBeginnersHtml] или убедитесь в том, что вы знаете HTML и модель DOM, похожую на то, что научились в этом учебнике.  
-*   Скачайте веб-браузер [Microsoft Edge][MicrosoftEdgeInsider] .  В следующем учебнике используется набор средств разработки веб-приложений, которые называются Microsoft Edge DevTools, которые встроены в Microsoft Edge.  
+*   Полное начало работы с HTML и [DOM][DevtoolsBeginnersHtml] или убедитесь, что у вас есть понимание HTML и DOM аналогично тому, что преподается в этом учебнике.  
+*   Скачайте [веб-браузер Microsoft Edge.][MicrosoftEdgeInsider]  В следующем руководстве используется набор средств веб-разработки, называемых Microsoft Edge DevTools, встроенных в Microsoft Edge.  
 
-## Настройка кода  
+## <a name="set-up-your-code"></a>Настройка кода  
 
-Чтобы создать сайт, необходимо выполнить описанные ниже действия, чтобы настроить код.  
+Чтобы создать свой сайт, сначала необходимо выполнить следующие действия, чтобы настроить код.  
 
 > [!NOTE]
-> Если вы уже завершили первый учебник в ряду, перейдите к следующему разделу.  Продолжайте использовать код из последнего учебника, Приступая к [работе с HTML и DOM][DevtoolsBeginnersHtml].  
+> Если вы уже завершили первый учебник в этой серии, переехав в следующий раздел.  Продолжить использование кода из последнего учебника, [начало работы с HTML и DOM][DevtoolsBeginnersHtml].  
 
-1.  Откройте [Исходный код][GlitchCookedAmphibianIndex].  Ссылка на вкладку "на фокус" в браузере указана как **вкладка "Редактирование"**.  
+1.  Откройте [исходный код.][GlitchCookedAmphibianIndex]  Вкладка в фокусе браузера ссылается на вкладку **редактирования.**  
     
-    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-setup1.msft.png":::
-       Вкладка " **Редактирование** "  
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="Вкладка редактирования" lightbox="../media/beginners-css-setup1.msft.png":::
+       Вкладка **редактирования**  
     :::image-end:::  
     
-1.  Выберите **готовил-amphibian**.  Всплывающее меню.  
+1.  Выберите **вареную амфибию.**  Всплывающее меню.  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-setup2.msft.png":::
-       Меню "Параметры проекта"  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Меню Параметры проекта" lightbox="../media/beginners-css-setup2.msft.png":::
+       Меню Параметры проекта  
     :::image-end:::  
 
-1.  Выберите **Remix проект**.  Сбой создает копию проекта, которую вы можете редактировать.  
+1.  Выберите **Проект Remix**.  Сбой создает копию проекта, которую можно изменить.  
     
     > [!NOTE]
-    > Сбой генерирует случайное имя для нового проекта.  
+    > Сбой создает случайное имя для нового проекта.  
     
-1.  Нажмите кнопку **Показать** и выберите **в новом окне**.  Откроется другая вкладка с активным представлением сайта.  На вкладку, которая находится в фокусе браузера, указывается **вкладка Динамический**.  
+1.  Выберите **Показать** и **выбрать в новом окне**.  Откроется еще одна вкладка с живым представлением сайта.  Вкладка в фокусе браузера ссылается на вкладку **live.**  
     
-    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-setup3.msft.png":::
-       **Вкладка "динамический"**  
+    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="Вкладка live" lightbox="../media/beginners-css-setup3.msft.png":::
+       Вкладка **live**  
     :::image-end:::  
 
-## Общие сведения о CSS  
+## <a name="understand-css"></a>Понимание CSS  
 
-**CSS** — это язык компьютера, который определяет макет и стиль веб-страниц.  На приведенном ниже рисунке показан абзац с границей.  
+**CSS** — это компьютерный язык, который определяет макет и стиль веб-страниц.  Следующая фигура — абзац с границей.  
 
-:::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-red_paragraph.msft.png":::
-   Текст был добавлен в таблицу каскадных стилей (CSS)  
+:::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="Текст стилизовылся с помощью CSS" lightbox="../media/beginners-css-red_paragraph.msft.png":::
+   Текст стилизовылся с помощью CSS  
 :::image-end:::  
 
-Следующий фрагмент кода — это код HTML и CSS, который используется для создания абзаца на предыдущем рисунке.  
+Следующий фрагмент кода — код HTML и CSS, используемый для создания абзаца на предыдущем рисунке.  
 
 ```html
 <p style="border: 1px dashed red; padding: 5px;">
@@ -112,19 +112,19 @@ ms.locfileid: "11125337"
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` возможно, вам покажется, что у вас новый.  Остальные должны выглядеть знакомым.  Если это не так, сначала приступайте [к работе с HTML и моделью DOM,][DevtoolsBeginnersHtml] прежде чем выполнять следующие разделы.  
+`style="border: 1px dashed red; padding: 5px;"` вероятно, выглядит новым для вас.  Остальные должны выглядеть знакомыми.  Если нет, выполните начало работы с HTML и [DOM,][DevtoolsBeginnersHtml] прежде чем пытаться выполнить следующие разделы.  
 
-## Добавление встроенных стилей  
+## <a name="add-inline-styles"></a>Добавление встройных стилей  
 
-Выполните указанные ниже действия, чтобы применить стили к одному элементу с помощью **встроенных стилей** .  
+Выполните следующие действия, чтобы использовать стили **для** применения стилей к одному элементу.  
 
-1.  Вернитесь на вкладку Правка и откройте окно `index.html` .  
+1.  Вернуться на вкладку редактирования и открыть `index.html` .  
     
-    :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-inline1.msft.png":::
-       Открытие `index.html` на вкладке "Редактирование"  
+    :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="index.html" lightbox="../media/beginners-css-inline1.msft.png":::
+       Откройте `index.html` на вкладке редактирования  
     :::image-end:::  
     
-1.  Добавить `style="background-color: aliceblue;"` в `<nav>` .  В блоке кода, приведенном ниже, четвертая строка кода имеет тот же адрес, который нужно изменить.  Остальное – это просто, так что вы можете сделать так, чтобы новый код замещается в нужном расположении.  
+1.  Добавьте `style="background-color: aliceblue;"` к вашему `<nav>` .  В блоке кода ниже четвертая строка кода — это строка, которая должна измениться.  Остальное только там, поэтому вы можете убедиться, что вы ставите новый код в нужном месте.  
     
     ```html
     <header>
@@ -138,15 +138,15 @@ ms.locfileid: "11125337"
     ...
     ```  
     
-1.  Перейдите на **вкладку динамический** , чтобы увидеть изменения.  `<nav>`Теперь фон раздела синего цвета.  
+1.  Чтобы отобразить изменения, перейдите на **вкладку live.**  Фон раздела `<nav>` теперь синий.  
     
-    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-inline2.msft.png":::
-       Цвет фона, который находится за **домашней страницей** и ссылками на **Контакты** , стал синей  
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="Фоновый цвет ссылок дома и контактов теперь синий" lightbox="../media/beginners-css-inline2.msft.png":::
+       Фоновый цвет ссылок **дома** и **контактов** теперь синий  
     :::image-end:::  
     
-## Повторное использование стилей на одной странице с внутренними таблицами стилей  
+## <a name="re-use-styles-on-a-single-page-with-internal-stylesheets"></a>Повторное использование стилей на одной странице с внутренними таблицами стилей  
 
-В предыдущем фрагменте кода встроенный стиль применяет стиль для одного `<p>` тега.  
+В предыдущем фрагменте кода вложенный стиль применял стиль к одному `<p>` тегу.  
 
 ```html
 <p style="border: 1px dashed red; padding: 5px;">
@@ -154,16 +154,16 @@ ms.locfileid: "11125337"
 </p>
 ```  
 
-Что делать, если вы хотите `<p>` , чтобы все элементы на веб-странице были применены таким же образом?  Код необходимо скопировать и вставить в каждый один `<p>` тег на вашем сайте.  Это немало времени и сил.  Если вы хотите внести изменения, вам придется заново изменить все теги.  Выполните указанные ниже действия, чтобы использовать **внутреннюю таблицу стилей** для создания CSS, чтобы она применялась к нескольким элементам.  
+Что делать, если вы хотите, чтобы все элементы на вашей веб-странице были одинаково `<p>` стили.  Код необходимо скопировать и вклеить в каждый `<p>` тег на вашем сайте.  Это много времени и усилий.  И, если вам нужно сделать изменение, вам придется изменить каждый тег снова.  Выполните следующие действия, чтобы использовать **таблицу внутренних** стилей для записи CSS один раз, чтобы она применяла к нескольким элементам.  
 
-1.  На вкладке "динамический" нажмите " **контакт** ", чтобы перейти на страницу контакта.  Обратите внимание на шрифт **домашних** и **контактных**данных.  
+1.  На вкладке в прямом эфире **выберите Контакт,** чтобы перейти на контактную страницу.  Обратите внимание на шрифт **Дома и** **Контакта.**  
     
-    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-internal1.msft.png":::
-       Страница "контакт"  
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="Страница Контакт" lightbox="../media/beginners-css-internal1.msft.png":::
+       Страница Контакт  
     :::image-end:::  
     
-1.  На **вкладке "редактор**" перейдите в раздел `contact.html` .  
-1.  Добавьте следующий код `contact.html` .  Помните, что вам нужно добавить строки, начинающиеся с `<style>` и заканчивая данными `</style>` .  Другой код — это только то, что вы знаете, где разместить новый код.  
+1.  На **вкладке редактор откройте** `contact.html` .  
+1.  Добавьте следующий код в `contact.html` .  Помните, что строки, начиная с и `<style>` `</style>` заканчивая, это то, что нужно добавить.  Другой код только там, чтобы вы знали, куда поместить новый код.  
     
     ```html
     ...
@@ -181,16 +181,16 @@ ms.locfileid: "11125337"
     ...
     ```  
     
-1.  Вернитесь на **вкладку динамический**.  
-1.  Нажмите кнопку " **контакт** ", чтобы вернуться на страницу контакта.  Изменился шрифт " **Главная** " и " **контакт** ".  
+1.  Возвращайся к **вкладке live.**  
+1.  Выберите **Контакт,** чтобы вернуться на контактную страницу.  Изменен шрифт **Дома и** **Контакта.**  
     
-    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-internal2.msft.png":::
-       Изменен шрифт ссылок на **домашнюю страницу** и **контакт контакта**  
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="Изменен шрифт ссылок дома и контактов" lightbox="../media/beginners-css-internal2.msft.png":::
+       Изменен шрифт ссылок **дома** и **контактов**  
     :::image-end:::  
     
-### Общие сведения о внутренних таблицах стилей  
+### <a name="understand-internal-stylesheets"></a>Понимание внутренних таблиц стилей  
 
-Внутренние таблицы стилей. Примените стили с помощью **селекторов**.  Селекторы — это шаблоны, которые могут применяться к одному или нескольким элементам HTML.  Предыдущий фрагмент кода добавил следующий стиль.  
+Внутренние таблицы стилей применяют стили с помощью **селекторов.**  Селекторы — это шаблоны, которые могут применяться к одному или более элементам HTML.  Предыдущий фрагмент кода добавил следующий стиль.  
 
 ```html
 <style>
@@ -200,24 +200,24 @@ ms.locfileid: "11125337"
 </style>
 ```  
 
-`li a` — Это селектор, который преобразуется в "любой `<li>` элемент, содержащий `<a>` элемент".  Браузер изменит шрифт **домашних** и **контактных** ссылок, так как каждая из групп тегов соответствует шаблону.  
+`li a` является селектором, который переводится как "любой `<li>` элемент, содержащий `<a>` элемент".  Браузер меняет шрифт ссылок **"Дома"** и **"Контакт",** так как каждая из групп тегов соответствует шаблону.  
 
 ```html
 <li><a href="/">Home</a></li>
 <li><a href="/contact.html">Contact</a></li>
 ```  
 
-`font-family: 'Courier New', Courier, serif` является **объявлением**.  Объявление состоит из двух частей:  
+`font-family: 'Courier New', Courier, serif` является **объявлением**.  Объявление состоит из следующих двух частей.  
 
 :::row:::
    :::column span="1":::
-      **Property**  
+      **свойство**  
    :::column-end:::
    :::column span="1":::
       `font-family`  
    :::column-end:::
    :::column span="2":::
-      Это свойство описывает общий способ изменения стиля элемента.  
+      Свойство описывает общий способ изменения стиля элемента.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -228,15 +228,15 @@ ms.locfileid: "11125337"
       `'Courier New', Courier, serif`  
    :::column-end:::
    :::column span="2":::
-      Значение точно описывает способ изменения стиля элемента.  
+      В значении описывается, как именно должен меняться стиль элемента.  
    :::column-end:::
 :::row-end:::  
 
-Например, `font-family: 'Courier New', Courier, serif` предоставляет браузеру следующую инструкцию: "Установка шрифта для элементов, которые соответствуют шаблону `li a` `'Courier New'` .  Если этот шрифт недоступен, используйте `Courier` .  Если это недоступно, используйте `serif` ".  
+Например, `font-family: 'Courier New', Courier, serif` дает браузеру следующую инструкцию: "Установите шрифт элементов, которые соответствуют `li a` шаблону `'Courier New'` .  Если этот шрифт не доступен, используйте `Courier` .  Если это не доступно, используйте `serif` ."  
 
-### Добавление нескольких селекторов в набор правил  
+### <a name="add-multiple-selectors-to-a-ruleset"></a>Добавление нескольких селекторов в правило  
 
-Блок кода CSS вроде того, что вы видите ниже, называется набором **правил**.  
+Блок кода CSS, как и следующий фрагмент кода, называется **правилом.**  
 
 ```css
 li a {
@@ -244,10 +244,10 @@ li a {
 }
 ```  
 
-Выполните следующие действия, чтобы добавить несколько селекторов в RuleSet с помощью запятых.  
+Выполните следующие действия, чтобы использовать запятые для добавления нескольких селекторов в список правил.  
 
-1.  На **вкладке Редактор**откройте `contact.html` .  
-1.  После `li a` ввода `, h1` .  
+1.  На **вкладке редактор откройте** `contact.html` .  
+1.  После `li a` введите `, h1` .  
     
     ```html
     <style>
@@ -257,122 +257,122 @@ li a {
     </style>
     ```  
     
-    Предыдущий фрагмент кода указывает браузеру на элементы стиля `<h1>` таким же образом, как и элементы, которые соответствуют шаблону `li a` .  
+    Предыдущий фрагмент кода сообщает браузеру о стиле элементов так же, как он стили `<h1>` элементов, которые соответствуют шаблону `li a` .  
     
-1.  Перейдите на **вкладку динамический**.  
-1.  Щелкните ссылку **контакт** , чтобы вернуться на страницу контакта.  Теперь **свяжитесь со мной!** имеет тот же шрифт, что и ссылки для навигации.  
+1.  Перейдите на **вкладку в прямом эфире.**  
+1.  Выберите **контактную** ссылку, чтобы вернуться на контактную страницу.  Теперь **свяжитесь со мной!** имеет тот же шрифт, что и ссылки на навигацию.  
     
-    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-multiple1.msft.png":::
-       Текстовые **Контакты!** Теперь тот же шрифт, что и ссылки на **домашнюю** и **контактный**  
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Текст Свяжитесь со мной!  теперь имеет тот же шрифт, что и ссылки Home и Contact" lightbox="../media/beginners-css-multiple1.msft.png":::
+       Текст **Свяжитесь со мной!** теперь имеет тот же шрифт, что и **ссылки Home** и **Contact**  
     :::image-end:::  
     
-## Поэкспериментировать с DevTools  
+## <a name="experiment-with-devtools"></a>Эксперимент с DevTools  
 
-По мере того как вы продолжите свое путешествие, чтобы стать экспертом при разработке веб-приложений, возможно, вы обнаружите, что CSS очень сложны.  Вы можете написать каскадную таблицу стилей, чтобы она отображалась одним способом, но браузер делает что-то совершенно другое.  Microsoft Edge DevTools упрощает эксперименты с изменениями и немедленно показывает, как изменения повлияют на страницу.  
+По мере того как вы продолжите свое путешествие, чтобы стать экспертом в веб-разработке, вы можете обнаружить, что CSS является сложной.  Вы можете написать некоторые CSS и ожидать его отображения в одну сторону, но браузер делает что-то совершенно другое.  Microsoft Edge DevTools упрощает эксперименты с изменениями и немедленно отображает влияние изменений на страницу.  
 
-### Добавление объявления к существующему правилу в DevTools  
+### <a name="add-a-declaration-to-an-existing-rulest-in-devtools"></a>Добавление объявления к существующему правилу в DevTools  
 
-Выполните указанные ниже действия, чтобы выполнить итерацию по стилю существующего элемента, добавив объявление к существующему набору правил.  
+Выполните следующие действия, чтобы итерировать стиль существующего элемента, добавьте объявление в существующий список правил.  
 
-1.  Наведите указатель мыши на **домашнюю** ссылку, откройте контекстное меню (щелкните правой кнопкой мыши и выберите команду **проверить**).  
+1.  Наведите курсор на **ссылку Главная,** откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
     
-    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-add1.msft.png":::
-       Проверка ссылки на домашнюю страницу  
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Проверка домашней ссылки" lightbox="../media/beginners-css-add1.msft.png":::
+       Проверка домашней ссылки  
     :::image-end:::  
     
-    DevTools открывается вместе со страницей.  Код, представляющий ссылку на домашнюю страницу, `<a href="/">Home</a>` выделяется синим цветом в дереве DOM.  Фрагмент кода и предварительный просмотр должны быть знакомы с тем, как начать [работу с HTML и моделью DOM][DevtoolsBeginnersHtml].  
+    DevTools открывается рядом со своей страницей.  Код, который представляет ссылку Главная, выделен синим `<a href="/">Home</a>` цветом в дереве DOM.  Фрагмент кода и предварительный просмотр должны быть знакомы в [get Started с HTML и DOM.][DevtoolsBeginnersHtml]  
     
     :::row:::
        :::column span="":::
-          На приведенном ниже рисунке `font-family: 'Courier New', Courier, serif` объявление, добавленное ранее, отображается `contact.html` на вкладке **стили** под деревом DOM.  
+          На следующем рисунке объявление, к которое вы ранее добавили, отображается на вкладке `font-family: 'Courier New', Courier, serif` `contact.html` **Стили** ниже дерева DOM.  
           
-          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-add2.msft.png":::
-             Вкладка " **стили** " находится под ДЕРЕВОм DOM  
+          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="Вкладка Стили находится ниже дерева DOM" lightbox="../media/beginners-css-add2.msft.png":::
+             Вкладка **Стили** находится ниже дерева DOM  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Если окно DevTools является широкой страницей, вкладка стили находится справа от дерева DOM.  
+          Если окно DevTools широкое, вкладка Styles находится справа от дерева DOM.  
           
-          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-add3.msft.png":::
-             Вкладка " **стили** " справа от дерева DOM  
+          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text="Вкладка Styles находится справа от дерева DOM" lightbox="../media/beginners-css-add3.msft.png":::
+             Вкладка **Styles** находится справа от дерева DOM  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  Чтобы добавить новое объявление, выберите пустую строку ниже `font-family: 'Courier New', Courier, Serif` .  
+1.  Выберите пустую строку `font-family: 'Courier New', Courier, Serif` ниже, чтобы добавить новое объявление.  
     
-    :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-add4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="Добавление нового объявления" lightbox="../media/beginners-css-add4.msft.png":::
        Добавление нового объявления  
     :::image-end:::  
     
-1.  Введите текст `color` и выберите его `Enter` .  Пользовательский интерфейс автозаполнения предлагает параметры по мере ввода.  
+1.  Введите `color` и выберите `Enter` .  Пользовательский интерфейс автокомплекта предлагает варианты при введите.  
     
-    :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-add5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="Цвет типа" lightbox="../media/beginners-css-add5.msft.png":::
        Тип `color`  
     :::image-end:::  
     
-1.  Введите текст `magenta` и выберите его `Enter` .  Весь текст на странице контакта стал пурпурным.  
+1.  Введите `magenta` и выберите `Enter` .  Весь текст на странице контакта теперь пурпурный.  
     
-    :::image type="complex" source="../media/beginners-css-add6.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-add6.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add6.msft.png" alt-text="Тип magenta" lightbox="../media/beginners-css-add6.msft.png":::
        Тип `magenta`  
     :::image-end:::  
     
-### Изменение объявления в DevTools  
+### <a name="edit-a-declaration-in-devtools"></a>Изменение объявления в DevTools  
 
-Чтобы изменить существующие объявления в DevTools, выполните указанные ниже действия.  
+Выполните следующие действия по редактированию существующих деклараций в DevTools.  
 
-1.  Выберите пурпурный квадрат рядом с `magenta` .  Появится палитра выбора цвета.  
+1.  Выберите квадрат magenta рядом `magenta` с .  Всплывет подбиратель цветов.  
     
-    :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-edit1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="Выбор цвета" lightbox="../media/beginners-css-edit1.msft.png":::
        Выбор цвета  
     :::image-end:::  
     
-1.  С помощью средства выбора цвета измените текст шрифта на нужный цвет.  
+1.  Используйте выборщик цвета, чтобы изменить текст шрифта на цвет, который вам нравится.  
     
-    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-edit2.msft.png":::
-       Изменение цвета шрифта на фиолетовый с помощью средства выбора цвета  
+    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="Измените цвет шрифта на фиолетовый с помощью цвета Picker" lightbox="../media/beginners-css-edit2.msft.png":::
+       Измените цвет шрифта на фиолетовый с помощью цвета Picker  
     :::image-end:::  
     
-### Добавление нового набора правил в DevTools  
+### <a name="add-a-new-ruleset-in-devtools"></a>Добавление нового правила в DevTools  
 
-Чтобы добавить новые наборы правил в DevTools, выполните указанные ниже действия.  
+Выполните следующие действия, чтобы добавить новые правила в DevTools.  
 
-1.  Выберите **новое правило стиля** \ ( ![ новое правило стиля ][ImageNewStyleRuleIcon] \), которое находится рядом с **. CLS**.  В качестве Selector появится пустой набор правил `a` .  
+1.  Выберите **новое правило** стиля \( Новое правило стиля ![ ][ImageNewStyleRuleIcon] \), которое находится рядом с **.cls**.  Пустой регламент отображается в `a` качестве селектора.  
     
-    :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-rule1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Добавление нового правила" lightbox="../media/beginners-css-rule1.msft.png":::
        Добавление нового правила  
     :::image-end:::  
     
-1.  Заменить `a` на `a:hover` .  
+1.  Замените `a` `a:hover` .  
     
-    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-rule2.msft.png":::
-       Заменить `a` на `a:hover`  
+    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Замените a:hover" lightbox="../media/beginners-css-rule2.msft.png":::
+       Замените `a` на `a:hover`  
     :::image-end:::  
     
-    `:hover` является **псевдо-классом**.  Используйте псевдо-классы для элементов стиля, которые могут вводить особые состояния.  Например, `a:hover` стиль вступает в силу только при наведении указателя мыши на `<a>` элемент.  
+    `:hover` является **псевдоклассом.**  Используйте псевдо-классы для элементов стиля, которые могут вводить особые состояния.  Например, стиль вступает в силу только при наведении над `a:hover` `<a>` элементом.  
     
 1.  Выберите между скобками, чтобы добавить новое объявление.  
-1.  Введите `background-color` имя объявления и нажмите кнопку `Enter` .  
+1.  Введите `background-color` имя объявления и выберите `Enter` .  
     
-    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-rule3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="Тип фонового цвета" lightbox="../media/beginners-css-rule3.msft.png":::
        Тип `background-color`  
     :::image-end:::  
     
-1.  Введите `green` значение объявления и нажмите кнопку `Enter` .  
+1.  Введите `green` значение объявления и выберите `Enter` .  
     
-    :::image type="complex" source="../media/beginners-css-rule4.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-rule4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule4.msft.png" alt-text="Введите зеленый цвет" lightbox="../media/beginners-css-rule4.msft.png":::
        Тип `green`  
     :::image-end:::  
     
-1.  Наведите указатель мыши на ссылку " **Домашняя страница** ".  Фон ссылки становится зеленым.  
+1.  Наведите курсор мыши по **ссылке Главная.**  Фон ссылки становится зеленым.  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-rule5.msft.png":::
-       Наведите указатель мыши на домашнюю ссылку, чтобы отобразить зеленый фон  
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="Наведите курсор на ссылку Главная, чтобы показать ее зеленый фон" lightbox="../media/beginners-css-rule5.msft.png":::
+       Наведите курсор на ссылку Главная, чтобы показать ее зеленый фон  
     :::image-end:::  
     
-## Повторное использование стилей на разных страницах с внешними таблицами стилей  
+## <a name="re-use-styles-across-pages-with-external-stylesheets"></a>Повторное использование стилей на страницах с внешними таблицами стилей  
 
-На предыдущем этапе вы добавили следующий фрагмент кода в качестве внутренней таблицы стилей `contact.html` .  
+На предыдущем этапе в таблицу внутренних стилей добавлен следующий фрагмент `contact.html` кода.  
 
 ```html
 ...
@@ -388,45 +388,45 @@ li a {
 ...
 ```  
 
-Что делать, если вы захотите стиль `index.html` одинаково?  Что делать, если вы хотите применить стили к большому количеству страниц?  Необходимо скопировать и вставить внутреннюю таблицу стилей в каждую веб-страницу на сайте.  Выполните указанные ниже действия, чтобы добавить **внешнюю таблицу стилей** , которая позволит вам создавать CSS один раз и применять ее к нескольким страницам.  
+Что делать, если вы хотите стиль `index.html` таким же образом?  Что делать, если у вас есть большое количество страниц, на которые вы хотите применить стили?  Необходимо скопировать и вклеить таблицу внутренних стилей на каждую веб-страницу на вашем сайте.  Выполните следующие действия, чтобы добавить таблицу **внешних** стилей, чтобы позволить вам написать CSS один раз и применить его к нескольким страницам.  
 
-1.  Сначала перезагрузите вкладку Live, чтобы удалить изменения, внесенные в DevTools.  
+1.  Сначала обновите вкладку в прямом эфире, чтобы удалить изменения, внесенные в DevTools.  
     
-    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external1.msft.png":::
-        После обновления страницы изменения, внесенные в DevTools, исчезают  
+    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text=" После обновления страницы изменения, внесенные в DevTools, исчезли" lightbox="../media/beginners-css-external1.msft.png":::
+        После обновления страницы изменения, внесенные в DevTools, исчезли  
     :::image-end:::  
     
-1.  Вернитесь на **вкладку Редактор** и откройте ее `contact.html` .  
+1.  Возвращайся на **вкладку редактора и** открывай `contact.html` .  
     
-    :::image type="complex" source="../media/beginners-css-external2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external2.msft.png" alt-text="contact.html" lightbox="../media/beginners-css-external2.msft.png":::
        contact.html  
     :::image-end:::  
     
-1.  Удалить все между `<style>` и `</style>` , включая `<style>` и `</style>` .  
+1.  Удаление всего `<style>` между и , в том числе и `</style>` `<style>` `</style>` .  
     
-    :::image type="complex" source="../media/beginners-css-external3.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external3.msft.png":::
-       Тег Style был удален  
+    :::image type="complex" source="../media/beginners-css-external3.msft.png" alt-text="Тег стиля удален" lightbox="../media/beginners-css-external3.msft.png":::
+       Тег стиля удален  
     :::image-end:::  
     
-1.  Перейдите к `index.html` тегу и удалите `style="background-color: aliceblue;"` его `<nav>` .  Теперь вы удалили все CSS-таблицы, которые вы ранее добавили на сайт.  
+1.  Откройте `index.html` и `style="background-color: aliceblue;"` удалите из `<nav>` тега.  Теперь вы удалили все CSS, которые вы ранее добавили на свой сайт.  
     
-    :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external4.msft.png":::
-       Встроенный стиль удален из элемента навигации  
+    :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="Стиль inline был удален из элемента nav" lightbox="../media/beginners-css-external4.msft.png":::
+       Стиль inline был удален из элемента nav  
     :::image-end:::  
     
-1.  Выберите команду **создать файл**.  
+1.  Выберите **новый файл**.  
     
-    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external5.msft.png":::
-       Диалоговое окно "Создание файла"  
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="Новый диалоговое окно файла" lightbox="../media/beginners-css-external5.msft.png":::
+       Новый диалоговое окно файла  
     :::image-end:::  
     
-1.  Замените `cool-file.js` на `style.css` и выберите команду **Добавить файл**.  
+1.  Замените `cool-file.js` и выберите Add `style.css` **File**.  
     
-    :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external6.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="Тип style.css" lightbox="../media/beginners-css-external6.msft.png":::
        Тип `style.css`  
     :::image-end:::  
     
-1.  Добавьте в файл следующий фрагмент кода `style.css` .  
+1.  Добавьте в файл следующий фрагмент `style.css` кода.  
     
     ```css
     li a, h1 {
@@ -440,14 +440,14 @@ li a {
     }
     ```  
     
-    :::image type="complex" source="../media/beginners-css-external7.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external7.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external7.msft.png" alt-text="Добавление кода в style.css" lightbox="../media/beginners-css-external7.msft.png":::
        Добавление кода в `style.css`  
     :::image-end:::  
     
-    Убедитесь, что создана внешняя таблица стилей. Ваш HTML-код не знает, что он существует.  
+    Убедитесь, что вы создали таблицу внешних стилей. Ваш HTML не знает, что он существует.  
     
-1.  Open (открыть) `index.html` .  
-1.  Добавьте `<link rel="stylesheet" href="style.css">` в свой HTML-код.  
+1.  Откройте `index.html` .  
+1.  Добавьте `<link rel="stylesheet" href="style.css">` в HTML.  
     
     ```html
     <head>
@@ -457,59 +457,59 @@ li a {
     </head>
     ```  
     
-    :::image type="complex" source="../media/beginners-css-external8.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external8.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external8.msft.png" alt-text="Ссылка на style.css" lightbox="../media/beginners-css-external8.msft.png":::
        Ссылка на `style.css`  
     :::image-end:::  
     
-1.  Откройте `contact.html` файл и добавьте ссылку на него.  
+1.  Откройте файл `contact.html` и добавьте ссылку.  
     
-    :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external9.msft.png":::
-       Ссылка `style.css` в `contact.html`  
+    :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="Ссылка на style.css в contact.html" lightbox="../media/beginners-css-external9.msft.png":::
+       Ссылка на `style.css` в `contact.html`  
     :::image-end:::  
     
-1.  Перейдите на **вкладку динамический**.  Домашняя страница теперь имеет тот же шрифт, что и в последнем разделе, и в синем разделе навигации.  
+1.  Перейдите на **вкладку в прямом эфире.**  На домашней странице теперь есть тот же шрифт из последнего раздела и синий раздел навигации.  
     
-    :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external10.msft.png":::
-       Домашняя страница  
+    :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="Главная страница" lightbox="../media/beginners-css-external10.msft.png":::
+       Главная страница  
     :::image-end:::  
     
-1.  Щелкните ссылку **контакт** , чтобы перейти на страницу контакта.  Страница контакта имеет тот же формат, что и домашняя страница.  
+1.  Выберите **контактную** ссылку, чтобы перейти на контактную страницу.  Контактная страница имеет тот же формат, что и домашняя страница.  
     
-    :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-external11.msft.png":::
-       Страница "контакт"  
+    :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="Страница контактов" lightbox="../media/beginners-css-external11.msft.png":::
+       Страница контактов  
     :::image-end:::  
     
-## Использование платформы CSS  
+## <a name="use-a-css-framework"></a>Использование CSS-фреймворка  
 
-**Платформы CSS** — это коллекции стилей, разработанных другими разработчиками, которые упрощают создание привлекательных веб-сайтов.  Вместо того чтобы определять стили самостоятельно, платформа предоставляет коллекцию стилей, которые вы можете использовать в элементах страницы.  
+**CSS frameworks —** это коллекции стилей, построенных другими разработчиками, которые упрощают создание привлекательных веб-сайтов.  Вместо того, чтобы самостоятельно определять стили, рамки предоставляют вам коллекцию стилей, которые можно использовать на элементах страницы.  
 
-1.  Скопируйте приведенный ниже код.  
+1.  Скопируйте следующий код:  
     
     ```html
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     ```  
     
-1.  Перейдите на вкладку Правка и вставьте код в `contact.html` .  
+1.  Откройте вкладку редактирования и вклеите код в `contact.html` .  
     
-    :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-framework1.msft.png":::
-       Ссылка на платформу в `contact.html`  
+    :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="Ссылка на рамки в contact.html" lightbox="../media/beginners-css-framework1.msft.png":::
+       Ссылка на фреймворк в `contact.html`  
     :::image-end:::  
     
-1.  Откройте `index.html` файл и добавьте в него код.  
+1.  Откройте файл `index.html` и добавьте код.  
     
-    :::image type="complex" source="../media/beginners-css-framework2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-framework2.msft.png":::
-       Ссылка на платформу в `index.html`  
+    :::image type="complex" source="../media/beginners-css-framework2.msft.png" alt-text="Ссылка на рамки в index.html" lightbox="../media/beginners-css-framework2.msft.png":::
+       Ссылка на фреймворк в `index.html`  
     :::image-end:::  
     
-1.  Вернитесь на вкладку динамический, чтобы просмотреть изменения.  Несмотря на то, что цвет фона `<nav>` элемента и шрифта `<li>` `<a>` элементов and одинаков, изменился шрифт остальных элементов.  
+1.  Возвращайся на вкладку в прямом эфире, чтобы просмотреть изменения.  Несмотря на то, что фоновый цвет элемента и шрифта и элементов одинаковы, шрифт других элементов `<nav>` `<li>` `<a>` изменился.  
     
-    :::image type="complex" source="../media/beginners-css-framework3.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-framework3.msft.png":::
-       Некоторые шрифты на домашней странице изменились из-за платформы  
+    :::image type="complex" source="../media/beginners-css-framework3.msft.png" alt-text="Некоторые шрифты на домашней странице изменились из-за рамок" lightbox="../media/beginners-css-framework3.msft.png":::
+       Некоторые шрифты на домашней странице изменились из-за рамок  
     :::image-end:::  
     
-### Использование класса  
+### <a name="use-a-class"></a>Использование класса  
 
-В последнем разделе вы добавили начальную загрузку на веб-страницы, которая изменила шрифты для некоторых элементов на вашем сайте.  Структуры CSS помогают вносить существенные изменения на странице с помощью очень небольшого количества кода.  Чтобы изменить верхний колонтитул, выполните указанные ниже действия.  
+В последнем разделе вы добавили Bootstrap на свои веб-страницы, которые изменили шрифты некоторых элементов на вашем сайте.  CSS-фреймворки помогают вносить существенные изменения на страницу с очень небольшим кодом.  Выполните следующие действия по изменению загона.  
 
 1.  Скопируйте следующий фрагмент кода.  
     
@@ -517,27 +517,27 @@ li a {
     class="jumbotron jumbotron-fluid"  
     ```  
     
-1.  Добавьте предыдущий фрагмент кода в `<header>` тег `index.html` .  
+1.  Добавьте предыдущий фрагмент кода в тег `<header>` `index.html` .  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-jumbotron1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-jumbotron1.msft.png" alt-text="Добавление классов в index.html" lightbox="../media/beginners-css-jumbotron1.msft.png":::
        Добавление классов в `index.html`  
     :::image-end:::  
     
-1.  Добавьте код в `<header>` тег `contact.html` .  
+1.  Добавьте код в тег `<header>` `contact.html` .  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-jumbotron2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-jumbotron2.msft.png" alt-text="Добавление классов в contact.html" lightbox="../media/beginners-css-jumbotron2.msft.png":::
        Добавление классов в `contact.html`  
     :::image-end:::  
     
-1.  Просмотрите изменения на вкладке "живые".  Вокруг заголовка есть большое затененное поле.  
+1.  Просмотр изменений на вкладке в прямом эфире.  Вокруг загона есть большая серая коробка.  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-jumbotron3.msft.png":::
-       Теперь верхний колонтитул имеет большой серый прямоугольник вокруг него.  
+    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="В загоне теперь есть большой серый поле вокруг него" lightbox="../media/beginners-css-jumbotron3.msft.png":::
+       В загоне теперь есть большой серый поле вокруг него  
     :::image-end:::  
     
-### Общие сведения о классах  
+### <a name="understand-classes"></a>Понимание классов  
 
-Классы позволяют назначать коллекции стилей произвольным элементам.  Используйте следующий фрагмент кода, чтобы применить к `<header>` элементу несколько стилей после присвоения `class` атрибуту значения `jumbotron` .  
+Классы могут назначать коллекции стилей произвольным элементам.  Используйте следующий фрагмент кода, чтобы применить несколько стилей к элементу после того, как `<header>` задаете `class` атрибут `jumbotron` .  
 
 ```css
 .jumbotron {
@@ -548,7 +548,7 @@ li a {
 }
 ```  
 
-Одно из преимуществ класса состоит в том, что он позволяет применять стили к любым нужным элементам.  Например, предположим, что вам нужно установить для некоторых элементов цвет фона `<p>` , который будет фиолетовым, но не все `<p>` элементы.  Используйте следующий фрагмент кода, чтобы определить стиль в классе.  
+Одним из преимуществ класса является то, что он позволяет применять стили к любым элементам, которые вы хотите.  Например, предположим, что необходимо установить фоновый цвет некоторых элементов на фиолетовый, но `<p>` не все `<p>` элементы.  Чтобы определить стиль в классе, используйте следующий фрагмент кода.  
 
 ```css
 .custom-background {
@@ -556,7 +556,7 @@ li a {
 }
 ```  
 
-Затем примените класс только к тем `<p>` элементам, для которых вы хотите применить стиль.  
+Далее применим класс только `<p>` к элементам, которые необходимо в стиле.  
 
 ```html
 <p>The text is not purple.</p>
@@ -565,44 +565,44 @@ li a {
 <p class="custom-background">The text is purple.</p>
 ```  
 
-### Выравнивание элементов  
+### <a name="align-elements"></a>Выравнивание элементов  
 
-Выполните указанные ниже действия, чтобы выполнить загрузку и предоставить классы для выравнивания элементов.  
+Выполните следующие действия, чтобы выполнить загрузку и предоставить классы для выравнивания элементов.  
 
-1.  Вернитесь на вкладку Редактор и откройте ее `index.html` .  
-1.  Добавьте `class="container-fluid"` в свой `<body>` тег.  
+1.  Возвращайся на вкладку редактора и открывай `index.html` .  
+1.  Добавьте `class="container-fluid"` в `<body>` тег.  
     
-    :::image type="complex" source="../media/beginners-css-align1.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-align1.msft.png":::
-       Добавьте `container-fluid` класс  
+    :::image type="complex" source="../media/beginners-css-align1.msft.png" alt-text="Добавление класса контейнерной жидкости" lightbox="../media/beginners-css-align1.msft.png":::
+       Добавление `container-fluid` класса  
     :::image-end:::  
     
-1.  Обтекание `<nav>` `<main>` элементов `<div class="row">` .  `</div>`Чтобы правильно закрыть новый тег, убедитесь в том, что вы хотите сделать `</main>` это.  
+1.  Wrap your `<nav>` and `<main>` elements in `<div class="row">` .  Чтобы правильно закрыть новый тег, убедитесь, что нужно поставить `</div>` `</main>` после.  
     
-    :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-align2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="Добавление строки" lightbox="../media/beginners-css-align2.msft.png":::
        Добавление строки  
     :::image-end:::  
     
-1.  Добавьте `class="col-3"` теги в тег `<nav>` и `class="col-9"` в `<main>` тег.  
+1.  Добавьте `class="col-3"` в тег и в `<nav>` `class="col-9"` `<main>` тег.  
     
-    :::image type="complex" source="../media/beginners-css-align3.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-align3.msft.png":::
-       Добавление `col-3` классов и `col-9`  
+    :::image type="complex" source="../media/beginners-css-align3.msft.png" alt-text="Добавление классов col-3 и col-9" lightbox="../media/beginners-css-align3.msft.png":::
+       Добавление `col-3` классов `col-9` и классов  
     :::image-end:::  
     
-1.  Просмотрите изменения на вкладке "живые".  
+1.  Просмотр изменений на вкладке в прямом эфире.  
     
-    :::image type="complex" source="../media/beginners-css-align4.msft.png" alt-text="Как выглядит ваш веб-сайт" lightbox="../media/beginners-css-align4.msft.png":::
-       Содержимое элемента навигации теперь находится слева от основного содержимого.  
+    :::image type="complex" source="../media/beginners-css-align4.msft.png" alt-text="Содержимое nav теперь находится слева от основного контента" lightbox="../media/beginners-css-align4.msft.png":::
+       Содержимое nav теперь находится слева от основного контента  
     :::image-end:::  
     
-## Дальнейшие действия  
+## <a name="next-steps"></a>Дальнейшие действия  
 
-Поздравляем, вы закончите.  
+Поздравляем, вы закончили.  
 
-*   Лучший способ улучшить качество веб-приложений — создать дополнительные сайты.  Не беспокойтесь о нарушениях.  Просто восприятие и обучение очень удобно.  
-*   Чтобы узнать больше о стилях веб-страниц, перейдите к разделу Общие сведения о [CSS][MDNCssFirstSteps].  
-*   Чтобы узнать больше о том, как использовать DevTools для экспериментов с CSS-страницей, перейдите к разделу [Начало работы с помощью просмотра и изменения CSS][DevtoolsCssIndex].  
+*   Лучший способ улучшить веб-разработку — создать больше сайтов.  Не беспокойтесь о взломе вещей.  Просто повеселиться и узнать как можно больше по пути.  
+*   Чтобы узнать больше о стиле веб-страниц, перейдите к [вводу в CSS][MDNCssFirstSteps].  
+*   Чтобы узнать больше о том, как использовать DevTools для экспериментов с CSS страницы, перейдите к началу просмотра и изменения [CSS][DevtoolsCssIndex].  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -612,18 +612,18 @@ li a {
 
 <!--- links  --->  
 
-[DevtoolsBeginnersHtml]: ./html.md "DevTools для начинающих: Приступая к работе с HTML и моделью DOM | Документы Microsoft"  
-[DevtoolsCssIndex]: ../css/index.md "Начало просмотра и изменения CSS | Документы Microsoft"  
+[DevtoolsBeginnersHtml]: ./html.md "DevTools для начинающих: начало работы с HTML и doM | Документы Майкрософт"  
+[DevtoolsCssIndex]: ../css/index.md "Начало работы с просмотром и изменением CSS-| Документы Майкрософт"  
 
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Предварительная оценка Microsoft Edge"  
+[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html-готовил-amphibian | Цепь"  
+[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html — приготовленные амфибии | Glitch"  
 
 [MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "Первые шаги CSS | MDN"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/beginners/css) и [Katherine Джексон][KatherineJackson] \ (помощник службы технической поддержки, Chrome DevTools \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница находится [здесь](https://developers.google.com/web/tools/chrome-devtools/beginners/css) и является автором [Кэтрин][KatherineJackson] Джексон \(Технический стажер писатель, Chrome DevTools\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

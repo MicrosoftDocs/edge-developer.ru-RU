@@ -3,16 +3,16 @@ description: Microsoft Edge в Linux, улучшенные советы webhint 
 title: Что нового в средствах разработчика (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: f56586fa77e34da7884d9d7c565b8cbcc4106c4a
-ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
+ms.openlocfilehash: 7d24d1ba6fe33a7420ff34376c981d608a4e30af
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387284"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397580"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-88"></a>Что нового в средствах разработчика (Microsoft Edge 88)  
 
@@ -98,9 +98,9 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
 
-Следующие новые функции средств [Сеть](#network-tool), [Приложение](#application-tool) и [Источники](#sources-tool) помогают создавать [PWA][ProgressiveWebAppsChromiumIndex].  Используйте следующие функции, если у вас возникли трудности при отладке служебного сценария.  
+Следующие новые функции средств [Сеть](#network-tool), [Приложение](#application-tool) и [Источники](#sources-tool) помогают создавать [PWA][ProgressiveWebAppsIndex].  Используйте следующие функции, если у вас возникли трудности при отладке служебного сценария.  
 
-Маршрутизация запросов отображает события `startup` и `fetch`, основанные на сетевых запросах, выполняемых в служебных сценариях.  Временные шкалы доступны в средстве **Приложение** или **Сеть**.  Временные шкалы удобно использовать, если у вас возникли проблемы со служебными сценариями и вы хотите проверить наличие ошибок в событиях `startup` или `fetch`.  
+Маршрутизация запросов отображает события `startup` и `fetch`, основанные на сетевых запросах, выполняемых в служебных сценариях.  Временные шкалы доступны в средстве **Приложение** или **Сеть**.  Временные рамки помогают, когда у вас возникли проблемы с сотрудниками службы и вы хотите отобразить, если что-то не так с `startup` `fetch` событием или событием.  
 
 ### <a name="application-tool"></a>Средство "Приложение"  
 
@@ -179,8 +179,8 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Вставка значения свойства в Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Вставка значения свойства в Visual Studio Code  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Значение свойства в microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Значение свойства в microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -351,10 +351,10 @@ background: linear-gradient(100deg, lightblue, pink);
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивное веб-приложение в Windows | Документация Майкрософт"  
+[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Прогрессивное веб-приложение в Windows | Документация Майкрософт"  
 
-[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "Настройка сочетания клавиш в параметрах — что нового в средствах разработчика (Microsoft Edge 87) | Документация Майкрософт"  
-[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#webhint-feedback-in-the-issues-panel "Отзывы webhint в панели "Проблемы" — что нового в средствах разработчика (Microsoft Edge 85) | Документация Майкрософт"  
+[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Настройка сочетания клавиш в параметрах — что нового в средствах разработчика (Microsoft Edge 87) | Документация Майкрософт"  
+[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "Отзывы webhint в панели "Проблемы" — что нового в средствах разработчика (Microsoft Edge 85) | Документация Майкрософт"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Скачивание WebDriver | Программа Майкрософт для разработчиков"  
 

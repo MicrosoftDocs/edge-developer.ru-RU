@@ -1,98 +1,98 @@
 ---
-description: Список поддерживаемых API-интерфейсов, которые следует использовать при сборке расширений Microsoft Edge.
+description: Список поддерживаемых API, которые можно использовать при создании расширений Microsoft Edge.
 title: Поддерживаемые API для расширений Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-Chromium, Разработка расширений, расширения браузера, надстройки, API расширения, разработчик, веб-разработка
-ms.openlocfilehash: 868473393da6cefbf146fb7acd6c9816903bd253
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+keywords: edge-chromium, разработка расширений, расширения браузера, надстройки, api расширения, разработчик, веб-разработка
+ms.openlocfilehash: 20e924b5c973b9ecd433feeb3a772c6d17746369
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120396"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398107"
 ---
-# Поддерживаемые API для расширений Microsoft Edge
+# <a name="supported-apis-for-microsoft-edge-extensions"></a>Поддерживаемые API для расширений Microsoft Edge
 
-В таблице ниже приведен список API-интерфейсов, которые можно использовать при создании расширений для браузера Microsoft Edge \ (Chromium \).
+В следующей таблице приводится список API, которые можно использовать при создании расширений для браузера Microsoft Edge \(Chromium\).
 
 | API                                   | Описание                                            
 |---------------------------------------|----------------------------------------------------------|
-| [будильники](https://developer.chrome.com/extensions/alarms) | Код расписания, который будет периодически выполняться или заданный период в будущем. |
-| [закладки](https://developer.chrome.com/extensions/bookmarks) | Создавать и упорядочивать закладки, а можно управлять ими. |
-| [browserAction](https://developer.chrome.com/extensions/browserAction) | Использование действий браузера для размещения значков на панели инструментов в Microsoft Edge. Вы также можете использовать действия браузера для добавления всплывающих подсказок, значков или всплывающих окон. |
-| [browsingData](https://developer.chrome.com/extensions/browsingData) | Удаление данных обзора из локального профиля пользователя. |
-| [команды](https://developer.chrome.com/extensions/commands) | Добавление сочетаний клавиш, вызывающих действия в расширении. Например, действие для открытия браузера или отправки команды на расширение. |
-| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | Как правило, параметры содержимого позволяют настраивать поведение Microsoft EDGE на каждом сайте, а не глобально. Измените параметры, определяющие, могут ли веб-сайты использовать такие функции, как cookie, JavaScript и подключаемые модули. |
-| [contextMenu](https://developer.chrome.com/extensions/contextMenus) | Добавить элементы в контекстное меню Microsoft Edge. Элементы меню могут применяться к различным объектам, таким как изображения, гиперссылки и страницы. |
-| [файлах](https://developer.chrome.com/extensions/cookies) | Запрашивать и изменять файлы cookie и получать уведомления при их изменении. |
-| [отладчика](https://developer.chrome.com/extensions/debugger) | Присоединение к одной или нескольким вкладкам для взаимодействия с сетью, отладки JavaScript, изменения модели DOM, изменения CSS и т. д. Используйте отладчик tabId для назначения вкладок с sendCommand и маршрутизации событий tabId из функций обратного вызова oneven. |
-| [declarativeContent](https://developer.chrome.com/extensions/declarativeContent) | Выполнение действий в зависимости от содержимого страницы без необходимости разрешения на чтение содержимого страницы. |
-| [declarativeNetRequest](https://developer.chrome.com/extensions/declarativeNetRequest) | Обеспечивает более подробную конфиденциальность, блокируя или изменяя сетевые запросы, задавая декларативные правила. Разрешите расширения изменить сетевые запросы, не перехватывая запрос и просматривая содержимое. |
+| [будильники](https://developer.chrome.com/extensions/alarms) | Запланировать запуск кода периодически или в указанное время в будущем. |
+| [закладки](https://developer.chrome.com/extensions/bookmarks) | Создание, организация и обработка закладок. |
+| [browserAction](https://developer.chrome.com/extensions/browserAction) | Используйте действия браузера, чтобы разместить значки на панели инструментов в Microsoft Edge. Вы также можете использовать действия браузера для добавления инструмента, значка или всплывающее окна. |
+| [browsingData](https://developer.chrome.com/extensions/browsingData) | Удалите данные просмотра из локального профиля пользователя. |
+| [команды](https://developer.chrome.com/extensions/commands) | Добавьте ярлыки клавиатуры, которые запускают действия в расширении. Например, действие для открытия браузера или отправки команды в расширение. |
+| [contentSettings](https://developer.chrome.com/extensions/contentSettings) | В общем, параметры контента позволяют настраивать поведение Microsoft Edge на каждом сайте, а не глобально. Измените параметры, которые контролируют, могут ли веб-сайты использовать такие функции, как cookie, JavaScript и плагины. |
+| [contextMenus](https://developer.chrome.com/extensions/contextMenus) | Добавление элементов в контекстное меню в Microsoft Edge. Элементы меню могут применяться к различным объектам, таким как изображения, гиперссылки и страницы. |
+| [cookies](https://developer.chrome.com/extensions/cookies) | Запрос и изменение файлов cookie и получение уведомлений при изменении. |
+| [отладка](https://developer.chrome.com/extensions/debugger) | Прикрепить одну или несколько вкладок к взаимодействию с сетью инструментов, отменить JavaScript, изменить DOM, изменить CSS и так далее. Используйте вкладку tabId отладки для таргетинга вкладок с помощью sendCommand и событий маршрутов с помощью tabId от вызовов onEvent. |
+| [declarativeContent](https://developer.chrome.com/extensions/declarativeContent) | Принимайте меры в зависимости от содержимого страницы, не требуя разрешения на чтение контента страницы. |
+| [declarativeNetRequest](https://developer.chrome.com/extensions/declarativeNetRequest) | Обеспечивает больше конфиденциальности путем блокировки или изменения сетевых запросов путем указания декларативных правил. Разрешить расширениям изменять сетевые запросы без перехвата запроса и просмотра контента. |
 | [desktopCapture](https://developer.chrome.com/extensions/desktopCapture) | Захват содержимого экрана, отдельных окон или вкладок. |
-| [devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Общайтесь с проверенным окном. Например, можно получить идентификатор вкладки страниц, оценить код, повторно загрузить страницы или получить ресурсы на странице. |
-| [devtools. Network](https://developer.chrome.com/extensions/devtools_network) | Получение сведений о сетевых запросах, отображаемых средствами разработчика на панели "сеть". |
-| [devtools. Panels](https://developer.chrome.com/extensions/devtools.panels) | Интегрировать расширение в пользовательский интерфейс окна средств разработчика можно с помощью создания собственных панелей, доступа к существующим панелям или добавления боковых панелей. |
-| [загрузки](https://developer.chrome.com/extensions/downloads) | Программный запуск, мониторинг, управление и поиск загрузок. |
-| [Enterprise. hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Получите изготовитель и модель аппаратной платформы, в которой работает браузер. Этот API доступен только для расширений, установленных корпоративной политикой. |
-| [событиях](https://developer.chrome.com/extensions/events) | Распространенные типы, используемые API, которые инициируют события для уведомления о возникновении интересных событий. |
-| [добавоч](https://developer.chrome.com/extensions/extension) | Любая страница расширения может использовать служебные программы этого API. Она включает в себя поддержку обмена сообщениями между расширениями и сценариями содержимого, описанными в разделе Передача сообщений. |
-| [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Содержат объявления типов для расширений Microsoft Edge. |
-| [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Управление параметрами шрифта в Microsoft Edge. |
-| [журнал](https://developer.chrome.com/extensions/history) | Взаимодействие с записью просмотренных страниц в браузере. Вы можете добавлять, удалять или запрашивать URL-адреса в истории браузера. Сведения о том, как переопределить страницу журнала с помощью собственной версии, можно найти в разделе "переопределение страниц". |
-| [i18n](https://developer.chrome.com/extensions/i18n) | Реализуйте международные приложения во всех приложениях и расширениях. |
-| [С3](https://developer.chrome.com/extensions/idle) | Определение факта изменения состояния бездействия компьютера. |
-| [оснастк](https://developer.chrome.com/extensions/management) | Управление списком установленных или запущенных расширений. Это полезно для расширений, которые переопределяют встроенную страницу новой вкладки. |
-| [уведомления](https://developer.chrome.com/extensions/notifications) | Создание форматированных уведомлений с помощью шаблонов и их отображение в области уведомлений. |
-| [omnibox](https://developer.chrome.com/extensions/omnibox) | Зарегистрируйте ключевые слова в адресной строке Microsoft EDGE, также называемой Omnibox. |
-| [pageAction](https://developer.chrome.com/extensions/pageAction) | Добавьте значки на панель инструментов Microsoft Edge справа от адресной строки. Действия на странице — это действия, которые можно выполнить на текущей странице и которые не применимы ко всем страницам. При неактивном выполнении действия страницы отображаются серым цветом. |
-| [pageCapture](https://developer.chrome.com/extensions/pageCapture) | Сохранение вкладок в виде файлов MHTML.|
-| [правами](https://developer.chrome.com/extensions/permissions) | Извлеките объявленные, необязательные разрешения во время выполнения, а не на этапе установки. Этот API можно использовать для отображения необходимых и утвержденных разрешений для пользователей. |
-| [выключение](https://developer.chrome.com/extensions/power) | Переопределение функций управления электропитанием системы. |
-| [printerProvider](https://developer.chrome.com/extensions/printerProvider) | Используйте события, чтобы запрашивать принтеры, их возможности и отправлять задания печати. |
-| [конфиденциальность](https://developer.chrome.com/extensions/privacy) | Элементы управления в Microsoft EDGE, которые влияют на конфиденциальность пользователя. Этот API зависит от `EdgeSetting` прототипа `types` для получения и задания конфигурации Microsoft Edge. |
-| [посредник](https://developer.chrome.com/extensions/proxy) | Управление параметрами прокси-сервера в Microsoft Edge. Этот API зависит от `EdgeSetting` прототипа `types` API для получения и задания конфигурации прокси-сервера Microsoft Edge. |
-| [язык](https://developer.chrome.com/extensions/runtime) | Получение фоновой страницы, возврат сведений о манифесте и прослушивание событий и реагирование на события в жизненном цикле приложения или расширения. Кроме того, можно преобразовать относительный путь URL-адреса в полный URL-адрес. |
-| [упражнени](https://developer.chrome.com/extensions/sessions) | Запрашивать и восстанавливать вкладки и окна из сеанса просмотра. |
-| [хранилище](https://developer.chrome.com/extensions/storage) | Храните, изменяйте и отслеживайте изменения, внесенные в пользовательские данные. |
-| [System. Memory](https://developer.chrome.com/extensions/system_memory) | `system.memory`API. |
-| [System. Storage](https://developer.chrome.com/extensions/system_storage) | Запрос сведений об устройствах хранения. Вы также можете получать уведомления о присоединении и отсоединении запоминающих устройств. |
-| [tabCapture](https://developer.chrome.com/extensions/tabCapture) | Взаимодействие с потоками вкладок. |
-| [закладок](https://developer.chrome.com/extensions/tabs) | Взаимодействие с системой вкладок браузера для создания, изменения и переупорядочивания вкладок. |
-| [topSites](https://developer.chrome.com/extensions/topSites) | Получайте доступ к самым распространенным сайтам, которые также называют большинством посещенных сайтов, которые отображаются на странице Создать вкладку. Эти сайты не содержат сочетаний клавиш, настроенных пользователем. |
-| [речь](https://developer.chrome.com/extensions/tts) | Воспроизводить синтезированный текст в речь (TTS). |
-| [ttsEngine](https://developer.chrome.com/extensions/ttsEngine) | Реализация обработчика преобразования текста в речь (TTS) с помощью расширения. Расширения, регистрируемые для использования этого API, получают события, которые содержат utterances для обработки и другие параметры. Затем расширения могут использовать любые доступные веб-технологии для создания и вывода речевого ввода, а также отправлять события назад в вызывающую функцию для отчета о состоянии. |
-| [лично](https://developer.chrome.com/extensions/types) | Объявления типов для Microsoft Edge. |
-| [Навигация](https://developer.chrome.com/extensions/webNavigation) | Получать уведомления о состоянии запросов на переходы. |
-| [WebRequest (запрос)](https://developer.chrome.com/extensions/webRequest) | Просмотрите и проанализируйте трафик. Перехват, блокирование и изменение запросов. |
-| [windows](https://developer.chrome.com/extensions/windows) | Взаимодействие с окнами браузера для создания, изменения и упорядочения окон в браузере. |
+| [devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Взаимодействие с инспектным окном.  Например, получение ID вкладок страниц, оценка кода, обновление страниц или получение ресурсов на странице. |
+| [devtools.network](https://developer.chrome.com/extensions/devtools_network) | Извлечение сведений о сетевых запросах, отображаемом средствами разработчика в панели Network. |
+| [devtools.panels](https://developer.chrome.com/extensions/devtools.panels) | Интеграция расширения в пользовательский интерфейс окна Средства разработчика путем создания собственных панелей, доступа к существующим панелям или добавления боковых панелей. |
+| [загрузки](https://developer.chrome.com/extensions/downloads) | Программным образом запускайте, отслеживайте, манипулирует и ищите скачивания. |
+| [enterprise.hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Получите производителя и модель аппаратной платформы, на которой работает браузер. Этот API доступен только для расширений, установленных корпоративной политикой. |
+| [события](https://developer.chrome.com/extensions/events) | Распространенные типы, используемые API, которые вызывают события, чтобы уведомить вас о том, когда происходит интересное событие. |
+| [расширение](https://developer.chrome.com/extensions/extension) | На любой странице расширения можно использовать утилиты этого API. Она включает поддержку обмена сообщениями между расширениями и скриптами контента, которая описана в передаче сообщений. |
+| [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Содержит объявления типов для расширений Microsoft Edge. |
+| [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Управление настройками шрифтов в Microsoft Edge. |
+| [журнал](https://developer.chrome.com/extensions/history) | Взаимодействие с записью посещаемых страниц браузера. В истории браузера можно добавлять, удалять или запрашивать URL-адреса. Чтобы переопредить страницу истории с помощью собственной версии, перейдите на переопределять страницы. |
+| [i18n](https://developer.chrome.com/extensions/i18n) | Реализация интернационализации во всем приложении или расширении. |
+| [праздный](https://developer.chrome.com/extensions/idle) | Обнаружение изменений состояния простаиваемой машины. |
+| [управление](https://developer.chrome.com/extensions/management) | Управление списком установленных или запущенных расширений. Это полезно для расширений, переопределять встроенную страницу New Tab. |
+| [уведомления](https://developer.chrome.com/extensions/notifications) | Создайте богатые уведомления с помощью шаблонов и отобразите их в системной подноске. |
+| [omnibox](https://developer.chrome.com/extensions/omnibox) | Регистрация ключевых слов в адресной панели Microsoft Edge, также известной как omnibox. |
+| [pageAction](https://developer.chrome.com/extensions/pageAction) | Добавьте значки в панель инструментов Microsoft Edge справа от панели адресов. Действия страницы — это действия, которые можно принять на текущей странице и не применимы к всем страницам. Действия страницы отображаются серыми при неактивности. |
+| [pageCapture](https://developer.chrome.com/extensions/pageCapture) | Сохранение вкладок в качестве файлов MHTML.|
+| [разрешения](https://developer.chrome.com/extensions/permissions) | Извлечение объявленных необязательных разрешений во время запуска, а не во время установки. Этот API можно использовать для отображения пользователям необходимых и утвержденных разрешений. |
+| [выключение](https://developer.chrome.com/extensions/power) | Переопределять функции управления питанием системы. |
+| [printerProvider](https://developer.chrome.com/extensions/printerProvider) | Используйте события для запроса принтеров, их возможностей и отправки заданий печати. |
+| [конфиденциальность](https://developer.chrome.com/extensions/privacy) | Функции управления в Microsoft Edge, влияющие на конфиденциальность пользователя. Этот API зависит от прототипа для получения и настройки `EdgeSetting` `types` конфигурации Microsoft Edge. |
+| [прокси](https://developer.chrome.com/extensions/proxy) | Управление настройками прокси для Microsoft Edge. Этот API зависит от прототипа API для получения и настройки `EdgeSetting` `types` прокси-конфигурации Microsoft Edge. |
+| [время запуска](https://developer.chrome.com/extensions/runtime) | Извлекать фоновую страницу, возвращать сведения о манифесте, а также слушать и реагировать на события в жизненном цикле приложения или расширения. Можно также преобразовать относительный путь URL-адресов в полностью квалифицированные URL-адреса. |
+| [сеансы](https://developer.chrome.com/extensions/sessions) | Запрос и восстановление вкладок и окон из сеанса просмотра. |
+| [хранилище](https://developer.chrome.com/extensions/storage) | Хранение, извлечение и отслеживание изменений в пользовательских данных. |
+| [system.memory](https://developer.chrome.com/extensions/system_memory) | The `system.memory` API. |
+| [system.storage](https://developer.chrome.com/extensions/system_storage) | Запрос сведений о устройствах хранения. Вы также можете получать уведомления при присоединении или отсоединениях устройств хранения. |
+| [tabCapture](https://developer.chrome.com/extensions/tabCapture) | Взаимодействие с потоками мультимедиа вкладок. |
+| [вкладки](https://developer.chrome.com/extensions/tabs) | Взаимодействуйте с системой вкладок браузера для создания, изменения и изменения вкладок. |
+| [topSites](https://developer.chrome.com/extensions/topSites) | Доступ к верхним сайтам, также называемым большинством посещаемых сайтов, которые отображаются на новой странице вкладки. Эти сайты не включают ярлыки, настроенные пользователем. |
+| [tts](https://developer.chrome.com/extensions/tts) | Воспроизведения синтезированной текстовой речи (TTS). |
+| [ttsEngine](https://developer.chrome.com/extensions/ttsEngine) | Реализация двигателя с текстом на речь (TTS) с помощью расширения. Расширения, которые регистрируются для использования этого API, получают события, содержащие произнесенные слова и другие параметры. Расширения могут использовать любую доступную веб-технологию для синтеза и вывода речи, а также отправлять события обратно в функцию вызова, чтобы сообщить о состоянии. |
+| [типы](https://developer.chrome.com/extensions/types) | Введите объявления для Microsoft Edge. |
+| [webNavigation](https://developer.chrome.com/extensions/webNavigation) | Получение уведомлений о состоянии запросов на навигацию. |
+| [webRequest](https://developer.chrome.com/extensions/webRequest) | Наблюдение и анализ трафика. Перехват, блокировка или изменение запросов. |
+| [windows](https://developer.chrome.com/extensions/windows) | Взаимодействие с окнами браузера для создания, изменения и изменения окон в браузере. |
 
 
 
-## Неподдерживаемые API расширения
+## <a name="unsupported-extension-apis"></a>Неподтвердимые API расширения
 
-Microsoft EDGE не поддерживает следующие API расширений:
+Microsoft Edge не поддерживает следующие API расширения:
 
 * `chrome.gcm`.
 * `chrome.identity.getAccounts`.
-* `chrome.identity.getAuthToken` -В качестве альтернативы вы можете использовать `launchWebAuthFlow` для получения маркера OAuth2 для проверки подлинности пользователей.
+* `chrome.identity.getAuthToken` — В качестве альтернативы можно использовать для получения маркера `launchWebAuthFlow` OAuth2 для проверки подлинности пользователей.
 * `chrome.instanceID`.
 
 
-## Дополнительные рекомендации для поддерживаемых API
+## <a name="additional-considerations-for-supported-apis"></a>Дополнительные соображения для поддерживаемых API
 
-* Пользователь должен войти в Microsoft EDGE, используя учетную запись MSA или Azure Active Directory для использования `chrome.identity.getProfileUserInfo` . Если пользователь вошел в Microsoft Edge с помощью локальной учетной записи Active Directory, API-интерфейс возвращает `null` для значений электронной почты и идентификаторов.
+* Пользователь должен быть подписан в Microsoft Edge с помощью учетной записи MSA или Azure Active Directory `chrome.identity.getProfileUserInfo` для использования. Если пользователь подписан в Microsoft Edge с помощью локальной учетной записи Active Directory, API возвращает значения электронной почты и `null` ID.
 
-* Microsoft EDGE не поддерживает расширения, использующие платежи в Интернет-магазине Chrome, так как они используются `identity.getAuthtoken` для запроса маркеров для пользователей, которые вошли в систему. Эти маркеры отправляются в интерфейс API лицензирования на основе RESTFUL. 
+* Microsoft Edge не поддерживает расширения, использующие платежи Chrome Web Store, так как он использует для запроса маркеров для пользователей, `identity.getAuthtoken` вписав их. Эти маркеры отправляются в API лицензирования на основе REST. 
 
 
 <!-- links -->  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> [Здесь](https://developer.chrome.com/apps/external_extensions)будет найдена исходная страница.  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница находится [здесь](https://developer.chrome.com/apps/external_extensions).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

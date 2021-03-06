@@ -1,18 +1,18 @@
 ---
-description: Включите параметр "помечать сценарии содержимого как код библиотеки" в настройках > код библиотеки Framework.
-title: Пометка сценария содержимого как кода библиотеки
+description: Включить "Пометить сценарии контента в качестве кода библиотеки" > Framework Library Code.
+title: Пометить сценарии контента как код библиотеки
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 2a9bca703004b6232bef857d7b9e2f45458db52d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124700"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398954"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,30 +28,30 @@ ms.locfileid: "11124700"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Помечайте сценарии содержимого как код библиотеки  
+# <a name="mark-content-scripts-as-library-code"></a>Пометить сценарии контента как код библиотеки  
 
-При использовании панели **Sources (источники** данных) Microsoft Edge DevTools для [перехода по коду][DevToolsJavascriptStepThroughCode], иногда наведите указатель мыши на код, который вы не знаете.  Возможно, вы приостановили код для одного из установленных расширений Microsoft Edge.  Выполните указанные ниже действия, чтобы не приостанавливаться на коде расширения.  
+При использовании **панели Источников** Microsoft Edge DevTools для прошаговки кода иногда приостанавливается использование кода, который не распознается. [][DevToolsJavascriptStepThroughCode]  Возможно, вы остановились на коде для одного из установленных расширений Microsoft Edge.  Выполните следующие действия, чтобы не приостанавлить код расширения.  
 
-1.  Откройте DevTools, нажмите кнопку **Настройка DevTools и** `...` выберите пункт **Параметры**.  Вы также можете открыть **Параметры** , выбрав `F1` .  
+1.  Откройте DevTools, выберите Настройка и **управление DevTools** `...` \( \) > **параметров**.  Вы также можете открыть **Параметры,** выбрав `F1` .  
 
-1.  Откройте вкладку **код библиотеки** , которая открывает раздел **код библиотеки Framework** **параметров**.  
-1.  Установите флажок **помечать сценарии содержимого как библиотечный код** .  
+1.  Выберите панель **кода Библиотеки,** которая открывает раздел **"Параметры** кода библиотеки **Framework".**  
+1.  Включи **сценарии контента Mark в качестве почтового ящика кода** библиотеки.  
     
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Флажок &quot;помечать сценарии содержимого как библиотеку кода&quot;" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       Флажок " **помечать сценарии содержимого как библиотеку кода** "  
+    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Включить скрипты контента Mark в качестве почтового ящика кода Библиотеки" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+       Включить **скрипты контента Mark в качестве почтового ящика кода** Библиотеки  
     :::image-end:::  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Шаг 4: пошаговое руководство по написанию кода — начало работы с отладкой JavaScript в Microsoft Edge DevTools | Документы Microsoft"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Шаг 4. Шаг через код . Начало отладки JavaScript в Microsoft Edge DevTools | Документы Майкрософт"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

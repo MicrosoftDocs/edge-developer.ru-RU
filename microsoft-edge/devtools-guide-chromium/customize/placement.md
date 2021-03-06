@@ -1,18 +1,18 @@
 ---
-description: Перемещение Microsoft Edge DevTools в нижней или левой части окна просмотра или в отдельном окне.
-title: Изменение положения DevTools Microsoft EDGE (Отстыковка, закрепить в нижней части, закрепить слева)
+description: Перемещение Microsoft Edge DevTools в нижней или левой части представления или в отдельное окно.
+title: Изменение размещения Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 65c0849af5da671bb0d76397d6d9395bc249eaac
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: e3160999a1072afffdc5c5d44f8fc60fab65d264
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125050"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399044"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,53 +28,53 @@ ms.locfileid: "11125050"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Изменение положения DevTools Microsoft EDGE (Отстыковка, закрепить в нижней части, закрепить слева)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Изменение размещения Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left)  
 
-По умолчанию DevTools закрепляется справа от окна просмотра.  Вы также можете закрепить нижнюю границу, закрепить слева или отстыковать DevTools в отдельном окне.  
+По умолчанию DevTools пришвартовано справа от вашего viewport.  Вы также можете пристыковаться к нижнему, док-станции слева или отстыковать DevTools к отдельному окну.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Нажмите кнопку &quot;закрепить на левой панели&quot;" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Выбор `Dock To Left`  
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Выбор док-станции влево" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Выбрать `Dock To Left`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Нажмите кнопку &quot;закрепить на левой панели&quot;" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Выбор `Dock To Bottom`  
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Выбор док-станции донизу" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Выбрать `Dock To Bottom`  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Нажмите кнопку &quot;закрепить на левой панели&quot;" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Браузер в отдельном окне" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
          Браузер в отдельном окне  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Нажмите кнопку &quot;закрепить на левой панели&quot;" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
-         Незакрепленные DevTools в отдельном окне  
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Незаблокировали DevTools в отдельном окне" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         Незаблокировали DevTools в отдельном окне  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Изменение положения в главном меню  
+## <a name="change-placement-from-the-main-menu"></a>Изменение размещения из основного меню  
 
-1.  Нажмите кнопку **Настройка DevTools и** `...` выберите команду **открепить в отдельном окне** \ (открепить к концу ![ ][ImageUndockIcon] ), **закрепите ее снизу вверх** ( ![ с закреплением вниз) ][ImageBottomIcon] или **закрепите слева** ( ![ ][ImageLeftIcon] закрепите слева направо).  
+1.  Выберите настройка и управление **DevTools** \( \) и выберите Undock в отдельное окно `...` \( **** ![ Undock \), dock to Bottom \( Dock to ][ImageUndockIcon] **Bottom** ![ \), ][ImageBottomIcon] **** ![ или ][ImageLeftIcon] стыковка налево \( Стыковка слева \).  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Нажмите кнопку &quot;закрепить на левой панели&quot;" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Выберите команду **открепить в отдельном окне**  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Выберите Undock в отдельное окно" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Выберите **Undock в отдельное окно**  
     :::image-end:::  
     
-## Изменение положения в меню команд  
+## <a name="change-placement-from-the-command-menu"></a>Изменение размещения из меню команды  
 
-1.  [Открытие меню команд][DevtoolsCommandMenu].  
-1.  Выполните одну из указанных ниже `Dock To Bottom` команд. `Undock Into Separate Window`  В настоящее время нет команды для закрепления слева, но вы можете получить доступ к ней из [главного меню](#change-placement-from-the-main-menu).  
+1.  [Откройте командное меню.][DevtoolsCommandMenu]  
+1.  Запустите одну из следующих команд: `Dock To Bottom` , `Undock Into Separate Window` .  В настоящее время нет команды для стыковки слева, но вы можете получить доступ к ней из [основного меню](#change-placement-from-the-main-menu).  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Нажмите кнопку &quot;закрепить на левой панели&quot;" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       Команда "отменить закрепление"  
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Команда отсоединого" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Команда отсоединого  
     :::image-end:::  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -86,11 +86,11 @@ ms.locfileid: "11125050"
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Выполнение команд с помощью командного меню Microsoft Edge DevTools | Документы Microsoft"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Запустите команды с помощью командного меню Microsoft Edge DevTools | Документы Майкрософт"  
 
 > [!NOTE]
-> Части этой страницы представляют собой изменения, основанные на работе, созданной и [предоставленной компанией Google][GoogleSitePolicies] и использованными в соответствии с условиями, описанными в [лицензии Creative Commons 4,0 международная лицензия][CCA4IL].  
-> Исходная страница будет найдена [здесь](https://developers.google.com/web/tools/chrome-devtools/customize/placement) и была написана с помощью [Kayce Basques][KayceBasques] \ (технический писатель, Chrome DevTools \ & Lighthouse \).  
+> Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/customize/placement) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

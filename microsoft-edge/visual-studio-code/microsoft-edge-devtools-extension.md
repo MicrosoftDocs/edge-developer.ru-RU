@@ -1,74 +1,74 @@
 ---
-description: Использование элементов для Microsoft EDGE (Chromium) из кода Visual Studio
-title: Элементы для Microsoft EDGE (Chromium) из кода Visual Studio
+description: Использование элементов для Microsoft Edge (Chromium) из Visual Studio Кода
+title: Элементы для Microsoft Edge (Chromium) из Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/26/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft EDGE, веб-разработка, инструменты для F12, Devtools, код VS, код Visual Studio, элементы
-ms.openlocfilehash: 81488c08a76a16b80a415cbd17cd0617df916f54
-ms.sourcegitcommit: 1cfcf2c8970a6c2221cfbf09a23d36b08bd60690
+keywords: Microsoft edge, веб-разработка, средства f12, devtools, vs code, visual studio code, elements
+ms.openlocfilehash: 83bac187fa2a9b1766a52f3f2cd176f171846e02
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135502"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398457"
 ---
-# Расширение кода Microsoft Edge DevTools для Visual Studio  
+# <a name="microsoft-edge-devtools-for-visual-studio-code-extension"></a>Microsoft Edge DevTools для расширения Visual Studio кода  
 
-Использование <!--the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] -->Это расширение для Access в Microsoft Edge DevTools в [коде Visual Studio][VisualstudioCode].  У вас есть доступ к **элементам** и **сетевым** инструментам в Microsoft Edge DevTools.  Вы можете запустить или присоединиться к экземпляру Microsoft Edge.  После подключения вы можете отобразить структуру HTML среды выполнения, изменить макет, устранить проблемы со стилизацией и проанализировать сетевой трафик.  
+Использование <!--the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] -->это расширение для доступа в Microsoft Edge DevTools внутри [Microsoft Visual Studio Code][VisualstudioCode].  У вас есть доступ к **средствам Elements** и **Network** в Microsoft Edge DevTools.  Вы можете либо запустить, либо прикрепить к экземпляру Microsoft Edge.  После подключения вы можете отобразить структуру HTML-кодов, изменить макет, устранить проблемы с укладкой и проверить сетевой трафик.  
 
-## Инструмент "элементы"  
+## <a name="elements-tool"></a>Средство Elements  
 
-По умолчанию расширение запускает экземпляр браузера в уникальном окне и предоставляет вам функциональные возможности **элементов** Microsoft Edge DevTools.  
+По умолчанию расширение запускает экземпляр браузера в уникальном **** окне и предоставляет функциональность Элементов Microsoft Edge DevTools.  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-windowed.png" alt-text="Microsoft Edge DevTools для кода Visual Studio, работающего в полном окне браузера" lightbox="./media/edge-devtools-for-vscode-windowed.png":::
-   Microsoft Edge DevTools для кода Visual Studio, работающего в полном окне браузера  
+:::image type="complex" source="./media/edge-devtools-for-vscode-windowed.png" alt-text="Microsoft Edge DevTools для Visual Studio кода с полным окном браузера" lightbox="./media/edge-devtools-for-vscode-windowed.png":::
+   Microsoft Edge DevTools для Visual Studio кода с полным окном браузера  
 :::image-end:::  
 
-В параметрах расширения вы можете включить дополнительные функции, такие как **режим Бездисплейной** **сети и сеть**.  
+В параметрах расширения можно включить дополнительные функциональные возможности, такие как **Режим без головы и** **сеть.**  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-settings.png" alt-text="Microsoft Edge DevTools для кода Visual Studio, работающего в полном окне браузера" lightbox="./media/edge-devtools-for-vscode-settings.png":::
-   Включение и отключение режима без монитора и проверки сети в параметрах расширения  
+:::image type="complex" source="./media/edge-devtools-for-vscode-settings.png" alt-text="Включение (или отключение) безголовых режимов и проверка сети в параметрах расширения" lightbox="./media/edge-devtools-for-vscode-settings.png":::
+   Включение режима \(или отключения\) безголовых и сетевой проверки в параметрах расширения  
 :::image-end:::  
 
-## Режим без монитора  
+## <a name="headless-mode"></a>Режим без головы  
 
-В режиме бездисплейного режима это расширение не запускает полный экземпляр браузера для отладки.  Он запускает экземпляр в фоновом режиме.  Возможно, вам придется оставаться внутри редактора и взаимодействовать с внедренным браузером.  На панели задач не отображается дополнительный значок браузера.  
+В безголевом режиме это расширение не запускает полный экземпляр браузера для отлаживания.  Он запускает экземпляр в фоновом режиме.  Возможно, вам придется оставаться в редакторе и взаимодействовать со встроенным браузером.  Дополнительный значок браузера не отображается в панели задач.  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-headless.png" alt-text="Microsoft Edge DevTools для кода Visual Studio, работающего в полном окне браузера" lightbox="./media/edge-devtools-for-vscode-headless.png":::
-   Microsoft Edge DevTools для кода Visual Studio, работающего в автономном браузере  
+:::image type="complex" source="./media/edge-devtools-for-vscode-headless.png" alt-text="Microsoft Edge DevTools для Visual Studio кода с безголовым управлением" lightbox="./media/edge-devtools-for-vscode-headless.png":::
+   Microsoft Edge DevTools для Visual Studio кода с безголовым браузером  
 :::image-end:::  
 
 > [!NOTE]
-> В macOS следует включить режим без монитора в качестве предпочтительного режима.  При использовании режима без монитора необходимо решить проблему, в которой окно браузера выводится, если окно не отображается `Not Active` .  
+> На macOS в качестве предпочтительного режима следует включить режим без головы.  Использование безголкового режима должно решить проблему, в которой, если окно не видно, окно браузера сообщает, что это `Not Active` .  
 
-## Инструмент "сеть"  
+## <a name="network-tool"></a>Средство "Сеть"  
 
-Если вы также хотите проверить сетевой трафик вашего приложения, откройте параметры и включите вкладку **сеть** .  
+Если вы также хотите проверить сетевой трафик приложения, откройте параметры и включите вкладку **Network.**  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-network.png" alt-text="Microsoft Edge DevTools для кода Visual Studio, работающего в полном окне браузера" lightbox="./media/edge-devtools-for-vscode-network.png":::
-    Проверка сети в Microsoft Edge DevTools для кода Visual Studio  
+:::image type="complex" source="./media/edge-devtools-for-vscode-network.png" alt-text="Проверка сети в Microsoft Edge DevTools для Visual Studio code" lightbox="./media/edge-devtools-for-vscode-network.png":::
+    Проверка сети в Microsoft Edge DevTools для Visual Studio code  
 :::image-end:::  
 
-## Запуск Microsoft Edge из расширения  
+## <a name="launching-microsoft-edge-from-the-extension"></a>Запуск Microsoft Edge from the extension  
 
-На **панели действий**перейдите в раздел "Инструменты Microsoft Edge".  Рядом с надписью **Microsoft Edge Tools: targets ("цели")** есть знак "плюс", который открывает браузер для вашего приложения.  Если вы выбрали параметр **about: Blank** , то для его отображения на панели **элементы** в коде Visual Studio необходимо перейти в браузере для этого веб-приложения.  
+Перейдите к microsoft Edge Tools в **панели действий.**  Рядом с тем, где написано **Microsoft Edge Tools: Targets,** есть знак плюс, который открывает браузер для вашего приложения.  Если вы выбираете параметр **about:blank,** необходимо перейти к веб-приложению в браузере, чтобы оно появлялось в панели **Elements** в Visual Studio Code.  
 
-## Запуск Microsoft Edge из представления отладки  
+## <a name="launching-microsoft-edge-from-the-debug-view"></a>Запуск Microsoft Edge из представления отлаговка  
 
-Если вы привыкли использовать представление отладку в коде Visual Studio, вы можете получить доступ к Microsoft Edge DevTools.  
+Если вы привыкли использовать представление debug в Visual Studio коде, в него можно получить доступ к Microsoft Edge DevTools.  
 
-1.  В коде Visual Studio перейдите в представление Отладка 
-    *   Выберите `Ctrl` + `Shift` + `D` в Windows или Linux \ ( `Command` + `Shift` + `D` на macOS \).  
+1.  В Visual Studio коде перейдите к представлению Debug 
+    *   Выберите `Ctrl` + `Shift` + `D` в Windows/Linux \( `Command` + `Shift` + `D` на macOS\).  
 
 <!--TODO:  Is this section intended to be optional  -->  
 > [!NOTE]
-> 1.  Если у вас нет каких – либо конфигураций в коде Visual Studio, выполните одно из указанных ниже действий.  
+> 1.  Если в коде Visual Studio нет конфигураций, выполните одно из следующих действий.  
 >     *   Выберите `F5` .  
->     *   Нажмите кнопку **воспроизвести** \ (зеленый \).  
-> 1.  В раскрывающемся списке выберите пункт **край** в раскрывающемся списке.  
-> 1.  `launch.json`Должен отобразиться файл, содержащий указанную ниже конфигурацию.  
+>     *   Выберите **кнопку Play** \(green\) .  
+> 1.  В отсеве выберите **Edge** в отсеве.  
+> 1.  Должен `launch.json` отображаться файл, содержащий следующую конфигурацию.  
 >     
 >     ```json
 >     {
@@ -84,28 +84,28 @@ ms.locfileid: "11135502"
 >     }
 >     ```  
 >     
-> После загрузки правильной конфигурации выполните указанные ниже действия.  
+> После загрузки правильной конфигурации выполните следующее действие.  
 
-1.  Чтобы запустить инструмент **элементы** из кода Visual Studio, выполните одно из указанных ниже действий. 
+1.  Чтобы запустить **средство Elements** из Visual Studio Code, выполните одно из следующих действий. 
     *   Выберите `F5` .  
-    *   Нажмите кнопку **воспроизвести** \ (зеленый \).  
+    *   Выберите **кнопку Play** \(green\) .  
          
-Теперь вы можете выполнить указанные ниже действия.  
+Теперь вы можете сделать следующие действия.  
 
-*   Открыть презентацию в браузере.  
-*   Проверьте модель DOM и стиль компонентов на странице.  
+*   Доступ к скринкасту браузера.  
+*   Проверьте dom и стиль компонентов на странице.  
 
-## Присоединение к Microsoft Edge  
+## <a name="attaching-to-microsoft-edge"></a>Присоединение к Microsoft Edge  
 
-Чтобы открыть браузер и присоединить экземпляр к коду Visual Studio, выполните указанные ниже действия. 
+Чтобы открыть браузер и прикрепить экземпляр к Visual Studio коду, выполните следующие действия. 
 
-1.  Чтобы открыть экземпляр Microsoft Edge \ (Chromium \), скопируйте и выполните следующую команду:  
+1.  Чтобы открыть экземпляр Microsoft Edge \(Chromium\), скопируйте и запустите следующую команду.  
     
     ```shell
     start msedge --remote-debugging-port=9222
     ```  
     
-1.  После того как экземпляр запустится, скопируйте и вставьте следующий фрагмент кода в `launch.json` файл.  
+1.  После запуска экземпляра скопируйте и вклейте в файл следующий фрагмент `launch.json` кода.  
     
     ```json
     {
@@ -118,28 +118,28 @@ ms.locfileid: "11135502"
     }
     ```  
     
-1.  В коде Visual Studio откройте раскрывающееся меню **отладчик** и выберите команду **присоединиться к Microsoft EDGE и откройте Инструменты разработчика**.  
-1.  Чтобы запустить инструмент **элементы** из кода Visual Studio, выполните одно из указанных ниже действий. 
+1.  В Visual Studio коде откройте выпадаемое меню **Debugger** и выберите Присоединение к Microsoft Edge и **откройте средства разработчика.**  
+1.  Чтобы запустить **средство Elements** из Visual Studio Code, выполните одно из следующих действий. 
     *   Выберите `F5` .  
-    *   Нажмите кнопку **воспроизвести** \ (зеленый \).  
+    *   Выберите **кнопку Play** \(green\) .  
          
-Теперь вы можете выполнить указанные ниже действия.  
+Теперь вы можете сделать следующие действия.  
 
-*   Открыть презентацию в браузере.  
-*   Проверьте модель DOM и стиль компонентов на странице.  
+*   Доступ к скринкасту браузера.  
+*   Проверьте dom и стиль компонентов на странице.  
     
-## Знакомство с командой Microsoft Edge DevTools для расширения кода Visual Studio  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-for-visual-studio-code-extension-team"></a>Контакт с командой microsoft Edge DevTools для Visual Studio кода  
 
-Отправьте отзыв, выполнив [архивацию][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] в [репозитории GitHub][GithubMicrosoftVscodeEdgeDevtools] в расширении.  
+Отправьте свои [отзывы, подав жалобу][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] на репозитарий [GitHub][GithubMicrosoftVscodeEdgeDevtools] о расширении.  
 
-Сведения о том, что нужно сделать <!--the Microsoft Edge DevTools for Visual Studio Code -->Это расширение лучше, ваши публикации — Добро пожаловать.  Найдите все, что нужно, чтобы начать работу в [репозитории GitHub][GithubMicrosoftVscodeEdgeDevtools] на расширение.  
+Если вы хотите помочь сделать <!--the Microsoft Edge DevTools for Visual Studio Code -->это расширение лучше, ваши вклады приветствуются.  Найдите все необходимое для начала в репозитарии [GitHub][GithubMicrosoftVscodeEdgeDevtools] расширения.  
 
 <!--links -->  
 
-[VisualstudioCode]: https://code.visualstudio.com "Код Visual Studio"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Документация | Код Visual Studio"   
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Код"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Документация | Visual Studio Код"   
 
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "Microsoft/vscode-Edge-Devtools | GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "Новая ошибка — Microsoft/vscode-Edge-Devtools | GitHub"
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "Microsoft/vscode-edge-devtools | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "Новая проблема — microsoft/vscode-edge-devtools | GitHub"
 
-[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Инструменты Microsoft Edge для кода VS"  
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools для Visual Studio кода"  

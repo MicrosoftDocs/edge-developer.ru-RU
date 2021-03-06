@@ -1,71 +1,85 @@
 ---
-description: Используйте панель мультимедиа для просмотра сведений и отлаки мультимедиа-плеер на вкладке браузера.
-title: Просмотр и отлагивание сведений об игроках мультимедиа
+description: Используйте средство Мультимедиа для просмотра информации и отлаговки медиа-игроков на вкладке браузера.
+title: Просмотр и отлаговка сведений о медиа-игроках
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: e6259cf573b76df7e281527ad30360b8f473a165
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230952"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398408"
 ---
-# Просмотр и отлагивание сведений об игроках мультимедиа  
+<!-- Copyright Jecelyn Yeen
 
-Используйте панель **мультимедиа** в Microsoft Edge DevTools для просмотра информации и отладки мультимедиа-плееров на вкладке браузера.  
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
-## Открытие панели "Мультимедиа"  
+       https://www.apache.org/licenses/LICENSE-2.0
 
-Панель **мультимедиа** — это основное место в DevTools для проверки мультимедиа-плеер веб-страницы.
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 
-1.  [Откройте DevTools.][DevtoolsGuideChromiumOpen]  
-1.  Чтобы открыть панель **"Мультимедиа",** выберите "Настройка и **управление средствами DevTools** `...`  >  **More".**  >  ****  
+# <a name="view-and-debug-media-players-information"></a>Просмотр и отлаговка сведений о медиа-игроках  
+
+Используйте средство **Мультимедиа** в Microsoft Edge DevTools для просмотра информации и отладки медиа-игроков на вкладке браузера.  
+
+## <a name="open-the-media-tool"></a>Откройте средство Мультимедиа  
+
+Средство **Мультимедиа** — это основное место в DevTools для проверки медиа-плеер веб-страницы.
+
+1.  [Откройте DevTools][DevtoolsGuideChromiumOpen].  
+1.  Чтобы открыть панель **Мультимедиа,** выберите Настройка и **управление средствами DevTools** `...`  >  **Дополнительные**  >  **средства Мультимедиа.**  
     
     :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Панель мультимедиа" lightbox="../media/media-panel-empty.msft.png":::
        **Панель мультимедиа**  
     :::image-end:::  
     
-## Просмотр сведений об игроках мультимедиа  
+## <a name="view-media-players-information"></a>Просмотр сведений о медиа-игроках  
 
-1.  Перейдите на веб-страницу с мультимедиа-плеером, например на следующей веб-странице.  
+1.  Перейдите на веб-страницу с медиа-плеером, например на следующей странице.  
     
-    [Максимальное повышение производительности с помощью средств разработчика edge][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
+    [Максимальное повышение производительности с помощью средств разработки edge][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
-1.  В меню **"Игроки"** отображается медиаплеер.  
-1.  Выберите игрока.  На **вкладке "Свойства"** отображаются свойства мультимедиа-плеер.  
+1.  В меню **Players** отображается медиаплеер.  
+1.  Выберите игрока.  Панель **свойств** отображает свойства медиаплеер.  
     
     :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Свойства мультимедиа" lightbox="../media/media-panel-view.msft.png":::
        Свойства мультимедиа  
     :::image-end:::  
     
-1.  Чтобы просмотреть все события мультимедиа-игрока, выберите вкладку **"События".**  
+1.  Чтобы просмотреть все события медиа-плеер, выберите панель **События.**  
     
     :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="События мультимедиа" lightbox="../media/media-panel-events.msft.png":::
        События мультимедиа  
     :::image-end:::  
     
-1.  Чтобы просмотреть журналы сообщений для мультимедиа-игрока, выберите вкладку **"Сообщения".**  Вы можете фильтровать сообщения по уровню журнала или строке.  
+1.  Чтобы просмотреть журналы сообщений мультимедиа-плеер, выберите панель **Сообщений.**  Вы можете фильтровать сообщения по уровню журнала или строке.  
     
     :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Сообщения мультимедиа" lightbox="../media/media-panel-messages.msft.png":::
        Сообщения мультимедиа  
     :::image-end:::  
     
-1.  На **вкладке "Временная** шкала" отображается состояние воспроизведения мультимедиа и буфера.  
+1.  На панели **Timeline** воспроизведение мультимедиа и состояние буфера отображаются в прямом эфире.  
     
     :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Временная шкала мультимедиа" lightbox="../media/media-panel-timeline.msft.png":::
        Временная шкала мультимедиа  
     :::image-end:::  
     
-### Удаленная отладка  
+### <a name="remote-debugging"></a>Удаленная отладка  
 
-Просмотр сведений об игроках мультимедиа на устройстве с Android с компьютера с Windows или macOS.  
+Просмотр сведений о медиаигредах на устройстве Android с компьютера Windows или macOS.  
 
-1.  Чтобы настроить удаленную отладку, перейдите к ссылке "Начало работы с [удаленной отладой устройств с Android".][DevtoolsGuideChromiumRemoteDebuggingIndex]  
-1.  Удаленное просмотр сведений об игроках мультимедиа.  
+1.  Чтобы настроить удаленную отладку, перейдите к началу работы [с устройствами удаленной][DevtoolsGuideChromiumRemoteDebuggingIndex]отладки Android.  
+1.  Просмотр сведений об игроках мультимедиа удаленно.  
     
     <!-- TODO: recreate image using an Android device -->  
     <!--  
@@ -74,30 +88,30 @@ ms.locfileid: "11230952"
     :::image-end:::  
     -->  
     
-## Скрытие и показ мультимедиа-плееров  
+## <a name="hide-and-show-media-players"></a>Скрыть и показать медиа-плеер  
 
-Иногда на веб-странице можно запустить несколько мультимедиа-плееров или использовать одну вкладку браузера для просмотра разных веб-страниц, каждый из которых имеет мультимедиа-плеер.
+Иногда вы запустите несколько медиа-плеер на веб-странице или используете одну вкладку браузера для просмотра различных веб-страниц, каждый из которых имеет медиа-плеер.
 
-Вы можете скрыть \(или показать\) каждый мультимедиа-плеер для упростить отладку.  
+Вы можете скрыть \(или показать\) каждый медиа-плеер для более простого отладки.  
 
-1.  Перейдите на несколько разных веб-страниц видео с помощью одной вкладки браузера.  
-1.  Чтобы скрыть мультимедиа-плеер, выполните одно из следующих действий.  
-    *   Чтобы скрыть один мультимедиа-плеер, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Скрыть игрока".**  
-    *   Чтобы скрыть всех других игроков мультимедиа, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите **"Скрыть все остальные".**  
+1.  Просмотрите несколько различных веб-страниц видео с помощью одной вкладки браузера.  
+1.  Чтобы скрыть медиа-плеер, выполните одно из следующих действий.  
+    *   Чтобы скрыть один медиа-плеер, наведите курсор на медиа-плеер, откройте контекстное меню \(правой кнопкой мыши\) и выберите **hide player**.  
+    *   Чтобы скрыть все остальные медиа-игроки, наведите курсор на медиа-плеер, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Скрыть все остальные**.  
     
-    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Скрытие мультимедиа-плееров" lightbox="../media/media-panel-hide-show.msft.png":::
-       Скрытие мультимедиа-плееров  
+    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Скрыть медиа-игроки" lightbox="../media/media-panel-hide-show.msft.png":::
+       Скрыть медиа-игроки  
     :::image-end:::  
     
-## Экспорт сведений о мультимедиа-плеере  
+## <a name="export-media-player-information"></a>Экспорт сведений о медиа-плеере  
 
-1.  Чтобы скачать сведения о мультимедиа-игроке в качестве JSON-файла, наведите курсор на мультимедиа-плеер, откройте контекстное меню \(щелкните правой кнопкой мыши\) и выберите "Сохранить **данные игрока".**  
+1.  Чтобы скачать сведения о медиа-плеере в качестве файла JSON, наведите курсор на медиа-плеер, откройте контекстное меню \(правой кнопкой мыши\) и выберите **сохранить сведения об игроке**.  
     
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Экспорт сведений о мультимедиа" lightbox="../media/media-panel-save.msft.png":::
        Экспорт сведений о мультимедиа  
     :::image-end:::  
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -105,9 +119,9 @@ ms.locfileid: "11230952"
 
 [DevtoolsGuideChromiumOpen]: ../open/index.md "Откройте Microsoft Edge (Chromium) DevTools | Документы Майкрософт"  
 
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Начало работы с удаленной отладой устройств с Android | Документы Майкрософт"  
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Начало работы с удаленной отладки устройств Android | Документы Майкрософт"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Максимальное увеличение производительности с помощью средств разработчика edge | Видео Bing"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Максимальное повышение производительности с помощью средств разработки edge | Видео Bing"  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  

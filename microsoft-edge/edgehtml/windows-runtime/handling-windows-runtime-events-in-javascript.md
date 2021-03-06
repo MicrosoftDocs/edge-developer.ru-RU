@@ -1,6 +1,8 @@
 ---
-description: Обработка событий в среде запуска Windows в JavaScript.
+description: Обработка событий среды выполнения Windows в JavaScript
 title: Обработка событий среды выполнения Windows в JavaScript
+ms.custom: ''
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 ms.topic: article
@@ -11,20 +13,19 @@ ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
 caps.latest.revision: 6
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: e0a3e35c908c766c0308903381b271f5ccdb27a3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 08562f7ebff0c02b96bfc8229238a62463b95451
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235668"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397526"
 ---
-# Обработка событий среды выполнения Windows в JavaScript  
+# <a name="handling-windows-runtime-events-in-javascript"></a>Обработка событий среды выполнения Windows в JavaScript  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-События в среде разработки Windows не представлены в JavaScript так же, как на C++ или .NET Framework.  Они не являются свойствами класса, а представлены в качестве идентификаторов строки \(lowercase\), которые передаются в методы `addEventListener` и `removeEventListener` класс.  Например, можно добавить обработчик событий для события [Geolocator.PositionChanged,][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] передав строку `positionchanged` `Geolocator.addEventListener` методу:  
+События во время запуска Windows не представлены в JavaScript так же, как в C++ или платформа .NET Framework.  Они не являются свойствами класса, а представляются как идентификаторы строки \(lowercase\) для класса и `addEventListener` `removeEventListener` методов.  Например, можно добавить обработчик событий для [события Geolocator.PositionChanged,][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] передав строку `positionchanged` `Geolocator.addEventListener` методу:  
 
 ```javascript  
 var locator = new Windows.Devices.Geolocation.Geolocator();
@@ -35,7 +36,7 @@ locator.addEventListener(
     });
 ```  
 
-Вы также можете настроить `locator.onpositionchanged` свойство:  
+Вы также можете установить `locator.onpositionchanged` свойство:  
 
 ```javascript
 locator.onpositionchanged =
@@ -44,7 +45,7 @@ locator.onpositionchanged =
     };
 ```  
 
-Еще одно различие между .NET/C++ и JavaScript — количество параметров, принятых обработом событий.  В .NET/C++ обработщик принимает два: отправитель события и данные события.  В JavaScript эти два объекта объединены в один `Event` объект.  В следующем примере параметр содержит отправитель события \(свойство\) и свойства данных события `ev` `target` \(здесь, просто `position` \).  Свойства данных события задокументированы для каждого события.  
+Еще одним отличием между .NET/C++ и JavaScript является количество параметров, принятых обработитором событий.  В .NET/C++обработщику требуется два: отправитель событий и данные событий.  В JavaScript эти два объекта объединены в единый `Event` объект.  В следующем примере параметр содержит как отправитель события \(свойство\) так и свойства данных событий `ev` `target` \(здесь, просто `position` \).  Свойства данных событий — это свойства, которые задокументированы для каждого события.  
 
 ```javascript
 function (ev) {
@@ -56,14 +57,14 @@ function (ev) {
 ```  
 
 > [!IMPORTANT]
-> Функции времени работы Windows недоступны для приложений, которые работают в Internet Explorer.  
+> Функции windows Runtime недоступны для приложений, которые работают в Internet Explorer.  
 
-## См. также  
+## <a name="see-also"></a>См. также  
 
 [Использование среды выполнения Windows в JavaScript][WindowsRuntimeJavascript]  
 
  <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Использование точки запуска Windows в JavaScript | Документы Майкрософт"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Использование времени запуска Windows в JavaScript | Документы Майкрософт"  
 
 [UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Класс Geolocator | Документы Майкрософт"  

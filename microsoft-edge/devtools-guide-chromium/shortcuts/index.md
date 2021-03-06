@@ -1,18 +1,18 @@
 ---
-description: Каноническая документация по Microsoft Edge DevTools сочетания клавиш.
-title: Сочетания клавиш Microsoft Edge DevTools
+description: Каноническая документация для клавиш Microsoft Edge DevTools.
+title: Ярлыки клавиатуры Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 417e2235e4ea63d0258c158035ea201cd5657099
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235148"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398352"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,133 +28,133 @@ ms.locfileid: "11235148"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Сочетания клавиш Microsoft Edge DevTools  
+# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Ярлыки клавиатуры Microsoft Edge DevTools  
 
-Эта статья является ссылкой на сочетания клавиш в Microsoft Edge DevTools.
+Эта статья является ссылкой на ярлыки клавиатуры в Microsoft Edge DevTools.
 
-Также можно найти ярлыки во ветвях инструментов.  Наведите курсор на элемент пользовательского интерфейса DevTools, чтобы отобразить ее.  Если элемент имеет ярлык, то в него включается его.
+Вы также можете найти ярлыки в инструментах.  Наведите курсор на элемент пользовательского интерфейса DevTools, чтобы отобразить инструмент.  Если элемент имеет ярлык, его включает инструмент.
 
-## Сочетания клавиш для открытия DevTools  
+## <a name="keyboard-shortcuts-for-opening-devtools"></a>Клавиши для открытия DevTools  
 
-Чтобы открыть DevTools, выберите следующие сочетания клавиш, пока курсор будет ориентирован на окна просмотра браузера.
-
-| Действие | Windows\/Linux | macOS |  
-|:--- |:--- |:--- |  
-| Откройте любую панель, которая использовалась в последний раз | `F12` или `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Открытие панели **консоли** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Открытие панели **элементов** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` или `Command`+`Option`+`C` |  
-
-## Глобальные сочетания клавиш  
-
-Следующие сочетания клавиш доступны в большинстве (если не во всех) панелях DevTools.
+Чтобы открыть DevTools, выберите следующие клавиши, в то время как курсор ориентирован на просмотр браузера.
 
 | Действие | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Показать **параметры** | `?` или `F1` | `?` или `Function`+`F1` |  
-| Фокус на следующей панели | `Control`+`]` | `Command`+`]` |  
-| Фокус на предыдущей панели | `Control`+`[` | `Command`+`[` |  
-| Переключиться на любую [позицию док-станции,][DevtoolsCustomizeIndexPlacement] которая использовалась в последний раз.  Если DevTools был в позиции по умолчанию для всего сеанса, то этот ярлык отсоединяя DevTools в отдельное окно | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Toggle [Device emulation][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
+| Откройте любую панель, используемую в последний раз | `F12` или `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Откройте **средство Консоли** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
+| Откройте средство **Elements** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` или `Command`+`Option`+`C` |  
+
+## <a name="global-keyboard-shortcuts"></a>Глобальные ярлыки клавиатуры  
+
+Следующие клавиши доступны в большинстве, если не во всех, панелях DevTools.
+
+| Действие | Windows\/Linux | macOS |  
+|:--- |:--- |:--- |  
+| Показать **параметры** | `?` or `F1` | `?` или `Function`+`F1` |  
+| Фокус следующей панели | `Control`+`]` | `Command`+`]` |  
+| Фокус предыдущей панели | `Control`+`[` | `Command`+`[` |  
+| Переключение на любую [позицию стыковки,][DevtoolsCustomizeIndexPlacement] используемую в последний раз.  Если DevTools был в положении по умолчанию на протяжении всего сеанса, этот ярлык отсоединяя DevTools в отдельное окно | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Эмуляция [устройства][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
-| Откройте меню [команд][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
-| Перегонать [ящик][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
-| Обычная перезагрузка | `F5` или `Control`+`R` | `Command`+`R` |  
-| Твердая перезагрузка | `Control`+`F5` или `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Поиск текста на текущей панели.  Не поддерживается в **панелях аудита,** **приложений** **и** безопасности | `Control`+`F` | `Command`+`F` |  
-| Открывает **вкладку "Поиск"** в [средстве "Drawer",][DevtoolsCustomizeIndexDrawer]которая позволяет искать текст во всех загруженных ресурсах | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Открытие файла на панели **источников** | `Control`+`O` или `Control`+`P` | `Command`+`O` или `Command`+`P` |  
+| Откройте [меню команд][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
+| Toggle the [Drawer][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
+| Нормальное обновление | `F5` или `Control`+`R` | `Command`+`R` |  
+| Жесткое обновление | `Control`+`F5` или `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Поиск текста в текущей панели.  Не поддерживается в **средствах аудита,** **приложения**и **безопасности** | `Control`+`F` | `Command`+`F` |  
+| Открывает **вкладку Поиск** в [ящике,][DevtoolsCustomizeIndexDrawer]которая позволяет искать текст во всех загруженных ресурсах | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
+| Откройте файл в панели **Источники** | `Control`+`O` или `Control`+`P` | `Command`+`O` или `Command`+`P` |  
 | Масштабирование | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Уменьшить | `Control`+`-` | `Command`+`-` |  
-| Восстановление уровня масштабирования по умолчанию | `Control`+`0` | `Command`+`0` |  
-| Запуск фрагмента кода | Выберите, `Control` + `O` чтобы [][DevtoolsCommandMenuIndex]открыть меню команд, введите после имени `!` скрипта, а затем выберите `Enter` | Выберите, `Command` + `O` чтобы [][DevtoolsCommandMenuIndex]открыть меню команд, `!` введите после имени скрипта, а затем выберите `Enter` |  
+| Восстановление масштабирования по умолчанию | `Control`+`0` | `Command`+`0` |  
+| Выполнить фрагмент | Выберите, `Control` + `O` чтобы открыть [командное меню,][DevtoolsCommandMenuIndex]введите с `!` именем скрипта, а затем выберите `Enter` | Выберите, `Command` + `O` чтобы открыть [командное меню,][DevtoolsCommandMenuIndex]введите с `!` именем скрипта, а затем выберите `Enter` |  
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
-## Сочетания клавиш панели элементов  
+## <a name="elements-tool-keyboard-shortcuts"></a>Клавиши клавиатуры elements  
 
 | Действие | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Отмена изменения | `Control`+`Z` | `Command`+`Z` |  
-| Изменение для повторного изменения | `Control`+`Y` | `Command`+`Shift`+`Z` |  
-| Выберите элемент выше или под текущим выбранным элементом | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
-| Раз expand the currently selected node.  Если узел уже расширен, этот ярлык выбирает элемент под ней | `Right Arrow` | `Right Arrow` |  
-| Свернуть текущий выбранный узел.  Если узел уже свернут, этот ярлык выбирает элемент над ней | `Left Arrow` | `Left Arrow` |  
-| Развернуть или свернуть текущий выбранный узел и все его потомки | Удерживайте, а затем выберите значок со стрелкой `Control` + `Alt` рядом с именем элемента **** | Удерживайте, а затем выберите значок со стрелкой `Option` рядом с именем элемента **** |  
-| Toggle **Edit Attributes** mode on the currently selected element | `Enter` | `Enter` |  
-| Выберите следующий или предыдущий атрибут после ввода **режима "Изменить атрибуты"** | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
-| Скрытие выбранного элемента | `H` | `H` |  
-| Toggle **Edit as HTML** mode on the currently selected element | `Function`+`F2` | `F2` |  
+| Отмена изменений | `Control`+`Z` | `Command`+`Z` |  
+| Изменение redo | `Control`+`Y` | `Command`+`Shift`+`Z` |  
+| Выберите элемент выше или ниже выбранного в настоящее время элемента | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
+| Расширь выбранный в настоящее время узел.  Если узел уже расширен, этот ярлык выбирает элемент ниже него | `Right Arrow` | `Right Arrow` |  
+| Свернуть выбранный в настоящее время узел.  Если узел уже свернут, этот ярлык выбирает элемент над ней. | `Left Arrow` | `Left Arrow` |  
+| Расширение или обрушение выбранного узла и всех детей | `Control` + `Alt` Удерживайте, затем выберите значок **стрелки** рядом с именем элемента | `Option`Удерживайте, затем выберите значок **стрелки** рядом с именем элемента |  
+| Изменение атрибутов **в** режиме редактирования на выбранном в настоящее время элементе | `Enter` | `Enter` |  
+| Выберите следующий или предыдущий атрибут после ввода **режима Edit Attributes** | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
+| Скрыть выбранный элемент | `H` | `H` |  
+| Перенаправить **в режиме HTML** на выбранном в данный момент элементе | `Function`+`F2` | `F2` |  
 
-### Сочетания клавиш области стилей  
+### <a name="styles-panel-keyboard-shortcuts"></a>Ярлыки клавиш панели стилей  
 
 | Действие | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Перейдите к строке, в которой объявляется значение свойства | `Control`Удержание и выбор значения свойства | `Command`Удержание и выбор значения свойства |  
-| Циклическое представление значения цвета с помощью RBGA, HSLA и Hex | `Shift`Удержание, а затем выберите **поле просмотра** цвета рядом со значением | `Shift`Удержание, а затем **выберите поле просмотра** цвета рядом со значением |  
+| Перейдите к строке, в которой объявляется значение свойства | `Control`Удержание, а затем выберите значение свойства | `Command`Удержание, а затем выберите значение свойства |  
+| Цикл через представления цвета RBGA, HSLA и Hex | `Shift`Удерживайте, а затем выберите поле **"Просмотр** цвета" рядом со значением | `Shift`Удерживайте, а затем выберите поле **"Просмотр** цвета" рядом со значением |  
 | Выберите следующее или предыдущее свойство или значение | Выберите имя или значение свойства, а затем выберите `Tab` / `Shift`+`Tab` | Выберите имя или значение свойства, а затем выберите `Tab` / `Shift`+`Tab` |  
-| Приращение и приращение значения свойства на 0,1 | Выберите значение, а затем выберите `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Выберите значение, а затем `Option` + `Up Arrow` выберите / Option+СТРЕЛКА ВНИЗ |  
-| Приращение и приращение значения свойства на 1 | Выберите значение, а затем выберите `Up Arrow` / `Down Arrow` | Выберите значение, а затем выберите `Up Arrow` / `Down Arrow` |  
-| Приращение и приращение значения свойства на 10 | Выберите значение, а затем выберите `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Выберите значение, а затем выберите `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
-| Приращение и приращение значения свойства на 100 | Выберите значение, а затем выберите `Control`+`Up Arrow` / `Control`+`Down Arrow` | Выберите значение, а затем выберите `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
+| Приращение или отсев значения свойства на 0,1 | Выберите значение, а затем выберите `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Выберите значение, а затем `Option` + `Up Arrow` выберите /Option+Down Arrow |  
+| Приращение или приумножная приращение значения свойства на 1 | Выберите значение, а затем выберите `Up Arrow` / `Down Arrow` | Выберите значение, а затем выберите `Up Arrow` / `Down Arrow` |  
+| Приращение или приумнождение значения свойства на 10 | Выберите значение, а затем выберите `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Выберите значение, а затем выберите `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
+| Приращение или приумножная приращение значения свойства на 100 | Выберите значение, а затем выберите `Control`+`Up Arrow` / `Control`+`Down Arrow` | Выберите значение, а затем выберите `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
-## Сочетания клавиш панели источников  
+## <a name="sources-tool-keyboard-shortcuts"></a>Ярлыки клавиатуры инструментов источников  
 
 | Действие | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Приостановка работы сценария \(если в данный момент запущен\) или возобновление \(если в настоящее время приостановлено\) | `F8` или `Control`+`\` | `F8` или `Command`+`\` |  
+| Приостановка запуска скрипта \(если в настоящее время запущен\) или возобновление \(если в настоящее время приостановлено\) | `F8` или `Control`+`\` | `F8` или `Command`+`\` |  
 | Шаг за следующим вызовом функции | `F10` или `Control`+`'` | `F10` или `Command`+`'` |  
 | Шаг в следующий вызов функции | `F11` или `Control`+`;` | `F11` или `Command`+`;` |  
 | Выход из текущей функции | `Shift`+`F11` или `Control`+`Shift`+`;` | `Shift`+`F11` или `Command`+`Shift`+`;` |  
-| Продолжите работу [с определенной строкой кода, пока она приостановлена][DevtoolsJavascriptBreakpointsLOC] | `Control`Удержание, а затем выберите строку кода | `Command`Удержание, а затем выберите строку кода |  
-| Выберите кадр вызова ниже или над текущим выбранным кадром | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
+| Продолжайте работу с [определенной строкой кода, приостанавлив][DevtoolsJavascriptBreakpointsLOC] | `Control`Удержание, затем выберите строку кода | `Command`Удержание, затем выберите строку кода |  
+| Выберите кадр вызова ниже или выше выбранного в настоящее время кадра | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
 | Сохранение изменений в локальных изменениях | `Control`+`S` | `Command`+`S` |  
 | Сохранение всех изменений | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |  
-| Перейти к строке | `Control`+`G` | `Control`+`G` |  
-| Перейти к номеру строки открытого в данный момент файла | Выберите, `Control` + `O` чтобы [][DevtoolsCommandMenuIndex]открыть меню команд, `:` введите номер строки, а затем выберите `Enter` | Выберите, `Command` + `O` чтобы [][DevtoolsCommandMenuIndex]открыть меню команд, `:` введите номер строки, а затем выберите `Enter` |  
-| Перейти к столбце открытого в данный момент файла \(например, строка 5, столбец 9\) | Выберите, `Control` + `O` чтобы [][DevtoolsCommandMenuIndex]открыть меню команд, введите , затем номер строки, затем другой, затем номер `:` `:` столбца, а затем выберите `Enter` | Выберите, `Command` + `O` чтобы [][DevtoolsCommandMenuIndex]открыть меню команд, введите, затем номер строки, затем другой, затем номер `:` `:` столбца, а затем выберите `Enter` |  
-| Перейдите к объявлению функции, если текущим файлом является HTML или сценарий.  <br />  Перейдите к набору правил, если текущий файл является таблицой стилей.  | Выберите, затем введите имя объявления или набора правил или выберите его `Control` + `Shift` + `O` в списке параметров | Выберите, затем введите имя объявления или набора правил или выберите `Command` + `Shift` + `O` его в списке параметров |  
-| Закроем активную вкладку | `Alt`+`W` | `Option`+`W` |  
+| Перейдите к строке | `Control`+`G` | `Control`+`G` |  
+| Переход на строку номера открытого в настоящее время файла | Выберите, `Control` + `O` чтобы открыть [командное меню,][DevtoolsCommandMenuIndex]введите номер `:` строки, а затем выберите `Enter` | Выберите, `Command` + `O` чтобы открыть [командное меню,][DevtoolsCommandMenuIndex]введите номер `:` строки, а затем выберите `Enter` |  
+| Переход в столбец открытого в настоящее время файла \(например, строка 5, столбец 9\) | Выберите, `Control` + `O` чтобы открыть [командное меню,][DevtoolsCommandMenuIndex]введите, затем номер строки, затем другой, затем номер `:` `:` столбца, а затем выберите `Enter` | Выберите, `Command` + `O` чтобы открыть [командное меню,][DevtoolsCommandMenuIndex]введите, затем номер строки, затем другой, затем номер `:` `:` столбца, а затем выберите `Enter` |  
+| Перейдите к объявлению функции, если текущий файл HTML или скрипт.  <br />  Перейдите к набору правил, если текущий файл — это таблица стилей.  | Выберите, затем введите имя набора объявлений и правил или выберите его `Control` + `Shift` + `O` из списка параметров | Выберите, затем введите имя набора объявлений и правил или выберите его `Command` + `Shift` + `O` из списка параметров |  
+| Закрыть активную вкладку | `Alt`+`W` | `Option`+`W` |  
 
-### Сочетания клавиш редактора кода  
-
-| Действие | Windows\/Linux | macOS |  
-|:--- |:--- |:--- |  
-| Удаление всех символов в последнем слове до курсора | `Control`+`Delete` | `Option`+`Delete` |  
-| Добавление или удаление [точки останова кода][DevtoolsJavascriptBreakpointsLOC] | Настроите курсор на строку, а затем выберите `Control`+`B` | Настроите курсор на строку, а затем выберите `Command`+`B` |  
-| Go to matching bracket | `Control`+`M` | `Control`+`M` |  
-| Перенимаем одностроный комментарий.  Если выбрано несколько строк, DevTools добавляет комментарий в начало каждой строки | `Control`+`/` | `Command`+`/` |  
-| Выберите или отбирать следующее слово, в которое вмеется курсор.  Каждое событие выделяется одновременно | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
-
-## Сочетания клавиш для панели производительности  
+### <a name="code-editor-keyboard-shortcuts"></a>Ярлыки клавиатуры редактора кода  
 
 | Действие | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Начало/остановка записи | `Control`+`E` | `Command`+`E` |  
+| Удаление всех символов в последнем слове, в том числе курсора | `Control`+`Delete` | `Option`+`Delete` |  
+| Добавление или удаление [точки взлома строки кода][DevtoolsJavascriptBreakpointsLOC] | Сосредоточь курсор на строке, а затем выберите `Control`+`B` | Сосредоточь курсор на строке, а затем выберите `Command`+`B` |  
+| Перейдите к скобке со соответствием | `Control`+`M` | `Control`+`M` |  
+| Toggle single-line comment.  Если выбрано несколько строк, DevTools добавляет комментарий к началу каждой строки. | `Control`+`/` | `Command`+`/` |  
+| Включите или отключите следующее вхождение любого слова, включаемого курсором.  Каждое событие выделяется одновременно | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
+
+## <a name="performance-tool-keyboard-shortcuts"></a>Ярлыки клавиатуры инструмента производительности  
+
+| Действие | Windows\/Linux | macOS |  
+|:--- |:--- |:--- |  
+| Запуск и остановка записи | `Control`+`E` | `Command`+`E` |  
 | Сохранение записи | `Control`+`S` | `Command`+`S` |  
-| Загрузка записи | `Control`+`O` | `Command`+`O` |  
+| Запись загрузки | `Control`+`O` | `Command`+`O` |  
 
-## Сочетания клавиш для панели памяти  
-
-| Действие | Windows\/Linux | macOS |  
-|:--- |:--- |:--- |  
-| Начало/остановка записи | `Control`+`E` | `Command`+`E` |  
-
-## Сочетания клавиш панели консоли  
+## <a name="memory-tool-keyboard-shortcuts"></a>Ярлыки клавиатуры средства памяти  
 
 | Действие | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Принятие предложения автозаполнеия | `Right Arrow` или `Tab` | `Right Arrow` или `Tab` |  
-| Отклонение предложения автозаполнеия | `Escape` | `Escape` |  
-| Получить предыдущее утверждение | `Up Arrow` | `Up Arrow` |  
-| Get next statement | `Down Arrow` | `Down Arrow` |  
-| Фокус **на** консоли | `Control`+ `` ` `` | `Control`+`` ` `` |  
+| Запуск и остановка записи | `Control`+`E` | `Command`+`E` |  
+
+## <a name="console-tool-keyboard-shortcuts"></a>Клавиши клавиатуры консоли  
+
+| Действие | Windows\/Linux | macOS |  
+|:--- |:--- |:--- |  
+| Принять предложение автозаполнеть | `Right Arrow` or `Tab` | `Right Arrow` or `Tab` |  
+| Отклонение предложения автозаполнеть | `Escape` | `Escape` |  
+| Получить предыдущее заявление | `Up Arrow` | `Up Arrow` |  
+| Получить следующее утверждение | `Down Arrow` | `Down Arrow` |  
+| Фокус **консоли** | `Control`+ `` ` `` | `Control`+`` ` `` |  
 | Очистка **консоли** | `Control`+`L` | `Command`+`K` или `Option`+`L` |  
-| Принудительное ввод многострок.  Этот ярлык в основном не является нужным, так как DevTools должен обнаруживать многостроки по умолчанию | `Shift`+`Enter` | `Command`+`Return` |  
+| Принудить к многостройной записи.  Этот ярлык в основном необязательен, так как DevTools должен обнаруживать многолинейные сценарии по умолчанию | `Shift`+`Enter` | `Command`+`Return` |  
 | Выполнение | `Enter` | `Return` |  
-| Разорвем все под свойства объекта, зарегистрированного в консоли | Hold `Alt` , then choose **Expand** \( ![ Expand ][ImageExpandIcon] \) | Hold `Alt` , then choose **Expand** \( ![ Expand ][ImageExpandIcon] \) |  
+| Расширь все свойства объекта, зарегистрированного в консоли | `Alt`Удержание, затем **выберите Расширение** \. ![ ][ImageExpandIcon] Развяжите \) | `Alt`Удержание, затем **выберите Расширение** \. ![ ][ImageExpandIcon] Развяжите \) |  
 
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -164,17 +164,17 @@ ms.locfileid: "11235148"
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Запуск команд с помощью меню команд Microsoft Edge DevTools | Документы Майкрософт"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer — настройка Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Запуск команд с командным меню Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Ящик — настройка Microsoft Edge DevTools | Документы Майкрософт"  
 [DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Изменение размещения DevTools — настройка Microsoft Edge DevTools | Документы Майкрософт"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Эмуляция мобильных устройств в средствах разработчика Microsoft Edge | Документация Майкрософт"  
-[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Точки останова кода: приостановка кода с помощью точек останова в Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Breakpoints line-of-code - How to pause your code with breakpoints in Microsoft Edge DevTools | Документы Майкрософт"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/shortcuts) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/shortcuts) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  

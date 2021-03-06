@@ -1,18 +1,18 @@
 ---
-description: Используйте панель приложений для проверки, изменения и отлаки манифестов веб-приложения, сотрудников служб и рабочих кэшей служб.
-title: Debug Progressive Web Apps
+description: Используйте панель приложений для проверки, изменения и отработки манифестов веб-приложений, сотрудников служб и кэшей сотрудников службы.
+title: Отламывка прогрессивных веб-приложений
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 79edf4b04c85db33e89d18ec1832138a61f4f884
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: aea01d25474a030e78ac0eaeaef3954ab7f4539f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235152"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398541"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,9 +28,9 @@ ms.locfileid: "11235152"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Debug Progressive Web Apps  
+# <a name="debug-progressive-web-apps"></a>Отламывка прогрессивных веб-приложений  
 
-Используйте панель **приложений** для проверки, изменения и отлажки манифестов веб-приложений, сотрудников служб и рабочих кэшей служб.  
+Используйте панель **приложений** для проверки, изменения и отработки манифестов веб-приложений, сотрудников служб и кэшей сотрудников службы.  
 
 <!--Related Guides:  
 
@@ -38,20 +38,20 @@ ms.locfileid: "11235152"
 
 <!--TODO:  Link web "Progressive Web Apps" section when available. -->
 
-В этом руководстве обсуждаются только функции прогрессивного веб-приложения на панели **приложений.**  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
+В этом руководстве обсуждаются только функции прогрессивного веб-приложения панели **приложений.**  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
 
 <!--TODO:  Link to sections when available. -->
 
-### Сводка  
+### <a name="summary"></a>Сводка  
 
-*   С помощью **области манифеста** проверьте манифест веб-приложения и активируете события Add to Homescreen.  
-*   С помощью области **"Сотрудники** службы" можно выполнять целый ряд задач, связанных с работой службы, таких как прекращение регистрации или обновление службы, эмуляция событий push-данных, отключение или остановка работы службы.  
-*   Просмотр рабочего кэша службы из области **хранения** кэша.  
-*   Отрегистрировать сотрудников службы и очистить все хранилища и **** кэши одним нажатием кнопки в области очистки хранилища.  
+*   Используйте области **Манифеста** для проверки манифеста веб-приложения и запуска событий Add to Homescreen.  
+*   Используйте области **Service Workers** для целого ряда задач, связанных с рабочим обслуживанием, таких как незарегистрирование или обновление службы, эмуляция событий push-связи, отключение или остановка сотрудника службы.  
+*   Просмотр кэша сотрудника службы из **области хранения** кэша.  
+*   Незарегистрировать сотрудника службы и очистить все хранилища и кэши с помощью одной кнопки выберите из области **хранения Clear.**  
     
-## Манифест веб-приложения  
+## <a name="web-app-manifest"></a>Манифест веб-приложения  
 
-Если вы хотите, чтобы пользователи могли добавлять приложение на свои домашние экраны для мобильных устройств, вам потребуется манифест веб-приложения.  Манифест определяет, как приложение отображается на домашнем экране, куда направить пользователя при запуске с домашнего экрана и как оно выглядит при запуске.  
+Если вы хотите, чтобы пользователи могли добавлять приложение на мобильные домашние экраны, вам нужен манифест веб-приложения.  Манифест определяет, как приложение отображается на домашнем экране, куда направлять пользователя при запуске с домашнего экрана и как выглядит приложение при запуске.  
 
 <!--Related Guides:  
 
@@ -60,23 +60,23 @@ ms.locfileid: "11235152"
 
 <!--TODO:  Link to sections when available. -->
 
-После того как манифест настроен, вы **** можете проверить **** его с помощью области манифеста панели приложений.  
+После того, как вы настроите манифест, вы можете проверить его с помощью области **Манифест** **панели** приложений.  
 
-:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="The Manifest Pane" lightbox="../media/manifest-pane.msft.png":::
-   The **Manifest** Pane  
+:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="Области манифеста" lightbox="../media/manifest-pane.msft.png":::
+   Области **манифеста**  
 :::image-end:::  
 
-*   Чтобы посмотреть на источник манифеста, щелкните ссылку **под** меткой манифеста приложения \( на `https://airhorner.com/manifest.json` предыдущем рисунке\).  
-<!-- *   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
-*   В **разделах** "Удостоверение" и **"Презентация"** просто отображаются поля из источника манифеста на более удобном для пользователя дисплее.  
-*   В **разделе "Значки"** отображаются все указанные вами значки.  
+*   Чтобы взглянуть на источник манифеста, выберите ссылку под меткой **Манифест приложения** \( на `https://airhorner.com/manifest.json` предыдущем рисунке\).  
+<!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
+*   В **разделах Identity** и **Presentation** отображаются поля из источника манифеста в более удобном для пользователя дисплее.  
+*   В **разделе Значки** отображаются все указанные значки.  
     
 <!--### Simulate Add to Homescreen events  -->
 
-<!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
+<!--A web app may only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, the criteria is potentially inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
 
-<!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
+<!--You may test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--  
 :::image type="complex" source="../media/io.msft.png" alt-text="Add to desktop shelf" lightbox="../media/io.msft.png":::
@@ -88,17 +88,17 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 > [!Tip]
 > Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
-<!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you can successfully add your app to your desktop shelf, then it'll work for mobile, too.  -->
+<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
 <!-- TODO: Rework content after sample app is created. -->
 
-<!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via **remote debugging**, and then click the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
+<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via **remote debugging**, and then choose the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Служебные сценарии  
+## <a name="service-workers"></a>Служебные сценарии  
 
-Сотрудники служб являются фундаментальной технологией в будущей веб-платформе.  Это сценарии, которые браузер выполняет в фоновом режиме, отдельно от веб-страницы.  Эти сценарии позволяют получить доступ к функциям, которые не требуют веб-страницы или взаимодействия с пользователем, например push-уведомления, фоновую синхронизацию и автономные функции.  
+Работники служб являются фундаментальной технологией в будущей веб-платформе.  Это скрипты, которые браузер выполняет в фоновом режиме, отдельно от веб-страницы.  Скрипты позволяют получать доступ к функциям, которые без необходимости веб-страницы или взаимодействия с пользователем, например push-уведомления, синхронизации фона и автономного взаимодействия.  
 
 <!--Related Guides:  
 
@@ -107,25 +107,25 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
     
 <!--TODO:  Link to sections when available. -->  
 
-Панель **"Рабочие службы"** на панели приложений — это основное место в DevTools для проверки и отладки сотрудников служб. ****  
+Панель **сотрудников служб** в панели **Приложений** — это основное место в DevTools для проверки и отладки сотрудников службы.  
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="The Service Workers pane" lightbox="../media/service-workers-pane.msft.png":::
-   The **Service Workers** pane  
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Области рабочих служб" lightbox="../media/service-workers-pane.msft.png":::
+   Области **рабочих** служб  
 :::image-end:::  
 
-*   Если рабочий работник службы установлен на открытую в данный момент страницу, он будет указан на этой области.  Например, на предыдущем рисунке установлен рабочий работник службы для `https://weather-pwa-sample.firebaseapp.com` области .  
-*   Автономный **контрольный** ящик помещает DevTools в автономный режим.  Это эквивалентно автономному режиму, доступного на панели **"Сеть"** или параметру `Go offline` в меню [команд.][DevtoolsCommandMenuIndex]  
-*   При **перезагрузке при** обновлении необходимо, чтобы рабочий работник службы обновлял каждую загрузку страницы.  
-*   Обход **для сетевого checkbox** обходит рабочий процесс службы и заставляет браузер перейти в сеть для запрашиваемого ресурса.  
-*   **Кнопка** "Обновить" выполняет одно разовую обновление указанного рабочего сотрудника службы.  
-*   **Кнопка** push-уведомлений эмулирует push-уведомление без полезной нагрузки (также известной как **"tickle**\").  
-*   Кнопка **"Синхронизация"** эмулирует событие фоновой синхронизации.  
-*   Кнопка **"Отрегистрить"** отрегистрет указанного сотрудника службы.  Ознакомьтесь [с очисткой хранилища,](#clear-storage) чтобы отоимнуть регистрацию сотрудника службы и очистить хранилище и кэш одним нажатием кнопки.  
-*   **Строка** источника сообщает, когда был установлен работающий в данный момент рабочий день службы.  Ссылка — это имя файла источника рабочего службы.  Щелкнув ссылку, вы отправите вас к источнику рабочего службы.  
-*   **Строка** состояния сообщает о состоянии рабочего сотрудника службы.  Номер ИД рядом с зеленым индикатором состояния \( на предыдущем рисунке\) — для активного рабочего `#36` рабочего.  Рядом с состоянием вы **** увидите кнопку запуска \(если рабочий работник **** службы остановлен\) или кнопку остановки \(если рабочий работник службы запущен\).  Рабочие службы должны быть остановлены и запущены браузером в любое время.  Явное остановка рабочего сотрудника службы с помощью кнопки **остановки** может имитировать это.  Остановка работы службы — это отличный способ проверить поведение кода при повторном вработке.  Он часто выявляет ошибки из-за ошибок, предполагающих постоянное глобальное состояние.  
-*   В **строке** "Клиенты" указывается источник, к который имеет область действия для рабочего сотрудника службы.  **Кнопка** фокуса в основном полезна при включаемом всех **контрольных** окнах.  Если этот контрольный список включен, в списке будут перечислены все зарегистрированные сотрудники службы.  Если нажать кнопку **фокуса** рядом с сотрудником службы, работающим на другой вкладке, Microsoft Edge будет фокусироваться на этой вкладке.  
+*   Если сотрудник службы установлен на открытую страницу в настоящее время, он указан на этой области.  Например, на предыдущем рисунке установлен сотрудник службы для области `https://weather-pwa-sample.firebaseapp.com` .  
+*   Автономный **почтовый** ящик выводит DevTools в автономный режим.  Это эквивалентно автономному режиму, доступному с помощью средства **Network,** или параметру `Go offline` в [командном меню.][DevtoolsCommandMenuIndex]  
+*   Обновление **при перезагрузке контрольного** ящика заставляет сотрудника службы обновляться на каждой загрузке страницы.  
+*   Обход **сетевого почтового** ящика обходит сотрудника службы и заставляет браузер перейти в сеть для запрашиваемого ресурса.  
+*   Кнопка **Update** выполняет одно время обновление указанного сотрудника службы.  
+*   Кнопка **push** эмулирует push-уведомление без полезной нагрузки \(также известной как **щекотка**\).  
+*   Кнопка **Sync** эмулирует событие фоновой синхронизации.  
+*   Кнопка **Unregister** отрегистрирована указанному работнику службы.  Ознакомьтесь [с возможностью](#clear-storage) отрегистрации сотрудника службы и очистки хранилища и кэшей с помощью одной кнопки.  
+*   Строка **Source** сообщает, когда был установлен работающий в настоящее время сотрудник службы.  Ссылка — это имя источника файла сотрудника службы.  Выбор по ссылке отправляет вас к источнику сотрудника службы.  
+*   В **строке Status** указывается состояние сотрудника службы.  Номер ID рядом с зеленым индикатором состояния \( на предыдущем рисунке\) для действующего в настоящее время `#36` сотрудника службы.  Рядом со состоянием **** отображается кнопка запуска \(если сотрудник **** службы остановлен\) или кнопка остановки \(если рабочий службы запущен\).  Сотрудники службы предназначены для того, чтобы остановиться и начать работу с помощью браузера в любое время.  Явное прекращение работы сотрудника службы с помощью кнопки **остановки** может имитировать это.  Остановка сотрудника службы — это отличный способ проверить, как ведет себя код, когда сотрудник службы снова запускается обратно.  Он часто выявляет ошибки из-за ошибок в предположениях о сохраняемом глобальном состоянии.  
+*   В **строке** "Клиенты" указывается происхождение, в которое будет вовсю засвеяна область действия сотрудника службы.  Кнопка **фокуса** в основном полезна при включении всех **контрольных** ящиков.  Когда этот контрольный ящик включен, все зарегистрированные сотрудники службы перечислены.  Если вы выбираете кнопку **фокуса** рядом с сотрудником службы, который работает на другой вкладке, Microsoft Edge фокусируется на этой вкладке.  
     
-Если сотрудник службы вызывает ошибки, появляется новая метка **"Ошибки".**  
+Если сотрудник службы вызывает какие-либо ошибки, появляется новая метка , называемая **Ошибки.**  
 
 <!--  
 :::image type="complex" source="../media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="../media/sw-error.msft.png":::
@@ -136,46 +136,46 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Кэши рабочих служб  
+## <a name="service-worker-caches"></a>Кэши сотрудников службы  
 
-В **области хранилища** кэша содержится список ресурсов, которые были кэшироваться только для чтения с помощью [API][MDNWebCacheAPI]кэша \(service worker\) .  
+В **области хранения** кэша содержится список ресурсов, которые кэшировали только для чтения с помощью [API][MDNWebCacheAPI]кэша \(service worker\) .  
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
-   The **Cache Storage** Pane  
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Пространство хранения кэша" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+   Пространство **хранения кэша**  
 :::image-end:::  
 
 > [!NOTE]
-> При первом откройте кэш и добавьте в него ресурс, DevTools может не обнаружить изменение.  Перезагрузите страницу, и вы увидите кэш.  
+> При первом открываемом кэше и добавлении в него ресурса, DevTools может не обнаружить изменения.  Обновите страницу и отобразите кэш.  
 
-Если у вас два или более кэша, они **** будут указаны ниже в выпаданом списке "Хранилище кэша".  
+Если открыты два или более кэшей, кэши **** отображаются под следующей каплей хранилища кэша.  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown" lightbox="../media/cache-pane-cache-storage.msft.png":::
-   The **Cache Storage** dropdown  
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="Отсев хранилища кэша" lightbox="../media/cache-pane-cache-storage.msft.png":::
+   **Отсев хранилища кэша**  
 :::image-end:::  
 
-## Использование квоты  
+## <a name="quota-usage"></a>Использование квот  
 
-Некоторые ответы в области **хранения** кэша могут быть помечены как непрозрачивые.  Это означает ответ, полученный из другого источника, например из **CDN** или удаленного API, если [CORS][FetchHttpCorsProtocol] не включен.  
+Некоторые ответы в области **хранения** кэша могут быть помечены как "непрозрачивые".  Это относится к ответу, извлеченному из другого происхождения, например из **CDN** или удаленного API, когда [CORS][FetchHttpCorsProtocol] не включен.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
 
-Чтобы избежать утечки информации между доменами, к размеру непрозрачной реакции, используемой для вычисления ограничений квот хранилища (например, о том, было ли исключение выброшено)и сообщается API, значительно добавлено `QuotaExceeded` `navigator.storage` заполнение.  
+Чтобы избежать утечек меж доменных сведений, к размеру непрозрачной реакции, используемой для вычисления ограничений квоты хранения\(например, будет ли выброшено исключение\) добавляется значительное обивка и `QuotaExceeded` `navigator.storage` сообщается API.  
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-Сведения об этом заполнении отличаются в зависимости от браузера, но для Microsoft Edge это означает, что минимальный размер любого кэширования непрозрачной реакции на общий объем использования хранилища составляет примерно **** [7 Мбайт.][ChromiumIssues796060#c17]  Это следует помнить при определении необходимого объема непрозрачной реакции, так как вы можете легко превысить ограничения квоты хранилища намного раньше, чем ожидалось в противном случае, в зависимости от фактического размера непрозрачной информации.  
+Сведения об этой обивке варьируются от браузера до браузера, но для Microsoft Edge это означает, что минимальный размер, который любой один кэширования непрозрачной реакции способствует общему использованию хранилища составляет около [7 мегабайт][ChromiumIssues796060#c17]. ****  Помните обивку при определении того, сколько непрозрачной реакции необходимо кэширование, так как ограничения квоты на хранение могут быть превышены гораздо раньше, чем ожидались в зависимости от фактического размера непрозрачной информации.  
 
 Связанные руководства:  
 
-*   [Stack Overflow: какие ограничения применяются к непрозрачной реакции?][StackOverflowLimitationsForOpaqueResponses]  
+*   [Переполнение стека: какие ограничения применяются к непрозрачной реакции?][StackOverflowLimitationsForOpaqueResponses]  
 <!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Очистка хранилища  
+## <a name="clear-storage"></a>Очистка хранилища  
 
-Очистка **области** хранения — очень полезная функция при разработке последовательных веб-приложений.  С помощью этой области можно оторегистрировать службы и очистить все кэши и хранилище одним нажатием кнопки.  <!--Check out the section below to learn more.  -->
+Пространство **Clear Storage** — это очень полезная функция при разработке прогрессивных веб-приложений.  Эта области позволяет отрегистрировать сотрудников службы и очистить все кэши и хранилища с помощью одной кнопки выбрать.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -192,21 +192,21 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-## Взаимодействие с командой средств разработчика Microsoft Edge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Запуск команд с помощью меню команд Microsoft Edge DevTools | Документы Майкрософт"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Запуск команд с командным меню Microsoft Edge DevTools | Документы Майкрософт"  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Проблема Chromium 796060: значение хранилища кэша растет при каждом обновлении, когда код аналитики находится в HTML-коде"  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: значение хранилища кэша повышается при каждом обновлении, когда код Analytics находится в html"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
-[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Кэш веб-API | MDN"  
+[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Кэш — веб-| MDN"  
 
-[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: какие ограничения применяются к непрозрачной реакции?"  
+[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Переполнение стека: какие ограничения применяются к непрозрачной реакции?"  
 
 <!--[WebEstimatingAvailableStorageSpace]: whats-new/2017/08/estimating-available-storage-space  -->
 <!--[RemoteDebugging]: /debug/remote-debugging/remote-debugging  -->
@@ -217,7 +217,7 @@ Related Guides:
 
 > [!NOTE]
 > Некоторые части этой страницы представляют собой измененные материалы, созданные и [предоставленные корпорацией Google][GoogleSitePolicies]. Их использование регулируется условиями, описанными в [лицензии Creative Commons Attribution 4.0 International License][CCA4IL].  
-> Исходная страница [](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) находится здесь и автором [kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Оригинальная страница [](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) находится здесь и является автором [Kayce Basques][KayceBasques] \(Технический писатель, Chrome DevTools \& Маяк\).  
 
 [![Лицензия Creative Commons][CCby4Image]][CCA4IL]  
 Эта работа предоставляется в рамках международной лицензии [Creative Commons Attribution 4.0 International License][CCA4IL].  
