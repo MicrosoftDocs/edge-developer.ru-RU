@@ -19,10 +19,10 @@
       items:
         - name: Обзор DevTools
           href: devtools-guide-chromium/index.md
-        - name: Открыть средства разработчика
-          href: devtools-guide-chromium/open/index.md
         - name: Что нового
           items:
+            - name: Экспериментальные функции
+              href: devtools-guide-chromium/experimental-features/index.md
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
@@ -41,204 +41,216 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-        - name: Экспериментальные функции
-          href: devtools-guide-chromium/experimental-features/index.md
-        - name: Режим IE
-          href: devtools-guide-chromium/ie-mode/index.md
-        - name: Трехмерное представление
-          href: devtools-guide-chromium/3d-view/index.md
-        - name: Служебные сценарии
-          href: devtools-guide-chromium/service-workers/index.md
-        - name: Средства разработчика для начинающих
+        - name: Учебники
           items:
-            - name: HTML и DOM
-              href: devtools-guide-chromium/beginners/html.md
-            - name: CSS
-              href: devtools-guide-chromium/beginners/css.md
-        - name: CSS
-          items:
-            - name: Начало работы с просмотром и редактированием CSS
-              href: devtools-guide-chromium/css/index.md
-            - name: Справочник по CSS
-              href: devtools-guide-chromium/css/reference.md
-            - name: Поиск неиспользуемых CSS
-              href: devtools-guide-chromium/coverage/index.md
-            - name: Проверка эффектов анимации
-              href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Изменение стилей и параметров шрифтов CSS
-              href: devtools-guide-chromium/inspect-styles/edit-fonts.md
-            - name: Проверка сетки CSS
-              href: devtools-guide-chromium/css/grid.md
-            - name: Принудительный перевод средств разработчика в режим предварительного просмотра
-              href: devtools-guide-chromium/css/print-preview.md
-        - name: Консоль
-          items:
-            - name: Обзор консоли
-              href: devtools-guide-chromium/console/index.md
-            - name: Регистрация сообщений
-              href: devtools-guide-chromium/console/log.md
-            - name: Запуск JavaScript
-              href: devtools-guide-chromium/console/javascript.md
-            - name: Справочные материалы
-              href: devtools-guide-chromium/console/reference.md
-            - name: Справочник по API
-              href: devtools-guide-chromium/console/api.md
-            - name: Справочные материалы по API служебных программ
-              href: devtools-guide-chromium/console/utilities.md
-            - name: Динамические выражения
-              href: devtools-guide-chromium/console/live-expressions.md
-        - name: Network
-          items:
-            - name: Начало работы
-              href: devtools-guide-chromium/network/index.md
-            - name: Справочные материалы по неполадкам в сети
-              href: devtools-guide-chromium/network/issues.md
-            - name: Справочные материалы
-              href: devtools-guide-chromium/network/reference.md
-        - name: Хранилище
-          items:
-            - name: Файлы cookie
-              href: devtools-guide-chromium/storage/cookies.md
-            - name: Локальное хранилище
-              href: devtools-guide-chromium/storage/localstorage.md
-            - name: IndexedDB
-              href: devtools-guide-chromium/storage/indexeddb.md
-            - name: Хранилище сеанса
-              href: devtools-guide-chromium/storage/sessionstorage.md
-            - name: Кэш приложений
-              href: devtools-guide-chromium/storage/applicationcache.md
-            - name: WebSQL
-              href: devtools-guide-chromium/storage/websql.md
-            - name: Кэш
-              href: devtools-guide-chromium/storage/cache.md
-        - name: Проблемы
-          href: devtools-guide-chromium/issues/index.md
-        - name: Меню команд
-          href: devtools-guide-chromium/command-menu/index.md
-        - name: Эмуляция
-          items:
-            - name: Обзор эмуляции
-              href: devtools-guide-chromium/device-mode/index.md
-            - name: Эмуляция двухэкранных и складных устройств
-              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-            - name: Эмуляция и тестирование других браузеров
-              href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-            - name: Рекомендации
+            - name: Для начинающих
               items:
+                - name: Открыть DevTools
+                  href: devtools-guide-chromium/open/index.md
+                - name: Начало работы с HTML и DOM
+                  href: devtools-guide-chromium/beginners/html.md
+                - name: Начало работы по просмотру и изменению DOM
+                  href: devtools-guide-chromium/dom/index.md
+                - name: Начало работы с CSS
+                  href: devtools-guide-chromium/beginners/css.md
+                - name: Начало работы по просмотру и изменению CSS
+                  href: devtools-guide-chromium/css/index.md
+                - name: Начало работы по отладке JavaScript
+                  href: devtools-guide-chromium/javascript/index.md
+                - name: Начало работы по анализу производительности среды выполнения
+                  href: devtools-guide-chromium/evaluate-performance/index.md
+                - name: Просмотр ресурсов страницы
+                  href: devtools-guide-chromium/resources/index.md
+            - name: Изменение файлов с помощью Workspaces
+              href: devtools-guide-chromium/workspaces/index.md
+            - name: Проверка сетевой активности
+              href: devtools-guide-chromium/network/index.md
+            - name: Оптимизация скорости веб-сайтов
+              href: devtools-guide-chromium/speed/get-started.md
+            - name: Удаленная отладка
+              items:
+                - name: Начало работы по удаленной отладке устройств с Android
+                  href: devtools-guide-chromium/remote-debugging/index.md
+                - name: Начало работы по удаленной отладке с помощью эмуляторов Surface Duo
+                  href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
+                - name: Начало работы по удаленной отладке устройств с Windows 10
+                  href: devtools-guide-chromium/remote-debugging/windows.md
+        - name: Инструкции
+          items:
+            - name: Специальные возможности
+              items:
+                - name: Справка о специальных возможностях
+                  href: devtools-guide-chromium/accessibility/reference.md
+                - name: Навигация по DevTools с помощью специальных возможностей
+                  href: devtools-guide-chromium/accessibility/navigation.md
+                - name: 'Отслеживание элемента, на котором установлен фокус'
+                  href: devtools-guide-chromium/accessibility/focus.md
+            - name: Меню команд
+              href: devtools-guide-chromium/command-menu/index.md
+            - name: Настройка DevTools
+              items:
+                - name: Обзор
+                  href: devtools-guide-chromium/customize/index.md
+                - name: Темная тема
+                  href: devtools-guide-chromium/customize/dark-theme.md
+                - name: Изменение расположения
+                  href: devtools-guide-chromium/customize/placement.md
+                - name: Соответствие языку браузера
+                  href: devtools-guide-chromium/customize/localization.md
+                - name: Настройка ярлыков
+                  href: devtools-guide-chromium/customize/shortcuts.md
+            - name: Тестирование и эмуляция устройств
+              items:
+                - name: Обзор эмуляции
+                  href: devtools-guide-chromium/device-mode/index.md
+                - name: Эмуляция двухэкранных и складных устройств
+                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+                - name: Эмуляция и тестирование других браузеров
+                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
                 - name: Переопределение строки агента пользователя
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                 - name: Переопределение геолокации
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: Имитация ориентации устройства
                   href: devtools-guide-chromium/device-mode/orientation.md
-        - name: DOM
-          items:
-            - name: Начало работы
-              href: devtools-guide-chromium/dom/index.md
-        - name: JavaScript
-          items:
-            - name: Начало работы
-              href: devtools-guide-chromium/javascript/index.md
-            - name: Приостановка кода с точками останова
-              href: devtools-guide-chromium/javascript/breakpoints.md
-            - name: Поиск неиспользуемого JavaScript
-              href: devtools-guide-chromium/coverage/index.md
-            - name: Сопоставление предварительно обработанного кода с исходным кодом
-              href: devtools-guide-chromium/javascript/source-maps.md
-            - name: Справочник по отладке JavaScript
-              href: devtools-guide-chromium/javascript/reference.md
-            - name: Фрагменты
-              href: devtools-guide-chromium/javascript/snippets.md
-            - name: Переопределения
-              href: devtools-guide-chromium/javascript/overrides.md
-            - name: Обзор панели источников
-              href: devtools-guide-chromium/sources/index.md
-            - name: Отладка фоновых служб
-              href: devtools-guide-chromium/javascript/background-services.md
-            - name: Рекомендации
+            - name: Режим IE
+              href: devtools-guide-chromium/ie-mode/index.md
+            - name: Устранение неполадок Javascript
               items:
+                - name: Справочник по отладке JavaScript
+                  href: devtools-guide-chromium/javascript/reference.md
+                - name: Сопоставление предварительно обработанного кода с исходным кодом
+                  href: devtools-guide-chromium/javascript/source-maps.md
                 - name: Пометка сценариев содержимого как кода библиотеки
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                - name: Отключение JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
-        - name: Производительность
-          items:
-            - name: Начало работы
-              href: devtools-guide-chromium/evaluate-performance/index.md
-            - name: Оптимизация скорости веб-сайтов
-              href: devtools-guide-chromium/speed/get-started.md
-            - name: Обзор
-              href: devtools-guide-chromium/rendering-tools/index.md
-            - name: Справочные материалы по анализу производительности
-              href: devtools-guide-chromium/evaluate-performance/reference.md
-            - name: Справочные материалы по событию временной шкалы
-              href: devtools-guide-chromium/evaluate-performance/performance-reference.md
-            - name: Ускорение среды выполнения JavaScript
-              href: devtools-guide-chromium/rendering-tools/js-runtime.md
-        - name: Специальные возможности
-          items:
-            - name: Справочные материалы
-              href: devtools-guide-chromium/accessibility/reference.md
-            - name: Навигация по средствам разработчика с помощью специальных возможностей
-              href: devtools-guide-chromium/accessibility/navigation.md
-            - name: Рекомендации
+                - name: Приостановка кода с использованием точек останова
+                  href: devtools-guide-chromium/javascript/breakpoints.md
+            - name: Устранение неполадок с памятью
               items:
-                - name: Отслеживание элемента с фокусом
-                  href: devtools-guide-chromium/accessibility/focus.md
-                - name: Имитация темной и светлой цветовой схемы
+                - name: Терминология памяти
+                  href: devtools-guide-chromium/memory-problems/memory-101.md
+                - name: Устранение проблем с памятью
+                  href: devtools-guide-chromium/memory-problems/index.md
+            - name: Устранение неполадок с производительностью
+              items:
+                - name: Справочные материалы по анализу производительности
+                  href: devtools-guide-chromium/evaluate-performance/reference.md
+                - name: Справочные материалы по событиям временной шкалы
+                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+            - name: Устранение неполадок в работе служебного сценария
+              href: devtools-guide-chromium/service-workers/index.md
+        - name: Понятия
+          items:
+            - name: Трехмерное представление
+              href: devtools-guide-chromium/3d-view/index.md
+            - name: Анимация
+              href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Приложение
+              items:
+                - name: Кэш приложений
+                  href: devtools-guide-chromium/storage/applicationcache.md
+                - name: Кэш
+                  href: devtools-guide-chromium/storage/cache.md
+                - name: Файлы cookie
+                  href: devtools-guide-chromium/storage/cookies.md
+                - name: Отладка фоновых служб
+                  href: devtools-guide-chromium/javascript/background-services.md
+                - name: Отладка PWA
+                  href: devtools-guide-chromium/progressive-web-apps/index.md
+                - name: IndexedDB
+                  href: devtools-guide-chromium/storage/indexeddb.md
+                - name: Локальное хранилище
+                  href: devtools-guide-chromium/storage/localstorage.md
+                - name: Хранилище сеанса
+                  href: devtools-guide-chromium/storage/sessionstorage.md
+                - name: WebSQL
+                  href: devtools-guide-chromium/storage/websql.md
+            - name: Консоль
+              items:
+                - name: Обзор консоли
+                  href: devtools-guide-chromium/console/index.md
+                - name: Регистрация сообщений
+                  href: devtools-guide-chromium/console/log.md
+                - name: Запуск JavaScript
+                  href: devtools-guide-chromium/console/javascript.md
+                - name: Справочники
+                  href: devtools-guide-chromium/console/reference.md
+                - name: Просмотр выражений JavaScript в режиме реального времени
+                  href: devtools-guide-chromium/console/live-expressions.md
+            - name: Покрытие
+              href: devtools-guide-chromium/coverage/index.md
+            - name: Элементы
+              items:
+                - name: Справочник по CSS
+                  href: devtools-guide-chromium/css/reference.md
+                - name: Изменение стилей и параметров шрифтов CSS
+                  href: devtools-guide-chromium/inspect-styles/edit-fonts.md
+                - name: Проверка сетки CSS
+                  href: devtools-guide-chromium/css/grid.md
+                - name: Принудительный перевод DevTools в режим предварительного просмотра
+                  href: devtools-guide-chromium/css/print-preview.md
+            - name: Проблемы
+              href: devtools-guide-chromium/issues/index.md
+            - name: Носители
+              href: devtools-guide-chromium/media-panel/index.md
+            - name: Память
+              items:
+                - name: Обзор памяти
+                  href: devtools-guide-chromium/memory-problems/index.md
+                - name: Запись моментальных снимков кучи
+                  href: devtools-guide-chromium/memory-problems/heap-snapshots.md
+                - name: Ускорение среды выполнения JavaScript
+                  href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                - name: Использование инструментов выделения на временной шкале
+                  href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+            - name: Network
+              items:
+                - name: Обзор
+                  href: devtools-guide-chromium/network/reference.md
+                - name: Справочные материалы по неполадкам в сети
+                  href: devtools-guide-chromium/network/issues.md
+            - name: Производительность
+              items:
+                - name: Анализ производительности среды выполнения
+                  href: devtools-guide-chromium/rendering-tools/index.md
+                - name: Режим событий на временной шкале
+                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+            - name: Удаленные устройства
+              href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Отрисовка
+              items:
+                - name: Эмуляция дефектов зрения
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+                - name: Имитация цветовой схемы
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Имитация уменьшения движения
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-                - name: Имитация дефектов зрения
-                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-        - name: Удаленная отладка
+            - name: Безопасность
+              href: devtools-guide-chromium/security/index.md
+            - name: Источники
+              items:
+                - name: Обзор панели источников
+                  href: devtools-guide-chromium/sources/index.md
+                - name: Справочник по отладке JavaScript
+                  href: devtools-guide-chromium/javascript/reference.md
+                - name: Отключение JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
+                - name: Переопределения
+                  href: devtools-guide-chromium/javascript/overrides.md
+                - name: Фрагменты
+                  href: devtools-guide-chromium/javascript/snippets.md
+            - name: WebAuthn
+              href: devtools-guide-chromium/webauthn/index.md
+        - name: Справочники
           items:
-            - name: Устройства Android
-              href: devtools-guide-chromium/remote-debugging/index.md
-            - name: Доступ к локальным серверам
-              href: devtools-guide-chromium/remote-debugging/local-server.md
-            - name: Эмуляторы Surface Duo
-              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-            - name: Устройства с Windows 10
-              href: devtools-guide-chromium/remote-debugging/windows.md
-        - name: Память
-          items:
-            - name: Обзор памяти
-              href: devtools-guide-chromium/memory-problems/index.md
-            - name: Общие сведения о терминологии памяти
-              href: devtools-guide-chromium/memory-problems/memory-101.md
-            - name: Запись моментальных снимков кучи
-              href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-            - name: Использование инструментов выделения на временной шкале
-              href: devtools-guide-chromium/memory-problems/allocation-profiler.md
-        - name: Media
-          href: devtools-guide-chromium/media-panel/index.md
-        - name: WebAuthn
-          href: devtools-guide-chromium/webauthn/index.md
-        - name: Рабочие пространства
-          href: devtools-guide-chromium/workspaces/index.md
-        - name: Прогрессивные веб-приложения
-          href: devtools-guide-chromium/progressive-web-apps/index.md
-        - name: Безопасность
-          href: devtools-guide-chromium/security/index.md
-        - name: Сочетания клавиш
-          href: devtools-guide-chromium/shortcuts/index.md
-        - name: Ресурсы
-          href: devtools-guide-chromium/resources/index.md
-        - name: Настройка
-          items:
-            - name: Обзор настроек
-              href: devtools-guide-chromium/customize/index.md
-            - name: Темная тема
-              href: devtools-guide-chromium/customize/dark-theme.md
-            - name: Изменение расположения
-              href: devtools-guide-chromium/customize/placement.md
-            - name: Сравнение языка браузера
-              href: devtools-guide-chromium/customize/localization.md
-            - name: Ярлыки
-              href: devtools-guide-chromium/customize/shortcuts.md
-    - name: Обзор протокола DevTools
-      href: devtools-protocol-chromium/index.md
+            - name: Справочные материалы по API консоли
+              href: devtools-guide-chromium/console/api.md
+            - name: Справочные материалы по API служебных программ консоли
+              href: devtools-guide-chromium/console/utilities.md
+            - name: Обзор протокола DevTools
+              href: devtools-protocol-chromium/index.md
+            - name: Сочетания клавиш
+              href: devtools-guide-chromium/shortcuts/index.md
     - name: Расширения
       items:
         - name: Обзор расширений
