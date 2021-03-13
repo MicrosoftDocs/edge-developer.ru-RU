@@ -3,17 +3,17 @@ description: Узнать о средствах разработчика Microso
 title: Средства разработчика Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: fa407393f8ecb79a3382294742bf9061787ec04a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 29ded7376ab1788998acf059c6677916a52d5d15
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397707"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408278"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Обзор средств разработки Microsoft Edge (Chromium)  
 
@@ -140,7 +140,7 @@ Microsoft Edge DevTools — это набор инструментов, встр
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools для начинающих: начало работы с HTML и doM | Документы Майкрософт"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Что нового в Microsoft Edge (Chromium) DevTools | Документы Майкрософт"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools "Что нового в Microsoft Edge (Chromium) DevTools | Документы Майкрософт"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chromium) Протокол DevTools | Документы Майкрософт"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Надстройки Microsoft Edge"  
