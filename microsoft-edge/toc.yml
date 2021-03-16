@@ -403,8 +403,10 @@
               href: webview2/howto/static.md
             - name: Отладка WebView2
               href: webview2/howto/debug.md
-            - name: Автоматизация с помощью драйвера Edge
+            - name: Автоматизация с помощью драйвера Microsoft Edge
               href: webview2/howto/webdriver.md
+            - name: Использование протокола Chromium DevTools в WebView2
+              href: webview2/howto/chromium-devtools-protocol.md
         - name: Справочные материалы
           href: webview2/webview2-api-reference.md
           items:
