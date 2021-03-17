@@ -3,16 +3,17 @@ description: Microsoft Edge в Linux, улучшенные советы webhint 
 title: Что нового в средствах разработчика (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 6a36029aa97604b6aea20f232d329ce3805a3144
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408369"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439277"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -113,7 +114,7 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
 
 Следующие новые функции средств [Сеть](#network-tool), [Приложение](#application-tool) и [Источники](#sources-tool) помогают создавать [PWA][ProgressiveWebAppsIndex].  Используйте следующие функции, если у вас возникли трудности при отладке служебного сценария.  
 
-Маршрутизация запросов отображает события `startup` и `fetch`, основанные на сетевых запросах, выполняемых в служебных сценариях.  Временные шкалы доступны в средстве **Приложение** или **Сеть**.  Временные рамки помогают, когда у вас возникли проблемы с сотрудниками службы и вы хотите отобразить, если что-то не так с `startup` `fetch` событием или событием.  
+Маршрутизация запросов отображает события `startup` и `fetch`, основанные на сетевых запросах, выполняемых в служебных сценариях.  Временные шкалы доступны в средстве **Приложение** или **Сеть**.  Временные шкалы удобно использовать, если у вас возникли проблемы со служебными сценариями и вы хотите проверить наличие ошибок в событиях `startup` или `fetch`.  
 
 ### <a name="application-tool"></a>Средство "Приложение"  
 
@@ -192,8 +193,8 @@ Microsoft Edge Dev теперь поддерживается в дистрибу
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Значение свойства в microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Значение свойства в microsoft Visual Studio Code  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Вставка значения свойства в Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Вставка значения свойства в Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -342,7 +343,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Скачивание Microsoft Edge предварительных каналов  
 
-Если вы находитесь на Windows, Linux или macOS, рассмотрите возможность использования каналов предварительного просмотра [Microsoft Edge][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
+Если вы используете Windows, Linux или macOS, рассмотрите возможность использования [Microsoft Edge предварительных каналов][MicrosoftEdgePreviewChannels] в качестве браузера разработки по умолчанию.  Предварительные каналы предоставляют доступ к новейшим функциям средств разработчика.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
@@ -373,7 +374,7 @@ background: linear-gradient(100deg, lightblue, pink);
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Скачивание Microsoft Edge Insider Channels"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Каналы предварительного просмотра Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Предварительные каналы Microsoft Edge"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 

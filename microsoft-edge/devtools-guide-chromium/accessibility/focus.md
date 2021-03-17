@@ -1,18 +1,18 @@
 ---
 description: Откройте консоль, создайте живое выражение и установите выражение document.activeElement.
-title: Отслеживание элемента с фокусом
+title: Отслеживание элемента, на котором установлен фокус
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398317"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439172"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,14 +28,14 @@ ms.locfileid: "11398317"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="track-which-element-has-focus"></a>Отслеживание элемента с фокусом  
+# <a name="track-which-element-has-focus"></a>Отслеживание элемента, на котором установлен фокус  
 
 Предположим, что вы тестируете доступность навигации по клавиатуре страницы.  При навигации по странице с ключом кольцо фокуса иногда исчезает, так как элемент с `Tab` фокусом скрыт.  
 
 Выполните следующие действия для отслеживания сфокусированного элемента в DevTools.  
 
 1.  Откройте **консоль.**  
-1.  Выберите **Создать живое выражение** \. ![ Создайте живое ][ImageCreateIcon] выражение \).  
+1.  Выберите **Создать живое выражение** \. ![ Создайте живое ](../media/create-live-expression-icon.msft.png) выражение \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Создание live expression" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Создание live expression  
@@ -55,10 +55,6 @@ ms.locfileid: "11398317"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

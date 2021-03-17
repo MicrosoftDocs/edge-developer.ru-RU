@@ -3,16 +3,16 @@ description: Использование виртуальных устройст�
 title: Эмулировать мобильные устройства в Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, средства f12, девтуолы, эмуляция, устройство, моделирование, мобильный телефон
-ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398787"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439453"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,7 +47,7 @@ ms.locfileid: "11398787"
 
 ## <a name="simulate-a-mobile-viewport"></a>Имитация мобильного представления  
 
-Выберите эмуляцию устройства **Toggle** \. Панель инструментов устройства \) или выберите Настройка и управление эмуляцией ![ ][ImageDeviceToolbarIcon] **DevTools** `...` \( **** \) > устройства, чтобы открыть пользовательский интерфейс, который позволяет имитировать мобильный видпорт.  
+Выберите эмуляцию устройства **Toggle** \. Панель инструментов устройства \) или выберите Настройка и управление эмуляцией ![ ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** `...` \( **** \) > устройства, чтобы открыть пользовательский интерфейс, который позволяет имитировать мобильный видпорт.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Панель инструментов устройства" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     Панель инструментов устройства  
@@ -109,7 +109,7 @@ ms.locfileid: "11398787"
 
 Проверьте веб-страницу в ландшафтной ориентации.  
 
-*   Чтобы повернуть представление в ландшафтную ориентацию, выберите **Rotate** \( ![ Rotate ][ImageRotateIcon] \).  
+*   Чтобы повернуть представление в ландшафтную ориентацию, выберите **Rotate** \( ![ Rotate ](../media/rotate-dark-icon.msft.png) \).  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Страница, отображаемая в ландшафтной ориентации" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Страница, отображаемая в ландшафтной ориентации  
@@ -216,7 +216,7 @@ Throttle сети и ЦП.
 
 Чтобы затормалить только ЦП, а не сеть, выполните следующие действия.
 
-1.  Выберите панель **Performance** и выберите **Параметры захвата** \. ![ Параметры захвата ][ImageCaptureIcon] \).
+1.  Выберите панель **Performance** и выберите **Параметры захвата** \. ![ Параметры захвата ](../media/capture-settings-icon.msft.png) \).
 1.  Выберите **замедление**  >  **4x** ЦП или **замедление 6x.**
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Список ЦП в панели Performance" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -242,7 +242,7 @@ Throttle сети и ЦП.
     
 Кроме того, можно установить регулирование сети с панели **Performance.**  
 
-1.  Выберите **Параметры** захвата \. Параметры захвата \) и выберите список Сети и измените заранее на ![ быстрый ][ImageCaptureIcon] **3G** или **медленный 3G**. ****  
+1.  Выберите **Параметры** захвата \. Параметры захвата \) и выберите список Сети и измените заранее на ![ быстрый ](../media/capture-settings-icon.msft.png) **3G** или **медленный 3G**. ****  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Настройка регулирования сети с панели Performance" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Настройка регулирования сети с панели **Performance**  
@@ -338,12 +338,6 @@ Throttle сети и ЦП.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
-[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 

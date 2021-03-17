@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398765"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439200"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,9 +72,9 @@ ms.locfileid: "11398765"
 ## <a name="record-code-coverage"></a>Покрытие кода записи  
 
 1.  Выберите одну из следующих кнопок в панели **Coverage.**  
-    *   Если **вы хотите** просмотреть код, необходимый для загрузки страницы, выберите страницу Начните использовать средства и перезагрузить ![ страницу \. ][ImageReloadIcon]  
-    *   Если **вы хотите** просмотреть код, используемый после взаимодействия со страницей, выберите охват инструментов ![ ][ImageRecordIcon] \.  
-1.  Выберите **stop Instrumenting Coverage and Show Results** \( Stop Instrumenting Coverage and Show Results \) при остановке записи ![ ][ImageStopIcon] кода.  
+    *   Если **вы хотите** просмотреть код, необходимый для загрузки страницы, выберите страницу Начните использовать средства и перезагрузить ![ страницу \. ](../media/reload-icon.msft.png)  
+    *   Если **вы хотите** просмотреть код, используемый после взаимодействия со страницей, выберите охват инструментов ![ ](../media/record-icon.msft.png) \.  
+1.  Выберите **stop Instrumenting Coverage and Show Results** \( Stop Instrumenting Coverage and Show Results \) при остановке записи ![ ](../media/stop-icon.msft.png) кода.  
     
 ## <a name="analyze-code-coverage"></a>Анализ покрытия кода  
 
@@ -93,12 +93,6 @@ ms.locfileid: "11398765"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageReloadIcon]: ../media/reload-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png  
-[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 

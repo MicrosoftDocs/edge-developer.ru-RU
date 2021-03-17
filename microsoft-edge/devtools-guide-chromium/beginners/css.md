@@ -3,16 +3,16 @@ description: Начало работы с CSS
 title: 'DevTools для начинающих: начало работы с CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft edge, веб-разработка, средства f12, devtools
-ms.openlocfilehash: 7aa33c339a7d130265660e4a4af6f50dde7e3e90
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398401"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439439"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -337,7 +337,7 @@ li a {
 
 Выполните следующие действия, чтобы добавить новые правила в DevTools.  
 
-1.  Выберите **новое правило** стиля \( Новое правило стиля ![ ][ImageNewStyleRuleIcon] \), которое находится рядом с **.cls**.  Пустой регламент отображается в `a` качестве селектора.  
+1.  Выберите **новое правило** стиля \( Новое правило стиля ![ ](../media/new-style-rule-icon.msft.png) \), которое находится рядом с **.cls**.  Пустой регламент отображается в `a` качестве селектора.  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Добавление нового правила" lightbox="../media/beginners-css-rule1.msft.png":::
        Добавление нового правила  
@@ -605,10 +605,6 @@ li a {
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!--- image links --->  
-
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
 
 <!--- links  --->  
 

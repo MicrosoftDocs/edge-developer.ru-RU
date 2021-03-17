@@ -3,16 +3,16 @@ description: Как отладить фоновое извлечение, фон
 title: Отладка фоновых служб с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: cf3459e7b5f80a695a855ffdd0c249c2bc223d31
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398639"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439530"
 ---
 <!-- Copyright Kayce Basques
 
@@ -60,7 +60,7 @@ API **background Fetch** позволяет **** работнику службы
        Панель **"Фоновое извлечение"**  
     :::image-end:::  
     
-1.  Выберите **запись** \. ![ Запись ][ImageRecordIcon] \).  
+1.  Выберите **запись** \. ![ Запись ](../media/record-icon.msft.png) \).  
    После запуска некоторых действий "Фоновое извлечение" DevTools записывает события в таблицу.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Журнал событий в панели Фоновое извлечение" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
@@ -87,7 +87,7 @@ API **синхронизации** фона позволяет **** работн
        Области **фоновой синхронизации**  
     :::image-end:::  
     
-1.  Выберите **запись** \. ![ Запись ][ImageRecordIcon] \).  
+1.  Выберите **запись** \. ![ Запись ](../media/record-icon.msft.png) \).  
    После запуска некоторых действий фоновой синхронизации DevTools регистрирует события в таблице.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Журнал событий в области фоновой синхронизации" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -112,7 +112,7 @@ API **синхронизации** фона позволяет **** работн
        Области **уведомлений**  
     :::image-end:::  
     
-1.  Выберите **запись** \. ![ Запись ][ImageRecordIcon] \).  
+1.  Выберите **запись** \. ![ Запись ](../media/record-icon.msft.png) \).  
    После запуска некоторых действий Notifications DevTools регистрирует события в таблице.  
     
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Журнал событий в области Уведомлений" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -137,7 +137,7 @@ API **синхронизации** фона позволяет **** работн
        Откройте области **push-сообщений**  
     :::image-end:::  
     
-1.  Выберите **запись** \. ![ Запись ][ImageRecordIcon] \).  
+1.  Выберите **запись** \. ![ Запись ](../media/record-icon.msft.png) \).  
     После запуска некоторых действий Push Message DevTools регистрирует события в таблице.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Журнал событий в области push-сообщений" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -153,10 +153,6 @@ API **синхронизации** фона позволяет **** работн
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 

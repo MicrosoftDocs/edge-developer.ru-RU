@@ -3,16 +3,16 @@ description: Начало работы с эмуляторами Surface Duo у�
 title: Начало работы с эмуляторами Surface Duo удаленного отладки
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, Android, surface duo
-ms.openlocfilehash: a9696e63528a674d349b78fbdec2a1b804f61c49
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 61f903a5b929b7ee7b924938cf6ddc21a9783ca7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398016"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439332"
 ---
 # <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Начало работы с эмуляторами Surface Duo удаленного отладки  
 
@@ -62,7 +62,7 @@ ms.locfileid: "11398016"
 > [!NOTE]
 > Если **SurfaceDuoEmulator** не отображается на странице, попробуйте открыть или закрыть вкладки в `edge://inspect` [приложении Microsoft Edge][GooglePlayStoreAppsComMicrosoftEmmx] в эмуляторе [Surface Duo.][DualScreenAndroidUseEmulator]  Дополнительные действия по устранению неполадок перейдите в раздел устранения неполадок [для устройств Android.][DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]  
 
-Из списка открытых вкладок, запущенных на **** эмуляторе, выберите инспектировать на вкладке, на которую необходимо отладить веб-содержимое.  Microsoft [Edge DevTools][DevtoolsIndex] откроется в новом окне.  Выберите **toggle Screencast** \( Toggle Screencast \) для просмотра веб-контента из эмулятора Surface Duo в окне ![ ][ImageToggleScreencastIcon] DevTools. [][DualScreenAndroidUseEmulator]  Теперь вы можете использовать Microsoft Edge DevTools для отладки веб-контента в [эмуляторе Surface Duo.][DualScreenAndroidUseEmulator]  
+Из списка открытых вкладок, запущенных на **** эмуляторе, выберите инспектировать на вкладке, на которую необходимо отладить веб-содержимое.  Microsoft [Edge DevTools][DevtoolsIndex] откроется в новом окне.  Выберите **toggle Screencast** \( Toggle Screencast \) для просмотра веб-контента из эмулятора Surface Duo в окне ![ ](../media/toggle-screencast-icon.msft.png) DevTools. [][DualScreenAndroidUseEmulator]  Теперь вы можете использовать Microsoft Edge DevTools для отладки веб-контента в [эмуляторе Surface Duo.][DualScreenAndroidUseEmulator]  
 
 :::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="Использование Microsoft Edge DevTools для отладки Bing в приложении Microsoft Edge в эмуляторе Surface Duo" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
    Использование Microsoft Edge DevTools для отладки Bing в приложении Microsoft Edge в эмуляторе Surface Duo  
@@ -79,9 +79,9 @@ ms.locfileid: "11398016"
 *   [Объяснение веб-платформы Microsoft Edge для новых API для создания веб-опытом на складных и двухэкранных устройствах][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]  
 *   [Запись сеанса Дня разработчика Microsoft 365: создание двухэкранных опытом для веб-сайтов и веб-приложений][YoutubeDxrzwsqxpvc]  
 
-<!-- image links -->  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
-[ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

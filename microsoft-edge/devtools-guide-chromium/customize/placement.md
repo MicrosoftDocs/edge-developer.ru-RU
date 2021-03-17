@@ -3,16 +3,16 @@ description: Перемещение Microsoft Edge DevTools в нижней ил
 title: Изменение размещения Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: e3160999a1072afffdc5c5d44f8fc60fab65d264
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399044"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439179"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ ms.locfileid: "11399044"
 
 ## <a name="change-placement-from-the-main-menu"></a>Изменение размещения из основного меню  
 
-1.  Выберите настройка и управление **DevTools** \( \) и выберите Undock в отдельное окно `...` \( **** ![ Undock \), dock to Bottom \( Dock to ][ImageUndockIcon] **Bottom** ![ \), ][ImageBottomIcon] **** ![ или ][ImageLeftIcon] стыковка налево \( Стыковка слева \).  
+1.  Выберите настройка и управление **DevTools** \( \) и выберите Undock в отдельное окно `...` \( **** ![ Undock \), dock to Bottom \( Dock to ](../media/undock-icon.msft.png) **Bottom** ![ \), ](../media/bottom-icon.msft.png) **** ![ или ](../media/left-icon.msft.png) стыковка налево \( Стыковка слева \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Выберите Undock в отдельное окно" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Выберите **Undock в отдельное окно**  
@@ -77,12 +77,6 @@ ms.locfileid: "11399044"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageUndockIcon]: ../media/undock-icon.msft.png  
-[ImageBottomIcon]: ../media/bottom-icon.msft.png  
-[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 

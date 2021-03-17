@@ -3,16 +3,16 @@ description: Просмотр и редактирование сеансовStor
 title: Просмотр и редактирование хранилища сеансов с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: cf00d71302e7a1f16ba1cceaa17c9380245d12f8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398009"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439663"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,12 +80,12 @@ ms.locfileid: "11398009"
 
 1.  [Просмотр `sessionStorage` пар значений ключа домена](#view-sessionstorage-keys-and-values).  
 1.  Выберите пару с значением ключа, которую необходимо удалить.  DevTools выделяет его синим цветом, чтобы указать, что он выбран.  
-1.  Выберите ключ `Delete` или выберите **Удалить выбранный** \. ![ Удалить выбранный ][ImageDeleteIcon] \).  
+1.  Выберите ключ `Delete` или выберите **Удалить выбранный** \. ![ Удалить выбранный ](../media/delete-icon.msft.png) \).  
     
 ## <a name="delete-all-sessionstorage-key-value-pairs-for-a-domain"></a>Удаление всех пар ключей sessionStorage для домена  
 
 1.  [Просмотр `sessionStorage` пар значений ключа домена](#view-sessionstorage-keys-and-values).  
-1.  Выберите **Clear All** \( Clear All ![ ][ImageClearIcon] \).  
+1.  Выберите **Clear All** \( Clear All ![ ](../media/clear-icon.msft.png) \).  
     
 ## <a name="interact-with-sessionstorage-from-the-console"></a>Взаимодействие с sessionStorage из консоли  
 
@@ -106,11 +106,6 @@ ms.locfileid: "11398009"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

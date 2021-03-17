@@ -3,16 +3,16 @@ description: Узнайте, как использовать Microsoft Edge DevT
 title: Оптимизация скорости веб-сайта с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 7de97ab27528e89e2373e0a0d1002e8c86e37613
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398114"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439446"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -94,7 +94,7 @@ ms.locfileid: "11398114"
 
 Базовая запись о том, как сайт выполнялся, прежде чем вы сделали какие-либо улучшения производительности.  
 
-1.  Выберите средство **аудита.**  Она может быть скрыта за кнопкой **More Panels** ![ \( More Panels ][ImageMorePanelsIcon] \) .  На этой панели есть маяк, так как проект, который имеет полномочия панели аудитов, называется **Маяк.**  
+1.  Выберите средство **аудита.**  Она может быть скрыта за кнопкой **More Panels** ![ \( More Panels ](../media/more-panels-icon.msft.png) \) .  На этой панели есть маяк, так как проект, который имеет полномочия панели аудитов, называется **Маяк.**  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
@@ -278,7 +278,7 @@ ms.locfileid: "11398114"
 Проверь страницу еще раз, чтобы оценить, какое влияние оказывает сжатие текста на производительность нагрузки страницы:  
 
 1.  Выберите средство **аудита.**  
-1.  Выберите **Выполнение аудита** \. ![ Выполните аудит ][ImagePerformIcon] \).  
+1.  Выберите **Выполнение аудита** \. ![ Выполните аудит ](../media/perform-icon.msft.png) \).  
 1.  Оставьте параметры так же, как и раньше.  
 1.  Выберите **аудит Run**.  
     
@@ -353,7 +353,7 @@ ms.locfileid: "11398114"
        Средство **Coverage**  
     :::image-end:::  
     
-1.  Выберите **обновление** \. ![ Обновление ][ImageRefreshIcon] \).  Средство **Coverage** предоставляет обзор того, сколько кода в , и запускается во время `bundle.js` `jquery.js` `lodash.js` загрузки страницы.  На следующем рисунке не используется соответственно около 76% и 30% файлов jQuery и Lodash.  
+1.  Выберите **обновление** \. ![ Обновление ](../media/reload-icon.msft.png) \).  Средство **Coverage** предоставляет обзор того, сколько кода в , и запускается во время `bundle.js` `jquery.js` `lodash.js` загрузки страницы.  На следующем рисунке не используется соответственно около 76% и 30% файлов jQuery и Lodash.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="Отчет По охвату" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        Отчет По охвату  
@@ -379,7 +379,7 @@ ms.locfileid: "11398114"
        Средство **блокировки запроса**  
     :::image-end:::  
     
-1.  Выберите **Добавить шаблон** \. Добавьте шаблон ![ ][ImageAddPatternIcon] \), введите , а затем `/libs/*` `Enter` выберите, чтобы подтвердить.  
+1.  Выберите **Добавить шаблон** \. Добавьте шаблон ![ ](../media/add-pattern-icon.msft.png) \), введите , а затем `/libs/*` `Enter` выберите, чтобы подтвердить.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Добавление шаблона для блокировки любого запроса в каталог libs" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Добавление шаблона для блокировки любого запроса `libs` в каталог  
@@ -391,7 +391,7 @@ ms.locfileid: "11398114"
        Средство **Network** показывает, что запросы заблокированы  
     :::image-end:::  
     
-1.  Выберите **Удалить все шаблоны** \. Удалите все ![ шаблоны ][ImageRemoveIcon] \) для удаления `/libs/*` шаблона блокировки.  
+1.  Выберите **Удалить все шаблоны** \. Удалите все ![ шаблоны ](../media/remove-icon.msft.png) \) для удаления `/libs/*` шаблона блокировки.  
     
 Как правило, средство блокировки **запроса** полезно для моделирования поведения страницы, если какой-либо ресурс не доступен.  
 
@@ -426,9 +426,9 @@ ms.locfileid: "11398114"
 Цель состоит в том, чтобы использовать панель Performance для анализа работы основного потока во время загрузки страницы, а также поиска способов отложить или удалить ненужные работы.  
 
 1.  Выберите **средство Performance.**  
-1.  Выберите **Параметры захвата** \. ![ Параметры захвата ][ImageCaptureIcon] \).  
+1.  Выберите **Параметры захвата** \. ![ Параметры захвата ](../media/capture-icon.msft.png) \).  
 1.  Установите **сеть** для **замедления 3G** и **ЦП** до **замедления 6x**.  Мобильные устройства обычно имеют больше ограничений оборудования, чем ноутбуки или настольные компьютеры, поэтому эти параметры позволяет испытывать нагрузку на страницу, как если бы вы использовали менее мощное устройство.  
-1.  Выберите **обновление** \. ![ Обновление ][ImageRefreshIcon] \).  DevTools обновляет страницу, а затем создает визуализацию всей работы, выполняемой для загрузки страницы.  Эта визуализация называется **трассировка**.  
+1.  Выберите **обновление** \. ![ Обновление ](../media/reload-icon.msft.png) \).  DevTools обновляет страницу, а затем создает визуализацию всей работы, выполняемой для загрузки страницы.  Эта визуализация называется **трассировка**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="Трассировка средства Performance для загрузки страницы" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        **Трассировка** средства Performance для загрузки страницы  
@@ -523,15 +523,6 @@ ms.locfileid: "11398114"
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageAddPatternIcon]: ../media/add-pattern-icon.msft.png  
-[ImageCaptureIcon]: ../media/capture-icon.msft.png  
-[ImageLargeResourceRowsButtonIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageMorePanelsIcon]: ../media/more-panels-icon.msft.png  
-[ImagePerformIcon]: ../media/perform-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
-[ImageRemoveIcon]: ../media/remove-icon.msft.png  
 <!-- links -->  
 
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Справочные ссылки | Документы Майкрософт"  

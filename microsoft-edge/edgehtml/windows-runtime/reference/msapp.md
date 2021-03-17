@@ -1,27 +1,27 @@
 ---
-title: Справочник по API MSApp
-description: Предоставляет дополнительные функции, позволяющие создавать объекты BLOB и MSStream.  Объекты и члены MSApp поддерживаются в приложениях для Windows с помощью JavaScript.
+title: Ссылка на API MSApp
+description: Предоставляет дополнительные функции, позволяющие создавать объекты Blob и MSStream.  Объекты и члены MSApp поддерживаются для приложений Windows с помощью JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
-keywords: MSapp, PWA, отправка файлов, блог, MSStream, приложения для Windows 10, uwp, edge
-ms.date: 12/02/2020
+keywords: MSapp, PWA, отправка файлов, блог, MSStream, windows 10 apps, uwp, edge
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 9a3ad670f61bfafa4480c538dd8f28c7013b7d7f
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 0607929971b1dd2956571304230f69f756497e32
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235422"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439726"
 ---
-# MSApp  
+# <a name="msapp"></a>MSApp  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Объект MSApp и его члены поддерживаются только для приложений для Windows с помощью JavaScript \(включая PWAs, которые имеют доступ к функциям API Windows\).  Объект MSApp существует только в локальном контексте HTML-документа в приложении для Windows, загружаемом с помощью схемы URI ms-appx; в противном случае объект не существует (и, следовательно, ни один из его методов и свойств не доступен).  
+Объект MSApp и его члены поддерживаются только для приложений Windows с помощью JavaScript \(включая pwAs, доступ к функциям API Windows\).  Объект MSApp существует только в локальном контексте HTML-документа в приложении Windows, загружаемом с помощью схемы URI ms-appx; в противном случае объект не существует (и, следовательно, ни один из его методов и свойств не доступен).  
 
-Он предоставляет дополнительные функции, позволяющие создавать [объекты BLOB](https://developer.mozilla.org/docs/Web/API/Blob) и [MSStream.](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx)  
+Он предоставляет дополнительные функции, которые позволяют создавать [объекты Blob](https://developer.mozilla.org/docs/Web/API/Blob) и [MSStream.](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx)  
 
 ```javascript
 var result = MSApp.method;
@@ -32,7 +32,7 @@ var result = MSApp.method;
       [Методы](#msapp-methods)  
    :::column-end:::
    :::column span="2":::
-      [clearTemporaryWebDataAsync](#cleartemporarywebdataasync), [createBlobFromRandomAccessSream](#createblobfromrandomaccessstream), [createDataPackage](#createdatapackage), [createDataPackageFromSelection](#createdatapackagefromselection), [createFileFromStorageFile](#createfilefromstoragefile), [createStreamFromInputStream](#createstreamfrominputstream), [execAsyncAtPriority](#execasyncatpriority), [execAtPriority](#execatpriority), [getCurrentPriority](#getcurrentpriority), [getHtmlPrintDocumentSource](#gethtmlprintdocumentsource),[getHtmlPrintDocumentSourceAsynce](#gethtmlprintdocumentsourceasync), [getViewId](#getviewid), [isTaskScheduledAtPriorityOrHigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppressSubdownloadCredentialPrompts](#suppresssubdownloadcredentialprompts), [terminateApp](#terminateapp).  
+      [clearTemporaryWebDataAsync](#cleartemporarywebdataasync), [createBlobFromRandomAccessSream](#createblobfromrandomaccessstream), [createDataPackage,](#createdatapackage) [createDataPackageFromSelection](#createdatapackagefromselection), [createFileFromStorageFile](#createfilefromstoragefile), [createStreamFromInputStream](#createstreamfrominputstream), [execAsyncAtPriority](#execasyncatpriority), [execAtPriority](#execatpriority), [getCurrentPriority](#getcurrentpriority), [getHtmlPrintDocumentSource](#gethtmlprintdocumentsource),[getHtmlPrintDocumentSourceAsynce](#gethtmlprintdocumentsourceasync), [getViewId](#getviewid), [isTaskScheduledAtPriorityOrHigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivationActivations](#pagehandlesallapplicationactivations), [suppressSubdownloadCredentialPrompts](#suppresssubdownloadcredentialprompts), [terminateApp](#terminateapp).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -40,7 +40,7 @@ var result = MSApp.method;
       [Константы](#msapp-constants)  
    :::column-end:::
    :::column span="2":::
-      [current](#current), [high](#high), [idle](#idle), [normal](#normal).  
+      [текущий,](#current) [высокий,](#high) [простой,](#idle) [нормальный](#normal).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -52,13 +52,13 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-## Методы MSApp  
+## <a name="msapp-methods"></a>Методы MSApp  
 
-### clearTemporaryWebDataAsync  
+### <a name="cleartemporarywebdataasync"></a>clearTemporaryWebDataAsync  
 
 :::row:::
    :::column span="":::
-      Очищает кэш и данные indexedDB для приложения или [WebView.](../../hosting/webview/index.md)  
+      Очищает кэш и индексацию данныхdb для приложения или [WebView.](../../hosting/webview/index.md)  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -94,7 +94,7 @@ var result = MSApp.method;
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       ```   
@@ -104,11 +104,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createBlobFromRandomAccessStream  
+### <a name="createblobfromrandomaccessstream"></a>createBlobFromRandomAccessStream  
 
 :::row:::
    :::column span="":::
-      Создает большой объект [из](https://developer.mozilla.org/docs/Web/API/Blob) объекта [IRandomAccessStream.](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)  Этот метод следует использовать при работе с объектами в приложениях, чтобы создать объект на основе `IRandomAccessStream` W3C из потока.  После создания BLOB-файл можно использовать с [FileReader,](https://developer.mozilla.org/docs/Web/API/FileReader) [API URL](https://developer.mozilla.org/docs/Web/API/URL)и [XMLHttpRequest.](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest)  
+      Создает [Blob из](https://developer.mozilla.org/docs/Web/API/Blob) [объекта IRandomAccessStream.](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)  Этот метод следует использовать при работе с объектами в приложениях, чтобы создать объект на основе `IRandomAccessStream` W3C из потока.  После создания blob его можно использовать с [файлами FileReader,](https://developer.mozilla.org/docs/Web/API/FileReader) [API](https://developer.mozilla.org/docs/Web/API/URL)URL-адресов и [XMLHttpRequest.](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest)  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -130,14 +130,14 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Любой | [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) для хранения в BLOB-хранилище.  |  
+      | Любой | [IRandomAccessStream,](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) который будет храниться в Blob.  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**  
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | BLOB | Новый объект BLOB, содержащий поток.  |  
+      | Blob | Новый объект blob, содержащий поток.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -146,17 +146,17 @@ var result = MSApp.method;
       
       | Исключение | Ошибка |  
       |:---- |:--- |  
-      | TypeMismatchError | Тип узла несовместим с ожидаемым типом параметра.  Для версий, более ранних Internet Explorer 10, TYPE_MISMATCH_ERR возвращается.  |  
+      | TypeMismatchError | Тип узла несовместим с ожидаемым типом параметра.  Для версий, ранее чем Internet Explorer 10, TYPE_MISMATCH_ERR возвращается.  |  
    :::column-end:::
    :::column span="":::
       **Комментарии**  
       
-      Создает большой объект на основе типов времени запуска Windows через пространство имен MSApp в объекте window.  Этот метод создает большой объект, который, по сути, является оболочкой света для предоставленного ему объекта [RandomAccessStream.](/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference)  Этот BLOB-бизнес владеет жизненным сроком существования этого потока, и поток будет закрыт при его уничтожении.  
+      Создает Blob из типов времени запуска Windows через пространство имен MSApp на объекте окна.  Этот метод создаст blob, который по сути является световой оболочкой над объектом [RandomAccessStream,](/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) предоставленным ему.  BLOB владеет сроком службы этого потока, и поток будет закрыт при уничтожении blob.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       var randomAccessStream = dataPackage.GetData("image/bmp");
@@ -171,11 +171,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createDataPackage  
+### <a name="createdatapackage"></a>createDataPackage  
 
 :::row:::
    :::column span="":::
-      Преобразует указанный диапазон пользователя или приложения в фрагмент HTML, к который можно получить общий доступ.  
+      Преобразует указанный диапазон пользователя или приложения в фрагмент HTML, который можно совместно использовать.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -191,7 +191,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Любой | Этот диапазон можно создать либо из объекта выделения, например: `window.selection.getRangeAt(0)` или вручную.  |  
+      | Любой | Этот диапазон можно создать либо из объекта выбора, например: `window.selection.getRangeAt(0)` или вручную.  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**  
@@ -210,14 +210,14 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Этот метод поддерживает только [диапазон doM,](https://developer.mozilla.org/docs/Web/API/Range)а не [TextRange.](/uwp/api/windows.ui.xaml.documents.textrange)  Возвращенный пакет данных для указанного диапазона содержит разметку HTML в формате буфера обмена.  
+      Этот метод поддерживает только диапазон объектной модели документа [(DOM),](https://developer.mozilla.org/docs/Web/API/Range)а не [TextRange.](/uwp/api/windows.ui.xaml.documents.textrange)  Возвращенный пакет данных для указанного диапазона содержит разметку HTML в формате буфера обмена.  
       
-      Для возвращенного пакета данных недоступны свойства.  
+      Для возвращенного пакета данных доступных свойств нет.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       Нет.  
    :::column-end:::
@@ -226,11 +226,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createDataPackageFromSelection  
+### <a name="createdatapackagefromselection"></a>createDataPackageFromSelection  
 
 :::row:::
    :::column span="":::
-      Преобразует выбор пользователя или приложения в фрагмент HTML, к который можно получить общий доступ.  
+      Преобразует выбор пользователя или приложения в фрагмент HTML, который можно совместно использовать.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -261,14 +261,14 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Возвращенный пакет данных для выбора содержит HTML-разметку в формате буфера обмена.  Если в пользовательском интерфейсе приложения нет выбора пользователя, `createDataPackageFromSelection` `null` возвращается.  
+      Возвращенный пакет данных для выбора содержит HTML-разметку в формате буфера обмена.  Если в пользовательском интерфейсе приложения нет выбора пользователя, `createDataPackageFromSelection` возвращается `null` .  
       
-      Для возвращенного пакета данных недоступны свойства.  
+      Для возвращенного пакета данных доступных свойств нет.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       ```   
@@ -278,11 +278,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
  
-### createFileFromStorageFile  
+### <a name="createfilefromstoragefile"></a>createFileFromStorageFile  
 
 :::row:::
    :::column span="":::
-      Преобразует [Файл Хранилища WinRT](/uwp/api/) [в](/uwp/api/windows.storage.storagefile) стандартный объект W3C [File.](https://developer.mozilla.org/docs/Web/API/File)  
+      Преобразует [WinRT](/uwp/api/) [StorageFile](/uwp/api/windows.storage.storagefile) в стандартный объект W3C [File.](https://developer.mozilla.org/docs/Web/API/File)  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -298,7 +298,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Любой | Содержит файл хранилища.  |  
+      | Любой | Содержит файл хранения.  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**
@@ -312,7 +312,7 @@ var result = MSApp.method;
       
       | Исключение | Ошибка |  
       |:---- |:--- |  
-      | TypeMismatchError | Указанная ссылка на файл W3C недействительна.  Для версий, более ранних Internet Explorer 10, `TYPE_MISMATCH_ERR` возвращается.  |  
+      | TypeMismatchError | Указанная ссылка на файл W3C недействительна.  Для версий, ранее чем Internet Explorer 10, `TYPE_MISMATCH_ERR` возвращается.  |  
    :::column-end:::
    :::column span="":::
       **Комментарии**  
@@ -322,7 +322,7 @@ var result = MSApp.method;
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       ```   
@@ -332,11 +332,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### createStreamFromInputStream  
+### <a name="createstreamfrominputstream"></a>createStreamFromInputStream  
 
 :::row:::
    :::column span="":::
-      Создает [MSStream](https://msdn.microsoft.com/library/hh772328) из [InputStream.](https://msdn.microsoft.com/library/hh772327)  
+      Создает [MSStream](https://msdn.microsoft.com/library/hh772328) из [inputStream.](https://msdn.microsoft.com/library/hh772327)  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -352,7 +352,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | Тип контента данных.  Эта строка должна быть в формате, указанном в маркере типа мультимедиа, определенном в разделе 3.7 RFC 2616.  \([См. типы MIME,]( https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) `text/plain` `text/html` например, `image/jpeg` и `image/png` так `audio/mpeg` `audio/ogg` `audio/*` `video/mp4` далее\).  
+      | DOMString | Тип контента данных.  Эта строка должна быть в формате, указанном в маркере типа мультимедиа, определенном в разделе 3.7 RFC 2616.  \([См. типы MIME,]( например https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types\) , , , , , , , , , `text/plain` и `text/html` так `image/jpeg` `image/png` `audio/mpeg` `audio/ogg` `audio/*` `video/mp4` далее \).  
       
       `inputStream` [in]
       
@@ -375,14 +375,14 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Этот метод принимает тип контента и `IInputStream` ссылку.  Затем метод проверяет, является ли переданная ссылка потока экземпляром типа, и если `IInputStream` нет, выдает `DOMException TYPE_MISMATCH_ERR` .  Если ошибка не возникает, `createStreamFromInputStream` `MSStream` создается \(из его входных данных\).  
+      Этот метод принимает тип контента и `IInputStream` ссылку.  Метод проверяет, что переданная ссылка потока является экземпляром типа, а если `IInputStream` нет, то бросает `DOMException TYPE_MISMATCH_ERR` .  Если ошибки не происходит, `createStreamFromInputStream` `MSStream` создается \(из входных данных\).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
-      An `IInputStream` can be used to create an `MSStream` .  Как и объекты, которые используются один раз, все созданные URL-адреса отзываются при первом их использовании `MSStreams` `URL.createObjectURL` элементом изображения.  Кроме того, запросы второго URL-адреса для этого объекта после использования потока будут неудались.  
+      An `IInputStream` можно использовать для создания `MSStream` .  Как и изначально одно время использования объектов, все URL-адреса, созданные отозваны при первом их использовании с помощью `MSStreams` `URL.createObjectURL` элемента изображения.  Кроме того, запросы на второй URL-адрес этого объекта после использования потока не будут.  
       
       ```javascript
       var inputStream = myInputStream; //get InputStream from socket API, and so on
@@ -395,11 +395,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### execAsyncAtPriority  
+### <a name="execasyncatpriority"></a>execAsyncAtPriority  
 
 :::row:::
    :::column span="":::
-      Запланировать выполнение вызова позже в соответствии с заданным приоритетом.  
+      Расписание выполнения вызова в более позднее время в соответствии с заданным приоритетом.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -415,19 +415,19 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Функция | Функция callback для асинхронного запуска, которая отправляется с заданным приоритетом.  |  
+      | Функция | Функция вызова, которая будет работать асинхронно, отправляется по заданному приоритету.  |  
       
       `priority` [in]
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | Значение контекстного приоритета, при котором будет запускаться асинхронный вызовCallback.  См. ["Константы MSApp"](#msapp-constants).  |  
+      | DOMString | Значение контекстного приоритета, при котором запускается асинхронный вызовCallback.  См. [константы MSApp.](#msapp-constants)  |  
       
       `args` [in]
       
       | Тип | Описание |  
       |:---- |:--- |   
-      | Любой | Необязательный ряд аргументов, которые передаются в функцию вызова synchronousCallback \(в качестве параметров 1 и так далее\).  |  
+      | Любой | Необязательная серия аргументов, которые передаются функции вызова synchronousCallback \(как параметры 1 и так далее\).  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**  
@@ -444,16 +444,16 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Предоставленная `asynchronousCallback` функция вызова выполняется асинхронно позже.  `asynchronousCallback` будет отправлено в соответствии с предоставленным приоритетом.  Обычный приоритет эквивалентен существующему [методу setImmediate.](https://developer.mozilla.org/docs/Web/API/Window/setImmediate)  При выполнении этого вызова текущий контекстный приоритет устанавливается в качестве заданного значения параметра приоритета на время выполнения этого вызова.  
+      Предоставленная `asynchronousCallback` функция вызова выполняется асинхронно позже.  `asynchronousCallback` будет отправлено в соответствии с предоставленным приоритетом.  Обычный приоритет эквивалентен существующему [методу setImmediate.](https://developer.mozilla.org/docs/Web/API/Window/setImmediate)  При выполнении вызова текущего контекстного приоритета задано приведенное значение параметра приоритета на время выполнения вызова.  
       
-      Параметром `asynchronousCallback` callback может быть любая функция.  Если аргументы предоставляются после параметра, они все будут переданы функции `priority` вызова.  
+      Параметр `asynchronousCallback` callback может быть любой функцией.  Если после параметра будут предоставлены аргументы, все они будут переданы функции `priority` вызова.  
       
-      В отличие от этого, любой объект, возвращенный функцией обратного вызова, игнорируется и не возвращается `execAtPriority` `asynchronousCallback` через `execAsyncAtPriority` \).  
+      В отличие от этого, любой объект, возвращаемый функцией обратного вызова, игнорируется `execAtPriority` `asynchronousCallback` \(и не возвращается `execAsyncAtPriority` через \).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       ```   
@@ -463,11 +463,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### execAtPriority  
+### <a name="execatpriority"></a>execAtPriority  
 
 :::row:::
    :::column span="":::
-      Запускает указанную функцию вызова с заданным контекстным приоритетом.  
+      Выполняет указанную функцию вызова в данном контекстуальном приоритете.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -483,13 +483,13 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Функция | Функция вызова для синхронного запуска с заданным контекстным приоритетом приоритета.  |  
+      | Функция | Функция вызова для синхронного запуска при данном приоритете контекстного приоритета.  |  
       
       `priority` [in]  
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | Указанное значение приоритета, для которого будет задано текущее значение контекстного приоритета при запуске функции `synchronousCallback` callback.  См. ["Константы MSApp"](#msapp-constants).  |  
+      | DOMString | Указанное значение приоритета, которому будет задано текущее значение контекстного приоритета при запуске функции `synchronousCallback` вызова.  См. [константы MSApp.](#msapp-constants)  |  
       
       `args` [in]  
       
@@ -502,7 +502,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Любой | Возвращает возвращаемое значение обратного `synchronousCallback` вызова \(в соответствии с применимым\).  |  
+      | Любой | Возвращает возвращаемое значение обратного вызова `synchronousCallback` \(как применимо\).  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -514,14 +514,14 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Предоставленный `synchronousCallback` метод вызова выполняется синхронно.  Текущий контекстный приоритет меняется на предоставленное значение приоритета (заданное аргументом приоритета) на время действия предоставленной функции вызова.  После завершения выполнения функции обратного вызова приоритет возвращается предыдущему значению перед `execAtPriority` вызовом.  Возвращаемого значения является возвращаемого значения метода обратного `execAtPriority` вызова \(как предоставлено\).  
+      Предоставленный `synchronousCallback` метод вызова выполняется синхронно.  Текущий контекстный приоритет меняется на предоставленное значение приоритета (дается аргументом приоритета) на время предоставляемой функции вызова.  После завершения выполнения функции обратного вызова приоритет возвращается к предыдущему значению перед `execAtPriority` вызовом.  Возвращаемого значения из является возвращаемого значения метода обратного `execAtPriority` вызова \(как предусмотрено\).  
       
-      Параметром `synchronousCallback` callback может быть любая функция.  Если какие-либо аргументы предоставляются после параметра приоритета, они будут переданы предоставленного метода вызова.  Если параметр обратного вызова возвращает значение, это значение также становится `execAtPriority` возвращаемой.  
+      Параметр `synchronousCallback` callback может быть любой функцией.  Если после параметра приоритета будут предоставлены какие-либо аргументы, они будут переданы в предоставленный метод вызова.  Если параметр обратного вызова возвращает значение, это значение также становится `execAtPriority` возвратным.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       var user = Windows.System.UserProfile.UserInformation;
@@ -540,11 +540,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### getCurrentPriority  
+### <a name="getcurrentpriority"></a>getCurrentPriority  
 
 :::row:::
    :::column span="":::
-      Возвращает текущий контекстный приоритет.  
+      Возвращает текущий контекстуальный приоритет.  
 
    :::column-end:::
    :::column span="":::
@@ -564,7 +564,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | Возвращаемого значения является одной из строк `MSApp.HIGH` `MSApp.NORMAL` , или `MSApp.IDLE` .  |  
+      | DOMString | Возвращаемого значения является одной из строк `MSApp.HIGH` , `MSApp.NORMAL` или `MSApp.IDLE` .  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -576,12 +576,12 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Этот метод возвращает текущий контекстный приоритет \(см. [msApp Constants](#msapp-constants)\), который можно изменить с помощью `execAtPriority` и `execAsyncAtPriority` .  
+      Этот метод возвращает текущий контекстуальный приоритет \(см. [msApp Constants](#msapp-constants)\), который можно изменить с помощью `execAtPriority` и `execAsyncAtPriority` .  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       if (MSApp.getCurrentPriority() === MSApp.IDLE) { 
@@ -594,15 +594,15 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### getHtmlPrintDocumentSource  
+### <a name="gethtmlprintdocumentsource"></a>getHtmlPrintDocumentSource  
 
-Неподготовленный синхронный API.  Для Windows 10 `getHtmlPrintDocumentSourceAsync` см. .  For Windows 8 and 8.1 apps, see the MSDN entry for [getHtmlPrintDocumentSource](https://msdn.microsoft.com/library/hh772325).  
+Синхронный API, который был обесценен.  В Windows 10 `getHtmlPrintDocumentSourceAsync` см. .  Для Windows 8 и приложений 8.1 см. запись MSDN [для полученияHtmlPrintDocumentSource](https://msdn.microsoft.com/library/hh772325).  
 
-### getHtmlPrintDocumentSourceAsync  
+### <a name="gethtmlprintdocumentsourceasync"></a>getHtmlPrintDocumentSourceAsync  
 
 :::row:::
    :::column span="":::
-      Возвращает исходный контент, который необходимо распечатать.  
+      Возвращает исходный контент, который должен быть напечатан.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -618,7 +618,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Документ | HtmL-документ для печати.  Это может быть корневой документ, документ в iframe, фрагмент документа или документ SVG.  Следует помнить, что htmlDoc должен быть документом, а не элементом.  |  
+      | Документ | Документ HTML, который будет напечатан.  Это может быть корневой документ, документ в iframe, фрагмент документа или документ SVG.  Следует помнить, что htmlDoc должен быть документом, а не элементом.  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**
@@ -719,19 +719,19 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### getViewId  
+### <a name="getviewid"></a>getViewId  
 
 :::row:::
    :::column span="":::
       Поддержка нескольких окон.  
       
       > [!NOTE] 
-      > В приложениях UWP на JavaScript для Win8.1 поддерживалась поддержка нескольких окон с помощью API-API MSApp DOM, которые теперь не поддерживаются.  Для Windows 10 используйте `window.open` , `window` и новый `MSApp.getViewId` .  
+      > В Win8.1 приложения JavaScript UWP поддерживали несколько окон с помощью API-API DOM MSApp, которые в настоящее время отклонились.  Для Windows 10 используйте `window.open` , `window` и новые `MSApp.getViewId` .  
       
-      | Описание |Windows 10; | Windows 8.1 |  
+      | Описание |Windows 10 | Windows 8.1 |  
       |:---- |:---- |:--- |  
       | Создание нового окна | [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) | [MSApp.createNewView](https://msdn.microsoft.com/library/dn254975(v=vs.85).aspx) |  
-      |Новый объект window | [окно](https://developer.mozilla.org/docs/Web/API/Window) |[MSAppView](https://msdn.microsoft.com/library/dn268315(v=vs.85).aspx) |  
+      |Объект "Новое окно" | [окно](https://developer.mozilla.org/docs/Web/API/Window) |[MSAppView](https://msdn.microsoft.com/library/dn268315(v=vs.85).aspx) |  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -768,36 +768,36 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Используйте [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) и [window](https://developer.mozilla.org/docs/Web/API/Window) для создания новых окон, но затем для взаимодействия с API WinRT добавьте `MSApp.getViewId` API.  Он принимает объект в качестве параметра и возвращает число, которое можно использовать с различными `window` `viewId` API [Windows.UI.ViewManagement.ApplicationViewSwitcher.](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher)  
+      Используйте [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) и [window](https://developer.mozilla.org/docs/Web/API/Window) для создания новых окон, но затем для взаимодействия с API WinRT добавьте `MSApp.getViewId` API.  Он принимает объект в качестве параметра и возвращает номер, который можно использовать с различными `window` `viewId` [API Windows.UI.ViewManagement.ApplicationViewSwitcher.](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher)  
       
       *   Задержка видимости  
           
-          Представления в WinRT обычно начинаются скрытыми, и конечный разработчик использует что-то вроде отображения представления `TryShowAsStandaloneAsync` после его полной подготовки.  В веб-мире сразу же отображает окно, и конечный пользователь может наблюдать за загрузкой и отрисовке `window.open` содержимого.  Чтобы ваши новые окна отображались как представления в WinRT и не отображались сразу, мы добавили `window.open` параметр.  Например:  
+          Представления в WinRT обычно начинают скрываться, и конечный разработчик использует что-то вроде отображения представления `TryShowAsStandaloneAsync` после его полной подготовки.  В веб-мире сразу показано окно, и конечный пользователь может наблюдать за загрузкой и отрисовкам `window.open` контента.  Чтобы ваши новые окна действовали как представления в WinRT и не отображались сразу, мы добавили `window.open` параметр.  Пример:  
           
           ```javascript
           let newWindow = window.open("https://example.com", null, "msHideView=yes");
           ```  
           
-      *   Отличия основного окна  
+      *   Основные различия в окне  
           
-          Основное окно, которое изначально открывается операционной операцией, действует иначе, чем открывалось дополнительное окно:  
+          Начальное окно, открываемое оси, действует иначе, чем открываемое дополнительное окно:  
           
           | Описание | Основной | Дополнительная |  
           |:---- |:--- |:--- |  
           | window.open | Разрешено | Disallowed |  
           | window.close | Закрыть приложение | Закрыть окно |  
-          | Ограничения навигации | Только ACUR | Без ограничений |  
+          | Ограничения навигации | Только ACUR | Нет ограничений |  
           
-          Ограничение на запрет открытия дополнительных окон может измениться в зависимости от [отзывов.](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer)  
+         <!-- The restriction to not allow secondary windows to open could change in the future depending on [feedback](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  -->  
       
-      *   Ограничения связи с одинаковым происхождением  
+      *   Те же ограничения на связь происхождения  
           
-          Существует сложная техническая проблема, препятствуя правильной поддержке синхронных вызовов скриптов с одинаковым и одинаковым началом.  Когда вы открываете окно того же источника, сценарий в одном окне может напрямую вызывать функции в другом окне, и некоторые из этих вызовов не будут выполняться.  `postMessage` вызовы работают нормально, и это рекомендуемый способ, если это возможно.  Работа по улучшению этой проблемы продолжается.  
+          Существует сложная техническая проблема, предотвращая надлежащую поддержку синхронных, однополых, межкошко, вызовов скриптов.  При открываемом окне того же происхождения скрипту в одном окне разрешается напрямую вызывать функции в другом окне, и некоторые из этих вызовов не будут выполняться.  `postMessage` вызовы работают нормально, и это рекомендуемый способ сделать что-то, если это возможно.  Работа по улучшению этой проблемы продолжается.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       ```   
@@ -807,11 +807,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
     
-### isTaskScheduledAtPriorityOrHigher  
+### <a name="istaskscheduledatpriorityorhigher"></a>isTaskScheduledAtPriorityOrHigher  
 
 :::row:::
    :::column span="":::
-      Возвращает boolean значение, указывающее, есть ли ожидающих работ на заданном уровне приоритета или выше.  
+      Возвращает значение Boolean, указывающее, есть ли ожидаемая работа на заданном уровне приоритета или выше.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -827,14 +827,14 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | Значение приоритета \(см. [MSApp Constants](#msapp-constants)\), указывающее уровень приоритета и выше для запроса любых непогашенных работ в очереди.  |  
+      | DOMString | Значение приоритета \(см. в руб. [MSApp Constants](#msapp-constants)\) с указанием уровня приоритета и выше для запроса для выполнения любой незаполнеемой работы в очереди.  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**  
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Boolean (Логическое) | Возвращает, есть ли в очереди какие-либо трудоемкие задачи на указанном уровне приоритета или выше, в противном `true` `false` случае.  |  
+      | Boolean (Логическое) | `true`Возвращается, если есть какие-либо очереди работы на указанном уровне приоритета или выше, `false` в противном случае.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -846,12 +846,12 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Этот метод предоставляет коду JavaScript средства для определения того, есть ли ожидающих работ на различных уровнях приоритета \(или выше\) с целью того, чтобы вызывательный код JavaScript затем решил дать работу с более высоким `isTaskScheduledAtPriorityOrHigher` приоритетом.  
+      Этот метод позволяет коду JavaScript определить, есть ли ожидаемая работа на различных уровнях приоритета \(или выше\) с целью, чтобы вызывательный код JavaScript решил уступить работе с более высоким `isTaskScheduledAtPriorityOrHigher` приоритетом.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       function performIdleWork(array_in) {
@@ -878,11 +878,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### pageHandlesAllApplicationActivations  
+### <a name="pagehandlesallapplicationactivations"></a>pageHandlesAllApplicationActivations  
 
 :::row:::
    :::column span="":::
-      Используется для предотвращения обновления пути начала (перезагрузки страницы) перед каждым событием активации (например, щелчок уведомления или закрепленная плитка\).  
+      Используется для предотвращения обновления пути запуска (перезагрузки страницы) перед каждым событием активации \(например, щелкнув уведомление или закрепленную плитку\).  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -896,7 +896,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Boolean (Логическое) | Используйте, чтобы всегда пропустить обновление пути начала (перезагрузка страницы) и перейти непосредственно к `MSApp.pageHandlesAllApplicationActivations(true)` запуску `WebUIApplication` активированного события.  Требует, чтобы все страницы обрабатывали события активации отдельно.  При определении этого метода как щелкнув активированное событие `true` \(например, уведомление\) не активирует перезагрузку, что является важным условием для одно страниц приложений, желающих избежать перезагрузок страниц.  |  
+      | Boolean (Логическое) | Используйте, чтобы всегда пропустить обновление пути запуска (перезагрузка страницы) и вместо этого перейти прямо к `MSApp.pageHandlesAllApplicationActivations(true)` `WebUIApplication` запуску активированного события.  Требуется, чтобы все страницы обрабатывали события активации отдельно.  Определение этого метода как щелкнуть активированное событие \(например, уведомление\) не вызовет перезагрузку, необходимую для одно страницы приложений, желающих избежать перезагрузок `true` страниц.  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**
@@ -918,7 +918,7 @@ var result = MSApp.method;
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       // Without this, the app will first refresh to the start path before every activate event
@@ -939,11 +939,11 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### suppressSubdownloadCredentialPrompts  
+### <a name="suppresssubdownloadcredentialprompts"></a>suppressSubdownloadCredentialPrompts  
 
 :::row:::
    :::column span="":::
-      Управляет тем, подавляет ли приложение возможные запросы проверки подлинности во время скачивания ресурсов.  
+      Контролирует, подавляет ли приложение возможные запросы проверки подлинности во время скачивания ресурсов.  
    :::column-end:::
    :::column span="":::
       ```javascript
@@ -976,21 +976,21 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Этот метод управляет тем, подавляет ли приложение потенциальные запросы проверки подлинности `suppressSubdownloadCredentialPrompts` во время скачивания ресурсов.  По умолчанию запросы учетных данных не подавляются.  
+      Метод контролирует, подавляет ли приложение потенциальные запросы проверки подлинности во `suppressSubdownloadCredentialPrompts` время скачивания ресурсов.  По умолчанию необходимо не подавлять запросы учетных данных.  
       
-      `suppressSubdownloadCredentialPrompts` предназначен для использования приложениями, которые могут загружать чрезмерное количество ресурсов, которым требуется проверка подлинности, например почтовое приложение \(которое может содержать информационный бюллетень, содержащий несколько изображений, где каждое изображение требует проверки подлинности\).  
+      `suppressSubdownloadCredentialPrompts` предназначен для использования приложениями, которые могут загружать чрезмерное количество ресурсов, которые требуют проверки подлинности, таких как почтовое приложение \(которое может содержать бюллетень, содержащий несколько изображений, где каждое изображение требует проверки подлинности\).  
       
-      При подавлении подсказок учетных данных диалоги для проверки подлинности на серверах не будут показаны при доступе к ресурсам, которые требуют проверки подлинности, и ресурс не будет загружен.  Обратите внимание, что это не влияет на другие возможные запросы, такие как проверка подлинности прокси-сервера или диалоговое окно запроса на сертификацию клиента, и не влияет на `suppressSubdownloadCredentialPrompts` XHR.  
+      При подавлении подсказок учетных данных диалоги для проверки подлинности на серверах не будут показаны при доступе к ресурсам, которые требуют проверки подлинности, и ресурс не будет загружен.  Обратите внимание, что это не влияет на другие возможные запросы, такие как проверка подлинности прокси или диалоги запросов на сертификацию клиентов, а также на `suppressSubdownloadCredentialPrompts` XHR.  
       
-      Следует помнить, `suppressSubdownloadCredentialPrompts` что влияет на все содержимое в приложении, включая контент, который был в `webview` элементе.  
+      Следует помнить, что влияет на все содержимое в приложении, в том числе `suppressSubdownloadCredentialPrompts` на содержимое, которое было в `webview` элементе.  
       
       > [!IMPORTANT]
-      > Решения о запросах учетных данных кэшются.  Таким образом, если запросы учетных данных не будут отбираться, запросы учетных данных после их подавления вступает в силу, поэтому может потребоваться перезагрузка документа.  
+      > Оперативные решения учетных данных кэшются.  Таким образом, при подавлении подсказок учетных данных вступает в силу немедленно, что позволяет запросы учетных данных после их подавления, возможно, потребуется перезагрузка документа, чтобы в вступил в силу.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       // Set to true to suppress potential credential prompts:
@@ -1003,7 +1003,7 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### terminateApp  
+### <a name="terminateapp"></a>terminateApp  
 
 
 :::row:::
@@ -1024,7 +1024,7 @@ var result = MSApp.method;
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Ошибка | Объект, `Error` который можно использовать для описания ошибки, которая вызвала завершение.  Объект должен содержать число, описание и свойства стека; отчет о сбое не будет создан, если объект не содержит `Error` эти свойства.  |  
+      | Ошибка | Объект, `Error` который можно использовать для описания ошибки, которая вызвала прекращение.  Объект должен содержать свойства числа, описания и стека; отчет о сбое не будет создан, если объект не содержит `Error` этих свойств.  |  
    :::column-end:::
    :::column span="":::
       **Возвращаемое значение**
@@ -1041,14 +1041,14 @@ var result = MSApp.method;
    :::column span="":::
       **Комментарии**  
       
-      Если проблема, о чем сообщили, становится одной из 5 главных проблем вашего приложения, она будет отдана на странице `terminateApp` "Качество" приложения.  
+      Если проблема, о чем сообщается, становится одной из 5 главных проблем приложения, она будет показываться на странице `terminateApp` Качество приложения.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
-      В этом `terminateApp` примере при вызове исключения вызывается.  Он использует `Error` объект, предоставленный при перехимовыыве исключение.  
+      В этом `terminateApp` примере вызывается, когда происходит исключение.  Он использует `Error` объект, предоставленный при улове исключения.  
       
       ```javascript
       try {  
@@ -1065,54 +1065,54 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-### Константы MSApp  
+### <a name="msapp-constants"></a>Константы MSApp  
 
 :::row:::
    :::column span="":::
-      Допустимые значения приоритета, связанные с `execAsyncAtPriority` `execAtPriority` , , и `getCurrentPriority` `isTaskScheduldAtPriorityOrHigher` .  
+      Разрешенные значения приоритета, связанные `execAsyncAtPriority` с `execAtPriority` , и `getCurrentPriority` `isTaskScheduldAtPriorityOrHigher` .  
    :::column-end:::
    :::column span="":::
-      #### Текущие  
+      #### <a name="current"></a>Текущие  
       
       `current`  
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | При использовании с соответствующим методом \(См. также раздел\), метод будет использовать текущий контекстный приоритет при `current` выполнении запрашиваемой операции.  |  
+      | DOMString | При использовании соответствующего метода \(См. также раздел\) метод будет использовать текущий контекстный приоритет при выполнении `current` запрашиваемой операции.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      #### Высока  
+      #### <a name="high"></a>Высока  
       
       `high`  
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | При использовании с соответствующим методом \(См. также раздел\), метод будет использовать более высокий приоритет, чем обычный при выполнении запрашиваемой операции, и будет отправлять операцию перед любой существующей обычной работой `high` приоритета.  |  
+      | DOMString | При использовании соответствующего метода \(См. также раздел\), метод будет использовать более высокий, чем обычно, приоритет при выполнении запрашиваемой операции и будет отправлять операцию перед любой существующей нормальной приоритетной `high` работой.  |  
    :::column-end:::
    :::column span="":::
-      #### Состояние Idle (в покое)  
+      #### <a name="idle"></a>Состояние Idle (в покое)  
       
       `idle`  
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | При использовании с соответствующим методом \(См. также раздел\), метод будет использовать более низкий приоритет, чем обычный при выполнении запрашиваемой операции, и будет отправлять операцию после любой существующей обычной работы с `ideal` приоритетом.  |  
+      | DOMString | При использовании соответствующего метода \(См. также раздел\), метод будет использовать ниже обычного приоритета при выполнении запрашиваемой операции и будет отправлять операцию после любой существующей нормальной приоритетной `ideal` работы.  |  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      #### Обычный  
+      #### <a name="normal"></a>Обычный  
       
       `normal`  
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMString | При использовании с соответствующим методом (см. также раздел), метод будет использовать обычный существующий приоритет при `normal` выполнении запрашиваемой операции.  |  
+      | DOMString | При использовании соответствующего метода (см. также раздел), при выполнении запрашиваемой операции метод будет использовать обычный `normal` существующий приоритет.  |  
    :::column-end:::
    :::column span="":::
-      **Пример.**  
+      **Пример**  
       
       ```javascript
       if (window.MSApp.CURRENT) {
@@ -1134,7 +1134,7 @@ var result = MSApp.method;
    :::column-end:::
 :::row-end:::  
 
-## MSAppAsyncOperation  
+## <a name="msappasyncoperation"></a>MSAppAsyncOperation  
 
 ```javascript
 var asyncOperation = MSApp.clearTemporaryWebDataAsync(); 
@@ -1143,7 +1143,7 @@ asyncOperation.onerror = function() { console.log("Failed to clear temporary web
 asyncOperation.start(); 
 ```  
 
-### start  
+### <a name="start"></a>start  
 
 :::row:::
    :::column span="":::
@@ -1176,7 +1176,7 @@ asyncOperation.start();
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | DOMError | Представляет ошибку в `MSAppAsyncOperation` .  |  
+      | DOMError | Представляет ошибку `MSAppAsyncOperation` в .  |  
       
       ```javascript
       p = object.error
@@ -1186,7 +1186,7 @@ asyncOperation.start();
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | EventHandler | Свойство для настройки обработера событий по завершении `MSAppAsyncOperation` .  |  
+      | EventHandler | Свойство для установки обработера событий по завершению `MSAppAsyncOperation` .  |  
       
       ```javascript
       p = object.oncomplete
@@ -1196,7 +1196,7 @@ asyncOperation.start();
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | EventHandler | Свойство для настройки обработера событий при ошибке во время `MSAppAsyncOperation` .  |  
+      | EventHandler | Свойство для установки обработера событий при ошибке во время `MSAppAsyncOperation` .  |  
       
       ```javascript
       p = object.onerror
@@ -1206,7 +1206,7 @@ asyncOperation.start();
       
       | Тип | Описание |  
       |:---- |:--- |  
-      | Число | Представляет состояние асинхронной операции в приложении для Windows с помощью JavaScript.  Значения: `Started[0]` , `Completed[1]` , `Error[2]` .  |  
+      | Число | Представляет состояние асинхронной операции в приложении Windows с помощью JavaScript.  Значения включают: `Started[0]` `Completed[1]` , , `Error[2]` .  |  
       
       ```javascript
       p = object.readyState

@@ -3,16 +3,16 @@ description: Откройте для себя новые процессы отл
 title: Справочник по отладке JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 09a2d61269b2fe3a23a57ce58eb1c89b12a7639c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2944e054a08a901d2e1752fa7c4e48ae110f5787
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398478"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439460"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,7 +46,7 @@ ms.locfileid: "11398478"
 
 ### <a name="step-over-line-of-code"></a>Шаг за строку кода  
 
-При остановке на строке кода, содержащей функцию, которая не относится к проблеме отладки, выберите кнопку **Step over** \( Step over \) для запуска функции, не вступая в нее. ![ ][ImageStepOverIcon]  
+При остановке на строке кода, содержащей функцию, которая не относится к проблеме отладки, выберите кнопку **Step over** \( Step over \) для запуска функции, не вступая в нее. ![ ](../media/step-over-icon.msft.png)  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Выберите шаг более" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Выберите **шаг более**  
@@ -70,7 +70,7 @@ function getName() {
 
 ### <a name="step-into-line-of-code"></a>Шаг в строку кода  
 
-При остановке на строке кода, содержащей вызов функции, связанный с проблемой отладки, выберите кнопку **Шаг** в \( Шаг в \) для дальнейшего изучения этой ![ ][ImageStepIntoIcon] функции.  
+При остановке на строке кода, содержащей вызов функции, связанный с проблемой отладки, выберите кнопку **Шаг** в \( Шаг в \) для дальнейшего изучения этой ![ ](../media/step-into-icon.msft.png) функции.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Выберите шаг в" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    Выберите **шаг в**  
@@ -94,7 +94,7 @@ function getName() {
 
 ### <a name="step-out-of-line-of-code"></a>Выход из строки кода  
 
-При остановке внутри функции, не связанной с проблемой отладки, выберите кнопку **Step out** \( Step out \) для запуска остальной части кода ![ ][ImageStepOutIcon] функции.  
+При остановке внутри функции, не связанной с проблемой отладки, выберите кнопку **Step out** \( Step out \) для запуска остальной части кода ![ ](../media/step-out-icon.msft.png) функции.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Выберите шаг" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Выберите **шаг**  
@@ -120,7 +120,7 @@ function getName() {
 
 При отладки длинной функции может быть много кода, не связанного с проблемой отладки.  
 
-Вы можете выбрать шаг через все строки, но это утомительно.  Вы можете установить точку разлома строки кода на интересуемой строке, а затем выбрать кнопку **Выполнение** скриптов резюме \. Выполнение скриптов возобновления \) но существует более быстрый ![ ][ImageResumeScriptExecutionIcon] способ.  
+Вы можете выбрать шаг через все строки, но это утомительно.  Вы можете установить точку разлома строки кода на интересуемой строке, а затем выбрать кнопку **Выполнение** скриптов резюме \. Выполнение скриптов возобновления \) но существует более быстрый ![ ](../media/resume-script-run-icon.msft.png) способ.  
 
 Наведите курсор на строку кода, в которой вас интересует, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Продолжить здесь**.  DevTools выполняет весь код до этой точки, а затем останавливается на этой строке.  
 
@@ -152,7 +152,7 @@ function factorial(n) {
 
 ### <a name="resume-script-runtime"></a>Время возобновления запуска сценария  
 
-Чтобы продолжить время выполнения после паузы скрипта, выберите кнопку **"Выполнение** скрипта ![ резюме"\. ][ImageResumeScriptExecutionIcon]  DevTools запускает сценарий до следующей точки перерыва, если таковые есть.  
+Чтобы продолжить время выполнения после паузы скрипта, выберите кнопку **"Выполнение** скрипта ![ резюме"\. ](../media/resume-script-run-icon.msft.png)  DevTools запускает сценарий до следующей точки перерыва, если таковые есть.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Выбор выполнения скрипта Resume" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Выбор **выполнения скрипта Resume**  
@@ -160,7 +160,7 @@ function factorial(n) {
 
 #### <a name="force-script-runtime"></a>Время запуска сценария force  
 
-Чтобы игнорировать все точки разлома и заставить скрипт возобновить работу, выберите и удерживайте кнопку Выполнение скрипта резюме **\(** Выполнение скрипта резюме \) и выберите кнопку Выполнение сценария Force \( Принудительное выполнение скрипта ![ ][ImageResumeScriptExecutionIcon] **** ![ ][ImageForceScriptExecutionIcon] \) .  
+Чтобы игнорировать все точки разлома и заставить скрипт возобновить работу, выберите и удерживайте кнопку Выполнение скрипта резюме **\(** Выполнение скрипта резюме \) и выберите кнопку Выполнение сценария Force \( Принудительное выполнение скрипта ![ ](../media/resume-script-run-icon.msft.png) **** ![ ](../media/force-script-run-icon.msft.png) \) .  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Выбор выполнения сценария Force" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Выбор **выполнения сценария Force**  
@@ -289,13 +289,13 @@ function animate() {
    Области **Часы**  
 :::image-end:::  
 
-*   Выберите **кнопку Add Expression** \( ![ Add Expression ][ImageAddExpressionIcon] \) для создания нового выражения часов.  
-*   Выберите **кнопку Обновление** ![ \( Обновление \) для обновления ][ImageRefreshIcon] значений всех существующих выражений.  Значения автоматически обновляются при прошагове кода.  
-*   Наведите курсор на выражение и выберите кнопку **Delete Expression** ![ \( Delete Expression ][ImageDeleteExpressionIcon] \) для ее удаления.  
+*   Выберите **кнопку Add Expression** \( ![ Add Expression ](../media/add-expression-icon.msft.png) \) для создания нового выражения часов.  
+*   Выберите **кнопку Обновление** ![ \( Обновление \) для обновления ](../media/refresh-icon.msft.png) значений всех существующих выражений.  Значения автоматически обновляются при прошагове кода.  
+*   Наведите курсор на выражение и выберите кнопку **Delete Expression** ![ \( Delete Expression ](../media/delete-expression-icon.msft.png) \) для ее удаления.  
 
 ## <a name="make-a-minified-file-readable"></a>Сделать минированную папку читаемой  
 
-Выберите **кнопку Format** \( Format \) для того, чтобы сделать этот файл ![ ][ImageFormatIcon] понятным для человека.  
+Выберите **кнопку Format** \( Format \) для того, чтобы сделать этот файл ![ ](../media/format-icon.msft.png) понятным для человека.  
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Кнопка "Формат"" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    Кнопка **"Формат"**  
@@ -322,18 +322,6 @@ function animate() {
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageStepOverIcon]: ../media/step-over-icon.msft.png  
-[ImageStepIntoIcon]: ../media/step-into-icon.msft.png  
-[ImageStepOutIcon]: ../media/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: ../media/resume-script-run-icon.msft.png  
-[ImageForceScriptExecutionIcon]: ../media/force-script-run-icon.msft.png  
-[ImageAddExpressionIcon]: ../media/add-expression-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: ../media/delete-expression-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
 
 <!-- links -->  
 

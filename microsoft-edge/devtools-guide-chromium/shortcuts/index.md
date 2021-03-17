@@ -3,16 +3,16 @@ description: Каноническая документация для клави
 title: Ярлыки клавиатуры Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398352"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439593"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -152,15 +152,11 @@ ms.locfileid: "11398352"
 | Очистка **консоли** | `Control`+`L` | `Command`+`K` или `Option`+`L` |  
 | Принудить к многостройной записи.  Этот ярлык в основном необязательен, так как DevTools должен обнаруживать многолинейные сценарии по умолчанию | `Shift`+`Enter` | `Command`+`Return` |  
 | Выполнение | `Enter` | `Return` |  
-| Расширь все свойства объекта, зарегистрированного в консоли | `Alt`Удержание, затем **выберите Расширение** \. ![ ][ImageExpandIcon] Развяжите \) | `Alt`Удержание, затем **выберите Расширение** \. ![ ][ImageExpandIcon] Развяжите \) |  
+| Расширь все свойства объекта, зарегистрированного в консоли | `Alt`Удержание, затем **выберите Расширение** \. ![ ](../media/expand-icon.msft.png) Развяжите \) | `Alt`Удержание, затем **выберите Расширение** \. ![ ](../media/expand-icon.msft.png) Развяжите \) |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
 
 <!-- links -->  
 

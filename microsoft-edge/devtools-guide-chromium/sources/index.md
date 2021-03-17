@@ -3,16 +3,16 @@ description: Отображение и редактирование файлов
 title: Обзор панели источников
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 7ce7ae32b4bf91419512ec9e387cdf75549552a5
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397764"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439607"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -101,7 +101,7 @@ document.head.appendChild(script);
 
 Для запуска **фрагмента:**
 
-*   Откройте файл с помощью **панели фрагментов** и выберите **Выполнить** \. ![ Кнопка Запуск ][ImageRunIcon] \).  
+*   Откройте файл с помощью **панели фрагментов** и выберите **Выполнить** \. ![ Кнопка Запуск ](../media/run-snippet-icon.msft.png) \).  
 *   Откройте [командное меню,][DevtoolsGuideChromiumCommandMenuIndex]удалите символ, введите, введите имя `>` фрагмента, а затем выберите `!` **** `Enter` .  
     
 Перейдите [к запуску фрагментов кода с любой страницы,][DevtoolsGuideChromiumJavascriptSnippets] чтобы узнать больше.
@@ -125,10 +125,6 @@ document.head.appendChild(script);
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 

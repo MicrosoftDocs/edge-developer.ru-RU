@@ -3,16 +3,16 @@ description: Полная ссылка на функции панели Microsof
 title: Ссылка на анализ сети
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: e8e2259e0f95499519c954e2199e191382998649
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398380"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439705"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,12 +44,12 @@ ms.locfileid: "11398380"
 
 Чтобы остановить запись запросов, выполните следующие действия.  
 
-1.  В **средстве Network** выберите **Стоп запись сетевого журнала** \( Остановка ![ записи сетевого ][ImageRecordOnIcon] журнала \).  Становится серым, чтобы указать, что DevTools больше не записывает запросы.  
+1.  В **средстве Network** выберите **Стоп запись сетевого журнала** \( Остановка ![ записи сетевого ](../media/record-on-icon.msft.png) журнала \).  Становится серым, чтобы указать, что DevTools больше не записывает запросы.  
 1.  Выберите `Control` + `E` \(Windows, Linux\) `Command` + `E` или \(macOS\) в **** то время как средство Network находится в центре внимания.  
 
 ### <a name="clear-requests"></a>Четкие запросы  
 
-Выберите **Clear** \( Clear \) в средстве Network, чтобы очистить все ![ ][ImageClearIcon] запросы из таблицы Запросов. ****  
+Выберите **Clear** \( Clear \) в средстве Network, чтобы очистить все ![ ](../media/clear-requests-icon.msft.png) запросы из таблицы Запросов. ****  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Кнопка Clear" lightbox="../media/network-network-clear-button.msft.png":::
    Кнопка **Clear**  
@@ -239,7 +239,7 @@ ms.locfileid: "11398380"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Media**  
+      **Носители**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -929,7 +929,7 @@ init();
 ### <a name="hide-the-filters-pane"></a>Скрыть области фильтров  
 
 По умолчанию в DevTools покажут **области фильтров.**  
-Выберите **фильтр** \( ![ Фильтр ][ImageFilterIcon] \) для его сокрытия.  
+Выберите **фильтр** \( ![ Фильтр ](../media/filter-icon.msft.png) \) для его сокрытия.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Кнопка "Скрыть фильтры"" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Кнопка "Скрыть фильтры"  
@@ -960,15 +960,6 @@ init();
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureScreenshotsIcon]: ../media/capture-screenshots-icon.msft.png  
-[ImageClearIcon]: ../media/clear-requests-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageHideIcon]: ../media/hide-overview-icon.msft.png  
-[ImageLargeResourceRowsIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageRecordOnIcon]: ../media/record-on-icon.msft.png  
 
 <!-- links -->  
 

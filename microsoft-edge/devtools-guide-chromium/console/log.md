@@ -3,16 +3,16 @@ description: Узнайте, как войти сообщения в консо�
 title: Начало работы с ведением журналов сообщений в консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: e2ea1a8327dd2a591e067b69198c4509b2abcb2d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fb428154b00959db1627096819c565dd5dc11346
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399171"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439291"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -122,7 +122,7 @@ ms.locfileid: "11399171"
     > [!TIP]
     > Если вы хотите отобразить код, который вызвал определенный вход сообщения, выберите в скрипте \(например\) для просмотра кода, из-за чего сообщение было `log.js:12` отформатировано.  
 
-1.  Выберите **значок Expand** \( ![ Expand ][ImageExpandIcon] \) перед `Abandon Hope All Ye Who Enter` .  В DevTools показан [след стека,][WikiStackTrace] ведущий к вызову.  
+1.  Выберите **значок Expand** \( ![ Expand ](../media/expand-icon.msft.png) \) перед `Abandon Hope All Ye Who Enter` .  В DevTools показан [след стека,][WikiStackTrace] ведущий к вызову.  
     
     :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Трассировка стека" lightbox="../media/console-log-warning-expanded.msft.png":::
        Трассировка стека  
@@ -236,13 +236,13 @@ ms.locfileid: "11399171"
 
 Если вы хотите просматривать только сообщения, которые поступили из определенного URL-адреса, используйте **боковую панель**.  
 
-1.  Выберите **боковую панель** консоли show \. ![ Показать боковую панель ][ImageShowConsoleSidebarIcon] консоли \).  
+1.  Выберите **боковую панель** консоли show \. ![ Показать боковую панель ](../media/show-console-sidebar-icon.msft.png) консоли \).  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="Боковая панель" lightbox="../media/console-sidebar-all-messages.msft.png":::
        Боковая панель  
     :::image-end:::  
     
-1.  Выберите **значок Expand** ![ \( Expand ][ImageExpandIcon] \) рядом с числом сообщений.  На следующем рисунке количество сообщений указывается как **13 сообщений.**  На **боковой панели** показан список URL-адресов, из-за чего сообщения были внесены в журнал.  Например, `log.js` вызвало 11 сообщений.  
+1.  Выберите **значок Expand** ![ \( Expand ](../media/expand-icon.msft.png) \) рядом с числом сообщений.  На следующем рисунке количество сообщений указывается как **13 сообщений.**  На **боковой панели** показан список URL-адресов, из-за чего сообщения были внесены в журнал.  Например, `log.js` вызвало 11 сообщений.  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Просмотр источника сообщений в боковой панели" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Просмотр источника сообщений в боковой панели  
@@ -280,11 +280,6 @@ ms.locfileid: "11399171"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

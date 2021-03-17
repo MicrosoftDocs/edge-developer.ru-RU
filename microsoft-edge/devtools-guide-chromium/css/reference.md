@@ -3,16 +3,16 @@ description: Откройте для себя новые процессы про
 title: Справочник по CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: a99cf46c4c0a6c6f14892268a30f8aab471e919d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399143"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439305"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ ms.locfileid: "11399143"
 Для выбора элемента используйте одно из следующих действий.  
 
 *   В представлении наведите курсор на элемент, откройте контекстное меню \(правой кнопкой мыши\) и выберите **Inspect**.  
-*   В DevTools выберите элемент **\(** Выберите элемент \) или выберите ![ ][ImageSelectAnElementIcon] `Control` + `Shift` + `C` \(Windows, Linux\) или `Command` + `Shift` + `C` \(macOS\), а затем выберите элемент в представлении.  
+*   В DevTools выберите элемент **\(** Выберите элемент \) или выберите ![ ](../media/select-an-element-icon.msft.png) `Control` + `Shift` + `C` \(Windows, Linux\) или `Command` + `Shift` + `C` \(macOS\), а затем выберите элемент в представлении.  
 *   В DevTools выберите элемент **dom Tree**.  
 *   В DevTools запустите запрос, как в консоли, наведите курсор на результат, откройте контекстное меню \(правой кнопкой мыши\) и выберите панель `document.querySelector('p')` **Reveal in Elements** ****.  
 
@@ -175,7 +175,7 @@ ms.locfileid: "11399143"
        :::column-end:::
     :::row-end:::  
     
-1.  Выберите **охват Начните инструментарий и обновите** страницу \. Начните использовать инструменты ![ и обновите ][ImageRefreshIcon] страницу \).  Страница обновляется, а средство **coverage** предоставляет обзор того, сколько CSS \(и JavaScript\) используется из каждого файла, загруженного браузером.  Зеленый представляет используемый CSS.  Красный цвет представляет неиспользована CSS.  
+1.  Выберите **охват Начните инструментарий и обновите** страницу \. Начните использовать инструменты ![ и обновите ](../media/refresh-icon.msft.png) страницу \).  Страница обновляется, а средство **coverage** предоставляет обзор того, сколько CSS \(и JavaScript\) используется из каждого файла, загруженного браузером.  Зеленый представляет используемый CSS.  Красный цвет представляет неиспользована CSS.  
     
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Обзор того, сколько CSS (и JavaScript) используется и не используется" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        Обзор того, сколько CSS \(и JavaScript\) используется и не используется  
@@ -283,7 +283,7 @@ ms.locfileid: "11399143"
 Выполните следующие действия, чтобы добавить новое правило стиля.  
 
 1.  [Выберите элемент](#choose-an-element).  
-1.  Выберите **новое правило стиля** \. Новое правило стиля ![ ][ImageNewStyleRuleIcon] \).  DevTools вставляет новое правило под **правилом element.style.**  
+1.  Выберите **новое правило стиля** \. Новое правило стиля ![ ](../media/new-style-rule-icon.msft.png) \).  DevTools вставляет новое правило под **правилом element.style.**  
 
 > [!NOTE]
 > На следующем рисунке DevTools добавляет правило стиля после `h1.devsite-page-title` выбора **правила New Style.**  
@@ -294,7 +294,7 @@ ms.locfileid: "11399143"
 
 #### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>Выберите таблицу стилей, чтобы добавить правило  
 
-При [добавлении](#add-a-style-rule)нового правила стиля выберите и удерживайте правило **New Style** \( New Style Rule \) для выбора таблицы стилей для добавления ![ правила ][ImageNewStyleRuleIcon] стиля.  
+При [добавлении](#add-a-style-rule)нового правила стиля выберите и удерживайте правило **New Style** \( New Style Rule \) для выбора таблицы стилей для добавления ![ правила ](../media/new-style-rule-icon.msft.png) стиля.  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Выберите таблицу стилей" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Выберите таблицу стилей  
@@ -306,7 +306,7 @@ ms.locfileid: "11399143"
 
 1.  Наведите курс на правило стиля, которое находится непосредственно над тем, где необходимо добавить новое правило стиля.  
 1.  [ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).  
-1.  Выберите **Правило стиля вставки ниже** \. ![ Вставить правило стиля ниже значок ][ImageNewStyleRuleIcon] \).  
+1.  Выберите **Правило стиля вставки ниже** \. ![ Вставить правило стиля ниже значок ](../media/new-style-rule-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Вставьте правило стиля ниже" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Вставьте правило стиля ниже**  
@@ -360,7 +360,7 @@ ms.locfileid: "11399143"
 
 1.  Наведите курс на правило стиля, в которое нужно добавить `background-color` объявление.  
 1.  [ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).  
-1.  Выберите **Добавить фоновый** цвет \. ![ Добавьте значок фонового ][ImageAddBackgroundColorIcon] цвета \).  
+1.  Выберите **Добавить фоновый** цвет \. ![ Добавьте значок фонового ](../media/add-background-color-icon.msft.png) цвета \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Добавление фонового цвета" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Добавление фонового цвета**  
@@ -372,7 +372,7 @@ ms.locfileid: "11399143"
 
 1.  Наведите курс на правило стиля, в которое нужно добавить `color` объявление.  
 1.  [ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).  
-1.  Выберите **Добавить цвет** \. Добавить ![ значок цвета ][ImageAddColorIcon] \).  
+1.  Выберите **Добавить цвет** \. Добавить ![ значок цвета ](../media/add-color-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Добавление цвета" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Добавление цвета**  
@@ -384,7 +384,7 @@ ms.locfileid: "11399143"
 
 1.  Наведите курс на правило стиля, в которое нужно добавить `box-shadow` объявление.  
 1.  [ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).  
-1.  Выберите **Добавить поле Shadow** \. Добавьте ![ значок Тень окна ][ImageAddBoxShadowIcon] \).  
+1.  Выберите **Добавить поле Shadow** \. Добавьте ![ значок Тень окна ](../media/add-box-shadow-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Добавление тени box" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Добавление тени box**  
@@ -396,7 +396,7 @@ ms.locfileid: "11399143"
 
 1.  Наведите курс на правило стиля, в которое нужно добавить `text-shadow` объявление.  
 1.  [ **Раскрой панель инструментов More Actions** ](#reveal-the-more-actions-toolbar).  
-1.  Выберите **Добавить текстовую тень** \. Добавьте ![ значок Text Shadow ][ImageAddTextShadowIcon] \).  
+1.  Выберите **Добавить текстовую тень** \. Добавьте ![ значок Text Shadow ](../media/add-text-shadow-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Добавление тени текста" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Добавление тени текста**  
@@ -532,7 +532,7 @@ ms.locfileid: "11399143"
 
 #### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>Пример цвета со страницы с помощью Eyedropper  
 
-Когда вы открываете **Выбор цвета,** **Eyedropper** \( ![ Eyedropper ][ImageEyedropperIcon] \) находится на по умолчанию.  Выполните следующие действия, чтобы изменить выбранный цвет на другой цвет на странице.  
+Когда вы открываете **Выбор цвета,** **Eyedropper** \( ![ Eyedropper ](../media/eyedropper-icon.msft.png) \) находится на по умолчанию.  Выполните следующие действия, чтобы изменить выбранный цвет на другой цвет на странице.  
 
 1.  Наведите курсор на целевой цвет в представлении.  
 1.  Выберите подтверждение.  
@@ -549,17 +549,6 @@ ms.locfileid: "11399143"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  
-[ImageAddBoxShadowIcon]: ../media/add-box-shadow-icon.msft.png  
-[ImageAddColorIcon]: ../media/add-color-icon.msft.png  
-[ImageAddTextShadowIcon]: ../media/add-text-shadow-icon.msft.png  
-[ImageEyedropperIcon]: ../media/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageSelectAnElementIcon]: ../media/select-an-element-icon.msft.png  
 
 <!-- links -->  
 

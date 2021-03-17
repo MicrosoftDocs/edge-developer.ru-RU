@@ -3,16 +3,16 @@ description: Если вы находите, что введите те же в�
 title: Просмотр значений выражений JavaScript в режиме реального времени с помощью Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 5bc49b60cc1c1dfb41c793c3fec7681fb6415e4c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: af920de1c395489dc09b83f3cc0f24814c4f5cbe
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398800"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439228"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ ms.locfileid: "11398800"
 ## <a name="create-a-live-expression"></a>Создание live expression  
 
 1.  [Откройте консоль.][DevToolsConsoleReferenceOpenConsole]  
-1.  Выберите **Создать живое выражение** \. ![ Создайте живое ][ImageCreateLiveExpressionIcon] выражение \).  Появится текстовое поле **Live Expression.**  
+1.  Выберите **Создать живое выражение** \. ![ Создайте живое ](../media/create-live-expression-icon.msft.png) выражение \).  Появится текстовое поле **Live Expression.**  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Ввод document.activeElement в текстовом окне Live Expression" lightbox="../media/console-create-live-expression.msft.png":::
        Ввод `document.activeElement` текста **в текстовом окне Live Expression**  
@@ -46,10 +46,6 @@ ms.locfileid: "11398800"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

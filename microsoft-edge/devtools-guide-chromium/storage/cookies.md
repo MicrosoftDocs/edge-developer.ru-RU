@@ -3,16 +3,16 @@ description: Узнайте, как просматривать, изменять
 title: Просмотр, редактирование и удаление файлов cookie с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 9c040aaa30142c2759c67b2c034d3a9271ca0a64
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397750"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439684"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,13 +81,13 @@ ms.locfileid: "11397750"
 
 ## <a name="delete-cookies"></a>Удаление файлов cookie  
 
-Выберите файл cookie и выберите **Delete Selected** \( ![ Delete Selected \) для удаления ][ImageDeleteIcon] определенного файла cookie.  
+Выберите файл cookie и выберите **Delete Selected** \( ![ Delete Selected \) для удаления ](../media/delete-icon.msft.png) определенного файла cookie.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Удаление определенного файла cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Рис. 5. Удаление определенного файла cookie  
 :::image-end:::  
 
-Выберите **Clear All** \( Clear All ![ ][ImageClearIcon] \) для удаления всех файлов cookie.  
+Выберите **Clear All** \( Clear All ![ ](../media/clear-icon.msft.png) \) для удаления всех файлов cookie.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Очистка всех файлов cookie" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Рис. 6. Очистка всех файлов cookie  
@@ -96,11 +96,6 @@ ms.locfileid: "11397750"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 5e4b20690eac3a692f6428f391def102a4f78ecb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 034fbdf82ddba39fc0818bc6f3add8824c6bb3ac
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398772"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439263"
 ---
 # <a name="inspect-css-grid"></a>Проверка сетки CSS  
 
@@ -176,7 +176,7 @@ DevTools отображает `[authored size]` и `[computed size]` на каж
 
 ### <a name="highlight-the-grid"></a>Выделение сетки  
 
-Чтобы выделить элемент HTML в средстве **Elements** и прокрутите его на веб-странице, выберите элемент Show в панели **Elements** \( Элемент Show в значке панели ![ Elements ][ImageShowElementInElementsPanelIcon] \) .  
+Чтобы выделить элемент HTML в средстве **Elements** и прокрутите его на веб-странице, выберите элемент Show в панели **Elements** \( Элемент Show в значке панели ![ Elements ](../media/show-element-in-element-panel-icon.msft.png) \) .  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Выделение сетки" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Выделение сетки  
@@ -185,10 +185,6 @@ DevTools отображает `[authored size]` и `[computed size]` на каж
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageShowElementInElementsPanelIcon]: ../media/show-element-in-element-panel-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Просмотр веб-SQL с панели приложений Mi
 title: Просмотр веб-SQL с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 326fe492a3436a40d81c8e31db99a26da4ea054f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9f684aabf3592220079e6a8595d91cfea6785769
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397554"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439600"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,7 +73,7 @@ ms.locfileid: "11397554"
 DevTools не обновляет таблицы в режиме реального времени.  Чтобы обновить данные в таблице, выполните следующие действия.  
 
 1.  [Просмотр данных в таблице веб-SQL.](#view-web-sql-data)  
-1.  Выберите **обновление** \. ![ Обновление ][ImageRefreshIcon] \).  
+1.  Выберите **обновление** \. ![ Обновление ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-out-columns-in-a-web-sql-table"></a>Фильтрация столбцов в таблице веб-SQL  
 
@@ -102,10 +102,6 @@ DevTools не обновляет таблицы в режиме реальног
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

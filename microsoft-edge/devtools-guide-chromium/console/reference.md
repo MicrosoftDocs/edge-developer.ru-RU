@@ -3,16 +3,16 @@ description: Всестороннюю ссылку на все функции и
 title: Ссылка консоли
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 1aed46486240dea19420e8b7cb52b6758f1f528b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d6fed1681e64f8f57c2e577017d623039a7b4152
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399164"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439369"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -74,7 +74,7 @@ ms.locfileid: "11399164"
 
 ### <a name="open-console-settings"></a>Параметры открытой консоли  
 
-Выберите **параметры** консоли \. ![ Значок Параметры ][ImageSettingsButtonIcon] консоли \).  
+Выберите **параметры** консоли \. ![ Значок Параметры ](../media/settings-button-icon.msft.png) консоли \).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Параметры консоли" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Параметры консоли**  
@@ -92,7 +92,7 @@ ms.locfileid: "11399164"
     
 ### <a name="open-the-console-sidebar"></a>Откройте боковую панель консоли  
 
-Выберите **боковую панель** консоли показать \. Показать боковую панель консоли \) для демонстрации боковой панели, которая полезна ![ для ][ImageShowConsoleSidebarIcon] фильтрации.  
+Выберите **боковую панель** консоли показать \. Показать боковую панель консоли \) для демонстрации боковой панели, которая полезна ![ для ](../media/show-console-sidebar-icon.msft.png) фильтрации.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Боковая панель консоли" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Консоль** Боковая панель  
@@ -246,7 +246,7 @@ DevTools назначает каждому `console.*` методу уровен
 
 Для очистки консоли можно использовать любой из следующих процессов:  
 
-*   Выберите **четкую** консоль \. ![ Четкая ][ImageClearConsoleIcon] консоль \).  
+*   Выберите **четкую** консоль \. ![ Четкая ](../media/clear-console-button-icon.msft.png) консоль \).  
 *   Наведите курсор на сообщение, откройте контекстное меню \(righ-click\) и выберите **четкую консоль**.  
 *   Введите `clear()` консоль **и** выберите `Enter` .  
 *   Запуск `console.clear()` с JavaScript для веб-страницы.  
@@ -255,12 +255,6 @@ DevTools назначает каждому `console.*` методу уровен
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

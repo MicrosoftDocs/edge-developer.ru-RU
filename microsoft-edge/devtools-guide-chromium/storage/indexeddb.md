@@ -3,16 +3,16 @@ description: Просмотр и изменение данных IndexedDB с п
 title: Просмотр и изменение данных IndexedDB с помощью Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 6062cb6b574b2295441bc98616f600cbf00cee8e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398982"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439712"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,8 +46,8 @@ ms.locfileid: "11398982"
        Меню **IndexedDB**  
     :::image-end:::  
     
-    *   \. Значок базы данных \) представляет базу данных, где находится имя базы данных и происхождение, которое ![ имеет доступ к базе ][ImageDatabaseIcon] `notes - https://mdn.github.io` `notes` `https://mdn.github.io` данных.  
-    *   \. ![ Значок Object Store ][ImageObjectStoreIcon] \) `notes` — это хранилище объектов.  
+    *   \. Значок базы данных \) представляет базу данных, где находится имя базы данных и происхождение, которое ![ имеет доступ к базе ](../media/database-icon.msft.png) `notes - https://mdn.github.io` `notes` `https://mdn.github.io` данных.  
+    *   \. ![ Значок Object Store ](../media/object-store-icon.msft.png) \) `notes` — это хранилище объектов.  
     *   **название** и **тело** [индексы][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
@@ -85,7 +85,7 @@ ms.locfileid: "11398982"
     
 ## <a name="refresh-indexeddb-data"></a>Обновление данных IndexedDB  
 
-Значения IndexedDB в **средстве приложения** не обновляются в режиме реального времени.  Выберите **Обновление** \. Обновление \) при просмотре объекта хранения для обновления данных или просмотра базы данных и обновления базы данных ![ для обновления всех ][ImageRefreshIcon] данных. ****  
+Значения IndexedDB в **средстве приложения** не обновляются в режиме реального времени.  Выберите **Обновление** \. Обновление \) при просмотре объекта хранения для обновления данных или просмотра базы данных и обновления базы данных ![ для обновления всех ](../media/reload-icon.msft.png) данных. ****  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Просмотр базы данных" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Просмотр базы данных  
@@ -114,7 +114,7 @@ ms.locfileid: "11398982"
        Выберите пару с значением ключа, чтобы удалить ее  
     :::image-end:::  
     
-1.  Выберите ключ `Delete` или выберите **Удалить выбранный** \. ![ Удалить выбранный ][ImageDeleteIcon] \).  
+1.  Выберите ключ `Delete` или выберите **Удалить выбранный** \. ![ Удалить выбранный ](../media/delete-icon.msft.png) \).  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Как хранится объект после удаления пары значения ключа" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Как хранится объект после удаления пары значения ключа  
@@ -128,7 +128,7 @@ ms.locfileid: "11398982"
        Просмотр объекта  
     :::image-end:::  
     
-1.  Выберите **Хранилище объектов Clear** \. Хранилище ![ четких объектов ][ImageClearIcon] \).  
+1.  Выберите **Хранилище объектов Clear** \. Хранилище ![ четких объектов ](../media/clear-icon.msft.png) \).  
     
 ### <a name="delete-an-indexeddb-database"></a>Удаление базы данных IndexedDB  
 
@@ -152,14 +152,6 @@ ms.locfileid: "11398982"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDatabaseIcon]: ../media/database-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 

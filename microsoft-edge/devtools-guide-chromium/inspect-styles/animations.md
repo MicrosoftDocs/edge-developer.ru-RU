@@ -3,16 +3,16 @@ description: Проверка и изменение анимации с помо
 title: Проверка эффектов анимации
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: 742096f13179de2ad1a95dc9fa62d2bbf3d7c226
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397736"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439544"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -103,7 +103,7 @@ ms.locfileid: "11397736"
 После захвата анимации существует несколько способов ее воспроизведения:  
 
 *   Наведите курсор на эскиз в области **Обзор,** чтобы просмотреть его предварительный просмотр.  
-*   Выберите группу анимации из области **Обзор** \(так, **** чтобы она отображалась в области Details\) и выберите значок **повтора** \( значок ![ воспроизведения ][ImageReplayButtonIcon] \).  Анимация повторяется в представлении.  Выберите **значки** скорости анимации \( значки скорости анимации\) для изменения скорости предварительного просмотра выбранной в настоящее время ![ ][ImageAnimationSpeedButtonsIcon] группы анимации.  Для изменения текущего положения можно использовать красную вертикальную планку.  
+*   Выберите группу анимации из области **Обзор** \(так, **** чтобы она отображалась в области Details\) и выберите значок **повтора** \( значок ![ воспроизведения ](../media/replay-button-icon.msft.png) \).  Анимация повторяется в представлении.  Выберите **значки** скорости анимации \( значки скорости анимации\) для изменения скорости предварительного просмотра выбранной в настоящее время ![ ](../media/animation-speed-buttons-icon.msft.png) группы анимации.  Для изменения текущего положения можно использовать красную вертикальную планку.  
 *   Выберите и перетащите красную вертикальную планку для очистки анимации представления.  
     
 ### <a name="view-animation-details"></a>Просмотр сведений о анимации  
@@ -170,8 +170,8 @@ ms.locfileid: "11397736"
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
+(.. /media/animation-speed-buttons-icon.msft.png): .. /media/animation-speed-buttons-icon.msft.png  
+(.. /media/replay-button-icon.msft.png): .. /media/replay-button-icon.msft.png  
 
 <!-- links -->  
 

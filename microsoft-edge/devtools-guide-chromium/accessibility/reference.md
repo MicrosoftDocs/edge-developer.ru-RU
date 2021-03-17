@@ -1,18 +1,18 @@
 ---
 description: Полная ссылка на функции доступности в Microsoft Edge DevTools.
-title: Справка о доступности
+title: Справка о специальных возможностях
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, веб-разработка, инструменты f12, средства разработчика
-ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398338"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439256"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11398338"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="accessibility-reference"></a>Справка о доступности  
+# <a name="accessibility-reference"></a>Справка о специальных возможностях  
 
 Эта страница — это всеобъемлющая ссылка на функции доступности в Microsoft Edge DevTools.  Он предназначен для веб-разработчиков, которые:  
 
@@ -72,7 +72,7 @@ ms.locfileid: "11398338"
     :::image-end:::  
     
     > [!NOTE]
-    > Скриншоты в этом разделе были сделаны с помощью версии 79 Microsoft Edge.  Вы можете проверить, в какой версии вы `edge://version` работаете.  Пользовательский **интерфейс** средства аудита выглядит иначе в более ранних версиях Microsoft Edge, но общий рабочий процесс одинаковый.  
+    > Скриншоты в этом разделе были сделаны с помощью Microsoft Edge версии 79.  Вы можете проверить, в какой версии вы `edge://version` работаете.  Пользовательский **интерфейс** средства аудита выглядит иначе в более ранних версиях Microsoft Edge, но общий рабочий процесс одинаковый.  
     
 1.  Для **устройства**выберите **Mobile,** если вы хотите смоделировать мобильное устройство.  Этот параметр изменяет строку агента пользователя и изменяет параметр viewport.  Если мобильная версия страницы отображает не так, как в настольной версии, этот параметр может существенно действовать на результаты аудита.  
 1.  В разделе **Аудиты** убедитесь, что **включена доступность.**  Отключите другие категории, если вы хотите исключить их из отчета.  Оставьте их включенными, если вы хотите найти другие способы улучшения качества страницы.  
@@ -114,7 +114,7 @@ ms.locfileid: "11398338"
 
 1.  Выберите **средство Elements.**  
 1.  В дереве **DOM выберите**элемент, который необходимо проверить.  
-1.  Выберите панель **доступности.**  Эта панель может быть скрыта за кнопкой **More Tabs** \( ![ More Tabs ][ImageMoreTabsIcon] \)  
+1.  Выберите панель **доступности.**  Эта панель может быть скрыта за кнопкой **More Tabs** \( ![ More Tabs ](../media/more-tabs-icon.msft.png) \)  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Проверьте элемент h1 домашней страницы DevTools в панели доступности" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Проверьте `h1` элемент домашней страницы DevTools в панели **доступности**  
@@ -189,10 +189,6 @@ ms.locfileid: "11398338"
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Взаимодействие с командой средств разработчика Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
 
 <!-- links -->  
 
